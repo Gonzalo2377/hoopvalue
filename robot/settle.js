@@ -5,6 +5,7 @@
       nunca comparando nombres o apellidos.
    2. Un pick NUNCA se borra: o se liquida (W/L/P) o se anula (V).
       · partido aplazado/cancelado o sin resultado 7 días después → V
+      · prop de un jugador que no juega → V (regla habitual de las casas)
    3. Ganador y hándicap/total incluyen la prórroga (regla estándar del
       mercado «ganador del partido» en baloncesto). OJO: el 1X2 a tiempo
       reglamentario es otro mercado; no lo usamos.
@@ -17,6 +18,13 @@ function result(p, g) {
   if (p.market === 'ml') return (p.side === 'home') === (m > 0) ? 'W' : 'L';
   if (p.market === 'spread') { const v = (p.side === 'home' ? m : -m) + p.line; return v > 0 ? 'W' : v < 0 ? 'L' : 'P'; }
   if (p.market === 'total') { const v = p.side === 'over' ? t - p.line : p.line - t; return v > 0 ? 'W' : v < 0 ? 'L' : 'P'; }
+  if (p.market === 'prop') {
+    const row = (g.players || []).find(r => String(r[0]) === String(p.playerId));
+    if (!row) return 'V';                                         // no jugó → anulada (regla de las casas)
+    const val = { pts: row[6], reb: row[7], ast: row[8], tpm: row[9], pra: row[6] + row[7] + row[8] }[p.stat];
+    const v = p.side === 'over' ? val - p.line : p.line - val;
+    return v > 0 ? 'W' : v < 0 ? 'L' : 'P';
+  }
   return null;
 }
 
@@ -26,7 +34,7 @@ function settleAll(pending, gamesById, now = Date.now()) {
   for (const p of pending) {
     const g = gamesById[p.gameId];
     const start = Date.parse(p.start);
-    if (g && g.status === 'final' && g.hs != null) {
+    if (g && g.status === 'final' && g.hs != null && (p.market !== 'prop' || (g.players && g.players.length))) {
       const r = result(p, g);
       if (r) { settled.push({ ...p, result: r, score: `${g.hs}-${g.as}`, settledAt: new Date(now).toISOString() }); continue; }
     }
@@ -50,7 +58,7 @@ function stats(record) {
       clv: (c => c.length ? +(c.reduce((a, x) => a + x, 0) / c.length).toFixed(4) : null)(list.filter(x => x.clv != null).map(x => x.clv)) };
   };
   const by = (key, vals) => Object.fromEntries(vals.map(v => [v, sum(record.filter(x => x[key] === v))]));
-  return { all: sum(record), market: by('market', ['ml', 'spread', 'total']), tier: by('tier', ['A', 'B', 'C']),
+  return { all: sum(record), market: by('market', ['ml', 'spread', 'total', 'prop']), tier: by('tier', ['A', 'B', 'C']),
     last30: sum(record.filter(x => Date.now() - Date.parse(x.start) < 30 * DAY)) };
 }
 

@@ -157,4 +157,34 @@ function evaluate({ game, pred, sig, mk, trends, ctx, wModel }) {
 const tier = s => s >= 0.68 ? 'A' : s >= 0.61 ? 'B' : 'C';
 
 
-module.exports = { evaluate, marketSummary, marketFromLine, modelProbs, twoWay, tier, CFG };
+/* props de jugador: misma filosofía que los partidos.
+   entry = jugador de players/index.json (proyección + línea de la casa), rows = su partido a partido */
+const STAT_NAME = { pts: 'puntos', reb: 'rebotes', ast: 'asistencias', tpm: 'triples', pra: 'pts+reb+ast' };
+function evaluateProps(entry, rows, wModel) {
+  const out = [];
+  if (!entry.proj || !entry.lines || !entry.next) return out;
+  const last10 = rows.slice(-10);
+  for (const stat of Object.keys(STAT_NAME)) {
+    const L = entry.lines[stat], mu = entry.proj[stat], s = entry.proj.sd && entry.proj.sd[stat];
+    if (!L || !L.over || !L.under || mu == null || !s) continue;
+    const pM = twoWay([{ book: 'mejor', a: L.over, b: L.under }]);
+    if (!pM) continue;
+    const val = r => stat === 'pra' ? r.pts + r.reb + r.ast : r[stat];
+    const pOv = clamp(pOver(mu, s, L.line), 0.03, 0.97);
+    [['over', pOv, pM.pA, L.over, L.overBook], ['under', 1 - pOv, pM.pB, L.under, L.underBook]].forEach(([side, pModel, pMarket, odd, book]) => {
+      const hits = last10.filter(r => side === 'over' ? val(r) > L.line : val(r) < L.line).length;
+      const pFinal = wModel * pModel + (1 - wModel) * pMarket;
+      const ev = pFinal * odd - 1;
+      const hitAdj = last10.length >= 5 ? clamp((hits / last10.length - 0.5) * 0.06, -0.03, 0.03) : 0;
+      const safety = pFinal - 0.5 * Math.max(0, Math.abs(pModel - pMarket) - 0.03) + hitAdj;
+      out.push({ gameId: entry.next.gameId, market: 'prop', stat, side, line: L.line, playerId: entry.id, player: entry.name, team: entry.team,
+        label: `${entry.name} ${side === 'over' ? 'más' : 'menos'} de ${L.line} ${STAT_NAME[stat]}`, odd: round(odd, 2), book,
+        pModel: round(pModel, 3), pMarket: round(pMarket, 3), pFinal: round(pFinal, 3), ev: round(ev, 3), safety: round(safety, 3), fair: round(1 / pFinal, 2),
+        proj: mu, hits: `${hits}/${last10.length}`, signals: [{ ok: side === 'over' ? mu > L.line : mu < L.line, txt: `Proyección ${mu} (línea ${L.line})` }, { ok: hits / Math.max(1, last10.length) > 0.5, txt: `Cumplió en ${hits} de sus últimos ${last10.length}` }],
+        qualifies: odd >= CFG.minOdd && pFinal >= CFG.minProb && ev >= CFG.minEV });
+    });
+  }
+  return out;
+}
+
+module.exports = { evaluate, evaluateProps, marketSummary, marketFromLine, modelProbs, twoWay, tier, CFG };

@@ -9,7 +9,8 @@
         public/data/today.json   partidos + análisis + picks
         public/data/teams.json   valoraciones y tendencias por equipo
         public/data/record.json  historial completo + estadísticas
-   Variables: ODDS_API_KEY · ODDS_REGIONS (eu,uk) · MIN_ODD (1.30) ·
+   Variables: ODDS_API_KEY · ODDSPAPI_KEY (props, opcional) · PROPS_MAX (8) ·
+              ODDS_REGIONS (eu,uk) · MIN_ODD (1.30) ·
               ODDS_MODE=results (solo liquidar, 0 créditos)
    ============================================================ */
 const path = require('path');
@@ -18,6 +19,8 @@ const H = require('./history');
 const el = require('./sources/euroleague');
 const odds = require('./sources/odds-api');
 const store = require('./odds-store');
+const oddspapi = require('./sources/oddspapi-props');
+const playersData = require('./players-data');
 const { matchTeam } = require('./lib/teams');
 const { teamRows, rate } = require('./model/ratings');
 const { predictGame, modelWeight } = require('./model/game');
@@ -27,6 +30,7 @@ const P = require('./model/picks');
 const S = require('./settle');
 
 const KEY = process.env.ODDS_API_KEY || '';
+const PAPI_KEY = process.env.ODDSPAPI_KEY || '';
 const REGIONS = process.env.ODDS_REGIONS || 'eu,uk';
 const RESULTS_ONLY = (process.env.ODDS_MODE || '').toLowerCase() === 'results';
 const OUT = path.join(ROOT, 'public', 'data');
@@ -34,7 +38,7 @@ const PICKS_FILE = path.join(ROOT, 'data', 'picks.json');
 const PARAMS = readJSON(path.join(ROOT, 'data', 'model-params.json'), {}).euroleague || {};
 const SIG = { margin: PARAMS.margin || 11.5, total: PARAMS.total || 15 };
 const LG = 'euroleague';
-const pickKey = p => [p.gameId, p.market, p.side, p.line].join('|');
+const pickKey = p => [p.gameId, p.market, p.side, p.line, p.playerId || '', p.stat || ''].join('|');
 
 async function main() {
   const now = Date.now();
@@ -112,7 +116,7 @@ async function main() {
     [[g.home, idsH, g.away], [g.away, idsA, g.home]].forEach(([team, ids, opp]) => {
       PL.roster(logs, team, t0, ids).filter(l => !absent.has(l.id)).map(l => PL.project(l, t0, { team, pace: paceF, defFactor: defF(opp) }))
         .filter(Boolean).sort((a, b) => b.min - a.min).slice(0, 8)
-        .forEach(p => players.push({ name: p.name, team: p.team, min: p.min, gp: p.gp, starter: p.starter, value: p.value,
+        .forEach(p => players.push({ id: p.id, name: p.name, team: p.team, min: p.min, gp: p.gp, starter: p.starter, value: p.value,
           pts: p.pts.mu, reb: p.reb.mu, ast: p.ast.mu, tpm: p.tpm.mu, pra: p.pra.mu, l10pts: p.pts.l10, avg10: { pts: p.pts.avg10, reb: p.reb.avg10, ast: p.ast.avg10 } }));
     });
 
@@ -127,6 +131,21 @@ async function main() {
     });
   }
 
+  /* ---- 4b. jugadores: cuotas de props (OddsPapi, opcional) + datos para la web ---- */
+  const props = PAPI_KEY ? await oddspapi.fetchProps(PAPI_KEY, upcoming, teams, { max: +(process.env.PROPS_MAX || 8) }) : {};
+  const index = playersData.build({ games, teams, logs, R, season, now, props });
+  const rowsOf = id => (logs[id] ? logs[id].games : []).map(x => ({ pts: x.pts, reb: x.reb, ast: x.ast, tpm: x.tpm }));
+  const soonIds = new Set(upcoming.map(g => g.id));
+  const propPicks = [];
+  index.filter(e => e.lines && e.next && soonIds.has(e.next.gameId)).forEach(e => {
+    const best = P.evaluateProps(e, rowsOf(e.id), modelWeight(12, 12)).filter(c => c.qualifies).sort((a, b) => b.safety - a.safety)[0];
+    if (best) { const g = upcoming.find(x => x.id === best.gameId); propPicks.push({ ...best, start: g.date, round: g.round, match: `${(teams[g.home] || {}).short || g.home} – ${(teams[g.away] || {}).short || g.away}`, tier: P.tier(best.safety) }); }
+  });
+  /* como mucho 2 props por partido para no concentrar el riesgo */
+  const perGame = {};
+  propPicks.sort((a, b) => b.safety - a.safety).forEach(p => { if ((perGame[p.gameId] = (perGame[p.gameId] || 0) + 1) <= 2) picks.push(p); });
+  if (Object.keys(props).length) console.log(`· props: ${Object.keys(props).length} jugadores con línea · ${propPicks.length} picks de jugador candidatos`);
+
   /* ---- 5. picks del día + registro como pendientes ---- */
   picks.sort((a, b) => b.safety - a.safety);
   const combo = safeCombo(picks);
@@ -135,7 +154,7 @@ async function main() {
     if (known.has(pickKey(p)) || Date.parse(p.start) < now) return;
     /* se registra con la cuota del momento en que se publica y no se reescribe */
     book.pending.push({ id: pickKey(p), gameId: p.gameId, start: p.start, round: p.round, match: p.match, market: p.market, side: p.side, line: p.line,
-      label: p.label, odd: p.odd, book: p.book, pFinal: p.pFinal, safety: p.safety, tier: p.tier, createdAt: new Date(now).toISOString() });
+      label: p.label, odd: p.odd, book: p.book, pFinal: p.pFinal, safety: p.safety, tier: p.tier, stat: p.stat, playerId: p.playerId, createdAt: new Date(now).toISOString() });
   });
 
   writeJSON(PICKS_FILE, book, true);

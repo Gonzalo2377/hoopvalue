@@ -21,8 +21,8 @@ document.querySelectorAll('.tabs button').forEach(b => b.onclick = () => { locat
 window.onhashchange = route;
 function route() {
   const [tab, arg] = (location.hash.slice(1) || 'picks').split('/');
-  document.querySelectorAll('.tabs button').forEach(b => b.classList.toggle('on', b.dataset.tab === (tab === 'game' ? 'games' : tab)));
-  const V = { picks: viewPicks, games: viewGames, game: () => viewGame(arg), teams: viewTeams, record: viewRecord, how: viewHow }[tab] || viewPicks;
+  document.querySelectorAll('.tabs button').forEach(b => b.classList.toggle('on', b.dataset.tab === ({ game: 'games', player: 'players' }[tab] || tab)));
+  const V = { picks: viewPicks, games: viewGames, game: () => viewGame(arg), players: viewPlayers, player: () => viewPlayer(arg), teams: viewTeams, record: viewRecord, how: viewHow }[tab] || viewPicks;
   $app.innerHTML = V();
   window.scrollTo(0, 0);
 }
@@ -144,8 +144,8 @@ function viewGame(id) {
   h += `<h2>Últimos partidos</h2><div class="grid"><div class="card scroll"><b>${esc(H.name)}</b>${last(th)}</div><div class="card scroll"><b>${esc(A.name)}</b>${last(ta)}</div></div>`;
   if (g.h2h.length) h += `<h2>Enfrentamientos directos</h2><div class="card scroll"><table>${g.h2h.map(x => `<tr><td>${x.d}</td><td>${esc(x.home)} – ${esc(x.away)}</td><td class="num">${x.hs}-${x.as}</td></tr>`).join('')}</table></div>`;
   if (g.players.length) h += `<h2>Proyección de jugadores</h2><div class="card scroll"><table><tr><th>Jugador</th><th>Eq.</th><th class="num">Min</th><th class="num">Pts</th><th class="num">Reb</th><th class="num">Ast</th><th class="num">Triples</th><th class="num">P+R+A</th><th>Puntos últimos 10</th></tr>
-    ${g.players.map(p => `<tr><td>${esc(p.name)}${p.starter ? '' : ' <span class="muted">(B)</span>'}</td><td>${esc(p.team)}</td><td class="num">${p.min}</td><td class="num">${p.pts}</td><td class="num">${p.reb}</td><td class="num">${p.ast}</td><td class="num">${p.tpm}</td><td class="num">${p.pra}</td><td class="muted">${p.l10pts.join(' · ')}</td></tr>`).join('')}</table>
-    <p class="muted">Proyección = ritmo por minuto reciente × minutos previstos × ritmo del partido × defensa rival.</p></div>`;
+    ${g.players.map(p => `<tr class="click" onclick="location.hash='player/${encodeURIComponent(p.id || '')}'"><td>${esc(p.name)}${p.starter ? '' : ' <span class="muted">(B)</span>'}</td><td>${esc(p.team)}</td><td class="num">${p.min}</td><td class="num">${p.pts}</td><td class="num">${p.reb}</td><td class="num">${p.ast}</td><td class="num">${p.tpm}</td><td class="num">${p.pra}</td><td class="muted">${p.l10pts.join(' · ')}</td></tr>`).join('')}</table>
+    <p class="muted">Proyección = ritmo por minuto reciente × minutos previstos × ritmo del partido × defensa rival. Pulsa un jugador para ver su ficha con gráficos.</p></div>`;
   return h;
 }
 
