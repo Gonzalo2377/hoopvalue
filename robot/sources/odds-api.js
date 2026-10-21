@@ -8,8 +8,6 @@
    así que el plan gratuito (500 créditos/mes) alcanza de sobra.
    Devuelve las cuotas ya normalizadas por casa.
    ============================================================ */
-const { getJSON } = require('../lib/http');
-
 const HOST = 'https://api.the-odds-api.com/v4';
 const SPORT = 'basketball_euroleague';
 
@@ -40,13 +38,33 @@ function normalize(ev) {
   return { oddsId: ev.id, home: ev.home_team, away: ev.away_team, start: ev.commence_time, books };
 }
 
+/* una petición; devuelve { data } o { status, msg } para poder explicar el fallo en el log */
+async function request(key, regions, markets) {
+  const url = `${HOST}/sports/${SPORT}/odds?apiKey=${encodeURIComponent(key.trim())}&regions=${regions}&markets=${markets}&oddsFormat=decimal&dateFormat=iso`;
+  try {
+    const r = await fetch(url);
+    track(r);
+    const body = await r.text();
+    if (!r.ok) { let msg = body; try { msg = JSON.parse(body).message || body; } catch (e) {} return { status: r.status, msg: String(msg).slice(0, 200) }; }
+    return { data: JSON.parse(body) };
+  } catch (e) { return { status: 0, msg: e.message }; }
+}
+
 async function fetchOdds(key, { regions = 'eu,uk', markets = 'h2h,spreads,totals' } = {}) {
   if (!key) return null;
-  const url = `${HOST}/sports/${SPORT}/odds?apiKey=${key}&regions=${regions}&markets=${markets}&oddsFormat=decimal&dateFormat=iso`;
-  const j = await getJSON(url, { onResponse: track });
-  if (!Array.isArray(j)) { console.log('· The Odds API: sin datos (¿clave o créditos agotados?)'); return null; }
-  console.log(`· The Odds API: ${j.length} partidos con cuotas · créditos restantes ${credits.remaining}`);
-  return j.map(normalize);
+  /* si la API rechaza la combinación (422), se prueba algo más sencillo */
+  const tries = [[regions, markets], ['eu', markets], ['eu', 'h2h']];
+  for (const [rg, mk] of tries) {
+    const res = await request(key, rg, mk);
+    if (res.data && Array.isArray(res.data)) {
+      console.log(`· The Odds API (${rg} · ${mk}): ${res.data.length} partidos con cuotas · créditos restantes ${credits.remaining}`);
+      return res.data.map(normalize);
+    }
+    console.log(`· The Odds API (${rg} · ${mk}): HTTP ${res.status} → ${res.msg}`);
+    if (res.status === 401) { console.log('  · la clave ODDS_API_KEY no es válida: revisa el secret (sin espacios ni saltos de línea)'); return null; }
+    if (res.status === 429) { console.log('  · créditos agotados o demasiadas peticiones'); return null; }
+  }
+  return null;
 }
 
 module.exports = { fetchOdds, credits };
