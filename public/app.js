@@ -34,6 +34,7 @@ const rec = r => r ? `${r.w}-${r.l}` : '—';
 const tierBadge = t => `<span class="badge tier-${t}">${t} · ${TIER[t]}</span>`;
 
 function pickCard(p, hero) {
+  if (p.market === 'prop') return propPickCard(p, hero);
   const sig = (p.signals || []).map(s => `<li class="${s.ok ? '' : 'no'}">${esc(s.txt)}</li>`).join('');
   return `<div class="card ${hero ? 'hero' : ''}">
     ${hero ? '<div class="kicker">Pick más seguro del día</div>' : ''}
@@ -71,7 +72,10 @@ function viewPicks() {
     if (T.combo) h += `<h2>Combinada segura</h2><div class="card"><div class="row"><b>${T.combo.legs.length} selecciones</b><span class="sp"></span><span class="odd">${T.combo.odd.toFixed(2)}</span></div>
       <ul class="sig">${T.combo.legs.map(l => `<li>${esc(l.label)} <span class="muted">(${l.odd.toFixed(2)} · ${pct(l.pFinal)})</span></li>`).join('')}</ul>
       <div class="muted" style="margin-top:6px">Probabilidad conjunta ${pct(T.combo.prob)} · valor esperado ${sgn((T.combo.ev * 100).toFixed(1))}%</div></div>`;
-    if (T.picks.length > 1) h += `<h2>Resto de picks del día</h2><div class="grid">${T.picks.slice(1).map(p => pickCard(p)).join('')}</div>`;
+    const rest = T.picks.slice(1), teamP = rest.filter(p => p.market !== 'prop'), propP = rest.filter(p => p.market === 'prop');
+    if (teamP.length) h += `<h2>Picks de partido</h2><div class="grid">${teamP.map(p => pickCard(p)).join('')}</div>`;
+    if (propP.length) h += `<h2>Picks de jugadores</h2><div class="grid">${propP.map(p => pickCard(p)).join('')}</div>`;
+    setTimeout(hydratePropCards, 0);
   }
   if (T.games.length) h += `<h2>Partidos</h2>${gamesGrid(T.games)}`;
   return h;

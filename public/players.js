@@ -204,3 +204,70 @@ function renderLog(data, st, line) {
     [...data].reverse().map(({ r, v }) => `<tr><td>${r.d}</td><td>${r.h ? 'vs' : '@'} ${esc(teamName(r.o))}</td><td class="${r.w ? 'good' : 'bad'}">${r.w ? 'V' : 'D'} ${r.sc}</td><td class="num">${r.min}</td><td class="num">${r.pts}</td><td class="num">${r.reb}</td><td class="num">${r.ast}</td><td class="num">${r.tpm}</td><td class="num">${r.stl}</td><td class="num">${r.blk}</td>
       <td class="num"><b>${v}</b> ${line == null ? '' : v > line ? '<span class="good">✓</span>' : v < line ? '<span class="bad">✗</span>' : '='}</td></tr>`).join('') + '</table>';
 }
+
+/* ---------- TARJETA VISUAL DE PICK DE JUGADOR ----------
+   Lo importante, de un vistazo: el gráfico de sus últimos 10 partidos
+   contra la línea del pick y tres datos grandes que explican el motivo. */
+const SHORT = { pts: 'puntos', reb: 'rebotes', ast: 'asistencias', tpm: 'triples', pra: 'P+R+A' };
+function propPickCard(p, hero) {
+  const side = p.side === 'over' ? 'Más de' : 'Menos de';
+  return `<div class="card pcard ${hero ? 'hero' : ''}" data-prop='${esc(JSON.stringify({ id: p.playerId, team: p.team, stat: p.stat, line: p.line, side: p.side }))}'>
+    ${hero ? '<div class="kicker">Pick más seguro del día</div>' : ''}
+    <div class="row">
+      <div><div class="pc-player">${esc(p.player)}</div><div class="muted">${esc(p.match)} · ${new Date(p.start).toLocaleString('es-ES', { weekday: 'short', hour: '2-digit', minute: '2-digit' })}</div></div>
+      <span class="sp"></span>${tierBadge(p.tier)}
+    </div>
+    <div class="row pc-bet"><span>${side} <b>${p.line}</b> ${SHORT[p.stat] || p.stat}</span><span class="sp"></span><span class="odd">${p.odd.toFixed(2)}</span></div>
+    <div class="pc-chart"><p class="muted">Cargando gráfico…</p></div>
+    <div class="pc-nums">
+      <div><b class="pc-hits">—</b><small>últimos 10</small></div>
+      <div><b>${p.proj}</b><small>proyección (línea ${p.line})</small></div>
+      <div><b>${Math.round(p.pFinal * 100)}%</b><small>probabilidad</small></div>
+    </div>
+    <div class="pc-chips"></div>
+    <div class="row" style="margin-top:6px"><a href="#player/${encodeURIComponent(p.playerId)}" class="link">Ver ficha y filtros →</a><span class="sp"></span><span class="muted small">${esc(bookName(p.book))}${p.estimated ? ' · prob. de la casa estimada' : ''}</span></div>
+  </div>`;
+}
+
+/* gráfico pequeño: barras sin ejes, línea discontinua, rival debajo */
+function miniChart(rows, stat, line, side) {
+  const W = 300, H = 112, padT = 16, padB = 18, n = rows.length, gap = 4;
+  const bw = (W - gap * (n + 1)) / n;
+  const vals = rows.map(r => statVal(r, stat));
+  const maxV = Math.max(1, ...vals, line) * 1.15;
+  const y = v => padT + (H - padT - padB) * (1 - v / maxV);
+  let s = `<svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="Últimos ${n} partidos frente a la línea ${line}">
+    <defs><pattern id="hatchm" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="5" height="5" fill="var(--bad)"/><line x1="0" y1="0" x2="0" y2="5" stroke="var(--panel)" stroke-width="1.6" opacity=".45"/></pattern></defs>`;
+  rows.forEach((r, i) => {
+    const v = vals[i], x = gap + i * (bw + gap), top = y(v), h = Math.max(1, y(0) - top);
+    const ok = side === 'over' ? v > line : v < line;
+    s += `<path d="${roundTop(x, top, bw, h, Math.min(3, bw / 2, h))}" fill="${ok ? 'var(--good)' : 'url(#hatchm)'}"><title>${r.d} ${r.h ? 'vs' : '@'} ${r.o}: ${v}</title></path>
+      <text x="${x + bw / 2}" y="${top - 4}" text-anchor="middle" class="mc-val">${v}</text>
+      <text x="${x + bw / 2}" y="${H - 5}" text-anchor="middle" class="mc-lbl">${esc(r.o)}</text>`;
+  });
+  s += `<line x1="0" x2="${W}" y1="${y(line)}" y2="${y(line)}" class="pline"/><line x1="0" x2="${W}" y1="${y(0)}" y2="${y(0)}" class="base"/></svg>`;
+  return s;
+}
+
+/* rellena las tarjetas con el historial del jugador (carga perezosa por equipo) */
+async function hydratePropCards() {
+  const cards = [...document.querySelectorAll('.pcard[data-prop]')];
+  if (!cards.length) return;
+  await loadPlayersIndex();
+  for (const c of cards) {
+    const d = JSON.parse(c.dataset.prop);
+    const rows = ((await loadTeam(d.team)) || {})[d.id] || [];
+    const last = rows.slice(-10);
+    const chart = c.querySelector('.pc-chart');
+    if (!last.length) { chart.innerHTML = '<p class="muted">Sin partidos previos.</p>'; continue; }
+    chart.innerHTML = miniChart(last, d.stat, d.line, d.side);
+    const ok = r => d.side === 'over' ? statVal(r, d.stat) > d.line : statVal(r, d.stat) < d.line;
+    const hits = last.filter(ok).length;
+    const h = c.querySelector('.pc-hits');
+    h.textContent = `${hits}/${last.length}`; h.className = 'pc-hits ' + (hits / last.length >= 0.6 ? 'good' : hits / last.length >= 0.4 ? '' : 'bad');
+    /* chips: dónde juega y contra quién */
+    const pl = PX.index && PX.index.players.find(x => x.id === d.id), nx = pl && pl.next;
+    const chip = (label, list) => list.length ? `<span class="pchip ${list.filter(ok).length / list.length >= 0.5 ? 'ok' : 'ko'}">${label}: ${list.filter(ok).length}/${list.length}</span>` : '';
+    c.querySelector('.pc-chips').innerHTML = nx ? chip(nx.home ? 'En casa' : 'Fuera', rows.filter(r => !!r.h === !!nx.home).slice(-10)) + chip(`vs ${teamName(nx.opp)}`, rows.filter(r => r.o === nx.opp)) : '';
+  }
+}
