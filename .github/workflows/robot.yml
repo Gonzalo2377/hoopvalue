@@ -2,6 +2,7 @@ name: Robot Euroliga
 
 # Tres pasadas al día (hora UTC; Madrid = UTC+1/+2):
 #   07:10  análisis y picks del día (cuotas de apertura)
+#   12:10  cuotas de JUGADORES (las casas las publican el mismo día del partido)
 #   16:40  refresco de cuotas antes de los partidos (≈ cierre) y picks nuevos
 #   23:20  solo resultados: liquida los picks (0 créditos de cuotas)
 # Para dispararlo a mano: pestaña Actions → Robot Euroliga → Run workflow.
@@ -9,6 +10,7 @@ name: Robot Euroliga
 on:
   schedule:
     - cron: '10 7 * * *'
+    - cron: '10 12 * * *'
     - cron: '40 16 * * *'
     - cron: '20 23 * * *'
   workflow_dispatch: {}

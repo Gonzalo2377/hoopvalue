@@ -88,6 +88,7 @@ function viewPlayer(id) {
       <span id="plinesrc" class="muted"></span>
       <button class="chip" onclick="setPS('${esc(p.id)}','line',null)">Restablecer</button>
     </div>
+    ${ladderChips(p, st)}
     <div id="psummary" class="row" style="margin:6px 0 2px"></div>
     <div id="pchart" class="scroll chart-wrap"></div>
     <div id="ptip" class="tip" role="status" hidden></div>
@@ -99,9 +100,18 @@ function viewPlayer(id) {
 /* cambia un filtro y repinta la ficha sin mover la página */
 function setPS(id, k, v) { PX.state[id][k] = v; $app.innerHTML = viewPlayer(id); }
 
+/* escalones de la casa (10+, 15+, 20+…): un clic pone esa línea en el gráfico */
+function ladderChips(p, st) {
+  const L = p.lines && p.lines[st.stat];
+  if (!L || !L.ladder || L.ladder.length < 2) return '';
+  return `<div class="filters"><span class="muted">Líneas de ${bookName(L.overBook)}:</span><div class="chips">${L.ladder.map(r => `<button class="chip ${(st.line != null ? st.line : L.line) === r.line ? 'on' : ''}" onclick="setPS('${esc(p.id)}','line',${r.line})">más de ${r.line} @ ${r.odd || '—'}</button>`).join('')}</div></div>`;
+}
+
 /* línea por defecto: la de la casa; si no hay, la proyección */
+const bookName = b => /kambi|unibet/i.test(b || '') ? 'Unibet' : (b || 'Casa');
 function defaultLine(p, stat) {
-  if (p.lines && p.lines[stat]) return { v: p.lines[stat].line, src: `Casa de apuestas (${p.lines[stat].books} casas · más ${p.lines[stat].over || '—'} / menos ${p.lines[stat].under || '—'})` };
+  const L = p.lines && p.lines[stat];
+  if (L) return { v: L.line, src: `${bookName(L.overBook)}: más de ${L.line} @ ${L.over || '—'}${L.under ? ` · menos @ ${L.under}` : ''}` };
   if (p.proj && p.proj[stat] != null) return { v: p.proj[stat], src: 'Proyección HoopValue (sin cuota de la casa)' };
   return { v: null, src: 'Sin línea' };
 }
@@ -163,7 +173,9 @@ function renderPlayerChart(p, rows) {
       tip.hidden = false;
       tip.innerHTML = `<b>${d.r.d}</b> · ${d.r.h ? 'vs' : '@'} ${esc(teamName(d.r.o))}<br>${STAT_LABEL[st.stat]}: <b>${d.v}</b>${line != null ? ` (${d.v > line ? 'supera' : d.v < line ? 'por debajo de' : 'igual a'} ${line})` : ''}<br>${d.r.min} min · ${d.r.pts} pts · ${d.r.reb} reb · ${d.r.ast} ast<br><span class="muted">${d.r.w ? 'Victoria' : 'Derrota'} ${d.r.sc}${d.r.st ? ' · titular' : ''}</span>`;
       const b = box.getBoundingClientRect(), gx = (e.clientX || b.left) - b.left + box.scrollLeft;
-      tip.style.left = Math.min(Math.max(gx - 90, 0), b.width - 190) + 'px'; tip.style.top = '40px';
+      const card = box.parentElement.getBoundingClientRect();
+      tip.style.left = Math.min(Math.max(gx - 90 + (b.left - card.left), 0), card.width - 200) + 'px';
+      tip.style.top = (b.top - card.top + 4) + 'px';
     };
     g.addEventListener('mousemove', show); g.addEventListener('click', show); g.addEventListener('mouseleave', () => { tip.hidden = true; });
   });

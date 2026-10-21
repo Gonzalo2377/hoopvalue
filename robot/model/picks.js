@@ -166,23 +166,33 @@ function evaluateProps(entry, rows, wModel) {
   const last10 = rows.slice(-10);
   for (const stat of Object.keys(STAT_NAME)) {
     const L = entry.lines[stat], mu = entry.proj[stat], s = entry.proj.sd && entry.proj.sd[stat];
-    if (!L || !L.over || !L.under || mu == null || !s) continue;
-    const pM = twoWay([{ book: 'mejor', a: L.over, b: L.under }]);
-    if (!pM) continue;
+    if (!L || mu == null || !s) continue;
     const val = r => stat === 'pra' ? r.pts + r.reb + r.ast : r[stat];
-    const pOv = clamp(pOver(mu, s, L.line), 0.03, 0.97);
-    [['over', pOv, pM.pA, L.over, L.overBook], ['under', 1 - pOv, pM.pB, L.under, L.underBook]].forEach(([side, pModel, pMarket, odd, book]) => {
-      const hits = last10.filter(r => side === 'over' ? val(r) > L.line : val(r) < L.line).length;
-      const pFinal = wModel * pModel + (1 - wModel) * pMarket;
-      const ev = pFinal * odd - 1;
-      const hitAdj = last10.length >= 5 ? clamp((hits / last10.length - 0.5) * 0.06, -0.03, 0.03) : 0;
-      const safety = pFinal - 0.5 * Math.max(0, Math.abs(pModel - pMarket) - 0.03) + hitAdj;
-      out.push({ gameId: entry.next.gameId, market: 'prop', stat, side, line: L.line, playerId: entry.id, player: entry.name, team: entry.team,
-        label: `${entry.name} ${side === 'over' ? 'más' : 'menos'} de ${L.line} ${STAT_NAME[stat]}`, odd: round(odd, 2), book,
-        pModel: round(pModel, 3), pMarket: round(pMarket, 3), pFinal: round(pFinal, 3), ev: round(ev, 3), safety: round(safety, 3), fair: round(1 / pFinal, 2),
-        proj: mu, hits: `${hits}/${last10.length}`, signals: [{ ok: side === 'over' ? mu > L.line : mu < L.line, txt: `Proyección ${mu} (línea ${L.line})` }, { ok: hits / Math.max(1, last10.length) > 0.5, txt: `Cumplió en ${hits} de sus últimos ${last10.length}` }],
-        qualifies: odd >= CFG.minOdd && pFinal >= CFG.minProb && ev >= CFG.minEV });
-    });
+    /* cada línea ofrecida: con «más» y «menos» se quita el margen exacto;
+       con un solo lado (escalera de Kambi) se estima quitando un margen típico */
+    const offers = L.ladder && L.ladder.length ? L.ladder.map(r => ({ line: r.line, over: r.odd, under: r.line === L.line ? L.under : null }))
+      : [{ line: L.line, over: L.over, under: L.under }];
+    for (const o of offers) {
+      if (!o.over) continue;
+      const pOv = clamp(pOver(mu, s, o.line), 0.03, 0.97);
+      const pM = o.under ? twoWay([{ book: 'casa', a: o.over, b: o.under }]) : { pA: clamp(1 / o.over / (L.margin || 1.08), 0.02, 0.98) };
+      if (!pM) continue;
+      const sides = [['over', pOv, pM.pA, o.over, L.overBook]];
+      if (o.under) sides.push(['under', 1 - pOv, pM.pB, o.under, L.underBook]);
+      sides.forEach(([side, pModel, pMarket, odd, book]) => {
+        const hits = last10.filter(r => side === 'over' ? val(r) > o.line : val(r) < o.line).length;
+        const pFinal = wModel * pModel + (1 - wModel) * pMarket;
+        const ev = pFinal * odd - 1;
+        const hitAdj = last10.length >= 5 ? clamp((hits / last10.length - 0.5) * 0.06, -0.03, 0.03) : 0;
+        const safety = pFinal - 0.5 * Math.max(0, Math.abs(pModel - pMarket) - 0.03) + hitAdj;
+        out.push({ gameId: entry.next.gameId, market: 'prop', stat, side, line: o.line, playerId: entry.id, player: entry.name, team: entry.team,
+          label: `${entry.name} ${side === 'over' ? 'más' : 'menos'} de ${o.line} ${STAT_NAME[stat]}`, odd: round(odd, 2), book,
+          pModel: round(pModel, 3), pMarket: round(pMarket, 3), pFinal: round(pFinal, 3), ev: round(ev, 3), safety: round(safety, 3), fair: round(1 / pFinal, 2),
+          proj: mu, hits: `${hits}/${last10.length}`, estimated: !o.under,
+          signals: [{ ok: side === 'over' ? mu > o.line : mu < o.line, txt: `Proyección ${mu} (línea ${o.line})` }, { ok: hits / Math.max(1, last10.length) > 0.5, txt: `Cumplió en ${hits} de sus últimos ${last10.length}` }],
+          qualifies: odd >= CFG.minOdd && pFinal >= CFG.minProb && ev >= CFG.minEV });
+      });
+    }
   }
   return out;
 }

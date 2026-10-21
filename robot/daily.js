@@ -20,6 +20,7 @@ const el = require('./sources/euroleague');
 const odds = require('./sources/odds-api');
 const store = require('./odds-store');
 const oddspapi = require('./sources/oddspapi-props');
+const kambi = require('./sources/kambi-props');
 const playersData = require('./players-data');
 const { matchTeam } = require('./lib/teams');
 const { teamRows, rate } = require('./model/ratings');
@@ -132,7 +133,10 @@ async function main() {
   }
 
   /* ---- 4b. jugadores: cuotas de props (OddsPapi, opcional) + datos para la web ---- */
-  const props = PAPI_KEY ? await oddspapi.fetchProps(PAPI_KEY, upcoming, teams, { max: +(process.env.PROPS_MAX || 8) }) : {};
+  /* Kambi (gratis, sin clave) + OddsPapi (si hay clave). Si los dos dan la misma estadística, se queda la que tenga «más» y «menos». */
+  const props = await kambi.fetchProps(upcoming, teams);
+  const papi = PAPI_KEY ? await oddspapi.fetchProps(PAPI_KEY, upcoming, teams, { max: +(process.env.PROPS_MAX || 8) }) : {};
+  Object.entries(papi).forEach(([k, stats]) => { props[k] = props[k] || {}; Object.entries(stats).forEach(([st, v]) => { if (st === 'name' || st === 'game') return; if (!props[k][st] || (v.under && !props[k][st].under)) props[k][st] = v; }); });
   const index = playersData.build({ games, teams, logs, R, season, now, props });
   const rowsOf = id => (logs[id] ? logs[id].games : []).map(x => ({ pts: x.pts, reb: x.reb, ast: x.ast, tpm: x.tpm }));
   const soonIds = new Set(upcoming.map(g => g.id));

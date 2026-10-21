@@ -210,7 +210,7 @@ function viewHow() {
     <li>Nada se borra: aplazados o sin resultado en 7 días quedan como anulados.</li>
     <li>Medimos el <b>CLV</b>: si nuestras cuotas son mejores que las de cierre, el método funciona aunque haya rachas malas.</li></ul>
   <h2>Fuentes</h2>
-  <ul><li>Resultados, boxscores y estadísticas: API oficial de la Euroliga.</li><li>Cuotas: The Odds API (casas europeas y británicas).</li></ul>
+  <ul><li>Resultados, boxscores y estadísticas: API oficial de la Euroliga.</li><li>Cuotas de partido: The Odds API (casas europeas y británicas).</li><li>Cuotas de jugadores: oferta pública de Kambi (Unibet), el día del partido. Solo publica el lado «más de», así que su probabilidad se estima quitando un margen típico del 8 %.</li></ul>
   <p class="muted">Ningún modelo garantiza resultados. Apuesta solo lo que puedas permitirte perder.</p></div>`;
 }
 

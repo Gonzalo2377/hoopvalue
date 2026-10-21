@@ -13,6 +13,16 @@ const PL = require('./model/players');
 const OUT = path.join(ROOT, 'public', 'data', 'players');
 const COMBOS = { pr: ['pts', 'reb'], pa: ['pts', 'ast'], ra: ['reb', 'ast'] };
 
+/* las casas escriben los nombres a su manera: "Wendell Moore Jr" / "Daniel Oturu" frente a
+   "Wendell Moore" / "Dan Oturu". Se prueba: exacto → sin sufijos → inicial + apellido (si es único) */
+const base = n => norm(n).replace(/(jr|sr|ii|iii|iv)/g, '').replace(/s+/g, ' ').trim();
+const initialKey = n => { const t = base(n).split(' '); return t.length > 1 ? t[0][0] + ' ' + t[t.length - 1] : t[0]; };
+function propsLookup(props) {
+  const byBase = {}, byInitial = {};
+  Object.entries(props).forEach(([k, v]) => { byBase[base(k)] = v; (byInitial[initialKey(k)] = byInitial[initialKey(k)] || []).push(v); });
+  return name => props[norm(name)] || byBase[base(name)] || ((byInitial[initialKey(name)] || []).length === 1 ? byInitial[initialKey(name)][0] : null);
+}
+
 /* ctx: { games, teams, logs, R, season, now, props } */
 function build({ games, teams, logs, R, season, now, props }) {
   const byId = Object.fromEntries(games.map(g => [g.id, g]));
@@ -22,7 +32,7 @@ function build({ games, teams, logs, R, season, now, props }) {
   });
 
   /* jugadores que han jugado esta temporada; equipo = el del último partido */
-  const index = [], perTeam = {};
+  const index = [], perTeam = {}, lineOf = propsLookup(props);
   for (const L of Object.values(logs)) {
     const cur = L.games.filter(x => byId[x.gid] && byId[x.gid].season === season);
     if (!cur.length) continue;
@@ -56,7 +66,7 @@ function build({ games, teams, logs, R, season, now, props }) {
       return a;
     };
     const curRows = rows.filter(r => r.s === season);
-    const line = props[norm(L.name)] || null;
+    const line = lineOf(L.name);
     const entry = { id: L.id, name: L.name, team, pos: L.pos || '', next: nx, proj,
       avg: avg(curRows), home: avg(curRows.filter(r => r.h)), away: avg(curRows.filter(r => !r.h)), l5: avg(rows.slice(-5)),
       vsNext: nx ? avg(rows.filter(r => r.o === nx.opp)) : null, lines: line ? stripMeta(line) : null };
