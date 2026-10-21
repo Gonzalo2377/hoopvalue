@@ -1,0 +1,22 @@
+{
+  "nba": {
+    "margin": 14.66,
+    "total": 18.9,
+    "bias": {
+      "margin": 0,
+      "total": -0.91
+    },
+    "games": 1239,
+    "updatedAt": "2026-10-21T08:41:08.728Z"
+  },
+  "euroleague": {
+    "margin": 11.93,
+    "total": 17.12,
+    "bias": {
+      "margin": 0.24,
+      "total": 0.8
+    },
+    "games": 924,
+    "updatedAt": "2026-10-21T08:59:14.262Z"
+  }
+}

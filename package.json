@@ -1,0 +1,14 @@
+{
+  "name": "hoopvalue",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Análisis de la Euroliga y picks más seguros con historial verificable",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "backfill": "node robot/backfill.js",
+    "backtest": "node robot/backtest.js",
+    "daily": "node robot/daily.js",
+    "results": "node -e \"process.env.ODDS_MODE='results';require('./robot/daily.js')\"",
+    "serve": "node serve.js"
+  }
+}
