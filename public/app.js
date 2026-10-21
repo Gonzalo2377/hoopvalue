@@ -47,7 +47,7 @@ function pickCard(p, hero) {
       <div><small>Modelo</small><b>${pct(p.pModel)}</b></div>
       <div><small>Cuota justa</small><b>${p.fair}</b></div>
       <div><small>Valor esperado</small><b class="${p.ev >= 0 ? 'good' : 'bad'}">${sgn((p.ev * 100).toFixed(1))}%</b></div>
-      <div><small>Referencia</small><b>${p.sharp ? 'Pinnacle/Betfair' : 'Consenso'}</b></div>
+      <div><small>Referencia</small><b>${p.sharp ? 'Pinnacle' : 'Consenso de casas'}</b></div>
     </div>
     ${sig ? `<ul class="sig">${sig}</ul>` : ''}
     <div class="row" style="margin-top:8px"><a href="#game/${encodeURIComponent(p.gameId)}" style="color:var(--accent2)">Ver análisis completo →</a></div>
@@ -198,7 +198,7 @@ function viewHow() {
   return `<div class="how"><h2>Cómo elegimos el pick más seguro</h2>
   <p>No buscamos la cuota más alta, sino la apuesta con <b>más probabilidad real de acertar</b> que además no tenga valor esperado negativo.</p>
   <ol>
-    <li><b>Probabilidad del mercado:</b> quitamos el margen de las casas y damos prioridad a las más afinadas (Pinnacle, Betfair). Es la referencia más fiable que existe.</li>
+    <li><b>Probabilidad del mercado:</b> quitamos el margen de las casas tomamos el consenso de todas las casas y damos prioridad a Pinnacle, la más afinada, cuando coincide con él. Es la referencia más fiable que existe.</li>
     <li><b>Probabilidad del modelo:</b> ataque y defensa por 100 posesiones ajustados por rival, ritmo, factor cancha, descanso (semanas dobles) y bajas probables. Más peso a los partidos recientes.</li>
     <li><b>Mezcla prudente:</b> el modelo pesa un 12-20 % y el mercado el resto. Si el modelo discrepa mucho del mercado, el pick pierde seguridad (casi siempre el mercado sabe algo).</li>
     <li><b>Señales:</b> forma, momentum, descanso, casa/fuera, cara a cara, hándicap cubierto, ritmo… suman o restan un poco y se muestran con ✓ y ✗.</li>

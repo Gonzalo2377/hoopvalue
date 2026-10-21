@@ -17,7 +17,7 @@ const CFG = {
   minOdd: +(process.env.MIN_ODD || 1.30),
   minProb: 0.55,
   minEV: -0.03,
-  sharp: ['pinnacle', 'betfair_ex_eu', 'betfair_ex_uk', 'matchbook'],
+  sharp: ['pinnacle'],                       // los exchanges en Euroliga tienen muy poca liquidez
 };
 
 const median = a => { const v = [...a].sort((x, y) => x - y), n = v.length; return n ? (n % 2 ? v[(n - 1) / 2] : (v[n / 2 - 1] + v[n / 2]) / 2) : null; };
@@ -28,10 +28,15 @@ function twoWay(rows) {
   rows = rows.filter(r => r.a > 1 && r.b > 1);
   if (!rows.length) return null;
   const ma = median(rows.map(r => r.a)), mb = median(rows.map(r => r.b));
-  const sane = rows.filter(r => r.a <= ma * 1.15 && r.b <= mb * 1.15);   // fuera cuotas erróneas/desfasadas
-  const sharp = sane.filter(r => CFG.sharp.includes(r.book));
-  const fairRows = sharp.length ? sharp : sane;
-  const pa = mean(fairRows.map(r => noVig(r.a, r.b)));
+  /* fuera cuotas erróneas o desfasadas: precio muy por encima de la mediana o
+     probabilidad muy lejos del consenso (p. ej. Betfair Exchange con poco dinero) */
+  const pMed = median(rows.map(r => noVig(r.a, r.b)));
+  const sane = rows.filter(r => r.a <= ma * 1.15 && r.b <= mb * 1.15 && Math.abs(noVig(r.a, r.b) - pMed) <= 0.08);
+  if (!sane.length) return null;
+  const consensus = median(sane.map(r => noVig(r.a, r.b)));
+  /* las casas afinadas (Pinnacle) mandan solo si están de acuerdo con el consenso */
+  const sharp = sane.filter(r => CFG.sharp.includes(r.book) && Math.abs(noVig(r.a, r.b) - consensus) <= 0.04);
+  const pa = sharp.length ? mean(sharp.map(r => noVig(r.a, r.b))) : consensus;
   const bestA = sane.reduce((m, r) => r.a > m.price ? { price: r.a, book: r.book } : m, { price: 0 });
   const bestB = sane.reduce((m, r) => r.b > m.price ? { price: r.b, book: r.book } : m, { price: 0 });
   return { pA: pa, pB: 1 - pa, bestA, bestB, books: sane.length, sharp: sharp.length ? sharp.map(r => r.book) : null };
