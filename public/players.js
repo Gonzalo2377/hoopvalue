@@ -14,8 +14,10 @@ const STAT_LABEL = Object.fromEntries(STATS);
 
 async function loadPlayersIndex() {
   if (!PX.index) PX.index = await fetch('data/players/index.json?v=' + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null);
+  PX.tried = true;
   return PX.index;
 }
+const NO_DATA = '<p class="muted pad">Todavía no hay datos de jugadores: aparecerán tras la próxima ejecución del robot.</p>';
 async function loadTeam(code) {
   if (!PX.team[code]) PX.team[code] = await fetch(`data/players/${code}.json?v=` + Date.now()).then(r => r.ok ? r.json() : {}).catch(() => ({}));
   return PX.team[code];
@@ -25,7 +27,7 @@ const teamLogo = c => (PX.index && PX.index.teams[c] && PX.index.teams[c].logo) 
 
 /* ---------- LISTA ---------- */
 function viewPlayers() {
-  if (!PX.index) { loadPlayersIndex().then(() => { if (location.hash.startsWith('#players')) route(); }); return '<p class="muted pad">Cargando jugadores…</p>'; }
+  if (!PX.index) { if (PX.tried) return NO_DATA; loadPlayersIndex().then(() => { if (location.hash.startsWith('#players')) route(); }); return '<p class="muted pad">Cargando jugadores…</p>'; }
   const st = PX.state.list || (PX.state.list = { q: '', team: '', sort: 'pra' });
   const teams = Object.keys(PX.index.teams).sort((a, b) => teamName(a).localeCompare(teamName(b)));
   return `<h2>Jugadores</h2>
@@ -57,7 +59,7 @@ function renderPlayerRows() {
 /* ---------- FICHA ---------- */
 function viewPlayer(id) {
   id = decodeURIComponent(id || '');
-  if (!PX.index) { loadPlayersIndex().then(route); return '<p class="muted pad">Cargando…</p>'; }
+  if (!PX.index) { if (PX.tried) return NO_DATA; loadPlayersIndex().then(route); return '<p class="muted pad">Cargando…</p>'; }
   const p = PX.index.players.find(x => x.id === id);
   if (!p) return `<button class="back" onclick="history.back()">← Volver</button><p class="muted">Jugador no encontrado.</p>`;
   if (!PX.team[p.team]) { loadTeam(p.team).then(route); return '<p class="muted pad">Cargando partidos…</p>'; }
