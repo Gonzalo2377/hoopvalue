@@ -109,3 +109,22 @@ tr.click { cursor: pointer; } tr.click:hover td { background: var(--panel2); }
 /* el gráfico del pick no crece sin límite en tarjetas anchas (p. ej. el pick principal) */
 .pc-chart svg { display: block; width: 100%; max-width: 440px; height: auto; max-height: 150px; }
 .pcard.hero .pc-nums, .pcard.hero .pc-chips { max-width: 440px; }
+
+/* carrusel 3D de picks */
+.car { position: relative; perspective: 1400px; outline: none; margin: 4px 0 6px; overflow: hidden; padding: 6px 0 14px; }
+.car-stage { position: relative; transform-style: preserve-3d; transition: height .35s cubic-bezier(.2,0,0,1); touch-action: pan-y; user-select: none; }
+.car-item { position: absolute; top: 0; left: 50%; width: min(440px, 86vw); transform-origin: 50% 50%;
+  transition: transform .45s cubic-bezier(.2,0,0,1), opacity .45s cubic-bezier(.2,0,0,1), filter .45s; will-change: transform; cursor: grab; }
+.car-stage.dragging .car-item { transition: none; cursor: grabbing; }
+.car-item:not(.front) { filter: brightness(.7) saturate(.8); }
+.car-item:not(.front) a { pointer-events: none; }
+.car-item.front .card { box-shadow: 0 18px 50px rgba(0,0,0,.55), 0 0 0 1px rgba(255,122,26,.35); }
+.car-item .card { margin: 0; }
+.car-rank { font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent2); margin: 0 0 6px 4px; }
+.car-btn { position: absolute; top: 45%; z-index: 200; width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line); background: rgba(18,24,38,.9); color: var(--text); font-size: 24px; line-height: 1; }
+.car-btn:hover { border-color: var(--accent); } .car-btn.prev { left: 0; } .car-btn.next { right: 0; }
+.car-dots { display: flex; justify-content: center; gap: 6px; margin: 10px 0 4px; }
+.car-dots .dot { width: 8px; height: 8px; padding: 0; border-radius: 99px; border: 0; background: var(--line); transition: width .25s cubic-bezier(.2,0,0,1), background .25s; }
+.car-dots .dot.on { width: 22px; background: var(--accent); }
+@media (prefers-reduced-motion: reduce) { .car-item, .car-stage, .car-dots .dot { transition: none; } }
+@media (max-width: 640px) { .car-btn { display: none; } }

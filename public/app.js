@@ -68,14 +68,11 @@ function viewPicks() {
     h += `<div class="card"><h3>Hoy no hay ningún pick lo bastante seguro</h3><p class="muted">Ningún mercado supera el ${Math.round(0.55 * 100)} % con cuota ≥ ${T.meta.minOdd} sin valor esperado negativo. No apostar también es una decisión.</p></div>`;
   }
   if (T.picks.length) {
-    h += pickCard(T.picks[0], true);
+    h += `<h2>Picks del día <span class="muted small">· ${T.picks.length} · desliza para ver más</span></h2>` + carouselHTML(T.picks);
     if (T.combo) h += `<h2>Combinada segura</h2><div class="card"><div class="row"><b>${T.combo.legs.length} selecciones</b><span class="sp"></span><span class="odd">${T.combo.odd.toFixed(2)}</span></div>
       <ul class="sig">${T.combo.legs.map(l => `<li>${esc(l.label)} <span class="muted">(${l.odd.toFixed(2)} · ${pct(l.pFinal)})</span></li>`).join('')}</ul>
       <div class="muted" style="margin-top:6px">Probabilidad conjunta ${pct(T.combo.prob)} · valor esperado ${sgn((T.combo.ev * 100).toFixed(1))}%</div></div>`;
-    const rest = T.picks.slice(1), teamP = rest.filter(p => p.market !== 'prop'), propP = rest.filter(p => p.market === 'prop');
-    if (teamP.length) h += `<h2>Picks de partido</h2><div class="grid">${teamP.map(p => pickCard(p)).join('')}</div>`;
-    if (propP.length) h += `<h2>Picks de jugadores</h2><div class="grid">${propP.map(p => pickCard(p)).join('')}</div>`;
-    setTimeout(hydratePropCards, 0);
+    setTimeout(() => { initCarousel(); hydratePropCards(); }, 0);
   }
   if (T.games.length) h += `<h2>Partidos</h2>${gamesGrid(T.games)}`;
   return h;
