@@ -291,5 +291,147 @@
       "score": "90-81",
       "settledAt": "2026-10-21T20:21:24.312Z"
     }
-  ]
+  ],
+  "comboPending": [
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "el:E2026_62|prop|over|9.5|007027|pts",
+          "gameId": "el:E2026_62",
+          "start": "2026-10-22T18:05:00.000Z",
+          "match": "Maccabi – Real Madrid",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pts",
+          "playerId": "007027",
+          "player": "Theo Maledon",
+          "label": "Theo Maledon más de 9.5 puntos",
+          "odd": 1.32,
+          "pFinal": 0.738,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "el:E2026_69|prop|over|1.5|015160|reb",
+          "gameId": "el:E2026_69",
+          "start": "2026-10-23T18:45:00.000Z",
+          "match": "Paris – Valencia",
+          "market": "prop",
+          "side": "over",
+          "line": 1.5,
+          "stat": "reb",
+          "playerId": "015160",
+          "player": "Alize Johnson",
+          "label": "Alize Johnson más de 1.5 rebotes",
+          "odd": 1.32,
+          "pFinal": 0.75,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.74,
+      "prob": 0.554,
+      "ev": -0.036,
+      "start": "2026-10-22T18:05:00.000Z",
+      "createdAt": "2026-10-22T08:05:03.361Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "el:E2026_69|ml|away|||",
+          "gameId": "el:E2026_69",
+          "start": "2026-10-23T18:45:00.000Z",
+          "match": "Paris – Valencia",
+          "market": "ml",
+          "side": "away",
+          "line": null,
+          "label": "Gana Valencia",
+          "odd": 1.57,
+          "pFinal": 0.654,
+          "book": "ladbrokes_uk"
+        },
+        {
+          "id": "el:E2026_64|prop|over|4.5|013285|pts",
+          "gameId": "el:E2026_64",
+          "start": "2026-10-22T17:30:00.000Z",
+          "match": "Anadolu Efes – Besiktas",
+          "market": "prop",
+          "side": "over",
+          "line": 4.5,
+          "stat": "pts",
+          "playerId": "013285",
+          "player": "Devon Dotson",
+          "label": "Devon Dotson más de 4.5 puntos",
+          "odd": 1.4,
+          "pFinal": 0.716,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "el:E2026_65|prop|over|4.5|013290|pts",
+          "gameId": "el:E2026_65",
+          "start": "2026-10-22T18:00:00.000Z",
+          "match": "Bayern Munich – Dubai",
+          "market": "prop",
+          "side": "over",
+          "line": 4.5,
+          "stat": "pts",
+          "playerId": "013290",
+          "player": "Justinian Jessup",
+          "label": "Justinian Jessup más de 4.5 puntos",
+          "odd": 1.77,
+          "pFinal": 0.566,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 3.89,
+      "prob": 0.265,
+      "ev": 0.031,
+      "start": "2026-10-22T17:30:00.000Z",
+      "createdAt": "2026-10-22T08:05:03.361Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "el:E2026_69|prop|over|1.5|015160|reb",
+          "gameId": "el:E2026_69",
+          "start": "2026-10-23T18:45:00.000Z",
+          "match": "Paris – Valencia",
+          "market": "prop",
+          "side": "over",
+          "line": 1.5,
+          "stat": "reb",
+          "playerId": "015160",
+          "player": "Alize Johnson",
+          "label": "Alize Johnson más de 1.5 rebotes",
+          "odd": 1.32,
+          "pFinal": 0.75,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "el:E2026_64|prop|over|4.5|013285|pts",
+          "gameId": "el:E2026_64",
+          "start": "2026-10-22T17:30:00.000Z",
+          "match": "Anadolu Efes – Besiktas",
+          "market": "prop",
+          "side": "over",
+          "line": 4.5,
+          "stat": "pts",
+          "playerId": "013285",
+          "player": "Devon Dotson",
+          "label": "Devon Dotson más de 4.5 puntos",
+          "odd": 1.4,
+          "pFinal": 0.716,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.85,
+      "prob": 0.537,
+      "ev": -0.008,
+      "start": "2026-10-22T17:30:00.000Z",
+      "createdAt": "2026-10-22T08:05:03.361Z"
+    }
+  ],
+  "comboRecord": []
 }
