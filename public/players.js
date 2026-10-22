@@ -13,13 +13,13 @@ const statVal = (r, k) => k === 'pra' ? r.pts + r.reb + r.ast : k === 'pr' ? r.p
 const STAT_LABEL = Object.fromEntries(STATS);
 
 async function loadPlayersIndex() {
-  if (!PX.index) PX.index = await fetch('data/players/index.json?v=' + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null);
+  if (!PX.index) PX.index = await fetch(DATA() + 'players/index.json?v=' + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null);
   PX.tried = true;
   return PX.index;
 }
 const NO_DATA = '<p class="muted pad">Todavía no hay datos de jugadores: aparecerán tras la próxima ejecución del robot.</p>';
 async function loadTeam(code) {
-  if (!PX.team[code]) PX.team[code] = await fetch(`data/players/${code}.json?v=` + Date.now()).then(r => r.ok ? r.json() : {}).catch(() => ({}));
+  if (!PX.team[code]) PX.team[code] = await fetch(`${DATA()}players/${code}.json?v=` + Date.now()).then(r => r.ok ? r.json() : {}).catch(() => ({}));
   return PX.team[code];
 }
 const teamName = c => (PX.index && PX.index.teams[c] && PX.index.teams[c].name) || c;

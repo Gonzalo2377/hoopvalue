@@ -5,6 +5,7 @@ name: Robot Euroliga
 #   12:10  cuotas de JUGADORES (las casas las publican el mismo día del partido)
 #   16:40  refresco de cuotas antes de los partidos (≈ cierre) y picks nuevos
 #   23:20  solo resultados: liquida los picks (0 créditos de cuotas)
+# Cada pasada hace Euroliga y NBA (la NBA usa cuotas gratis: Unibet/Kambi + DraftKings).
 # Para dispararlo a mano: pestaña Actions → Robot Euroliga → Run workflow.
 # También se lanza solo al subir cambios de código (no con los commits de datos del robot).
 
@@ -42,10 +43,15 @@ jobs:
           ODDS_REGIONS: eu,uk
           ODDS_MODE: ${{ github.event.schedule == '20 23 * * *' && 'results' || '' }}
         run: node robot/daily.js
+      - name: Ejecutar robot NBA
+        continue-on-error: true            # si la NBA falla, la Euroliga se publica igual
+        env:
+          ODDS_MODE: ${{ github.event.schedule == '20 23 * * *' && 'results' || '' }}
+        run: node robot/daily-nba.js
       - name: Recalibrar modelo (lunes)
         if: github.event.schedule == '10 7 * * *'
         run: |
-          if [ "$(date -u +%u)" = "1" ]; then node robot/backtest.js; fi
+          if [ "$(date -u +%u)" = "1" ]; then node robot/backtest.js; node robot/backtest.js nba; fi
       - name: Guardar cambios
         run: |
           git config user.name  "hoopvalue-bot"

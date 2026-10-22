@@ -14,6 +14,7 @@ const { DAY } = require('../lib/util');
 
 const DEFAULTS = {
   euroleague: { halfLife: 50, prevSeasonFactor: 0.35, shrink: 3, hcaPrior: 3.2 },   // hca en puntos de margen
+  nba:        { halfLife: 40, prevSeasonFactor: 0.35, shrink: 4, hcaPrior: 2.4 },
 };
 
 /* posesiones estimadas de un equipo en un partido */

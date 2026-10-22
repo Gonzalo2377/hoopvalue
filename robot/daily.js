@@ -29,6 +29,7 @@ const { teamTrends, headToHead } = require('./model/trends');
 const PL = require('./model/players');
 const P = require('./model/picks');
 const S = require('./settle');
+const C = require('./combos');
 
 const KEY = process.env.ODDS_API_KEY || '';
 const PAPI_KEY = process.env.ODDSPAPI_KEY || '';
@@ -62,6 +63,9 @@ async function main() {
   const st = S.settleAll(book.pending, byId, now);
   st.settled.forEach(p => { const o = store.get(season, p.gameId); const c = store.clv(p, o && o.close); if (c) Object.assign(p, c); });
   book.pending = st.still; book.record = [...st.settled, ...book.record];
+  const cs = C.settle(book.comboPending || [], byId, now);
+  book.comboPending = cs.still; book.comboRecord = [...cs.settled, ...(book.comboRecord || [])];
+  if (cs.settled.length) console.log(`· liquidadas ${cs.settled.length} combinadas: ${cs.settled.map(c => c.result).join('')}`);
   if (st.settled.length) console.log(`· liquidados ${st.settled.length} picks: ${st.settled.map(p => p.result).join('')}`);
   if (RESULTS_ONLY) { saveRecord(book); writeJSON(PICKS_FILE, book, true); console.log('✓ solo resultados'); return; }
 
@@ -152,7 +156,9 @@ async function main() {
 
   /* ---- 5. picks del día + registro como pendientes ---- */
   picks.sort((a, b) => b.safety - a.safety);
-  const combo = safeCombo(picks);
+  const combos = C.build(picks);
+  const knownC = new Set([...(book.comboPending || []), ...(book.comboRecord || [])].map(C.comboKey));
+  combos.forEach(c => { if (!knownC.has(C.comboKey(c)) && Date.parse(c.start) > now) (book.comboPending = book.comboPending || []).push({ ...c, createdAt: new Date(now).toISOString() }); });
   const known = new Set([...book.pending, ...book.record].map(pickKey));
   picks.forEach(p => {
     if (known.has(pickKey(p)) || Date.parse(p.start) < now) return;
@@ -166,24 +172,13 @@ async function main() {
   writeJSON(path.join(OUT, 'today.json'), {
     meta: { updatedAt: new Date(now).toISOString(), season, oddsSource: KEY ? 'The Odds API' : null, credits: odds.credits, sig: SIG, minOdd: P.CFG.minOdd,
       nextGame: (games.find(g => g.status === 'scheduled' && Date.parse(g.date) > now) || {}).date || null },
-    picks, combo, games: outGames,
+    picks, combos, games: outGames,
   });
   writeJSON(path.join(OUT, 'teams.json'), teamsTable(R, games, teams, season, now));
   console.log(`✓ ${outGames.length} partidos · ${picks.length} picks (${picks.filter(p => p.tier === 'A').length} nivel A) · pendientes ${book.pending.length} · historial ${book.record.length}`);
 }
 
 const rt = r => r ? { off: round(r.off, 1), def: round(r.def, 1), net: round(r.net, 1), pace: round(r.pace, 1) } : null;
-
-/* combinada segura: 2-3 picks de partidos distintos, nivel A/B, prob. conjunta ≥ 40 % */
-function safeCombo(picks) {
-  const legs = picks.filter(p => p.tier !== 'C').slice(0, 3);
-  while (legs.length >= 2) {
-    const prob = legs.reduce((s, l) => s * l.pFinal, 1), odd = legs.reduce((s, l) => s * l.odd, 1);
-    if (prob >= 0.40) return { legs, odd: round(odd, 2), prob: round(prob, 3), ev: round(prob * odd - 1, 3) };
-    legs.pop();
-  }
-  return null;
-}
 
 function teamsTable(R, games, teams, season, now) {
   if (!R) return null;
@@ -194,7 +189,8 @@ function teamsTable(R, games, teams, season, now) {
 }
 
 function saveRecord(book) {
-  writeJSON(path.join(OUT, 'record.json'), { updatedAt: new Date().toISOString(), stats: S.stats(book.record), pending: book.pending, record: book.record });
+  writeJSON(path.join(OUT, 'record.json'), { updatedAt: new Date().toISOString(), stats: S.stats(book.record), pending: book.pending, record: book.record,
+    combos: { stats: C.stats(book.comboRecord || []), pending: book.comboPending || [], record: book.comboRecord || [] } });
 }
 
 main().catch(e => { console.error(e); process.exit(1); });

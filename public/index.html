@@ -20,7 +20,10 @@
     <button data-tab="record">Historial</button>
     <button data-tab="how">Cómo funciona</button>
   </nav>
-  <div class="league"><span class="pill">Euroliga</span></div>
+  <div class="league" role="group" aria-label="Liga">
+    <button data-league="euroleague" onclick="setLeague('euroleague')">Euroliga</button>
+    <button data-league="nba" onclick="setLeague('nba')">NBA</button>
+  </div>
 </header>
 <main id="app"><p class="muted pad">Cargando…</p></main>
 <footer class="foot">

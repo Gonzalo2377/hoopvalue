@@ -24,7 +24,7 @@ function propsLookup(props) {
 }
 
 /* ctx: { games, teams, logs, R, season, now, props } */
-function build({ games, teams, logs, R, season, now, props }) {
+function build({ games, teams, logs, R, season, now, props, out = OUT }) {
   const byId = Object.fromEntries(games.map(g => [g.id, g]));
   const next = {};                                                           // equipo → próximo partido
   games.filter(g => g.status === 'scheduled' && Date.parse(g.date) > now - 2 * 3600e3).forEach(g => {
@@ -56,6 +56,7 @@ function build({ games, teams, logs, R, season, now, props }) {
         proj = { min: p.min, pts: p.pts.mu, reb: p.reb.mu, ast: p.ast.mu, tpm: p.tpm.mu, pra: p.pra.mu };
         Object.entries(COMBOS).forEach(([k, [a1, a2]]) => { proj[k] = round(p[a1].mu + p[a2].mu, 1); });
         proj.sd = { pts: p.pts.sd, reb: p.reb.sd, ast: p.ast.sd, tpm: p.tpm.sd, pra: p.pra.sd };
+        Object.entries(COMBOS).forEach(([k, [a1, a2]]) => { proj.sd[k] = round(Math.sqrt(p[a1].sd ** 2 + p[a2].sd ** 2) * 0.9, 2); });   // las dos suelen ir algo correlacionadas
       }
     }
     const avg = list => {
@@ -74,8 +75,8 @@ function build({ games, teams, logs, R, season, now, props }) {
     (perTeam[team] = perTeam[team] || {})[L.id] = rows;
   }
   index.sort((a, b) => ((b.proj && b.proj.pra) || (b.avg && b.avg.pra) || 0) - ((a.proj && a.proj.pra) || (a.avg && a.avg.pra) || 0));
-  writeJSON(path.join(OUT, 'index.json'), { updatedAt: new Date(now).toISOString(), season, teams: Object.fromEntries(Object.keys(perTeam).map(c => [c, { name: teams[c].short, logo: teams[c].logo }])), players: index });
-  Object.entries(perTeam).forEach(([team, pl]) => writeJSON(path.join(OUT, `${team}.json`), pl));
+  writeJSON(path.join(out, 'index.json'), { updatedAt: new Date(now).toISOString(), season, teams: Object.fromEntries(Object.keys(perTeam).map(c => [c, { name: teams[c].short, logo: teams[c].logo }])), players: index });
+  Object.entries(perTeam).forEach(([team, pl]) => writeJSON(path.join(out, `${team}.json`), pl));
   return index;
 }
 const stripMeta = l => { const { name, game, ...rest } = l; return rest; };

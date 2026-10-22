@@ -43,10 +43,17 @@ function twoWay(rows) {
 }
 
 /* línea principal = la que ofrecen más casas */
+/* línea principal = la que ofrecen más casas; a igualdad (p. ej. una sola casa con
+   varias líneas), la de cuotas más equilibradas entre los dos lados */
 function mainLine(list) {
-  const c = {}; list.forEach(x => { c[x.point] = (c[x.point] || 0) + 1; });
-  const best = Object.entries(c).sort((a, b) => b[1] - a[1] || Math.abs(a[0]) - Math.abs(b[0]))[0];
-  return best ? +best[0] : null;
+  const c = {}, bal = {};
+  list.forEach(x => {
+    c[x.point] = (c[x.point] || 0) + 1;
+    const a = x.home || x.over, b = x.away || x.under;
+    if (a && b) bal[x.point] = Math.min(bal[x.point] == null ? 9 : bal[x.point], Math.abs(a - b));
+  });
+  const best = Object.keys(c).sort((a, b) => c[b] - c[a] || (bal[a] == null ? 9 : bal[a]) - (bal[b] == null ? 9 : bal[b]) || Math.abs(a) - Math.abs(b))[0];
+  return best != null ? +best : null;
 }
 
 /* cuotas normalizadas de un partido → mercados resumidos */
@@ -95,14 +102,14 @@ function signals(side, market, T, ctx) {
     const ov = (T.home.overL10.y + T.away.overL10.y), n = (T.home.overL10.n + T.away.overL10.n);
     if (n >= 8) { const r = ov / n; if (Math.abs(r - 0.5) >= 0.12) add((r > 0.5) === over, `Over en ${ov} de ${n} partidos recientes de ambos`); }
     if (ctx.pace != null && Math.abs(ctx.pace) >= 1.5) add((ctx.pace > 0) === over, ctx.pace > 0 ? 'Partido de ritmo alto' : 'Partido de ritmo lento');
-    if (T.home.shortRest || T.away.shortRest) add(!over, 'Semana doble: el cansancio suele bajar el acierto');
+    if (T.home.shortRest || T.away.shortRest) add(!over, 'Cansancio (poco descanso): suele bajar el acierto');
     return out;
   }
   const d10 = (me.l10.w - me.l10.l) - (op.l10.w - op.l10.l);
   if (Math.abs(d10) >= 4) add(d10 > 0, `Forma L10: ${me.l10.w}-${me.l10.l} frente a ${op.l10.w}-${op.l10.l}`);
   if (Math.abs(me.momentum) >= 4) add(me.momentum > 0, `Momentum: ${me.momentum > 0 ? '+' : ''}${me.momentum} pts sobre su media en los últimos 5`);
   if (Math.abs(op.momentum) >= 4) add(op.momentum < 0, `Rival con momentum ${op.momentum > 0 ? '+' : ''}${op.momentum}`);
-  if (op.shortRest && !me.shortRest) add(true, 'Rival con semana doble (menos descanso)'); else if (me.shortRest && !op.shortRest) add(false, 'Juega con semana doble (menos descanso)');
+  if (op.shortRest && !me.shortRest) add(true, 'Rival con menos descanso'); else if (me.shortRest && !op.shortRest) add(false, 'Llega con menos descanso');
   if (me.restDays != null && op.restDays != null && Math.abs(me.restDays - op.restDays) >= 2) add(me.restDays > op.restDays, `Descanso: ${me.restDays} días vs ${op.restDays}`);
   const injMe = side === 'home' ? ctx.injH : ctx.injA, injOp = side === 'home' ? ctx.injA : ctx.injH;
   if (injOp >= 2) add(true, `Bajas probables en el rival (−${injOp.toFixed(1)} pts estimados)`);
@@ -159,7 +166,7 @@ const tier = s => s >= 0.68 ? 'A' : s >= 0.61 ? 'B' : 'C';
 
 /* props de jugador: misma filosofía que los partidos.
    entry = jugador de players/index.json (proyección + línea de la casa), rows = su partido a partido */
-const STAT_NAME = { pts: 'puntos', reb: 'rebotes', ast: 'asistencias', tpm: 'triples', pra: 'pts+reb+ast' };
+const STAT_NAME = { pts: 'puntos', reb: 'rebotes', ast: 'asistencias', tpm: 'triples', pra: 'pts+reb+ast', pr: 'pts+reb', pa: 'pts+ast', ra: 'reb+ast' };
 function evaluateProps(entry, rows, wModel) {
   const out = [];
   if (!entry.proj || !entry.lines || !entry.next) return out;
@@ -167,7 +174,7 @@ function evaluateProps(entry, rows, wModel) {
   for (const stat of Object.keys(STAT_NAME)) {
     const L = entry.lines[stat], mu = entry.proj[stat], s = entry.proj.sd && entry.proj.sd[stat];
     if (!L || mu == null || !s) continue;
-    const val = r => stat === 'pra' ? r.pts + r.reb + r.ast : r[stat];
+    const val = r => stat === 'pra' ? r.pts + r.reb + r.ast : stat === 'pr' ? r.pts + r.reb : stat === 'pa' ? r.pts + r.ast : stat === 'ra' ? r.reb + r.ast : r[stat];
     /* cada línea ofrecida: con «más» y «menos» se quita el margen exacto;
        con un solo lado (escalera de Kambi) se estima quitando un margen típico */
     const offers = L.ladder && L.ladder.length ? L.ladder.map(r => ({ line: r.line, over: r.odd, under: r.line === L.line ? L.under : null }))

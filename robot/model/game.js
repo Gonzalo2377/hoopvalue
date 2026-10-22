@@ -5,17 +5,18 @@
 const { predict } = require('./ratings');
 
 /* semana doble (< 52 h desde el último partido) frente a un rival descansado */
-const SHORT_REST = { margin: 1.2, total: 0.8 };
+const SHORT_REST = { euroleague: { margin: 1.2, total: 0.8, txt: 'semana doble' }, nba: { margin: 1.6, total: 1.2, txt: 'back-to-back' } };
 
-function predictGame(R, home, away, neutral, { tH, tA, absH = 0, absA = 0 } = {}) {
+function predictGame(R, home, away, neutral, { tH, tA, absH = 0, absA = 0, league = 'euroleague' } = {}) {
+  const K = SHORT_REST[league] || SHORT_REST.euroleague;
   const base = predict(R, home, away, neutral);
   if (!base) return null;
   const p = { ...base, adj: [] };
   const sH = tH && tH.shortRest, sA = tA && tA.shortRest;
-  if (sH && !sA) { p.margin -= SHORT_REST.margin; p.total -= SHORT_REST.total; p.adj.push(`Local con semana doble (−${SHORT_REST.margin})`); }
-  if (sA && !sH) { p.margin += SHORT_REST.margin; p.total -= SHORT_REST.total; p.adj.push(`Visitante con semana doble (+${SHORT_REST.margin})`); }
-  if (absH) { p.margin -= absH; p.total -= absH * 0.5; p.adj.push(`Bajas probables local (−${absH.toFixed(1)})`); }
-  if (absA) { p.margin += absA; p.total -= absA * 0.5; p.adj.push(`Bajas probables visitante (+${absA.toFixed(1)})`); }
+  if (sH && !sA) { p.margin -= K.margin; p.total -= K.total; p.adj.push(`Local con ${K.txt} (−${K.margin})`); }
+  if (sA && !sH) { p.margin += K.margin; p.total -= K.total; p.adj.push(`Visitante con ${K.txt} (+${K.margin})`); }
+  if (absH) { p.margin -= absH; p.total -= absH * 0.5; p.adj.push(`Bajas local (−${absH.toFixed(1)})`); }
+  if (absA) { p.margin += absA; p.total -= absA * 0.5; p.adj.push(`Bajas visitante (+${absA.toFixed(1)})`); }
   p.ptsH = (p.total + p.margin) / 2; p.ptsA = (p.total - p.margin) / 2;
   return p;
 }

@@ -36,7 +36,8 @@ function view(g, team) {
 function record(list) { const w = list.filter(x => x.win).length; return { w, l: list.length - w }; }
 function tally(list, key, yes) { const xs = list.filter(x => x[key] && x[key] !== 'P'); return { y: xs.filter(x => x[key] === yes).length, n: xs.length }; }
 
-function teamTrends(games, team, asOf, season) {
+/* restHours: por debajo de esto el equipo llega cansado (Euroliga: semana doble < 52 h · NBA: back-to-back < 30 h) */
+function teamTrends(games, team, asOf, season, restHours = 52) {
   const all = teamGames(games, team, asOf).map(g => view(g, team));
   const cur = all.filter(v => v.season === season);
   const base = cur.length >= 5 ? cur : all.slice(-15);              // a principio de temporada tiramos de la anterior
@@ -44,7 +45,7 @@ function teamTrends(games, team, asOf, season) {
   let streak = 0; for (let i = all.length - 1; i >= 0; i--) { if (i === all.length - 1) streak = all[i].win ? 1 : -1; else if (all[i].win === (streak > 0)) streak += streak > 0 ? 1 : -1; else break; }
   const last = all[all.length - 1];
   const restDays = last ? Math.floor((asOf - Date.parse(last.date)) / DAY) : null;
-  const shortRest = !!last && (asOf - Date.parse(last.date)) < 52 * 3600 * 1000;
+  const shortRest = !!last && (asOf - Date.parse(last.date)) < restHours * 3600 * 1000;
   const games7 = all.filter(v => asOf - Date.parse(v.date) < 7 * DAY).length;
   const h1 = base.filter(v => v.h1 != null), q4 = base.filter(v => v.q4 != null);
   return {

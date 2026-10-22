@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-21T08:59:15.733Z",
-  "games": 924,
+  "generatedAt": "2026-10-22T08:01:50.188Z",
+  "games": 925,
   "sig": {
-    "margin": 11.93,
-    "total": 17.12
+    "margin": 11.92,
+    "total": 17.11
   },
   "mae": {
-    "margin": 9.28,
-    "total": 13.46
+    "margin": 9.27,
+    "total": 13.45
   },
   "winnerAccuracy": 0.653,
   "bySeason": {
@@ -24,8 +24,8 @@
       "acc": 0.645
     },
     "2026-27": {
-      "n": 10,
-      "acc": 0.7
+      "n": 11,
+      "acc": 0.727
     }
   },
   "calibration": [
@@ -37,20 +37,20 @@
     },
     {
       "range": "60-70%",
-      "n": 285,
+      "n": 284,
       "expected": 0.648,
-      "actual": 0.674
+      "actual": 0.673
     },
     {
       "range": "70-80%",
-      "n": 187,
-      "expected": 0.744,
-      "actual": 0.722
+      "n": 189,
+      "expected": 0.743,
+      "actual": 0.725
     },
     {
       "range": "80-90%",
       "n": 71,
-      "expected": 0.837,
+      "expected": 0.838,
       "actual": 0.859
     },
     {
@@ -60,5 +60,66 @@
       "actual": 1
     }
   ],
-  "picks": null
+  "picks": {
+    "all": {
+      "n": 1,
+      "w": 1,
+      "hit": 1,
+      "roi": 0.36,
+      "avgOdd": 1.36,
+      "avgP": 0.737
+    },
+    "byTier": {
+      "A": {
+        "n": 1,
+        "w": 1,
+        "hit": 1,
+        "roi": 0.36,
+        "avgOdd": 1.36,
+        "avgP": 0.737
+      },
+      "B": {
+        "n": 0,
+        "w": 0,
+        "hit": null,
+        "roi": null,
+        "avgOdd": null,
+        "avgP": null
+      },
+      "C": {
+        "n": 0,
+        "w": 0,
+        "hit": null,
+        "roi": null,
+        "avgOdd": null,
+        "avgP": null
+      }
+    },
+    "byMarket": {
+      "ml": {
+        "n": 1,
+        "w": 1,
+        "hit": 1,
+        "roi": 0.36,
+        "avgOdd": 1.36,
+        "avgP": 0.737
+      },
+      "spread": {
+        "n": 0,
+        "w": 0,
+        "hit": null,
+        "roi": null,
+        "avgOdd": null,
+        "avgP": null
+      },
+      "total": {
+        "n": 0,
+        "w": 0,
+        "hit": null,
+        "roi": null,
+        "avgOdd": null,
+        "avgP": null
+      }
+    }
+  }
 }

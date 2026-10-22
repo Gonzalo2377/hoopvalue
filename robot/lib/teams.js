@@ -9,6 +9,16 @@
 const { norm } = require('./util');
 
 const ALIASES = {
+  nba: {
+    ATL: ['atlanta hawks', 'hawks'], BOS: ['boston celtics', 'celtics'], BKN: ['brooklyn nets', 'nets'], CHA: ['charlotte hornets', 'hornets'],
+    CHI: ['chicago bulls', 'bulls'], CLE: ['cleveland cavaliers', 'cavaliers', 'cavs'], DAL: ['dallas mavericks', 'mavericks', 'mavs'],
+    DEN: ['denver nuggets', 'nuggets'], DET: ['detroit pistons', 'pistons'], GS: ['golden state warriors', 'warriors'], HOU: ['houston rockets', 'rockets'],
+    IND: ['indiana pacers', 'pacers'], LAC: ['los angeles clippers', 'la clippers', 'clippers'], LAL: ['los angeles lakers', 'la lakers', 'lakers'],
+    MEM: ['memphis grizzlies', 'grizzlies'], MIA: ['miami heat', 'heat'], MIL: ['milwaukee bucks', 'bucks'], MIN: ['minnesota timberwolves', 'timberwolves', 'wolves'],
+    NO: ['new orleans pelicans', 'pelicans'], NY: ['new york knicks', 'knicks'], OKC: ['oklahoma city thunder', 'thunder'], ORL: ['orlando magic', 'magic'],
+    PHI: ['philadelphia 76ers', '76ers', 'sixers'], PHX: ['phoenix suns', 'suns'], POR: ['portland trail blazers', 'trail blazers', 'blazers'],
+    SA: ['san antonio spurs', 'spurs'], SAC: ['sacramento kings', 'kings'], TOR: ['toronto raptors', 'raptors'], UTAH: ['utah jazz', 'jazz'], WSH: ['washington wizards', 'wizards'],
+  },
   euroleague: {
     BAR: ['fc barcelona', 'barcelona', 'barca'], MAD: ['real madrid'], PAM: ['valencia basket', 'valencia'], BAS: ['baskonia', 'saski baskonia', 'kosner baskonia'],
     OLY: ['olympiacos', 'olympiakos', 'olympiacos piraeus'], PAN: ['panathinaikos'], ULK: ['fenerbahce', 'fenerbahce beko'], IST: ['anadolu efes', 'efes'],

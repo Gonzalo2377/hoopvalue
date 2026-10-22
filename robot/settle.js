@@ -21,7 +21,7 @@ function result(p, g) {
   if (p.market === 'prop') {
     const row = (g.players || []).find(r => String(r[0]) === String(p.playerId));
     if (!row) return 'V';                                         // no jugó → anulada (regla de las casas)
-    const val = { pts: row[6], reb: row[7], ast: row[8], tpm: row[9], pra: row[6] + row[7] + row[8] }[p.stat];
+    const val = { pts: row[6], reb: row[7], ast: row[8], tpm: row[9], pra: row[6] + row[7] + row[8], pr: row[6] + row[7], pa: row[6] + row[8], ra: row[7] + row[8] }[p.stat];
     const v = p.side === 'over' ? val - p.line : p.line - val;
     return v > 0 ? 'W' : v < 0 ? 'L' : 'P';
   }

@@ -4,19 +4,19 @@
     "total": 18.9,
     "bias": {
       "margin": 0,
-      "total": -0.91
+      "total": -1.04
     },
     "games": 1239,
-    "updatedAt": "2026-10-21T08:41:08.728Z"
+    "updatedAt": "2026-10-22T08:01:46.443Z"
   },
   "euroleague": {
-    "margin": 11.93,
-    "total": 17.12,
+    "margin": 11.92,
+    "total": 17.11,
     "bias": {
       "margin": 0.24,
-      "total": 0.8
+      "total": 0.79
     },
-    "games": 924,
-    "updatedAt": "2026-10-21T08:59:14.262Z"
+    "games": 925,
+    "updatedAt": "2026-10-22T08:01:49.121Z"
   }
 }

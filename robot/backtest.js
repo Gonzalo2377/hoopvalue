@@ -11,11 +11,14 @@
    Guarda:
      data/model-params.json    → desviaciones típicas calibradas
      public/data/backtest.json → informe para la web
-   Uso: node robot/backtest.js
+   Uso: node robot/backtest.js        (Euroliga)
+        node robot/backtest.js nba    (NBA, con la línea de cierre de DraftKings)
    ============================================================ */
 const path = require('path');
 const { ROOT, writeJSON, readJSON, mean, sd, round, phi } = require('./lib/util');
-const H = require('./history');
+const LG = process.argv[2] === 'nba' ? 'nba' : 'euroleague';
+const H = LG === 'nba' ? require('./history-nba') : require('./history');
+const REST = LG === 'nba' ? 30 : 52;
 const { teamRows, rate } = require('./model/ratings');
 const { predictGame, modelWeight } = require('./model/game');
 const { teamTrends, headToHead } = require('./model/trends');
@@ -23,7 +26,6 @@ const P = require('./model/picks');
 const { result } = require('./settle');
 
 const PARAMS_FILE = path.join(ROOT, 'data', 'model-params.json');
-const LG = 'euroleague';
 
 function summarize(list) {
   const s = list.filter(x => x.res !== 'P');
@@ -49,8 +51,8 @@ function run(sig) {
       const h = R.teams[g.home], a = R.teams[g.away];
       if (!h || !a || h.weight < 4 || a.weight < 4) continue;
       const t0 = Date.parse(g.date);
-      const tH = teamTrends(games, g.home, t0, season), tA = teamTrends(games, g.away, t0, season);
-      const pred = predictGame(R, g.home, g.away, g.neutral, { tH, tA });
+      const tH = teamTrends(games, g.home, t0, season, REST), tA = teamTrends(games, g.away, t0, season, REST);
+      const pred = predictGame(R, g.home, g.away, g.neutral, { tH, tA, league: LG });
       if (!pred) continue;
       out.resid.margin.push((g.hs - g.as) - pred.margin); out.resid.total.push((g.hs + g.as) - pred.total);
       const pH = phi(pred.margin / sig.margin), ok = (pH > 0.5) === (g.hs > g.as);
@@ -70,10 +72,10 @@ function run(sig) {
 (async () => {
   const params = readJSON(PARAMS_FILE, {});
   /* 1ª pasada: calibrar desviaciones típicas con los errores reales */
-  const first = run({ margin: 11.5, total: 15 });
+  const first = run(LG === 'nba' ? { margin: 13.5, total: 18.5 } : { margin: 11.5, total: 15 });
   if (first.resid.margin.length < 50) { console.log(`· pocos partidos para backtest (${first.resid.margin.length}). Ejecuta antes: node robot/backfill.js`); return; }
   const sig = { margin: round(sd(first.resid.margin), 2), total: round(sd(first.resid.total), 2) };
-  params.euroleague = { ...sig, bias: { margin: round(mean(first.resid.margin), 2), total: round(mean(first.resid.total), 2) }, games: first.resid.margin.length, updatedAt: new Date().toISOString() };
+  params[LG] = { ...sig, bias: { margin: round(mean(first.resid.margin), 2), total: round(mean(first.resid.total), 2) }, games: first.resid.margin.length, updatedAt: new Date().toISOString() };
   /* 2ª pasada con las desviaciones calibradas */
   const r = run(sig);
   const rep = {
@@ -90,7 +92,7 @@ function run(sig) {
       byMarket: Object.fromEntries(['ml', 'spread', 'total'].map(m => [m, summarize(r.picks.filter(p => p.market === m))])) } : null,
   };
   writeJSON(PARAMS_FILE, params, true);
-  writeJSON(path.join(ROOT, 'public', 'data', 'backtest.json'), rep, true);
+  writeJSON(path.join(ROOT, 'public', 'data', ...(LG === 'nba' ? ['nba'] : []), 'backtest.json'), rep, true);
   console.log(`· ${rep.games} partidos · acierto ganador ${(rep.winnerAccuracy * 100).toFixed(1)} % · σ margen ${sig.margin} · σ total ${sig.total} · error medio margen ${rep.mae.margin}`);
   console.log(`  por temporada ${JSON.stringify(rep.bySeason)}`);
   console.log(`  calibración ${JSON.stringify(rep.calibration)}`);
