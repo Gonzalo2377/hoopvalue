@@ -22,6 +22,10 @@ const K = { key: process.env.X_API_KEY, secret: process.env.X_API_SECRET, token:
 const DRY = process.env.DRY_RUN === '1';
 const NOW = process.env.NOW ? Date.parse(process.env.NOW) : Date.now();
 const SITE = 'https://europicks.pages.dev';
+/* X cobra mucho más por los tuits con enlace: por defecto no se pone y se remite a la bio.
+   TWEET_LINKS=1 → vuelve a poner el enlace de la web. */
+const LINK = process.env.TWEET_LINKS === '1' ? SITE.replace('https://', '') : null;
+const more = (txt) => LINK ? `👉 ${txt}: ${LINK}` : '🔗 Análisis completo: link en la bio';
 const LOG_FILE = process.env.TWEETS_FILE || path.join(ROOT, 'data', 'tweets.json');
 const MIN = 60e3;
 const EL_WINDOW = [35 * MIN, 75 * MIN];          // "una hora antes": la primera pasada que caiga en este margen
@@ -116,7 +120,7 @@ async function elGames(log) {
     const lines = [`🏀 Euroliga · hoy ${hhmm(g.start)}`, `${g.home.name} vs ${g.away.name}`, ''];
     if (picks.length) picks.forEach(p => lines.push(`✅ ${p.label} @${p.odd.toFixed(2)} (${pct(p.pFinal)})`));
     else lines.push('Sin pick seguro en este partido: no hay valor suficiente. A veces lo mejor es no apostar.');
-    lines.push(`📊 Modelo: ${g.home.name} ${pct(g.model.pHome)} · ${g.away.name} ${pct(1 - g.model.pHome)}`, '', `👉 Análisis completo: ${SITE.replace('https://', '')}`, '#Euroliga · +18 · Juega con responsabilidad');
+    lines.push(`📊 Modelo: ${g.home.name} ${pct(g.model.pHome)} · ${g.away.name} ${pct(1 - g.model.pHome)}`, '', more('Análisis completo'), '#Euroliga · +18 · Juega con responsabilidad');
     const media = await uploadImage(cardImage('euroleague', g.id));
     const id = await postTweet(fitLines(lines), { mediaId: media });
     log.tweets.push({ key, kind: 'el-game', date: madridDate(g.start), tweetId: id, picks: picks.map(p => ({ id: pickId(p), league: 'euroleague', label: short(p), odd: p.odd })) });
@@ -135,7 +139,7 @@ async function nbaDay(log) {
   if (!top.length) return;
   const lines = ['🏀 NBA · los picks más seguros de esta noche', ''];
   top.forEach((p, i) => lines.push(`${['1️⃣', '2️⃣', '3️⃣'][i]} ${short(p)} @${p.odd.toFixed(2)} (${pct(p.pFinal)})`, `    ${p.match} · ${hhmm(p.start)}`));
-  lines.push('', `👉 Gráficos y análisis: ${SITE.replace('https://', '')}`, '#NBA · +18 · Juega con responsabilidad');
+  lines.push('', more('Gráficos y análisis'), '#NBA · +18 · Juega con responsabilidad');
   const media = await uploadImage(cardImage('nba'));
   const id = await postTweet(fitLines(lines), { mediaId: media });
   log.tweets.push({ key, kind: 'nba-day', date: day, tweetId: id, picks: top.map(p => ({ id: pickId(p), league: 'nba', label: short(p), odd: p.odd })) });
@@ -163,11 +167,11 @@ async function summary(log) {
   /* balance total de todo lo tuiteado (incluye ayer) */
   const all = log.tweets.flatMap(t => t.picks || []).map(i => { const r = rec[i.league].find(x => x.id === i.id); return r && r.result; }).filter(r => r === 'W' || r === 'L');
   const tw = all.filter(r => r === 'W').length;
-  lines.push('', `Ayer: ${w}-${done.length - w} · Balance total: ${tw}-${all.length - tw}${all.length ? ` (${pct(tw / all.length)})` : ''}`, `Todo el historial, sin borrar nada: ${SITE.replace('https://', '')}`);
+  lines.push('', `Ayer: ${w}-${done.length - w} · Balance total: ${tw}-${all.length - tw}${all.length ? ` (${pct(tw / all.length)})` : ''}`, LINK ? `Todo el historial, sin borrar nada: ${LINK}` : 'Todo el historial, sin borrar nada: link en la bio');
   let text = lines.join('\n');
   if (xLen(text) > 280) {                                      // demasiados picks: solo los números
     const per = ['euroleague', 'nba'].map(lg => { const l = items.filter(i => i.league === lg && (i.result === 'W' || i.result === 'L')); const ww = l.filter(i => i.result === 'W').length; return l.length ? `${LEAGUE[lg].name}: ${ww}-${l.length - ww}` : null; }).filter(Boolean);
-    text = [`📋 Resumen de ayer (${D}/${M})`, '', ...per, '', `Ayer: ${w}-${done.length - w} · Balance total: ${tw}-${all.length - tw}`, `Detalle de cada pick: ${SITE.replace('https://', '')}`].join('\n');
+    text = [`📋 Resumen de ayer (${D}/${M})`, '', ...per, '', `Ayer: ${w}-${done.length - w} · Balance total: ${tw}-${all.length - tw}`, LINK ? `Detalle de cada pick: ${LINK}` : 'Detalle de cada pick: link en la bio'].join('\n');
   }
   const id = await postTweet(text);
   log.tweets.push({ key, kind: 'summary', date: madridDate(NOW), tweetId: id });
