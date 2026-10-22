@@ -114,7 +114,7 @@ const bookName = b => /kambi|unibet/i.test(b || '') ? 'Unibet' : (b || 'Casa');
 function defaultLine(p, stat) {
   const L = p.lines && p.lines[stat];
   if (L) return { v: L.line, src: `${bookName(L.overBook)}: más de ${L.line} @ ${L.over || '—'}${L.under ? ` · menos @ ${L.under}` : ''}` };
-  if (p.proj && p.proj[stat] != null) return { v: p.proj[stat], src: 'Proyección HoopValue (sin cuota de la casa)' };
+  if (p.proj && p.proj[stat] != null) return { v: p.proj[stat], src: 'Proyección EuroPicks (sin cuota de la casa)' };
   return { v: null, src: 'Sin línea' };
 }
 

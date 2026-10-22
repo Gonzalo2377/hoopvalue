@@ -1,4 +1,6 @@
-# HoopValue · Euroliga
+# EuroPicks · Euroliga
+
+Web: https://europicks.pages.dev (antes hoopvalue.pages.dev)
 
 Web de análisis de la Euroliga que busca **el pick más seguro** de cada jornada (no la cuota más alta), con un historial que se puede comprobar.
 

@@ -62,4 +62,7 @@ jobs:
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: 1a88c5eceac0c86645d67e73c1038e8f
-        run: npx --yes wrangler@3 pages deploy public --project-name=hoopvalue --branch=main --commit-dirty=true
+        run: |
+          # EuroPicks (dirección principal) + hoopvalue (la antigua, para no romper enlaces)
+          npx --yes wrangler@3 pages project create europicks --production-branch=main >/dev/null 2>&1 || true
+          for p in europicks hoopvalue; do npx --yes wrangler@3 pages deploy public --project-name=$p --branch=main --commit-dirty=true; done
