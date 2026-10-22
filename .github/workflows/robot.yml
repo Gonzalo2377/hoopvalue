@@ -8,7 +8,7 @@ name: Robot Euroliga
 # Cada pasada hace Euroliga y NBA (la NBA usa cuotas gratis: Unibet/Kambi + DraftKings).
 # Para dispararlo a mano: pestaña Actions → Robot Euroliga → Run workflow.
 # También se lanza solo al subir cambios de código (no con los commits de datos del robot).
-# Las publicaciones en X van en otro workflow: tweets.yml (cada 15 minutos).
+# Publicaciones para X: robot/social.js prepara textos e imágenes del día en la página /x (gratis, sin API de X).
 
 on:
   schedule:
@@ -49,6 +49,9 @@ jobs:
         env:
           ODDS_MODE: ${{ github.event.schedule == '20 23 * * *' && 'results' || '' }}
         run: node robot/daily-nba.js
+      - name: Preparar publicaciones para X (página /x)
+        continue-on-error: true
+        run: node robot/social.js
       - name: Recalibrar modelo (lunes)
         if: github.event.schedule == '10 7 * * *'
         run: |

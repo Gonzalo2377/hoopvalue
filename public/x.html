@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>EuroPicks · Publicar en X</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  main { max-width: 720px; }
+  .post { margin-bottom: 14px; }
+  .post.now { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+  .post.done { opacity: .55; }
+  .when { font-size: 22px; font-weight: 800; }
+  .state { font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 99px; background: var(--panel2); color: var(--muted); }
+  .state.now { background: var(--accent); color: #111; } .state.done { background: rgba(34,197,94,.15); color: var(--good); }
+  .post canvas { width: 100%; height: auto; border-radius: 10px; margin: 10px 0; display: block; }
+  .post textarea { width: 100%; min-height: 150px; background: var(--panel2); color: var(--text); border: 1px solid var(--line); border-radius: 10px; padding: 10px; font: 14px/1.45 Inter, sans-serif; resize: vertical; }
+  .acts { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+  .btn { border: 1px solid var(--line); background: var(--panel2); color: var(--text); padding: 10px 14px; border-radius: 10px; font-weight: 700; font-size: 14px; text-decoration: none; }
+  .btn.main { background: var(--accent); border-color: var(--accent); color: #111; }
+  .count { font-size: 12px; color: var(--muted); }
+</style>
+</head>
+<body>
+<header class="top"><div class="brand"><span class="ball" aria-hidden="true"></span><b>Euro</b>Picks</div><span class="muted">Publicar en X</span></header>
+<main>
+  <h2>Publicaciones de hoy</h2>
+  <p class="muted">Pulsa <b>Compartir en X</b> a su hora: se abre X con el texto y la imagen ya puestos. Marca cada una como hecha para no repetirla.</p>
+  <div class="acts" style="margin-bottom:14px"><a class="btn" id="ics" href="#">📅 Recordatorios al calendario</a><a class="btn" href="./">← Volver a la web</a></div>
+  <div id="list"><p class="muted">Cargando…</p></div>
+</main>
+<script src="cardgen.js"></script>
+<script>
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const hhmm = t => new Date(t).toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' });
+const doneKey = (S, it) => `x-done:${S.date}:${it.id}`;
+const isDone = (S, it) => { try { return localStorage.getItem(doneKey(S, it)) === '1'; } catch (e) { return false; } };
+let S = null;
+
+function state(it) {
+  const t = Date.parse(it.postAt), now = Date.now();
+  if (isDone(S, it)) return ['done', '✓ Publicada'];
+  if (now >= t - 10 * 60e3 && now <= t + 45 * 60e3) return ['now', '¡Ahora!'];
+  if (now < t) return ['', 'Más tarde'];
+  return ['', 'Pendiente (ya es la hora)'];
+}
+
+async function load() {
+  S = await fetch('data/social.json?v=' + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null);
+  const el = document.getElementById('list');
+  if (!S || !S.items.length) { el.innerHTML = '<div class="card"><b>Hoy no hay publicaciones preparadas.</b><p class="muted">Aparecen cuando hay partidos o resultados que contar.</p></div>'; return; }
+  el.innerHTML = S.items.map((it, i) => { const [cls, lbl] = state(it); return `
+    <div class="card post ${cls}" id="p${i}">
+      <div class="row"><span class="when">${hhmm(it.postAt)}</span><span class="sp"></span><span class="state ${cls}">${lbl}</span></div>
+      <div class="muted">${esc(it.title)}</div>
+      ${it.image ? `<canvas width="1200" height="675" data-i="${i}"></canvas>` : ''}
+      <textarea id="t${i}" aria-label="Texto de la publicación">${esc(it.text)}</textarea>
+      <div class="count" id="c${i}"></div>
+      <div class="acts">
+        <button class="btn main" onclick="share(${i})">📤 Compartir en X</button>
+        <a class="btn" href="#" onclick="intent(${i});return false">Abrir X con el texto</a>
+        <button class="btn" onclick="copy(${i})">Copiar texto</button>
+        ${it.image ? `<button class="btn" onclick="download(${i})">Descargar imagen</button>` : ''}
+        <button class="btn" onclick="toggleDone(${i})">${isDone(S, it) ? 'Desmarcar' : '✓ Marcar hecha'}</button>
+      </div>
+    </div>`; }).join('');
+  S.items.forEach((it, i) => { const ta = document.getElementById('t' + i); const upd = () => { document.getElementById('c' + i).textContent = `${xLen(ta.value)}/280`; }; ta.oninput = upd; upd(); });
+  /* imágenes: se dibujan en el propio móvil con los datos de hoy */
+  await document.fonts.ready;
+  for (const c of document.querySelectorAll('canvas[data-i]')) { const it = S.items[+c.dataset.i]; await renderCard(c, { league: it.league, gameId: it.gameId || null }); }
+  const now = document.querySelector('.post.now'); if (now) now.scrollIntoView({ block: 'start' });
+}
+/* longitud según X: enlaces 23 y emojis 2 */
+function xLen(s) { s = s.replace(/\b[a-z0-9.-]+\.(dev|com|es|net|org)(\/\S*)?/gi, 'x'.repeat(23)); let n = 0; for (const ch of s) { const c = ch.codePointAt(0); n += (c <= 4351 || (c >= 8192 && c <= 8205) || (c >= 8208 && c <= 8223) || (c >= 8242 && c <= 8247)) ? 1 : 2; } return n; }
+const text = i => document.getElementById('t' + i).value;
+const blobOf = i => new Promise(r => { const c = document.querySelector(`canvas[data-i="${i}"]`); c ? c.toBlob(r, 'image/png') : r(null); });
+const intentUrl = i => 'https://x.com/intent/post?text=' + encodeURIComponent(text(i));
+
+/* móvil: el menú de compartir del sistema lleva texto + imagen a la app de X */
+async function share(i) {
+  const blob = await blobOf(i);
+  const files = blob ? [new File([blob], `europicks-${i}.png`, { type: 'image/png' })] : [];
+  try {
+    if (navigator.canShare && navigator.canShare({ files, text: text(i) }) && files.length) { await navigator.share({ files, text: text(i) }); return askDone(i); }
+    if (navigator.share && !files.length) { await navigator.share({ text: text(i) }); return askDone(i); }
+  } catch (e) { if (e.name === 'AbortError') return; }
+  /* ordenador: se descarga la imagen y se abre X con el texto; solo hay que adjuntarla */
+  if (blob) download(i);
+  window.open(intentUrl(i), '_blank');
+  alert('Se ha descargado la imagen y se ha abierto X con el texto. Adjunta la imagen (icono 🖼️) y publica.');
+}
+function intent(i) { window.open(intentUrl(i), '_blank'); }
+async function copy(i) { try { await navigator.clipboard.writeText(text(i)); alert('Texto copiado'); } catch (e) { document.getElementById('t' + i).select(); document.execCommand('copy'); } }
+async function download(i) { const b = await blobOf(i); if (!b) return; const a = document.createElement('a'); a.href = URL.createObjectURL(b); a.download = `europicks-${S.date}-${i + 1}.png`; a.click(); }
+function toggleDone(i) { const k = doneKey(S, S.items[i]); try { isDone(S, S.items[i]) ? localStorage.removeItem(k) : localStorage.setItem(k, '1'); } catch (e) {} load(); }
+function askDone(i) { if (confirm('¿Ya la has publicado? La marco como hecha.')) { try { localStorage.setItem(doneKey(S, S.items[i]), '1'); } catch (e) {} load(); } }
+
+/* calendario: un aviso a la hora de cada publicación */
+document.getElementById('ics').onclick = e => {
+  e.preventDefault(); if (!S) return;
+  const f = t => new Date(t).toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
+  const ev = S.items.map(it => ['BEGIN:VEVENT', `UID:${S.date}-${it.id}@europicks`, `DTSTAMP:${f(Date.now())}`, `DTSTART:${f(it.postAt)}`, `DTEND:${f(Date.parse(it.postAt) + 10 * 60e3)}`,
+    `SUMMARY:EuroPicks · publicar: ${it.title}`, `DESCRIPTION:Abre ${location.origin}/x y pulsa Compartir en X`, `URL:${location.origin}/x`,
+    'BEGIN:VALARM', 'ACTION:DISPLAY', 'DESCRIPTION:Publicar en X', 'TRIGGER:PT0M', 'END:VALARM', 'END:VEVENT'].join('\r\n'));
+  const ics = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//EuroPicks//X//ES', ...ev, 'END:VCALENDAR'].join('\r\n');
+  const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([ics], { type: 'text/calendar' })); a.download = `europicks-${S.date}.ics`; a.click();
+};
+load();
+setInterval(() => { if (S) document.querySelectorAll('.post').forEach((p, i) => { const [cls, lbl] = state(S.items[i]); p.className = `card post ${cls}`; p.querySelector('.state').className = `state ${cls}`; p.querySelector('.state').textContent = lbl; }); }, 60e3);
+</script>
+</body>
+</html>
