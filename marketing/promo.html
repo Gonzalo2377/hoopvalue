@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>EuroPicks · vídeo promocional</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #05070c; color: #e8edf6; font: 15px Inter, sans-serif; display: flex; gap: 20px; padding: 16px; box-sizing: border-box; height: 100vh; }
+  canvas { height: 100%; aspect-ratio: 9 / 16; border-radius: 10px; box-shadow: 0 10px 40px rgba(0,0,0,.6); }
+  .panel { display: flex; flex-direction: column; gap: 10px; width: 260px; }
+  button { font: inherit; padding: 10px; border-radius: 8px; border: 0; background: #ff7a1a; color: #111; font-weight: 700; cursor: pointer; }
+  input { width: 100%; } #log { color: #8b97ab; font-size: 13px; white-space: pre-wrap; }
+</style>
+</head>
+<body>
+<canvas id="c" width="1080" height="1920"></canvas>
+<div class="panel">
+  <b>EuroPicks · promo vertical</b>
+  <button id="play">▶ Reproducir</button>
+  <input id="scrub" type="range" min="0" max="24" step="0.01" value="0">
+  <button id="render">⬇ Renderizar MP4</button>
+  <div id="log"></div>
+</div>
+<script type="module">
+import { Muxer, ArrayBufferTarget } from './vendor/mp4-muxer.mjs';
+
+const W = 1080, H = 1920, FPS = 30, DUR = 24;
+const cv = document.getElementById('c'), ctx = cv.getContext('2d');
+const C = { bg: '#0b0f17', panel: '#121826', panel2: '#18202f', line: '#243045', text: '#e8edf6', muted: '#8b97ab',
+  accent: '#ff7a1a', accent2: '#ffb36b', good: '#22c55e', bad: '#ef4444', blue: '#60a5fa' };
+
+/* ---------- datos reales de la web (22-oct-2026) ---------- */
+const PICKS = [
+  { player: 'Theo Maledon', match: 'Maccabi – Real Madrid', bet: 'Más de 9.5 puntos', odd: '1.32', hits: '7/10', proj: '14.6', prob: '74%', tier: 'B · Seguro',
+    bars: [6, 14, 12, 8, 11, 9, 26, 13, 16, 16], opp: ['HTA', 'HTA', 'PAM', 'OLY', 'DUB', 'IST', 'HTA', 'PAR', 'MIL', 'ASV'], line: 9.5 },
+  { player: 'Alize Johnson', match: 'Paris – Valencia', bet: 'Más de 1.5 rebotes', odd: '1.32', hits: '4/4', proj: '4.5', prob: '75%', tier: 'B · Seguro',
+    bars: [4, 5, 2, 6, 3, 5, 4, 6, 2, 5], opp: ['PAN', 'ZAL', 'ASV', 'RED', 'MAD', 'BAR', 'OLY', 'MUN', 'TEL', 'PAR'], line: 1.5 },
+  { player: 'Cason Wallace', match: 'Thunder – Nuggets', bet: 'Más de 0.5 triples', odd: '1.30', hits: '9/10', proj: '2.1', prob: '75%', tier: 'A · Muy seguro',
+    bars: [4, 1, 2, 4, 2, 1, 1, 3, 5, 0], opp: ['LAL', 'LAL', 'SA', 'SA', 'SA', 'SA', 'SA', 'SA', 'SA', 'SA'], line: 0.5 },
+];
+const COMBOS = [
+  { icon: '🛡️', title: 'Combinada segura', odd: '1.74', prob: 0.55, pay: '17,40 €', color: C.good, legs: ['Maledon +9.5 puntos', 'A. Johnson +1.5 rebotes'] },
+  { icon: '💎', title: 'Combinada de valor', odd: '3.27', prob: 0.30, pay: '32,70 €', color: C.blue, legs: ['A. Johnson +1.5 rebotes', 'D. Dotson +4.5 puntos', 'J. Jessup +4.5 puntos'] },
+  { icon: '🏀', title: 'Combinada jugadores', odd: '1.85', prob: 0.54, pay: '18,50 €', color: C.accent, legs: ['A. Johnson +1.5 rebotes', 'D. Dotson +4.5 puntos'] },
+];
+
+/* ---------- utilidades ---------- */
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const prog = (t, a, b) => clamp((t - a) / (b - a));
+const eOut = x => 1 - Math.pow(1 - x, 3);
+const eInOut = x => x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
+const eBack = x => { const c1 = 1.4, c3 = c1 + 1; return 1 + c3 * Math.pow(x - 1, 3) + c1 * Math.pow(x - 1, 2); };
+const lerp = (a, b, x) => a + (b - a) * x;
+function rr(x, y, w, h, r) { ctx.beginPath(); ctx.roundRect(x, y, w, h, r); }
+function txt(s, x, y, size, color = C.text, weight = 800, align = 'left') { ctx.font = `${weight} ${size}px Inter`; ctx.fillStyle = color; ctx.textAlign = align; ctx.textBaseline = 'alphabetic'; ctx.fillText(s, x, y); }
+function alpha(a, fn) { ctx.save(); ctx.globalAlpha *= clamp(a); fn(); ctx.restore(); }
+
+/* fondo: degradado oscuro + resplandor naranja que respira (capa ambiente) */
+function background(t) {
+  ctx.fillStyle = C.bg; ctx.fillRect(0, 0, W, H);
+  const gx = W / 2 + Math.sin(t * 0.6) * 180, gy = 620 + Math.cos(t * 0.45) * 140;
+  const g = ctx.createRadialGradient(gx, gy, 40, gx, gy, 1100);
+  g.addColorStop(0, 'rgba(255,122,26,0.20)'); g.addColorStop(0.5, 'rgba(255,122,26,0.05)'); g.addColorStop(1, 'rgba(0,0,0,0)');
+  ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+  ctx.strokeStyle = 'rgba(255,255,255,0.035)'; ctx.lineWidth = 2;              // líneas de pista
+  ctx.beginPath(); ctx.arc(W / 2, H + 200, 900, Math.PI, 2 * Math.PI); ctx.stroke();
+  ctx.beginPath(); ctx.arc(W / 2, -200, 700, 0, Math.PI); ctx.stroke();
+}
+function ball(x, y, r, rot) {
+  const g = ctx.createRadialGradient(x - r * .35, y - r * .35, r * .1, x, y, r);
+  g.addColorStop(0, '#ffb36b'); g.addColorStop(.6, '#ff7a1a'); g.addColorStop(1, '#b4410b');
+  ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.fill();
+  ctx.save(); ctx.translate(x, y); ctx.rotate(rot); ctx.strokeStyle = 'rgba(60,20,4,.85)'; ctx.lineWidth = r * .06;
+  ctx.beginPath(); ctx.moveTo(-r, 0); ctx.lineTo(r, 0); ctx.stroke(); ctx.beginPath(); ctx.moveTo(0, -r); ctx.lineTo(0, r); ctx.stroke();
+  ctx.beginPath(); ctx.arc(-r * 1.25, 0, r * .95, -0.75, 0.75); ctx.stroke(); ctx.beginPath(); ctx.arc(r * 1.25, 0, r * .95, Math.PI - 0.75, Math.PI + 0.75); ctx.stroke();
+  ctx.restore();
+}
+/* logo centrado en x: balón + "Euro" (naranja) + "Picks" */
+function logo(x, y, s, a = 1) {
+  alpha(a, () => {
+    ctx.font = `900 ${s}px Inter`;
+    const w1 = ctx.measureText('Euro').width, w2 = ctx.measureText('Picks').width, r = s * .42, gap = s * .18;
+    const total = r * 2 + gap + w1 + s * .06 + w2, x0 = x - total / 2;
+    ball(x0 + r, y - s * .34, r, 0.3);
+    txt('Euro', x0 + r * 2 + gap, y, s, C.accent, 900);
+    txt('Picks', x0 + r * 2 + gap + w1 + s * .06, y, s, C.text, 900);
+  });
+}
+
+/* ---------- tarjeta de pick de jugador (como en la web) ---------- */
+function pickCard(p, x, y, w, grow = 1) {
+  const h = w * 1.18, s = w / 600;
+  ctx.save(); ctx.translate(x, y);
+  ctx.shadowColor = 'rgba(0,0,0,.55)'; ctx.shadowBlur = 50 * s; ctx.shadowOffsetY = 20 * s;
+  rr(0, 0, w, h, 28 * s); ctx.fillStyle = C.panel; ctx.fill(); ctx.shadowColor = 'transparent';
+  ctx.strokeStyle = 'rgba(255,122,26,.45)'; ctx.lineWidth = 2.5 * s; ctx.stroke();
+  txt(p.player, 32 * s, 62 * s, 36 * s); txt(p.match, 32 * s, 102 * s, 22 * s, C.muted, 600);
+  rr(w - 196 * s, 32 * s, 166 * s, 40 * s, 20 * s); ctx.fillStyle = 'rgba(34,197,94,.15)'; ctx.fill(); txt(p.tier, w - 113 * s, 60 * s, 18 * s, C.good, 800, 'center');
+  txt(p.bet, 32 * s, 160 * s, 30 * s, C.text, 700); txt(p.odd, w - 32 * s, 160 * s, 40 * s, C.accent2, 900, 'right');
+  /* barras */
+  const cx = 32 * s, cy = 200 * s, cw = w - 64 * s, ch = 250 * s, n = p.bars.length, gap = 8 * s, bw = (cw - gap * (n - 1)) / n;
+  const max = Math.max(...p.bars, p.line) * 1.15, yv = v => cy + ch * (1 - v / max);
+  p.bars.forEach((v, i) => {
+    const gi = eBack(clamp(grow * 1.6 - i * 0.07)), vv = v * gi, bx = cx + i * (bw + gap), top = yv(vv);
+    const ok = v > p.line;
+    rr(bx, top, bw, cy + ch - top, Math.min(8 * s, bw / 2)); ctx.fillStyle = ok ? C.good : C.bad; ctx.fill();
+    if (!ok) { ctx.save(); ctx.clip(); ctx.strokeStyle = 'rgba(18,24,38,.45)'; ctx.lineWidth = 4 * s; for (let k = -ch; k < ch; k += 14 * s) { ctx.beginPath(); ctx.moveTo(bx + k, cy + ch); ctx.lineTo(bx + k + ch, cy); ctx.stroke(); } ctx.restore(); }
+    alpha(gi, () => { txt(String(v), bx + bw / 2, top - 10 * s, 20 * s, C.text, 800, 'center'); txt(p.opp[i], bx + bw / 2, cy + ch + 30 * s, 17 * s, C.muted, 600, 'center'); });
+  });
+  ctx.setLineDash([16 * s, 10 * s]); ctx.strokeStyle = C.accent2; ctx.lineWidth = 4 * s; ctx.beginPath(); ctx.moveTo(cx, yv(p.line)); ctx.lineTo(cx + cw, yv(p.line)); ctx.stroke(); ctx.setLineDash([]);
+  /* cifras */
+  const ny = cy + ch + 56 * s, nw = (cw - 24 * s) / 3;
+  [[p.hits, 'últimos 10', C.good], [p.proj, 'proyección', C.text], [p.prob, 'probabilidad', C.text]].forEach(([v, l, col], i) => {
+    rr(cx + i * (nw + 12 * s), ny, nw, 104 * s, 18 * s); ctx.fillStyle = C.panel2; ctx.fill();
+    txt(v, cx + i * (nw + 12 * s) + nw / 2, ny + 56 * s, 40 * s, col, 900, 'center'); txt(l, cx + i * (nw + 12 * s) + nw / 2, ny + 88 * s, 18 * s, C.muted, 600, 'center');
+  });
+  ctx.restore();
+  return h;
+}
+
+/* ---------- ESCENAS ---------- */
+function scHook(t) {                                            // 0–3.2 s
+  const a = prog(t, 0, .35) * (1 - prog(t, 2.8, 3.2));
+  const bounce = Math.abs(Math.sin(t * 4.2)) * 260;
+  alpha(a, () => {
+    ctx.save(); ctx.translate(W / 2, 760 - bounce); const sq = 1 + (bounce < 25 ? (25 - bounce) / 120 : 0); ctx.scale(sq, 1 / sq); ball(0, 0, 110, t * 3); ctx.restore();
+    const e = eOut(prog(t, .2, .9));
+    txt('¿Sigues apostando', W / 2, 1150 + (1 - e) * 60, 92, C.text, 900, 'center');
+    txt('a ciegas?', W / 2, 1265 + (1 - e) * 60, 108, C.accent, 900, 'center');
+    alpha(prog(t, 1.4, 2), () => txt('Corazonadas, «fijas» de Twitter, cuotas al azar…', W / 2, 1380, 38, C.muted, 600, 'center'));
+  });
+}
+function scLogo(t) {                                            // 3–6.2 s
+  const lt = t - 3, a = prog(lt, 0, .3) * (1 - prog(lt, 2.9, 3.2));
+  alpha(a, () => {
+    const e = eBack(prog(lt, 0, .7));
+    ctx.save(); ctx.translate(W / 2, 860); ctx.scale(lerp(.6, 1, e), lerp(.6, 1, e)); logo(0, 0, 150); ctx.restore();
+    alpha(prog(lt, .5, 1.1), () => { txt('El pick más seguro del día', W / 2, 1010, 56, C.text, 800, 'center'); });
+    alpha(prog(lt, .9, 1.5), () => {
+      const pw = 300, py = 1090;
+      [['Euroliga', W / 2 - pw - 10], ['NBA', W / 2 + 10]].forEach(([l, x], i) => { rr(x, py, pw, 92, 46); ctx.fillStyle = i === 0 ? C.accent : C.panel2; ctx.fill(); txt(l, x + pw / 2, py + 60, 40, i === 0 ? '#111' : C.text, 800, 'center'); });
+    });
+    alpha(prog(lt, 1.4, 2), () => txt('Datos · modelo · cuotas reales', W / 2, 1280, 40, C.muted, 600, 'center'));
+  });
+}
+function scCarousel(t) {                                        // 6–11.2 s
+  const lt = t - 6, a = prog(lt, 0, .35) * (1 - prog(lt, 4.9, 5.2));
+  alpha(a, () => {
+    txt('Todos los picks del día', W / 2, 300, 66, C.text, 900, 'center');
+    txt('ordenados por seguridad · desliza', W / 2, 370, 38, C.accent2, 700, 'center');
+    /* giro del carrusel: 0 → 1 → 2 (dos pasos con pausa) */
+    const step = eInOut(prog(lt, 1.6, 2.3)) + eInOut(prog(lt, 3.3, 4.0));
+    const order = PICKS.map((p, i) => { let d = i - step; if (d > 1.5) d -= 3; if (d < -1.5) d += 3; return { p, d }; }).sort((x, y) => Math.abs(y.d) - Math.abs(x.d));
+    const cw = 640;
+    order.forEach(({ p, d }) => {
+      const ad = Math.abs(d), sc = 1 - Math.min(ad, 1.5) * 0.24, x = W / 2 + d * 560, y = 560 + ad * 80;
+      ctx.save(); ctx.translate(x, y); ctx.transform(1 - ad * 0.3, d * 0.08, 0, 1, 0, 0); ctx.scale(sc, sc);
+      ctx.globalAlpha *= clamp(1 - ad * 0.5);
+      pickCard(p, -cw / 2, 0, cw, ad < 0.5 && step < 0.5 ? prog(lt, 0.3, 1.4) : 1);   // la primera tarjeta entra con sus barras creciendo; el resto ya llegan llenas
+      if (ad > 0.05) { rr(-cw / 2, 0, cw, cw * 1.18, 28); ctx.fillStyle = `rgba(5,7,12,${Math.min(0.6, ad * 0.55)})`; ctx.fill(); }
+      ctx.restore();
+    });
+    /* puntos */
+    PICKS.forEach((_, i) => { const on = Math.round(step) % 3 === i; rr(W / 2 - 60 + i * 44 - (on ? 10 : 0), 1420, on ? 44 : 22, 14, 7); ctx.fillStyle = on ? C.accent : C.line; ctx.fill(); });
+    /* dedo deslizando */
+    const sw = (prog(lt, 1.3, 2.3) > 0 && prog(lt, 1.3, 2.3) < 1) ? prog(lt, 1.3, 2.3) : (prog(lt, 3.0, 4.0) > 0 && prog(lt, 3.0, 4.0) < 1 ? prog(lt, 3.0, 4.0) : -1);
+    if (sw >= 0) alpha(Math.sin(sw * Math.PI), () => { ctx.beginPath(); ctx.arc(lerp(760, 320, eInOut(sw)), 1330, 46, 0, Math.PI * 2); ctx.fillStyle = 'rgba(255,255,255,.22)'; ctx.fill(); ctx.strokeStyle = 'rgba(255,255,255,.6)'; ctx.lineWidth = 4; ctx.stroke(); });
+    alpha(prog(lt, .6, 1.2), () => txt('Cada barra = un partido · verde si superó la línea', W / 2, 1560, 36, C.muted, 600, 'center'));
+  });
+}
+function scChart(t) {                                           // 11–15.2 s
+  const lt = t - 11, a = prog(lt, 0, .35) * (1 - prog(lt, 3.9, 4.2));
+  alpha(a, () => {
+    txt('¿Por qué este pick?', W / 2, 300, 72, C.text, 900, 'center');
+    alpha(prog(lt, .3, .8), () => txt('Lo ves de un vistazo', W / 2, 370, 40, C.accent2, 700, 'center'));
+    const p = PICKS[0];
+    ctx.save(); ctx.translate(W / 2 - 430, 470); pickCard(p, 0, 0, 860, prog(lt, .2, 1.6)); ctx.restore();
+    /* chips de filtros que se van activando */
+    const chips = ['Casa', 'Fuera', 'Últ. 10', 'vs rival'];
+    chips.forEach((c, i) => {
+      const on = prog(lt, 1.6 + i * .35, 1.8 + i * .35), x = 120 + i * 220, y = 1580;
+      alpha(prog(lt, 1.2 + i * .1, 1.5 + i * .1), () => { rr(x, y, 200, 74, 37); ctx.fillStyle = on > .5 ? C.accent : C.panel2; ctx.fill(); txt(c, x + 100, y + 49, 32, on > .5 ? '#111' : C.text, 700, 'center'); });
+    });
+    alpha(prog(lt, 2.4, 3), () => txt('Filtra por casa, fuera, últimos partidos o rival', W / 2, 1730, 36, C.muted, 600, 'center'));
+  });
+}
+function scCombos(t) {                                          // 15–19.2 s
+  const lt = t - 15, a = prog(lt, 0, .35) * (1 - prog(lt, 3.9, 4.2));
+  alpha(a, () => {
+    txt('3 combinadas cada día', W / 2, 290, 70, C.text, 900, 'center');
+    alpha(prog(lt, .3, .8), () => txt('nunca dos del mismo partido', W / 2, 360, 40, C.accent2, 700, 'center'));
+    COMBOS.forEach((c, i) => {
+      const e = eOut(prog(lt, .3 + i * .25, 1.0 + i * .25)), y = 440 + i * 420, x = 90 + (1 - e) * 900;
+      alpha(e, () => {
+        rr(x, y, 900, 380, 30); ctx.fillStyle = C.panel; ctx.fill(); ctx.strokeStyle = c.color; ctx.globalAlpha *= .9; ctx.lineWidth = 3; ctx.stroke(); ctx.globalAlpha /= .9;
+        txt(c.icon, x + 40, y + 82, 54, C.text, 700); txt(c.title, x + 120, y + 78, 42, C.text, 800);
+        c.legs.forEach((l, k) => { rr(x + 40, y + 112 + k * 62, 560, 50, 12); ctx.fillStyle = C.panel2; ctx.fill(); txt(l, x + 60, y + 146 + k * 62, 26, C.text, 600); });
+        /* anillo */
+        const rp = eOut(prog(lt, .8 + i * .25, 1.8 + i * .25)) * c.prob, rx = x + 760, ry = y + 160;
+        ctx.lineWidth = 22; ctx.strokeStyle = C.panel2; ctx.beginPath(); ctx.arc(rx, ry, 78, 0, Math.PI * 2); ctx.stroke();
+        ctx.strokeStyle = C.good; ctx.lineCap = 'round'; ctx.beginPath(); ctx.arc(rx, ry, 78, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * rp); ctx.stroke(); ctx.lineCap = 'butt';
+        txt(Math.round(rp * 100) + '%', rx, ry + 16, 46, C.text, 900, 'center');
+        txt('Cuota ' + c.odd, x + 40, y + 345, 40, C.accent2, 900); txt('10 € → ' + c.pay, x + 860, y + 345, 36, C.text, 800, 'right');
+      });
+    });
+  });
+}
+function scTrust(t) {                                           // 19–21.7 s
+  const lt = t - 19, a = prog(lt, 0, .35) * (1 - prog(lt, 2.4, 2.7));
+  alpha(a, () => {
+    txt('Sin humo:', W / 2, 420, 76, C.text, 900, 'center');
+    txt('historial verificable', W / 2, 510, 76, C.accent, 900, 'center');
+    const items = [['2.100+', 'partidos analizados por el modelo'], ['65–68 %', 'acierto del ganador en backtest'], ['100 %', 'picks liquidados con el resultado oficial'], ['0', 'picks borrados: lo bueno y lo malo']];
+    items.forEach(([n, l], i) => {
+      const e = eOut(prog(lt, .3 + i * .22, .9 + i * .22)), y = 640 + i * 230;
+      alpha(e, () => { rr(120, y + (1 - e) * 40, 840, 190, 28); ctx.fillStyle = C.panel; ctx.fill(); txt(n, 170, y + 112 + (1 - e) * 40, 76, C.good, 900); txt(l, 170, y + 160 + (1 - e) * 40, 32, C.muted, 600); });
+    });
+  });
+}
+function scCTA(t) {                                             // 21.5–24 s
+  const lt = t - 21.5, a = prog(lt, 0, .4);
+  alpha(a, () => {
+    const e = eBack(prog(lt, 0, .7));
+    ctx.save(); ctx.translate(W / 2, 760); ctx.scale(lerp(.7, 1, e), lerp(.7, 1, e)); logo(0, 0, 150); ctx.restore();
+    txt('Euroliga + NBA · gratis', W / 2, 900, 52, C.text, 800, 'center');
+    alpha(prog(lt, .4, .9), () => {
+      const pulse = 1 + Math.sin(lt * 6) * 0.025;
+      ctx.save(); ctx.translate(W / 2, 1100); ctx.scale(pulse, pulse);
+      rr(-420, -70, 840, 140, 70); ctx.fillStyle = C.accent; ctx.fill(); txt('europicks.pages.dev', 0, 20, 58, '#111', 900, 'center');
+      ctx.restore();
+    });
+    alpha(prog(lt, .9, 1.4), () => txt('Picks, gráficos y combinadas cada día', W / 2, 1290, 40, C.muted, 600, 'center'));
+    alpha(prog(lt, 1.0, 1.5), () => txt('+18 · Juega con responsabilidad · Las probabilidades no son garantías', W / 2, 1800, 26, C.muted, 600, 'center'));
+  });
+}
+
+function draw(t) {
+  background(t);
+  if (t < 3.3) scHook(t);
+  if (t >= 3 && t < 6.3) scLogo(t);
+  if (t >= 6 && t < 11.3) scCarousel(t);
+  if (t >= 11 && t < 15.3) scChart(t);
+  if (t >= 15 && t < 19.3) scCombos(t);
+  if (t >= 19 && t < 21.8) scTrust(t);
+  if (t >= 21.5) scCTA(t);
+  if (t > 3.2 && t < 21.4) alpha(.85, () => logo(W / 2, 140, 52));   // marca fija arriba
+}
+
+/* ---------- reproducción y render ---------- */
+const scrub = document.getElementById('scrub'), log = m => document.getElementById('log').textContent = m;
+let playing = false, t0 = 0, tStart = 0;
+function frame(now) { if (!playing) return; const t = tStart + (now - t0) / 1000; if (t >= DUR) { playing = false; return; } scrub.value = t; draw(t); requestAnimationFrame(frame); }
+document.getElementById('play').onclick = () => { playing = !playing; if (playing) { tStart = +scrub.value >= DUR - .05 ? 0 : +scrub.value; t0 = performance.now(); requestAnimationFrame(frame); } };
+scrub.oninput = () => { playing = false; draw(+scrub.value); };
+
+const fontsReady = () => Promise.all(['500', '600', '700', '800', '900'].map(w => document.fonts.load(`${w} 40px Inter`))).then(() => document.fonts.ready);
+async function render() {
+  await fontsReady();
+  let cfg = null;
+  for (const codec of ['avc1.640033', 'avc1.640028', 'avc1.4d0028', 'avc1.42e033']) {
+    const c = { codec, width: W, height: H, bitrate: 10_000_000, framerate: FPS };
+    if ((await VideoEncoder.isConfigSupported(c)).supported) { cfg = c; break; }
+  }
+  if (!cfg) { log('Este navegador no puede codificar H.264'); return; }
+  const muxer = new Muxer({ target: new ArrayBufferTarget(), video: { codec: 'avc', width: W, height: H }, fastStart: 'in-memory' });
+  const enc = new VideoEncoder({ output: (chunk, meta) => muxer.addVideoChunk(chunk, meta), error: e => log('Error: ' + e.message) });
+  enc.configure(cfg);
+  const N = DUR * FPS;
+  for (let i = 0; i < N; i++) {
+    draw(i / FPS);
+    const f = new VideoFrame(cv, { timestamp: Math.round(i * 1e6 / FPS), duration: Math.round(1e6 / FPS) });
+    enc.encode(f, { keyFrame: i % (FPS * 2) === 0 }); f.close();
+    if (enc.encodeQueueSize > 8) await new Promise(r => setTimeout(r, 0));
+    if (i % 30 === 0) log(`Renderizando ${Math.round(i / N * 100)} %`);
+  }
+  await enc.flush(); muxer.finalize();
+  const r = await (await fetch('/save/europicks-promo.mp4', { method: 'POST', body: muxer.target.buffer })).json();
+  draw(22.6); const cover = await new Promise(res => cv.toBlob(res, 'image/png'));
+  await fetch('/save/europicks-promo-portada.png', { method: 'POST', body: cover });
+  log('✓ ' + r.file + '\n✓ marketing/out/europicks-promo-portada.png');
+  window.__done = r.file;
+}
+document.getElementById('render').onclick = render;
+window.renderPromo = render; window.drawAt = draw;
+fontsReady().then(() => draw(0));
+</script>
+</body>
+</html>
