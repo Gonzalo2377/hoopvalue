@@ -221,6 +221,44 @@
       "safety": 0.578,
       "tier": "C",
       "createdAt": "2026-10-22T07:00:45.264Z"
+    },
+    {
+      "id": "el:E2026_68|prop|over|9.5|015163|pts",
+      "gameId": "el:E2026_68",
+      "start": "2026-10-23T17:00:00.000Z",
+      "round": 7,
+      "match": "Zalgiris – LDLC ASVEL",
+      "market": "prop",
+      "side": "over",
+      "line": 9.5,
+      "label": "Patty Mills más de 9.5 puntos",
+      "odd": 1.33,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.731,
+      "safety": 0.676,
+      "tier": "B",
+      "stat": "pts",
+      "playerId": "015163",
+      "createdAt": "2026-10-22T12:54:55.145Z"
+    },
+    {
+      "id": "el:E2026_68|prop|over|4.5|013900|pts",
+      "gameId": "el:E2026_68",
+      "start": "2026-10-23T17:00:00.000Z",
+      "round": 7,
+      "match": "Zalgiris – LDLC ASVEL",
+      "market": "prop",
+      "side": "over",
+      "line": 4.5,
+      "label": "Both Gach más de 4.5 puntos",
+      "odd": 1.45,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.681,
+      "safety": 0.61,
+      "tier": "B",
+      "stat": "pts",
+      "playerId": "013900",
+      "createdAt": "2026-10-22T12:54:55.145Z"
     }
   ],
   "record": [
@@ -431,6 +469,48 @@
       "ev": -0.008,
       "start": "2026-10-22T17:30:00.000Z",
       "createdAt": "2026-10-22T08:05:03.361Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "el:E2026_68|prop|over|9.5|015163|pts",
+          "gameId": "el:E2026_68",
+          "start": "2026-10-23T17:00:00.000Z",
+          "match": "Zalgiris – LDLC ASVEL",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pts",
+          "playerId": "015163",
+          "player": "Patty Mills",
+          "label": "Patty Mills más de 9.5 puntos",
+          "odd": 1.33,
+          "pFinal": 0.731,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "el:E2026_69|prop|over|1.5|015160|reb",
+          "gameId": "el:E2026_69",
+          "start": "2026-10-23T18:45:00.000Z",
+          "match": "Paris – Valencia",
+          "market": "prop",
+          "side": "over",
+          "line": 1.5,
+          "stat": "reb",
+          "playerId": "015160",
+          "player": "Alize Johnson",
+          "label": "Alize Johnson más de 1.5 rebotes",
+          "odd": 1.32,
+          "pFinal": 0.75,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.76,
+      "prob": 0.548,
+      "ev": -0.037,
+      "start": "2026-10-23T17:00:00.000Z",
+      "createdAt": "2026-10-22T12:54:55.145Z"
     }
   ],
   "comboRecord": []
