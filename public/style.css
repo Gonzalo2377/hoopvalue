@@ -106,3 +106,6 @@ tr.click { cursor: pointer; } tr.click:hover td { background: var(--panel2); }
 .pchip.ok { color: var(--good); border-color: rgba(34,197,94,.4); } .pchip.ok::before { content: '✓ '; }
 .pchip.ko { color: var(--bad); border-color: rgba(239,68,68,.4); } .pchip.ko::before { content: '✗ '; }
 .link { color: var(--accent2); } .small { font-size: 12px; }
+/* el gráfico del pick no crece sin límite en tarjetas anchas (p. ej. el pick principal) */
+.pc-chart svg { display: block; width: 100%; max-width: 440px; height: auto; max-height: 150px; }
+.pcard.hero .pc-nums, .pcard.hero .pc-chips { max-width: 440px; }
