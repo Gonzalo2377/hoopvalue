@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>EuroPicks · imágenes de Twitter/X</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #05070c; color: #e8edf6; font: 15px Inter, sans-serif; padding: 16px; display: flex; flex-direction: column; gap: 16px; }
+  canvas { max-width: 100%; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,.5); }
+  #avatar { width: 200px; border-radius: 50%; }
+  button { font: inherit; padding: 10px; border-radius: 8px; border: 0; background: #ff7a1a; color: #111; font-weight: 700; cursor: pointer; width: 220px; }
+</style>
+</head>
+<body>
+<canvas id="banner" width="1500" height="500"></canvas>
+<canvas id="avatar" width="800" height="800"></canvas>
+<button id="save">⬇ Guardar PNG</button>
+<div id="log"></div>
+<script>
+const C = { bg: '#0b0f17', panel: '#121826', panel2: '#18202f', line: '#243045', text: '#e8edf6', muted: '#8b97ab', accent: '#ff7a1a', accent2: '#ffb36b', good: '#22c55e', bad: '#ef4444' };
+let ctx;
+function rr(x, y, w, h, r) { ctx.beginPath(); ctx.roundRect(x, y, w, h, r); }
+function txt(s, x, y, size, color = C.text, weight = 800, align = 'left') { ctx.font = `${weight} ${size}px Inter`; ctx.fillStyle = color; ctx.textAlign = align; ctx.fillText(s, x, y); }
+function ball(x, y, r, rot = 0.3) {
+  const g = ctx.createRadialGradient(x - r * .35, y - r * .35, r * .1, x, y, r);
+  g.addColorStop(0, '#ffb36b'); g.addColorStop(.6, '#ff7a1a'); g.addColorStop(1, '#b4410b');
+  ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI * 2); ctx.fill();
+  ctx.save(); ctx.translate(x, y); ctx.rotate(rot); ctx.strokeStyle = 'rgba(60,20,4,.85)'; ctx.lineWidth = r * .06;
+  ctx.beginPath(); ctx.moveTo(-r, 0); ctx.lineTo(r, 0); ctx.stroke(); ctx.beginPath(); ctx.moveTo(0, -r); ctx.lineTo(0, r); ctx.stroke();
+  ctx.beginPath(); ctx.arc(-r * 1.25, 0, r * .95, -0.75, 0.75); ctx.stroke(); ctx.beginPath(); ctx.arc(r * 1.25, 0, r * .95, Math.PI - 0.75, Math.PI + 0.75); ctx.stroke();
+  ctx.restore();
+}
+function glow(x, y, r, a = .22) { const g = ctx.createRadialGradient(x, y, 10, x, y, r); g.addColorStop(0, `rgba(255,122,26,${a})`); g.addColorStop(1, 'rgba(0,0,0,0)'); ctx.fillStyle = g; ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height); }
+
+/* mini tarjeta de pick con barras (como en la web) */
+function miniCard(x, y, w, p, rot = 0, dim = 0) {
+  const h = w * 1.1, s = w / 600;
+  ctx.save(); ctx.translate(x + w / 2, y + h / 2); ctx.rotate(rot); ctx.translate(-w / 2, -h / 2);
+  ctx.shadowColor = 'rgba(0,0,0,.6)'; ctx.shadowBlur = 40 * s; ctx.shadowOffsetY = 16 * s;
+  rr(0, 0, w, h, 26 * s); ctx.fillStyle = C.panel; ctx.fill(); ctx.shadowColor = 'transparent';
+  ctx.strokeStyle = 'rgba(255,122,26,.5)'; ctx.lineWidth = 3 * s; ctx.stroke();
+  txt(p.player, 30 * s, 60 * s, 36 * s); txt(p.bet, 30 * s, 112 * s, 28 * s, C.muted, 600); txt(p.odd, w - 30 * s, 60 * s, 40 * s, C.accent2, 900, 'right');
+  const cx = 30 * s, cy = 150 * s, cw = w - 60 * s, ch = 260 * s, n = p.bars.length, gap = 8 * s, bw = (cw - gap * (n - 1)) / n, max = Math.max(...p.bars) * 1.15;
+  p.bars.forEach((v, i) => { const top = cy + ch * (1 - v / max); rr(cx + i * (bw + gap), top, bw, cy + ch - top, 7 * s); ctx.fillStyle = v > p.line ? C.good : C.bad; ctx.fill(); });
+  const ly = cy + ch * (1 - p.line / max); ctx.setLineDash([16 * s, 10 * s]); ctx.strokeStyle = C.accent2; ctx.lineWidth = 4 * s; ctx.beginPath(); ctx.moveTo(cx, ly); ctx.lineTo(cx + cw, ly); ctx.stroke(); ctx.setLineDash([]);
+  const ny = cy + ch + 30 * s, nw = (cw - 24 * s) / 3;
+  [[p.hits, 'últimos 10', C.good], [p.proj, 'proyección', C.text], [p.prob, 'probabilidad', C.text]].forEach(([v, l, col], i) => {
+    rr(cx + i * (nw + 12 * s), ny, nw, 96 * s, 16 * s); ctx.fillStyle = C.panel2; ctx.fill();
+    txt(v, cx + i * (nw + 12 * s) + nw / 2, ny + 52 * s, 38 * s, col, 900, 'center'); txt(l, cx + i * (nw + 12 * s) + nw / 2, ny + 82 * s, 17 * s, C.muted, 600, 'center');
+  });
+  if (dim) { rr(0, 0, w, h, 26 * s); ctx.fillStyle = `rgba(5,7,12,${dim})`; ctx.fill(); }
+  ctx.restore();
+}
+const P1 = { player: 'Theo Maledon', bet: 'Más de 9.5 puntos', odd: '1.32', hits: '7/10', proj: '14.6', prob: '74%', bars: [6, 14, 12, 8, 11, 9, 26, 13, 16, 16], line: 9.5 };
+const P2 = { player: 'Cason Wallace', bet: 'Más de 0.5 triples', odd: '1.30', hits: '9/10', proj: '2.1', prob: '75%', bars: [4, 1, 2, 4, 2, 1, 1, 3, 5, 0], line: 0.5 };
+const P3 = { player: 'Alize Johnson', bet: 'Más de 1.5 rebotes', odd: '1.32', hits: '4/4', proj: '4.5', prob: '75%', bars: [4, 5, 2, 6, 3, 5, 4, 6, 2, 5], line: 1.5 };
+
+/* BANNER 1500×500. El avatar tapa la esquina inferior izquierda → contenido a la derecha y arriba */
+function banner() {
+  ctx = document.getElementById('banner').getContext('2d');
+  ctx.fillStyle = C.bg; ctx.fillRect(0, 0, 1500, 500); glow(1050, 250, 700, .2); glow(250, 80, 400, .12);
+  ctx.strokeStyle = 'rgba(255,255,255,.04)'; ctx.lineWidth = 3; ctx.beginPath(); ctx.arc(750, 700, 520, Math.PI, 2 * Math.PI); ctx.stroke();
+  /* texto (zona central, por encima de donde cae el avatar) */
+  const X = 380;
+  ball(X + 40, 118, 44);
+  txt('Euro', X + 100, 150, 92, C.accent, 900); ctx.font = '900 92px Inter'; const w = ctx.measureText('Euro').width; txt('Picks', X + 100 + w + 6, 150, 92, C.text, 900);
+  txt('El pick más seguro del día', X, 230, 46, C.text, 800);
+  txt('Euroliga + NBA · datos y cuotas reales', X, 282, 30, C.muted, 600);
+  [['Picks diarios', 380], ['Gráficos', 600], ['Combinadas', 785]].forEach(([l, x]) => { ctx.font = '700 26px Inter'; const tw = ctx.measureText(l).width; rr(x, 318, tw + 40, 52, 26); ctx.fillStyle = C.panel2; ctx.fill(); ctx.strokeStyle = C.line; ctx.lineWidth = 2; ctx.stroke(); txt(l, x + 20, 353, 26, C.accent2, 700); });
+  txt('europicks.pages.dev', 380, 430, 34, C.accent, 800);
+  /* tarjetas en abanico a la derecha */
+  miniCard(1230, 70, 250, P3, 0.14, .35);
+  miniCard(1170, 50, 250, P2, 0.06, .2);
+  miniCard(1080, 40, 270, P1, -0.05, 0);
+}
+/* AVATAR 800×800 (X lo recorta en círculo y lo muestra a 400×400) */
+function avatar() {
+  ctx = document.getElementById('avatar').getContext('2d');
+  const g = ctx.createRadialGradient(400, 330, 40, 400, 400, 560); g.addColorStop(0, '#1b2234'); g.addColorStop(1, '#070a11');
+  ctx.fillStyle = g; ctx.fillRect(0, 0, 800, 800); glow(400, 360, 420, .35);
+  ball(400, 330, 205, 0.35);
+  /* marca: "EP" en una pastilla bajo el balón (legible a 48 px) */
+  rr(220, 560, 360, 120, 60); ctx.fillStyle = C.accent; ctx.fill();
+  txt('EuroPicks', 400, 641, 66, '#111', 900, 'center');
+}
+
+async function draw() {
+  await Promise.all(['600', '700', '800', '900'].map(w => document.fonts.load(`${w} 40px Inter`)));
+  banner(); avatar();
+}
+async function save() {
+  for (const [id, name] of [['banner', 'europicks-x-banner.png'], ['avatar', 'europicks-x-perfil.png']]) {
+    const blob = await new Promise(r => document.getElementById(id).toBlob(r, 'image/png'));
+    await fetch('/save/' + name, { method: 'POST', body: blob });
+  }
+  document.getElementById('log').textContent = '✓ guardadas en marketing/out/'; window.__saved = true;
+}
+document.getElementById('save').onclick = save; window.saveAll = save;
+draw();
+</script>
+</body>
+</html>
