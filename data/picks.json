@@ -259,6 +259,25 @@
       "stat": "pts",
       "playerId": "013900",
       "createdAt": "2026-10-22T12:54:55.145Z"
+    },
+    {
+      "id": "el:E2026_68|prop|over|9.5|015164|pts",
+      "gameId": "el:E2026_68",
+      "start": "2026-10-23T17:00:00.000Z",
+      "round": 7,
+      "match": "Zalgiris – LDLC ASVEL",
+      "market": "prop",
+      "side": "over",
+      "line": 9.5,
+      "label": "Hugo Besson más de 9.5 puntos",
+      "odd": 1.5,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.649,
+      "safety": 0.595,
+      "tier": "C",
+      "stat": "pts",
+      "playerId": "015164",
+      "createdAt": "2026-10-22T16:30:00.452Z"
     }
   ],
   "record": [
@@ -511,6 +530,90 @@
       "ev": -0.037,
       "start": "2026-10-23T17:00:00.000Z",
       "createdAt": "2026-10-22T12:54:55.145Z"
+    },
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "el:E2026_62|prop|over|9.5|007027|pts",
+          "gameId": "el:E2026_62",
+          "start": "2026-10-22T18:05:00.000Z",
+          "match": "Maccabi – Real Madrid",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pts",
+          "playerId": "007027",
+          "player": "Theo Maledon",
+          "label": "Theo Maledon más de 9.5 puntos",
+          "odd": 1.33,
+          "pFinal": 0.734,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "el:E2026_64|prop|over|4.5|013285|pts",
+          "gameId": "el:E2026_64",
+          "start": "2026-10-22T17:30:00.000Z",
+          "match": "Anadolu Efes – Besiktas",
+          "market": "prop",
+          "side": "over",
+          "line": 4.5,
+          "stat": "pts",
+          "playerId": "013285",
+          "player": "Devon Dotson",
+          "label": "Devon Dotson más de 4.5 puntos",
+          "odd": 1.4,
+          "pFinal": 0.716,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.86,
+      "prob": 0.526,
+      "ev": -0.021,
+      "start": "2026-10-22T17:30:00.000Z",
+      "createdAt": "2026-10-22T16:30:00.452Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "el:E2026_62|prop|over|9.5|007027|pts",
+          "gameId": "el:E2026_62",
+          "start": "2026-10-22T18:05:00.000Z",
+          "match": "Maccabi – Real Madrid",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pts",
+          "playerId": "007027",
+          "player": "Theo Maledon",
+          "label": "Theo Maledon más de 9.5 puntos",
+          "odd": 1.33,
+          "pFinal": 0.734,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "el:E2026_67|prop|over|4.5|011284|pts",
+          "gameId": "el:E2026_67",
+          "start": "2026-10-22T18:15:00.000Z",
+          "match": "Panathinaikos – Baskonia",
+          "market": "prop",
+          "side": "over",
+          "line": 4.5,
+          "stat": "pts",
+          "playerId": "011284",
+          "player": "Kenneth Faried",
+          "label": "Kenneth Faried más de 4.5 puntos",
+          "odd": 1.38,
+          "pFinal": 0.713,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.84,
+      "prob": 0.523,
+      "ev": -0.039,
+      "start": "2026-10-22T18:05:00.000Z",
+      "createdAt": "2026-10-22T16:30:00.452Z"
     }
   ],
   "comboRecord": []
