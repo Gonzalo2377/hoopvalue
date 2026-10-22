@@ -79,7 +79,7 @@ jobs:
         if: env.X_KEY != '' && (github.event.schedule == '10 12 * * *' || github.event_name == 'workflow_dispatch')
         run: |
           for l in euroleague nba; do
-            google-chrome --headless=new --disable-gpu --hide-scrollbars --window-size=1200,675 --virtual-time-budget=15000 --screenshot=card-$l.png "https://europicks.pages.dev/card.html?l=$l&v=$GITHUB_RUN_ID" || echo "sin imagen $l"
+            google-chrome --headless=new --disable-gpu --hide-scrollbars --window-size=1200,675 --virtual-time-budget=15000 --screenshot=card-$l.png "https://europicks.pages.dev/card?l=$l&v=$GITHUB_RUN_ID" || echo "sin imagen $l"
           done
       - name: Publicar en X (pick a las 12:10 · resultados a las 23:20)
         if: env.X_KEY != '' && (github.event.schedule == '10 12 * * *' || github.event.schedule == '20 23 * * *' || github.event_name == 'workflow_dispatch')
