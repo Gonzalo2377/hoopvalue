@@ -8,8 +8,7 @@ name: Robot Euroliga
 # Cada pasada hace Euroliga y NBA (la NBA usa cuotas gratis: Unibet/Kambi + DraftKings).
 # Para dispararlo a mano: pestaña Actions → Robot Euroliga → Run workflow.
 # También se lanza solo al subir cambios de código (no con los commits de datos del robot).
-# X (Twitter): con los secrets X_API_KEY/X_API_SECRET/X_ACCESS_TOKEN/X_ACCESS_SECRET publica el pick
-# del día a las 12:10 y el resultado a las 23:20. Al subir código nunca tuitea.
+# Las publicaciones en X van en otro workflow: tweets.yml (cada 15 minutos).
 
 on:
   schedule:
@@ -34,7 +33,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-      X_KEY: ${{ secrets.X_API_KEY }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -75,25 +73,3 @@ jobs:
           # EuroPicks (dirección principal) + hoopvalue (la antigua, para no romper enlaces)
           npx --yes wrangler@3 pages project create europicks --production-branch=main >/dev/null 2>&1 || true
           for p in europicks hoopvalue; do npx --yes wrangler@3 pages deploy public --project-name=$p --branch=main --commit-dirty=true; done
-      - name: Tarjetas del pick para X (12:10 o a mano)
-        if: env.X_KEY != '' && (github.event.schedule == '10 12 * * *' || github.event_name == 'workflow_dispatch')
-        run: |
-          for l in euroleague nba; do
-            google-chrome --headless=new --disable-gpu --hide-scrollbars --window-size=1200,675 --virtual-time-budget=15000 --screenshot=card-$l.png "https://europicks.pages.dev/card?l=$l&v=$GITHUB_RUN_ID" || echo "sin imagen $l"
-          done
-      - name: Publicar en X (pick a las 12:10 · resultados a las 23:20)
-        if: env.X_KEY != '' && (github.event.schedule == '10 12 * * *' || github.event.schedule == '20 23 * * *' || github.event_name == 'workflow_dispatch')
-        env:
-          X_API_KEY: ${{ secrets.X_API_KEY }}
-          X_API_SECRET: ${{ secrets.X_API_SECRET }}
-          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
-          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
-          TWEET_MODE: ${{ github.event.schedule == '20 23 * * *' && 'results' || 'pick' }}
-        run: node robot/tweet.js
-      - name: Guardar registro de X
-        if: env.X_KEY != ''
-        run: |
-          git add data/tweets.json 2>/dev/null || true
-          if git diff --staged --quiet; then exit 0; fi
-          git commit -m "chore: registro de publicaciones en X"
-          for i in 1 2 3; do git pull --rebase --autostash origin main && git push && break; sleep 5; done

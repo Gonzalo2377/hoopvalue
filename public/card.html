@@ -8,11 +8,13 @@
 <style>html, body { margin: 0; background: #0b0f17; overflow: hidden; } canvas { display: block; }</style>
 </head>
 <body>
-<!-- Imagen 1200×675 del pick más seguro del día (la usa el robot para publicar en X).
-     card.html?l=euroleague | card.html?l=nba -->
+<!-- Imagen 1200×675 para X (la genera el robot de tuits).
+     card?l=euroleague          → pick más seguro del día
+     card?l=euroleague&g=<id>   → el mejor pick de ESE partido (o su previa si no hay pick) -->
 <canvas id="c" width="1200" height="675"></canvas>
 <script>
-const L = new URLSearchParams(location.search).get('l') === 'nba' ? 'nba' : 'euroleague';
+const QS = new URLSearchParams(location.search);
+const L = QS.get('l') === 'nba' ? 'nba' : 'euroleague', G = QS.get('g');
 const BASE = L === 'nba' ? 'data/nba/' : 'data/';
 const C = { bg: '#0b0f17', panel: '#121826', panel2: '#18202f', line: '#243045', text: '#e8edf6', muted: '#8b97ab', accent: '#ff7a1a', accent2: '#ffb36b', good: '#22c55e', bad: '#ef4444' };
 const ctx = document.getElementById('c').getContext('2d');
@@ -33,11 +35,25 @@ function frame(sub) {
   txt(sub, 1140, 74, 26, C.accent2, 800, 'right');
   txt('europicks.pages.dev', 60, 640, 24, C.accent, 800); txt('+18 · Juega con responsabilidad', 1140, 640, 20, C.muted, 600, 'right');
 }
+/* previa de un partido sin pick seguro: lo que dice el modelo frente al mercado */
+function preview(g) {
+  if (!g) { txt('Partido no encontrado', 600, 360, 40, C.text, 800, 'center'); return; }
+  const when = new Date(g.start).toLocaleString('es-ES', { weekday: 'short', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Madrid' });
+  txt(when, 600, 150, 28, C.muted, 600, 'center');
+  txt(g.home.name, 330, 250, fit(g.home.name, 420, 56, 900), C.text, 900, 'center'); txt('vs', 600, 250, 34, C.muted, 700, 'center'); txt(g.away.name, 870, 250, fit(g.away.name, 420, 56, 900), C.text, 900, 'center');
+  txt(String(Math.round(g.model.ptsH)), 330, 340, 80, C.accent2, 900, 'center'); txt(String(Math.round(g.model.ptsA)), 870, 340, 80, C.accent2, 900, 'center');
+  txt('marcador estimado por el modelo', 600, 330, 22, C.muted, 600, 'center');
+  const rows = [['Modelo · gana ' + g.home.name, g.model.pHome]];
+  if (g.market && g.market.ml) rows.push(['Mercado · gana ' + g.home.name, g.market.ml.pA]);
+  rows.forEach(([l, v], i) => { const y = 410 + i * 80; txt(l, 200, y, 24, C.muted, 600); txt(Math.round(v * 100) + '%', 1000, y, 28, C.text, 800, 'right'); rr(200, y + 14, 800, 16, 8); ctx.fillStyle = C.panel2; ctx.fill(); rr(200, y + 14, 800 * v, 16, 8); ctx.fillStyle = i ? C.accent : C.good; ctx.fill(); });
+  txt('Sin pick con seguridad suficiente: hoy no apostaríamos aquí', 600, 590, 24, C.muted, 600, 'center');
+}
 async function main() {
   await Promise.all(['600', '700', '800', '900'].map(w => document.fonts.load(`${w} 40px Inter`)));
   const T = await fetch(BASE + 'today.json?v=' + Date.now()).then(r => r.json()).catch(() => null);
-  const p = T && T.picks && T.picks[0];
-  frame(`Pick del día · ${L === 'nba' ? 'NBA' : 'Euroliga'}`);
+  const p = T && T.picks && (G ? T.picks.find(x => x.gameId === G) : T.picks[0]);
+  frame(G ? `Previa · ${L === 'nba' ? 'NBA' : 'Euroliga'}` : `Pick del día · ${L === 'nba' ? 'NBA' : 'Euroliga'}`);
+  if (!p && G) { preview(T.games.find(g => g.id === G)); document.title = 'READY'; return; }
   if (!p) { txt('Hoy no hay pick lo bastante seguro', 600, 360, 44, C.text, 800, 'center'); document.title = 'READY'; return; }
   const when = new Date(p.start).toLocaleString('es-ES', { weekday: 'short', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Madrid' });
   /* columna izquierda: el pick */
