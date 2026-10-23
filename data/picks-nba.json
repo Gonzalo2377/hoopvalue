@@ -1073,6 +1073,24 @@
       "stat": "pts",
       "playerId": "4701233",
       "createdAt": "2026-10-23T15:44:23.281Z"
+    },
+    {
+      "id": "nba:401909845|prop|over|9.5|4397002|pts",
+      "gameId": "nba:401909845",
+      "start": "2026-10-23T23:00Z",
+      "match": "Magic – Timberwolves",
+      "market": "prop",
+      "side": "over",
+      "line": 9.5,
+      "label": "Ayo Dosunmu más de 9.5 puntos",
+      "odd": 1.37,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.712,
+      "safety": 0.655,
+      "tier": "B",
+      "stat": "pts",
+      "playerId": "4397002",
+      "createdAt": "2026-10-23T15:48:33.931Z"
     }
   ],
   "record": [
@@ -2234,6 +2252,148 @@
       "ev": -0.042,
       "start": "2026-10-24T02:00Z",
       "createdAt": "2026-10-23T15:44:23.281Z"
+    },
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "nba:401909844|prop|over|19.5|4395712|pra",
+          "gameId": "nba:401909844",
+          "start": "2026-10-23T23:00Z",
+          "match": "Pacers – Mavericks",
+          "market": "prop",
+          "side": "over",
+          "line": 19.5,
+          "stat": "pra",
+          "playerId": "4395712",
+          "player": "Andrew Nembhard",
+          "label": "Andrew Nembhard más de 19.5 pts+reb+ast",
+          "odd": 1.3,
+          "pFinal": 0.756,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909851|prop|over|3.5|3448|reb",
+          "gameId": "nba:401909851",
+          "start": "2026-10-24T02:00Z",
+          "match": "Lakers – Clippers",
+          "market": "prop",
+          "side": "over",
+          "line": 3.5,
+          "stat": "reb",
+          "playerId": "3448",
+          "player": "Brook Lopez",
+          "label": "Brook Lopez más de 3.5 rebotes",
+          "odd": 1.3,
+          "pFinal": 0.754,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.69,
+      "prob": 0.57,
+      "ev": -0.037,
+      "start": "2026-10-23T23:00Z",
+      "createdAt": "2026-10-23T15:48:33.931Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909095|prop|over|19.5|3934672|pts",
+          "gameId": "nba:401909095",
+          "start": "2026-10-23T23:00Z",
+          "match": "Celtics – Knicks",
+          "market": "prop",
+          "side": "over",
+          "line": 19.5,
+          "stat": "pts",
+          "playerId": "3934672",
+          "player": "Jalen Brunson",
+          "label": "Jalen Brunson más de 19.5 puntos",
+          "odd": 1.32,
+          "pFinal": 0.745,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909844|prop|over|24.5|3149673|pr",
+          "gameId": "nba:401909844",
+          "start": "2026-10-23T23:00Z",
+          "match": "Pacers – Mavericks",
+          "market": "prop",
+          "side": "over",
+          "line": 24.5,
+          "stat": "pr",
+          "playerId": "3149673",
+          "player": "Pascal Siakam",
+          "label": "Pascal Siakam más de 24.5 pts+reb",
+          "odd": 1.32,
+          "pFinal": 0.745,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909845|prop|over|17.5|4432573|pts",
+          "gameId": "nba:401909845",
+          "start": "2026-10-23T23:00Z",
+          "match": "Magic – Timberwolves",
+          "market": "prop",
+          "side": "over",
+          "line": 17.5,
+          "stat": "pts",
+          "playerId": "4432573",
+          "player": "Paolo Banchero",
+          "label": "Paolo Banchero más de 17.5 puntos",
+          "odd": 1.32,
+          "pFinal": 0.752,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.3,
+      "prob": 0.417,
+      "ev": -0.04,
+      "start": "2026-10-23T23:00Z",
+      "createdAt": "2026-10-23T15:48:33.931Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "nba:401909844|prop|over|19.5|4395712|pra",
+          "gameId": "nba:401909844",
+          "start": "2026-10-23T23:00Z",
+          "match": "Pacers – Mavericks",
+          "market": "prop",
+          "side": "over",
+          "line": 19.5,
+          "stat": "pra",
+          "playerId": "4395712",
+          "player": "Andrew Nembhard",
+          "label": "Andrew Nembhard más de 19.5 pts+reb+ast",
+          "odd": 1.3,
+          "pFinal": 0.756,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909852|prop|over|9.5|4683678|pa",
+          "gameId": "nba:401909852",
+          "start": "2026-10-24T02:00Z",
+          "match": "Kings – Trail Blazers",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pa",
+          "playerId": "4683678",
+          "player": "Scoot Henderson",
+          "label": "Scoot Henderson más de 9.5 pts+ast",
+          "odd": 1.3,
+          "pFinal": 0.752,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.69,
+      "prob": 0.569,
+      "ev": -0.039,
+      "start": "2026-10-23T23:00Z",
+      "createdAt": "2026-10-23T15:48:33.931Z"
     }
   ],
   "comboRecord": [
