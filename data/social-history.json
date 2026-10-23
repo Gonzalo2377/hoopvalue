@@ -171,7 +171,7 @@
         "title": "Zalgiris vs LDLC ASVEL",
         "start": "2026-10-23T17:00:00.000Z",
         "postAt": "2026-10-23T16:00:00.000Z",
-        "text": "🏀 Euroliga · hoy 19:00\nZalgiris vs LDLC ASVEL\n\n✅ Gana Zalgiris @1.34 (75%)\n✅ Carsen Edwards más de 14.5 puntos @1.36 (72%)\n📊 Modelo: Zalgiris 78% · LDLC ASVEL 22%\n\n🔗 Análisis completo: link en la bio\n#Euroliga · +18 · Juega con responsabilidad",
+        "text": "🏀 Euroliga · hoy 19:00\nZalgiris vs LDLC ASVEL\n\n✅ Gana Zalgiris @1.34 (73%)\n✅ Carsen Edwards más de 14.5 puntos @1.36 (72%)\n📊 Modelo: Zalgiris 78% · LDLC ASVEL 22%\n\n🔗 Análisis completo: link en la bio\n#Euroliga · +18 · Juega con responsabilidad",
         "image": true,
         "picks": [
           {
@@ -196,22 +196,9 @@
         "title": "Olympiacos vs Fenerbahce",
         "start": "2026-10-23T18:15:00.000Z",
         "postAt": "2026-10-23T17:15:00.000Z",
-        "text": "🏀 Euroliga · hoy 20:15\nOlympiacos vs Fenerbahce\n\n✅ Gana Olympiacos @1.83 (55%)\n✅ Mbaye Ndiaye más de 9.5 puntos @1.84 (55%)\n📊 Modelo: Olympiacos 57% · Fenerbahce 43%\n\n🔗 Análisis completo: link en la bio\n#Euroliga · +18 · Juega con responsabilidad",
+        "text": "🏀 Euroliga · hoy 20:15\nOlympiacos vs Fenerbahce\n\nSin pick seguro en este partido: no hay valor suficiente. A veces lo mejor es no apostar.\n📊 Modelo: Olympiacos 57% · Fenerbahce 43%\n\n🔗 Análisis completo: link en la bio\n#Euroliga · +18 · Juega con responsabilidad",
         "image": true,
-        "picks": [
-          {
-            "id": "el:E2026_70|ml|home|||",
-            "league": "euroleague",
-            "label": "Gana Olympiacos",
-            "odd": 1.83
-          },
-          {
-            "id": "el:E2026_70|prop|over|9.5|012731|pts",
-            "league": "euroleague",
-            "label": "M. Ndiaye +9.5 puntos",
-            "odd": 1.84
-          }
-        ]
+        "picks": []
       },
       "el:el:E2026_69": {
         "id": "el:el:E2026_69",
@@ -238,25 +225,25 @@
         "league": "nba",
         "title": "NBA · picks de la noche",
         "postAt": "2026-10-23T16:45:00.000Z",
-        "text": "🏀 NBA · los picks más seguros de esta noche\n\n1️⃣ A. Thompson +9.5 reb+ast @1.30 (75%)\n    Spurs – Rockets · 03:30\n2️⃣ O. Toppin +4.5 reb+ast @1.30 (75%)\n    Pacers – Mavericks · 01:00\n3️⃣ B. Lopez +3.5 rebotes @1.30 (75%)\n    Lakers – Clippers · 04:00\n\n🔗 Análisis complet",
+        "text": "🏀 NBA · los picks más seguros de esta noche\n\n1️⃣ J. Smith Jr. +4.5 rebotes @1.30 (75%)\n    Spurs – Rockets · 03:30\n2️⃣ I. Jackson +5.5 puntos @1.30 (75%)\n    Lakers – Clippers · 04:00\n3️⃣ B. Adebayo +9.5 reb+ast @1.30 (75%)\n    Heat – Pistons · 02:00\n\n🔗 Análisis completo:",
         "image": true,
         "picks": [
           {
-            "id": "nba:401909096|prop|over|9.5|4684740|ra",
+            "id": "nba:401909096|prop|over|4.5|4432639|reb",
             "league": "nba",
-            "label": "A. Thompson +9.5 reb+ast",
+            "label": "J. Smith Jr. +4.5 rebotes",
             "odd": 1.3
           },
           {
-            "id": "nba:401909844|prop|over|4.5|4278355|ra",
+            "id": "nba:401909851|prop|over|5.5|4432170|pts",
             "league": "nba",
-            "label": "O. Toppin +4.5 reb+ast",
+            "label": "I. Jackson +5.5 puntos",
             "odd": 1.3
           },
           {
-            "id": "nba:401909851|prop|over|3.5|3448|reb",
+            "id": "nba:401909847|prop|over|9.5|4066261|ra",
             "league": "nba",
-            "label": "B. Lopez +3.5 rebotes",
+            "label": "B. Adebayo +9.5 reb+ast",
             "odd": 1.3
           }
         ]
