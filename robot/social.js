@@ -94,17 +94,21 @@ function main() {
     if (!list.length) continue;
     const done = list.filter(i => i.result === 'W' || i.result === 'L'), w = done.filter(i => i.result === 'W').length;
     const all = allPub.filter(i => i.league === lg).map(i => info(i).result).filter(r => r === 'W' || r === 'L'), tw = all.filter(r => r === 'W').length;
+    /* unidades: 1 u por pick → acierto suma (cuota − 1), fallo resta 1 */
+    const units = l => +l.reduce((a, i) => a + (i.result === 'W' ? Number(i.odd) - 1 : i.result === 'L' ? -1 : 0), 0).toFixed(2);
+    const uDay = units(list), uTot = units(allPub.filter(i => i.league === lg).map(i => ({ ...i, result: info(i).result })));
+    const u = x => `${x >= 0 ? '+' : ''}${x.toFixed(2)} u`;
     const head = [`📋 ${LG[lg].name} · resultados de ayer (${D}/${M})`, ''];
-    const foot = ['', `Ayer: ${w}-${done.length - w} · Balance total ${LG[lg].name}: ${tw}-${all.length - tw}${all.length ? ` (${pct(tw / all.length)})` : ''}`, `${LG[lg].tag} · +18 · Juega con responsabilidad`];
+    const foot = ['', `Ayer: ${w}-${done.length - w} (${u(uDay)}) · Total ${LG[lg].name}: ${tw}-${all.length - tw} (${u(uTot)})`, `${LG[lg].tag} · +18 · Juega con responsabilidad`];
     let text = [...head, ...list.map(i => `${RES[i.result] || '⏳'} ${i.label} @${Number(i.odd).toFixed(2)}`), ...foot].join('\n');
     /* si no cabe: nombres abreviados sin cuota (la cuota va en la imagen); si aún no cabe, solo iconos */
     const abbr = l => l.replace(/^\S\.\s/, '').replace(' puntos', ' pts').replace(' rebotes', ' reb').replace(' asistencias', ' ast').replace('pts+reb+ast', 'PRA');
     const compact = [`📋 ${LG[lg].name} · ayer ${D}/${M}`, ...list.map(i => `${RES[i.result] || '⏳'} ${abbr(i.label)}`),
-      `${w}-${done.length - w} ayer · ${tw}-${all.length - tw} total${all.length ? ` (${pct(tw / all.length)})` : ''}`, `${LG[lg].tag} · +18`];
+      `${w}-${done.length - w} ayer (${u(uDay)}) · ${tw}-${all.length - tw} total (${u(uTot)})`, `${LG[lg].tag} · +18`];
     if (xLen(text) > 280) text = compact.join('\n');
     if (xLen(text) > 280) text = [...head, `${list.map(i => RES[i.result] || '⏳').join('')}`, '👇 Cada pick en la imagen', ...foot].join('\n');
     put({ id: 'summary-' + lg, kind: 'summary', league: lg, title: `${LG[lg].name} · resultados de ayer (${D}/${M})`, postAt: madridAt(today, at), text, image: true,
-      pending: list.some(i => !i.result), rows: list.map(i => ({ league: lg, label: i.label, odd: i.odd, result: i.result })), balance: { day: [w, done.length - w], total: [tw, all.length - tw] } });
+      pending: list.some(i => !i.result), rows: list.map(i => ({ league: lg, label: i.label, odd: i.odd, result: i.result })), balance: { day: [w, done.length - w], total: [tw, all.length - tw], units: { day: uDay, total: uTot } } });
   }
   delete day.summary;                                           // el antiguo resumen conjunto
 

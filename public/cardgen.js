@@ -95,7 +95,7 @@ return main();
 window.renderSummary = async function (canvas, item) {
   const C = { bg: '#0b0f17', panel: '#121826', panel2: '#18202f', line: '#243045', text: '#e8edf6', muted: '#8b97ab', accent: '#ff7a1a', accent2: '#ffb36b', good: '#22c55e', bad: '#ef4444' };
   const rows = item.rows || [], groups = ['euroleague', 'nba'].map(lg => [lg, rows.filter(r => r.league === lg)]).filter(([, l]) => l.length);
-  const RH = 58, H = 230 + groups.length * 70 + rows.length * RH + 90;
+  const RH = 58, H = 240 + groups.length * 70 + rows.length * RH + 90;
   canvas.width = 1200; canvas.height = Math.max(675, H);
   const ctx = canvas.getContext('2d');
   const rr = (x, y, w, h, r) => { ctx.beginPath(); ctx.roundRect(x, y, w, h, r); };
@@ -109,12 +109,20 @@ window.renderSummary = async function (canvas, item) {
   txt('Euro', 106, 76, 40, C.accent, 900); ctx.font = '900 40px Inter'; txt('Picks', 106 + ctx.measureText('Euro').width + 3, 76, 40, C.text, 900);
   txt(item.title, 1140, 74, 28, C.accent2, 800, 'right');
   const [w, l] = (item.balance && item.balance.day) || [0, 0], [tw, tl] = (item.balance && item.balance.total) || [0, 0];
-  rr(60, 110, 520, 90, 20); ctx.fillStyle = C.panel; ctx.fill(); txt('Ayer', 90, 150, 22, C.muted, 600); txt(`${w}-${l}`, 90, 186, 40, w >= l ? C.good : C.bad, 900);
-  txt(`${w + l ? Math.round(w / (w + l) * 100) : 0}% de acierto`, 300, 180, 26, C.text, 700);
-  rr(620, 110, 520, 90, 20); ctx.fillStyle = C.panel; ctx.fill(); txt('Balance total', 650, 150, 22, C.muted, 600); txt(`${tw}-${tl}`, 650, 186, 40, C.text, 900);
-  txt(`${tw + tl ? Math.round(tw / (tw + tl) * 100) : 0}% de acierto`, 860, 180, 26, C.text, 700);
+  /* unidades (1 u por pick): las que trae el resumen o, si no, las del día a partir de las filas */
+  const U = (item.balance && item.balance.units) || {};
+  const uDay = U.day != null ? U.day : rows.reduce((a, r) => a + (r.result === 'W' ? Number(r.odd) - 1 : r.result === 'L' ? -1 : 0), 0);
+  const uTot = U.total != null ? U.total : uDay;
+  const fu = x => `${x >= 0 ? '+' : ''}${Number(x).toFixed(2)} u`;
+  const box = (x, label, wl, units, pctTxt, wlColor) => {
+    rr(x, 110, 520, 100, 20); ctx.fillStyle = C.panel; ctx.fill();
+    txt(label, x + 30, 148, 22, C.muted, 600); txt(wl, x + 30, 190, 40, wlColor, 900);
+    txt(fu(units), x + 490, 160, 34, units >= 0 ? C.good : C.bad, 900, 'right'); txt(pctTxt, x + 490, 192, 20, C.muted, 600, 'right');
+  };
+  box(60, 'Ayer', `${w}-${l}`, uDay, `${w + l ? Math.round(w / (w + l) * 100) : 0}% de acierto`, w >= l ? C.good : C.bad);
+  box(620, 'Balance total', `${tw}-${tl}`, uTot, `${tw + tl ? Math.round(tw / (tw + tl) * 100) : 0}% de acierto`, C.text);
   /* filas */
-  let y = 250;
+  let y = 260;
   for (const [lg, list] of groups) {
     txt(lg === 'nba' ? 'NBA' : 'Euroliga', 60, y + 30, 28, C.accent2, 900);
     const lw = list.filter(r => r.result === 'W').length, ll = list.filter(r => r.result === 'L').length;
