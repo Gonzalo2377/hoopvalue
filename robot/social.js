@@ -63,7 +63,7 @@ function main() {
   const T = { euroleague: readJSON(path.join(ROOT, LG.euroleague.dir, 'today.json'), null), nba: readJSON(path.join(ROOT, LG.nba.dir, 'today.json'), null) };
   /* actualiza una publicación salvo que ya haya pasado su hora (congelada) */
   /* se congela al llegar su hora (lo publicado es lo que cuenta)… salvo el resumen mientras le falten resultados */
-  const put = item => { const old = day[item.id]; if (old && Date.parse(old.postAt) <= NOW && !old.pending) return; day[item.id] = item; };
+  const put = item => { const old = day[item.id]; if (old && (old.manual || (Date.parse(old.postAt) <= NOW && !old.pending))) return; day[item.id] = item; };   // manual = picks que puso el usuario: no se tocan
 
   /* Euroliga: una por partido de hoy */
   for (const g of (T.euroleague && T.euroleague.games) || []) {

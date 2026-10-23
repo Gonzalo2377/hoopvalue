@@ -334,33 +334,70 @@
         "id": "summary-nba",
         "kind": "summary",
         "league": "nba",
+        "manual": true,
         "title": "NBA · resultados de ayer (22/10)",
         "postAt": "2026-10-23T07:40:00.000Z",
-        "text": "📋 NBA · resultados de ayer (22/10)\n\n✅ C. Wallace +0.5 triples @1.30\n✅ V. Edgecombe +9.5 pts+ast @1.30\n\nAyer: 2-0 · Balance total NBA: 2-0 (100%)\n#NBA · +18 · Juega con responsabilidad",
+        "text": "📋 NBA · ayer 22/10\n✅ Edgecombe +3.5 reb @1.36\n✅ Wallace +5.5 pts @1.35\n✅ Maxey +24.5 pts+ast @1.40\n✅ A. Mitchell −1.5 triples @1.44\n\nExtras\n✅ OKC −8.5 @1.96\n✅ Menos 236.5 OKC-DEN @1.97\n❌ Cavs +2.5 @1.95\n❌ Más 236.5 PHI-CLE @1.91\n\n6-2 ayer · #NBA · +18",
         "image": true,
         "pending": false,
         "rows": [
           {
             "league": "nba",
-            "label": "C. Wallace +0.5 triples",
-            "odd": 1.3,
+            "label": "VJ Edgecombe +3.5 reb",
+            "odd": 1.36,
             "result": "W"
           },
           {
             "league": "nba",
-            "label": "V. Edgecombe +9.5 pts+ast",
-            "odd": 1.3,
+            "label": "Cason Wallace +5.5 pts",
+            "odd": 1.35,
             "result": "W"
+          },
+          {
+            "league": "nba",
+            "label": "Tyrese Maxey +24.5 pts+ast",
+            "odd": 1.4,
+            "result": "W"
+          },
+          {
+            "league": "nba",
+            "label": "Ajay Mitchell −1.5 triples",
+            "odd": 1.44,
+            "result": "W"
+          },
+          {
+            "league": "nba",
+            "label": "OKC −8.5 (96-84)",
+            "odd": 1.96,
+            "result": "W"
+          },
+          {
+            "league": "nba",
+            "label": "Menos 236.5 OKC-DEN (180)",
+            "odd": 1.97,
+            "result": "W"
+          },
+          {
+            "league": "nba",
+            "label": "Cavs +2.5 (106-114)",
+            "odd": 1.95,
+            "result": "L"
+          },
+          {
+            "league": "nba",
+            "label": "Más 236.5 PHI-CLE (220)",
+            "odd": 1.91,
+            "result": "L"
           }
         ],
         "balance": {
           "day": [
-            2,
-            0
+            6,
+            2
           ],
           "total": [
-            2,
-            0
+            6,
+            2
           ]
         }
       }
