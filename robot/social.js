@@ -40,7 +40,7 @@ function xLen(s) {
   return n;
 }
 function fit(lines) { let t = lines.join('\n'); if (xLen(t) <= 280) return t; t = lines.filter(l => !/^📊/.test(l)).join('\n'); while (xLen(t) > 280) t = t.slice(0, -2); return t; }
-const mini = p => ({ id: pickId(p), league: p.league || null, label: short(p), odd: p.odd });
+const mini = p => ({ id: pickId(p), league: p.league || null, label: short(p), odd: p.odd, start: p.start });
 
 function elGame(g, picks) {
   const lines = [`🏀 Euroliga · hoy ${hhmm(g.start)}`, `${g.home.name} vs ${g.away.name}`, ''];
@@ -78,33 +78,27 @@ function main() {
   for (const p of (T.nba && T.nba.picks) || []) { const t = Date.parse(p.start); if (t > NOW && t < tonightEnd && !seen.has(p.gameId)) { seen.add(p.gameId); top.push(p); } if (top.length === 3) break; }
   if (top.length) put({ id: 'nba-day', kind: 'nba-day', league: 'nba', title: 'NBA · picks de la noche', postAt: madridAt(today, '18:45'), text: nbaDay(top), image: true, picks: top.map(p => ({ ...mini(p), league: 'nba' })) });
 
-  /* resumen de ayer */
+  /* resumen de ayer: solo picks de partidos YA jugados (antes de hoy a mediodía), uno a uno con ✅/❌ */
+  const recs = {}, pend = {};
+  for (const lg of ['euroleague', 'nba']) { const R = readJSON(path.join(ROOT, LG[lg].dir, 'record.json'), { record: [], pending: [] }); recs[lg] = R.record || []; pend[lg] = R.pending || []; }
+  const info = i => { const r = recs[i.league].find(x => x.id === i.id) || pend[i.league].find(x => x.id === i.id); return { result: r && r.result || null, start: i.start || (r && r.start) || null }; };
+  const cutoff = Date.parse(madridAt(today, '12:00'));
+  const played = i => { const st = info(i).start; return st && Date.parse(st) < cutoff; };
   const prev = Object.values(hist.days[yday] || {}).filter(i => i.picks && i.picks.length && Date.parse(i.postAt) <= Date.parse(madridAt(today, '00:00')));
-  const items = prev.flatMap(i => i.picks);
+  const items = prev.flatMap(i => i.picks).filter(played).map(i => ({ ...i, result: info(i).result }));
   if (items.length) {
-    const rec = { euroleague: readJSON(path.join(ROOT, LG.euroleague.dir, 'record.json'), { record: [] }).record, nba: readJSON(path.join(ROOT, LG.nba.dir, 'record.json'), { record: [] }).record };
-    const res = i => { const r = rec[i.league].find(x => x.id === i.id); return r ? r.result : null; };
     const [, M, D] = yday.split('-');
-    const lines = [`📋 Resumen de ayer (${D}/${M})`];
-    for (const lg of ['euroleague', 'nba']) {
-      const l = items.filter(i => i.league === lg); if (!l.length) continue;
-      lines.push('', LG[lg].name); l.forEach(i => lines.push(`${RES[res(i)] || '⏳'} ${i.label} @${Number(i.odd).toFixed(2)}`));
-    }
-    const done = items.map(res).filter(r => r === 'W' || r === 'L'), w = done.filter(r => r === 'W').length;
-    /* balance de todo lo publicado (días anteriores a hoy) */
-    const all = Object.entries(hist.days).filter(([d]) => d < today).flatMap(([, it]) => Object.values(it).filter(i => Date.parse(i.postAt) <= NOW).flatMap(i => i.picks || [])).map(res).filter(r => r === 'W' || r === 'L');
+    const done = items.filter(i => i.result === 'W' || i.result === 'L'), w = done.filter(i => i.result === 'W').length;
+    /* balance de todo lo publicado hasta ayer */
+    const all = Object.entries(hist.days).filter(([d]) => d < today).flatMap(([, it]) => Object.values(it).filter(i => Date.parse(i.postAt) <= NOW).flatMap(i => i.picks || []))
+      .filter(played).map(i => info(i).result).filter(r => r === 'W' || r === 'L');
     const tw = all.filter(r => r === 'W').length;
-    lines.push('', `Ayer: ${w}-${done.length - w} · Balance total: ${tw}-${all.length - tw}${all.length ? ` (${pct(tw / all.length)})` : ''}`, 'Todo el historial, sin borrar nada: link en la bio');
-    let text = lines.join('\n');
-    if (xLen(text) > 280) {                                     // muchos picks: una línea de iconos por liga
-      text = [`📋 Resumen de ayer (${D}/${M})`, '', ...['euroleague', 'nba'].map(lg => {
-        const r = items.filter(i => i.league === lg).map(res); if (!r.length) return null;
-        const ww = r.filter(x => x === 'W').length, ll = r.filter(x => x === 'L').length;
-        return `${LG[lg].name}: ${r.map(x => RES[x] || '⏳').join('')} (${ww}-${ll})`;
-      }).filter(Boolean), '', `Ayer: ${w}-${done.length - w} · Balance total: ${tw}-${all.length - tw}${all.length ? ` (${pct(tw / all.length)})` : ''}`, 'Detalle de cada pick: link en la bio'].join('\n');
-    }
-    put({ id: 'summary', kind: 'summary', title: `Resumen de ayer (${D}/${M})`, postAt: madridAt(today, '09:30'), text, image: false, pending: items.some(i => !res(i)) });
+    const perLeague = ['euroleague', 'nba'].map(lg => { const l = items.filter(i => i.league === lg); if (!l.length) return null; const ww = l.filter(i => i.result === 'W').length, ll = l.filter(i => i.result === 'L').length; return `${LG[lg].name}: ${ww}-${ll} ${l.map(i => RES[i.result] || '⏳').join('')}`; }).filter(Boolean);
+    const text = [`📋 Resumen de ayer (${D}/${M})`, '', ...perLeague, '', `Ayer: ${w}-${done.length - w} · Balance total: ${tw}-${all.length - tw}${all.length ? ` (${pct(tw / all.length)})` : ''}`, '👇 Todos los picks en la imagen', '+18 · Juega con responsabilidad'].join('\n');
+    put({ id: 'summary', kind: 'summary', title: `Resumen de ayer (${D}/${M})`, postAt: madridAt(today, '09:30'), text, image: true, pending: items.some(i => !i.result),
+      rows: items.map(i => ({ league: i.league, label: i.label, odd: i.odd, result: i.result })), balance: { day: [w, done.length - w], total: [tw, all.length - tw] } });
   }
+
 
   /* se guardan solo los últimos 30 días de memoria */
   Object.keys(hist.days).sort().slice(0, -30).forEach(d => delete hist.days[d]);

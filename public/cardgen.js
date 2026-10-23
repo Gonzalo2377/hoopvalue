@@ -86,3 +86,50 @@ async function main() {
 }
 return main();
 };
+
+/* ============================================================
+   Imagen del RESUMEN del día: cada pick en su fila, verde si acertó
+   y rojo si falló, agrupados por liga, con el balance arriba.
+   renderSummary(canvas, item) — item = publicación 'summary' de social.json
+   ============================================================ */
+window.renderSummary = async function (canvas, item) {
+  const C = { bg: '#0b0f17', panel: '#121826', panel2: '#18202f', line: '#243045', text: '#e8edf6', muted: '#8b97ab', accent: '#ff7a1a', accent2: '#ffb36b', good: '#22c55e', bad: '#ef4444' };
+  const rows = item.rows || [], groups = ['euroleague', 'nba'].map(lg => [lg, rows.filter(r => r.league === lg)]).filter(([, l]) => l.length);
+  const RH = 58, H = 230 + groups.length * 70 + rows.length * RH + 90;
+  canvas.width = 1200; canvas.height = Math.max(675, H);
+  const ctx = canvas.getContext('2d');
+  const rr = (x, y, w, h, r) => { ctx.beginPath(); ctx.roundRect(x, y, w, h, r); };
+  const txt = (s, x, y, size, color = C.text, weight = 800, align = 'left') => { ctx.font = `${weight} ${size}px Inter`; ctx.fillStyle = color; ctx.textAlign = align; ctx.fillText(s, x, y); };
+  await Promise.all(['600', '700', '800', '900'].map(w => document.fonts.load(`${w} 40px Inter`)));
+  ctx.fillStyle = C.bg; ctx.fillRect(0, 0, canvas.width, canvas.height);
+  const g = ctx.createRadialGradient(900, 150, 20, 900, 150, 800); g.addColorStop(0, 'rgba(255,122,26,.14)'); g.addColorStop(1, 'rgba(0,0,0,0)'); ctx.fillStyle = g; ctx.fillRect(0, 0, canvas.width, canvas.height);
+  /* cabecera */
+  const bg = ctx.createRadialGradient(62, 54, 3, 70, 62, 24); bg.addColorStop(0, '#ffb36b'); bg.addColorStop(.6, '#ff7a1a'); bg.addColorStop(1, '#b4410b');
+  ctx.fillStyle = bg; ctx.beginPath(); ctx.arc(70, 62, 24, 0, Math.PI * 2); ctx.fill();
+  txt('Euro', 106, 76, 40, C.accent, 900); ctx.font = '900 40px Inter'; txt('Picks', 106 + ctx.measureText('Euro').width + 3, 76, 40, C.text, 900);
+  txt(item.title, 1140, 74, 28, C.accent2, 800, 'right');
+  const [w, l] = (item.balance && item.balance.day) || [0, 0], [tw, tl] = (item.balance && item.balance.total) || [0, 0];
+  rr(60, 110, 520, 90, 20); ctx.fillStyle = C.panel; ctx.fill(); txt('Ayer', 90, 150, 22, C.muted, 600); txt(`${w}-${l}`, 90, 186, 40, w >= l ? C.good : C.bad, 900);
+  txt(`${w + l ? Math.round(w / (w + l) * 100) : 0}% de acierto`, 300, 180, 26, C.text, 700);
+  rr(620, 110, 520, 90, 20); ctx.fillStyle = C.panel; ctx.fill(); txt('Balance total', 650, 150, 22, C.muted, 600); txt(`${tw}-${tl}`, 650, 186, 40, C.text, 900);
+  txt(`${tw + tl ? Math.round(tw / (tw + tl) * 100) : 0}% de acierto`, 860, 180, 26, C.text, 700);
+  /* filas */
+  let y = 250;
+  for (const [lg, list] of groups) {
+    txt(lg === 'nba' ? 'NBA' : 'Euroliga', 60, y + 30, 28, C.accent2, 900);
+    const lw = list.filter(r => r.result === 'W').length, ll = list.filter(r => r.result === 'L').length;
+    txt(`${lw}-${ll}`, 1140, y + 30, 28, C.text, 900, 'right'); y += 54;
+    for (const r of list) {
+      const ok = r.result === 'W', ko = r.result === 'L', col = ok ? C.good : ko ? C.bad : C.muted;
+      rr(60, y, 1080, RH - 10, 14); ctx.fillStyle = ok ? 'rgba(34,197,94,.12)' : ko ? 'rgba(239,68,68,.12)' : C.panel2; ctx.fill();
+      rr(60, y, 8, RH - 10, 4); ctx.fillStyle = col; ctx.fill();
+      txt(ok ? '✓' : ko ? '✗' : r.result === 'P' ? '=' : '·', 100, y + 34, 28, col, 900, 'center');
+      txt(r.label, 135, y + 33, 26, C.text, 700);
+      txt('@' + Number(r.odd).toFixed(2), 1120, y + 33, 26, C.accent2, 800, 'right');
+      y += RH;
+    }
+    y += 16;
+  }
+  txt('Historial completo, sin borrar nada · europicks.pages.dev', 60, canvas.height - 36, 22, C.muted, 600);
+  txt('+18 · Juega con responsabilidad', 1140, canvas.height - 36, 20, C.muted, 600, 'right');
+};

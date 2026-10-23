@@ -178,13 +178,15 @@
             "id": "el:E2026_68|ml|home|||",
             "league": "euroleague",
             "label": "Gana Zalgiris",
-            "odd": 1.34
+            "odd": 1.34,
+            "start": "2026-10-23T17:00:00.000Z"
           },
           {
             "id": "el:E2026_68|prop|over|14.5|011987|pts",
             "league": "euroleague",
             "label": "C. Edwards +14.5 puntos",
-            "odd": 1.36
+            "odd": 1.36,
+            "start": "2026-10-23T17:00:00.000Z"
           }
         ]
       },
@@ -215,7 +217,8 @@
             "id": "el:E2026_69|ml|away|||",
             "league": "euroleague",
             "label": "Gana Valencia",
-            "odd": 1.51
+            "odd": 1.51,
+            "start": "2026-10-23T18:45:00.000Z"
           }
         ]
       },
@@ -232,19 +235,22 @@
             "id": "nba:401909096|prop|over|4.5|4432639|reb",
             "league": "nba",
             "label": "J. Smith Jr. +4.5 rebotes",
-            "odd": 1.3
+            "odd": 1.3,
+            "start": "2026-10-24T01:30Z"
           },
           {
             "id": "nba:401909851|prop|over|5.5|4432170|pts",
             "league": "nba",
             "label": "I. Jackson +5.5 puntos",
-            "odd": 1.3
+            "odd": 1.3,
+            "start": "2026-10-24T02:00Z"
           },
           {
             "id": "nba:401909847|prop|over|9.5|4066261|ra",
             "league": "nba",
             "label": "B. Adebayo +9.5 reb+ast",
-            "odd": 1.3
+            "odd": 1.3,
+            "start": "2026-10-24T00:00Z"
           }
         ]
       },
@@ -253,9 +259,87 @@
         "kind": "summary",
         "title": "Resumen de ayer (22/10)",
         "postAt": "2026-10-23T07:30:00.000Z",
-        "text": "📋 Resumen de ayer (22/10)\n\nEuroliga: ❌✅❌✅✅✅✅✅✅ (7-2)\nNBA: ✅✅⏳ (2-0)\n\nAyer: 9-2 · Balance total: 9-2 (82%)\nDetalle de cada pick: link en la bio",
-        "image": false,
-        "pending": true
+        "text": "📋 Resumen de ayer (22/10)\n\nEuroliga: 7-2 ❌✅❌✅✅✅✅✅✅\nNBA: 2-0 ✅✅\n\nAyer: 9-2 · Balance total: 9-2 (82%)\n👇 Todos los picks en la imagen\n+18 · Juega con responsabilidad",
+        "image": true,
+        "pending": false,
+        "rows": [
+          {
+            "league": "euroleague",
+            "label": "W. Gabriel +4.5 puntos",
+            "odd": 1.45,
+            "result": "L"
+          },
+          {
+            "league": "euroleague",
+            "label": "D. Dotson +4.5 puntos",
+            "odd": 1.4,
+            "result": "W"
+          },
+          {
+            "league": "euroleague",
+            "label": "M. Diakite +4.5 puntos",
+            "odd": 1.42,
+            "result": "L"
+          },
+          {
+            "league": "euroleague",
+            "label": "J. Jessup +4.5 puntos",
+            "odd": 1.78,
+            "result": "W"
+          },
+          {
+            "league": "euroleague",
+            "label": "T. Maledon +9.5 puntos",
+            "odd": 1.33,
+            "result": "W"
+          },
+          {
+            "league": "euroleague",
+            "label": "Gana Real Madrid",
+            "odd": 1.6,
+            "result": "W"
+          },
+          {
+            "league": "euroleague",
+            "label": "K. Faried +4.5 puntos",
+            "odd": 1.38,
+            "result": "W"
+          },
+          {
+            "league": "euroleague",
+            "label": "J. Robinson +9.5 puntos",
+            "odd": 1.41,
+            "result": "W"
+          },
+          {
+            "league": "euroleague",
+            "label": "T. Martin +3.5 rebotes",
+            "odd": 1.53,
+            "result": "W"
+          },
+          {
+            "league": "nba",
+            "label": "C. Wallace +0.5 triples",
+            "odd": 1.3,
+            "result": "W"
+          },
+          {
+            "league": "nba",
+            "label": "V. Edgecombe +9.5 pts+ast",
+            "odd": 1.3,
+            "result": "W"
+          }
+        ],
+        "balance": {
+          "day": [
+            9,
+            2
+          ],
+          "total": [
+            9,
+            2
+          ]
+        }
       }
     }
   }

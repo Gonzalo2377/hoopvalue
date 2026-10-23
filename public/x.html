@@ -70,7 +70,7 @@ async function load() {
   S.items.forEach((it, i) => { const ta = document.getElementById('t' + i); const upd = () => { document.getElementById('c' + i).textContent = `${xLen(ta.value)}/280`; }; ta.oninput = upd; upd(); });
   /* imágenes: se dibujan en el propio móvil con los datos de hoy */
   await document.fonts.ready;
-  for (const c of document.querySelectorAll('canvas[data-i]')) { const it = S.items[+c.dataset.i]; await renderCard(c, { league: it.league, gameId: it.gameId || null }); }
+  for (const c of document.querySelectorAll('canvas[data-i]')) { const it = S.items[+c.dataset.i]; if (it.kind === 'summary') await renderSummary(c, it); else await renderCard(c, { league: it.league, gameId: it.gameId || null }); }
   const now = document.querySelector('.post.now'); if (now) now.scrollIntoView({ block: 'start' });
 }
 /* longitud según X: enlaces 23 y emojis 2 */
