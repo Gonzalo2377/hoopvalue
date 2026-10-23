@@ -109,6 +109,61 @@
       "stat": "pts",
       "playerId": "015164",
       "createdAt": "2026-10-22T16:30:00.452Z"
+    },
+    {
+      "id": "el:E2026_68|ml|home|||",
+      "gameId": "el:E2026_68",
+      "start": "2026-10-23T17:00:00.000Z",
+      "round": 7,
+      "match": "Zalgiris – LDLC ASVEL",
+      "market": "ml",
+      "side": "home",
+      "line": null,
+      "label": "Gana Zalgiris",
+      "odd": 1.34,
+      "book": "onexbet",
+      "pFinal": 0.747,
+      "safety": 0.752,
+      "tier": "A",
+      "createdAt": "2026-10-23T12:34:32.955Z"
+    },
+    {
+      "id": "el:E2026_68|prop|over|14.5|011987|pts",
+      "gameId": "el:E2026_68",
+      "start": "2026-10-23T17:00:00.000Z",
+      "round": 7,
+      "match": "Zalgiris – LDLC ASVEL",
+      "market": "prop",
+      "side": "over",
+      "line": 14.5,
+      "label": "Carsen Edwards más de 14.5 puntos",
+      "odd": 1.36,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.715,
+      "safety": 0.657,
+      "tier": "B",
+      "stat": "pts",
+      "playerId": "011987",
+      "createdAt": "2026-10-23T12:34:32.955Z"
+    },
+    {
+      "id": "el:E2026_70|prop|over|9.5|012731|pts",
+      "gameId": "el:E2026_70",
+      "start": "2026-10-23T18:15:00.000Z",
+      "round": 7,
+      "match": "Olympiacos – Fenerbahce",
+      "market": "prop",
+      "side": "over",
+      "line": 9.5,
+      "label": "Mbaye Ndiaye más de 9.5 puntos",
+      "odd": 1.84,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.552,
+      "safety": 0.445,
+      "tier": "C",
+      "stat": "pts",
+      "playerId": "012731",
+      "createdAt": "2026-10-23T12:34:32.955Z"
     }
   ],
   "record": [
@@ -599,6 +654,136 @@
       "ev": 0.013,
       "start": "2026-10-23T17:00:00.000Z",
       "createdAt": "2026-10-22T20:17:40.114Z"
+    },
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "el:E2026_68|ml|home|||",
+          "gameId": "el:E2026_68",
+          "start": "2026-10-23T17:00:00.000Z",
+          "match": "Zalgiris – LDLC ASVEL",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana Zalgiris",
+          "odd": 1.34,
+          "pFinal": 0.747,
+          "book": "onexbet"
+        },
+        {
+          "id": "el:E2026_69|ml|away|||",
+          "gameId": "el:E2026_69",
+          "start": "2026-10-23T18:45:00.000Z",
+          "match": "Paris – Valencia",
+          "market": "ml",
+          "side": "away",
+          "line": null,
+          "label": "Gana Valencia",
+          "odd": 1.51,
+          "pFinal": 0.67,
+          "book": "betfair_ex_eu"
+        }
+      ],
+      "odd": 2.02,
+      "prob": 0.5,
+      "ev": 0.013,
+      "start": "2026-10-23T17:00:00.000Z",
+      "createdAt": "2026-10-23T12:34:32.955Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "el:E2026_68|ml|home|||",
+          "gameId": "el:E2026_68",
+          "start": "2026-10-23T17:00:00.000Z",
+          "match": "Zalgiris – LDLC ASVEL",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana Zalgiris",
+          "odd": 1.34,
+          "pFinal": 0.747,
+          "book": "onexbet"
+        },
+        {
+          "id": "el:E2026_69|ml|away|||",
+          "gameId": "el:E2026_69",
+          "start": "2026-10-23T18:45:00.000Z",
+          "match": "Paris – Valencia",
+          "market": "ml",
+          "side": "away",
+          "line": null,
+          "label": "Gana Valencia",
+          "odd": 1.51,
+          "pFinal": 0.67,
+          "book": "betfair_ex_eu"
+        },
+        {
+          "id": "el:E2026_70|prop|over|9.5|012731|pts",
+          "gameId": "el:E2026_70",
+          "start": "2026-10-23T18:15:00.000Z",
+          "match": "Olympiacos – Fenerbahce",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pts",
+          "playerId": "012731",
+          "player": "Mbaye Ndiaye",
+          "label": "Mbaye Ndiaye más de 9.5 puntos",
+          "odd": 1.84,
+          "pFinal": 0.552,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 3.72,
+      "prob": 0.276,
+      "ev": 0.029,
+      "start": "2026-10-23T17:00:00.000Z",
+      "createdAt": "2026-10-23T12:34:32.955Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "el:E2026_68|prop|over|14.5|011987|pts",
+          "gameId": "el:E2026_68",
+          "start": "2026-10-23T17:00:00.000Z",
+          "match": "Zalgiris – LDLC ASVEL",
+          "market": "prop",
+          "side": "over",
+          "line": 14.5,
+          "stat": "pts",
+          "playerId": "011987",
+          "player": "Carsen Edwards",
+          "label": "Carsen Edwards más de 14.5 puntos",
+          "odd": 1.36,
+          "pFinal": 0.715,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "el:E2026_70|prop|over|9.5|012731|pts",
+          "gameId": "el:E2026_70",
+          "start": "2026-10-23T18:15:00.000Z",
+          "match": "Olympiacos – Fenerbahce",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pts",
+          "playerId": "012731",
+          "player": "Mbaye Ndiaye",
+          "label": "Mbaye Ndiaye más de 9.5 puntos",
+          "odd": 1.84,
+          "pFinal": 0.552,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.5,
+      "prob": 0.395,
+      "ev": -0.012,
+      "start": "2026-10-23T17:00:00.000Z",
+      "createdAt": "2026-10-23T12:34:32.955Z"
     }
   ],
   "comboRecord": [

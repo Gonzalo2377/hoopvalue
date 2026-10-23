@@ -171,20 +171,20 @@
         "title": "Zalgiris vs LDLC ASVEL",
         "start": "2026-10-23T17:00:00.000Z",
         "postAt": "2026-10-23T16:00:00.000Z",
-        "text": "🏀 Euroliga · hoy 19:00\nZalgiris vs LDLC ASVEL\n\n✅ Both Gach más de 4.5 puntos @1.45 (68%)\n✅ Hugo Besson más de 9.5 puntos @1.50 (65%)\n📊 Modelo: Zalgiris 79% · LDLC ASVEL 21%\n\n🔗 Análisis completo: link en la bio\n#Euroliga · +18 · Juega con responsabilidad",
+        "text": "🏀 Euroliga · hoy 19:00\nZalgiris vs LDLC ASVEL\n\n✅ Gana Zalgiris @1.34 (75%)\n✅ Carsen Edwards más de 14.5 puntos @1.36 (72%)\n📊 Modelo: Zalgiris 78% · LDLC ASVEL 22%\n\n🔗 Análisis completo: link en la bio\n#Euroliga · +18 · Juega con responsabilidad",
         "image": true,
         "picks": [
           {
-            "id": "el:E2026_68|prop|over|4.5|013900|pts",
+            "id": "el:E2026_68|ml|home|||",
             "league": "euroleague",
-            "label": "B. Gach +4.5 puntos",
-            "odd": 1.45
+            "label": "Gana Zalgiris",
+            "odd": 1.34
           },
           {
-            "id": "el:E2026_68|prop|over|9.5|015164|pts",
+            "id": "el:E2026_68|prop|over|14.5|011987|pts",
             "league": "euroleague",
-            "label": "H. Besson +9.5 puntos",
-            "odd": 1.5
+            "label": "C. Edwards +14.5 puntos",
+            "odd": 1.36
           }
         ]
       },
@@ -196,14 +196,20 @@
         "title": "Olympiacos vs Fenerbahce",
         "start": "2026-10-23T18:15:00.000Z",
         "postAt": "2026-10-23T17:15:00.000Z",
-        "text": "🏀 Euroliga · hoy 20:15\nOlympiacos vs Fenerbahce\n\n✅ Gana Olympiacos @1.80 (55%)\n📊 Modelo: Olympiacos 59% · Fenerbahce 41%\n\n🔗 Análisis completo: link en la bio\n#Euroliga · +18 · Juega con responsabilidad",
+        "text": "🏀 Euroliga · hoy 20:15\nOlympiacos vs Fenerbahce\n\n✅ Gana Olympiacos @1.83 (55%)\n✅ Mbaye Ndiaye más de 9.5 puntos @1.84 (55%)\n📊 Modelo: Olympiacos 57% · Fenerbahce 43%\n\n🔗 Análisis completo: link en la bio\n#Euroliga · +18 · Juega con responsabilidad",
         "image": true,
         "picks": [
           {
             "id": "el:E2026_70|ml|home|||",
             "league": "euroleague",
             "label": "Gana Olympiacos",
-            "odd": 1.8
+            "odd": 1.83
+          },
+          {
+            "id": "el:E2026_70|prop|over|9.5|012731|pts",
+            "league": "euroleague",
+            "label": "M. Ndiaye +9.5 puntos",
+            "odd": 1.84
           }
         ]
       },
@@ -215,14 +221,14 @@
         "title": "Paris vs Valencia",
         "start": "2026-10-23T18:45:00.000Z",
         "postAt": "2026-10-23T17:45:00.000Z",
-        "text": "🏀 Euroliga · hoy 20:45\nParis vs Valencia\n\n✅ Gana Valencia @1.55 (66%)\n📊 Modelo: Paris 24% · Valencia 77%\n\n🔗 Análisis completo: link en la bio\n#Euroliga · +18 · Juega con responsabilidad",
+        "text": "🏀 Euroliga · hoy 20:45\nParis vs Valencia\n\n✅ Gana Valencia @1.51 (67%)\n📊 Modelo: Paris 23% · Valencia 77%\n\n🔗 Análisis completo: link en la bio\n#Euroliga · +18 · Juega con responsabilidad",
         "image": true,
         "picks": [
           {
             "id": "el:E2026_69|ml|away|||",
             "league": "euroleague",
             "label": "Gana Valencia",
-            "odd": 1.55
+            "odd": 1.51
           }
         ]
       },
@@ -232,26 +238,26 @@
         "league": "nba",
         "title": "NBA · picks de la noche",
         "postAt": "2026-10-23T16:45:00.000Z",
-        "text": "🏀 NBA · los picks más seguros de esta noche\n\n1️⃣ Gana Trail Blazers @1.38 (71%)\n    Kings – Trail Blazers · 04:00\n2️⃣ D. Harper +3.5 rebotes @1.30 (75%)\n    Spurs – Rockets · 03:30\n3️⃣ B. Adebayo +24.5 pts+reb+ast @1.33 (73%)\n    Heat – Pistons · 02:00\n\n🔗 Análisis complet",
+        "text": "🏀 NBA · los picks más seguros de esta noche\n\n1️⃣ A. Thompson +9.5 reb+ast @1.30 (75%)\n    Spurs – Rockets · 03:30\n2️⃣ O. Toppin +4.5 reb+ast @1.30 (75%)\n    Pacers – Mavericks · 01:00\n3️⃣ B. Lopez +3.5 rebotes @1.30 (75%)\n    Lakers – Clippers · 04:00\n\n🔗 Análisis complet",
         "image": true,
         "picks": [
           {
-            "id": "nba:401909852|ml|away|||",
+            "id": "nba:401909096|prop|over|9.5|4684740|ra",
             "league": "nba",
-            "label": "Gana Trail Blazers",
-            "odd": 1.38
-          },
-          {
-            "id": "nba:401909096|prop|over|3.5|5037871|reb",
-            "league": "nba",
-            "label": "D. Harper +3.5 rebotes",
+            "label": "A. Thompson +9.5 reb+ast",
             "odd": 1.3
           },
           {
-            "id": "nba:401909847|prop|over|24.5|4066261|pra",
+            "id": "nba:401909844|prop|over|4.5|4278355|ra",
             "league": "nba",
-            "label": "B. Adebayo +24.5 pts+reb+ast",
-            "odd": 1.33
+            "label": "O. Toppin +4.5 reb+ast",
+            "odd": 1.3
+          },
+          {
+            "id": "nba:401909851|prop|over|3.5|3448|reb",
+            "league": "nba",
+            "label": "B. Lopez +3.5 rebotes",
+            "odd": 1.3
           }
         ]
       },
