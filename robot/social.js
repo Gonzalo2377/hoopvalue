@@ -86,18 +86,27 @@ function main() {
   const played = i => { const st = info(i).start; return st && Date.parse(st) < cutoff; };
   const prev = Object.values(hist.days[yday] || {}).filter(i => i.picks && i.picks.length && Date.parse(i.postAt) <= Date.parse(madridAt(today, '00:00')));
   const items = prev.flatMap(i => i.picks).filter(played).map(i => ({ ...i, result: info(i).result }));
-  if (items.length) {
-    const [, M, D] = yday.split('-');
-    const done = items.filter(i => i.result === 'W' || i.result === 'L'), w = done.filter(i => i.result === 'W').length;
-    /* balance de todo lo publicado hasta ayer */
-    const all = Object.entries(hist.days).filter(([d]) => d < today).flatMap(([, it]) => Object.values(it).filter(i => Date.parse(i.postAt) <= NOW).flatMap(i => i.picks || []))
-      .filter(played).map(i => info(i).result).filter(r => r === 'W' || r === 'L');
-    const tw = all.filter(r => r === 'W').length;
-    const perLeague = ['euroleague', 'nba'].map(lg => { const l = items.filter(i => i.league === lg); if (!l.length) return null; const ww = l.filter(i => i.result === 'W').length, ll = l.filter(i => i.result === 'L').length; return `${LG[lg].name}: ${ww}-${ll} ${l.map(i => RES[i.result] || '⏳').join('')}`; }).filter(Boolean);
-    const text = [`📋 Resumen de ayer (${D}/${M})`, '', ...perLeague, '', `Ayer: ${w}-${done.length - w} · Balance total: ${tw}-${all.length - tw}${all.length ? ` (${pct(tw / all.length)})` : ''}`, '👇 Todos los picks en la imagen', '+18 · Juega con responsabilidad'].join('\n');
-    put({ id: 'summary', kind: 'summary', title: `Resumen de ayer (${D}/${M})`, postAt: madridAt(today, '09:30'), text, image: true, pending: items.some(i => !i.result),
-      rows: items.map(i => ({ league: i.league, label: i.label, odd: i.odd, result: i.result })), balance: { day: [w, done.length - w], total: [tw, all.length - tw] } });
+  /* un resumen por liga (Euroliga 09:30 · NBA 09:40), cada uno con su imagen */
+  const [, M, D] = yday.split('-');
+  const allPub = Object.entries(hist.days).filter(([d]) => d < today).flatMap(([, it]) => Object.values(it).filter(i => Date.parse(i.postAt) <= NOW).flatMap(i => i.picks || [])).filter(played);
+  for (const [lg, at] of [['euroleague', '09:30'], ['nba', '09:40']]) {
+    const list = items.filter(i => i.league === lg);
+    if (!list.length) continue;
+    const done = list.filter(i => i.result === 'W' || i.result === 'L'), w = done.filter(i => i.result === 'W').length;
+    const all = allPub.filter(i => i.league === lg).map(i => info(i).result).filter(r => r === 'W' || r === 'L'), tw = all.filter(r => r === 'W').length;
+    const head = [`📋 ${LG[lg].name} · resultados de ayer (${D}/${M})`, ''];
+    const foot = ['', `Ayer: ${w}-${done.length - w} · Balance total ${LG[lg].name}: ${tw}-${all.length - tw}${all.length ? ` (${pct(tw / all.length)})` : ''}`, `${LG[lg].tag} · +18 · Juega con responsabilidad`];
+    let text = [...head, ...list.map(i => `${RES[i.result] || '⏳'} ${i.label} @${Number(i.odd).toFixed(2)}`), ...foot].join('\n');
+    /* si no cabe: nombres abreviados sin cuota (la cuota va en la imagen); si aún no cabe, solo iconos */
+    const abbr = l => l.replace(/^\S\.\s/, '').replace(' puntos', ' pts').replace(' rebotes', ' reb').replace(' asistencias', ' ast').replace('pts+reb+ast', 'PRA');
+    const compact = [`📋 ${LG[lg].name} · ayer ${D}/${M}`, ...list.map(i => `${RES[i.result] || '⏳'} ${abbr(i.label)}`),
+      `${w}-${done.length - w} ayer · ${tw}-${all.length - tw} total${all.length ? ` (${pct(tw / all.length)})` : ''}`, `${LG[lg].tag} · +18`];
+    if (xLen(text) > 280) text = compact.join('\n');
+    if (xLen(text) > 280) text = [...head, `${list.map(i => RES[i.result] || '⏳').join('')}`, '👇 Cada pick en la imagen', ...foot].join('\n');
+    put({ id: 'summary-' + lg, kind: 'summary', league: lg, title: `${LG[lg].name} · resultados de ayer (${D}/${M})`, postAt: madridAt(today, at), text, image: true,
+      pending: list.some(i => !i.result), rows: list.map(i => ({ league: lg, label: i.label, odd: i.odd, result: i.result })), balance: { day: [w, done.length - w], total: [tw, all.length - tw] } });
   }
+  delete day.summary;                                           // el antiguo resumen conjunto
 
 
   /* se guardan solo los últimos 30 días de memoria */

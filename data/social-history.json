@@ -254,12 +254,13 @@
           }
         ]
       },
-      "summary": {
-        "id": "summary",
+      "summary-euroleague": {
+        "id": "summary-euroleague",
         "kind": "summary",
-        "title": "Resumen de ayer (22/10)",
+        "league": "euroleague",
+        "title": "Euroliga · resultados de ayer (22/10)",
         "postAt": "2026-10-23T07:30:00.000Z",
-        "text": "📋 Resumen de ayer (22/10)\n\nEuroliga: 7-2 ❌✅❌✅✅✅✅✅✅\nNBA: 2-0 ✅✅\n\nAyer: 9-2 · Balance total: 9-2 (82%)\n👇 Todos los picks en la imagen\n+18 · Juega con responsabilidad",
+        "text": "📋 Euroliga · ayer 22/10\n❌ Gabriel +4.5 pts\n✅ Dotson +4.5 pts\n❌ Diakite +4.5 pts\n✅ Jessup +4.5 pts\n✅ Maledon +9.5 pts\n✅ Gana Real Madrid\n✅ Faried +4.5 pts\n✅ Robinson +9.5 pts\n✅ Martin +3.5 reb\n7-2 ayer · 7-2 total (78%)\n#Euroliga · +18",
         "image": true,
         "pending": false,
         "rows": [
@@ -316,7 +317,29 @@
             "label": "T. Martin +3.5 rebotes",
             "odd": 1.53,
             "result": "W"
-          },
+          }
+        ],
+        "balance": {
+          "day": [
+            7,
+            2
+          ],
+          "total": [
+            7,
+            2
+          ]
+        }
+      },
+      "summary-nba": {
+        "id": "summary-nba",
+        "kind": "summary",
+        "league": "nba",
+        "title": "NBA · resultados de ayer (22/10)",
+        "postAt": "2026-10-23T07:40:00.000Z",
+        "text": "📋 NBA · resultados de ayer (22/10)\n\n✅ C. Wallace +0.5 triples @1.30\n✅ V. Edgecombe +9.5 pts+ast @1.30\n\nAyer: 2-0 · Balance total NBA: 2-0 (100%)\n#NBA · +18 · Juega con responsabilidad",
+        "image": true,
+        "pending": false,
+        "rows": [
           {
             "league": "nba",
             "label": "C. Wallace +0.5 triples",
@@ -332,12 +355,12 @@
         ],
         "balance": {
           "day": [
-            9,
-            2
+            2,
+            0
           ],
           "total": [
-            9,
-            2
+            2,
+            0
           ]
         }
       }
