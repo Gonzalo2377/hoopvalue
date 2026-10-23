@@ -62,7 +62,8 @@ function main() {
   const day = hist.days[today] = hist.days[today] || {};
   const T = { euroleague: readJSON(path.join(ROOT, LG.euroleague.dir, 'today.json'), null), nba: readJSON(path.join(ROOT, LG.nba.dir, 'today.json'), null) };
   /* actualiza una publicación salvo que ya haya pasado su hora (congelada) */
-  const put = item => { const old = day[item.id]; if (old && Date.parse(old.postAt) <= NOW) return; day[item.id] = item; };
+  /* se congela al llegar su hora (lo publicado es lo que cuenta)… salvo el resumen mientras le falten resultados */
+  const put = item => { const old = day[item.id]; if (old && Date.parse(old.postAt) <= NOW && !old.pending) return; day[item.id] = item; };
 
   /* Euroliga: una por partido de hoy */
   for (const g of (T.euroleague && T.euroleague.games) || []) {
@@ -73,7 +74,8 @@ function main() {
   }
   /* NBA: los 3 mejores de partidos distintos que se juegan esta noche */
   const seen = new Set(), top = [];
-  for (const p of (T.nba && T.nba.picks) || []) { if (Date.parse(p.start) > NOW && !seen.has(p.gameId)) { seen.add(p.gameId); top.push(p); } if (top.length === 3) break; }
+  const tonightEnd = Date.parse(madridAt(madridDate(NOW + 24 * 3600e3), '12:00'));     // solo partidos de esta noche (hasta mañana a mediodía)
+  for (const p of (T.nba && T.nba.picks) || []) { const t = Date.parse(p.start); if (t > NOW && t < tonightEnd && !seen.has(p.gameId)) { seen.add(p.gameId); top.push(p); } if (top.length === 3) break; }
   if (top.length) put({ id: 'nba-day', kind: 'nba-day', league: 'nba', title: 'NBA · picks de la noche', postAt: madridAt(today, '18:45'), text: nbaDay(top), image: true, picks: top.map(p => ({ ...mini(p), league: 'nba' })) });
 
   /* resumen de ayer */

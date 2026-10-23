@@ -42,6 +42,7 @@ let S = null;
 function state(it) {
   const t = Date.parse(it.postAt), now = Date.now();
   if (isDone(S, it)) return ['done', '✓ Publicada'];
+  if (it.pending) return ['', '⏳ Faltan resultados'];
   if (now >= t - 10 * 60e3 && now <= t + 45 * 60e3) return ['now', '¡Ahora!'];
   if (now < t) return ['', 'Más tarde'];
   return ['', 'Pendiente (ya es la hora)'];
