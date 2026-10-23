@@ -171,14 +171,14 @@
         "title": "Zalgiris vs LDLC ASVEL",
         "start": "2026-10-23T17:00:00.000Z",
         "postAt": "2026-10-23T16:00:00.000Z",
-        "text": "🏀 Euroliga · hoy 19:00\nZalgiris vs LDLC ASVEL\n\n✅ Gana Zalgiris @1.34 (73%)\n✅ Carsen Edwards más de 14.5 puntos @1.36 (72%)\n📊 Modelo: Zalgiris 78% · LDLC ASVEL 22%\n\n🔗 Análisis completo: link en la bio\n#Euroliga · +18 · Juega con responsabilidad",
+        "text": "🏀 Euroliga · hoy 19:00\nZalgiris vs LDLC ASVEL\n\n✅ Gana Zalgiris @1.33 (73%)\n✅ Carsen Edwards más de 14.5 puntos @1.36 (72%)\n📊 Modelo: Zalgiris 78% · LDLC ASVEL 22%\n\n🔗 Análisis completo: link en la bio\n#Euroliga · +18 · Juega con responsabilidad",
         "image": true,
         "picks": [
           {
             "id": "el:E2026_68|ml|home|||",
             "league": "euroleague",
             "label": "Gana Zalgiris",
-            "odd": 1.34,
+            "odd": 1.33,
             "start": "2026-10-23T17:00:00.000Z"
           },
           {
@@ -210,14 +210,14 @@
         "title": "Paris vs Valencia",
         "start": "2026-10-23T18:45:00.000Z",
         "postAt": "2026-10-23T17:45:00.000Z",
-        "text": "🏀 Euroliga · hoy 20:45\nParis vs Valencia\n\n✅ Gana Valencia @1.51 (67%)\n📊 Modelo: Paris 23% · Valencia 77%\n\n🔗 Análisis completo: link en la bio\n#Euroliga · +18 · Juega con responsabilidad",
+        "text": "🏀 Euroliga · hoy 20:45\nParis vs Valencia\n\n✅ Gana Valencia @1.54 (67%)\n📊 Modelo: Paris 23% · Valencia 77%\n\n🔗 Análisis completo: link en la bio\n#Euroliga · +18 · Juega con responsabilidad",
         "image": true,
         "picks": [
           {
             "id": "el:E2026_69|ml|away|||",
             "league": "euroleague",
             "label": "Gana Valencia",
-            "odd": 1.51,
+            "odd": 1.54,
             "start": "2026-10-23T18:45:00.000Z"
           }
         ]
