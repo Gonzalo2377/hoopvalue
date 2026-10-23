@@ -1091,6 +1091,42 @@
       "stat": "pts",
       "playerId": "4397002",
       "createdAt": "2026-10-23T15:48:33.931Z"
+    },
+    {
+      "id": "nba:401909847|prop|over|5.5|4601025|pts",
+      "gameId": "nba:401909847",
+      "start": "2026-10-24T00:00Z",
+      "match": "Heat – Pistons",
+      "market": "prop",
+      "side": "over",
+      "line": 5.5,
+      "label": "Pelle Larsson más de 5.5 puntos",
+      "odd": 1.32,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.742,
+      "safety": 0.679,
+      "tier": "B",
+      "stat": "pts",
+      "playerId": "4601025",
+      "createdAt": "2026-10-23T16:58:39.203Z"
+    },
+    {
+      "id": "nba:401909095|prop|over|9.5|3062679|ra",
+      "gameId": "nba:401909095",
+      "start": "2026-10-23T23:00Z",
+      "match": "Celtics – Knicks",
+      "market": "prop",
+      "side": "over",
+      "line": 9.5,
+      "label": "Josh Hart más de 9.5 reb+ast",
+      "odd": 1.38,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.704,
+      "safety": 0.667,
+      "tier": "B",
+      "stat": "ra",
+      "playerId": "3062679",
+      "createdAt": "2026-10-23T16:58:39.203Z"
     }
   ],
   "record": [

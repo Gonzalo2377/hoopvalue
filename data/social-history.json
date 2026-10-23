@@ -210,14 +210,14 @@
         "title": "Paris vs Valencia",
         "start": "2026-10-23T18:45:00.000Z",
         "postAt": "2026-10-23T17:45:00.000Z",
-        "text": "🏀 Euroliga · hoy 20:45\nParis vs Valencia\n\n✅ Gana Valencia @1.54 (67%)\n📊 Modelo: Paris 23% · Valencia 77%\n\n🔗 Análisis completo: link en la bio\n#Euroliga · +18 · Juega con responsabilidad",
+        "text": "🏀 Euroliga · hoy 20:45\nParis vs Valencia\n\n✅ Gana Valencia @1.58 (65%)\n📊 Modelo: Paris 23% · Valencia 77%\n\n🔗 Análisis completo: link en la bio\n#Euroliga · +18 · Juega con responsabilidad",
         "image": true,
         "picks": [
           {
             "id": "el:E2026_69|ml|away|||",
             "league": "euroleague",
             "label": "Gana Valencia",
-            "odd": 1.54,
+            "odd": 1.58,
             "start": "2026-10-23T18:45:00.000Z"
           }
         ]
