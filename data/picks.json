@@ -1,5 +1,6 @@
 {
-  "pending": [
+  "pending": [],
+  "record": [
     {
       "id": "el:E2026_69|prop|over|1.5|015160|reb",
       "gameId": "el:E2026_69",
@@ -17,7 +18,10 @@
       "tier": "B",
       "stat": "reb",
       "playerId": "015160",
-      "createdAt": "2026-10-22T07:00:45.264Z"
+      "createdAt": "2026-10-22T07:00:45.264Z",
+      "result": "W",
+      "score": "93-104",
+      "settledAt": "2026-10-24T01:39:54.293Z"
     },
     {
       "id": "el:E2026_69|ml|away|||",
@@ -34,7 +38,13 @@
       "pFinal": 0.654,
       "safety": 0.626,
       "tier": "B",
-      "createdAt": "2026-10-22T07:00:45.264Z"
+      "createdAt": "2026-10-22T07:00:45.264Z",
+      "result": "W",
+      "score": "93-104",
+      "settledAt": "2026-10-24T01:39:54.293Z",
+      "closeOdd": 1.58,
+      "pClose": 0.6253,
+      "clv": -0.0183
     },
     {
       "id": "el:E2026_70|ml|home|||",
@@ -51,7 +61,13 @@
       "pFinal": 0.578,
       "safety": 0.578,
       "tier": "C",
-      "createdAt": "2026-10-22T07:00:45.264Z"
+      "createdAt": "2026-10-22T07:00:45.264Z",
+      "result": "L",
+      "score": "61-64",
+      "settledAt": "2026-10-24T01:39:54.293Z",
+      "closeOdd": 1.84,
+      "pClose": 0.5259,
+      "clv": -0.1112
     },
     {
       "id": "el:E2026_70|prop|over|9.5|012731|pts",
@@ -70,10 +86,11 @@
       "tier": "C",
       "stat": "pts",
       "playerId": "012731",
-      "createdAt": "2026-10-23T12:34:32.955Z"
-    }
-  ],
-  "record": [
+      "createdAt": "2026-10-23T12:34:32.955Z",
+      "result": "L",
+      "score": "61-64",
+      "settledAt": "2026-10-24T01:39:54.293Z"
+    },
     {
       "id": "el:E2026_68|prop|over|9.5|015163|pts",
       "gameId": "el:E2026_68",
@@ -452,7 +469,8 @@
       "settledAt": "2026-10-21T20:21:24.312Z"
     }
   ],
-  "comboPending": [
+  "comboPending": [],
+  "comboRecord": [
     {
       "type": "segura",
       "legs": [
@@ -493,7 +511,14 @@
       "prob": 0.554,
       "ev": -0.036,
       "start": "2026-10-22T18:05:00.000Z",
-      "createdAt": "2026-10-22T08:05:03.361Z"
+      "createdAt": "2026-10-22T08:05:03.361Z",
+      "result": "W",
+      "oddFinal": 1.74,
+      "legStates": [
+        "W",
+        "W"
+      ],
+      "settledAt": "2026-10-24T01:39:54.293Z"
     },
     {
       "type": "valor",
@@ -548,7 +573,15 @@
       "prob": 0.265,
       "ev": 0.031,
       "start": "2026-10-22T17:30:00.000Z",
-      "createdAt": "2026-10-22T08:05:03.361Z"
+      "createdAt": "2026-10-22T08:05:03.361Z",
+      "result": "W",
+      "oddFinal": 3.89,
+      "legStates": [
+        "W",
+        "W",
+        "W"
+      ],
+      "settledAt": "2026-10-24T01:39:54.293Z"
     },
     {
       "type": "jugadores",
@@ -590,7 +623,14 @@
       "prob": 0.537,
       "ev": -0.008,
       "start": "2026-10-22T17:30:00.000Z",
-      "createdAt": "2026-10-22T08:05:03.361Z"
+      "createdAt": "2026-10-22T08:05:03.361Z",
+      "result": "W",
+      "oddFinal": 1.85,
+      "legStates": [
+        "W",
+        "W"
+      ],
+      "settledAt": "2026-10-24T01:39:54.293Z"
     },
     {
       "type": "segura",
@@ -629,7 +669,14 @@
       "prob": 0.451,
       "ev": 0.013,
       "start": "2026-10-23T17:00:00.000Z",
-      "createdAt": "2026-10-22T20:17:40.114Z"
+      "createdAt": "2026-10-22T20:17:40.114Z",
+      "result": "W",
+      "oddFinal": 2.25,
+      "legStates": [
+        "W",
+        "W"
+      ],
+      "settledAt": "2026-10-24T01:39:54.293Z"
     },
     {
       "type": "segura",
@@ -665,7 +712,14 @@
       "prob": 0.5,
       "ev": 0.013,
       "start": "2026-10-23T17:00:00.000Z",
-      "createdAt": "2026-10-23T12:34:32.955Z"
+      "createdAt": "2026-10-23T12:34:32.955Z",
+      "result": "W",
+      "oddFinal": 2.02,
+      "legStates": [
+        "W",
+        "W"
+      ],
+      "settledAt": "2026-10-24T01:39:54.293Z"
     },
     {
       "type": "valor",
@@ -717,7 +771,14 @@
       "prob": 0.276,
       "ev": 0.029,
       "start": "2026-10-23T17:00:00.000Z",
-      "createdAt": "2026-10-23T12:34:32.955Z"
+      "createdAt": "2026-10-23T12:34:32.955Z",
+      "result": "L",
+      "legStates": [
+        "W",
+        "W",
+        "L"
+      ],
+      "settledAt": "2026-10-24T01:39:54.293Z"
     },
     {
       "type": "jugadores",
@@ -759,10 +820,14 @@
       "prob": 0.395,
       "ev": -0.012,
       "start": "2026-10-23T17:00:00.000Z",
-      "createdAt": "2026-10-23T12:34:32.955Z"
-    }
-  ],
-  "comboRecord": [
+      "createdAt": "2026-10-23T12:34:32.955Z",
+      "result": "L",
+      "legStates": [
+        "W",
+        "L"
+      ],
+      "settledAt": "2026-10-24T01:39:54.293Z"
+    },
     {
       "type": "jugadores",
       "legs": [
