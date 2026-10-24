@@ -86,7 +86,13 @@ async function main() {
     .sort((a, b) => a.date < b.date ? -1 : 1);
   console.log(`· ${upcoming.length} partidos en las próximas 36 h`);
   const oddsByGame = {};
-  if (KEY && upcoming.length) {
+  /* créditos: la Euroliga solo juega de martes a viernes por la tarde. Solo se piden cuotas
+     un día de partido (martes-viernes, hora de Madrid), desde las 9:00 y con un partido en las
+     próximas 14 h. Fuera de eso no se gasta nada (ODDS_ANYTIME=1 lo salta, p. ej. Final Four). */
+  const mad = new Date(new Date(now).toLocaleString('en-US', { timeZone: 'Europe/Madrid' }));
+  const gameDay = process.env.ODDS_ANYTIME === '1' || ((mad.getDay() >= 2 && mad.getDay() <= 5) && mad.getHours() >= 9 && upcoming.some(g => Date.parse(g.date) - now < 14 * 3600e3));
+  if (KEY && upcoming.length && !gameDay) console.log('· cuotas de partido: hoy no toca pedirlas (solo martes-viernes, día de partido, desde las 9:00)');
+  if (KEY && upcoming.length && gameDay) {
     for (const ev of (await cachedOdds()) || []) {
       const h = matchTeam(ev.home, LG, teams), a = matchTeam(ev.away, LG, teams);
       if (!h || !a) { console.log(`  · equipo sin emparejar: "${!h ? ev.home : ev.away}" → añádelo en robot/lib/teams.js`); continue; }
