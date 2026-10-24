@@ -88,15 +88,22 @@ function main() {
   const items = prev.flatMap(i => i.picks).filter(played).map(i => ({ ...i, result: info(i).result }));
   /* un resumen por liga (Euroliga 09:30 · NBA 09:40), cada uno con su imagen */
   const [, M, D] = yday.split('-');
-  const allPub = Object.entries(hist.days).filter(([d]) => d < today).flatMap(([, it]) => Object.values(it).filter(i => Date.parse(i.postAt) <= NOW).flatMap(i => i.picks || [])).filter(played);
   for (const [lg, at] of [['euroleague', '09:30'], ['nba', '09:40']]) {
     const list = items.filter(i => i.league === lg);
     if (!list.length) continue;
     const done = list.filter(i => i.result === 'W' || i.result === 'L'), w = done.filter(i => i.result === 'W').length;
-    const all = allPub.filter(i => i.league === lg).map(i => info(i).result).filter(r => r === 'W' || r === 'L'), tw = all.filter(r => r === 'W').length;
+    /* historial de la liga: cada día cuenta con lo que se publicó en su resumen; si ese resumen fue MANUAL
+       (picks puestos por el usuario), cuentan sus filas en vez de los picks automáticos */
+    const nextDay = d => new Date(Date.parse(d + 'T12:00:00Z') + 24 * 3600e3).toISOString().slice(0, 10);
+    const hist_lg = Object.keys(hist.days).filter(d => d < today).sort().flatMap(d => {
+      const man = (hist.days[nextDay(d)] || {})['summary-' + lg];
+      if (man && man.manual) return (man.rows || []).map(r => ({ odd: r.odd, result: r.result }));
+      return Object.values(hist.days[d]).filter(i => Date.parse(i.postAt) <= NOW && i.league === lg && i.kind !== 'summary').flatMap(i => i.picks || []).filter(played).map(i => ({ odd: i.odd, result: info(i).result }));
+    });
+    const all = hist_lg.map(i => i.result).filter(r => r === 'W' || r === 'L'), tw = all.filter(r => r === 'W').length;
     /* unidades: 1 u por pick → acierto suma (cuota − 1), fallo resta 1 */
     const units = l => +l.reduce((a, i) => a + (i.result === 'W' ? Number(i.odd) - 1 : i.result === 'L' ? -1 : 0), 0).toFixed(2);
-    const uDay = units(list), uTot = units(allPub.filter(i => i.league === lg).map(i => ({ ...i, result: info(i).result })));
+    const uDay = units(list), uTot = units(hist_lg);
     const u = x => `${x >= 0 ? '+' : ''}${x.toFixed(2)} u`;
     const head = [`📋 ${LG[lg].name} · resultados de ayer (${D}/${M})`, ''];
     const foot = ['', `Ayer: ${w}-${done.length - w} (${u(uDay)}) · Total ${LG[lg].name}: ${tw}-${all.length - tw} (${u(uTot)})`, `${LG[lg].tag} · +18 · Juega con responsabilidad`];

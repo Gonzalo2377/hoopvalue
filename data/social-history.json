@@ -486,7 +486,7 @@
         "league": "nba",
         "title": "NBA · resultados de ayer (23/10)",
         "postAt": "2026-10-24T07:40:00.000Z",
-        "text": "📋 NBA · resultados de ayer (23/10)\n\n✅ J. Smith Jr. +4.5 rebotes @1.30\n✅ I. Jackson +5.5 puntos @1.30\n❌ B. Adebayo +9.5 reb+ast @1.30\n\nAyer: 2-1 (-0.40 u) · Total NBA: 5-1 (+0.50 u)\n#NBA · +18 · Juega con responsabilidad",
+        "text": "📋 NBA · resultados de ayer (23/10)\n\n✅ J. Smith Jr. +4.5 rebotes @1.30\n✅ I. Jackson +5.5 puntos @1.30\n❌ B. Adebayo +9.5 reb+ast @1.30\n\nAyer: 2-1 (-0.40 u) · Total NBA: 8-3 (+1.08 u)\n#NBA · +18 · Juega con responsabilidad",
         "image": true,
         "pending": false,
         "rows": [
@@ -515,12 +515,12 @@
             1
           ],
           "total": [
-            5,
-            1
+            8,
+            3
           ],
           "units": {
             "day": -0.4,
-            "total": 0.5
+            "total": 1.08
           }
         }
       }
