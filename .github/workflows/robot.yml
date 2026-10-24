@@ -1,10 +1,9 @@
 name: Robot Euroliga
 
-# Cuatro pasadas al día (hora UTC; Madrid = UTC+1/+2):
-#   07:10  análisis y picks del día (cuotas de apertura)
-#   12:10  cuotas de JUGADORES (las casas las publican el mismo día del partido)
-#   16:40  refresco de cuotas antes de los partidos (≈ cierre) y picks nuevos
-#   23:20  solo resultados: liquida los picks (0 créditos de cuotas)
+# Una pasada CADA HORA (GitHub retrasa o se salta a veces las ejecuciones programadas;
+# así, si una se pierde, la siguiente lo recoge). En cada pasada: histórico, liquidación,
+# picks, jugadores y publicaciones de /x. Las cuotas de The Odds API (de pago por créditos)
+# solo se piden cada 5 horas; el resto de pasadas reutiliza las guardadas.
 # Cada pasada hace Euroliga y NBA (la NBA usa cuotas gratis: Unibet/Kambi + DraftKings).
 # Para dispararlo a mano: pestaña Actions → Robot Euroliga → Run workflow.
 # También se lanza solo al subir cambios de código (no con los commits de datos del robot).
@@ -12,10 +11,7 @@ name: Robot Euroliga
 
 on:
   schedule:
-    - cron: '10 7 * * *'
-    - cron: '10 12 * * *'
-    - cron: '40 16 * * *'
-    - cron: '20 23 * * *'
+    - cron: '17 * * * *'
   workflow_dispatch: {}
   push:
     branches: [main]
@@ -42,20 +38,16 @@ jobs:
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           ODDS_REGIONS: eu,uk
-          ODDS_MODE: ${{ github.event.schedule == '20 23 * * *' && 'results' || '' }}
         run: node robot/daily.js
       - name: Ejecutar robot NBA
         continue-on-error: true            # si la NBA falla, la Euroliga se publica igual
-        env:
-          ODDS_MODE: ${{ github.event.schedule == '20 23 * * *' && 'results' || '' }}
         run: node robot/daily-nba.js
       - name: Preparar publicaciones para X (página /x)
         continue-on-error: true
         run: node robot/social.js
       - name: Recalibrar modelo (lunes)
-        if: github.event.schedule == '10 7 * * *'
         run: |
-          if [ "$(date -u +%u)" = "1" ]; then node robot/backtest.js; node robot/backtest.js nba; fi
+          if [ "$(date -u +%u)" = "1" ] && [ "$(date -u +%H)" = "07" ]; then node robot/backtest.js; node robot/backtest.js nba; fi
       - name: Guardar cambios
         run: |
           git config user.name  "hoopvalue-bot"

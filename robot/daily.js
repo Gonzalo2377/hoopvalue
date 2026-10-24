@@ -42,6 +42,18 @@ const SIG = { margin: PARAMS.margin || 11.5, total: PARAMS.total || 15 };
 const LG = 'euroleague';
 const pickKey = p => [p.gameId, p.market, p.side, p.line, p.playerId || '', p.stat || ''].join('|');
 
+/* The Odds API cobra créditos por petición. El robot corre cada hora, así que se reutilizan
+   las cuotas guardadas si tienen menos de ODDS_TTL_H horas (por defecto 5): ~4-5 peticiones al día. */
+const ODDS_CACHE = path.join(ROOT, 'data', 'odds-cache.json');
+async function cachedOdds() {
+  const ttl = +(process.env.ODDS_TTL_H || 5) * 3600e3;
+  const c = readJSON(ODDS_CACHE, null);
+  if (c && Date.now() - Date.parse(c.t) < ttl) { console.log(`· cuotas de partido: reutilizo las de ${c.t.slice(11, 16)} UTC (ahorro de créditos)`); return c.events; }
+  const events = await odds.fetchOdds(KEY, { regions: REGIONS });
+  if (events) writeJSON(ODDS_CACHE, { t: new Date().toISOString(), events });
+  return events || (c && c.events) || null;
+}
+
 async function main() {
   const now = Date.now();
   const d = new Date(now), y = d.getUTCMonth() >= 6 ? d.getUTCFullYear() : d.getUTCFullYear() - 1;
@@ -75,7 +87,7 @@ async function main() {
   console.log(`· ${upcoming.length} partidos en las próximas 36 h`);
   const oddsByGame = {};
   if (KEY && upcoming.length) {
-    for (const ev of (await odds.fetchOdds(KEY, { regions: REGIONS })) || []) {
+    for (const ev of (await cachedOdds()) || []) {
       const h = matchTeam(ev.home, LG, teams), a = matchTeam(ev.away, LG, teams);
       if (!h || !a) { console.log(`  · equipo sin emparejar: "${!h ? ev.home : ev.away}" → añádelo en robot/lib/teams.js`); continue; }
       const g = upcoming.find(x => x.home === h && x.away === a && Math.abs(Date.parse(x.date) - Date.parse(ev.start)) < 12 * 3600e3);
