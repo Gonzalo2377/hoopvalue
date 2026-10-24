@@ -531,6 +531,84 @@
           }
         }
       }
+    },
+    "2026-10-25": {
+      "nba-day": {
+        "id": "nba-day",
+        "kind": "nba-day",
+        "league": "nba",
+        "title": "NBA · picks de la noche",
+        "postAt": "2026-10-25T17:45:00.000Z",
+        "text": "🏀 NBA · los picks más seguros de esta noche\n\n1️⃣ T. Maxey +29.5 pts+reb+ast @1.30 (75%)\n    76ers – Bucks · 01:30\n2️⃣ D. Mitchell +24.5 pts+reb @1.32 (75%)\n    Cavaliers – Nets · 01:30\n3️⃣ D. Queen +14.5 pts+reb @1.30 (76%)\n    Nuggets – Pelicans · 02:00\n\n🔗 Análisis compl",
+        "image": true,
+        "picks": [
+          {
+            "id": "nba:401909855|prop|over|29.5|4431678|pra",
+            "league": "nba",
+            "label": "T. Maxey +29.5 pts+reb+ast",
+            "odd": 1.3,
+            "start": "2026-10-24T23:30Z"
+          },
+          {
+            "id": "nba:401909854|prop|over|24.5|3908809|pr",
+            "league": "nba",
+            "label": "D. Mitchell +24.5 pts+reb",
+            "odd": 1.32,
+            "start": "2026-10-24T23:30Z"
+          },
+          {
+            "id": "nba:401909859|prop|over|14.5|4869780|pr",
+            "league": "nba",
+            "label": "D. Queen +14.5 pts+reb",
+            "odd": 1.3,
+            "start": "2026-10-25T01:00Z"
+          }
+        ]
+      },
+      "summary-nba": {
+        "id": "summary-nba",
+        "kind": "summary",
+        "league": "nba",
+        "title": "NBA · resultados de ayer (24/10)",
+        "postAt": "2026-10-25T08:40:00.000Z",
+        "text": "📋 NBA · resultados de ayer (24/10)\n\n⏳ D. Mitchell +0.5 triples @1.30\n⏳ J. Smith Jr. +4.5 rebotes @1.34\n⏳ D. Mitchell +21.5 puntos @1.34\n\nAyer: 0-0 (+0.00 u) · Total NBA: 8-3 (+1.08 u)\n#NBA · +18 · Juega con responsabilidad",
+        "image": true,
+        "pending": true,
+        "rows": [
+          {
+            "league": "nba",
+            "label": "D. Mitchell +0.5 triples",
+            "odd": 1.3,
+            "result": null
+          },
+          {
+            "league": "nba",
+            "label": "J. Smith Jr. +4.5 rebotes",
+            "odd": 1.34,
+            "result": null
+          },
+          {
+            "league": "nba",
+            "label": "D. Mitchell +21.5 puntos",
+            "odd": 1.34,
+            "result": null
+          }
+        ],
+        "balance": {
+          "day": [
+            0,
+            0
+          ],
+          "total": [
+            8,
+            3
+          ],
+          "units": {
+            "day": 0,
+            "total": 1.08
+          }
+        }
+      }
     }
   }
 }
