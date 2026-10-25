@@ -539,14 +539,14 @@
         "league": "nba",
         "title": "NBA · picks de la noche",
         "postAt": "2026-10-25T17:45:00.000Z",
-        "text": "🏀 NBA · los picks más seguros de esta noche\n\n1️⃣ Gana Knicks @1.32 (74%)\n    Knicks – Magic · 00:00\n2️⃣ J. McDaniels +9.5 puntos @1.30 (75%)\n    Timberwolves – Raptors · 00:00\n3️⃣ Gana Grizzlies @1.59 (63%)\n    Kings – Grizzlies · 02:00\n\n🔗 Análisis completo: link en la bi",
+        "text": "🏀 NBA · los picks más seguros de esta noche\n\n1️⃣ Gana Knicks @1.33 (73%)\n    Knicks – Magic · 00:00\n2️⃣ J. McDaniels +9.5 puntos @1.30 (75%)\n    Timberwolves – Raptors · 00:00\n3️⃣ Gana Grizzlies @1.57 (65%)\n    Kings – Grizzlies · 02:00\n\n🔗 Análisis completo: link en la bi",
         "image": true,
         "picks": [
           {
             "id": "nba:401909863|ml|home|||",
             "league": "nba",
             "label": "Gana Knicks",
-            "odd": 1.32,
+            "odd": 1.33,
             "start": "2026-10-25T23:00Z"
           },
           {
@@ -560,7 +560,7 @@
             "id": "nba:401909867|ml|away|||",
             "league": "nba",
             "label": "Gana Grizzlies",
-            "odd": 1.59,
+            "odd": 1.57,
             "start": "2026-10-26T01:00Z"
           }
         ]
