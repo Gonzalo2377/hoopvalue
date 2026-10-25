@@ -539,29 +539,29 @@
         "league": "nba",
         "title": "NBA · picks de la noche",
         "postAt": "2026-10-25T17:45:00.000Z",
-        "text": "🏀 NBA · los picks más seguros de esta noche\n\n1️⃣ T. Maxey +29.5 pts+reb+ast @1.30 (75%)\n    76ers – Bucks · 01:30\n2️⃣ D. Mitchell +24.5 pts+reb @1.32 (75%)\n    Cavaliers – Nets · 01:30\n3️⃣ D. Queen +14.5 pts+reb @1.30 (76%)\n    Nuggets – Pelicans · 02:00\n\n🔗 Análisis compl",
+        "text": "🏀 NBA · los picks más seguros de esta noche\n\n1️⃣ Gana Knicks @1.32 (74%)\n    Knicks – Magic · 00:00\n2️⃣ J. McDaniels +9.5 puntos @1.30 (75%)\n    Timberwolves – Raptors · 00:00\n3️⃣ Gana Grizzlies @1.59 (63%)\n    Kings – Grizzlies · 02:00\n\n🔗 Análisis completo: link en la bi",
         "image": true,
         "picks": [
           {
-            "id": "nba:401909855|prop|over|29.5|4431678|pra",
+            "id": "nba:401909863|ml|home|||",
             "league": "nba",
-            "label": "T. Maxey +29.5 pts+reb+ast",
-            "odd": 1.3,
-            "start": "2026-10-24T23:30Z"
-          },
-          {
-            "id": "nba:401909854|prop|over|24.5|3908809|pr",
-            "league": "nba",
-            "label": "D. Mitchell +24.5 pts+reb",
+            "label": "Gana Knicks",
             "odd": 1.32,
-            "start": "2026-10-24T23:30Z"
+            "start": "2026-10-25T23:00Z"
           },
           {
-            "id": "nba:401909859|prop|over|14.5|4869780|pr",
+            "id": "nba:401909864|prop|over|9.5|4431671|pts",
             "league": "nba",
-            "label": "D. Queen +14.5 pts+reb",
+            "label": "J. McDaniels +9.5 puntos",
             "odd": 1.3,
-            "start": "2026-10-25T01:00Z"
+            "start": "2026-10-25T23:00Z"
+          },
+          {
+            "id": "nba:401909867|ml|away|||",
+            "league": "nba",
+            "label": "Gana Grizzlies",
+            "odd": 1.59,
+            "start": "2026-10-26T01:00Z"
           }
         ]
       },
@@ -571,41 +571,41 @@
         "league": "nba",
         "title": "NBA · resultados de ayer (24/10)",
         "postAt": "2026-10-25T08:40:00.000Z",
-        "text": "📋 NBA · resultados de ayer (24/10)\n\n⏳ D. Mitchell +0.5 triples @1.30\n⏳ J. Smith Jr. +4.5 rebotes @1.34\n⏳ D. Mitchell +21.5 puntos @1.34\n\nAyer: 0-0 (+0.00 u) · Total NBA: 8-3 (+1.08 u)\n#NBA · +18 · Juega con responsabilidad",
+        "text": "📋 NBA · resultados de ayer (24/10)\n\n✅ D. Mitchell +0.5 triples @1.30\n✅ J. Smith Jr. +4.5 rebotes @1.34\n✅ D. Mitchell +21.5 puntos @1.34\n\nAyer: 3-0 (+0.98 u) · Total NBA: 11-3 (+2.06 u)\n#NBA · +18 · Juega con responsabilidad",
         "image": true,
-        "pending": true,
+        "pending": false,
         "rows": [
           {
             "league": "nba",
             "label": "D. Mitchell +0.5 triples",
             "odd": 1.3,
-            "result": null
+            "result": "W"
           },
           {
             "league": "nba",
             "label": "J. Smith Jr. +4.5 rebotes",
             "odd": 1.34,
-            "result": null
+            "result": "W"
           },
           {
             "league": "nba",
             "label": "D. Mitchell +21.5 puntos",
             "odd": 1.34,
-            "result": null
+            "result": "W"
           }
         ],
         "balance": {
           "day": [
-            0,
+            3,
             0
           ],
           "total": [
-            8,
+            11,
             3
           ],
           "units": {
-            "day": 0,
-            "total": 1.08
+            "day": 0.98,
+            "total": 2.06
           }
         }
       }
