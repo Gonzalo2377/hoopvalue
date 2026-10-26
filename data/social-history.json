@@ -617,15 +617,29 @@
         "league": "nba",
         "title": "NBA · picks de la noche",
         "postAt": "2026-10-26T17:45:00.000Z",
-        "text": "🏀 NBA · los picks más seguros de esta noche\n\n1️⃣ J. Wells +9.5 pts+ast @1.32 (74%)\n    Kings – Grizzlies · 02:00\n\n🔗 Análisis completo: link en la bio\n#NBA · +18 · Juega con responsabilidad",
+        "text": "🏀 NBA · los picks más seguros de esta noche\n\n1️⃣ J. Landale +3.5 puntos @1.36 (72%)\n    Rockets – Hawks · 01:30\n2️⃣ T. Johnson +0.5 triples @1.44 (69%)\n    Hornets – Wizards · 00:00\n3️⃣ J. Jackson Jr. +11.5 puntos @1.43 (71%)\n    Jazz – Grizzlies · 02:00\n\n🔗 Análisis compl",
         "image": true,
         "picks": [
           {
-            "id": "nba:401909867|prop|over|9.5|5112087|pa",
+            "id": "nba:401909874|prop|over|3.5|3146557|pts",
             "league": "nba",
-            "label": "J. Wells +9.5 pts+ast",
-            "odd": 1.32,
-            "start": "2026-10-26T01:00Z"
+            "label": "J. Landale +3.5 puntos",
+            "odd": 1.36,
+            "start": "2026-10-27T00:30Z"
+          },
+          {
+            "id": "nba:401909868|prop|over|0.5|5238230|tpm",
+            "league": "nba",
+            "label": "T. Johnson +0.5 triples",
+            "odd": 1.44,
+            "start": "2026-10-26T23:00Z"
+          },
+          {
+            "id": "nba:401909875|prop|over|11.5|4277961|pts",
+            "league": "nba",
+            "label": "J. Jackson Jr. +11.5 puntos",
+            "odd": 1.43,
+            "start": "2026-10-27T01:00Z"
           }
         ]
       },
@@ -635,41 +649,41 @@
         "league": "nba",
         "title": "NBA · resultados de ayer (25/10)",
         "postAt": "2026-10-26T08:40:00.000Z",
-        "text": "📋 NBA · resultados de ayer (25/10)\n\n⏳ Gana Knicks @1.35\n⏳ J. McDaniels +9.5 puntos @1.32\n⏳ C. Wallace +5.5 puntos @1.30\n\nAyer: 0-0 (+0.00 u) · Total NBA: 11-3 (+2.06 u)\n#NBA · +18 · Juega con responsabilidad",
+        "text": "📋 NBA · resultados de ayer (25/10)\n\n❌ Gana Knicks @1.35\n✅ J. McDaniels +9.5 puntos @1.32\n❌ C. Wallace +5.5 puntos @1.30\n\nAyer: 1-2 (-1.68 u) · Total NBA: 12-5 (+0.38 u)\n#NBA · +18 · Juega con responsabilidad",
         "image": true,
-        "pending": true,
+        "pending": false,
         "rows": [
           {
             "league": "nba",
             "label": "Gana Knicks",
             "odd": 1.35,
-            "result": null
+            "result": "L"
           },
           {
             "league": "nba",
             "label": "J. McDaniels +9.5 puntos",
             "odd": 1.32,
-            "result": null
+            "result": "W"
           },
           {
             "league": "nba",
             "label": "C. Wallace +5.5 puntos",
             "odd": 1.3,
-            "result": null
+            "result": "L"
           }
         ],
         "balance": {
           "day": [
-            0,
-            0
+            1,
+            2
           ],
           "total": [
-            11,
-            3
+            12,
+            5
           ],
           "units": {
-            "day": 0,
-            "total": 2.06
+            "day": -1.68,
+            "total": 0.38
           }
         }
       }
