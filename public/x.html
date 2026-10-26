@@ -89,11 +89,11 @@ async function load() {
 /* longitud según X: enlaces 23 y emojis 2 */
 function xLen(s) { s = s.replace(/\b[a-z0-9.-]+\.(dev|com|es|net|org)(\/\S*)?/gi, 'x'.repeat(23)); let n = 0; for (const ch of s) { const c = ch.codePointAt(0); n += (c <= 4351 || (c >= 8192 && c <= 8205) || (c >= 8208 && c <= 8223) || (c >= 8242 && c <= 8247)) ? 1 : 2; } return n; }
 const text = i => document.getElementById('t' + i).value;
-/* fotos de cada publicación: picks de NBA y selecciones de combinada → una por pick; el resto, una */
+/* fotos de cada publicación: picks de NBA → una por pick; combinada y el resto, una */
 const shotsOf = it => {
-  if (it.kind !== 'nba-day' && it.kind !== 'combo') return [{ gameId: it.gameId || null }];
-  const list = (it.kind === 'combo' ? it.combo.legs : it.picks).map(p => ({ pick: p }));
-  if (it.kind === 'combo' && list.length === 3) list.push({ combo: it.combo });      // 4.ª foto: la combinada completa
+  if (it.kind === 'combo') return [{ combo: it.combo }];                           // una sola foto con el gráfico de cada selección
+  if (it.kind !== 'nba-day') return [{ gameId: it.gameId || null }];
+  const list = it.picks.map(p => ({ pick: p }));
   return list.map(s => ({ ...s, tall: list.length === 2 }));
 };
 const blobsOf = i => Promise.all([...document.querySelectorAll(`canvas[data-i="${i}"]`)].slice(0, 4).map(c => new Promise(r => c.toBlob(r, 'image/png'))));

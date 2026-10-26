@@ -123,7 +123,7 @@ function main() {
     if (lg === 'nba' && legs.some(l => Date.parse(l.start) >= tonightEnd)) continue;
     if (lg === 'euroleague' && legs.some(l => madridDate(l.start) !== today)) continue;
     const postAt = lg === 'nba' ? madridAt(today, '19:00') : new Date(first - 90 * 60e3).toISOString();
-    const text = listTweet([`🎯 Combinada segura · ${LG[lg].name}`, ''], legs, ['', `💰 Cuota total ${C.odd.toFixed(2)} · prob. ${pct(C.prob)}`, `10 € → ${(C.odd * 10).toFixed(2).replace('.', ',')} €`, `${LG[lg].tag} · +18 · Juega con responsabilidad`]);
+    const text = listTweet([`🎯 Combinada segura · ${LG[lg].name}`, ''], legs, ['', `💰 Cuota total ${C.odd.toFixed(2)}`, '📊 Últimos 10 partidos de cada uno en la foto', `${LG[lg].tag} · +18 · Juega con responsabilidad`]);
     put({ id: 'combo-' + lg, kind: 'combo', league: lg, title: `Combinada segura · ${LG[lg].name} @${C.odd.toFixed(2)}`, postAt, image: true, text, picks: [], combo: { legs, odd: C.odd, prob: C.prob } });
   }
 
