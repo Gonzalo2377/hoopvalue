@@ -22,10 +22,11 @@
   .btn.main { background: var(--accent); border-color: var(--accent); color: #111; }
   .count { font-size: 12px; color: var(--muted); }
   .xprev { display: grid; gap: 2px; aspect-ratio: 16 / 9; border-radius: 16px; overflow: hidden; margin: 10px 0 4px; border: 1px solid var(--line); }
-  .xprev img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .xprev.n2 { grid-template-columns: 1fr 1fr; }
-  .xprev.n3 { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; } .xprev.n3 img:first-child { grid-row: span 2; }
-  .xprev.n4 { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; }
+  .xprev img { width: 100%; height: 100%; min-width: 0; min-height: 0; object-fit: cover; display: block; }
+  .xprev.n2 { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .xprev.n3 { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-rows: 1fr 1fr; } .xprev.n3 img:first-child { grid-row: span 2; }
+  .reply { border-left: 3px solid var(--line); padding-left: 10px; margin: 12px 0 4px; }
+  .xprev.n4 { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) minmax(0, 1fr); }
 </style>
 </head>
 <body>
@@ -61,7 +62,7 @@ async function load() {
     <div class="card post ${cls}" id="p${i}">
       <div class="row"><span class="when">${hhmm(it.postAt)}</span><span class="sp"></span><span class="state ${cls}">${lbl}</span></div>
       <div class="muted">${esc(it.title)}</div>
-      ${it.image ? `<div class="shots" style="display:none">${shotsOf(it).map((_, k) => `<canvas width="1200" height="675" data-i="${i}" data-k="${k}"></canvas>`).join('')}</div><div class="xprev n${Math.min(4, shotsOf(it).length)}" id="xp${i}"></div><div class="count">Vista previa de cómo lo enseña X (${shotsOf(it).length} foto${shotsOf(it).length > 1 ? 's' : ''}; al tocar una se ve entera)</div>` : ''}
+      ${it.image ? `<div class="shots" style="display:none">${shotsOf(it).map((_, k) => `<canvas width="1200" height="675" data-i="${i}" data-k="${k}"></canvas>`).join('')}</div><div class="xprev n${groups(it)[0][1]}" id="xp${i}"></div><div class="count">Vista previa de cómo lo enseña X (${groups(it)[0][1]} foto${groups(it)[0][1] > 1 ? 's' : ''}; al tocar una se ve entera)</div>` : ''}
       <textarea id="t${i}" aria-label="Texto de la publicación">${esc(it.text)}</textarea>
       <div class="count" id="c${i}"></div>
       <div class="acts">
@@ -71,6 +72,7 @@ async function load() {
         ${it.image ? `<button class="btn" onclick="download(${i})">Descargar imagen</button>` : ''}
         <button class="btn" onclick="toggleDone(${i})">${isDone(S, it) ? 'Desmarcar' : '✓ Marcar hecha'}</button>
       </div>
+      ${it.image ? replies(it, i) : ''}
     </div>`; }).join('');
   S.items.forEach((it, i) => { const ta = document.getElementById('t' + i); const upd = () => { document.getElementById('c' + i).textContent = `${xLen(ta.value)}/280`; }; ta.oninput = upd; upd(); });
   /* imágenes: se dibujan en el propio móvil con los datos de hoy */
@@ -83,7 +85,7 @@ async function load() {
     else await renderCard(c, { league: it.league, ...shot });
   }
   /* vista previa estilo X: mismas proporciones y recorte que el timeline */
-  S.items.forEach((it, i) => { const box = document.getElementById('xp' + i); if (box) box.innerHTML = [...document.querySelectorAll(`canvas[data-i="${i}"]`)].slice(0, 4).map(c => `<img src="${c.toDataURL('image/jpeg', .85)}" alt="">`).join(''); });
+  S.items.forEach((it, i) => groups(it).forEach((_, g) => { const box = document.getElementById(g ? `xp${i}_${g}` : 'xp' + i); if (box) box.innerHTML = [...document.querySelectorAll(`canvas[data-i="${i}"]`)].slice(..._).map(c => `<img src="${c.toDataURL('image/jpeg', .85)}" alt="">`).join(''); }));
   const now = document.querySelector('.post.now'); if (now) now.scrollIntoView({ block: 'start' });
 }
 /* longitud según X: enlaces 23 y emojis 2 */
@@ -94,15 +96,22 @@ const shotsOf = it => {
   if (it.kind === 'combo') return [{ grid: it.combo.legs, combo: it.combo }];        // una foto con el gráfico de cada selección
   if (it.kind !== 'nba-day') return [{ gameId: it.gameId || null }];
   const P = it.picks, n = P.length;
-  /* X: 1 foto entera · 2 verticales · 4 en cuadrícula. 3 o más de 4 picks → cuadrícula de gráficos */
-  if (n === 1 || n === 4) return P.map(p => ({ pick: p }));
-  if (n === 2) return P.map(p => ({ pick: p, tall: true }));
-  if (n <= 8) return [{ grid: P, from: 1 }];
-  /* 9+ picks → siempre 4 fotos con varios gráficos cada una (9 → 3+2+2+2) */
+  if (n === 2) return P.map(p => ({ pick: p, tall: true }));                        // 2 fotos lado a lado → verticales
+  if (n === 3) return P.map((p, k) => ({ pick: p, tall: k === 0 }));                // 3 fotos: X pone la primera alta
+  if (n <= 4) return P.map(p => ({ pick: p }));
+  /* más de 4 picks: X solo deja 4 fotos → se reparten en 4 grupos (7 → 2,2,2,1 · 9 → 3,2,2,2) */
   const sz = [0, 1, 2, 3].map(k => Math.floor(n / 4) + (k < n % 4 ? 1 : 0));
-  return sz.map((m, k) => { const f = sz.slice(0, k).reduce((a, b) => a + b, 0); return { grid: P.slice(f, f + m), from: f + 1 }; });
+  return sz.map((m, k) => { const from = sz.slice(0, k).reduce((s, v) => s + v, 0); return m === 1 ? { pick: P[from] } : { grid: P.slice(from, from + m), from: from + 1 }; });
 };
-const blobsOf = i => Promise.all([...document.querySelectorAll(`canvas[data-i="${i}"]`)].slice(0, 4).map(c => new Promise(r => c.toBlob(r, 'image/png'))));
+/* una sola publicación: todas las fotos van juntas (máximo 4) */
+const groups = it => [[0, Math.min(4, shotsOf(it).length)]];
+const replies = (it, i) => groups(it).slice(1).map(([a, b], g) => `
+      <div class="reply">
+        <div class="muted">↳ Respuesta en el hilo · fotos de los picks ${a + 1}-${b}</div>
+        <div class="xprev n${b - a}" id="xp${i}_${g + 1}"></div>
+        <div class="acts"><button class="btn" onclick="download(${i}, ${g + 1})">Descargar fotos ${a + 1}-${b}</button><button class="btn" onclick="shareReply(${i}, ${g + 1})">📤 Compartir fotos</button></div>
+      </div>`).join('') + (groups(it).length > 1 ? '<p class="count">En X: publica el post y luego, en tu propio post, pulsa <b>Responder</b> y adjunta las fotos de cada respuesta.</p>' : '');
+const blobsOf = (i, g = 0) => Promise.all([...document.querySelectorAll(`canvas[data-i="${i}"]`)].slice(...(groups(S.items[i])[g] || [0, 4])).map(c => new Promise(r => c.toBlob(r, 'image/png'))));
 const blobOf = i => blobsOf(i).then(b => b[0] || null);
 const intentUrl = i => 'https://x.com/intent/post?text=' + encodeURIComponent(text(i));
 
@@ -119,11 +128,17 @@ async function share(i) {
   window.open(intentUrl(i), '_blank');
   alert('Se ha descargado la imagen y se ha abierto X con el texto. Adjunta la imagen (icono 🖼️) y publica.');
 }
+/* fotos de una respuesta del hilo: al menú de compartir (guardar en galería o X) */
+async function shareReply(i, g) {
+  const files = (await blobsOf(i, g)).filter(Boolean).map((b, k) => new File([b], `europicks-${i + 1}-${groups(S.items[i])[g][0] + k + 1}.png`, { type: 'image/png' }));
+  try { if (navigator.canShare && navigator.canShare({ files })) return await navigator.share({ files }); } catch (e) { if (e.name === 'AbortError') return; }
+  download(i, g);
+}
 function intent(i) { window.open(intentUrl(i), '_blank'); }
 async function copy(i) { try { await navigator.clipboard.writeText(text(i)); alert('Texto copiado'); } catch (e) { document.getElementById('t' + i).select(); document.execCommand('copy'); } }
-async function download(i) {
-  const bs = (await blobsOf(i)).filter(Boolean);
-  for (const [k, b] of bs.entries()) { const a = document.createElement('a'); a.href = URL.createObjectURL(b); a.download = `europicks-${S.date}-${i + 1}-${k + 1}.png`; a.click(); await new Promise(r => setTimeout(r, 300)); }
+async function download(i, g = 0) {
+  const bs = (await blobsOf(i, g)).filter(Boolean);
+  for (const [k, b] of bs.entries()) { const a = document.createElement('a'); a.href = URL.createObjectURL(b); a.download = `europicks-${S.date}-${i + 1}-${groups(S.items[i])[g][0] + k + 1}.png`; a.click(); await new Promise(r => setTimeout(r, 300)); }
 }
 function toggleDone(i) { const k = doneKey(S, S.items[i]); try { isDone(S, S.items[i]) ? localStorage.removeItem(k) : localStorage.setItem(k, '1'); } catch (e) {} load(); }
 function askDone(i) { if (confirm('¿Ya la has publicado? La marco como hecha.')) { try { localStorage.setItem(doneKey(S, S.items[i]), '1'); } catch (e) {} load(); } }

@@ -59,7 +59,7 @@ function listLabel(p) {
 function listTweet(head, picks, foot, from = 1) {
   for (let n = picks.length; n >= 1; n--) {
     const body = picks.slice(0, n).map((p, i) => `${i + from}.- ${p.list || p.label} @${Number(p.odd).toFixed(2)}`);
-    if (n < picks.length) body.push(`…+${picks.length - n} more en la foto 📸`);
+    if (n < picks.length) body.push(`…+${picks.length - n} more en las fotos 📸`);
     for (const f of [foot, foot.slice(-1)]) { const t = [...head, ...body, ...f].join('\n'); if (xLen(t) <= 280) return t; }
   }
   return head.join('\n');
@@ -102,7 +102,7 @@ function main() {
   Object.keys(day).filter(k => /^nba-day/.test(k) && Date.parse(day[k].postAt) > NOW && !day[k].manual).forEach(k => delete day[k]);   // se rehace con los picks actuales
   if (top.length) put({ id: 'nba-day', kind: 'nba-day', league: 'nba', title: `NBA Picks Day · ${top.length} pick${top.length > 1 ? 's' : ''}`,
     postAt: madridAt(today, '18:45'), image: true, picks: top,
-    text: listTweet([`🏀 NBA Picks Day · ${today.slice(8, 10)}/${today.slice(5, 7)}`, ''], top, ['', '📊 Last 10 games de cada uno en la foto', '#NBA · +18']) });
+    text: listTweet([`🏀 NBA Picks Day · ${today.slice(8, 10)}/${today.slice(5, 7)}`, ''], top, ['', '📊 Last 10 games de cada uno en las fotos', '#NBA · +18']) });
 
   /* combinada segura del día (NBA a las 19:00 · Euroliga 1 h 30 min antes del primer partido) */
   for (const lg of ['nba', 'euroleague']) {
