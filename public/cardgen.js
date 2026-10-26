@@ -4,7 +4,7 @@
      sin gameId → pick más seguro del día · con gameId → ese partido
      (o su previa si no tiene pick seguro). La usan card.html y x.html.
    ============================================================ */
-window.renderCard = async function (canvas, { league = 'euroleague', gameId = null } = {}) {
+window.renderCard = async function (canvas, { league = 'euroleague', gameId = null, pick = null } = {}) {
 const L = league === 'nba' ? 'nba' : 'euroleague', G = gameId;
 const BASE = L === 'nba' ? 'data/nba/' : 'data/';
 const C = { bg: '#0b0f17', panel: '#121826', panel2: '#18202f', line: '#243045', text: '#e8edf6', muted: '#8b97ab', accent: '#ff7a1a', accent2: '#ffb36b', good: '#22c55e', bad: '#ef4444' };
@@ -42,8 +42,11 @@ function preview(g) {
 async function main() {
   await Promise.all(['600', '700', '800', '900'].map(w => document.fonts.load(`${w} 40px Inter`)));
   const T = await fetch(BASE + 'today.json?v=' + Date.now()).then(r => r.json()).catch(() => null);
-  const p = T && T.picks && (G ? T.picks.find(x => x.gameId === G) : T.picks[0]);
-  frame(`${G ? (p ? 'Pick del partido' : 'Previa') : 'Pick del día'} · ${L === 'nba' ? 'NBA' : 'Euroliga'}`);
+  /* pick concreto (publicaciones de NBA y combinadas: una foto por pick) → se busca por sus datos */
+  const same = (a, b) => a.gameId === b.gameId && a.market === b.market && a.side === b.side && String(a.line) === String(b.line) && String(a.playerId || '') === String(b.playerId || '') && String(a.stat || '') === String(b.stat || '');
+  const p = pick ? ((T && T.picks || []).find(x => same(x, pick)) || pick) : T && T.picks && (G ? T.picks.find(x => x.gameId === G) : T.picks[0]);
+  if (p && !p.pFinal) p.pFinal = 0;                            // pick antiguo sin datos completos: se dibuja igual
+  frame(`${pick ? 'Pick' : G ? (p ? 'Pick del partido' : 'Previa') : 'Pick del día'} · ${L === 'nba' ? 'NBA' : 'Euroliga'}`);
   if (!p && G) { preview(T.games.find(g => g.id === G));  return; }
   if (!p) { txt('Hoy no hay pick lo bastante seguro', 600, 360, 44, C.text, 800, 'center');  return; }
   const when = new Date(p.start).toLocaleString('es-ES', { weekday: 'short', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Madrid' });
@@ -140,4 +143,91 @@ window.renderSummary = async function (canvas, item) {
   }
   txt('Historial completo, sin borrar nada · europicks.pages.dev', 60, canvas.height - 36, 22, C.muted, 600);
   txt('+18 · Juega con responsabilidad', 1140, canvas.height - 36, 20, C.muted, 600, 'right');
+};
+
+/* ============================================================
+   Tarjeta VERTICAL de un pick (7:8), para publicaciones de 2 fotos:
+   X las muestra lado a lado en vertical y una tarjeta apaisada se cortaría.
+   renderPickTall(canvas, { league, pick })
+   ============================================================ */
+window.renderPickTall = async function (canvas, { league = 'euroleague', pick } = {}) {
+  const L = league === 'nba' ? 'nba' : 'euroleague', BASE = L === 'nba' ? 'data/nba/' : 'data/';
+  const C = { bg: '#0b0f17', panel: '#121826', panel2: '#18202f', text: '#e8edf6', muted: '#8b97ab', accent: '#ff7a1a', accent2: '#ffb36b', good: '#22c55e', bad: '#ef4444' };
+  const W = 910, H = 1040; canvas.width = W; canvas.height = H;
+  const ctx = canvas.getContext('2d');
+  const rr = (x, y, w, h, r) => { ctx.beginPath(); ctx.roundRect(x, y, w, h, r); };
+  const txt = (s, x, y, size, color = C.text, weight = 800, align = 'left') => { ctx.font = `${weight} ${size}px Inter`; ctx.fillStyle = color; ctx.textAlign = align; ctx.fillText(s, x, y); };
+  const fit = (s, max, size, weight = 800) => { ctx.font = `${weight} ${size}px Inter`; while (ctx.measureText(s).width > max && size > 18) { size -= 2; ctx.font = `${weight} ${size}px Inter`; } return size; };
+  const val = (r, k) => k === 'pra' ? r.pts + r.reb + r.ast : k === 'pr' ? r.pts + r.reb : k === 'pa' ? r.pts + r.ast : k === 'ra' ? r.reb + r.ast : r[k];
+  await Promise.all(['600', '700', '800', '900'].map(w => document.fonts.load(`${w} 40px Inter`)));
+  const T = await fetch(BASE + 'today.json?v=' + Date.now()).then(r => r.json()).catch(() => null);
+  const same = (a, b) => a.gameId === b.gameId && a.market === b.market && a.side === b.side && String(a.line) === String(b.line) && String(a.playerId || '') === String(b.playerId || '') && String(a.stat || '') === String(b.stat || '');
+  const p = ((T && T.picks) || []).find(x => same(x, pick)) || pick;
+  /* fondo y cabecera */
+  ctx.fillStyle = C.bg; ctx.fillRect(0, 0, W, H);
+  const g = ctx.createRadialGradient(650, 160, 20, 650, 160, 700); g.addColorStop(0, 'rgba(255,122,26,.16)'); g.addColorStop(1, 'rgba(0,0,0,0)'); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+  const bg = ctx.createRadialGradient(54, 50, 3, 62, 58, 24); bg.addColorStop(0, '#ffb36b'); bg.addColorStop(.6, '#ff7a1a'); bg.addColorStop(1, '#b4410b');
+  ctx.fillStyle = bg; ctx.beginPath(); ctx.arc(62, 58, 24, 0, Math.PI * 2); ctx.fill();
+  txt('Euro', 98, 72, 38, C.accent, 900); ctx.font = '900 38px Inter'; txt('Picks', 98 + ctx.measureText('Euro').width + 3, 72, 38, C.text, 900);
+  txt(`Pick · ${L === 'nba' ? 'NBA' : 'Euroliga'}`, W - 50, 70, 26, C.accent2, 800, 'right');
+  /* el pick */
+  const when = p.start ? new Date(p.start).toLocaleString('es-ES', { weekday: 'short', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Madrid' }) : '';
+  txt(`${p.match || ''}${when ? ' · ' + when : ''}`, 50, 140, fit(`${p.match || ''} · ${when}`, W - 100, 26, 600), C.muted, 600);
+  const title = p.market === 'prop' ? (p.player || p.label) : p.label;
+  txt(title, 50, 200, fit(title, W - 100, 54, 900), C.text, 900);
+  if (p.market === 'prop') { const bet = p.label.replace((p.player || '') + ' ', '').replace(/^más/, 'Más').replace(/^menos/, 'Menos'); txt(bet, 50, 254, fit(bet, W - 100, 36, 700), C.text, 700); }
+  rr(50, 286, 395, 120, 22); ctx.fillStyle = C.panel2; ctx.fill(); txt('cuota', 247, 326, 22, C.muted, 600, 'center'); txt(Number(p.odd).toFixed(2), 247, 386, 54, C.accent2, 900, 'center');
+  rr(465, 286, 395, 120, 22); ctx.fillStyle = C.panel2; ctx.fill(); txt('probabilidad', 662, 326, 22, C.muted, 600, 'center'); txt(p.pFinal ? Math.round(p.pFinal * 100) + '%' : '—', 662, 386, 54, C.good, 900, 'center');
+  /* gráfico */
+  const X = 50, Y = 432, PW = W - 100, PH = 520;
+  rr(X, Y, PW, PH, 26); ctx.fillStyle = C.panel; ctx.fill(); ctx.strokeStyle = 'rgba(255,122,26,.45)'; ctx.lineWidth = 2.5; ctx.stroke();
+  if (p.market === 'prop' && p.team && p.playerId) {
+    const rows = ((await fetch(`${BASE}players/${p.team}.json?v=` + Date.now()).then(r => r.json()).catch(() => ({})))[p.playerId] || []).slice(-10);
+    const vals = rows.map(r => val(r, p.stat)), max = Math.max(1, ...vals, p.line) * 1.15, n = Math.max(1, vals.length);
+    const hits = vals.filter(v => p.side === 'over' ? v > p.line : v < p.line).length;
+    txt('Últimos 10 partidos', X + 30, Y + 52, 28, C.text, 800); txt(`${hits}/${vals.length}`, X + PW - 30, Y + 54, 38, hits / n >= .6 ? C.good : C.text, 900, 'right');
+    const cx = X + 30, cy = Y + 100, cw = PW - 60, ch = 330, gap = 8, bw = (cw - gap * (n - 1)) / n, yv = v => cy + ch * (1 - v / max);
+    vals.forEach((v, i) => {
+      const ok = p.side === 'over' ? v > p.line : v < p.line, bx = cx + i * (bw + gap), top = yv(v);
+      rr(bx, top, bw, cy + ch - top, 7); ctx.fillStyle = ok ? C.good : C.bad; ctx.fill();
+      txt(String(v), bx + bw / 2, top - 9, 20, C.text, 800, 'center'); txt(rows[i].o, bx + bw / 2, cy + ch + 28, 16, C.muted, 600, 'center');
+    });
+    ctx.setLineDash([12, 8]); ctx.strokeStyle = C.accent2; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(cx, yv(p.line)); ctx.lineTo(cx + cw, yv(p.line)); ctx.stroke(); ctx.setLineDash([]);
+    if (p.proj != null) txt(`línea ${p.line} · proyección ${p.proj}`, X + PW / 2, Y + PH - 24, 22, C.muted, 600, 'center');
+  } else {
+    txt('Por qué este pick', X + 30, Y + 56, 28, C.text, 800);
+    [['Modelo EuroPicks', p.pModel], ['Mercado (sin margen)', p.pMarket], ['Probabilidad final', p.pFinal]].forEach(([l, v], i) => {
+      if (v == null) return; const y = Y + 140 + i * 120;
+      txt(l, X + 30, y, 24, C.muted, 600); txt(Math.round(v * 100) + '%', X + PW - 30, y, 30, C.text, 800, 'right');
+      rr(X + 30, y + 20, PW - 60, 20, 10); ctx.fillStyle = C.panel2; ctx.fill(); rr(X + 30, y + 20, (PW - 60) * v, 20, 10); ctx.fillStyle = i === 2 ? C.good : C.accent; ctx.fill();
+    });
+  }
+  txt('europicks.pages.dev', 50, H - 36, 24, C.accent, 800); txt('+18', W - 50, H - 36, 22, C.muted, 600, 'right');
+};
+
+/* Foto resumen de una combinada (1200×675): selecciones, cuota total y probabilidad.
+   renderComboCard(canvas, { league, combo: { legs, odd, prob } }) */
+window.renderComboCard = async function (canvas, { league = 'euroleague', combo } = {}) {
+  const C = { bg: '#0b0f17', panel: '#121826', panel2: '#18202f', text: '#e8edf6', muted: '#8b97ab', accent: '#ff7a1a', accent2: '#ffb36b', good: '#22c55e' };
+  canvas.width = 1200; canvas.height = 675;
+  const ctx = canvas.getContext('2d');
+  const rr = (x, y, w, h, r) => { ctx.beginPath(); ctx.roundRect(x, y, w, h, r); };
+  const txt = (s, x, y, size, color = C.text, weight = 800, align = 'left') => { ctx.font = `${weight} ${size}px Inter`; ctx.fillStyle = color; ctx.textAlign = align; ctx.fillText(s, x, y); };
+  await Promise.all(['600', '700', '800', '900'].map(w => document.fonts.load(`${w} 40px Inter`)));
+  ctx.fillStyle = C.bg; ctx.fillRect(0, 0, 1200, 675);
+  const g = ctx.createRadialGradient(900, 200, 20, 900, 200, 800); g.addColorStop(0, 'rgba(255,122,26,.16)'); g.addColorStop(1, 'rgba(0,0,0,0)'); ctx.fillStyle = g; ctx.fillRect(0, 0, 1200, 675);
+  txt('🎯 Combinada segura', 60, 90, 48, C.text, 900); txt(league === 'nba' ? 'NBA' : 'Euroliga', 1140, 86, 28, C.accent2, 800, 'right');
+  combo.legs.forEach((l, i) => {
+    const y = 140 + i * 92; rr(60, y, 700, 76, 16); ctx.fillStyle = C.panel2; ctx.fill();
+    txt(`${i + 1}.- ${l.list || l.label}`, 85, y + 48, 28, C.text, 700); txt('@' + Number(l.odd).toFixed(2), 735, y + 48, 28, C.accent2, 800, 'right');
+  });
+  /* anillo de probabilidad */
+  const cx = 960, cy = 330, r = 120, v = combo.prob || 0;
+  ctx.lineWidth = 28; ctx.strokeStyle = C.panel2; ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2); ctx.stroke();
+  ctx.strokeStyle = C.good; ctx.lineCap = 'round'; ctx.beginPath(); ctx.arc(cx, cy, r, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * v); ctx.stroke(); ctx.lineCap = 'butt';
+  txt(Math.round(v * 100) + '%', cx, cy + 20, 58, C.text, 900, 'center'); txt('probabilidad', cx, cy + 56, 22, C.muted, 600, 'center');
+  rr(60, 470, 1080, 110, 22); ctx.fillStyle = C.panel; ctx.fill();
+  txt('Cuota total', 100, 515, 24, C.muted, 600); txt(Number(combo.odd).toFixed(2), 100, 560, 48, C.accent2, 900);
+  txt('Con 10 € cobras', 600, 515, 24, C.muted, 600); txt((combo.odd * 10).toFixed(2).replace('.', ',') + ' €', 600, 560, 48, C.text, 900);
+  txt('europicks.pages.dev', 60, 640, 24, C.accent, 800); txt('+18 · Juega con responsabilidad', 1140, 640, 20, C.muted, 600, 'right');
 };

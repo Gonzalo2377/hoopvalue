@@ -21,6 +21,11 @@
   .btn { border: 1px solid var(--line); background: var(--panel2); color: var(--text); padding: 10px 14px; border-radius: 10px; font-weight: 700; font-size: 14px; text-decoration: none; }
   .btn.main { background: var(--accent); border-color: var(--accent); color: #111; }
   .count { font-size: 12px; color: var(--muted); }
+  .xprev { display: grid; gap: 2px; aspect-ratio: 16 / 9; border-radius: 16px; overflow: hidden; margin: 10px 0 4px; border: 1px solid var(--line); }
+  .xprev img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .xprev.n2 { grid-template-columns: 1fr 1fr; }
+  .xprev.n3 { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; } .xprev.n3 img:first-child { grid-row: span 2; }
+  .xprev.n4 { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; }
 </style>
 </head>
 <body>
@@ -56,7 +61,7 @@ async function load() {
     <div class="card post ${cls}" id="p${i}">
       <div class="row"><span class="when">${hhmm(it.postAt)}</span><span class="sp"></span><span class="state ${cls}">${lbl}</span></div>
       <div class="muted">${esc(it.title)}</div>
-      ${it.image ? `<canvas width="1200" height="675" data-i="${i}"></canvas>` : ''}
+      ${it.image ? `<div class="shots" style="display:none">${shotsOf(it).map((_, k) => `<canvas width="1200" height="675" data-i="${i}" data-k="${k}"></canvas>`).join('')}</div><div class="xprev n${Math.min(4, shotsOf(it).length)}" id="xp${i}"></div><div class="count">Vista previa de cómo lo enseña X (${shotsOf(it).length} foto${shotsOf(it).length > 1 ? 's' : ''}; al tocar una se ve entera)</div>` : ''}
       <textarea id="t${i}" aria-label="Texto de la publicación">${esc(it.text)}</textarea>
       <div class="count" id="c${i}"></div>
       <div class="acts">
@@ -70,19 +75,35 @@ async function load() {
   S.items.forEach((it, i) => { const ta = document.getElementById('t' + i); const upd = () => { document.getElementById('c' + i).textContent = `${xLen(ta.value)}/280`; }; ta.oninput = upd; upd(); });
   /* imágenes: se dibujan en el propio móvil con los datos de hoy */
   await document.fonts.ready;
-  for (const c of document.querySelectorAll('canvas[data-i]')) { const it = S.items[+c.dataset.i]; if (it.kind === 'summary') await renderSummary(c, it); else await renderCard(c, { league: it.league, gameId: it.gameId || null }); }
+  for (const c of document.querySelectorAll('canvas[data-i]')) {
+    const it = S.items[+c.dataset.i], shot = shotsOf(it)[+c.dataset.k];
+    if (it.kind === 'summary') await renderSummary(c, it);
+    else if (shot.combo) await renderComboCard(c, { league: it.league, combo: shot.combo });
+    else if (shot.tall) await renderPickTall(c, { league: it.league, pick: shot.pick });
+    else await renderCard(c, { league: it.league, ...shot });
+  }
+  /* vista previa estilo X: mismas proporciones y recorte que el timeline */
+  S.items.forEach((it, i) => { const box = document.getElementById('xp' + i); if (box) box.innerHTML = [...document.querySelectorAll(`canvas[data-i="${i}"]`)].slice(0, 4).map(c => `<img src="${c.toDataURL('image/jpeg', .85)}" alt="">`).join(''); });
   const now = document.querySelector('.post.now'); if (now) now.scrollIntoView({ block: 'start' });
 }
 /* longitud según X: enlaces 23 y emojis 2 */
 function xLen(s) { s = s.replace(/\b[a-z0-9.-]+\.(dev|com|es|net|org)(\/\S*)?/gi, 'x'.repeat(23)); let n = 0; for (const ch of s) { const c = ch.codePointAt(0); n += (c <= 4351 || (c >= 8192 && c <= 8205) || (c >= 8208 && c <= 8223) || (c >= 8242 && c <= 8247)) ? 1 : 2; } return n; }
 const text = i => document.getElementById('t' + i).value;
-const blobOf = i => new Promise(r => { const c = document.querySelector(`canvas[data-i="${i}"]`); c ? c.toBlob(r, 'image/png') : r(null); });
+/* fotos de cada publicación: picks de NBA y selecciones de combinada → una por pick; el resto, una */
+const shotsOf = it => {
+  if (it.kind !== 'nba-day' && it.kind !== 'combo') return [{ gameId: it.gameId || null }];
+  const list = (it.kind === 'combo' ? it.combo.legs : it.picks).map(p => ({ pick: p }));
+  if (it.kind === 'combo' && list.length === 3) list.push({ combo: it.combo });      // 4.ª foto: la combinada completa
+  return list.map(s => ({ ...s, tall: list.length === 2 }));
+};
+const blobsOf = i => Promise.all([...document.querySelectorAll(`canvas[data-i="${i}"]`)].slice(0, 4).map(c => new Promise(r => c.toBlob(r, 'image/png'))));
+const blobOf = i => blobsOf(i).then(b => b[0] || null);
 const intentUrl = i => 'https://x.com/intent/post?text=' + encodeURIComponent(text(i));
 
 /* móvil: el menú de compartir del sistema lleva texto + imagen a la app de X */
 async function share(i) {
   const blob = await blobOf(i);
-  const files = blob ? [new File([blob], `europicks-${i}.png`, { type: 'image/png' })] : [];
+  const files = (await blobsOf(i)).filter(Boolean).map((b, k) => new File([b], `europicks-${i + 1}-${k + 1}.png`, { type: 'image/png' }));
   try {
     if (navigator.canShare && navigator.canShare({ files, text: text(i) }) && files.length) { await navigator.share({ files, text: text(i) }); return askDone(i); }
     if (navigator.share && !files.length) { await navigator.share({ text: text(i) }); return askDone(i); }
@@ -94,7 +115,10 @@ async function share(i) {
 }
 function intent(i) { window.open(intentUrl(i), '_blank'); }
 async function copy(i) { try { await navigator.clipboard.writeText(text(i)); alert('Texto copiado'); } catch (e) { document.getElementById('t' + i).select(); document.execCommand('copy'); } }
-async function download(i) { const b = await blobOf(i); if (!b) return; const a = document.createElement('a'); a.href = URL.createObjectURL(b); a.download = `europicks-${S.date}-${i + 1}.png`; a.click(); }
+async function download(i) {
+  const bs = (await blobsOf(i)).filter(Boolean);
+  for (const [k, b] of bs.entries()) { const a = document.createElement('a'); a.href = URL.createObjectURL(b); a.download = `europicks-${S.date}-${i + 1}-${k + 1}.png`; a.click(); await new Promise(r => setTimeout(r, 300)); }
+}
 function toggleDone(i) { const k = doneKey(S, S.items[i]); try { isDone(S, S.items[i]) ? localStorage.removeItem(k) : localStorage.setItem(k, '1'); } catch (e) {} load(); }
 function askDone(i) { if (confirm('¿Ya la has publicado? La marco como hecha.')) { try { localStorage.setItem(doneKey(S, S.items[i]), '1'); } catch (e) {} load(); } }
 

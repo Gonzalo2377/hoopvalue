@@ -16,7 +16,7 @@ const { result } = require('./settle');
 const { DAY } = require('./lib/util');
 
 const leg = p => ({ id: p.id || [p.gameId, p.market, p.side, p.line, p.playerId || '', p.stat || ''].join('|'), gameId: p.gameId, start: p.start, match: p.match,
-  market: p.market, side: p.side, line: p.line, stat: p.stat, playerId: p.playerId, player: p.player, label: p.label, odd: p.odd, pFinal: p.pFinal, book: p.book });
+  market: p.market, side: p.side, line: p.line, stat: p.stat, playerId: p.playerId, player: p.player, team: p.team, label: p.label, odd: p.odd, pFinal: p.pFinal, book: p.book });
 const summary = (type, legs) => {
   const odd = legs.reduce((s, l) => s * l.odd, 1), prob = legs.reduce((s, l) => s * l.pFinal, 1);
   return { type, legs: legs.map(leg), odd: round(odd, 2), prob: round(prob, 3), ev: round(prob * odd - 1, 3), start: legs.map(l => l.start).sort()[0] };
