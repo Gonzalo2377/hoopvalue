@@ -95,7 +95,7 @@ function main() {
     put({ id: 'el:' + g.id, kind: 'el-game', league: 'euroleague', gameId: g.id, title: `${g.home.name} vs ${g.away.name}`, start: g.start,
       postAt: new Date(Date.parse(g.start) - 3600e3).toISOString(), text: elGame(g, picks), image: true, picks: picks.map(p => ({ ...mini(p), league: 'euroleague' })) });
   }
-  /* NBA: TODOS los picks de esta noche (hasta 10), ordenados por seguridad, en una sola publicación */
+  /* NBA: todos los picks de esta noche, ordenados por seguridad, en publicaciones de 4/2/1 fotos */
   const tonightEnd = Date.parse(madridAt(madridDate(NOW + 24 * 3600e3), '12:00'));     // solo partidos de esta noche (hasta mañana a mediodía)
   const top = ((T.nba && T.nba.picks) || []).filter(p => { const t = Date.parse(p.start); return t > NOW && t < tonightEnd; }).sort((a, b) => b.safety - a.safety).map(p => ({ ...mini(p), league: 'nba' }));
   /* X permite 4 fotos por publicación (una por pick). Con 3 fotos X recorta la primera,
@@ -107,10 +107,10 @@ function main() {
   const parts = sizes.length;
   Object.keys(day).filter(k => /^nba-day/.test(k) && Date.parse(day[k].postAt) > NOW).forEach(k => delete day[k]);   // se rehacen con los picks actuales
   for (let k = 0; k < parts; k++) {
-    const from = sizes.slice(0, k).reduce((a, b) => a + b, 0), chunk = top.slice(from, from + sizes[k]), tag = parts > 1 ? ` (${k + 1}/${parts})` : '';
+    const from = sizes.slice(0, k).reduce((a, b) => a + b, 0), chunk = top.slice(from, from + sizes[k]);
     put({ id: 'nba-day-' + (k + 1), kind: 'nba-day', league: 'nba', title: `NBA · picks ${from + 1}-${from + chunk.length} de ${top.length}`,
       postAt: new Date(Date.parse(madridAt(today, '18:45')) + k * 5 * 60e3).toISOString(), image: true, picks: chunk,
-      text: listTweet([`🏀 NBA · picks de esta noche${tag}`, ''], chunk, ['', '📊 Últimos 10 partidos de cada uno en las fotos', '#NBA · +18 · Juega con responsabilidad'], from + 1) });
+      text: listTweet([`🏀 NBA Picks Day · ${today.slice(8, 10)}/${today.slice(5, 7)}`, ''], chunk, ['', '📊 Últimos 10 partidos de cada uno en las fotos', '#NBA · +18 · Juega con responsabilidad'], from + 1) });
   }
 
   /* combinada segura del día (NBA a las 19:00 · Euroliga 1 h 30 min antes del primer partido) */
