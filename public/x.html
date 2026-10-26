@@ -78,7 +78,7 @@ async function load() {
   for (const c of document.querySelectorAll('canvas[data-i]')) {
     const it = S.items[+c.dataset.i], shot = shotsOf(it)[+c.dataset.k];
     if (it.kind === 'summary') await renderSummary(c, it);
-    else if (shot.combo) await renderComboCard(c, { league: it.league, combo: shot.combo });
+    else if (shot.grid) await renderPicksGrid(c, { league: it.league, picks: shot.grid, from: shot.from || 1, combo: shot.combo || null });
     else if (shot.tall) await renderPickTall(c, { league: it.league, pick: shot.pick });
     else await renderCard(c, { league: it.league, ...shot });
   }
@@ -91,10 +91,16 @@ function xLen(s) { s = s.replace(/\b[a-z0-9.-]+\.(dev|com|es|net|org)(\/\S*)?/gi
 const text = i => document.getElementById('t' + i).value;
 /* fotos de cada publicación: picks de NBA → una por pick; combinada y el resto, una */
 const shotsOf = it => {
-  if (it.kind === 'combo') return [{ combo: it.combo }];                           // una sola foto con el gráfico de cada selección
+  if (it.kind === 'combo') return [{ grid: it.combo.legs, combo: it.combo }];        // una foto con el gráfico de cada selección
   if (it.kind !== 'nba-day') return [{ gameId: it.gameId || null }];
-  const list = it.picks.map(p => ({ pick: p }));
-  return list.map(s => ({ ...s, tall: list.length === 2 }));
+  const P = it.picks, n = P.length;
+  /* X: 1 foto entera · 2 verticales · 4 en cuadrícula. 3 o más de 4 picks → cuadrícula de gráficos */
+  if (n === 1 || n === 4) return P.map(p => ({ pick: p }));
+  if (n === 2) return P.map(p => ({ pick: p, tall: true }));
+  if (n <= 8) return [{ grid: P, from: 1 }];
+  /* 9+ picks → siempre 4 fotos con varios gráficos cada una (9 → 3+2+2+2) */
+  const sz = [0, 1, 2, 3].map(k => Math.floor(n / 4) + (k < n % 4 ? 1 : 0));
+  return sz.map((m, k) => { const f = sz.slice(0, k).reduce((a, b) => a + b, 0); return { grid: P.slice(f, f + m), from: f + 1 }; });
 };
 const blobsOf = i => Promise.all([...document.querySelectorAll(`canvas[data-i="${i}"]`)].slice(0, 4).map(c => new Promise(r => c.toBlob(r, 'image/png'))));
 const blobOf = i => blobsOf(i).then(b => b[0] || null);

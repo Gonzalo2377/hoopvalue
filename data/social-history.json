@@ -655,61 +655,11 @@
           }
         }
       },
-      "combo-nba": {
-        "id": "combo-nba",
-        "kind": "combo",
-        "league": "nba",
-        "title": "Combinada segura · NBA @1.94",
-        "postAt": "2026-10-26T18:00:00.000Z",
-        "image": true,
-        "text": "🎯 Combinada segura · NBA\n\n1.- J. Landale +3.5 Pts @1.36\n2.- J. Jackson Jr. +11.5 Pts @1.43\n\n💰 Cuota total 1.94\n📊 Últimos 10 partidos de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
-        "picks": [],
-        "combo": {
-          "legs": [
-            {
-              "id": "nba:401909874|prop|over|3.5|3146557|pts",
-              "league": "nba",
-              "label": "J. Landale +3.5 puntos",
-              "list": "J. Landale +3.5 Pts",
-              "odd": 1.36,
-              "start": "2026-10-27T00:30Z",
-              "gameId": "nba:401909874",
-              "market": "prop",
-              "side": "over",
-              "line": 3.5,
-              "stat": "pts",
-              "playerId": "3146557",
-              "team": "ATL",
-              "match": "Rockets – Hawks",
-              "pFinal": 0.723
-            },
-            {
-              "id": "nba:401909875|prop|over|11.5|4277961|pts",
-              "league": "nba",
-              "label": "J. Jackson Jr. +11.5 puntos",
-              "list": "J. Jackson Jr. +11.5 Pts",
-              "odd": 1.43,
-              "start": "2026-10-27T01:00Z",
-              "gameId": "nba:401909875",
-              "market": "prop",
-              "side": "over",
-              "line": 11.5,
-              "stat": "pts",
-              "playerId": "4277961",
-              "team": "UTAH",
-              "match": "Jazz – Grizzlies",
-              "pFinal": 0.712
-            }
-          ],
-          "odd": 1.94,
-          "prob": 0.515
-        }
-      },
-      "nba-day-1": {
-        "id": "nba-day-1",
+      "nba-day": {
+        "id": "nba-day",
         "kind": "nba-day",
         "league": "nba",
-        "title": "NBA · picks 1-4 de 7",
+        "title": "NBA Picks Day · 7 picks",
         "postAt": "2026-10-26T17:45:00.000Z",
         "image": true,
         "picks": [
@@ -780,18 +730,7 @@
             "team": "UTAH",
             "match": "Jazz – Grizzlies",
             "pFinal": 0.712
-          }
-        ],
-        "text": "🏀 NBA Picks Day · 26/10\n\n1.- J. Landale +3.5 Pts @1.36\n2.- A. Thompson +13.5 Pts @1.41\n3.- T. Johnson +0.5 T3 @1.44\n4.- J. Jackson Jr. +11.5 Pts @1.43\n\n📊 Últimos 10 partidos de cada uno en las fotos\n#NBA · +18 · Juega con responsabilidad"
-      },
-      "nba-day-2": {
-        "id": "nba-day-2",
-        "kind": "nba-day",
-        "league": "nba",
-        "title": "NBA · picks 5-6 de 7",
-        "postAt": "2026-10-26T17:50:00.000Z",
-        "image": true,
-        "picks": [
+          },
           {
             "id": "nba:401909872|prop|over|11.5|4432848|pts",
             "league": "nba",
@@ -825,18 +764,7 @@
             "team": "IND",
             "match": "Bucks – Pacers",
             "pFinal": 0.604
-          }
-        ],
-        "text": "🏀 NBA Picks Day · 26/10\n\n5.- J. Jaquez Jr. +11.5 Pts @1.43\n6.- J. Slawson −1.5 T3 @1.68\n\n📊 Últimos 10 partidos de cada uno en las fotos\n#NBA · +18 · Juega con responsabilidad"
-      },
-      "nba-day-3": {
-        "id": "nba-day-3",
-        "kind": "nba-day",
-        "league": "nba",
-        "title": "NBA · picks 7-7 de 7",
-        "postAt": "2026-10-26T17:55:00.000Z",
-        "image": true,
-        "picks": [
+          },
           {
             "id": "nba:401909869|prop|under|1.5|4683747|tpm",
             "league": "nba",
@@ -855,7 +783,57 @@
             "pFinal": 0.609
           }
         ],
-        "text": "🏀 NBA Picks Day · 26/10\n\n7.- J. Tyson −1.5 T3 @1.68\n\n📊 Últimos 10 partidos de cada uno en las fotos\n#NBA · +18 · Juega con responsabilidad"
+        "text": "🏀 NBA Picks Day · 26/10\n\n1.- J. Landale +3.5 Pts @1.36\n2.- A. Thompson +13.5 Pts @1.41\n3.- T. Johnson +0.5 T3 @1.44\n4.- J. Jackson Jr. +11.5 Pts @1.43\n5.- J. Jaquez Jr. +11.5 Pts @1.43\n6.- J. Slawson −1.5 T3 @1.68\n7.- J. Tyson −1.5 T3 @1.68\n#NBA · +18"
+      },
+      "combo-nba": {
+        "id": "combo-nba",
+        "kind": "combo",
+        "league": "nba",
+        "title": "Safe Parlay · NBA @1.94",
+        "postAt": "2026-10-26T18:00:00.000Z",
+        "image": true,
+        "text": "🎯 Safe Parlay · NBA\n\n1.- J. Landale +3.5 Pts @1.36\n2.- J. Jackson Jr. +11.5 Pts @1.43\n\n💰 Total odds 1.94\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
+        "picks": [],
+        "combo": {
+          "legs": [
+            {
+              "id": "nba:401909874|prop|over|3.5|3146557|pts",
+              "league": "nba",
+              "label": "J. Landale +3.5 puntos",
+              "list": "J. Landale +3.5 Pts",
+              "odd": 1.36,
+              "start": "2026-10-27T00:30Z",
+              "gameId": "nba:401909874",
+              "market": "prop",
+              "side": "over",
+              "line": 3.5,
+              "stat": "pts",
+              "playerId": "3146557",
+              "team": "ATL",
+              "match": "Rockets – Hawks",
+              "pFinal": 0.723
+            },
+            {
+              "id": "nba:401909875|prop|over|11.5|4277961|pts",
+              "league": "nba",
+              "label": "J. Jackson Jr. +11.5 puntos",
+              "list": "J. Jackson Jr. +11.5 Pts",
+              "odd": 1.43,
+              "start": "2026-10-27T01:00Z",
+              "gameId": "nba:401909875",
+              "market": "prop",
+              "side": "over",
+              "line": 11.5,
+              "stat": "pts",
+              "playerId": "4277961",
+              "team": "UTAH",
+              "match": "Jazz – Grizzlies",
+              "pFinal": 0.712
+            }
+          ],
+          "odd": 1.94,
+          "prob": 0.515
+        }
       }
     }
   }
