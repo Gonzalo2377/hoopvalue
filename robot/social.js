@@ -66,11 +66,12 @@ function listTweet(head, picks, foot, from = 1) {
 }
 
 function elGame(g, picks) {
-  const lines = [`🏀 Euroliga · hoy ${hhmm(g.start)}`, `${g.home.name} vs ${g.away.name}`, ''];
-  if (picks.length) picks.forEach(p => lines.push(`✅ ${p.label} @${p.odd.toFixed(2)} (${pct(p.pFinal)})`));
-  else lines.push('Sin pick seguro en este partido: no hay valor suficiente. A veces lo mejor es no apostar.');
-  lines.push(`📊 Modelo: ${g.home.name} ${pct(g.model.pHome)} · ${g.away.name} ${pct(1 - g.model.pHome)}`, '', BIO, '#Euroliga · +18 · Juega con responsabilidad');
-  return fit(lines);
+  const head = [`🏀 EuroLeague · hoy ${hhmm(g.start)}`, `${g.home.name} vs ${g.away.name}`, ''];
+  let h = Math.round((g.model || {}).ptsH), w = Math.round((g.model || {}).ptsA);
+  if (h === w) g.model.ptsH >= g.model.ptsA ? h++ : w++;                                      // en baloncesto no hay empate
+  const guess = g.model && g.model.ptsH != null ? `🔮 Predicción: ${g.home.name} ${h}-${w} ${g.away.name}` : null;
+  if (!picks.length) return fit([...head, 'Sin pick seguro en este partido: no hay valor suficiente. A veces lo mejor es no apostar.', ...(guess ? ['', guess] : []), '', '#EuroLeague · +18']);
+  return listTweet(head, picks.map(mini), ['', ...(guess ? [guess] : []), '📊 Last 10 games en las fotos', '#EuroLeague · +18 · Juega con responsabilidad']);
 }
 function nbaDay(top) {
   const lines = ['🏀 NBA · los picks más seguros de esta noche', ''];
@@ -92,7 +93,7 @@ function main() {
   for (const g of (T.euroleague && T.euroleague.games) || []) {
     if (madridDate(g.start) !== today) continue;
     const picks = T.euroleague.picks.filter(p => p.gameId === g.id).sort((a, b) => b.safety - a.safety).slice(0, 2);
-    put({ id: 'el:' + g.id, kind: 'el-game', league: 'euroleague', gameId: g.id, title: `${g.home.name} vs ${g.away.name}`, start: g.start,
+    put({ id: g.id, kind: 'el-game', league: 'euroleague', gameId: g.id, title: `${g.home.name} vs ${g.away.name}`, start: g.start,
       postAt: new Date(Date.parse(g.start) - 3600e3).toISOString(), text: elGame(g, picks), image: true, picks: picks.map(p => ({ ...mini(p), league: 'euroleague' })) });
   }
   /* NBA: todos los picks de esta noche, ordenados por seguridad, en UNA publicación.

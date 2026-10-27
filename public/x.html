@@ -94,7 +94,7 @@ const text = i => document.getElementById('t' + i).value;
 /* fotos de cada publicación: picks de NBA → una por pick; combinada y el resto, una */
 const shotsOf = it => {
   if (it.kind === 'combo') return [{ grid: it.combo.legs, combo: it.combo }];        // una foto con el gráfico de cada selección
-  if (it.kind !== 'nba-day') return [{ gameId: it.gameId || null }];
+  if (it.kind !== 'nba-day' && !(it.kind === 'el-game' && it.picks && it.picks.length)) return [{ gameId: it.gameId || null }];   // una foto por pick también en Euroliga
   const P = it.picks, n = P.length;
   if (n === 2) return P.map(p => ({ pick: p, tall: true }));                        // 2 fotos lado a lado → verticales
   if (n === 3) return P.map((p, k) => ({ pick: p, tall: k === 0 }));                // 3 fotos: X pone la primera alta
