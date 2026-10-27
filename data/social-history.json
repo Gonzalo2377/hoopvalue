@@ -985,6 +985,547 @@
         ],
         "text": "🏀 NBA Picks Day · 26/10\n\n1.- A. Nembhard +4.5 Ast @1.30\n2.- G. Santos +5.5 Pts @1.32\n3.- P. Siakam +24.5 P+R @1.30\n4.- J. Kuminga +0.5 T3 @1.30\n5.- N. Reid +24.5 PRA @1.30\n6.- D. Green +4.5 Ast @1.36\n7.- D. Mitchell +3.5 Reb @1.37\n…+9 more en las fotos 📸\n#NBA · +18"
       }
+    },
+    "2026-10-27": {
+      "el:el:E2026_72": {
+        "id": "el:el:E2026_72",
+        "kind": "el-game",
+        "league": "euroleague",
+        "gameId": "el:E2026_72",
+        "title": "Dubai vs Paris",
+        "start": "2026-10-27T16:00:00.000Z",
+        "postAt": "2026-10-27T15:00:00.000Z",
+        "text": "🏀 Euroliga · hoy 17:00\nDubai vs Paris\n\n✅ Jaron Blossomgame más de 4.5 puntos @1.47 (67%)\n✅ Elie Okobo más de 3.5 asistencias @1.53 (64%)\n📊 Modelo: Dubai 84% · Paris 17%\n\n🔗 Análisis completo: link en la bio\n#Euroliga · +18 · Juega con responsabilidad",
+        "image": true,
+        "picks": [
+          {
+            "id": "el:E2026_72|prop|over|4.5|011231|pts",
+            "league": "euroleague",
+            "label": "J. Blossomgame +4.5 puntos",
+            "list": "J. Blossomgame +4.5 Pts",
+            "odd": 1.47,
+            "start": "2026-10-27T16:00:00.000Z",
+            "gameId": "el:E2026_72",
+            "market": "prop",
+            "side": "over",
+            "line": 4.5,
+            "stat": "pts",
+            "playerId": "011231",
+            "team": "DUB",
+            "match": "Dubai – Paris",
+            "pFinal": 0.665
+          },
+          {
+            "id": "el:E2026_72|prop|over|3.5|011212|ast",
+            "league": "euroleague",
+            "label": "E. Okobo +3.5 asistencias",
+            "list": "E. Okobo +3.5 Ast",
+            "odd": 1.53,
+            "start": "2026-10-27T16:00:00.000Z",
+            "gameId": "el:E2026_72",
+            "market": "prop",
+            "side": "over",
+            "line": 3.5,
+            "stat": "ast",
+            "playerId": "011212",
+            "team": "DUB",
+            "match": "Dubai – Paris",
+            "pFinal": 0.637
+          }
+        ]
+      },
+      "el:el:E2026_74": {
+        "id": "el:el:E2026_74",
+        "kind": "el-game",
+        "league": "euroleague",
+        "gameId": "el:E2026_74",
+        "title": "Bayern Munich vs FC Barcelona",
+        "start": "2026-10-27T19:00:00.000Z",
+        "postAt": "2026-10-27T18:00:00.000Z",
+        "text": "🏀 Euroliga · hoy 20:00\nBayern Munich vs FC Barcelona\n\n✅ Rokas Jokubaitis más de 4.5 puntos @1.30 (75%)\n✅ Justin Robinson más de 9.5 puntos @1.45 (69%)\n\n🔗 Análisis completo: link en la bio\n#Euroliga · +18 · Juega con responsabilidad",
+        "image": true,
+        "picks": [
+          {
+            "id": "el:E2026_74|prop|over|4.5|007519|pts",
+            "league": "euroleague",
+            "label": "R. Jokubaitis +4.5 puntos",
+            "list": "R. Jokubaitis +4.5 Pts",
+            "odd": 1.3,
+            "start": "2026-10-27T19:00:00.000Z",
+            "gameId": "el:E2026_74",
+            "market": "prop",
+            "side": "over",
+            "line": 4.5,
+            "stat": "pts",
+            "playerId": "007519",
+            "team": "MUN",
+            "match": "Bayern Munich – FC Barcelona",
+            "pFinal": 0.75
+          },
+          {
+            "id": "el:E2026_74|prop|over|9.5|014008|pts",
+            "league": "euroleague",
+            "label": "J. Robinson +9.5 puntos",
+            "list": "J. Robinson +9.5 Pts",
+            "odd": 1.45,
+            "start": "2026-10-27T19:00:00.000Z",
+            "gameId": "el:E2026_74",
+            "market": "prop",
+            "side": "over",
+            "line": 9.5,
+            "stat": "pts",
+            "playerId": "014008",
+            "team": "BAR",
+            "match": "Bayern Munich – FC Barcelona",
+            "pFinal": 0.685
+          }
+        ]
+      },
+      "el:el:E2026_71": {
+        "id": "el:el:E2026_71",
+        "kind": "el-game",
+        "league": "euroleague",
+        "gameId": "el:E2026_71",
+        "title": "Crvena Zvezda vs Maccabi",
+        "start": "2026-10-27T19:00:00.000Z",
+        "postAt": "2026-10-27T18:00:00.000Z",
+        "text": "🏀 Euroliga · hoy 20:00\nCrvena Zvezda vs Maccabi\n\n✅ Jimmy Clark Iii más de 9.5 puntos @1.64 (62%)\n📊 Modelo: Crvena Zvezda 75% · Maccabi 25%\n\n🔗 Análisis completo: link en la bio\n#Euroliga · +18 · Juega con responsabilidad",
+        "image": true,
+        "picks": [
+          {
+            "id": "el:E2026_71|prop|over|9.5|013699|pts",
+            "league": "euroleague",
+            "label": "J. Clark Iii +9.5 puntos",
+            "list": "J. Clark Iii +9.5 Pts",
+            "odd": 1.64,
+            "start": "2026-10-27T19:00:00.000Z",
+            "gameId": "el:E2026_71",
+            "market": "prop",
+            "side": "over",
+            "line": 9.5,
+            "stat": "pts",
+            "playerId": "013699",
+            "team": "TEL",
+            "match": "Crvena Zvezda – Maccabi",
+            "pFinal": 0.617
+          }
+        ]
+      },
+      "el:el:E2026_76": {
+        "id": "el:el:E2026_76",
+        "kind": "el-game",
+        "league": "euroleague",
+        "gameId": "el:E2026_76",
+        "title": "Panathinaikos vs Milan",
+        "start": "2026-10-27T19:15:00.000Z",
+        "postAt": "2026-10-27T18:15:00.000Z",
+        "text": "🏀 Euroliga · hoy 20:15\nPanathinaikos vs Milan\n\n✅ Brancou Badio más de 4.5 puntos @1.73 (58%)\n📊 Modelo: Panathinaikos 88% · Milan 12%\n\n🔗 Análisis completo: link en la bio\n#Euroliga · +18 · Juega con responsabilidad",
+        "image": true,
+        "picks": [
+          {
+            "id": "el:E2026_76|prop|over|4.5|007527|pts",
+            "league": "euroleague",
+            "label": "B. Badio +4.5 puntos",
+            "list": "B. Badio +4.5 Pts",
+            "odd": 1.73,
+            "start": "2026-10-27T19:15:00.000Z",
+            "gameId": "el:E2026_76",
+            "market": "prop",
+            "side": "over",
+            "line": 4.5,
+            "stat": "pts",
+            "playerId": "007527",
+            "team": "PAN",
+            "match": "Panathinaikos – Milan",
+            "pFinal": 0.577
+          }
+        ]
+      },
+      "el:el:E2026_75": {
+        "id": "el:el:E2026_75",
+        "kind": "el-game",
+        "league": "euroleague",
+        "gameId": "el:E2026_75",
+        "title": "Valencia vs Fenerbahce",
+        "start": "2026-10-27T19:30:00.000Z",
+        "postAt": "2026-10-27T18:30:00.000Z",
+        "text": "🏀 Euroliga · hoy 20:30\nValencia vs Fenerbahce\n\n✅ Shavon Shields más de 3.5 rebotes @1.64 (60%)\n✅ Josep Puerto más de 4.5 puntos @1.74 (56%)\n📊 Modelo: Valencia 51% · Fenerbahce 49%\n\n🔗 Análisis completo: link en la bio\n#Euroliga · +18 · Juega con responsabilidad",
+        "image": true,
+        "picks": [
+          {
+            "id": "el:E2026_75|prop|over|3.5|007831|reb",
+            "league": "euroleague",
+            "label": "S. Shields +3.5 rebotes",
+            "list": "S. Shields +3.5 Reb",
+            "odd": 1.64,
+            "start": "2026-10-27T19:30:00.000Z",
+            "gameId": "el:E2026_75",
+            "market": "prop",
+            "side": "over",
+            "line": 3.5,
+            "stat": "reb",
+            "playerId": "007831",
+            "team": "ULK",
+            "match": "Valencia – Fenerbahce",
+            "pFinal": 0.598
+          },
+          {
+            "id": "el:E2026_75|prop|over|4.5|006643|pts",
+            "league": "euroleague",
+            "label": "J. Puerto +4.5 puntos",
+            "list": "J. Puerto +4.5 Pts",
+            "odd": 1.74,
+            "start": "2026-10-27T19:30:00.000Z",
+            "gameId": "el:E2026_75",
+            "market": "prop",
+            "side": "over",
+            "line": 4.5,
+            "stat": "pts",
+            "playerId": "006643",
+            "team": "PAM",
+            "match": "Valencia – Fenerbahce",
+            "pFinal": 0.56
+          }
+        ]
+      },
+      "el:el:E2026_73": {
+        "id": "el:el:E2026_73",
+        "kind": "el-game",
+        "league": "euroleague",
+        "gameId": "el:E2026_73",
+        "title": "Baskonia vs Real Madrid",
+        "start": "2026-10-27T20:00:00.000Z",
+        "postAt": "2026-10-27T19:00:00.000Z",
+        "text": "🏀 Euroliga · hoy 21:00\nBaskonia vs Real Madrid\n\n✅ Theo Maledon más de 3.5 asistencias @1.62 (62%)\n✅ Andres Feliz más de 9.5 puntos @1.70 (59%)\n📊 Modelo: Baskonia 25% · Real Madrid 75%\n\n🔗 Análisis completo: link en la bio\n#Euroliga · +18 · Juega con responsabilidad",
+        "image": true,
+        "picks": [
+          {
+            "id": "el:E2026_73|prop|over|3.5|007027|ast",
+            "league": "euroleague",
+            "label": "T. Maledon +3.5 asistencias",
+            "list": "T. Maledon +3.5 Ast",
+            "odd": 1.62,
+            "start": "2026-10-27T20:00:00.000Z",
+            "gameId": "el:E2026_73",
+            "market": "prop",
+            "side": "over",
+            "line": 3.5,
+            "stat": "ast",
+            "playerId": "007027",
+            "team": "MAD",
+            "match": "Baskonia – Real Madrid",
+            "pFinal": 0.616
+          },
+          {
+            "id": "el:E2026_73|prop|over|9.5|011247|pts",
+            "league": "euroleague",
+            "label": "A. Feliz +9.5 puntos",
+            "list": "A. Feliz +9.5 Pts",
+            "odd": 1.7,
+            "start": "2026-10-27T20:00:00.000Z",
+            "gameId": "el:E2026_73",
+            "market": "prop",
+            "side": "over",
+            "line": 9.5,
+            "stat": "pts",
+            "playerId": "011247",
+            "team": "MAD",
+            "match": "Baskonia – Real Madrid",
+            "pFinal": 0.592
+          }
+        ]
+      },
+      "nba-day": {
+        "id": "nba-day",
+        "kind": "nba-day",
+        "league": "nba",
+        "title": "NBA Picks Day · 6 picks",
+        "postAt": "2026-10-27T17:45:00.000Z",
+        "image": true,
+        "picks": [
+          {
+            "id": "nba:401909875|prop|over|6.5|4600663|reb",
+            "league": "nba",
+            "label": "Z. Edey +6.5 rebotes",
+            "list": "Z. Edey +6.5 Reb",
+            "odd": 1.32,
+            "start": "2026-10-27T01:00Z",
+            "gameId": "nba:401909875",
+            "market": "prop",
+            "side": "over",
+            "line": 6.5,
+            "stat": "reb",
+            "playerId": "4600663",
+            "team": "MEM",
+            "match": "Jazz – Grizzlies",
+            "pFinal": 0.743
+          },
+          {
+            "id": "nba:401909876|prop|over|2.5|4997536|reb",
+            "league": "nba",
+            "label": "G. Santos +2.5 rebotes",
+            "list": "G. Santos +2.5 Reb",
+            "odd": 1.36,
+            "start": "2026-10-27T02:00Z",
+            "gameId": "nba:401909876",
+            "market": "prop",
+            "side": "over",
+            "line": 2.5,
+            "stat": "reb",
+            "playerId": "4997536",
+            "team": "GS",
+            "match": "Nuggets – Warriors",
+            "pFinal": 0.72
+          },
+          {
+            "id": "nba:401909875|prop|over|13.5|4277961|pts",
+            "league": "nba",
+            "label": "J. Jackson Jr. +13.5 puntos",
+            "list": "J. Jackson Jr. +13.5 Pts",
+            "odd": 1.35,
+            "start": "2026-10-27T01:00Z",
+            "gameId": "nba:401909875",
+            "market": "prop",
+            "side": "over",
+            "line": 13.5,
+            "stat": "pts",
+            "playerId": "4277961",
+            "team": "UTAH",
+            "match": "Jazz – Grizzlies",
+            "pFinal": 0.735
+          },
+          {
+            "id": "nba:401909876|prop|over|1.5|4066436|reb",
+            "league": "nba",
+            "label": "D. Melton +1.5 rebotes",
+            "list": "D. Melton +1.5 Reb",
+            "odd": 1.38,
+            "start": "2026-10-27T02:00Z",
+            "gameId": "nba:401909876",
+            "market": "prop",
+            "side": "over",
+            "line": 1.5,
+            "stat": "reb",
+            "playerId": "4066436",
+            "team": "GS",
+            "match": "Nuggets – Warriors",
+            "pFinal": 0.718
+          },
+          {
+            "id": "nba:401909878|prop|over|17.5|3934672|pts",
+            "league": "nba",
+            "label": "J. Brunson +17.5 puntos",
+            "list": "J. Brunson +17.5 Pts",
+            "odd": 1.4,
+            "start": "2026-10-28T00:00Z",
+            "gameId": "nba:401909878",
+            "market": "prop",
+            "side": "over",
+            "line": 17.5,
+            "stat": "pts",
+            "playerId": "3934672",
+            "team": "NY",
+            "match": "Knicks – Pistons",
+            "pFinal": 0.713
+          },
+          {
+            "id": "nba:401909878|prop|under|3.5|3157465|ast",
+            "league": "nba",
+            "label": "D. Robinson −3.5 asistencias",
+            "list": "D. Robinson −3.5 Ast",
+            "odd": 1.58,
+            "start": "2026-10-28T00:00Z",
+            "gameId": "nba:401909878",
+            "market": "prop",
+            "side": "under",
+            "line": 3.5,
+            "stat": "ast",
+            "playerId": "3157465",
+            "team": "DET",
+            "match": "Knicks – Pistons",
+            "pFinal": 0.648
+          }
+        ],
+        "text": "🏀 NBA Picks Day · 27/10\n\n1.- Z. Edey +6.5 Reb @1.32\n2.- G. Santos +2.5 Reb @1.36\n3.- J. Jackson Jr. +13.5 Pts @1.35\n4.- D. Melton +1.5 Reb @1.38\n5.- J. Brunson +17.5 Pts @1.40\n6.- D. Robinson −3.5 Ast @1.58\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+      },
+      "combo-euroleague": {
+        "id": "combo-euroleague",
+        "kind": "combo",
+        "league": "euroleague",
+        "title": "Safe Parlay · Euroliga @1.91",
+        "postAt": "2026-10-27T14:30:00.000Z",
+        "image": true,
+        "text": "🎯 Safe Parlay · Euroliga\n\n1.- R. Jokubaitis +4.5 Pts @1.30\n2.- J. Blossomgame +4.5 Pts @1.47\n\n💰 Total odds 1.91\n📊 Last 10 games de cada uno en la foto\n#Euroliga · +18 · Juega con responsabilidad",
+        "picks": [],
+        "combo": {
+          "legs": [
+            {
+              "id": "el:E2026_74|prop|over|4.5|007519|pts",
+              "league": "euroleague",
+              "label": "R. Jokubaitis +4.5 puntos",
+              "list": "R. Jokubaitis +4.5 Pts",
+              "odd": 1.3,
+              "start": "2026-10-27T19:00:00.000Z",
+              "gameId": "el:E2026_74",
+              "market": "prop",
+              "side": "over",
+              "line": 4.5,
+              "stat": "pts",
+              "playerId": "007519",
+              "team": "MUN",
+              "match": "Bayern Munich – FC Barcelona",
+              "pFinal": 0.75
+            },
+            {
+              "id": "el:E2026_72|prop|over|4.5|011231|pts",
+              "league": "euroleague",
+              "label": "J. Blossomgame +4.5 puntos",
+              "list": "J. Blossomgame +4.5 Pts",
+              "odd": 1.47,
+              "start": "2026-10-27T16:00:00.000Z",
+              "gameId": "el:E2026_72",
+              "market": "prop",
+              "side": "over",
+              "line": 4.5,
+              "stat": "pts",
+              "playerId": "011231",
+              "team": "DUB",
+              "match": "Dubai – Paris",
+              "pFinal": 0.665
+            }
+          ],
+          "odd": 1.91,
+          "prob": 0.499
+        }
+      },
+      "summary-nba": {
+        "id": "summary-nba",
+        "kind": "summary",
+        "league": "nba",
+        "title": "NBA · resultados de ayer (26/10)",
+        "postAt": "2026-10-27T08:40:00.000Z",
+        "text": "📋 NBA · resultados de ayer (26/10)\n\n⏳⏳⏳⏳⏳⏳⏳⏳⏳⏳⏳⏳⏳⏳⏳⏳⏳\n👇 Cada pick en la imagen\n\nAyer: 0-0 (+0.00 u) · Total NBA: 12-5 (+0.38 u)\n#NBA · +18 · Juega con responsabilidad",
+        "image": true,
+        "pending": true,
+        "rows": [
+          {
+            "league": "nba",
+            "label": "A. Nembhard +4.5 asistencias",
+            "odd": 1.3,
+            "result": null
+          },
+          {
+            "league": "nba",
+            "label": "G. Santos +5.5 puntos",
+            "odd": 1.32,
+            "result": null
+          },
+          {
+            "league": "nba",
+            "label": "P. Siakam +24.5 pts+reb",
+            "odd": 1.3,
+            "result": null
+          },
+          {
+            "league": "nba",
+            "label": "J. Kuminga +0.5 triples",
+            "odd": 1.3,
+            "result": null
+          },
+          {
+            "league": "nba",
+            "label": "N. Reid +24.5 pts+reb+ast",
+            "odd": 1.3,
+            "result": null
+          },
+          {
+            "league": "nba",
+            "label": "D. Green +4.5 asistencias",
+            "odd": 1.36,
+            "result": null
+          },
+          {
+            "league": "nba",
+            "label": "D. Mitchell +3.5 rebotes",
+            "odd": 1.37,
+            "result": null
+          },
+          {
+            "league": "nba",
+            "label": "K. George +14.5 pts+reb",
+            "odd": 1.32,
+            "result": null
+          },
+          {
+            "league": "nba",
+            "label": "N. Powell +19.5 pts+reb+ast",
+            "odd": 1.34,
+            "result": null
+          },
+          {
+            "league": "nba",
+            "label": "J. Giddey +6.5 asistencias",
+            "odd": 1.38,
+            "result": null
+          },
+          {
+            "league": "nba",
+            "label": "G. Allen +11.5 puntos",
+            "odd": 1.3,
+            "result": null
+          },
+          {
+            "league": "nba",
+            "label": "L. Dort +3.5 puntos",
+            "odd": 1.36,
+            "result": null
+          },
+          {
+            "league": "nba",
+            "label": "J. Smith Jr. +11.5 puntos",
+            "odd": 1.45,
+            "result": null
+          },
+          {
+            "league": "nba",
+            "label": "D. Mitchell +3.5 asistencias",
+            "odd": 1.48,
+            "result": null
+          },
+          {
+            "league": "nba",
+            "label": "P. Larsson −1.5 triples",
+            "odd": 1.57,
+            "result": null
+          },
+          {
+            "league": "nba",
+            "label": "Timberwolves +4.5",
+            "odd": 1.87,
+            "result": null
+          },
+          {
+            "league": "nba",
+            "label": "Combinada: K. George +14.5 P+R + G. Allen +11.5 Pts",
+            "odd": 1.72,
+            "result": null
+          }
+        ],
+        "balance": {
+          "day": [
+            0,
+            0
+          ],
+          "total": [
+            12,
+            5
+          ],
+          "units": {
+            "day": 0,
+            "total": 0.38
+          }
+        }
+      }
     }
   }
 }
