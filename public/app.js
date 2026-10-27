@@ -16,7 +16,7 @@ const LEAGUE_NAME = () => LG === 'nba' ? 'NBA' : 'Euroliga';
 function setLeague(l) {
   if (l === LG) return;
   LG = l; try { localStorage.setItem('lg', l); } catch (e) {}
-  Object.keys(D).forEach(k => { D[k] = null; });
+  Object.keys(D).forEach(k => { D[k] = null; }); RS.page = 0;
   if (typeof PX !== 'undefined') { PX.index = null; PX.team = {}; PX.state = {}; PX.tried = false; }
   if (typeof CAR !== 'undefined') CAR.i = 0;
   $app.innerHTML = '<p class="muted pad">Cargando…</p>';
@@ -114,9 +114,38 @@ function viewGames() {
   return `<h2>Próximos partidos</h2>${gamesGrid(T.games)}`;
 }
 
-function cmpRow(label, a, b, higherBetter = true, fmt = x => x) {
-  const better = (a == null || b == null || a === b) ? 0 : ((a > b) === higherBetter ? 1 : 2);
-  return `<div class="l ${better === 1 ? 'better' : ''}">${fmt(a)}</div><div class="lbl">${label}</div><div class="${better === 2 ? 'better' : ''}">${fmt(b)}</div>`;
+/* cara a cara: una barra por apartado; cuanto más se llena hacia un lado, más ventaja de ese equipo */
+function faceOff(H, A) {
+  const th = H.trends, ta = A.trends, one = x => x == null ? '—' : x.toFixed(1);
+  const wp = r => r && (r.w + r.l) ? r.w / (r.w + r.l) : null, frac = o => o && o.n ? o.y / o.n : null;
+  const rows = [
+    ['Nivel general', H.rating.net, A.rating.net, true, sgn],
+    ['Ataque (puntos por 100 posesiones)', H.rating.off, A.rating.off, true, sgn],
+    ['Defensa (menos es mejor)', H.rating.def, A.rating.def, false, sgn],
+    ['Puntos anotados · últimos 5', th.pfL5, ta.pfL5, true, one],
+    ['Puntos recibidos · últimos 5', th.paL5, ta.paL5, false, one],
+    ['Victorias esta temporada', wp(th.season), wp(ta.season), true, null, rec(th.season), rec(ta.season)],
+    [`En casa (${esc(H.name)}) / fuera (${esc(A.name)})`, wp(th.home), wp(ta.away), true, null, rec(th.home), rec(ta.away)],
+    ['Cubre el hándicap · últimos 10', frac(th.atsL10), frac(ta.atsL10), true, null, th.atsL10.n ? th.atsL10.y + '/' + th.atsL10.n : '—', ta.atsL10.n ? ta.atsL10.y + '/' + ta.atsL10.n : '—'],
+    ['Días de descanso', th.restDays, ta.restDays, true, x => x == null ? '—' : x],
+  ];
+  let wH = 0, wA = 0;
+  const bars = rows.map(([lbl, a, b, hi, fmt, ta_, tb_]) => {
+    let share = 50;
+    if (a != null && b != null && a !== b) {
+      const d = hi ? a - b : b - a, scale = Math.max(Math.abs(a), Math.abs(b), 1e-9);
+      share = Math.max(15, Math.min(85, 50 + 50 * d / (scale * (fmt === sgn ? 1 : 0.5))));
+      share > 50 ? wH++ : wA++;
+    }
+    const va = ta_ != null ? ta_ : fmt(a), vb = tb_ != null ? tb_ : fmt(b);
+    return `<div class="fo-row"><div class="fo-top"><b class="${share > 50 ? 'win' : ''}">${va}</b><span>${lbl}</span><b class="${share < 50 ? 'win' : ''}">${vb}</b></div>
+      <div class="fo-bar"><i style="width:${share}%"></i></div></div>`;
+  }).join('');
+  const lead = wH === wA ? 'Muy igualados' : `Ventaja ${esc(wH > wA ? H.name : A.name)} en ${Math.max(wH, wA)} de ${wH + wA} apartados`;
+  return `<h2>Cara a cara</h2><div class="card fo">
+    <div class="fo-head"><div class="teams">${logo(H)}<b>${esc(H.name)}</b></div><span class="fo-lead">${lead}</span><div class="teams r"><b>${esc(A.name)}</b>${logo(A)}</div></div>
+    <div class="fo-form"><span>${form(th.form)}</span><small>Últimos 5</small><span>${form(ta.form)}</span></div>
+    ${bars}</div>`;
 }
 function viewGame(id) {
   const g = D.today && D.today.games.find(x => x.id === decodeURIComponent(id || ''));
@@ -134,26 +163,7 @@ function viewGame(id) {
   </div>`;
   if (g.candidates.length) h += `<h2>Mercados analizados</h2><div class="card scroll"><table><tr><th>Apuesta</th><th class="num">Cuota</th><th class="num">Prob.</th><th class="num">Mercado</th><th class="num">Modelo</th><th class="num">VE</th><th>Nivel</th><th></th></tr>
     ${g.candidates.map(c => `<tr><td>${esc(c.label)}</td><td class="num">${c.odd.toFixed(2)}</td><td class="num">${pct(c.pFinal)}</td><td class="num">${pct(c.pMarket)}</td><td class="num">${pct(c.pModel)}</td><td class="num ${c.ev >= 0 ? 'good' : 'bad'}">${sgn((c.ev * 100).toFixed(1))}%</td><td>${tierBadge(c.tier)}</td><td>${c.qualifies ? '✓' : ''}</td></tr>`).join('')}</table></div>`;
-  h += `<h2>Cara a cara de estadísticas</h2><div class="card"><div class="cmp">
-    <div class="l"><b>${esc(H.name)}</b></div><div></div><div><b>${esc(A.name)}</b></div>
-    ${cmpRow('Rating neto /100', H.rating.net, A.rating.net, true, one)}
-    ${cmpRow('Ataque /100', H.rating.off, A.rating.off, true, one)}
-    ${cmpRow('Defensa /100 (menos = mejor)', H.rating.def, A.rating.def, false, one)}
-    ${cmpRow('Ritmo', H.rating.pace, A.rating.pace, true, one)}
-    <div class="l">${rec(th.season)}</div><div class="lbl">Récord</div><div>${rec(ta.season)}</div>
-    <div class="l">${rec(th.home)}</div><div class="lbl">Casa (local) / Fuera (visitante)</div><div>${rec(ta.away)}</div>
-    <div class="l">${form(th.form)}</div><div class="lbl">Últimos 5</div><div>${form(ta.form)}</div>
-    ${cmpRow('Momentum (margen L5 − media)', th.momentum, ta.momentum, true, sgn)}
-    ${cmpRow('Anota (L5)', th.pfL5, ta.pfL5, true, one)}
-    ${cmpRow('Concede (L5)', th.paL5, ta.paL5, false, one)}
-    ${cmpRow('Anota (temporada)', th.pfSeason, ta.pfSeason, true, one)}
-    ${cmpRow('Concede (temporada)', th.paSeason, ta.paSeason, false, one)}
-    ${cmpRow('Margen 1ª parte', th.h1Margin, ta.h1Margin, true, sgn)}
-    ${cmpRow('Margen 4º cuarto', th.q4Margin, ta.q4Margin, true, sgn)}
-    ${cmpRow('Días de descanso', th.restDays, ta.restDays, true)}
-    <div class="l">${th.atsL10.n ? th.atsL10.y + '/' + th.atsL10.n : '—'}</div><div class="lbl">Cubre hándicap (L10)</div><div>${ta.atsL10.n ? ta.atsL10.y + '/' + ta.atsL10.n : '—'}</div>
-    <div class="l">${th.overL10.n ? th.overL10.y + '/' + th.overL10.n : '—'}</div><div class="lbl">Over (L10)</div><div>${ta.overL10.n ? ta.overL10.y + '/' + ta.overL10.n : '—'}</div>
-  </div></div>`;
+  h += faceOff(H, A);
   const abs = (t) => t.absences.length ? t.absences.map(a => `<li class="no">${esc(a.name)} — ${a.status ? `<b>${esc(a.status)}</b>${a.detail ? ` <span class="muted">${esc(a.detail)}</span>` : ''}` : `no jugó ${a.missed > 1 ? `los últimos ${a.missed}` : 'el último'} partido${a.missed > 1 ? 's' : ''}`}${a.impact ? ` (−${a.impact} pts)` : ''}</li>`).join('') : '<li>Sin bajas</li>';
   h += `<h2>${LG === 'nba' ? 'Bajas (parte oficial)' : 'Bajas probables'}</h2><div class="grid"><div class="card"><b>${esc(H.name)}</b><ul class="sig">${abs(H)}</ul></div><div class="card"><b>${esc(A.name)}</b><ul class="sig">${abs(A)}</ul></div></div>
     <p class="muted">${LG === 'nba' ? 'Parte de lesiones oficial (ESPN). El impacto en puntos es una estimación.' : 'La Euroliga no publica parte médico gratis: se avisa de habituales que no jugaron el último partido. Confírmalo antes de apostar.'}</p>`;
@@ -178,38 +188,66 @@ function viewTeams() {
 }
 
 /* ---------- HISTORIAL ---------- */
+const RS = { tab: 'picks', page: 0 };                                        // pestaña y página del historial
+function recGo(tab, page = 0) { RS.tab = tab; RS.page = page; $app.innerHTML = viewRecord(); document.querySelector('.rec-tabs').scrollIntoView({ block: 'start' }); }
+const PER = 25;
+function pager(n) {
+  const pages = Math.ceil(n / PER); if (pages < 2) return '';
+  return `<div class="pager">${Array.from({ length: pages }, (_, k) => `<button class="${k === RS.page ? 'on' : ''}" onclick="recGo('${RS.tab}', ${k})">${k * PER + 1}–${Math.min(n, (k + 1) * PER)}</button>`).join('')}</div>`;
+}
+const RES = { W: ['Ganado', 'W'], L: ['Perdido', 'L'], P: ['Nulo', 'P'], V: ['Anulado', 'V'] };
+const chip = r => `<span class="chip res-${r}">${(RES[r] || ['—'])[0]}</span>`;
+const dday = t => new Date(t).toLocaleDateString('es-ES', { day: 'numeric', month: 'short' });
 function statTiles(s) {
   return `<div class="stats">
-    <div class="stat"><small>Picks liquidados</small><b>${s.n}</b></div>
+    <div class="stat"><small>Picks resueltos</small><b>${s.n}</b></div>
     <div class="stat"><small>Acierto</small><b>${pct(s.hit, 1)}</b></div>
-    <div class="stat"><small>Beneficio (1 u/pick)</small><b class="${s.profit >= 0 ? 'good' : 'bad'}">${sgn(s.profit)} u</b></div>
-    <div class="stat"><small>ROI</small><b class="${(s.roi || 0) >= 0 ? 'good' : 'bad'}">${s.roi == null ? '—' : sgn((s.roi * 100).toFixed(1)) + '%'}</b></div>
-    <div class="stat"><small>CLV medio</small><b class="${(s.clv || 0) >= 0 ? 'good' : 'bad'}">${s.clv == null ? '—' : sgn((s.clv * 100).toFixed(1)) + '%'}</b></div>
+    <div class="stat"><small>Beneficio (1 u por pick)</small><b class="${s.profit >= 0 ? 'good' : 'bad'}">${sgn(s.profit)} u</b></div>
+    <div class="stat"><small>Rentabilidad</small><b class="${(s.roi || 0) >= 0 ? 'good' : 'bad'}">${s.roi == null ? '—' : sgn((s.roi * 100).toFixed(1)) + '%'}</b></div>
   </div>`;
 }
 function viewRecord() {
-  const R = D.record, B = D.backtest;
-  let h = `<h2>Historial real · ${LEAGUE_NAME()}</h2>`;
-  if (!R || !R.record.length) h += `<p class="muted">Todavía no hay picks liquidados. Cada pick se registra con la cuota del momento en que se publica y se liquida solo con el resultado oficial.</p>`;
-  else {
+  const R = D.record, B = D.backtest, C = R && R.combos, P = R && R.predictions;
+  let h = `<h2>Historial · ${LEAGUE_NAME()}</h2>
+  <div class="rec-tabs">${[['picks', 'Picks'], ['combos', 'Combinadas'], ['preds', 'Predicciones']].map(([k, l]) => `<button class="${RS.tab === k ? 'on' : ''}" onclick="recGo('${k}')">${l}</button>`).join('')}</div>`;
+
+  if (RS.tab === 'picks') {
+    if (!R || !R.record.length) return h + `<p class="muted">Todavía no hay picks resueltos. Cada pick se guarda con su cuota y se resuelve solo con el resultado oficial.</p>`;
     h += statTiles(R.stats.all);
-    h += `<h3>Por nivel y mercado</h3><div class="card scroll"><table><tr><th></th><th class="num">Picks</th><th class="num">Acierto</th><th class="num">ROI</th><th class="num">CLV</th></tr>
-      ${[...Object.entries(R.stats.tier).map(([k, v]) => [TIER[k], v]), ...Object.entries(R.stats.market).map(([k, v]) => [MK[k], v])].filter(([, v]) => v.n)
-        .map(([k, v]) => `<tr><td>${k}</td><td class="num">${v.n}</td><td class="num">${pct(v.hit, 1)}</td><td class="num">${v.roi == null ? '—' : (v.roi * 100).toFixed(1) + '%'}</td><td class="num">${v.clv == null ? '—' : (v.clv * 100).toFixed(1) + '%'}</td></tr>`).join('')}</table></div>
-      <p class="muted">CLV = valor de nuestra cuota frente a la probabilidad justa de cierre. Si es positivo de forma sostenida, los picks son buenos aunque una racha salga mal.</p>`;
+    if (R.pending.length) h += `<h3>Pendientes (${R.pending.length})</h3><div class="rlist">${R.pending.map(p => `<div class="ritem"><span class="rdate">${dday(p.start)}</span><div class="rmain"><b>${esc(p.label)}</b><small>${esc(p.match)}</small></div><span class="rodd">@${p.odd.toFixed(2)}</span><span class="chip">Pendiente</span></div>`).join('')}</div>`;
+    const list = R.record, page = list.slice(RS.page * PER, (RS.page + 1) * PER);
+    h += `<h3>Resueltos (${list.length})</h3><div class="rlist">${page.map(p => `<div class="ritem r-${p.result}"><span class="rdate">${dday(p.start)}</span><div class="rmain"><b>${esc(p.label)}</b><small>${esc(p.match)}${p.score ? ' · ' + esc(p.score) : ''}</small></div><span class="rodd">@${p.odd.toFixed(2)}</span>${chip(p.result)}</div>`).join('')}</div>${pager(list.length)}`;
+    h += `<details class="more"><summary>Más detalle (por nivel y mercado${B ? ', backtest' : ''})</summary>
+      <div class="card scroll"><table><tr><th></th><th class="num">Picks</th><th class="num">Acierto</th><th class="num">Rentabilidad</th></tr>
+      ${[...Object.entries(R.stats.tier).map(([k, v]) => [TIER[k], v]), ...Object.entries(R.stats.market).map(([k, v]) => [MK[k] || 'Jugadores', v])].filter(([, v]) => v.n)
+        .map(([k, v]) => `<tr><td>${k}</td><td class="num">${v.n}</td><td class="num">${pct(v.hit, 1)}</td><td class="num">${v.roi == null ? '—' : (v.roi * 100).toFixed(1) + '%'}</td></tr>`).join('')}</table></div>
+      ${B ? `<p class="muted">Backtest: ${B.games} partidos de temporadas pasadas, prediciendo cada uno solo con información anterior. Acierta el ganador el ${pct(B.winnerAccuracy, 1)}; error medio del margen ${B.mae.margin} pts y del total ${B.mae.total} pts.</p>` : ''}</details>`;
   }
-  if (R && R.combos && R.combos.stats && R.combos.stats.all.n) {
-    const cs = R.combos.stats;
-    h += `<h3>Combinadas</h3><div class="card scroll"><table><tr><th></th><th class="num">Jugadas</th><th class="num">Acierto</th><th class="num">Beneficio</th><th class="num">ROI</th></tr>${['segura', 'valor', 'jugadores'].filter(k => cs[k].n).map(k => `<tr><td>${COMBO_META[k].icon} ${COMBO_META[k].title}</td><td class="num">${cs[k].n}</td><td class="num">${pct(cs[k].hit, 1)}</td><td class="num ${cs[k].profit >= 0 ? 'good' : 'bad'}">${sgn(cs[k].profit)} u</td><td class="num">${(cs[k].roi * 100).toFixed(1)}%</td></tr>`).join('')}</table></div>`;
+
+  if (RS.tab === 'combos') {
+    const list = (C && C.record) || [], pend = (C && C.pending) || [];
+    if (!list.length && !pend.length) return h + '<p class="muted">Todavía no hay combinadas resueltas.</p>';
+    const cs = C.stats.all;
+    if (cs && cs.n) h += `<div class="stats"><div class="stat"><small>Combinadas resueltas</small><b>${cs.n}</b></div><div class="stat"><small>Acierto</small><b>${pct(cs.hit, 1)}</b></div><div class="stat"><small>Beneficio (1 u)</small><b class="${cs.profit >= 0 ? 'good' : 'bad'}">${sgn(cs.profit)} u</b></div></div>`;
+    const card = (c, st) => `<div class="ritem combo-r r-${c.result || ''}"><span class="rdate">${dday(c.legs.map(l => l.start).sort().pop())}</span>
+      <div class="rmain">${c.legs.map((l, k) => { const r = (c.legStates || [])[k]; return `<div class="leg-r"><span class="mk res-${r || ''}">${r === 'W' ? '✓' : r === 'L' ? '✗' : r ? '=' : '·'}</span><b>${esc(l.label)}</b> <small>@${Number(l.odd).toFixed(2)}</small></div>`; }).join('')}<small>${esc(COMBO_META[c.type] ? COMBO_META[c.type].title : 'Combinada')}</small></div>
+      <span class="rodd">@${Number(c.odd).toFixed(2)}</span>${st ? chip(c.result) : '<span class="chip">Pendiente</span>'}</div>`;
+    if (pend.length) h += `<h3>Pendientes (${pend.length})</h3><div class="rlist">${pend.map(c => card(c, false)).join('')}</div>`;
+    const page = list.slice(RS.page * PER, (RS.page + 1) * PER);
+    h += `<h3>Resueltas (${list.length})</h3><div class="rlist">${page.map(c => card(c, true)).join('')}</div>${pager(list.length)}`;
   }
-  if (R && R.pending.length) h += `<h3>Pendientes (${R.pending.length})</h3><div class="card scroll"><table>${R.pending.map(p => `<tr><td>${new Date(p.start).toLocaleDateString('es-ES')}</td><td>${esc(p.match)}</td><td>${esc(p.label)}</td><td class="num">${p.odd.toFixed(2)}</td><td>${tierBadge(p.tier)}</td></tr>`).join('')}</table></div>`;
-  if (R && R.record.length) h += `<h3>Últimos liquidados</h3><div class="card scroll"><table><tr><th>Fecha</th><th>Partido</th><th>Pick</th><th class="num">Cuota</th><th class="num">Resultado</th><th></th><th class="num">CLV</th></tr>${R.record.slice(0, 100).map(p => `<tr><td>${new Date(p.start).toLocaleDateString('es-ES')}</td><td>${esc(p.match)}</td><td>${esc(p.label)}</td><td class="num">${p.odd.toFixed(2)}</td><td class="num">${esc(p.score || '')}</td><td class="res-${p.result}">${{ W: 'Ganado', L: 'Perdido', P: 'Nulo', V: 'Anulado' }[p.result]}</td><td class="num">${p.clv == null ? '' : (p.clv * 100).toFixed(1) + '%'}</td></tr>`).join('')}</table></div>`;
-  if (B) {
-    h += `<h2>Backtest del modelo</h2><p class="muted">${B.games} partidos de temporadas pasadas, prediciendo cada uno solo con información anterior.</p>
-    <div class="stats"><div class="stat"><small>Acierto del ganador</small><b>${pct(B.winnerAccuracy, 1)}</b></div><div class="stat"><small>Error medio margen</small><b>${B.mae.margin} pts</b></div><div class="stat"><small>Error medio total</small><b>${B.mae.total} pts</b></div></div>
-    <h3>Calibración: ¿cuando dice X %, gana X %?</h3><div class="card scroll"><table><tr><th>Confianza</th><th class="num">Partidos</th><th class="num">Esperado</th><th class="num">Real</th></tr>${B.calibration.filter(c => c.n).map(c => `<tr><td>${c.range}</td><td class="num">${c.n}</td><td class="num">${pct(c.expected, 1)}</td><td class="num">${pct(c.actual, 1)}</td></tr>`).join('')}</table></div>`;
-    if (B.picks) h += `<h3>Picks contra cuotas de cierre guardadas</h3><div class="card scroll"><table><tr><th></th><th class="num">Picks</th><th class="num">Acierto</th><th class="num">ROI</th></tr>${Object.entries(B.picks.byTier).filter(([, v]) => v.n).map(([k, v]) => `<tr><td>${TIER[k]}</td><td class="num">${v.n}</td><td class="num">${pct(v.hit, 1)}</td><td class="num">${(v.roi * 100).toFixed(1)}%</td></tr>`).join('')}</table></div>`;
-    else h += `<div class="note">El backtest de picks contra cuotas reales se activará solo cuando el robot haya guardado cuotas de cierre (no existen cuotas históricas gratis de la Euroliga).</div>`;
+
+  if (RS.tab === 'preds') {
+    const list = (P && P.list) || [];
+    if (!list.length) return h + '<p class="muted">Aún no hay partidos terminados con predicción guardada.</p>';
+    const st = P.stats;
+    h += `<p class="muted">Antes de cada partido el modelo predice el marcador, haya pick o no. Aquí se compara con el resultado real.</p>
+    <div class="stats"><div class="stat"><small>Partidos</small><b>${st.n}</b></div><div class="stat"><small>Ganador acertado</small><b>${st.winner}/${st.n} <span class="muted small">${pct(st.winner / st.n)}</span></b></div>
+      <div class="stat"><small>Cerca (±5 pts cada equipo)</small><b>${st.close}</b></div><div class="stat"><small>Exactos 🎯</small><b>${st.exact}</b></div>
+      <div class="stat"><small>Error medio en el total</small><b>${st.diff} pts</b></div></div>`;
+    const page = list.slice(RS.page * PER, (RS.page + 1) * PER);
+    h += `<div class="rlist">${page.map(p => `<div class="ritem ${p.winner ? 'r-W' : 'r-L'}"><span class="rdate">${dday(p.start)}</span><div class="rmain"><b>${esc(p.match)}</b><small>Predicción ${p.pred} · Real <b>${p.real}</b></small></div>
+      ${p.exact ? '<span class="chip res-W">🎯 Exacto</span>' : p.close ? '<span class="chip res-W">Muy cerca</span>' : ''}<span class="chip res-${p.winner ? 'W' : 'L'}">${p.winner ? 'Ganador ✓' : 'Ganador ✗'}</span></div>`).join('')}</div>${pager(list.length)}`;
   }
   return h;
 }
@@ -228,8 +266,7 @@ function viewHow() {
   <h2>Historial honesto</h2>
   <ul><li>Cada pick se guarda con la cuota del momento y no se toca nunca.</li>
     <li>Se liquida con el resultado oficial de la Euroliga por <b>código de partido</b> (no por nombres), prórroga incluida.</li>
-    <li>Nada se borra: aplazados o sin resultado en 7 días quedan como anulados.</li>
-    <li>Medimos el <b>CLV</b>: si nuestras cuotas son mejores que las de cierre, el método funciona aunque haya rachas malas.</li></ul>
+    <li>Nada se borra: aplazados o sin resultado en 7 días quedan como anulados.</li></ul>
   <h2>Fuentes</h2>
   <ul><li>Resultados, boxscores y estadísticas: API oficial de la Euroliga.</li><li>Cuotas de partido: The Odds API (casas europeas y británicas).</li><li>Cuotas de jugadores: oferta pública de Kambi (Unibet), el día del partido. Solo publica el lado «más de», así que su probabilidad se estima quitando un margen típico del 8 %.</li></ul>
   <p class="muted">Ningún modelo garantiza resultados. Apuesta solo lo que puedas permitirte perder.</p></div>`;

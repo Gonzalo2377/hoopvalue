@@ -37,6 +37,8 @@ const REGIONS = process.env.ODDS_REGIONS || 'eu,uk';
 const RESULTS_ONLY = (process.env.ODDS_MODE || '').toLowerCase() === 'results';
 const OUT = path.join(ROOT, 'public', 'data');
 const PICKS_FILE = path.join(ROOT, 'data', 'picks.json');
+const PRED_FILE = path.join(ROOT, 'data', 'predictions.json');            // predicción de marcador de cada partido
+const PR = require('./predictions');
 const PARAMS = readJSON(path.join(ROOT, 'data', 'model-params.json'), {}).euroleague || {};
 const SIG = { margin: PARAMS.margin || 11.5, total: PARAMS.total || 15 };
 const LG = 'euroleague';
@@ -79,7 +81,7 @@ async function main() {
   book.comboPending = cs.still; book.comboRecord = [...cs.settled, ...(book.comboRecord || [])];
   if (cs.settled.length) console.log(`· liquidadas ${cs.settled.length} combinadas: ${cs.settled.map(c => c.result).join('')}`);
   if (st.settled.length) console.log(`· liquidados ${st.settled.length} picks: ${st.settled.map(p => p.result).join('')}`);
-  if (RESULTS_ONLY) { saveRecord(book); writeJSON(PICKS_FILE, book, true); console.log('✓ solo resultados'); return; }
+  if (RESULTS_ONLY) { saveRecord(book, byId); writeJSON(PICKS_FILE, book, true); console.log('✓ solo resultados'); return; }
 
   /* ---- 3. próximos partidos (36 h) y cuotas ---- */
   const upcoming = games.filter(g => g.status === 'scheduled' && Date.parse(g.date) > now - 2 * 3600e3 && Date.parse(g.date) < now + 36 * 3600e3)
@@ -186,7 +188,8 @@ async function main() {
   });
 
   writeJSON(PICKS_FILE, book, true);
-  saveRecord(book);
+  PR.update(PRED_FILE, outGames, now);
+  saveRecord(book, byId);
   writeJSON(path.join(OUT, 'today.json'), {
     meta: { updatedAt: new Date(now).toISOString(), season, oddsSource: KEY ? 'The Odds API' : null, credits: odds.credits, sig: SIG, minOdd: P.CFG.minOdd,
       nextGame: (games.find(g => g.status === 'scheduled' && Date.parse(g.date) > now) || {}).date || null },
@@ -206,9 +209,10 @@ function teamsTable(R, games, teams, season, now) {
     .sort((a, b) => b.net - a.net) };
 }
 
-function saveRecord(book) {
+function saveRecord(book, byId) {
   writeJSON(path.join(OUT, 'record.json'), { updatedAt: new Date().toISOString(), stats: S.stats(book.record), pending: book.pending, record: book.record,
-    combos: { stats: C.stats(book.comboRecord || []), pending: book.comboPending || [], record: book.comboRecord || [] } });
+    combos: { stats: C.stats(book.comboRecord || []), pending: book.comboPending || [], record: book.comboRecord || [] },
+    predictions: PR.settle(readJSON(PRED_FILE, {}), byId) });
 }
 
 main().catch(e => { console.error(e); process.exit(1); });

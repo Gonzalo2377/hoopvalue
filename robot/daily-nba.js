@@ -26,6 +26,8 @@ const playersData = require('./players-data');
 const LG = 'nba';
 const OUT = path.join(ROOT, 'public', 'data', 'nba');
 const PICKS_FILE = path.join(ROOT, 'data', 'picks-nba.json');
+const PRED_FILE = path.join(ROOT, 'data', 'predictions-nba.json');            // predicción de marcador de cada partido
+const PR = require('./predictions');
 const RESULTS_ONLY = (process.env.ODDS_MODE || '').toLowerCase() === 'results';
 const PARAMS = readJSON(path.join(ROOT, 'data', 'model-params.json'), {}).nba || {};
 const SIG = { margin: PARAMS.margin || 13.5, total: PARAMS.total || 18.5 };
@@ -51,7 +53,7 @@ async function main() {
   const cs = C.settle(book.comboPending || [], byId, now);
   book.comboPending = cs.still; book.comboRecord = [...cs.settled, ...(book.comboRecord || [])];
   if (st.settled.length) console.log(`· NBA liquidados ${st.settled.length} picks: ${st.settled.map(p => p.result).join('')}`);
-  if (RESULTS_ONLY) { saveRecord(book); writeJSON(PICKS_FILE, book, true); console.log('✓ NBA solo resultados'); return; }
+  if (RESULTS_ONLY) { saveRecord(book, byId); writeJSON(PICKS_FILE, book, true); console.log('✓ NBA solo resultados'); return; }
 
   /* ---- 3. próximos partidos y cuotas gratis ---- */
   const upcoming = games.filter(g => g.status === 'scheduled' && Date.parse(g.date) > now - 2 * 3600e3 && Date.parse(g.date) < now + 36 * 3600e3)
@@ -152,7 +154,8 @@ async function main() {
   });
 
   writeJSON(PICKS_FILE, book, true);
-  saveRecord(book);
+  PR.update(PRED_FILE, outGames, now);
+  saveRecord(book, byId);
   writeJSON(path.join(OUT, 'today.json'), {
     meta: { updatedAt: new Date(now).toISOString(), season, league: LG, oddsSource: 'Unibet (Kambi) + DraftKings', sig: SIG, minOdd: P.CFG.minOdd,
       nextGame: (games.find(g => g.status === 'scheduled' && Date.parse(g.date) > now) || {}).date || null },
@@ -165,9 +168,10 @@ async function main() {
   console.log(`✓ NBA: ${outGames.length} partidos · ${picks.length} picks · ${combos.length} combinadas · pendientes ${book.pending.length} · historial ${book.record.length}`);
 }
 
-function saveRecord(book) {
+function saveRecord(book, byId) {
   writeJSON(path.join(OUT, 'record.json'), { updatedAt: new Date().toISOString(), stats: S.stats(book.record), pending: book.pending, record: book.record,
-    combos: { stats: C.stats(book.comboRecord || []), pending: book.comboPending || [], record: book.comboRecord || [] } });
+    combos: { stats: C.stats(book.comboRecord || []), pending: book.comboPending || [], record: book.comboRecord || [] },
+    predictions: PR.settle(readJSON(PRED_FILE, {}), byId) });
 }
 
 main().catch(e => { console.error(e); process.exit(1); });

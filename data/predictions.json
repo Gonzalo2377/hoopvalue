@@ -1,0 +1,128 @@
+{
+ "el:E2026_61": {
+  "start": "2026-10-21T16:00:00.000Z",
+  "home": "Hapoel TLV",
+  "away": "Virtus Bologna",
+  "ptsH": 90,
+  "ptsA": 84
+ },
+ "el:E2026_64": {
+  "start": "2026-10-22T17:30:00.000Z",
+  "home": "Anadolu Efes",
+  "away": "Besiktas",
+  "ptsH": 88,
+  "ptsA": 85
+ },
+ "el:E2026_65": {
+  "start": "2026-10-22T18:00:00.000Z",
+  "home": "Bayern Munich",
+  "away": "Dubai",
+  "ptsH": 87,
+  "ptsA": 86
+ },
+ "el:E2026_62": {
+  "start": "2026-10-22T18:05:00.000Z",
+  "home": "Maccabi",
+  "away": "Real Madrid",
+  "ptsH": 88,
+  "ptsA": 90
+ },
+ "el:E2026_67": {
+  "start": "2026-10-22T18:15:00.000Z",
+  "home": "Panathinaikos",
+  "away": "Baskonia",
+  "ptsH": 92,
+  "ptsA": 76
+ },
+ "el:E2026_63": {
+  "start": "2026-10-22T18:30:00.000Z",
+  "home": "Milan",
+  "away": "FC Barcelona",
+  "ptsH": 89,
+  "ptsA": 92
+ },
+ "el:E2026_66": {
+  "start": "2026-10-22T18:45:00.000Z",
+  "home": "Partizan",
+  "away": "Crvena Zvezda",
+  "ptsH": 77,
+  "ptsA": 75
+ },
+ "el:E2026_68": {
+  "start": "2026-10-23T17:00:00.000Z",
+  "home": "Zalgiris",
+  "away": "LDLC ASVEL",
+  "ptsH": 92,
+  "ptsA": 82
+ },
+ "el:E2026_70": {
+  "start": "2026-10-23T18:15:00.000Z",
+  "home": "Olympiacos",
+  "away": "Fenerbahce",
+  "ptsH": 88,
+  "ptsA": 85
+ },
+ "el:E2026_69": {
+  "start": "2026-10-23T18:45:00.000Z",
+  "home": "Paris",
+  "away": "Valencia",
+  "ptsH": 87,
+  "ptsA": 96
+ },
+ "el:E2026_72": {
+  "start": "2026-10-27T16:00:00.000Z",
+  "home": "Dubai",
+  "away": "Paris",
+  "ptsH": 93,
+  "ptsA": 81
+ },
+ "el:E2026_74": {
+  "start": "2026-10-27T19:00:00.000Z",
+  "home": "Bayern Munich",
+  "away": "FC Barcelona",
+  "ptsH": 91,
+  "ptsA": 92
+ },
+ "el:E2026_71": {
+  "start": "2026-10-27T19:00:00.000Z",
+  "home": "Crvena Zvezda",
+  "away": "Maccabi",
+  "ptsH": 88,
+  "ptsA": 80
+ },
+ "el:E2026_76": {
+  "start": "2026-10-27T19:15:00.000Z",
+  "home": "Panathinaikos",
+  "away": "Milan",
+  "ptsH": 91,
+  "ptsA": 77
+ },
+ "el:E2026_75": {
+  "start": "2026-10-27T19:30:00.000Z",
+  "home": "Valencia",
+  "away": "Fenerbahce",
+  "ptsH": 85,
+  "ptsA": 85
+ },
+ "el:E2026_73": {
+  "start": "2026-10-27T20:00:00.000Z",
+  "home": "Baskonia",
+  "away": "Real Madrid",
+  "ptsH": 87,
+  "ptsA": 95
+ },
+ "el:E2026_79": {
+  "start": "2026-10-28T17:30:00.000Z",
+  "home": "Besiktas",
+  "away": "Olympiacos",
+  "ptsH": 89,
+  "ptsA": 88
+ },
+ "el:E2026_77": {
+  "start": "2026-10-28T18:00:00.000Z",
+  "home": "Hapoel TLV",
+  "away": "Anadolu Efes",
+  "ptsH": 87,
+  "ptsA": 81
+ }
+}
