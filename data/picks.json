@@ -39,25 +39,6 @@
       "createdAt": "2026-10-26T20:33:52.058Z"
     },
     {
-      "id": "el:E2026_72|prop|over|4.5|011231|pts",
-      "gameId": "el:E2026_72",
-      "start": "2026-10-27T16:00:00.000Z",
-      "round": 8,
-      "match": "Dubai – Paris",
-      "market": "prop",
-      "side": "over",
-      "line": 4.5,
-      "label": "Jaron Blossomgame más de 4.5 puntos",
-      "odd": 1.47,
-      "book": "unibet (Kambi)",
-      "pFinal": 0.665,
-      "safety": 0.604,
-      "tier": "C",
-      "stat": "pts",
-      "playerId": "011231",
-      "createdAt": "2026-10-26T20:33:52.058Z"
-    },
-    {
       "id": "el:E2026_74|prop|over|9.5|014008|pts",
       "gameId": "el:E2026_74",
       "start": "2026-10-27T19:00:00.000Z",
@@ -74,25 +55,6 @@
       "tier": "C",
       "stat": "pts",
       "playerId": "014008",
-      "createdAt": "2026-10-26T20:33:52.058Z"
-    },
-    {
-      "id": "el:E2026_72|prop|over|3.5|011212|ast",
-      "gameId": "el:E2026_72",
-      "start": "2026-10-27T16:00:00.000Z",
-      "round": 8,
-      "match": "Dubai – Paris",
-      "market": "prop",
-      "side": "over",
-      "line": 3.5,
-      "label": "Elie Okobo más de 3.5 asistencias",
-      "odd": 1.53,
-      "book": "unibet (Kambi)",
-      "pFinal": 0.637,
-      "safety": 0.591,
-      "tier": "C",
-      "stat": "ast",
-      "playerId": "011212",
       "createdAt": "2026-10-26T20:33:52.058Z"
     },
     {
@@ -244,9 +206,89 @@
       "safety": 0.668,
       "tier": "B",
       "createdAt": "2026-10-27T10:31:34.669Z"
+    },
+    {
+      "id": "el:E2026_77|ml|home|||",
+      "gameId": "el:E2026_77",
+      "start": "2026-10-28T18:00:00.000Z",
+      "round": 8,
+      "match": "Hapoel TLV – Anadolu Efes",
+      "market": "ml",
+      "side": "home",
+      "line": null,
+      "label": "Gana Hapoel TLV",
+      "odd": 1.43,
+      "book": "betfair_ex_uk",
+      "pFinal": 0.688,
+      "safety": 0.688,
+      "tier": "A",
+      "createdAt": "2026-10-27T19:27:49.100Z"
+    },
+    {
+      "id": "el:E2026_73|prop|over|1.5|014734|ast",
+      "gameId": "el:E2026_73",
+      "start": "2026-10-27T20:00:00.000Z",
+      "round": 8,
+      "match": "Baskonia – Real Madrid",
+      "market": "prop",
+      "side": "over",
+      "line": 1.5,
+      "label": "A.j. Lawson más de 1.5 asistencias",
+      "odd": 1.67,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.584,
+      "safety": 0.555,
+      "tier": "C",
+      "stat": "ast",
+      "playerId": "014734",
+      "createdAt": "2026-10-27T19:27:49.100Z"
     }
   ],
   "record": [
+    {
+      "id": "el:E2026_72|prop|over|4.5|011231|pts",
+      "gameId": "el:E2026_72",
+      "start": "2026-10-27T16:00:00.000Z",
+      "round": 8,
+      "match": "Dubai – Paris",
+      "market": "prop",
+      "side": "over",
+      "line": 4.5,
+      "label": "Jaron Blossomgame más de 4.5 puntos",
+      "odd": 1.47,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.665,
+      "safety": 0.604,
+      "tier": "C",
+      "stat": "pts",
+      "playerId": "011231",
+      "createdAt": "2026-10-26T20:33:52.058Z",
+      "result": "L",
+      "score": "93-99",
+      "settledAt": "2026-10-27T19:27:49.100Z"
+    },
+    {
+      "id": "el:E2026_72|prop|over|3.5|011212|ast",
+      "gameId": "el:E2026_72",
+      "start": "2026-10-27T16:00:00.000Z",
+      "round": 8,
+      "match": "Dubai – Paris",
+      "market": "prop",
+      "side": "over",
+      "line": 3.5,
+      "label": "Elie Okobo más de 3.5 asistencias",
+      "odd": 1.53,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.637,
+      "safety": 0.591,
+      "tier": "C",
+      "stat": "ast",
+      "playerId": "011212",
+      "createdAt": "2026-10-26T20:33:52.058Z",
+      "result": "L",
+      "score": "93-99",
+      "settledAt": "2026-10-27T19:27:49.100Z"
+    },
     {
       "id": "el:E2026_69|prop|over|1.5|015160|reb",
       "gameId": "el:E2026_69",
@@ -866,50 +908,6 @@
       "createdAt": "2026-10-26T20:33:52.058Z"
     },
     {
-      "type": "segura",
-      "legs": [
-        {
-          "id": "el:E2026_74|prop|over|4.5|007519|pts",
-          "gameId": "el:E2026_74",
-          "start": "2026-10-27T19:00:00.000Z",
-          "match": "Bayern Munich – FC Barcelona",
-          "market": "prop",
-          "side": "over",
-          "line": 4.5,
-          "stat": "pts",
-          "playerId": "007519",
-          "player": "Rokas Jokubaitis",
-          "team": "MUN",
-          "label": "Rokas Jokubaitis más de 4.5 puntos",
-          "odd": 1.3,
-          "pFinal": 0.75,
-          "book": "unibet (Kambi)"
-        },
-        {
-          "id": "el:E2026_72|prop|over|4.5|011231|pts",
-          "gameId": "el:E2026_72",
-          "start": "2026-10-27T16:00:00.000Z",
-          "match": "Dubai – Paris",
-          "market": "prop",
-          "side": "over",
-          "line": 4.5,
-          "stat": "pts",
-          "playerId": "011231",
-          "player": "Jaron Blossomgame",
-          "team": "DUB",
-          "label": "Jaron Blossomgame más de 4.5 puntos",
-          "odd": 1.47,
-          "pFinal": 0.665,
-          "book": "unibet (Kambi)"
-        }
-      ],
-      "odd": 1.91,
-      "prob": 0.499,
-      "ev": -0.047,
-      "start": "2026-10-27T16:00:00.000Z",
-      "createdAt": "2026-10-27T00:31:39.908Z"
-    },
-    {
       "type": "valor",
       "legs": [
         {
@@ -971,6 +969,239 @@
       "createdAt": "2026-10-27T00:31:39.908Z"
     },
     {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "el:E2026_74|prop|over|4.5|007519|pts",
+          "gameId": "el:E2026_74",
+          "start": "2026-10-27T19:00:00.000Z",
+          "match": "Bayern Munich – FC Barcelona",
+          "market": "prop",
+          "side": "over",
+          "line": 4.5,
+          "stat": "pts",
+          "playerId": "007519",
+          "player": "Rokas Jokubaitis",
+          "team": "MUN",
+          "label": "Rokas Jokubaitis más de 4.5 puntos",
+          "odd": 1.32,
+          "pFinal": 0.741,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "el:E2026_71|ml|home|||",
+          "gameId": "el:E2026_71",
+          "start": "2026-10-27T19:00:00.000Z",
+          "match": "Crvena Zvezda – Maccabi",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana Crvena Zvezda",
+          "odd": 1.48,
+          "pFinal": 0.682,
+          "book": "ladbrokes_uk"
+        }
+      ],
+      "odd": 1.95,
+      "prob": 0.505,
+      "ev": -0.013,
+      "start": "2026-10-27T19:00:00.000Z",
+      "createdAt": "2026-10-27T10:31:34.669Z"
+    },
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "el:E2026_77|ml|home|||",
+          "gameId": "el:E2026_77",
+          "start": "2026-10-28T18:00:00.000Z",
+          "match": "Hapoel TLV – Anadolu Efes",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana Hapoel TLV",
+          "odd": 1.43,
+          "pFinal": 0.688,
+          "book": "betfair_ex_uk"
+        },
+        {
+          "id": "el:E2026_73|prop|over|3.5|007027|ast",
+          "gameId": "el:E2026_73",
+          "start": "2026-10-27T20:00:00.000Z",
+          "match": "Baskonia – Real Madrid",
+          "market": "prop",
+          "side": "over",
+          "line": 3.5,
+          "stat": "ast",
+          "playerId": "007027",
+          "player": "Theo Maledon",
+          "team": "MAD",
+          "label": "Theo Maledon más de 3.5 asistencias",
+          "odd": 1.61,
+          "pFinal": 0.619,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.3,
+      "prob": 0.426,
+      "ev": -0.02,
+      "start": "2026-10-27T20:00:00.000Z",
+      "createdAt": "2026-10-27T19:27:49.100Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "el:E2026_77|ml|home|||",
+          "gameId": "el:E2026_77",
+          "start": "2026-10-28T18:00:00.000Z",
+          "match": "Hapoel TLV – Anadolu Efes",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana Hapoel TLV",
+          "odd": 1.43,
+          "pFinal": 0.688,
+          "book": "betfair_ex_uk"
+        },
+        {
+          "id": "el:E2026_73|prop|over|3.5|007027|ast",
+          "gameId": "el:E2026_73",
+          "start": "2026-10-27T20:00:00.000Z",
+          "match": "Baskonia – Real Madrid",
+          "market": "prop",
+          "side": "over",
+          "line": 3.5,
+          "stat": "ast",
+          "playerId": "007027",
+          "player": "Theo Maledon",
+          "team": "MAD",
+          "label": "Theo Maledon más de 3.5 asistencias",
+          "odd": 1.61,
+          "pFinal": 0.619,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "el:E2026_75|prop|over|3.5|007831|reb",
+          "gameId": "el:E2026_75",
+          "start": "2026-10-27T19:30:00.000Z",
+          "match": "Valencia – Fenerbahce",
+          "market": "prop",
+          "side": "over",
+          "line": 3.5,
+          "stat": "reb",
+          "playerId": "007831",
+          "player": "Shavon Shields",
+          "team": "ULK",
+          "label": "Shavon Shields más de 3.5 rebotes",
+          "odd": 1.64,
+          "pFinal": 0.598,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 3.78,
+      "prob": 0.255,
+      "ev": -0.038,
+      "start": "2026-10-27T19:30:00.000Z",
+      "createdAt": "2026-10-27T19:27:49.100Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "el:E2026_73|prop|over|3.5|007027|ast",
+          "gameId": "el:E2026_73",
+          "start": "2026-10-27T20:00:00.000Z",
+          "match": "Baskonia – Real Madrid",
+          "market": "prop",
+          "side": "over",
+          "line": 3.5,
+          "stat": "ast",
+          "playerId": "007027",
+          "player": "Theo Maledon",
+          "team": "MAD",
+          "label": "Theo Maledon más de 3.5 asistencias",
+          "odd": 1.61,
+          "pFinal": 0.619,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "el:E2026_75|prop|over|3.5|007831|reb",
+          "gameId": "el:E2026_75",
+          "start": "2026-10-27T19:30:00.000Z",
+          "match": "Valencia – Fenerbahce",
+          "market": "prop",
+          "side": "over",
+          "line": 3.5,
+          "stat": "reb",
+          "playerId": "007831",
+          "player": "Shavon Shields",
+          "team": "ULK",
+          "label": "Shavon Shields más de 3.5 rebotes",
+          "odd": 1.64,
+          "pFinal": 0.598,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.64,
+      "prob": 0.37,
+      "ev": -0.023,
+      "start": "2026-10-27T19:30:00.000Z",
+      "createdAt": "2026-10-27T19:27:49.100Z"
+    }
+  ],
+  "comboRecord": [
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "el:E2026_74|prop|over|4.5|007519|pts",
+          "gameId": "el:E2026_74",
+          "start": "2026-10-27T19:00:00.000Z",
+          "match": "Bayern Munich – FC Barcelona",
+          "market": "prop",
+          "side": "over",
+          "line": 4.5,
+          "stat": "pts",
+          "playerId": "007519",
+          "player": "Rokas Jokubaitis",
+          "team": "MUN",
+          "label": "Rokas Jokubaitis más de 4.5 puntos",
+          "odd": 1.3,
+          "pFinal": 0.75,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "el:E2026_72|prop|over|4.5|011231|pts",
+          "gameId": "el:E2026_72",
+          "start": "2026-10-27T16:00:00.000Z",
+          "match": "Dubai – Paris",
+          "market": "prop",
+          "side": "over",
+          "line": 4.5,
+          "stat": "pts",
+          "playerId": "011231",
+          "player": "Jaron Blossomgame",
+          "team": "DUB",
+          "label": "Jaron Blossomgame más de 4.5 puntos",
+          "odd": 1.47,
+          "pFinal": 0.665,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.91,
+      "prob": 0.499,
+      "ev": -0.047,
+      "start": "2026-10-27T16:00:00.000Z",
+      "createdAt": "2026-10-27T00:31:39.908Z",
+      "result": "L",
+      "legStates": [
+        null,
+        "L"
+      ],
+      "settledAt": "2026-10-27T19:27:49.100Z"
+    },
+    {
       "type": "jugadores",
       "legs": [
         {
@@ -1012,47 +1243,13 @@
       "prob": 0.478,
       "ev": -0.05,
       "start": "2026-10-27T16:00:00.000Z",
-      "createdAt": "2026-10-27T00:31:39.908Z"
-    },
-    {
-      "type": "segura",
-      "legs": [
-        {
-          "id": "el:E2026_74|prop|over|4.5|007519|pts",
-          "gameId": "el:E2026_74",
-          "start": "2026-10-27T19:00:00.000Z",
-          "match": "Bayern Munich – FC Barcelona",
-          "market": "prop",
-          "side": "over",
-          "line": 4.5,
-          "stat": "pts",
-          "playerId": "007519",
-          "player": "Rokas Jokubaitis",
-          "team": "MUN",
-          "label": "Rokas Jokubaitis más de 4.5 puntos",
-          "odd": 1.32,
-          "pFinal": 0.741,
-          "book": "unibet (Kambi)"
-        },
-        {
-          "id": "el:E2026_71|ml|home|||",
-          "gameId": "el:E2026_71",
-          "start": "2026-10-27T19:00:00.000Z",
-          "match": "Crvena Zvezda – Maccabi",
-          "market": "ml",
-          "side": "home",
-          "line": null,
-          "label": "Gana Crvena Zvezda",
-          "odd": 1.48,
-          "pFinal": 0.682,
-          "book": "ladbrokes_uk"
-        }
+      "createdAt": "2026-10-27T00:31:39.908Z",
+      "result": "L",
+      "legStates": [
+        null,
+        "L"
       ],
-      "odd": 1.95,
-      "prob": 0.505,
-      "ev": -0.013,
-      "start": "2026-10-27T19:00:00.000Z",
-      "createdAt": "2026-10-27T10:31:34.669Z"
+      "settledAt": "2026-10-27T19:27:49.100Z"
     },
     {
       "type": "jugadores",
@@ -1096,10 +1293,14 @@
       "prob": 0.493,
       "ev": -0.044,
       "start": "2026-10-27T16:00:00.000Z",
-      "createdAt": "2026-10-27T10:31:34.669Z"
-    }
-  ],
-  "comboRecord": [
+      "createdAt": "2026-10-27T10:31:34.669Z",
+      "result": "L",
+      "legStates": [
+        null,
+        "L"
+      ],
+      "settledAt": "2026-10-27T19:27:49.100Z"
+    },
     {
       "type": "segura",
       "legs": [

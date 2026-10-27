@@ -362,5 +362,19 @@
     "away": "Spurs",
     "ptsH": 113,
     "ptsA": 117
+  },
+  "nba:401909891": {
+    "start": "2026-10-29T01:30Z",
+    "home": "Mavericks",
+    "away": "Thunder",
+    "ptsH": 109,
+    "ptsA": 109
+  },
+  "nba:401909892": {
+    "start": "2026-10-29T02:30Z",
+    "home": "Clippers",
+    "away": "Lakers",
+    "ptsH": 113,
+    "ptsA": 117
   }
 }
