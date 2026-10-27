@@ -1089,9 +1089,23 @@
         "title": "Crvena Zvezda vs Maccabi",
         "start": "2026-10-27T19:00:00.000Z",
         "postAt": "2026-10-27T18:00:00.000Z",
-        "text": "🏀 Euroliga · hoy 20:00\nCrvena Zvezda vs Maccabi\n\n✅ Jimmy Clark Iii más de 9.5 puntos @1.64 (62%)\n📊 Modelo: Crvena Zvezda 75% · Maccabi 25%\n\n🔗 Análisis completo: link en la bio\n#Euroliga · +18 · Juega con responsabilidad",
+        "text": "🏀 Euroliga · hoy 20:00\nCrvena Zvezda vs Maccabi\n\n✅ Gana Crvena Zvezda @1.48 (68%)\n✅ Jimmy Clark Iii más de 9.5 puntos @1.64 (62%)\n📊 Modelo: Crvena Zvezda 75% · Maccabi 25%\n\n🔗 Análisis completo: link en la bio\n#Euroliga · +18 · Juega con responsabilidad",
         "image": true,
         "picks": [
+          {
+            "id": "el:E2026_71|ml|home|||",
+            "league": "euroleague",
+            "label": "Gana Crvena Zvezda",
+            "list": "Gana Crvena Zvezda",
+            "odd": 1.48,
+            "start": "2026-10-27T19:00:00.000Z",
+            "gameId": "el:E2026_71",
+            "market": "ml",
+            "side": "home",
+            "line": null,
+            "match": "Crvena Zvezda – Maccabi",
+            "pFinal": 0.682
+          },
           {
             "id": "el:E2026_71|prop|over|9.5|013699|pts",
             "league": "euroleague",
@@ -1196,7 +1210,7 @@
         "title": "Baskonia vs Real Madrid",
         "start": "2026-10-27T20:00:00.000Z",
         "postAt": "2026-10-27T19:00:00.000Z",
-        "text": "🏀 Euroliga · hoy 21:00\nBaskonia vs Real Madrid\n\n✅ Theo Maledon más de 3.5 asistencias @1.62 (62%)\n✅ Andres Feliz más de 9.5 puntos @1.70 (59%)\n📊 Modelo: Baskonia 25% · Real Madrid 75%\n\n🔗 Análisis completo: link en la bio\n#Euroliga · +18 · Juega con responsabilidad",
+        "text": "🏀 Euroliga · hoy 21:00\nBaskonia vs Real Madrid\n\n✅ Theo Maledon más de 3.5 asistencias @1.60 (62%)\n✅ Andres Feliz más de 9.5 puntos @1.68 (60%)\n📊 Modelo: Baskonia 25% · Real Madrid 75%\n\n🔗 Análisis completo: link en la bio\n#Euroliga · +18 · Juega con responsabilidad",
         "image": true,
         "picks": [
           {
@@ -1204,7 +1218,7 @@
             "league": "euroleague",
             "label": "T. Maledon +3.5 asistencias",
             "list": "T. Maledon +3.5 Ast",
-            "odd": 1.62,
+            "odd": 1.6,
             "start": "2026-10-27T20:00:00.000Z",
             "gameId": "el:E2026_73",
             "market": "prop",
@@ -1214,14 +1228,14 @@
             "playerId": "007027",
             "team": "MAD",
             "match": "Baskonia – Real Madrid",
-            "pFinal": 0.616
+            "pFinal": 0.622
           },
           {
             "id": "el:E2026_73|prop|over|9.5|011247|pts",
             "league": "euroleague",
             "label": "A. Feliz +9.5 puntos",
             "list": "A. Feliz +9.5 Pts",
-            "odd": 1.7,
+            "odd": 1.68,
             "start": "2026-10-27T20:00:00.000Z",
             "gameId": "el:E2026_73",
             "market": "prop",
@@ -1231,7 +1245,7 @@
             "playerId": "011247",
             "team": "MAD",
             "match": "Baskonia – Real Madrid",
-            "pFinal": 0.592
+            "pFinal": 0.597
           }
         ]
       },
@@ -1239,10 +1253,10 @@
         "id": "combo-euroleague",
         "kind": "combo",
         "league": "euroleague",
-        "title": "Safe Parlay · Euroliga @1.94",
-        "postAt": "2026-10-27T14:30:00.000Z",
+        "title": "Safe Parlay · Euroliga @1.95",
+        "postAt": "2026-10-27T17:30:00.000Z",
         "image": true,
-        "text": "🎯 Safe Parlay · Euroliga\n\n1.- R. Jokubaitis +4.5 Pts @1.32\n2.- J. Blossomgame +4.5 Pts @1.47\n\n💰 Total odds 1.94\n📊 Last 10 games de cada uno en la foto\n#Euroliga · +18 · Juega con responsabilidad",
+        "text": "🎯 Safe Parlay · Euroliga\n\n1.- R. Jokubaitis +4.5 Pts @1.32\n2.- Gana Crvena Zvezda @1.48\n\n💰 Total odds 1.95\n📊 Last 10 games de cada uno en la foto\n#Euroliga · +18 · Juega con responsabilidad",
         "picks": [],
         "combo": {
           "legs": [
@@ -1264,25 +1278,22 @@
               "pFinal": 0.741
             },
             {
-              "id": "el:E2026_72|prop|over|4.5|011231|pts",
+              "id": "el:E2026_71|ml|home|||",
               "league": "euroleague",
-              "label": "J. Blossomgame +4.5 puntos",
-              "list": "J. Blossomgame +4.5 Pts",
-              "odd": 1.47,
-              "start": "2026-10-27T16:00:00.000Z",
-              "gameId": "el:E2026_72",
-              "market": "prop",
-              "side": "over",
-              "line": 4.5,
-              "stat": "pts",
-              "playerId": "011231",
-              "team": "DUB",
-              "match": "Dubai – Paris",
-              "pFinal": 0.665
+              "label": "Gana Crvena Zvezda",
+              "list": "Gana Crvena Zvezda",
+              "odd": 1.48,
+              "start": "2026-10-27T19:00:00.000Z",
+              "gameId": "el:E2026_71",
+              "market": "ml",
+              "side": "home",
+              "line": null,
+              "match": "Crvena Zvezda – Maccabi",
+              "pFinal": 0.682
             }
           ],
-          "odd": 1.94,
-          "prob": 0.493
+          "odd": 1.95,
+          "prob": 0.505
         }
       },
       "summary-nba": {

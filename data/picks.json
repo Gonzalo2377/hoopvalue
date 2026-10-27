@@ -227,6 +227,23 @@
       "stat": "pts",
       "playerId": "011247",
       "createdAt": "2026-10-27T00:31:39.908Z"
+    },
+    {
+      "id": "el:E2026_71|ml|home|||",
+      "gameId": "el:E2026_71",
+      "start": "2026-10-27T19:00:00.000Z",
+      "round": 8,
+      "match": "Crvena Zvezda – Maccabi",
+      "market": "ml",
+      "side": "home",
+      "line": null,
+      "label": "Gana Crvena Zvezda",
+      "odd": 1.48,
+      "book": "ladbrokes_uk",
+      "pFinal": 0.682,
+      "safety": 0.668,
+      "tier": "B",
+      "createdAt": "2026-10-27T10:31:34.669Z"
     }
   ],
   "record": [
@@ -996,6 +1013,90 @@
       "ev": -0.05,
       "start": "2026-10-27T16:00:00.000Z",
       "createdAt": "2026-10-27T00:31:39.908Z"
+    },
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "el:E2026_74|prop|over|4.5|007519|pts",
+          "gameId": "el:E2026_74",
+          "start": "2026-10-27T19:00:00.000Z",
+          "match": "Bayern Munich – FC Barcelona",
+          "market": "prop",
+          "side": "over",
+          "line": 4.5,
+          "stat": "pts",
+          "playerId": "007519",
+          "player": "Rokas Jokubaitis",
+          "team": "MUN",
+          "label": "Rokas Jokubaitis más de 4.5 puntos",
+          "odd": 1.32,
+          "pFinal": 0.741,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "el:E2026_71|ml|home|||",
+          "gameId": "el:E2026_71",
+          "start": "2026-10-27T19:00:00.000Z",
+          "match": "Crvena Zvezda – Maccabi",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana Crvena Zvezda",
+          "odd": 1.48,
+          "pFinal": 0.682,
+          "book": "ladbrokes_uk"
+        }
+      ],
+      "odd": 1.95,
+      "prob": 0.505,
+      "ev": -0.013,
+      "start": "2026-10-27T19:00:00.000Z",
+      "createdAt": "2026-10-27T10:31:34.669Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "el:E2026_74|prop|over|4.5|007519|pts",
+          "gameId": "el:E2026_74",
+          "start": "2026-10-27T19:00:00.000Z",
+          "match": "Bayern Munich – FC Barcelona",
+          "market": "prop",
+          "side": "over",
+          "line": 4.5,
+          "stat": "pts",
+          "playerId": "007519",
+          "player": "Rokas Jokubaitis",
+          "team": "MUN",
+          "label": "Rokas Jokubaitis más de 4.5 puntos",
+          "odd": 1.32,
+          "pFinal": 0.741,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "el:E2026_72|prop|over|4.5|011231|pts",
+          "gameId": "el:E2026_72",
+          "start": "2026-10-27T16:00:00.000Z",
+          "match": "Dubai – Paris",
+          "market": "prop",
+          "side": "over",
+          "line": 4.5,
+          "stat": "pts",
+          "playerId": "011231",
+          "player": "Jaron Blossomgame",
+          "team": "DUB",
+          "label": "Jaron Blossomgame más de 4.5 puntos",
+          "odd": 1.47,
+          "pFinal": 0.665,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.94,
+      "prob": 0.493,
+      "ev": -0.044,
+      "start": "2026-10-27T16:00:00.000Z",
+      "createdAt": "2026-10-27T10:31:34.669Z"
     }
   ],
   "comboRecord": [
