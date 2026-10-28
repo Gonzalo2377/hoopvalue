@@ -1,23 +1,6 @@
 {
   "pending": [
     {
-      "id": "el:E2026_77|ml|home|||",
-      "gameId": "el:E2026_77",
-      "start": "2026-10-28T18:00:00.000Z",
-      "round": 8,
-      "match": "Hapoel TLV – Anadolu Efes",
-      "market": "ml",
-      "side": "home",
-      "line": null,
-      "label": "Gana Hapoel TLV",
-      "odd": 1.43,
-      "book": "betfair_ex_uk",
-      "pFinal": 0.688,
-      "safety": 0.688,
-      "tier": "A",
-      "createdAt": "2026-10-27T19:27:49.100Z"
-    },
-    {
       "id": "el:E2026_80|prop|over|9.5|012707|pts",
       "gameId": "el:E2026_80",
       "start": "2026-10-28T19:30:00.000Z",
@@ -34,44 +17,6 @@
       "tier": "A",
       "stat": "pts",
       "playerId": "012707",
-      "createdAt": "2026-10-27T23:48:46.141Z"
-    },
-    {
-      "id": "el:E2026_77|prop|over|3.5|008987|reb",
-      "gameId": "el:E2026_77",
-      "start": "2026-10-28T18:00:00.000Z",
-      "round": 8,
-      "match": "Hapoel TLV – Anadolu Efes",
-      "market": "prop",
-      "side": "over",
-      "line": 3.5,
-      "label": "Zach Leday más de 3.5 rebotes",
-      "odd": 1.44,
-      "book": "unibet (Kambi)",
-      "pFinal": 0.685,
-      "safety": 0.612,
-      "tier": "B",
-      "stat": "reb",
-      "playerId": "008987",
-      "createdAt": "2026-10-27T23:48:46.141Z"
-    },
-    {
-      "id": "el:E2026_77|prop|over|2.5|014213|tpm",
-      "gameId": "el:E2026_77",
-      "start": "2026-10-28T18:00:00.000Z",
-      "round": 8,
-      "match": "Hapoel TLV – Anadolu Efes",
-      "market": "prop",
-      "side": "over",
-      "line": 2.5,
-      "label": "Cameron Payne más de 2.5 triples",
-      "odd": 1.72,
-      "book": "unibet (Kambi)",
-      "pFinal": 0.572,
-      "safety": 0.515,
-      "tier": "C",
-      "stat": "tpm",
-      "playerId": "014213",
       "createdAt": "2026-10-27T23:48:46.141Z"
     },
     {
@@ -150,6 +95,73 @@
     }
   ],
   "record": [
+    {
+      "id": "el:E2026_77|ml|home|||",
+      "gameId": "el:E2026_77",
+      "start": "2026-10-28T18:00:00.000Z",
+      "round": 8,
+      "match": "Hapoel TLV – Anadolu Efes",
+      "market": "ml",
+      "side": "home",
+      "line": null,
+      "label": "Gana Hapoel TLV",
+      "odd": 1.43,
+      "book": "betfair_ex_uk",
+      "pFinal": 0.688,
+      "safety": 0.688,
+      "tier": "A",
+      "createdAt": "2026-10-27T19:27:49.100Z",
+      "result": "W",
+      "score": "118-88",
+      "settledAt": "2026-10-28T19:56:36.165Z",
+      "closeOdd": 1.43,
+      "pClose": 0.6882,
+      "clv": -0.0159
+    },
+    {
+      "id": "el:E2026_77|prop|over|3.5|008987|reb",
+      "gameId": "el:E2026_77",
+      "start": "2026-10-28T18:00:00.000Z",
+      "round": 8,
+      "match": "Hapoel TLV – Anadolu Efes",
+      "market": "prop",
+      "side": "over",
+      "line": 3.5,
+      "label": "Zach Leday más de 3.5 rebotes",
+      "odd": 1.44,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.685,
+      "safety": 0.612,
+      "tier": "B",
+      "stat": "reb",
+      "playerId": "008987",
+      "createdAt": "2026-10-27T23:48:46.141Z",
+      "result": "L",
+      "score": "118-88",
+      "settledAt": "2026-10-28T19:56:36.165Z"
+    },
+    {
+      "id": "el:E2026_77|prop|over|2.5|014213|tpm",
+      "gameId": "el:E2026_77",
+      "start": "2026-10-28T18:00:00.000Z",
+      "round": 8,
+      "match": "Hapoel TLV – Anadolu Efes",
+      "market": "prop",
+      "side": "over",
+      "line": 2.5,
+      "label": "Cameron Payne más de 2.5 triples",
+      "odd": 1.72,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.572,
+      "safety": 0.515,
+      "tier": "C",
+      "stat": "tpm",
+      "playerId": "014213",
+      "createdAt": "2026-10-27T23:48:46.141Z",
+      "result": "L",
+      "score": "118-88",
+      "settledAt": "2026-10-28T19:56:36.165Z"
+    },
     {
       "id": "el:E2026_73|prop|over|1.5|011247|reb",
       "gameId": "el:E2026_73",
@@ -929,208 +941,6 @@
   ],
   "comboPending": [
     {
-      "type": "segura",
-      "legs": [
-        {
-          "id": "el:E2026_77|ml|home|||",
-          "gameId": "el:E2026_77",
-          "start": "2026-10-28T18:00:00.000Z",
-          "match": "Hapoel TLV – Anadolu Efes",
-          "market": "ml",
-          "side": "home",
-          "line": null,
-          "label": "Gana Hapoel TLV",
-          "odd": 1.43,
-          "pFinal": 0.688,
-          "book": "betfair_ex_uk"
-        },
-        {
-          "id": "el:E2026_73|prop|over|3.5|007027|ast",
-          "gameId": "el:E2026_73",
-          "start": "2026-10-27T20:00:00.000Z",
-          "match": "Baskonia – Real Madrid",
-          "market": "prop",
-          "side": "over",
-          "line": 3.5,
-          "stat": "ast",
-          "playerId": "007027",
-          "player": "Theo Maledon",
-          "team": "MAD",
-          "label": "Theo Maledon más de 3.5 asistencias",
-          "odd": 1.61,
-          "pFinal": 0.619,
-          "book": "unibet (Kambi)"
-        }
-      ],
-      "odd": 2.3,
-      "prob": 0.426,
-      "ev": -0.02,
-      "start": "2026-10-27T20:00:00.000Z",
-      "createdAt": "2026-10-27T19:27:49.100Z"
-    },
-    {
-      "type": "valor",
-      "legs": [
-        {
-          "id": "el:E2026_77|ml|home|||",
-          "gameId": "el:E2026_77",
-          "start": "2026-10-28T18:00:00.000Z",
-          "match": "Hapoel TLV – Anadolu Efes",
-          "market": "ml",
-          "side": "home",
-          "line": null,
-          "label": "Gana Hapoel TLV",
-          "odd": 1.43,
-          "pFinal": 0.688,
-          "book": "betfair_ex_uk"
-        },
-        {
-          "id": "el:E2026_73|prop|over|3.5|007027|ast",
-          "gameId": "el:E2026_73",
-          "start": "2026-10-27T20:00:00.000Z",
-          "match": "Baskonia – Real Madrid",
-          "market": "prop",
-          "side": "over",
-          "line": 3.5,
-          "stat": "ast",
-          "playerId": "007027",
-          "player": "Theo Maledon",
-          "team": "MAD",
-          "label": "Theo Maledon más de 3.5 asistencias",
-          "odd": 1.61,
-          "pFinal": 0.619,
-          "book": "unibet (Kambi)"
-        },
-        {
-          "id": "el:E2026_75|prop|over|3.5|007831|reb",
-          "gameId": "el:E2026_75",
-          "start": "2026-10-27T19:30:00.000Z",
-          "match": "Valencia – Fenerbahce",
-          "market": "prop",
-          "side": "over",
-          "line": 3.5,
-          "stat": "reb",
-          "playerId": "007831",
-          "player": "Shavon Shields",
-          "team": "ULK",
-          "label": "Shavon Shields más de 3.5 rebotes",
-          "odd": 1.64,
-          "pFinal": 0.598,
-          "book": "unibet (Kambi)"
-        }
-      ],
-      "odd": 3.78,
-      "prob": 0.255,
-      "ev": -0.038,
-      "start": "2026-10-27T19:30:00.000Z",
-      "createdAt": "2026-10-27T19:27:49.100Z"
-    },
-    {
-      "type": "segura",
-      "legs": [
-        {
-          "id": "el:E2026_80|prop|over|9.5|012707|pts",
-          "gameId": "el:E2026_80",
-          "start": "2026-10-28T19:30:00.000Z",
-          "match": "Virtus Bologna – Zalgiris",
-          "market": "prop",
-          "side": "over",
-          "line": 9.5,
-          "stat": "pts",
-          "playerId": "012707",
-          "player": "Marcus Carr",
-          "team": "VIR",
-          "label": "Marcus Carr más de 9.5 puntos",
-          "odd": 1.32,
-          "pFinal": 0.741,
-          "book": "unibet (Kambi)"
-        },
-        {
-          "id": "el:E2026_77|prop|over|3.5|008987|reb",
-          "gameId": "el:E2026_77",
-          "start": "2026-10-28T18:00:00.000Z",
-          "match": "Hapoel TLV – Anadolu Efes",
-          "market": "prop",
-          "side": "over",
-          "line": 3.5,
-          "stat": "reb",
-          "playerId": "008987",
-          "player": "Zach Leday",
-          "team": "HTA",
-          "label": "Zach Leday más de 3.5 rebotes",
-          "odd": 1.44,
-          "pFinal": 0.685,
-          "book": "unibet (Kambi)"
-        }
-      ],
-      "odd": 1.9,
-      "prob": 0.508,
-      "ev": -0.035,
-      "start": "2026-10-28T18:00:00.000Z",
-      "createdAt": "2026-10-27T23:48:46.141Z"
-    },
-    {
-      "type": "valor",
-      "legs": [
-        {
-          "id": "el:E2026_80|prop|over|9.5|012707|pts",
-          "gameId": "el:E2026_80",
-          "start": "2026-10-28T19:30:00.000Z",
-          "match": "Virtus Bologna – Zalgiris",
-          "market": "prop",
-          "side": "over",
-          "line": 9.5,
-          "stat": "pts",
-          "playerId": "012707",
-          "player": "Marcus Carr",
-          "team": "VIR",
-          "label": "Marcus Carr más de 9.5 puntos",
-          "odd": 1.32,
-          "pFinal": 0.741,
-          "book": "unibet (Kambi)"
-        },
-        {
-          "id": "el:E2026_77|prop|over|3.5|008987|reb",
-          "gameId": "el:E2026_77",
-          "start": "2026-10-28T18:00:00.000Z",
-          "match": "Hapoel TLV – Anadolu Efes",
-          "market": "prop",
-          "side": "over",
-          "line": 3.5,
-          "stat": "reb",
-          "playerId": "008987",
-          "player": "Zach Leday",
-          "team": "HTA",
-          "label": "Zach Leday más de 3.5 rebotes",
-          "odd": 1.44,
-          "pFinal": 0.685,
-          "book": "unibet (Kambi)"
-        },
-        {
-          "id": "el:E2026_78|prop|over|9.5|014009|pts",
-          "gameId": "el:E2026_78",
-          "start": "2026-10-28T19:00:00.000Z",
-          "match": "LDLC ASVEL – Partizan",
-          "market": "prop",
-          "side": "over",
-          "line": 9.5,
-          "stat": "pts",
-          "playerId": "014009",
-          "player": "Lamar Stevens",
-          "team": "PAR",
-          "label": "Lamar Stevens más de 9.5 puntos",
-          "odd": 1.76,
-          "pFinal": 0.579,
-          "book": "unibet (Kambi)"
-        }
-      ],
-      "odd": 3.35,
-      "prob": 0.294,
-      "ev": -0.017,
-      "start": "2026-10-28T18:00:00.000Z",
-      "createdAt": "2026-10-27T23:48:46.141Z"
-    },
-    {
       "type": "jugadores",
       "legs": [
         {
@@ -1283,6 +1093,164 @@
           "player": "Marcus Carr",
           "team": "VIR",
           "label": "Marcus Carr más de 9.5 puntos",
+          "odd": 1.3,
+          "pFinal": 0.75,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "el:E2026_78|prop|over|14.5|013369|pts",
+          "gameId": "el:E2026_78",
+          "start": "2026-10-28T19:00:00.000Z",
+          "match": "LDLC ASVEL – Partizan",
+          "market": "prop",
+          "side": "over",
+          "line": 14.5,
+          "stat": "pts",
+          "playerId": "013369",
+          "player": "Carlik Jones",
+          "team": "PAR",
+          "label": "Carlik Jones más de 14.5 puntos",
+          "odd": 1.72,
+          "pFinal": 0.575,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.24,
+      "prob": 0.431,
+      "ev": -0.036,
+      "start": "2026-10-28T19:00:00.000Z",
+      "createdAt": "2026-10-28T18:17:17.342Z"
+    }
+  ],
+  "comboRecord": [
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "el:E2026_77|ml|home|||",
+          "gameId": "el:E2026_77",
+          "start": "2026-10-28T18:00:00.000Z",
+          "match": "Hapoel TLV – Anadolu Efes",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana Hapoel TLV",
+          "odd": 1.43,
+          "pFinal": 0.688,
+          "book": "betfair_ex_uk"
+        },
+        {
+          "id": "el:E2026_73|prop|over|3.5|007027|ast",
+          "gameId": "el:E2026_73",
+          "start": "2026-10-27T20:00:00.000Z",
+          "match": "Baskonia – Real Madrid",
+          "market": "prop",
+          "side": "over",
+          "line": 3.5,
+          "stat": "ast",
+          "playerId": "007027",
+          "player": "Theo Maledon",
+          "team": "MAD",
+          "label": "Theo Maledon más de 3.5 asistencias",
+          "odd": 1.61,
+          "pFinal": 0.619,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.3,
+      "prob": 0.426,
+      "ev": -0.02,
+      "start": "2026-10-27T20:00:00.000Z",
+      "createdAt": "2026-10-27T19:27:49.100Z",
+      "result": "W",
+      "oddFinal": 2.3,
+      "legStates": [
+        "W",
+        "W"
+      ],
+      "settledAt": "2026-10-28T19:56:36.165Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "el:E2026_77|ml|home|||",
+          "gameId": "el:E2026_77",
+          "start": "2026-10-28T18:00:00.000Z",
+          "match": "Hapoel TLV – Anadolu Efes",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana Hapoel TLV",
+          "odd": 1.43,
+          "pFinal": 0.688,
+          "book": "betfair_ex_uk"
+        },
+        {
+          "id": "el:E2026_73|prop|over|3.5|007027|ast",
+          "gameId": "el:E2026_73",
+          "start": "2026-10-27T20:00:00.000Z",
+          "match": "Baskonia – Real Madrid",
+          "market": "prop",
+          "side": "over",
+          "line": 3.5,
+          "stat": "ast",
+          "playerId": "007027",
+          "player": "Theo Maledon",
+          "team": "MAD",
+          "label": "Theo Maledon más de 3.5 asistencias",
+          "odd": 1.61,
+          "pFinal": 0.619,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "el:E2026_75|prop|over|3.5|007831|reb",
+          "gameId": "el:E2026_75",
+          "start": "2026-10-27T19:30:00.000Z",
+          "match": "Valencia – Fenerbahce",
+          "market": "prop",
+          "side": "over",
+          "line": 3.5,
+          "stat": "reb",
+          "playerId": "007831",
+          "player": "Shavon Shields",
+          "team": "ULK",
+          "label": "Shavon Shields más de 3.5 rebotes",
+          "odd": 1.64,
+          "pFinal": 0.598,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 3.78,
+      "prob": 0.255,
+      "ev": -0.038,
+      "start": "2026-10-27T19:30:00.000Z",
+      "createdAt": "2026-10-27T19:27:49.100Z",
+      "result": "W",
+      "oddFinal": 3.78,
+      "legStates": [
+        "W",
+        "W",
+        "W"
+      ],
+      "settledAt": "2026-10-28T19:56:36.165Z"
+    },
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "el:E2026_80|prop|over|9.5|012707|pts",
+          "gameId": "el:E2026_80",
+          "start": "2026-10-28T19:30:00.000Z",
+          "match": "Virtus Bologna – Zalgiris",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pts",
+          "playerId": "012707",
+          "player": "Marcus Carr",
+          "team": "VIR",
+          "label": "Marcus Carr más de 9.5 puntos",
           "odd": 1.32,
           "pFinal": 0.741,
           "book": "unibet (Kambi)"
@@ -1309,7 +1277,131 @@
       "prob": 0.508,
       "ev": -0.035,
       "start": "2026-10-28T18:00:00.000Z",
-      "createdAt": "2026-10-28T11:47:28.785Z"
+      "createdAt": "2026-10-27T23:48:46.141Z",
+      "result": "L",
+      "legStates": [
+        null,
+        "L"
+      ],
+      "settledAt": "2026-10-28T19:56:36.165Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "el:E2026_80|prop|over|9.5|012707|pts",
+          "gameId": "el:E2026_80",
+          "start": "2026-10-28T19:30:00.000Z",
+          "match": "Virtus Bologna – Zalgiris",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pts",
+          "playerId": "012707",
+          "player": "Marcus Carr",
+          "team": "VIR",
+          "label": "Marcus Carr más de 9.5 puntos",
+          "odd": 1.32,
+          "pFinal": 0.741,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "el:E2026_77|prop|over|3.5|008987|reb",
+          "gameId": "el:E2026_77",
+          "start": "2026-10-28T18:00:00.000Z",
+          "match": "Hapoel TLV – Anadolu Efes",
+          "market": "prop",
+          "side": "over",
+          "line": 3.5,
+          "stat": "reb",
+          "playerId": "008987",
+          "player": "Zach Leday",
+          "team": "HTA",
+          "label": "Zach Leday más de 3.5 rebotes",
+          "odd": 1.44,
+          "pFinal": 0.685,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "el:E2026_78|prop|over|9.5|014009|pts",
+          "gameId": "el:E2026_78",
+          "start": "2026-10-28T19:00:00.000Z",
+          "match": "LDLC ASVEL – Partizan",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pts",
+          "playerId": "014009",
+          "player": "Lamar Stevens",
+          "team": "PAR",
+          "label": "Lamar Stevens más de 9.5 puntos",
+          "odd": 1.76,
+          "pFinal": 0.579,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 3.35,
+      "prob": 0.294,
+      "ev": -0.017,
+      "start": "2026-10-28T18:00:00.000Z",
+      "createdAt": "2026-10-27T23:48:46.141Z",
+      "result": "L",
+      "legStates": [
+        null,
+        "L",
+        null
+      ],
+      "settledAt": "2026-10-28T19:56:36.165Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "el:E2026_80|prop|over|9.5|012707|pts",
+          "gameId": "el:E2026_80",
+          "start": "2026-10-28T19:30:00.000Z",
+          "match": "Virtus Bologna – Zalgiris",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pts",
+          "playerId": "012707",
+          "player": "Marcus Carr",
+          "team": "VIR",
+          "label": "Marcus Carr más de 9.5 puntos",
+          "odd": 1.32,
+          "pFinal": 0.741,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "el:E2026_77|prop|over|3.5|008987|reb",
+          "gameId": "el:E2026_77",
+          "start": "2026-10-28T18:00:00.000Z",
+          "match": "Hapoel TLV – Anadolu Efes",
+          "market": "prop",
+          "side": "over",
+          "line": 3.5,
+          "stat": "reb",
+          "playerId": "008987",
+          "player": "Zach Leday",
+          "team": "HTA",
+          "label": "Zach Leday más de 3.5 rebotes",
+          "odd": 1.44,
+          "pFinal": 0.685,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.9,
+      "prob": 0.508,
+      "ev": -0.035,
+      "start": "2026-10-28T18:00:00.000Z",
+      "createdAt": "2026-10-28T11:47:28.785Z",
+      "result": "L",
+      "legStates": [
+        null,
+        "L"
+      ],
+      "settledAt": "2026-10-28T19:56:36.165Z"
     },
     {
       "type": "valor",
@@ -1366,54 +1458,15 @@
       "prob": 0.292,
       "ev": -0.011,
       "start": "2026-10-28T18:00:00.000Z",
-      "createdAt": "2026-10-28T16:55:04.574Z"
-    },
-    {
-      "type": "jugadores",
-      "legs": [
-        {
-          "id": "el:E2026_80|prop|over|9.5|012707|pts",
-          "gameId": "el:E2026_80",
-          "start": "2026-10-28T19:30:00.000Z",
-          "match": "Virtus Bologna – Zalgiris",
-          "market": "prop",
-          "side": "over",
-          "line": 9.5,
-          "stat": "pts",
-          "playerId": "012707",
-          "player": "Marcus Carr",
-          "team": "VIR",
-          "label": "Marcus Carr más de 9.5 puntos",
-          "odd": 1.3,
-          "pFinal": 0.75,
-          "book": "unibet (Kambi)"
-        },
-        {
-          "id": "el:E2026_78|prop|over|14.5|013369|pts",
-          "gameId": "el:E2026_78",
-          "start": "2026-10-28T19:00:00.000Z",
-          "match": "LDLC ASVEL – Partizan",
-          "market": "prop",
-          "side": "over",
-          "line": 14.5,
-          "stat": "pts",
-          "playerId": "013369",
-          "player": "Carlik Jones",
-          "team": "PAR",
-          "label": "Carlik Jones más de 14.5 puntos",
-          "odd": 1.72,
-          "pFinal": 0.575,
-          "book": "unibet (Kambi)"
-        }
+      "createdAt": "2026-10-28T16:55:04.574Z",
+      "result": "L",
+      "legStates": [
+        null,
+        "L",
+        null
       ],
-      "odd": 2.24,
-      "prob": 0.431,
-      "ev": -0.036,
-      "start": "2026-10-28T19:00:00.000Z",
-      "createdAt": "2026-10-28T18:17:17.342Z"
-    }
-  ],
-  "comboRecord": [
+      "settledAt": "2026-10-28T19:56:36.165Z"
+    },
     {
       "type": "segura",
       "legs": [
