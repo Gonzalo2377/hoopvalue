@@ -2017,23 +2017,6 @@
         "image": true,
         "picks": [
           {
-            "id": "nba:401909890|prop|over|15.5|4433627|pts",
-            "league": "nba",
-            "label": "K. George +15.5 puntos",
-            "list": "K. George +15.5 Pts",
-            "odd": 1.3,
-            "start": "2026-10-29T01:00Z",
-            "gameId": "nba:401909890",
-            "market": "prop",
-            "side": "over",
-            "line": 15.5,
-            "stat": "pts",
-            "playerId": "4433627",
-            "team": "UTAH",
-            "match": "Jazz – Spurs",
-            "pFinal": 0.746
-          },
-          {
             "id": "nba:401909884|prop|over|7.5|4396909|pts",
             "league": "nba",
             "label": "A. Nesmith +7.5 puntos",
@@ -2066,23 +2049,6 @@
             "team": "MIN",
             "match": "Timberwolves – Warriors",
             "pFinal": 0.762
-          },
-          {
-            "id": "nba:401909886|prop|over|24.5|3934672|pr",
-            "league": "nba",
-            "label": "J. Brunson +24.5 pts+reb",
-            "list": "J. Brunson +24.5 P+R",
-            "odd": 1.32,
-            "start": "2026-10-29T00:00Z",
-            "gameId": "nba:401909886",
-            "market": "prop",
-            "side": "over",
-            "line": 24.5,
-            "stat": "pr",
-            "playerId": "3934672",
-            "team": "NY",
-            "match": "Bulls – Knicks",
-            "pFinal": 0.737
           },
           {
             "id": "nba:401909889|prop|over|19.5|4395628|pr",
@@ -2187,23 +2153,6 @@
             "pFinal": 0.709
           },
           {
-            "id": "nba:401909890|prop|over|9.5|4873138|pts",
-            "league": "nba",
-            "label": "A. Bailey +9.5 puntos",
-            "list": "A. Bailey +9.5 Pts",
-            "odd": 1.36,
-            "start": "2026-10-29T01:00Z",
-            "gameId": "nba:401909890",
-            "market": "prop",
-            "side": "over",
-            "line": 9.5,
-            "stat": "pts",
-            "playerId": "4873138",
-            "team": "UTAH",
-            "match": "Jazz – Spurs",
-            "pFinal": 0.719
-          },
-          {
             "id": "nba:401909881|prop|over|14.5|4278053|pa",
             "league": "nba",
             "label": "D. Mitchell +14.5 pts+ast",
@@ -2238,6 +2187,23 @@
             "pFinal": 0.717
           },
           {
+            "id": "nba:401909890|prop|over|9.5|4873138|pts",
+            "league": "nba",
+            "label": "A. Bailey +9.5 puntos",
+            "list": "A. Bailey +9.5 Pts",
+            "odd": 1.37,
+            "start": "2026-10-29T01:00Z",
+            "gameId": "nba:401909890",
+            "market": "prop",
+            "side": "over",
+            "line": 9.5,
+            "stat": "pts",
+            "playerId": "4873138",
+            "team": "UTAH",
+            "match": "Jazz – Spurs",
+            "pFinal": 0.715
+          },
+          {
             "id": "nba:401909888|prop|over|13.5|5175737|pts",
             "league": "nba",
             "label": "Y. Lendeborg +13.5 puntos",
@@ -2259,7 +2225,7 @@
             "league": "nba",
             "label": "D. Robinson +0.5 triples",
             "list": "D. Robinson +0.5 T3",
-            "odd": 1.36,
+            "odd": 1.35,
             "start": "2026-10-28T23:00Z",
             "gameId": "nba:401909883",
             "market": "prop",
@@ -2269,7 +2235,41 @@
             "playerId": "3157465",
             "team": "DET",
             "match": "Pistons – Hornets",
-            "pFinal": 0.737
+            "pFinal": 0.741
+          },
+          {
+            "id": "nba:401909886|prop|over|19.5|3934719|pr",
+            "league": "nba",
+            "label": "O. Anunoby +19.5 pts+reb",
+            "list": "O. Anunoby +19.5 P+R",
+            "odd": 1.41,
+            "start": "2026-10-29T00:00Z",
+            "gameId": "nba:401909886",
+            "market": "prop",
+            "side": "over",
+            "line": 19.5,
+            "stat": "pr",
+            "playerId": "3934719",
+            "team": "NY",
+            "match": "Bulls – Knicks",
+            "pFinal": 0.689
+          },
+          {
+            "id": "nba:401909887|prop|over|14.5|4591725|pa",
+            "league": "nba",
+            "label": "R. Rollins +14.5 pts+ast",
+            "list": "R. Rollins +14.5 P+A",
+            "odd": 1.36,
+            "start": "2026-10-29T00:00Z",
+            "gameId": "nba:401909887",
+            "market": "prop",
+            "side": "over",
+            "line": 14.5,
+            "stat": "pa",
+            "playerId": "4591725",
+            "team": "MIL",
+            "match": "Bucks – Rockets",
+            "pFinal": 0.734
           },
           {
             "id": "nba:401909889|prop|over|9.5|3907497|ra",
@@ -2289,45 +2289,11 @@
             "pFinal": 0.685
           },
           {
-            "id": "nba:401909886|prop|over|19.5|3934719|pr",
-            "league": "nba",
-            "label": "O. Anunoby +19.5 pts+reb",
-            "list": "O. Anunoby +19.5 P+R",
-            "odd": 1.42,
-            "start": "2026-10-29T00:00Z",
-            "gameId": "nba:401909886",
-            "market": "prop",
-            "side": "over",
-            "line": 19.5,
-            "stat": "pr",
-            "playerId": "3934719",
-            "team": "NY",
-            "match": "Bulls – Knicks",
-            "pFinal": 0.686
-          },
-          {
-            "id": "nba:401909887|prop|over|14.5|4591725|pa",
-            "league": "nba",
-            "label": "R. Rollins +14.5 pts+ast",
-            "list": "R. Rollins +14.5 P+A",
-            "odd": 1.37,
-            "start": "2026-10-29T00:00Z",
-            "gameId": "nba:401909887",
-            "market": "prop",
-            "side": "over",
-            "line": 14.5,
-            "stat": "pa",
-            "playerId": "4591725",
-            "team": "MIL",
-            "match": "Bucks – Rockets",
-            "pFinal": 0.73
-          },
-          {
             "id": "nba:401909887|prop|over|5.5|5105623|reb",
             "league": "nba",
             "label": "K. Ware +5.5 rebotes",
             "list": "K. Ware +5.5 Reb",
-            "odd": 1.42,
+            "odd": 1.41,
             "start": "2026-10-29T00:00Z",
             "gameId": "nba:401909887",
             "market": "prop",
@@ -2337,7 +2303,7 @@
             "playerId": "5105623",
             "team": "MIL",
             "match": "Bucks – Rockets",
-            "pFinal": 0.685
+            "pFinal": 0.688
           },
           {
             "id": "nba:401909892|prop|over|24.5|4066457|pa",
@@ -2357,6 +2323,23 @@
             "pFinal": 0.687
           },
           {
+            "id": "nba:401909886|prop|over|9.5|4395626|pa",
+            "league": "nba",
+            "label": "T. Jones +9.5 pts+ast",
+            "list": "T. Jones +9.5 P+A",
+            "odd": 1.37,
+            "start": "2026-10-29T00:00Z",
+            "gameId": "nba:401909886",
+            "market": "prop",
+            "side": "over",
+            "line": 9.5,
+            "stat": "pa",
+            "playerId": "4395626",
+            "team": "CHI",
+            "match": "Bulls – Knicks",
+            "pFinal": 0.735
+          },
+          {
             "id": "nba:401909885|prop|over|14.5|5093267|pra",
             "league": "nba",
             "label": "C. Murray-Boyles +14.5 pts+reb+ast",
@@ -2372,6 +2355,23 @@
             "team": "TOR",
             "match": "Raptors – Magic",
             "pFinal": 0.667
+          },
+          {
+            "id": "nba:401909890|prop|over|13.5|5037871|pts",
+            "league": "nba",
+            "label": "D. Harper +13.5 puntos",
+            "list": "D. Harper +13.5 Pts",
+            "odd": 1.47,
+            "start": "2026-10-29T01:00Z",
+            "gameId": "nba:401909890",
+            "market": "prop",
+            "side": "over",
+            "line": 13.5,
+            "stat": "pts",
+            "playerId": "5037871",
+            "team": "SA",
+            "match": "Jazz – Spurs",
+            "pFinal": 0.666
           },
           {
             "id": "nba:401909891|prop|under|3.5|4683778|tpm",
@@ -2450,7 +2450,7 @@
             "side": "home",
             "line": null,
             "match": "Hawks – Heat",
-            "pFinal": 0.592
+            "pFinal": 0.598
           },
           {
             "id": "nba:401909891|spread|home|6.5||",
@@ -2467,7 +2467,7 @@
             "pFinal": 0.562
           }
         ],
-        "text": "🏀 NBA Picks Day · 28/10\n\n1.- K. George +15.5 Pts @1.30\n2.- A. Nesmith +7.5 Pts @1.32\n3.- T. Shannon Jr. +3.5 Pts @1.30\n4.- J. Brunson +24.5 P+R @1.32\n5.- Z. Williamson +19.5 P+R @1.32\n6.- T. Johnson +5.5 Pts @1.33\n…+21 more en las fotos 📸\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 28/10\n\n1.- A. Nesmith +7.5 Pts @1.32\n2.- T. Shannon Jr. +3.5 Pts @1.30\n3.- Z. Williamson +19.5 P+R @1.32\n4.- T. Johnson +5.5 Pts @1.33\n5.- P. Siakam +17.5 Pts @1.36\n6.- N. Reid +13.5 Pts @1.32\n7.- D. Mitchell +3.5 Reb @1.38\n…+20 more en las fotos 📸\n#NBA · +18"
       }
     }
   }

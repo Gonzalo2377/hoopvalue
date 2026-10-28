@@ -1355,6 +1355,24 @@
       "stat": "pts",
       "playerId": "5142620",
       "createdAt": "2026-10-28T14:49:13.436Z"
+    },
+    {
+      "id": "nba:401909890|prop|over|13.5|5037871|pts",
+      "gameId": "nba:401909890",
+      "start": "2026-10-29T01:00Z",
+      "match": "Jazz – Spurs",
+      "market": "prop",
+      "side": "over",
+      "line": 13.5,
+      "label": "Dylan Harper más de 13.5 puntos",
+      "odd": 1.47,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.666,
+      "safety": 0.602,
+      "tier": "C",
+      "stat": "pts",
+      "playerId": "5037871",
+      "createdAt": "2026-10-28T15:09:44.411Z"
     }
   ],
   "record": [
@@ -7405,6 +7423,111 @@
       "ev": -0.039,
       "start": "2026-10-29T00:00Z",
       "createdAt": "2026-10-28T14:49:13.436Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909888|prop|over|3.5|4432847|pts",
+          "gameId": "nba:401909888",
+          "start": "2026-10-29T00:00Z",
+          "match": "Timberwolves – Warriors",
+          "market": "prop",
+          "side": "over",
+          "line": 3.5,
+          "stat": "pts",
+          "playerId": "4432847",
+          "player": "Terrence Shannon Jr.",
+          "team": "MIN",
+          "label": "Terrence Shannon Jr. más de 3.5 puntos",
+          "odd": 1.3,
+          "pFinal": 0.762,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909881|prop|over|14.5|4278053|pa",
+          "gameId": "nba:401909881",
+          "start": "2026-10-28T23:00Z",
+          "match": "Hawks – Heat",
+          "market": "prop",
+          "side": "over",
+          "line": 14.5,
+          "stat": "pa",
+          "playerId": "4278053",
+          "player": "Davion Mitchell",
+          "team": "MIA",
+          "label": "Davion Mitchell más de 14.5 pts+ast",
+          "odd": 1.32,
+          "pFinal": 0.754,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909883|prop|over|0.5|3157465|tpm",
+          "gameId": "nba:401909883",
+          "start": "2026-10-28T23:00Z",
+          "match": "Pistons – Hornets",
+          "market": "prop",
+          "side": "over",
+          "line": 0.5,
+          "stat": "tpm",
+          "playerId": "3157465",
+          "player": "Duncan Robinson",
+          "team": "DET",
+          "label": "Duncan Robinson más de 0.5 triples",
+          "odd": 1.35,
+          "pFinal": 0.741,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.32,
+      "prob": 0.426,
+      "ev": -0.014,
+      "start": "2026-10-28T23:00Z",
+      "createdAt": "2026-10-28T15:09:44.411Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "nba:401909888|prop|over|3.5|4432847|pts",
+          "gameId": "nba:401909888",
+          "start": "2026-10-29T00:00Z",
+          "match": "Timberwolves – Warriors",
+          "market": "prop",
+          "side": "over",
+          "line": 3.5,
+          "stat": "pts",
+          "playerId": "4432847",
+          "player": "Terrence Shannon Jr.",
+          "team": "MIN",
+          "label": "Terrence Shannon Jr. más de 3.5 puntos",
+          "odd": 1.3,
+          "pFinal": 0.762,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909882|prop|over|5.5|5238230|pts",
+          "gameId": "nba:401909882",
+          "start": "2026-10-28T23:00Z",
+          "match": "Cavaliers – Wizards",
+          "market": "prop",
+          "side": "over",
+          "line": 5.5,
+          "stat": "pts",
+          "playerId": "5238230",
+          "player": "Tre Johnson",
+          "team": "WSH",
+          "label": "Tre Johnson más de 5.5 puntos",
+          "odd": 1.33,
+          "pFinal": 0.744,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.73,
+      "prob": 0.567,
+      "ev": -0.02,
+      "start": "2026-10-28T23:00Z",
+      "createdAt": "2026-10-28T15:09:44.411Z"
     }
   ],
   "comboRecord": [
