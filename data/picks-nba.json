@@ -1607,6 +1607,24 @@
       "stat": "pa",
       "playerId": "3059318",
       "createdAt": "2026-10-28T18:37:51.985Z"
+    },
+    {
+      "id": "nba:401909887|prop|over|29.5|3202|pra",
+      "gameId": "nba:401909887",
+      "start": "2026-10-29T00:00Z",
+      "match": "Bucks – Rockets",
+      "market": "prop",
+      "side": "over",
+      "line": 29.5,
+      "label": "Kevin Durant más de 29.5 pts+reb+ast",
+      "odd": 1.3,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.753,
+      "safety": 0.69,
+      "tier": "A",
+      "stat": "pra",
+      "playerId": "3202",
+      "createdAt": "2026-10-28T18:55:02.765Z"
     }
   ],
   "record": [
