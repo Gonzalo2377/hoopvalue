@@ -312,7 +312,7 @@
     "home": "Pistons",
     "away": "Hornets",
     "ptsH": 111,
-    "ptsA": 101
+    "ptsA": 102
   },
   "nba:401909884": {
     "start": "2026-10-28T23:00Z",
@@ -326,7 +326,7 @@
     "home": "Raptors",
     "away": "Magic",
     "ptsH": 117,
-    "ptsA": 102
+    "ptsA": 103
   },
   "nba:401909886": {
     "start": "2026-10-29T00:00Z",
@@ -374,7 +374,7 @@
     "start": "2026-10-29T02:30Z",
     "home": "Clippers",
     "away": "Lakers",
-    "ptsH": 113,
+    "ptsH": 115,
     "ptsA": 117
   }
 }
