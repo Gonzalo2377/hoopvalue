@@ -2012,7 +2012,7 @@
         "id": "nba-day",
         "kind": "nba-day",
         "league": "nba",
-        "title": "NBA Picks Day · 21 picks",
+        "title": "NBA Picks Day · 22 picks",
         "postAt": "2026-10-28T17:45:00.000Z",
         "image": true,
         "picks": [
@@ -2235,6 +2235,23 @@
             "pFinal": 0.678
           },
           {
+            "id": "nba:401909891|prop|under|3.5|4683778|tpm",
+            "league": "nba",
+            "label": "J. McCain −3.5 triples",
+            "list": "J. McCain −3.5 T3",
+            "odd": 1.53,
+            "start": "2026-10-29T01:30Z",
+            "gameId": "nba:401909891",
+            "market": "prop",
+            "side": "under",
+            "line": 3.5,
+            "stat": "tpm",
+            "playerId": "4683778",
+            "team": "OKC",
+            "match": "Mavericks – Thunder",
+            "pFinal": 0.641
+          },
+          {
             "id": "nba:401909883|prop|under|1.5|3032979|tpm",
             "league": "nba",
             "label": "D. Schroder −1.5 triples",
@@ -2284,23 +2301,6 @@
             "team": "OKC",
             "match": "Mavericks – Thunder",
             "pFinal": 0.655
-          },
-          {
-            "id": "nba:401909891|prop|under|3.5|4683778|tpm",
-            "league": "nba",
-            "label": "J. McCain −3.5 triples",
-            "list": "J. McCain −3.5 T3",
-            "odd": 1.55,
-            "start": "2026-10-29T01:30Z",
-            "gameId": "nba:401909891",
-            "market": "prop",
-            "side": "under",
-            "line": 3.5,
-            "stat": "tpm",
-            "playerId": "4683778",
-            "team": "OKC",
-            "match": "Mavericks – Thunder",
-            "pFinal": 0.634
           },
           {
             "id": "nba:401909885|ml|home|||",
@@ -2355,17 +2355,31 @@
             "league": "nba",
             "label": "Gana Hawks",
             "list": "Gana Hawks",
-            "odd": 1.68,
+            "odd": 1.7,
             "start": "2026-10-28T23:00Z",
             "gameId": "nba:401909881",
             "market": "ml",
             "side": "home",
             "line": null,
             "match": "Hawks – Heat",
-            "pFinal": 0.61
+            "pFinal": 0.606
+          },
+          {
+            "id": "nba:401909891|spread|home|6.5||",
+            "league": "nba",
+            "label": "Mavericks +6.5",
+            "list": "Mavericks +6.5",
+            "odd": 1.87,
+            "start": "2026-10-29T01:30Z",
+            "gameId": "nba:401909891",
+            "market": "spread",
+            "side": "home",
+            "line": 6.5,
+            "match": "Mavericks – Thunder",
+            "pFinal": 0.562
           }
         ],
-        "text": "🏀 NBA Picks Day · 28/10\n\n1.- Gana Pistons @1.39\n2.- N. Reid +13.5 Pts @1.30\n3.- Z. Williamson +19.5 P+R @1.32\n4.- D. Mitchell +3.5 Reb @1.37\n5.- D. Murray +9.5 R+A @1.38\n6.- K. George +14.5 P+R @1.32\n7.- T. Maxey +19.5 Pts @1.33\n…+14 more en las fotos 📸\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 28/10\n\n1.- Gana Pistons @1.39\n2.- N. Reid +13.5 Pts @1.30\n3.- Z. Williamson +19.5 P+R @1.32\n4.- D. Mitchell +3.5 Reb @1.37\n5.- D. Murray +9.5 R+A @1.38\n6.- K. George +14.5 P+R @1.32\n7.- T. Maxey +19.5 Pts @1.33\n…+15 more en las fotos 📸\n#NBA · +18"
       }
     }
   }
