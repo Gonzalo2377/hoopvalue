@@ -1373,6 +1373,24 @@
       "stat": "pts",
       "playerId": "5037871",
       "createdAt": "2026-10-28T15:09:44.411Z"
+    },
+    {
+      "id": "nba:401909882|prop|over|13.5|4432158|pts",
+      "gameId": "nba:401909882",
+      "start": "2026-10-28T23:00Z",
+      "match": "Cavaliers – Wizards",
+      "market": "prop",
+      "side": "over",
+      "line": 13.5,
+      "label": "Evan Mobley más de 13.5 puntos",
+      "odd": 1.34,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.725,
+      "safety": 0.679,
+      "tier": "B",
+      "stat": "pts",
+      "playerId": "4432158",
+      "createdAt": "2026-10-28T16:11:34.367Z"
     }
   ],
   "record": [
