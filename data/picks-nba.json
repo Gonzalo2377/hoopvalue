@@ -1751,6 +1751,24 @@
       "stat": "pts",
       "playerId": "5104155",
       "createdAt": "2026-10-28T20:37:53.289Z"
+    },
+    {
+      "id": "nba:401909886|prop|over|11.5|4711294|pts",
+      "gameId": "nba:401909886",
+      "start": "2026-10-29T00:00Z",
+      "match": "Bulls – Knicks",
+      "market": "prop",
+      "side": "over",
+      "line": 11.5,
+      "label": "Matas Buzelis más de 11.5 puntos",
+      "odd": 1.45,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.673,
+      "safety": 0.614,
+      "tier": "B",
+      "stat": "pts",
+      "playerId": "4711294",
+      "createdAt": "2026-10-28T20:58:29.886Z"
     }
   ],
   "record": [
