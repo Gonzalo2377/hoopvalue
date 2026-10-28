@@ -7528,6 +7528,111 @@
       "ev": -0.02,
       "start": "2026-10-28T23:00Z",
       "createdAt": "2026-10-28T15:09:44.411Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909888|prop|over|3.5|4432847|pts",
+          "gameId": "nba:401909888",
+          "start": "2026-10-29T00:00Z",
+          "match": "Timberwolves – Warriors",
+          "market": "prop",
+          "side": "over",
+          "line": 3.5,
+          "stat": "pts",
+          "playerId": "4432847",
+          "player": "Terrence Shannon Jr.",
+          "team": "MIN",
+          "label": "Terrence Shannon Jr. más de 3.5 puntos",
+          "odd": 1.3,
+          "pFinal": 0.762,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909881|prop|over|14.5|4278053|pa",
+          "gameId": "nba:401909881",
+          "start": "2026-10-28T23:00Z",
+          "match": "Hawks – Heat",
+          "market": "prop",
+          "side": "over",
+          "line": 14.5,
+          "stat": "pa",
+          "playerId": "4278053",
+          "player": "Davion Mitchell",
+          "team": "MIA",
+          "label": "Davion Mitchell más de 14.5 pts+ast",
+          "odd": 1.32,
+          "pFinal": 0.754,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909887|prop|over|14.5|4591725|pa",
+          "gameId": "nba:401909887",
+          "start": "2026-10-29T00:00Z",
+          "match": "Bucks – Rockets",
+          "market": "prop",
+          "side": "over",
+          "line": 14.5,
+          "stat": "pa",
+          "playerId": "4591725",
+          "player": "Ryan Rollins",
+          "team": "MIL",
+          "label": "Ryan Rollins más de 14.5 pts+ast",
+          "odd": 1.36,
+          "pFinal": 0.734,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.33,
+      "prob": 0.422,
+      "ev": -0.016,
+      "start": "2026-10-28T23:00Z",
+      "createdAt": "2026-10-28T15:30:18.609Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "nba:401909883|prop|over|13.5|4396971|pts",
+          "gameId": "nba:401909883",
+          "start": "2026-10-28T23:00Z",
+          "match": "Pistons – Hornets",
+          "market": "prop",
+          "side": "over",
+          "line": 13.5,
+          "stat": "pts",
+          "playerId": "4396971",
+          "player": "Naz Reid",
+          "team": "CHA",
+          "label": "Naz Reid más de 13.5 puntos",
+          "odd": 1.3,
+          "pFinal": 0.75,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909888|prop|over|3.5|4432847|pts",
+          "gameId": "nba:401909888",
+          "start": "2026-10-29T00:00Z",
+          "match": "Timberwolves – Warriors",
+          "market": "prop",
+          "side": "over",
+          "line": 3.5,
+          "stat": "pts",
+          "playerId": "4432847",
+          "player": "Terrence Shannon Jr.",
+          "team": "MIN",
+          "label": "Terrence Shannon Jr. más de 3.5 puntos",
+          "odd": 1.3,
+          "pFinal": 0.762,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.69,
+      "prob": 0.572,
+      "ev": -0.034,
+      "start": "2026-10-28T23:00Z",
+      "createdAt": "2026-10-28T15:30:18.609Z"
     }
   ],
   "comboRecord": [
