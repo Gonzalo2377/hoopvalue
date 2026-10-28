@@ -1367,6 +1367,50 @@
       "ev": -0.011,
       "start": "2026-10-28T18:00:00.000Z",
       "createdAt": "2026-10-28T16:55:04.574Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "el:E2026_80|prop|over|9.5|012707|pts",
+          "gameId": "el:E2026_80",
+          "start": "2026-10-28T19:30:00.000Z",
+          "match": "Virtus Bologna – Zalgiris",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pts",
+          "playerId": "012707",
+          "player": "Marcus Carr",
+          "team": "VIR",
+          "label": "Marcus Carr más de 9.5 puntos",
+          "odd": 1.3,
+          "pFinal": 0.75,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "el:E2026_78|prop|over|14.5|013369|pts",
+          "gameId": "el:E2026_78",
+          "start": "2026-10-28T19:00:00.000Z",
+          "match": "LDLC ASVEL – Partizan",
+          "market": "prop",
+          "side": "over",
+          "line": 14.5,
+          "stat": "pts",
+          "playerId": "013369",
+          "player": "Carlik Jones",
+          "team": "PAR",
+          "label": "Carlik Jones más de 14.5 puntos",
+          "odd": 1.72,
+          "pFinal": 0.575,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.24,
+      "prob": 0.431,
+      "ev": -0.036,
+      "start": "2026-10-28T19:00:00.000Z",
+      "createdAt": "2026-10-28T18:17:17.342Z"
     }
   ],
   "comboRecord": [
