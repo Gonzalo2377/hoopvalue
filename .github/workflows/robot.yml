@@ -1,10 +1,9 @@
 name: Robot Euroliga
 
-# Una pasada CADA HORA (GitHub retrasa o se salta a veces las ejecuciones programadas;
-# así, si una se pierde, la siguiente lo recoge). En cada pasada: histórico, liquidación,
-# picks, jugadores y publicaciones de /x. Las cuotas de The Odds API (de pago por créditos)
-# solo se piden cada 5 horas; el resto de pasadas reutiliza las guardadas.
-# Cada pasada hace Euroliga y NBA (la NBA usa cuotas gratis: Unibet/Kambi + DraftKings).
+# GitHub lanza el cron "cada hora" solo cada 4-6 horas en la práctica, así que cada ejecución
+# se queda en bucle haciendo una pasada cada 20 minutos durante ~5 h 40 min (robot/cycle.sh):
+# histórico, liquidación, picks, jugadores, publicaciones de /x, guardar y publicar en Cloudflare.
+# Una ejecución nueva sustituye a la anterior. Las cuotas de The Odds API solo se piden cada 5 h.
 # Para dispararlo a mano: pestaña Actions → Robot Euroliga → Run workflow.
 # También se lanza solo al subir cambios de código (no con los commits de datos del robot).
 # Publicaciones para X: robot/social.js prepara textos e imágenes del día en la página /x (gratis, sin API de X).
@@ -22,11 +21,12 @@ permissions:
 
 concurrency:
   group: robot
-  cancel-in-progress: false
+  cancel-in-progress: true          # una ejecución nueva sustituye al bucle anterior
 
 jobs:
   run:
     runs-on: ubuntu-latest
+    timeout-minutes: 358
     env:
       CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
     steps:
@@ -34,37 +34,20 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Ejecutar robot
+      - name: Robot en bucle (cada 20 min durante ~5 h 45 min)
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           ODDS_REGIONS: eu,uk
-        run: node robot/daily.js
-      - name: Ejecutar robot NBA
-        continue-on-error: true            # si la NBA falla, la Euroliga se publica igual
-        run: node robot/daily-nba.js
-      - name: Preparar publicaciones para X (página /x)
-        continue-on-error: true
-        run: node robot/social.js
-      - name: Recalibrar modelo (lunes)
-        run: |
-          if [ "$(date -u +%u)" = "1" ] && [ "$(date -u +%H)" = "07" ]; then node robot/backtest.js; node robot/backtest.js nba; fi
-      - name: Guardar cambios
-        run: |
-          git config user.name  "hoopvalue-bot"
-          git config user.email "bot@users.noreply.github.com"
-          git add data public/data
-          if git diff --staged --quiet; then echo "Sin cambios."; exit 0; fi
-          git commit -m "chore: robot euroliga"
-          for i in 1 2 3; do
-            git pull --rebase --autostash origin main && git push && break
-            echo "push rechazado, reintento $i…"; sleep 5
-          done
-      - name: Publicar en Cloudflare Pages (directo, sin esperar la cola)
-        if: env.CF_TOKEN != ''
-        env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: 1a88c5eceac0c86645d67e73c1038e8f
         run: |
-          # EuroPicks (dirección principal) + hoopvalue (la antigua, para no romper enlaces)
+          git config user.name  "hoopvalue-bot"
+          git config user.email "bot@users.noreply.github.com"
           npx --yes wrangler@3 pages project create europicks --production-branch=main >/dev/null 2>&1 || true
-          for p in europicks hoopvalue; do npx --yes wrangler@3 pages deploy public --project-name=$p --branch=main --commit-dirty=true; done
+          END=$(( $(date +%s) + 345*60 ))
+          while :; do
+            echo "── pasada $(date -u +%H:%M) UTC ──"
+            bash robot/cycle.sh
+            [ $(( $(date +%s) + 20*60 )) -lt $END ] || break
+            sleep 1200
+          done
