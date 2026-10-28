@@ -941,6 +941,24 @@
       "safety": 0.411,
       "tier": "C",
       "createdAt": "2026-10-28T12:48:46.634Z"
+    },
+    {
+      "id": "nba:401909885|prop|over|19.5|4395625|pa",
+      "gameId": "nba:401909885",
+      "start": "2026-10-28T23:30Z",
+      "match": "Raptors – Magic",
+      "market": "prop",
+      "side": "over",
+      "line": 19.5,
+      "label": "RJ Barrett más de 19.5 pts+ast",
+      "odd": 1.33,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.746,
+      "safety": 0.66,
+      "tier": "B",
+      "stat": "pa",
+      "playerId": "4395625",
+      "createdAt": "2026-10-28T13:06:42.130Z"
     }
   ],
   "record": [
@@ -6483,6 +6501,67 @@
       "ev": -0.028,
       "start": "2026-10-28T23:00Z",
       "createdAt": "2026-10-28T12:48:46.634Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909890|prop|over|14.5|4433627|pr",
+          "gameId": "nba:401909890",
+          "start": "2026-10-29T01:00Z",
+          "match": "Jazz – Spurs",
+          "market": "prop",
+          "side": "over",
+          "line": 14.5,
+          "stat": "pr",
+          "playerId": "4433627",
+          "player": "Keyonte George",
+          "team": "UTAH",
+          "label": "Keyonte George más de 14.5 pts+reb",
+          "odd": 1.32,
+          "pFinal": 0.755,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909881|prop|over|14.5|4278053|pa",
+          "gameId": "nba:401909881",
+          "start": "2026-10-28T23:00Z",
+          "match": "Hawks – Heat",
+          "market": "prop",
+          "side": "over",
+          "line": 14.5,
+          "stat": "pa",
+          "playerId": "4278053",
+          "player": "Davion Mitchell",
+          "team": "MIA",
+          "label": "Davion Mitchell más de 14.5 pts+ast",
+          "odd": 1.32,
+          "pFinal": 0.754,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909885|prop|over|19.5|4395625|pa",
+          "gameId": "nba:401909885",
+          "start": "2026-10-28T23:30Z",
+          "match": "Raptors – Magic",
+          "market": "prop",
+          "side": "over",
+          "line": 19.5,
+          "stat": "pa",
+          "playerId": "4395625",
+          "player": "RJ Barrett",
+          "team": "TOR",
+          "label": "RJ Barrett más de 19.5 pts+ast",
+          "odd": 1.33,
+          "pFinal": 0.746,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.32,
+      "prob": 0.425,
+      "ev": -0.016,
+      "start": "2026-10-28T23:00Z",
+      "createdAt": "2026-10-28T13:06:42.130Z"
     }
   ],
   "comboRecord": [

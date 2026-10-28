@@ -2012,7 +2012,7 @@
         "id": "nba-day",
         "kind": "nba-day",
         "league": "nba",
-        "title": "NBA Picks Day · 22 picks",
+        "title": "NBA Picks Day · 21 picks",
         "postAt": "2026-10-28T17:45:00.000Z",
         "image": true,
         "picks": [
@@ -2133,23 +2133,6 @@
             "pFinal": 0.735
           },
           {
-            "id": "nba:401909885|prop|over|24.5|4395625|pra",
-            "league": "nba",
-            "label": "R. Barrett +24.5 pts+reb+ast",
-            "list": "R. Barrett +24.5 PRA",
-            "odd": 1.33,
-            "start": "2026-10-28T23:30Z",
-            "gameId": "nba:401909885",
-            "market": "prop",
-            "side": "over",
-            "line": 24.5,
-            "stat": "pra",
-            "playerId": "4395625",
-            "team": "TOR",
-            "match": "Raptors – Magic",
-            "pFinal": 0.745
-          },
-          {
             "id": "nba:401909881|prop|over|14.5|4278053|pa",
             "league": "nba",
             "label": "D. Mitchell +14.5 pts+ast",
@@ -2165,6 +2148,23 @@
             "team": "MIA",
             "match": "Hawks – Heat",
             "pFinal": 0.754
+          },
+          {
+            "id": "nba:401909885|prop|over|19.5|4395625|pa",
+            "league": "nba",
+            "label": "R. Barrett +19.5 pts+ast",
+            "list": "R. Barrett +19.5 P+A",
+            "odd": 1.33,
+            "start": "2026-10-28T23:30Z",
+            "gameId": "nba:401909885",
+            "market": "prop",
+            "side": "over",
+            "line": 19.5,
+            "stat": "pa",
+            "playerId": "4395625",
+            "team": "TOR",
+            "match": "Raptors – Magic",
+            "pFinal": 0.746
           },
           {
             "id": "nba:401909882|prop|over|14.5|5174563|pr",
@@ -2355,31 +2355,17 @@
             "league": "nba",
             "label": "Gana Hawks",
             "list": "Gana Hawks",
-            "odd": 1.65,
+            "odd": 1.68,
             "start": "2026-10-28T23:00Z",
             "gameId": "nba:401909881",
             "market": "ml",
             "side": "home",
             "line": null,
             "match": "Hawks – Heat",
-            "pFinal": 0.619
-          },
-          {
-            "id": "nba:401909891|spread|home|6.5||",
-            "league": "nba",
-            "label": "Mavericks +6.5",
-            "list": "Mavericks +6.5",
-            "odd": 1.87,
-            "start": "2026-10-29T01:30Z",
-            "gameId": "nba:401909891",
-            "market": "spread",
-            "side": "home",
-            "line": 6.5,
-            "match": "Mavericks – Thunder",
-            "pFinal": 0.562
+            "pFinal": 0.61
           }
         ],
-        "text": "🏀 NBA Picks Day · 28/10\n\n1.- Gana Pistons @1.39\n2.- N. Reid +13.5 Pts @1.30\n3.- Z. Williamson +19.5 P+R @1.32\n4.- D. Mitchell +3.5 Reb @1.37\n5.- D. Murray +9.5 R+A @1.38\n6.- K. George +14.5 P+R @1.32\n7.- T. Maxey +19.5 Pts @1.33\n…+15 more en las fotos 📸\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 28/10\n\n1.- Gana Pistons @1.39\n2.- N. Reid +13.5 Pts @1.30\n3.- Z. Williamson +19.5 P+R @1.32\n4.- D. Mitchell +3.5 Reb @1.37\n5.- D. Murray +9.5 R+A @1.38\n6.- K. George +14.5 P+R @1.32\n7.- T. Maxey +19.5 Pts @1.33\n…+14 more en las fotos 📸\n#NBA · +18"
       }
     }
   }
