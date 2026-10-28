@@ -62,6 +62,7 @@ async function load() {
     <div class="card post ${cls}" id="p${i}">
       <div class="row"><span class="when">${hhmm(it.postAt)}</span><span class="sp"></span><span class="state ${cls}">${lbl}</span></div>
       <div class="muted">${esc(it.title)}</div>
+      ${it.reply ? '<p class="count">↳ Respuesta del hilo: en X abre tu post anterior de NBA Picks Day, pulsa <b>Responder</b> y pega este texto con sus fotos.</p>' : ''}
       ${it.image ? `<div class="shots" style="display:none">${shotsOf(it).map((_, k) => `<canvas width="1200" height="675" data-i="${i}" data-k="${k}"></canvas>`).join('')}</div><div class="xprev n${groups(it)[0][1]}" id="xp${i}"></div><div class="count">Vista previa de cómo lo enseña X (${groups(it)[0][1]} foto${groups(it)[0][1] > 1 ? 's' : ''}; al tocar una se ve entera)</div>` : ''}
       <textarea id="t${i}" aria-label="Texto de la publicación">${esc(it.text)}</textarea>
       <div class="count" id="c${i}"></div>

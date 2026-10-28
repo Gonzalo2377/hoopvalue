@@ -10,6 +10,33 @@ window.betShort = function (p) {
   if (p.market === 'total') return `${/^m[aá]s/i.test(m[1]) ? 'Over' : 'Under'} ${m[2]}`;
   return p.label;
 };
+/* pick de ganador o hándicap: últimos 10 partidos de ese equipo (margen de puntos de cada uno) */
+window.teamLast10 = function (T, p) {
+  if (!p || (p.market !== 'ml' && p.market !== 'spread')) return null;
+  const g = T && (T.games || []).find(x => x.id === p.gameId), tm = g && g[p.side === 'away' ? 'away' : 'home'];
+  const lg = tm && tm.trends && tm.trends.lastGames;
+  if (!lg || !lg.length) return null;
+  const rows = lg.slice(0, 10).reverse(), line = p.market === 'spread' ? -Number(p.line) : 0;        // lastGames viene del más reciente al más antiguo
+  const sg = x => (x > 0 ? '+' : '') + x;
+  return { team: tm.name, vals: rows.map(r => r.pf - r.pa), opp: rows.map(r => r.opp), line, ok: v => v > line,
+    foot: p.market === 'ml' ? `${tm.name} · margen de puntos de cada partido` : `${tm.name} · hándicap ${sg(Number(p.line))}` };
+};
+/* barras hacia arriba (ganó) y hacia abajo (perdió) desde el 0; verde si cumplió el pick */
+window.drawMargins = function (ctx, d, x, y, w, h, { opp = true, small = false } = {}) {
+  const C = { good: '#22c55e', bad: '#ef4444', text: '#e8edf6', muted: '#8b97ab', ref: '#ffb36b' };
+  const n = d.vals.length, gap = small ? 3 : 6, bw = (w - gap * (n - 1)) / n, fs = small ? 12 : 16, pad = fs + 8;
+  const hi = Math.max(5, d.line, ...d.vals), lo = Math.min(-5, d.line, ...d.vals), ih = h - (opp ? 26 : 0) - 2 * pad;
+  const yv = v => y + pad + ih * (hi - v) / (hi - lo), y0 = yv(0);
+  const t = (s, tx, ty, size, color) => { ctx.font = `800 ${size}px Inter`; ctx.fillStyle = color; ctx.textAlign = 'center'; ctx.fillText(s, tx, ty); };
+  d.vals.forEach((v, k) => {
+    const bx = x + k * (bw + gap), yt = yv(v);
+    ctx.beginPath(); ctx.roundRect(bx, Math.min(y0, yt), bw, Math.max(2, Math.abs(yt - y0)), 4); ctx.fillStyle = d.ok(v) ? C.good : C.bad; ctx.fill();
+    if (!small || bw > 18) t((v > 0 ? '+' : '') + v, bx + bw / 2, v >= 0 ? yt - 6 : yt + fs + 2, fs, C.text);
+    if (opp && bw >= 26) t(d.opp[k], bx + bw / 2, y + h - 4, bw < 34 ? 11 : 13, C.muted);
+  });
+  ctx.strokeStyle = 'rgba(139,151,171,.6)'; ctx.lineWidth = 1.5; ctx.beginPath(); ctx.moveTo(x, y0); ctx.lineTo(x + w, y0); ctx.stroke();
+  if (d.line) { ctx.setLineDash([small ? 8 : 12, small ? 6 : 8]); ctx.strokeStyle = C.ref; ctx.lineWidth = small ? 2 : 3; ctx.beginPath(); ctx.moveTo(x, yv(d.line)); ctx.lineTo(x + w, yv(d.line)); ctx.stroke(); ctx.setLineDash([]); }
+};
 /* ============================================================
    EUROPICKS — imagen 1200×675 de un pick (para publicar en redes)
    renderCard(canvas, { league: 'euroleague' | 'nba', gameId })
@@ -89,6 +116,12 @@ async function main() {
     });
     ctx.setLineDash([12, 8]); ctx.strokeStyle = C.accent2; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(cx, yv(p.line)); ctx.lineTo(cx + cw, yv(p.line)); ctx.stroke(); ctx.setLineDash([]);
     txt(`line ${p.line} · proj ${p.proj}`, X + W / 2, Y + Hh - 22, 20, C.muted, 600, 'center');
+  } else if (teamLast10(T, p)) {
+    const d = teamLast10(T, p), hits = d.vals.filter(d.ok).length;
+    txt('Last 10 games', X + 30, Y + 52, 26, C.text, 800);
+    txt(`${hits}/${d.vals.length}`, X + W - 30, Y + 54, 34, hits / d.vals.length >= .6 ? C.good : C.text, 900, 'right');
+    drawMargins(ctx, d, X + 30, Y + 80, W - 60, Hh - 130);
+    txt(d.foot, X + W / 2, Y + Hh - 22, fit(d.foot, W - 60, 20, 600), C.muted, 600, 'center');
   } else {
     /* pick de partido: modelo vs mercado */
     txt('Por qué este pick', X + 30, Y + 52, 26, C.text, 800);
@@ -206,6 +239,12 @@ window.renderPickTall = async function (canvas, { league = 'euroleague', pick } 
     });
     ctx.setLineDash([12, 8]); ctx.strokeStyle = C.accent2; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(cx, yv(p.line)); ctx.lineTo(cx + cw, yv(p.line)); ctx.stroke(); ctx.setLineDash([]);
     if (p.proj != null) txt(`line ${p.line} · proj ${p.proj}`, X + PW / 2, Y + PH - 24, 22, C.muted, 600, 'center');
+  } else if (teamLast10(T, p)) {
+    const d = teamLast10(T, p), hits = d.vals.filter(d.ok).length;
+    txt('Last 10 games', X + 30, Y + 52, 28, C.text, 800);
+    txt(`${hits}/${d.vals.length}`, X + PW - 30, Y + 54, 38, hits / d.vals.length >= .6 ? C.good : C.text, 900, 'right');
+    drawMargins(ctx, d, X + 30, Y + 84, PW - 60, PH - 140);
+    txt(d.foot, X + PW / 2, Y + PH - 24, fit(d.foot, PW - 60, 22, 600), C.muted, 600, 'center');
   } else {
     txt('Por qué este pick', X + 30, Y + 56, 28, C.text, 800);
     [['Modelo EuroPicks', p.pModel], ['Mercado (sin margen)', p.pMarket], ['Probabilidad final', p.pFinal]].forEach(([l, v], i) => {
@@ -267,6 +306,10 @@ window.renderPicksGrid = async function (canvas, { league = 'euroleague', picks 
         if (!small || bw > 18) txt(String(v), bx + bw / 2, top - 5, small ? 12 : 15, C.text, 800, 'center');
       });
       ctx.setLineDash([8, 6]); ctx.strokeStyle = C.accent2; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(cx, yv(l.line)); ctx.lineTo(cx + cw, yv(l.line)); ctx.stroke(); ctx.setLineDash([]);
+    } else if (teamLast10(T, l)) {
+      const d = teamLast10(T, l), hits = d.vals.filter(d.ok).length, hy = y + (small ? 84 : 118);
+      txt('Last 10', x + 16, hy, small ? 15 : 19, C.muted, 600); txt(`${hits}/${d.vals.length}`, x + colW - 16, hy + 2, small ? 20 : 26, hits / d.vals.length >= .6 ? C.good : C.text, 900, 'right');
+      drawMargins(ctx, d, x + 16, hy + 8, colW - 32, y + PH - 12 - hy - 8, { small, opp: !small });
     } else {
       txt(l.match || '', x + colW / 2, y + PH / 2 + 30, fit(l.match || '', colW - 32, 22, 700), C.muted, 700, 'center');
     }

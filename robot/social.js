@@ -101,9 +101,17 @@ function main() {
   const tonightEnd = Date.parse(madridAt(madridDate(NOW + 24 * 3600e3), '12:00'));     // solo partidos de esta noche (hasta mañana a mediodía)
   const top = ((T.nba && T.nba.picks) || []).filter(p => { const t = Date.parse(p.start); return t > NOW && t < tonightEnd; }).sort((a, b) => b.safety - a.safety).map(p => ({ ...mini(p), league: 'nba' }));
   Object.keys(day).filter(k => /^nba-day/.test(k) && Date.parse(day[k].postAt) > NOW && !day[k].manual).forEach(k => delete day[k]);   // se rehace con los picks actuales
-  if (top.length) put({ id: 'nba-day', kind: 'nba-day', league: 'nba', title: `NBA Picks Day · ${top.length} pick${top.length > 1 ? 's' : ''}`,
-    postAt: madridAt(today, '18:45'), image: true, picks: top,
-    text: listTweet([`🏀 NBA Picks Day · ${today.slice(8, 10)}/${today.slice(5, 7)}`, ''], top, ['', '📊 Last 10 games de cada uno en las fotos', '#NBA · +18']) });
+  /* más de 4 picks → hilo: cada post lleva sus picks enteros en el texto y una foto por pick (X deja 4).
+     Se reparten parejos (7 → 4+3 · 9 → 3+3+3) y como mucho 3 posts (12 picks, los más seguros) */
+  const P = top.slice(0, 12), parts = Math.ceil(P.length / 4), date = `${today.slice(8, 10)}/${today.slice(5, 7)}`;
+  for (let k = 0, from = 0; k < parts; k++) {
+    const m = Math.floor(P.length / parts) + (k < P.length % parts ? 1 : 0), chunk = P.slice(from, from + m);
+    const head = k ? [`🧵 NBA Picks Day · ${date} (sigue)`, ''] : [`🏀 NBA Picks Day · ${date}`, ''];
+    const foot = ['', '📊 Last 10 games de cada uno en las fotos', ...(k < parts - 1 ? ['👇 Más picks en el hilo'] : []), '#NBA · +18'];
+    put({ id: k ? 'nba-day-' + (k + 1) : 'nba-day', kind: 'nba-day', league: 'nba', reply: k > 0, title: k ? `↳ Hilo ${k + 1}/${parts} · picks ${from + 1}-${from + m}` : `NBA Picks Day · ${P.length} pick${P.length > 1 ? 's' : ''}`,
+      postAt: madridAt(today, '18:45'), image: true, picks: chunk, text: listTweet(head, chunk, foot, from + 1) });
+    from += m;
+  }
 
   /* combinada segura del día (NBA a las 19:00 · Euroliga 1 h 30 min antes del primer partido) */
   for (const lg of ['nba', 'euroleague']) {
@@ -173,7 +181,7 @@ function main() {
   /* se guardan solo los últimos 30 días de memoria */
   Object.keys(hist.days).sort().slice(0, -30).forEach(d => delete hist.days[d]);
   writeJSON(HIST, hist, true);
-  const list = Object.values(day).sort((a, b) => a.postAt < b.postAt ? -1 : 1);
+  const list = Object.values(day).sort((a, b) => a.postAt.localeCompare(b.postAt) || a.id.localeCompare(b.id, 'en', { numeric: true }));   // el hilo sale en orden
   writeJSON(OUT, { updatedAt: new Date(NOW).toISOString(), date: today, items: list });
   console.log(`· publicaciones para X: ${list.length} preparadas para hoy (${list.map(i => i.kind).join(', ')})`);
 }
