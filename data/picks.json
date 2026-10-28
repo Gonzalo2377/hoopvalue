@@ -1310,6 +1310,63 @@
       "ev": -0.035,
       "start": "2026-10-28T18:00:00.000Z",
       "createdAt": "2026-10-28T11:47:28.785Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "el:E2026_81|ml|home|||",
+          "gameId": "el:E2026_81",
+          "start": "2026-10-29T19:00:00.000Z",
+          "match": "Crvena Zvezda – Bayern Munich",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana Crvena Zvezda",
+          "odd": 1.33,
+          "pFinal": 0.742,
+          "book": "ladbrokes_uk"
+        },
+        {
+          "id": "el:E2026_77|prop|over|3.5|008987|reb",
+          "gameId": "el:E2026_77",
+          "start": "2026-10-28T18:00:00.000Z",
+          "match": "Hapoel TLV – Anadolu Efes",
+          "market": "prop",
+          "side": "over",
+          "line": 3.5,
+          "stat": "reb",
+          "playerId": "008987",
+          "player": "Zach Leday",
+          "team": "HTA",
+          "label": "Zach Leday más de 3.5 rebotes",
+          "odd": 1.44,
+          "pFinal": 0.685,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "el:E2026_78|prop|over|9.5|014009|pts",
+          "gameId": "el:E2026_78",
+          "start": "2026-10-28T19:00:00.000Z",
+          "match": "LDLC ASVEL – Partizan",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pts",
+          "playerId": "014009",
+          "player": "Lamar Stevens",
+          "team": "PAR",
+          "label": "Lamar Stevens más de 9.5 puntos",
+          "odd": 1.77,
+          "pFinal": 0.574,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 3.39,
+      "prob": 0.292,
+      "ev": -0.011,
+      "start": "2026-10-28T18:00:00.000Z",
+      "createdAt": "2026-10-28T16:55:04.574Z"
     }
   ],
   "comboRecord": [

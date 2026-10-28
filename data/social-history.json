@@ -1623,7 +1623,7 @@
         "title": "Hapoel TLV vs Anadolu Efes",
         "start": "2026-10-28T18:00:00.000Z",
         "postAt": "2026-10-28T17:00:00.000Z",
-        "text": "🏀 EuroLeague · hoy 19:00\nHapoel TLV vs Anadolu Efes\n\n1.- Gana Hapoel TLV @1.44\n2.- Z. Leday +3.5 Reb @1.44\n\n🔮 Predicción: Hapoel TLV 87-81 Anadolu Efes\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
+        "text": "🏀 EuroLeague · hoy 19:00\nHapoel TLV vs Anadolu Efes\n\n1.- Gana Hapoel TLV @1.43\n2.- Z. Leday +3.5 Reb @1.44\n\n🔮 Predicción: Hapoel TLV 87-81 Anadolu Efes\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
         "image": true,
         "picks": [
           {
@@ -1631,14 +1631,14 @@
             "league": "euroleague",
             "label": "Gana Hapoel TLV",
             "list": "Gana Hapoel TLV",
-            "odd": 1.44,
+            "odd": 1.43,
             "start": "2026-10-28T18:00:00.000Z",
             "gameId": "el:E2026_77",
             "market": "ml",
             "side": "home",
             "line": null,
             "match": "Hapoel TLV – Anadolu Efes",
-            "pFinal": 0.686
+            "pFinal": 0.689
           },
           {
             "id": "el:E2026_77|prop|over|3.5|008987|reb",
@@ -1714,7 +1714,7 @@
         "title": "Virtus Bologna vs Zalgiris",
         "start": "2026-10-28T19:30:00.000Z",
         "postAt": "2026-10-28T18:30:00.000Z",
-        "text": "🏀 EuroLeague · hoy 20:30\nVirtus Bologna vs Zalgiris\n\n1.- M. Carr +9.5 Pts @1.32\n\n🔮 Predicción: Virtus Bologna 88-85 Zalgiris\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
+        "text": "🏀 EuroLeague · hoy 20:30\nVirtus Bologna vs Zalgiris\n\n1.- M. Carr +9.5 Pts @1.30\n\n🔮 Predicción: Virtus Bologna 88-85 Zalgiris\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
         "image": true,
         "picks": [
           {
@@ -1722,7 +1722,7 @@
             "league": "euroleague",
             "label": "M. Carr +9.5 puntos",
             "list": "M. Carr +9.5 Pts",
-            "odd": 1.32,
+            "odd": 1.3,
             "start": "2026-10-28T19:30:00.000Z",
             "gameId": "el:E2026_80",
             "market": "prop",
@@ -1732,7 +1732,7 @@
             "playerId": "012707",
             "team": "VIR",
             "match": "Virtus Bologna – Zalgiris",
-            "pFinal": 0.741
+            "pFinal": 0.75
           }
         ]
       },
@@ -1743,26 +1743,26 @@
         "title": "Safe Parlay · NBA @1.69",
         "postAt": "2026-10-28T18:00:00.000Z",
         "image": true,
-        "text": "🎯 Safe Parlay · NBA\n\n1.- T. Shannon Jr. +3.5 Pts @1.30\n2.- D. Mitchell +14.5 P+A @1.30\n\n💰 Total odds 1.69\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
+        "text": "🎯 Safe Parlay · NBA\n\n1.- T. Jones +5.5 Pts @1.30\n2.- D. Mitchell +14.5 P+A @1.30\n\n💰 Total odds 1.69\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
         "picks": [],
         "combo": {
           "legs": [
             {
-              "id": "nba:401909888|prop|over|3.5|4432847|pts",
+              "id": "nba:401909886|prop|over|5.5|4395626|pts",
               "league": "nba",
-              "label": "T. Shannon Jr. +3.5 puntos",
-              "list": "T. Shannon Jr. +3.5 Pts",
+              "label": "T. Jones +5.5 puntos",
+              "list": "T. Jones +5.5 Pts",
               "odd": 1.3,
               "start": "2026-10-29T00:00Z",
-              "gameId": "nba:401909888",
+              "gameId": "nba:401909886",
               "market": "prop",
               "side": "over",
-              "line": 3.5,
+              "line": 5.5,
               "stat": "pts",
-              "playerId": "4432847",
-              "team": "MIN",
-              "match": "Timberwolves – Warriors",
-              "pFinal": 0.762
+              "playerId": "4395626",
+              "team": "CHI",
+              "match": "Bulls – Knicks",
+              "pFinal": 0.764
             },
             {
               "id": "nba:401909881|prop|over|14.5|4278053|pa",
@@ -1783,7 +1783,7 @@
             }
           ],
           "odd": 1.69,
-          "prob": 0.581
+          "prob": 0.583
         }
       },
       "combo-euroleague": {
@@ -2035,6 +2035,23 @@
             "pFinal": 0.75
           },
           {
+            "id": "nba:401909886|prop|over|5.5|4395626|pts",
+            "league": "nba",
+            "label": "T. Jones +5.5 puntos",
+            "list": "T. Jones +5.5 Pts",
+            "odd": 1.3,
+            "start": "2026-10-29T00:00Z",
+            "gameId": "nba:401909886",
+            "market": "prop",
+            "side": "over",
+            "line": 5.5,
+            "stat": "pts",
+            "playerId": "4395626",
+            "team": "CHI",
+            "match": "Bulls – Knicks",
+            "pFinal": 0.764
+          },
+          {
             "id": "nba:401909884|prop|over|7.5|4396909|pts",
             "league": "nba",
             "label": "A. Nesmith +7.5 puntos",
@@ -2067,7 +2084,19 @@
             "team": "MIN",
             "match": "Timberwolves – Warriors",
             "pFinal": 0.762
-          },
+          }
+        ],
+        "text": "🏀 NBA Picks Day · 28/10\n\n1.- N. Reid +13.5 Pts @1.30\n2.- T. Jones +5.5 Pts @1.30\n3.- A. Nesmith +7.5 Pts @1.33\n4.- T. Shannon Jr. +3.5 Pts @1.30\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-2": {
+        "id": "nba-day-2",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 2/3 · picks 5-8",
+        "postAt": "2026-10-28T17:45:00.000Z",
+        "image": true,
+        "picks": [
           {
             "id": "nba:401909881|prop|over|14.5|4278053|pa",
             "league": "nba",
@@ -2084,35 +2113,6 @@
             "team": "MIA",
             "match": "Hawks – Heat",
             "pFinal": 0.763
-          }
-        ],
-        "text": "🏀 NBA Picks Day · 28/10\n\n1.- N. Reid +13.5 Pts @1.30\n2.- A. Nesmith +7.5 Pts @1.33\n3.- T. Shannon Jr. +3.5 Pts @1.30\n4.- D. Mitchell +14.5 P+A @1.30\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-2": {
-        "id": "nba-day-2",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 2/3 · picks 5-8",
-        "postAt": "2026-10-28T17:45:00.000Z",
-        "image": true,
-        "picks": [
-          {
-            "id": "nba:401909885|prop|over|17.5|4395625|pts",
-            "league": "nba",
-            "label": "R. Barrett +17.5 puntos",
-            "list": "R. Barrett +17.5 Pts",
-            "odd": 1.35,
-            "start": "2026-10-28T23:30Z",
-            "gameId": "nba:401909885",
-            "market": "prop",
-            "side": "over",
-            "line": 17.5,
-            "stat": "pts",
-            "playerId": "4395625",
-            "team": "TOR",
-            "match": "Raptors – Magic",
-            "pFinal": 0.725
           },
           {
             "id": "nba:401909882|prop|over|5.5|5238230|pts",
@@ -2166,7 +2166,7 @@
             "pFinal": 0.735
           }
         ],
-        "text": "🧵 NBA Picks Day · 28/10 (sigue)\n\n5.- R. Barrett +17.5 Pts @1.35\n6.- T. Johnson +5.5 Pts @1.33\n7.- D. Mitchell +3.5 Reb @1.38\n8.- T. Maxey +19.5 Pts @1.33\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 28/10 (sigue)\n\n5.- D. Mitchell +14.5 P+A @1.30\n6.- T. Johnson +5.5 Pts @1.33\n7.- D. Mitchell +3.5 Reb @1.38\n8.- T. Maxey +19.5 Pts @1.33\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-3": {
         "id": "nba-day-3",
@@ -2178,11 +2178,28 @@
         "image": true,
         "picks": [
           {
+            "id": "nba:401909885|prop|over|17.5|4395625|pts",
+            "league": "nba",
+            "label": "R. Barrett +17.5 puntos",
+            "list": "R. Barrett +17.5 Pts",
+            "odd": 1.37,
+            "start": "2026-10-28T23:30Z",
+            "gameId": "nba:401909885",
+            "market": "prop",
+            "side": "over",
+            "line": 17.5,
+            "stat": "pts",
+            "playerId": "4395625",
+            "team": "TOR",
+            "match": "Raptors – Magic",
+            "pFinal": 0.717
+          },
+          {
             "id": "nba:401909881|prop|over|7.5|3064482|pts",
             "league": "nba",
             "label": "B. Portis +7.5 puntos",
             "list": "B. Portis +7.5 Pts",
-            "odd": 1.37,
+            "odd": 1.38,
             "start": "2026-10-28T23:00Z",
             "gameId": "nba:401909881",
             "market": "prop",
@@ -2192,24 +2209,7 @@
             "playerId": "3064482",
             "team": "MIA",
             "match": "Hawks – Heat",
-            "pFinal": 0.709
-          },
-          {
-            "id": "nba:401909890|prop|over|9.5|4873138|pts",
-            "league": "nba",
-            "label": "A. Bailey +9.5 puntos",
-            "list": "A. Bailey +9.5 Pts",
-            "odd": 1.37,
-            "start": "2026-10-29T01:00Z",
-            "gameId": "nba:401909890",
-            "market": "prop",
-            "side": "over",
-            "line": 9.5,
-            "stat": "pts",
-            "playerId": "4873138",
-            "team": "UTAH",
-            "match": "Jazz – Spurs",
-            "pFinal": 0.715
+            "pFinal": 0.705
           },
           {
             "id": "nba:401909888|prop|over|13.5|5175737|pts",
@@ -2229,24 +2229,24 @@
             "pFinal": 0.725
           },
           {
-            "id": "nba:401909886|prop|over|19.5|3934719|pr",
+            "id": "nba:401909890|prop|over|9.5|4873138|pts",
             "league": "nba",
-            "label": "O. Anunoby +19.5 pts+reb",
-            "list": "O. Anunoby +19.5 P+R",
-            "odd": 1.41,
-            "start": "2026-10-29T00:00Z",
-            "gameId": "nba:401909886",
+            "label": "A. Bailey +9.5 puntos",
+            "list": "A. Bailey +9.5 Pts",
+            "odd": 1.38,
+            "start": "2026-10-29T01:00Z",
+            "gameId": "nba:401909890",
             "market": "prop",
             "side": "over",
-            "line": 19.5,
-            "stat": "pr",
-            "playerId": "3934719",
-            "team": "NY",
-            "match": "Bulls – Knicks",
-            "pFinal": 0.689
+            "line": 9.5,
+            "stat": "pts",
+            "playerId": "4873138",
+            "team": "UTAH",
+            "match": "Jazz – Spurs",
+            "pFinal": 0.711
           }
         ],
-        "text": "🧵 NBA Picks Day · 28/10 (sigue)\n\n9.- B. Portis +7.5 Pts @1.37\n10.- A. Bailey +9.5 Pts @1.37\n11.- Y. Lendeborg +13.5 Pts @1.34\n12.- O. Anunoby +19.5 P+R @1.41\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 28/10 (sigue)\n\n9.- R. Barrett +17.5 Pts @1.37\n10.- B. Portis +7.5 Pts @1.38\n11.- Y. Lendeborg +13.5 Pts @1.34\n12.- A. Bailey +9.5 Pts @1.38\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
