@@ -1743,10 +1743,27 @@
         "title": "Safe Parlay · NBA @1.69",
         "postAt": "2026-10-28T18:00:00.000Z",
         "image": true,
-        "text": "🎯 Safe Parlay · NBA\n\n1.- T. Jones +5.5 Pts @1.30\n2.- D. Mitchell +14.5 P+A @1.30\n\n💰 Total odds 1.69\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
+        "text": "🎯 Safe Parlay · NBA\n\n1.- D. Mitchell +24.5 P+R @1.30\n2.- T. Jones +5.5 Pts @1.30\n\n💰 Total odds 1.69\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
         "picks": [],
         "combo": {
           "legs": [
+            {
+              "id": "nba:401909882|prop|over|24.5|3908809|pr",
+              "league": "nba",
+              "label": "D. Mitchell +24.5 pts+reb",
+              "list": "D. Mitchell +24.5 P+R",
+              "odd": 1.3,
+              "start": "2026-10-28T23:00Z",
+              "gameId": "nba:401909882",
+              "market": "prop",
+              "side": "over",
+              "line": 24.5,
+              "stat": "pr",
+              "playerId": "3908809",
+              "team": "CLE",
+              "match": "Cavaliers – Wizards",
+              "pFinal": 0.759
+            },
             {
               "id": "nba:401909886|prop|over|5.5|4395626|pts",
               "league": "nba",
@@ -1763,27 +1780,10 @@
               "team": "CHI",
               "match": "Bulls – Knicks",
               "pFinal": 0.764
-            },
-            {
-              "id": "nba:401909881|prop|over|14.5|4278053|pa",
-              "league": "nba",
-              "label": "D. Mitchell +14.5 pts+ast",
-              "list": "D. Mitchell +14.5 P+A",
-              "odd": 1.3,
-              "start": "2026-10-28T23:00Z",
-              "gameId": "nba:401909881",
-              "market": "prop",
-              "side": "over",
-              "line": 14.5,
-              "stat": "pa",
-              "playerId": "4278053",
-              "team": "MIA",
-              "match": "Hawks – Heat",
-              "pFinal": 0.763
             }
           ],
           "odd": 1.69,
-          "prob": 0.583
+          "prob": 0.58
         }
       },
       "combo-euroleague": {
@@ -2018,21 +2018,38 @@
         "image": true,
         "picks": [
           {
-            "id": "nba:401909883|prop|over|13.5|4396971|pts",
+            "id": "nba:401909890|prop|over|9.5|4873138|pts",
             "league": "nba",
-            "label": "N. Reid +13.5 puntos",
-            "list": "N. Reid +13.5 Pts",
-            "odd": 1.3,
-            "start": "2026-10-28T23:00Z",
-            "gameId": "nba:401909883",
+            "label": "A. Bailey +9.5 puntos",
+            "list": "A. Bailey +9.5 Pts",
+            "odd": 1.32,
+            "start": "2026-10-29T01:00Z",
+            "gameId": "nba:401909890",
             "market": "prop",
             "side": "over",
-            "line": 13.5,
+            "line": 9.5,
             "stat": "pts",
-            "playerId": "4396971",
-            "team": "CHA",
-            "match": "Pistons – Hornets",
-            "pFinal": 0.75
+            "playerId": "4873138",
+            "team": "UTAH",
+            "match": "Jazz – Spurs",
+            "pFinal": 0.736
+          },
+          {
+            "id": "nba:401909882|prop|over|24.5|3908809|pr",
+            "league": "nba",
+            "label": "D. Mitchell +24.5 pts+reb",
+            "list": "D. Mitchell +24.5 P+R",
+            "odd": 1.3,
+            "start": "2026-10-28T23:00Z",
+            "gameId": "nba:401909882",
+            "market": "prop",
+            "side": "over",
+            "line": 24.5,
+            "stat": "pr",
+            "playerId": "3908809",
+            "team": "CLE",
+            "match": "Cavaliers – Wizards",
+            "pFinal": 0.759
           },
           {
             "id": "nba:401909886|prop|over|5.5|4395626|pts",
@@ -2067,26 +2084,9 @@
             "team": "IND",
             "match": "Pacers – 76ers",
             "pFinal": 0.733
-          },
-          {
-            "id": "nba:401909888|prop|over|3.5|4432847|pts",
-            "league": "nba",
-            "label": "T. Shannon Jr. +3.5 puntos",
-            "list": "T. Shannon Jr. +3.5 Pts",
-            "odd": 1.3,
-            "start": "2026-10-29T00:00Z",
-            "gameId": "nba:401909888",
-            "market": "prop",
-            "side": "over",
-            "line": 3.5,
-            "stat": "pts",
-            "playerId": "4432847",
-            "team": "MIN",
-            "match": "Timberwolves – Warriors",
-            "pFinal": 0.762
           }
         ],
-        "text": "🏀 NBA Picks Day · 28/10\n\n1.- N. Reid +13.5 Pts @1.30\n2.- T. Jones +5.5 Pts @1.30\n3.- A. Nesmith +7.5 Pts @1.33\n4.- T. Shannon Jr. +3.5 Pts @1.30\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 28/10\n\n1.- A. Bailey +9.5 Pts @1.32\n2.- D. Mitchell +24.5 P+R @1.30\n3.- T. Jones +5.5 Pts @1.30\n4.- A. Nesmith +7.5 Pts @1.33\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-2": {
         "id": "nba-day-2",
@@ -2097,23 +2097,6 @@
         "postAt": "2026-10-28T17:45:00.000Z",
         "image": true,
         "picks": [
-          {
-            "id": "nba:401909881|prop|over|14.5|4278053|pa",
-            "league": "nba",
-            "label": "D. Mitchell +14.5 pts+ast",
-            "list": "D. Mitchell +14.5 P+A",
-            "odd": 1.3,
-            "start": "2026-10-28T23:00Z",
-            "gameId": "nba:401909881",
-            "market": "prop",
-            "side": "over",
-            "line": 14.5,
-            "stat": "pa",
-            "playerId": "4278053",
-            "team": "MIA",
-            "match": "Hawks – Heat",
-            "pFinal": 0.763
-          },
           {
             "id": "nba:401909882|prop|over|5.5|5238230|pts",
             "league": "nba",
@@ -2132,21 +2115,21 @@
             "pFinal": 0.744
           },
           {
-            "id": "nba:401909882|prop|over|3.5|3908809|reb",
+            "id": "nba:401909883|prop|over|13.5|4396971|pts",
             "league": "nba",
-            "label": "D. Mitchell +3.5 rebotes",
-            "list": "D. Mitchell +3.5 Reb",
-            "odd": 1.38,
+            "label": "N. Reid +13.5 puntos",
+            "list": "N. Reid +13.5 Pts",
+            "odd": 1.32,
             "start": "2026-10-28T23:00Z",
-            "gameId": "nba:401909882",
+            "gameId": "nba:401909883",
             "market": "prop",
             "side": "over",
-            "line": 3.5,
-            "stat": "reb",
-            "playerId": "3908809",
-            "team": "CLE",
-            "match": "Cavaliers – Wizards",
-            "pFinal": 0.704
+            "line": 13.5,
+            "stat": "pts",
+            "playerId": "4396971",
+            "team": "CHA",
+            "match": "Pistons – Hornets",
+            "pFinal": 0.742
           },
           {
             "id": "nba:401909884|prop|over|19.5|4431678|pts",
@@ -2164,9 +2147,26 @@
             "team": "PHI",
             "match": "Pacers – 76ers",
             "pFinal": 0.735
+          },
+          {
+            "id": "nba:401909881|prop|over|14.5|4278053|pa",
+            "league": "nba",
+            "label": "D. Mitchell +14.5 pts+ast",
+            "list": "D. Mitchell +14.5 P+A",
+            "odd": 1.32,
+            "start": "2026-10-28T23:00Z",
+            "gameId": "nba:401909881",
+            "market": "prop",
+            "side": "over",
+            "line": 14.5,
+            "stat": "pa",
+            "playerId": "4278053",
+            "team": "MIA",
+            "match": "Hawks – Heat",
+            "pFinal": 0.754
           }
         ],
-        "text": "🧵 NBA Picks Day · 28/10 (sigue)\n\n5.- D. Mitchell +14.5 P+A @1.30\n6.- T. Johnson +5.5 Pts @1.33\n7.- D. Mitchell +3.5 Reb @1.38\n8.- T. Maxey +19.5 Pts @1.33\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 28/10 (sigue)\n\n5.- T. Johnson +5.5 Pts @1.33\n6.- N. Reid +13.5 Pts @1.32\n7.- T. Maxey +19.5 Pts @1.33\n8.- D. Mitchell +14.5 P+A @1.32\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-3": {
         "id": "nba-day-3",
@@ -2229,24 +2229,24 @@
             "pFinal": 0.725
           },
           {
-            "id": "nba:401909890|prop|over|9.5|4873138|pts",
+            "id": "nba:401909889|prop|over|19.5|3907497|pa",
             "league": "nba",
-            "label": "A. Bailey +9.5 puntos",
-            "list": "A. Bailey +9.5 Pts",
+            "label": "D. Murray +19.5 pts+ast",
+            "list": "D. Murray +19.5 P+A",
             "odd": 1.38,
-            "start": "2026-10-29T01:00Z",
-            "gameId": "nba:401909890",
+            "start": "2026-10-29T00:00Z",
+            "gameId": "nba:401909889",
             "market": "prop",
             "side": "over",
-            "line": 9.5,
-            "stat": "pts",
-            "playerId": "4873138",
-            "team": "UTAH",
-            "match": "Jazz – Spurs",
-            "pFinal": 0.711
+            "line": 19.5,
+            "stat": "pa",
+            "playerId": "3907497",
+            "team": "NO",
+            "match": "Pelicans – Nuggets",
+            "pFinal": 0.704
           }
         ],
-        "text": "🧵 NBA Picks Day · 28/10 (sigue)\n\n9.- R. Barrett +17.5 Pts @1.37\n10.- B. Portis +7.5 Pts @1.38\n11.- Y. Lendeborg +13.5 Pts @1.34\n12.- A. Bailey +9.5 Pts @1.38\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 28/10 (sigue)\n\n9.- R. Barrett +17.5 Pts @1.37\n10.- B. Portis +7.5 Pts @1.38\n11.- Y. Lendeborg +13.5 Pts @1.34\n12.- D. Murray +19.5 P+A @1.38\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
