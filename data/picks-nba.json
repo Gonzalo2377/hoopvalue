@@ -1391,6 +1391,24 @@
       "stat": "pts",
       "playerId": "4432158",
       "createdAt": "2026-10-28T16:11:34.367Z"
+    },
+    {
+      "id": "nba:401909891|prop|over|0.5|4896372|tpm",
+      "gameId": "nba:401909891",
+      "start": "2026-10-29T01:30Z",
+      "match": "Mavericks – Thunder",
+      "market": "prop",
+      "side": "over",
+      "line": 0.5,
+      "label": "Walter Clayton Jr. más de 0.5 triples",
+      "odd": 1.65,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.595,
+      "safety": 0.555,
+      "tier": "C",
+      "stat": "tpm",
+      "playerId": "4896372",
+      "createdAt": "2026-10-28T16:32:08.466Z"
     }
   ],
   "record": [

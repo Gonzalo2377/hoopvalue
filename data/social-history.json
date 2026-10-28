@@ -2051,23 +2051,6 @@
             "pFinal": 0.733
           },
           {
-            "id": "nba:401909882|prop|over|13.5|4432158|pts",
-            "league": "nba",
-            "label": "E. Mobley +13.5 puntos",
-            "list": "E. Mobley +13.5 Pts",
-            "odd": 1.34,
-            "start": "2026-10-28T23:00Z",
-            "gameId": "nba:401909882",
-            "market": "prop",
-            "side": "over",
-            "line": 13.5,
-            "stat": "pts",
-            "playerId": "4432158",
-            "team": "CLE",
-            "match": "Cavaliers – Wizards",
-            "pFinal": 0.725
-          },
-          {
             "id": "nba:401909888|prop|over|3.5|4432847|pts",
             "league": "nba",
             "label": "T. Shannon Jr. +3.5 puntos",
@@ -2102,23 +2085,6 @@
             "pFinal": 0.763
           },
           {
-            "id": "nba:401909884|prop|over|19.5|4431678|pts",
-            "league": "nba",
-            "label": "T. Maxey +19.5 puntos",
-            "list": "T. Maxey +19.5 Pts",
-            "odd": 1.32,
-            "start": "2026-10-28T23:00Z",
-            "gameId": "nba:401909884",
-            "market": "prop",
-            "side": "over",
-            "line": 19.5,
-            "stat": "pts",
-            "playerId": "4431678",
-            "team": "PHI",
-            "match": "Pacers – 76ers",
-            "pFinal": 0.739
-          },
-          {
             "id": "nba:401909885|prop|over|17.5|4395625|pts",
             "league": "nba",
             "label": "R. Barrett +17.5 puntos",
@@ -2151,6 +2117,40 @@
             "team": "WSH",
             "match": "Cavaliers – Wizards",
             "pFinal": 0.744
+          },
+          {
+            "id": "nba:401909882|prop|over|3.5|3908809|reb",
+            "league": "nba",
+            "label": "D. Mitchell +3.5 rebotes",
+            "list": "D. Mitchell +3.5 Reb",
+            "odd": 1.38,
+            "start": "2026-10-28T23:00Z",
+            "gameId": "nba:401909882",
+            "market": "prop",
+            "side": "over",
+            "line": 3.5,
+            "stat": "reb",
+            "playerId": "3908809",
+            "team": "CLE",
+            "match": "Cavaliers – Wizards",
+            "pFinal": 0.704
+          },
+          {
+            "id": "nba:401909884|prop|over|19.5|4431678|pts",
+            "league": "nba",
+            "label": "T. Maxey +19.5 puntos",
+            "list": "T. Maxey +19.5 Pts",
+            "odd": 1.33,
+            "start": "2026-10-28T23:00Z",
+            "gameId": "nba:401909884",
+            "market": "prop",
+            "side": "over",
+            "line": 19.5,
+            "stat": "pts",
+            "playerId": "4431678",
+            "team": "PHI",
+            "match": "Pacers – 76ers",
+            "pFinal": 0.735
           },
           {
             "id": "nba:401909881|prop|over|7.5|3064482|pts",
@@ -2289,6 +2289,23 @@
             "pFinal": 0.688
           },
           {
+            "id": "nba:401909885|prop|over|14.5|5093267|pra",
+            "league": "nba",
+            "label": "C. Murray-Boyles +14.5 pts+reb+ast",
+            "list": "C. Murray-Boyles +14.5 PRA",
+            "odd": 1.44,
+            "start": "2026-10-28T23:30Z",
+            "gameId": "nba:401909885",
+            "market": "prop",
+            "side": "over",
+            "line": 14.5,
+            "stat": "pra",
+            "playerId": "5093267",
+            "team": "TOR",
+            "match": "Raptors – Magic",
+            "pFinal": 0.678
+          },
+          {
             "id": "nba:401909892|prop|over|24.5|4066457|pa",
             "league": "nba",
             "label": "A. Reaves +24.5 pts+ast",
@@ -2321,23 +2338,6 @@
             "team": "CHI",
             "match": "Bulls – Knicks",
             "pFinal": 0.735
-          },
-          {
-            "id": "nba:401909885|prop|over|14.5|5093267|pra",
-            "league": "nba",
-            "label": "C. Murray-Boyles +14.5 pts+reb+ast",
-            "list": "C. Murray-Boyles +14.5 PRA",
-            "odd": 1.45,
-            "start": "2026-10-28T23:30Z",
-            "gameId": "nba:401909885",
-            "market": "prop",
-            "side": "over",
-            "line": 14.5,
-            "stat": "pra",
-            "playerId": "5093267",
-            "team": "TOR",
-            "match": "Raptors – Magic",
-            "pFinal": 0.674
           },
           {
             "id": "nba:401909890|prop|over|13.5|5037871|pts",
@@ -2388,23 +2388,6 @@
             "pFinal": 0.662
           },
           {
-            "id": "nba:401909891|prop|under|3.5|4683778|tpm",
-            "league": "nba",
-            "label": "J. McCain −3.5 triples",
-            "list": "J. McCain −3.5 T3",
-            "odd": 1.53,
-            "start": "2026-10-29T01:30Z",
-            "gameId": "nba:401909891",
-            "market": "prop",
-            "side": "under",
-            "line": 3.5,
-            "stat": "tpm",
-            "playerId": "4683778",
-            "team": "OKC",
-            "match": "Mavericks – Thunder",
-            "pFinal": 0.641
-          },
-          {
             "id": "nba:401909891|prop|under|1.5|4900671|tpm",
             "league": "nba",
             "label": "A. Mitchell −1.5 triples",
@@ -2426,7 +2409,7 @@
             "league": "nba",
             "label": "D. Schroder −1.5 triples",
             "list": "D. Schroder −1.5 T3",
-            "odd": 1.55,
+            "odd": 1.54,
             "start": "2026-10-28T23:00Z",
             "gameId": "nba:401909883",
             "market": "prop",
@@ -2436,7 +2419,24 @@
             "playerId": "3032979",
             "team": "CHA",
             "match": "Pistons – Hornets",
-            "pFinal": 0.636
+            "pFinal": 0.639
+          },
+          {
+            "id": "nba:401909891|prop|over|0.5|4896372|tpm",
+            "league": "nba",
+            "label": "W. Clayton Jr. +0.5 triples",
+            "list": "W. Clayton Jr. +0.5 T3",
+            "odd": 1.65,
+            "start": "2026-10-29T01:30Z",
+            "gameId": "nba:401909891",
+            "market": "prop",
+            "side": "over",
+            "line": 0.5,
+            "stat": "tpm",
+            "playerId": "4896372",
+            "team": "DAL",
+            "match": "Mavericks – Thunder",
+            "pFinal": 0.595
           },
           {
             "id": "nba:401909881|ml|home|||",
@@ -2453,7 +2453,7 @@
             "pFinal": 0.594
           }
         ],
-        "text": "🏀 NBA Picks Day · 28/10\n\n1.- N. Reid +13.5 Pts @1.30\n2.- A. Nesmith +7.5 Pts @1.33\n3.- E. Mobley +13.5 Pts @1.34\n4.- T. Shannon Jr. +3.5 Pts @1.30\n5.- D. Mitchell +14.5 P+A @1.30\n6.- T. Maxey +19.5 Pts @1.32\n7.- R. Barrett +17.5 Pts @1.35\n…+19 more en las fotos 📸\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 28/10\n\n1.- N. Reid +13.5 Pts @1.30\n2.- A. Nesmith +7.5 Pts @1.33\n3.- T. Shannon Jr. +3.5 Pts @1.30\n4.- D. Mitchell +14.5 P+A @1.30\n5.- R. Barrett +17.5 Pts @1.35\n6.- T. Johnson +5.5 Pts @1.33\n7.- D. Mitchell +3.5 Reb @1.38\n…+19 more en las fotos 📸\n#NBA · +18"
       }
     }
   }
