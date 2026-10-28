@@ -2459,47 +2459,47 @@
         "title": "Safe Parlay · NBA @1.74",
         "postAt": "2026-10-29T18:00:00.000Z",
         "image": true,
-        "text": "🎯 Safe Parlay · NBA\n\n1.- S. Bey +7.5 Pts @1.30\n2.- R. Rollins +14.5 P+A @1.34\n\n💰 Total odds 1.74\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
+        "text": "🎯 Safe Parlay · NBA\n\n1.- S. Bey +9.5 P+A @1.30\n2.- C. Wilson +13.5 Pts @1.34\n\n💰 Total odds 1.74\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
         "picks": [],
         "combo": {
           "legs": [
             {
-              "id": "nba:401909889|prop|over|7.5|4397136|pts",
+              "id": "nba:401909889|prop|over|9.5|4397136|pa",
               "league": "nba",
-              "label": "S. Bey +7.5 puntos",
-              "list": "S. Bey +7.5 Pts",
+              "label": "S. Bey +9.5 pts+ast",
+              "list": "S. Bey +9.5 P+A",
               "odd": 1.3,
               "start": "2026-10-29T00:00Z",
               "gameId": "nba:401909889",
               "market": "prop",
               "side": "over",
-              "line": 7.5,
-              "stat": "pts",
+              "line": 9.5,
+              "stat": "pa",
               "playerId": "4397136",
               "team": "NO",
               "match": "Pelicans – Nuggets",
               "pFinal": 0.764
             },
             {
-              "id": "nba:401909887|prop|over|14.5|4591725|pa",
+              "id": "nba:401909886|prop|over|13.5|5095151|pts",
               "league": "nba",
-              "label": "R. Rollins +14.5 pts+ast",
-              "list": "R. Rollins +14.5 P+A",
+              "label": "C. Wilson +13.5 puntos",
+              "list": "C. Wilson +13.5 Pts",
               "odd": 1.34,
               "start": "2026-10-29T00:00Z",
-              "gameId": "nba:401909887",
+              "gameId": "nba:401909886",
               "market": "prop",
               "side": "over",
-              "line": 14.5,
-              "stat": "pa",
-              "playerId": "4591725",
-              "team": "MIL",
-              "match": "Bucks – Rockets",
-              "pFinal": 0.742
+              "line": 13.5,
+              "stat": "pts",
+              "playerId": "5095151",
+              "team": "CHI",
+              "match": "Bulls – Knicks",
+              "pFinal": 0.745
             }
           ],
           "odd": 1.74,
-          "prob": 0.567
+          "prob": 0.569
         }
       },
       "nba-day": {
@@ -2512,38 +2512,38 @@
         "image": true,
         "picks": [
           {
-            "id": "nba:401909889|prop|over|7.5|4397136|pts",
+            "id": "nba:401909889|prop|over|9.5|4397136|pa",
             "league": "nba",
-            "label": "S. Bey +7.5 puntos",
-            "list": "S. Bey +7.5 Pts",
+            "label": "S. Bey +9.5 pts+ast",
+            "list": "S. Bey +9.5 P+A",
             "odd": 1.3,
             "start": "2026-10-29T00:00Z",
             "gameId": "nba:401909889",
             "market": "prop",
             "side": "over",
-            "line": 7.5,
-            "stat": "pts",
+            "line": 9.5,
+            "stat": "pa",
             "playerId": "4397136",
             "team": "NO",
             "match": "Pelicans – Nuggets",
             "pFinal": 0.764
           },
           {
-            "id": "nba:401909889|prop|over|19.5|4395628|pr",
+            "id": "nba:401909889|prop|over|3.5|4397688|reb",
             "league": "nba",
-            "label": "Z. Williamson +19.5 pts+reb",
-            "list": "Z. Williamson +19.5 P+R",
-            "odd": 1.32,
+            "label": "T. Murphy III +3.5 rebotes",
+            "list": "T. Murphy III +3.5 Reb",
+            "odd": 1.36,
             "start": "2026-10-29T00:00Z",
             "gameId": "nba:401909889",
             "market": "prop",
             "side": "over",
-            "line": 19.5,
-            "stat": "pr",
-            "playerId": "4395628",
+            "line": 3.5,
+            "stat": "reb",
+            "playerId": "4397688",
             "team": "NO",
             "match": "Pelicans – Nuggets",
-            "pFinal": 0.737
+            "pFinal": 0.714
           },
           {
             "id": "nba:401909887|prop|over|24.5|4395725|pra",
@@ -2580,7 +2580,7 @@
             "pFinal": 0.73
           }
         ],
-        "text": "🏀 NBA Picks Day · 29/10\n\n1.- S. Bey +7.5 Pts @1.30\n2.- Z. Williamson +19.5 P+R @1.32\n3.- T. Herro +24.5 PRA @1.32\n4.- K. Wagler +9.5 Pts @1.33\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 29/10\n\n1.- S. Bey +9.5 P+A @1.30\n2.- T. Murphy III +3.5 Reb @1.36\n3.- T. Herro +24.5 PRA @1.32\n4.- K. Wagler +9.5 Pts @1.33\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-2": {
         "id": "nba-day-2",
@@ -2592,38 +2592,21 @@
         "image": true,
         "picks": [
           {
-            "id": "nba:401909888|prop|over|13.5|5175737|pts",
+            "id": "nba:401909887|prop|over|14.5|4432848|pa",
             "league": "nba",
-            "label": "Y. Lendeborg +13.5 puntos",
-            "list": "Y. Lendeborg +13.5 Pts",
-            "odd": 1.34,
-            "start": "2026-10-29T00:00Z",
-            "gameId": "nba:401909888",
-            "market": "prop",
-            "side": "over",
-            "line": 13.5,
-            "stat": "pts",
-            "playerId": "5175737",
-            "team": "GS",
-            "match": "Timberwolves – Warriors",
-            "pFinal": 0.725
-          },
-          {
-            "id": "nba:401909887|prop|over|14.5|4591725|pa",
-            "league": "nba",
-            "label": "R. Rollins +14.5 pts+ast",
-            "list": "R. Rollins +14.5 P+A",
-            "odd": 1.34,
+            "label": "J. Jaquez Jr. +14.5 pts+ast",
+            "list": "J. Jaquez Jr. +14.5 P+A",
+            "odd": 1.38,
             "start": "2026-10-29T00:00Z",
             "gameId": "nba:401909887",
             "market": "prop",
             "side": "over",
             "line": 14.5,
             "stat": "pa",
-            "playerId": "4591725",
+            "playerId": "4432848",
             "team": "MIL",
             "match": "Bucks – Rockets",
-            "pFinal": 0.742
+            "pFinal": 0.704
           },
           {
             "id": "nba:401909892|prop|over|7.5|3448|pts",
@@ -2658,9 +2641,23 @@
             "team": "NY",
             "match": "Bulls – Knicks",
             "pFinal": 0.689
+          },
+          {
+            "id": "nba:401909888|ml|home|||",
+            "league": "nba",
+            "label": "Gana Timberwolves",
+            "list": "Gana Timberwolves",
+            "odd": 1.59,
+            "start": "2026-10-29T00:00Z",
+            "gameId": "nba:401909888",
+            "market": "ml",
+            "side": "home",
+            "line": null,
+            "match": "Timberwolves – Warriors",
+            "pFinal": 0.613
           }
         ],
-        "text": "🧵 NBA Picks Day · 29/10 (sigue)\n\n5.- Y. Lendeborg +13.5 Pts @1.34\n6.- R. Rollins +14.5 P+A @1.34\n7.- B. Lopez +7.5 Pts @1.35\n8.- O. Anunoby +19.5 P+R @1.41\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 29/10 (sigue)\n\n5.- J. Jaquez Jr. +14.5 P+A @1.38\n6.- B. Lopez +7.5 Pts @1.35\n7.- O. Anunoby +19.5 P+R @1.41\n8.- Gana Timberwolves @1.59\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-3": {
         "id": "nba-day-3",
@@ -2671,6 +2668,40 @@
         "postAt": "2026-10-29T17:45:00.000Z",
         "image": true,
         "picks": [
+          {
+            "id": "nba:401909886|prop|over|13.5|5095151|pts",
+            "league": "nba",
+            "label": "C. Wilson +13.5 puntos",
+            "list": "C. Wilson +13.5 Pts",
+            "odd": 1.34,
+            "start": "2026-10-29T00:00Z",
+            "gameId": "nba:401909886",
+            "market": "prop",
+            "side": "over",
+            "line": 13.5,
+            "stat": "pts",
+            "playerId": "5095151",
+            "team": "CHI",
+            "match": "Bulls – Knicks",
+            "pFinal": 0.745
+          },
+          {
+            "id": "nba:401909888|prop|over|4.5|6589|ast",
+            "league": "nba",
+            "label": "D. Green +4.5 asistencias",
+            "list": "D. Green +4.5 Ast",
+            "odd": 1.44,
+            "start": "2026-10-29T00:00Z",
+            "gameId": "nba:401909888",
+            "market": "prop",
+            "side": "over",
+            "line": 4.5,
+            "stat": "ast",
+            "playerId": "6589",
+            "team": "GS",
+            "match": "Timberwolves – Warriors",
+            "pFinal": 0.687
+          },
           {
             "id": "nba:401909890|prop|over|7.5|4592479|pts",
             "league": "nba",
@@ -2689,58 +2720,24 @@
             "pFinal": 0.672
           },
           {
-            "id": "nba:401909890|prop|over|13.5|5037871|pts",
+            "id": "nba:401909891|prop|under|1.5|4900671|tpm",
             "league": "nba",
-            "label": "D. Harper +13.5 puntos",
-            "list": "D. Harper +13.5 Pts",
-            "odd": 1.44,
-            "start": "2026-10-29T01:00Z",
-            "gameId": "nba:401909890",
+            "label": "A. Mitchell −1.5 triples",
+            "list": "A. Mitchell −1.5 T3",
+            "odd": 1.48,
+            "start": "2026-10-29T01:30Z",
+            "gameId": "nba:401909891",
             "market": "prop",
-            "side": "over",
-            "line": 13.5,
-            "stat": "pts",
-            "playerId": "5037871",
-            "team": "SA",
-            "match": "Jazz – Spurs",
-            "pFinal": 0.677
-          },
-          {
-            "id": "nba:401909886|prop|over|13.5|5095151|pts",
-            "league": "nba",
-            "label": "C. Wilson +13.5 puntos",
-            "list": "C. Wilson +13.5 Pts",
-            "odd": 1.35,
-            "start": "2026-10-29T00:00Z",
-            "gameId": "nba:401909886",
-            "market": "prop",
-            "side": "over",
-            "line": 13.5,
-            "stat": "pts",
-            "playerId": "5095151",
-            "team": "CHI",
-            "match": "Bulls – Knicks",
-            "pFinal": 0.741
-          },
-          {
-            "id": "nba:401909888|prop|over|4.5|6589|ast",
-            "league": "nba",
-            "label": "D. Green +4.5 asistencias",
-            "list": "D. Green +4.5 Ast",
-            "odd": 1.45,
-            "start": "2026-10-29T00:00Z",
-            "gameId": "nba:401909888",
-            "market": "prop",
-            "side": "over",
-            "line": 4.5,
-            "stat": "ast",
-            "playerId": "6589",
-            "team": "GS",
-            "match": "Timberwolves – Warriors",
-            "pFinal": 0.683
+            "side": "under",
+            "line": 1.5,
+            "stat": "tpm",
+            "playerId": "4900671",
+            "team": "OKC",
+            "match": "Mavericks – Thunder",
+            "pFinal": 0.669
           }
         ],
-        "text": "🧵 NBA Picks Day · 29/10 (sigue)\n\n9.- J. Champagnie +7.5 Pts @1.45\n10.- D. Harper +13.5 Pts @1.44\n11.- C. Wilson +13.5 Pts @1.35\n12.- D. Green +4.5 Ast @1.45\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 29/10 (sigue)\n\n9.- C. Wilson +13.5 Pts @1.34\n10.- D. Green +4.5 Ast @1.44\n11.- J. Champagnie +7.5 Pts @1.45\n12.- A. Mitchell −1.5 T3 @1.48\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
