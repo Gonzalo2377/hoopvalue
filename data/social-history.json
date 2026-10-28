@@ -1740,10 +1740,10 @@
         "id": "combo-nba",
         "kind": "combo",
         "league": "nba",
-        "title": "Safe Parlay · NBA @1.73",
+        "title": "Safe Parlay · NBA @1.69",
         "postAt": "2026-10-28T18:00:00.000Z",
         "image": true,
-        "text": "🎯 Safe Parlay · NBA\n\n1.- D. Mitchell +14.5 P+A @1.30\n2.- K. George +14.5 P+R @1.33\n\n💰 Total odds 1.73\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
+        "text": "🎯 Safe Parlay · NBA\n\n1.- D. Mitchell +14.5 P+A @1.30\n2.- C. Wilson +14.5 P+A @1.30\n\n💰 Total odds 1.69\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
         "picks": [],
         "combo": {
           "legs": [
@@ -1765,25 +1765,25 @@
               "pFinal": 0.763
             },
             {
-              "id": "nba:401909890|prop|over|14.5|4433627|pr",
+              "id": "nba:401909886|prop|over|14.5|5095151|pa",
               "league": "nba",
-              "label": "K. George +14.5 pts+reb",
-              "list": "K. George +14.5 P+R",
-              "odd": 1.33,
-              "start": "2026-10-29T01:00Z",
-              "gameId": "nba:401909890",
+              "label": "C. Wilson +14.5 pts+ast",
+              "list": "C. Wilson +14.5 P+A",
+              "odd": 1.3,
+              "start": "2026-10-29T00:00Z",
+              "gameId": "nba:401909886",
               "market": "prop",
               "side": "over",
               "line": 14.5,
-              "stat": "pr",
-              "playerId": "4433627",
-              "team": "UTAH",
-              "match": "Jazz – Spurs",
-              "pFinal": 0.751
+              "stat": "pa",
+              "playerId": "5095151",
+              "team": "CHI",
+              "match": "Bulls – Knicks",
+              "pFinal": 0.764
             }
           ],
-          "odd": 1.73,
-          "prob": 0.573
+          "odd": 1.69,
+          "prob": 0.583
         }
       },
       "combo-euroleague": {
@@ -2017,6 +2017,23 @@
         "image": true,
         "picks": [
           {
+            "id": "nba:401909890|prop|over|15.5|4433627|pts",
+            "league": "nba",
+            "label": "K. George +15.5 puntos",
+            "list": "K. George +15.5 Pts",
+            "odd": 1.3,
+            "start": "2026-10-29T01:00Z",
+            "gameId": "nba:401909890",
+            "market": "prop",
+            "side": "over",
+            "line": 15.5,
+            "stat": "pts",
+            "playerId": "4433627",
+            "team": "UTAH",
+            "match": "Jazz – Spurs",
+            "pFinal": 0.746
+          },
+          {
             "id": "nba:401909882|prop|over|0.5|4432158|tpm",
             "league": "nba",
             "label": "E. Mobley +0.5 triples",
@@ -2119,21 +2136,21 @@
             "pFinal": 0.742
           },
           {
-            "id": "nba:401909889|prop|over|9.5|3907497|ra",
+            "id": "nba:401909890|prop|over|9.5|4873138|pts",
             "league": "nba",
-            "label": "D. Murray +9.5 reb+ast",
-            "list": "D. Murray +9.5 R+A",
-            "odd": 1.38,
-            "start": "2026-10-29T00:00Z",
-            "gameId": "nba:401909889",
+            "label": "A. Bailey +9.5 puntos",
+            "list": "A. Bailey +9.5 Pts",
+            "odd": 1.36,
+            "start": "2026-10-29T01:00Z",
+            "gameId": "nba:401909890",
             "market": "prop",
             "side": "over",
             "line": 9.5,
-            "stat": "ra",
-            "playerId": "3907497",
-            "team": "NO",
-            "match": "Pelicans – Nuggets",
-            "pFinal": 0.704
+            "stat": "pts",
+            "playerId": "4873138",
+            "team": "UTAH",
+            "match": "Jazz – Spurs",
+            "pFinal": 0.719
           },
           {
             "id": "nba:401909884|prop|over|19.5|4431678|pts",
@@ -2151,23 +2168,6 @@
             "team": "PHI",
             "match": "Pacers – 76ers",
             "pFinal": 0.731
-          },
-          {
-            "id": "nba:401909890|prop|over|14.5|4433627|pr",
-            "league": "nba",
-            "label": "K. George +14.5 pts+reb",
-            "list": "K. George +14.5 P+R",
-            "odd": 1.33,
-            "start": "2026-10-29T01:00Z",
-            "gameId": "nba:401909890",
-            "market": "prop",
-            "side": "over",
-            "line": 14.5,
-            "stat": "pr",
-            "playerId": "4433627",
-            "team": "UTAH",
-            "match": "Jazz – Spurs",
-            "pFinal": 0.751
           },
           {
             "id": "nba:401909885|prop|over|24.5|4395625|pra",
@@ -2204,6 +2204,40 @@
             "pFinal": 0.706
           },
           {
+            "id": "nba:401909886|prop|over|14.5|5095151|pa",
+            "league": "nba",
+            "label": "C. Wilson +14.5 pts+ast",
+            "list": "C. Wilson +14.5 P+A",
+            "odd": 1.3,
+            "start": "2026-10-29T00:00Z",
+            "gameId": "nba:401909886",
+            "market": "prop",
+            "side": "over",
+            "line": 14.5,
+            "stat": "pa",
+            "playerId": "5095151",
+            "team": "CHI",
+            "match": "Bulls – Knicks",
+            "pFinal": 0.764
+          },
+          {
+            "id": "nba:401909883|prop|over|0.5|3157465|tpm",
+            "league": "nba",
+            "label": "D. Robinson +0.5 triples",
+            "list": "D. Robinson +0.5 T3",
+            "odd": 1.36,
+            "start": "2026-10-28T23:00Z",
+            "gameId": "nba:401909883",
+            "market": "prop",
+            "side": "over",
+            "line": 0.5,
+            "stat": "tpm",
+            "playerId": "3157465",
+            "team": "DET",
+            "match": "Pistons – Hornets",
+            "pFinal": 0.737
+          },
+          {
             "id": "nba:401909884|prop|over|24.5|3149673|pr",
             "league": "nba",
             "label": "P. Siakam +24.5 pts+reb",
@@ -2221,21 +2255,21 @@
             "pFinal": 0.703
           },
           {
-            "id": "nba:401909887|prop|over|14.5|4432848|pa",
+            "id": "nba:401909889|prop|over|9.5|3907497|ra",
             "league": "nba",
-            "label": "J. Jaquez Jr. +14.5 pts+ast",
-            "list": "J. Jaquez Jr. +14.5 P+A",
-            "odd": 1.41,
+            "label": "D. Murray +9.5 reb+ast",
+            "list": "D. Murray +9.5 R+A",
+            "odd": 1.43,
             "start": "2026-10-29T00:00Z",
-            "gameId": "nba:401909887",
+            "gameId": "nba:401909889",
             "market": "prop",
             "side": "over",
-            "line": 14.5,
-            "stat": "pa",
-            "playerId": "4432848",
-            "team": "MIL",
-            "match": "Bucks – Rockets",
-            "pFinal": 0.692
+            "line": 9.5,
+            "stat": "ra",
+            "playerId": "3907497",
+            "team": "NO",
+            "match": "Pelicans – Nuggets",
+            "pFinal": 0.685
           },
           {
             "id": "nba:401909887|prop|over|14.5|4591725|pa",
@@ -2255,21 +2289,21 @@
             "pFinal": 0.73
           },
           {
-            "id": "nba:401909886|prop|over|9.5|4395626|pa",
+            "id": "nba:401909887|prop|over|5.5|5105623|reb",
             "league": "nba",
-            "label": "T. Jones +9.5 pts+ast",
-            "list": "T. Jones +9.5 P+A",
-            "odd": 1.35,
+            "label": "K. Ware +5.5 rebotes",
+            "list": "K. Ware +5.5 Reb",
+            "odd": 1.42,
             "start": "2026-10-29T00:00Z",
-            "gameId": "nba:401909886",
+            "gameId": "nba:401909887",
             "market": "prop",
             "side": "over",
-            "line": 9.5,
-            "stat": "pa",
-            "playerId": "4395626",
-            "team": "CHI",
-            "match": "Bulls – Knicks",
-            "pFinal": 0.743
+            "line": 5.5,
+            "stat": "reb",
+            "playerId": "5105623",
+            "team": "MIL",
+            "match": "Bucks – Rockets",
+            "pFinal": 0.685
           },
           {
             "id": "nba:401909885|prop|over|14.5|5093267|pra",
@@ -2289,23 +2323,6 @@
             "pFinal": 0.674
           },
           {
-            "id": "nba:401909883|prop|under|1.5|3032979|tpm",
-            "league": "nba",
-            "label": "D. Schroder −1.5 triples",
-            "list": "D. Schroder −1.5 T3",
-            "odd": 1.5,
-            "start": "2026-10-28T23:00Z",
-            "gameId": "nba:401909883",
-            "market": "prop",
-            "side": "under",
-            "line": 1.5,
-            "stat": "tpm",
-            "playerId": "3032979",
-            "team": "CHA",
-            "match": "Pistons – Hornets",
-            "pFinal": 0.65
-          },
-          {
             "id": "nba:401909891|prop|under|3.5|4683778|tpm",
             "league": "nba",
             "label": "J. McCain −3.5 triples",
@@ -2321,23 +2338,6 @@
             "team": "OKC",
             "match": "Mavericks – Thunder",
             "pFinal": 0.641
-          },
-          {
-            "id": "nba:401909890|prop|over|1.5|4395723|reb",
-            "league": "nba",
-            "label": "K. Johnson +1.5 rebotes",
-            "list": "K. Johnson +1.5 Reb",
-            "odd": 1.44,
-            "start": "2026-10-29T01:00Z",
-            "gameId": "nba:401909890",
-            "market": "prop",
-            "side": "over",
-            "line": 1.5,
-            "stat": "reb",
-            "playerId": "4395723",
-            "team": "SA",
-            "match": "Jazz – Spurs",
-            "pFinal": 0.701
           },
           {
             "id": "nba:401909891|prop|under|1.5|4900671|tpm",
@@ -2416,7 +2416,7 @@
             "pFinal": 0.562
           }
         ],
-        "text": "🏀 NBA Picks Day · 28/10\n\n1.- E. Mobley +0.5 T3 @1.32\n2.- J. Brunson +24.5 P+R @1.32\n3.- Z. Williamson +19.5 P+R @1.32\n4.- D. Mitchell +14.5 P+A @1.30\n5.- D. Mitchell +3.5 Reb @1.37\n6.- N. Reid +13.5 Pts @1.32\n7.- D. Murray +9.5 R+A @1.38\n…+17 more en las fotos 📸\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 28/10\n\n1.- K. George +15.5 Pts @1.30\n2.- E. Mobley +0.5 T3 @1.32\n3.- J. Brunson +24.5 P+R @1.32\n4.- Z. Williamson +19.5 P+R @1.32\n5.- D. Mitchell +14.5 P+A @1.30\n6.- D. Mitchell +3.5 Reb @1.37\n7.- N. Reid +13.5 Pts @1.32\n…+17 more en las fotos 📸\n#NBA · +18"
       }
     }
   }
