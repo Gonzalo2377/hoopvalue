@@ -376,5 +376,19 @@
     "away": "Lakers",
     "ptsH": 115,
     "ptsA": 117
+  },
+  "nba:401909893": {
+    "start": "2026-10-30T00:00Z",
+    "home": "Hawks",
+    "away": "Cavaliers",
+    "ptsH": 122,
+    "ptsA": 115
+  },
+  "nba:401909894": {
+    "start": "2026-10-30T00:00Z",
+    "home": "Pelicans",
+    "away": "Kings",
+    "ptsH": 123,
+    "ptsA": 112
   }
 }
