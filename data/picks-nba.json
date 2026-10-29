@@ -499,6 +499,42 @@
       "stat": "pts",
       "playerId": "4432158",
       "createdAt": "2026-10-29T16:33:30.043Z"
+    },
+    {
+      "id": "nba:401909280|prop|over|19.5|3934672|pts",
+      "gameId": "nba:401909280",
+      "start": "2026-10-30T23:30Z",
+      "match": "76ers – Knicks",
+      "market": "prop",
+      "side": "over",
+      "line": 19.5,
+      "label": "Jalen Brunson más de 19.5 puntos",
+      "odd": 1.42,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.697,
+      "safety": 0.623,
+      "tier": "B",
+      "stat": "pts",
+      "playerId": "3934672",
+      "createdAt": "2026-10-29T16:53:55.281Z"
+    },
+    {
+      "id": "nba:401909280|prop|under|7.5|2528426|ast",
+      "gameId": "nba:401909280",
+      "start": "2026-10-30T23:30Z",
+      "match": "76ers – Knicks",
+      "market": "prop",
+      "side": "under",
+      "line": 7.5,
+      "label": "Jordan Clarkson menos de 7.5 asistencias",
+      "odd": 1.68,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.638,
+      "safety": 0.476,
+      "tier": "C",
+      "stat": "ast",
+      "playerId": "2528426",
+      "createdAt": "2026-10-29T16:53:55.281Z"
     }
   ],
   "record": [
@@ -8829,6 +8865,107 @@
       "ev": -0.035,
       "start": "2026-10-30T02:00Z",
       "createdAt": "2026-10-29T16:33:30.043Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909281|ml|home|||",
+          "gameId": "nba:401909281",
+          "start": "2026-10-30T23:30Z",
+          "match": "Raptors – Magic",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana Raptors",
+          "odd": 1.59,
+          "pFinal": 0.647,
+          "book": "draftkings"
+        },
+        {
+          "id": "nba:401909284|prop|over|2.5|3936099|reb",
+          "gameId": "nba:401909284",
+          "start": "2026-10-31T00:00Z",
+          "match": "Timberwolves – Clippers",
+          "market": "prop",
+          "side": "over",
+          "line": 2.5,
+          "stat": "reb",
+          "playerId": "3936099",
+          "player": "Derrick Jones Jr.",
+          "team": "LAC",
+          "label": "Derrick Jones Jr. más de 2.5 rebotes",
+          "odd": 1.63,
+          "pFinal": 0.632,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909280|prop|under|7.5|2528426|ast",
+          "gameId": "nba:401909280",
+          "start": "2026-10-30T23:30Z",
+          "match": "76ers – Knicks",
+          "market": "prop",
+          "side": "under",
+          "line": 7.5,
+          "stat": "ast",
+          "playerId": "2528426",
+          "player": "Jordan Clarkson",
+          "team": "NY",
+          "label": "Jordan Clarkson menos de 7.5 asistencias",
+          "odd": 1.68,
+          "pFinal": 0.638,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 4.35,
+      "prob": 0.261,
+      "ev": 0.136,
+      "start": "2026-10-30T23:30Z",
+      "createdAt": "2026-10-29T16:53:55.281Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "nba:401909895|prop|over|4.5|4066211|reb",
+          "gameId": "nba:401909895",
+          "start": "2026-10-30T02:00Z",
+          "match": "Trail Blazers – Grizzlies",
+          "market": "prop",
+          "side": "over",
+          "line": 4.5,
+          "stat": "reb",
+          "playerId": "4066211",
+          "player": "Robert Williams III",
+          "team": "POR",
+          "label": "Robert Williams III más de 4.5 rebotes",
+          "odd": 1.3,
+          "pFinal": 0.752,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909282|prop|over|3.5|4278053|ast",
+          "gameId": "nba:401909282",
+          "start": "2026-10-31T00:00Z",
+          "match": "Heat – Pacers",
+          "market": "prop",
+          "side": "over",
+          "line": 3.5,
+          "stat": "ast",
+          "playerId": "4278053",
+          "player": "Davion Mitchell",
+          "team": "MIA",
+          "label": "Davion Mitchell más de 3.5 asistencias",
+          "odd": 1.33,
+          "pFinal": 0.738,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.73,
+      "prob": 0.555,
+      "ev": -0.04,
+      "start": "2026-10-30T02:00Z",
+      "createdAt": "2026-10-29T16:53:55.281Z"
     }
   ],
   "comboRecord": [
