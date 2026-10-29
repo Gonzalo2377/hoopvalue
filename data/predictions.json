@@ -180,5 +180,19 @@
     "away": "Partizan",
     "ptsH": 84,
     "ptsA": 77
+  },
+  "el:E2026_85": {
+    "start": "2026-10-30T19:00:00.000Z",
+    "home": "LDLC ASVEL",
+    "away": "Baskonia",
+    "ptsH": 92,
+    "ptsA": 86
+  },
+  "el:E2026_90": {
+    "start": "2026-10-30T19:15:00.000Z",
+    "home": "Olympiacos",
+    "away": "Milan",
+    "ptsH": 89,
+    "ptsA": 81
   }
 }
