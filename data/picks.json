@@ -1,61 +1,6 @@
 {
   "pending": [
     {
-      "id": "el:E2026_82|ml|home|||",
-      "gameId": "el:E2026_82",
-      "start": "2026-10-29T19:05:00.000Z",
-      "round": 9,
-      "match": "Maccabi – Paris",
-      "market": "ml",
-      "side": "home",
-      "line": null,
-      "label": "Gana Maccabi",
-      "odd": 1.5,
-      "book": "ladbrokes_uk",
-      "pFinal": 0.647,
-      "safety": 0.657,
-      "tier": "B",
-      "createdAt": "2026-10-28T21:19:01.830Z"
-    },
-    {
-      "id": "el:E2026_82|prop|over|1.5|011052|reb",
-      "gameId": "el:E2026_82",
-      "start": "2026-10-29T19:05:00.000Z",
-      "round": 9,
-      "match": "Maccabi – Paris",
-      "market": "prop",
-      "side": "over",
-      "line": 1.5,
-      "label": "Yam Madar más de 1.5 rebotes",
-      "odd": 1.63,
-      "book": "unibet (Kambi)",
-      "pFinal": 0.599,
-      "safety": 0.543,
-      "tier": "C",
-      "stat": "reb",
-      "playerId": "011052",
-      "createdAt": "2026-10-29T03:14:25.636Z"
-    },
-    {
-      "id": "el:E2026_82|prop|over|1.5|012611|ast",
-      "gameId": "el:E2026_82",
-      "start": "2026-10-29T19:05:00.000Z",
-      "round": 9,
-      "match": "Maccabi – Paris",
-      "market": "prop",
-      "side": "over",
-      "line": 1.5,
-      "label": "Sebastian Herrera más de 1.5 asistencias",
-      "odd": 1.77,
-      "book": "unibet (Kambi)",
-      "pFinal": 0.554,
-      "safety": 0.498,
-      "tier": "C",
-      "stat": "ast",
-      "playerId": "012611",
-      "createdAt": "2026-10-29T03:34:44.410Z"
-    },
-    {
       "id": "el:E2026_83|prop|over|4.5|012613|pts",
       "gameId": "el:E2026_83",
       "start": "2026-10-29T19:45:00.000Z",
@@ -201,6 +146,73 @@
     }
   ],
   "record": [
+    {
+      "id": "el:E2026_82|ml|home|||",
+      "gameId": "el:E2026_82",
+      "start": "2026-10-29T19:05:00.000Z",
+      "round": 9,
+      "match": "Maccabi – Paris",
+      "market": "ml",
+      "side": "home",
+      "line": null,
+      "label": "Gana Maccabi",
+      "odd": 1.5,
+      "book": "ladbrokes_uk",
+      "pFinal": 0.647,
+      "safety": 0.657,
+      "tier": "B",
+      "createdAt": "2026-10-28T21:19:01.830Z",
+      "result": "L",
+      "score": "94-99",
+      "settledAt": "2026-10-29T21:36:20.242Z",
+      "closeOdd": 1.63,
+      "pClose": 0.6089,
+      "clv": -0.0866
+    },
+    {
+      "id": "el:E2026_82|prop|over|1.5|011052|reb",
+      "gameId": "el:E2026_82",
+      "start": "2026-10-29T19:05:00.000Z",
+      "round": 9,
+      "match": "Maccabi – Paris",
+      "market": "prop",
+      "side": "over",
+      "line": 1.5,
+      "label": "Yam Madar más de 1.5 rebotes",
+      "odd": 1.63,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.599,
+      "safety": 0.543,
+      "tier": "C",
+      "stat": "reb",
+      "playerId": "011052",
+      "createdAt": "2026-10-29T03:14:25.636Z",
+      "result": "W",
+      "score": "94-99",
+      "settledAt": "2026-10-29T21:36:20.242Z"
+    },
+    {
+      "id": "el:E2026_82|prop|over|1.5|012611|ast",
+      "gameId": "el:E2026_82",
+      "start": "2026-10-29T19:05:00.000Z",
+      "round": 9,
+      "match": "Maccabi – Paris",
+      "market": "prop",
+      "side": "over",
+      "line": 1.5,
+      "label": "Sebastian Herrera más de 1.5 asistencias",
+      "odd": 1.77,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.554,
+      "safety": 0.498,
+      "tier": "C",
+      "stat": "ast",
+      "playerId": "012611",
+      "createdAt": "2026-10-29T03:34:44.410Z",
+      "result": "W",
+      "score": "94-99",
+      "settledAt": "2026-10-29T21:36:20.242Z"
+    },
     {
       "id": "el:E2026_81|ml|home|||",
       "gameId": "el:E2026_81",
@@ -1161,42 +1173,6 @@
       "type": "segura",
       "legs": [
         {
-          "id": "el:E2026_81|ml|home|||",
-          "gameId": "el:E2026_81",
-          "start": "2026-10-29T19:00:00.000Z",
-          "match": "Crvena Zvezda – Bayern Munich",
-          "market": "ml",
-          "side": "home",
-          "line": null,
-          "label": "Gana Crvena Zvezda",
-          "odd": 1.33,
-          "pFinal": 0.744,
-          "book": "ladbrokes_uk"
-        },
-        {
-          "id": "el:E2026_82|ml|home|||",
-          "gameId": "el:E2026_82",
-          "start": "2026-10-29T19:05:00.000Z",
-          "match": "Maccabi – Paris",
-          "market": "ml",
-          "side": "home",
-          "line": null,
-          "label": "Gana Maccabi",
-          "odd": 1.5,
-          "pFinal": 0.647,
-          "book": "ladbrokes_uk"
-        }
-      ],
-      "odd": 2,
-      "prob": 0.481,
-      "ev": -0.04,
-      "start": "2026-10-29T19:00:00.000Z",
-      "createdAt": "2026-10-28T21:19:01.830Z"
-    },
-    {
-      "type": "segura",
-      "legs": [
-        {
           "id": "el:E2026_83|prop|over|3.5|007831|reb",
           "gameId": "el:E2026_83",
           "start": "2026-10-29T19:45:00.000Z",
@@ -1411,55 +1387,6 @@
       "createdAt": "2026-10-29T10:07:02.288Z"
     },
     {
-      "type": "valor",
-      "legs": [
-        {
-          "id": "el:E2026_81|ml|home|||",
-          "gameId": "el:E2026_81",
-          "start": "2026-10-29T19:00:00.000Z",
-          "match": "Crvena Zvezda – Bayern Munich",
-          "market": "ml",
-          "side": "home",
-          "line": null,
-          "label": "Gana Crvena Zvezda",
-          "odd": 1.36,
-          "pFinal": 0.746,
-          "book": "ladbrokes_uk"
-        },
-        {
-          "id": "el:E2026_82|ml|home|||",
-          "gameId": "el:E2026_82",
-          "start": "2026-10-29T19:05:00.000Z",
-          "match": "Maccabi – Paris",
-          "market": "ml",
-          "side": "home",
-          "line": null,
-          "label": "Gana Maccabi",
-          "odd": 1.63,
-          "pFinal": 0.614,
-          "book": "betfair_ex_uk"
-        },
-        {
-          "id": "el:E2026_85|ml|home|||",
-          "gameId": "el:E2026_85",
-          "start": "2026-10-30T19:00:00.000Z",
-          "match": "LDLC ASVEL – Baskonia",
-          "market": "ml",
-          "side": "home",
-          "line": null,
-          "label": "Gana LDLC ASVEL",
-          "odd": 1.58,
-          "pFinal": 0.638,
-          "book": "onexbet"
-        }
-      ],
-      "odd": 3.5,
-      "prob": 0.292,
-      "ev": 0.024,
-      "start": "2026-10-29T19:00:00.000Z",
-      "createdAt": "2026-10-29T15:11:26.427Z"
-    },
-    {
       "type": "jugadores",
       "legs": [
         {
@@ -1541,6 +1468,104 @@
     }
   ],
   "comboRecord": [
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "el:E2026_81|ml|home|||",
+          "gameId": "el:E2026_81",
+          "start": "2026-10-29T19:00:00.000Z",
+          "match": "Crvena Zvezda – Bayern Munich",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana Crvena Zvezda",
+          "odd": 1.33,
+          "pFinal": 0.744,
+          "book": "ladbrokes_uk"
+        },
+        {
+          "id": "el:E2026_82|ml|home|||",
+          "gameId": "el:E2026_82",
+          "start": "2026-10-29T19:05:00.000Z",
+          "match": "Maccabi – Paris",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana Maccabi",
+          "odd": 1.5,
+          "pFinal": 0.647,
+          "book": "ladbrokes_uk"
+        }
+      ],
+      "odd": 2,
+      "prob": 0.481,
+      "ev": -0.04,
+      "start": "2026-10-29T19:00:00.000Z",
+      "createdAt": "2026-10-28T21:19:01.830Z",
+      "result": "L",
+      "legStates": [
+        "W",
+        "L"
+      ],
+      "settledAt": "2026-10-29T21:36:20.242Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "el:E2026_81|ml|home|||",
+          "gameId": "el:E2026_81",
+          "start": "2026-10-29T19:00:00.000Z",
+          "match": "Crvena Zvezda – Bayern Munich",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana Crvena Zvezda",
+          "odd": 1.36,
+          "pFinal": 0.746,
+          "book": "ladbrokes_uk"
+        },
+        {
+          "id": "el:E2026_82|ml|home|||",
+          "gameId": "el:E2026_82",
+          "start": "2026-10-29T19:05:00.000Z",
+          "match": "Maccabi – Paris",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana Maccabi",
+          "odd": 1.63,
+          "pFinal": 0.614,
+          "book": "betfair_ex_uk"
+        },
+        {
+          "id": "el:E2026_85|ml|home|||",
+          "gameId": "el:E2026_85",
+          "start": "2026-10-30T19:00:00.000Z",
+          "match": "LDLC ASVEL – Baskonia",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana LDLC ASVEL",
+          "odd": 1.58,
+          "pFinal": 0.638,
+          "book": "onexbet"
+        }
+      ],
+      "odd": 3.5,
+      "prob": 0.292,
+      "ev": 0.024,
+      "start": "2026-10-29T19:00:00.000Z",
+      "createdAt": "2026-10-29T15:11:26.427Z",
+      "result": "L",
+      "legStates": [
+        "W",
+        "L",
+        null
+      ],
+      "settledAt": "2026-10-29T21:36:20.242Z"
+    },
     {
       "type": "valor",
       "legs": [
