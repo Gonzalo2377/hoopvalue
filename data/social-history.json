@@ -2659,6 +2659,51 @@
           }
         ],
         "text": "🏀 NBA Picks Day · 29/10\n\n1.- Gana Pelicans @1.46\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+      },
+      "pred-nba": {
+        "id": "pred-nba",
+        "kind": "pred",
+        "league": "nba",
+        "title": "Predicción casi clavada · NBA (2)",
+        "postAt": "2026-10-29T09:10:00.000Z",
+        "image": true,
+        "games": [
+          {
+            "id": "nba:401909890",
+            "start": "2026-10-29T01:00Z",
+            "home": "Jazz",
+            "away": "Spurs",
+            "pred": [
+              112,
+              117
+            ],
+            "real": [
+              111,
+              117
+            ],
+            "how": "team",
+            "team": "Spurs",
+            "off": 1
+          },
+          {
+            "id": "nba:401909882",
+            "start": "2026-10-28T23:00Z",
+            "home": "Cavaliers",
+            "away": "Wizards",
+            "pred": [
+              122,
+              108
+            ],
+            "real": [
+              121,
+              111
+            ],
+            "how": "close",
+            "team": null,
+            "off": 4
+          }
+        ],
+        "text": "🔮 Predicción EuroPicks · NBA (28/10)\n\n🎯 Jazz 111-117 Spurs (dijimos 112-117, Spurs exacto)\n🔥 Cavaliers 121-111 Wizards (dijimos 122-108)\n\nMarcador predicho antes del partido 👀\n#NBA · +18"
       }
     }
   }
