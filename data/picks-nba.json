@@ -2303,6 +2303,40 @@
       "safety": 0.439,
       "tier": "C",
       "createdAt": "2026-10-29T00:40:00.280Z"
+    },
+    {
+      "id": "nba:401909894|ml|home|||",
+      "gameId": "nba:401909894",
+      "start": "2026-10-30T00:00Z",
+      "match": "Pelicans – Kings",
+      "market": "ml",
+      "side": "home",
+      "line": null,
+      "label": "Gana Pelicans",
+      "odd": 1.51,
+      "book": "draftkings",
+      "pFinal": 0.657,
+      "safety": 0.609,
+      "tier": "C",
+      "createdAt": "2026-10-29T01:00:26.475Z"
+    },
+    {
+      "id": "nba:401909891|prop|under|3.5|4683778|reb",
+      "gameId": "nba:401909891",
+      "start": "2026-10-29T01:30Z",
+      "match": "Mavericks – Thunder",
+      "market": "prop",
+      "side": "under",
+      "line": 3.5,
+      "label": "Jared McCain menos de 3.5 rebotes",
+      "odd": 1.55,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.662,
+      "safety": 0.546,
+      "tier": "C",
+      "stat": "reb",
+      "playerId": "4683778",
+      "createdAt": "2026-10-29T01:00:26.475Z"
     }
   ],
   "record": [
