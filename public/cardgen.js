@@ -344,41 +344,41 @@ window.renderPredCard = async function (canvas, { league = 'euroleague', g } = {
   const bg = ctx.createRadialGradient(62, 54, 3, 70, 62, 24); bg.addColorStop(0, '#ffb36b'); bg.addColorStop(.6, '#ff7a1a'); bg.addColorStop(1, '#b4410b');
   ctx.fillStyle = bg; ctx.beginPath(); ctx.arc(70, 62, 24, 0, Math.PI * 2); ctx.fill();
   txt('Euro', 106, 76, 40, C.accent, 900); ctx.font = '900 40px Inter'; txt('Picks', 106 + ctx.measureText('Euro').width + 3, 76, 40, C.text, 900);
-  txt(`Predicción · ${league === 'nba' ? 'NBA' : 'EuroLeague'}`, W - 60, 74, 26, C.accent2, 800, 'right');
+  txt(`Prediction · ${league === 'nba' ? 'NBA' : 'EuroLeague'}`, W - 60, 74, 26, C.accent2, 800, 'right');
   if (G.length > 1) {                                           // varios partidos: una fila por partido
-    txt(G.some(x => x.how !== 'close') ? '¡PREDICCIONES CLAVADAS!' : '¡CASI LAS CLAVAMOS!', W / 2, 150, 50, C.good, 900, 'center');
+    txt(G.some(x => x.how !== 'close') ? 'PREDICTIONS NAILED!' : 'SO CLOSE!', W / 2, 150, 50, C.good, 900, 'center');
     const RH = Math.min(150, 400 / G.length), top = 190 + (400 - RH * G.length) / 2, big = RH >= 130;
-    txt('predicción', 760, top - 4, 20, C.muted, 700, 'center'); txt('final', 990, top - 4, 20, C.muted, 700, 'center');
+    txt('prediction', 760, top - 4, 20, C.muted, 700, 'center'); txt('final', 990, top - 4, 20, C.muted, 700, 'center');
     G.forEach((x, i) => {
       const y = top + i * RH, mid = y + RH / 2;
       rr(60, y + 6, W - 120, RH - 12, 18); ctx.fillStyle = C.panel; ctx.fill();
       const name = `${x.home} – ${x.away}`, d = Math.abs(x.pred[0] - x.real[0]) + Math.abs(x.pred[1] - x.real[1]);
       txt(name, 90, mid - 6, fit(name, 520, big ? 40 : 32, 900), C.text, 900);
-      txt(x.how === 'exact' ? 'Marcador exacto' : x.how === 'team' ? `${x.team} exacto` : `A solo ${d} puntos`, 90, mid + (big ? 34 : 28), big ? 24 : 20, C.good, 700);
+      txt(x.how === 'exact' ? 'Exact score' : x.how === 'team' ? `${x.team} exact` : `Only ${d} pts off`, 90, mid + (big ? 34 : 28), big ? 24 : 20, C.good, 700);
       const sc = (s, cx, fin) => { const fz = big ? 54 : 40; ctx.font = `900 ${fz}px Inter`; const a = String(s[0]), b = String(s[1]), wa = ctx.measureText(a + '-').width, wt = ctx.measureText(a + '-' + b).width, x0 = cx - wt / 2;
         txt(a, x0, mid + fz / 3, fz, x.pred[0] === x.real[0] ? C.good : fin ? C.text : C.accent2, 900); txt('-', x0 + ctx.measureText(a).width, mid + fz / 3, fz, C.muted, 900);
         txt(b, x0 + wa, mid + fz / 3, fz, x.pred[1] === x.real[1] ? C.good : fin ? C.text : C.accent2, 900); };
       sc(x.pred, 760, false); sc(x.real, 990, true);
     });
-    txt('Predicción hecha antes del partido', 60, 630, 22, C.muted, 600); txt('europicks.pages.dev', W - 60, 630, 24, C.accent, 800, 'right');
+    txt('Predicted before tip-off', 60, 630, 22, C.muted, 600); txt('europicks.pages.dev', W - 60, 630, 24, C.accent, 800, 'right');
     return;
   }
   /* titular */
   const off = Math.abs(g.pred[0] - g.real[0]) + Math.abs(g.pred[1] - g.real[1]);
-  const head = g.how === 'exact' ? '¡MARCADOR CLAVADO!' : g.how === 'team' ? `¡${g.team.toUpperCase()} CLAVADO!` : `¡A SOLO ${off} PUNTOS!`;
+  const head = g.how === 'exact' ? 'SCORE NAILED!' : g.how === 'team' ? `${g.team.toUpperCase()} NAILED!` : `ONLY ${off} POINTS OFF!`;
   txt(head, W / 2, 158, fit(head, 1000, 56, 900), C.good, 900, 'center');
   /* equipos */
   txt(g.home, 330, 236, fit(g.home, 380, 40, 900), C.text, 900, 'center'); txt(g.away, 870, 236, fit(g.away, 380, 40, 900), C.text, 900, 'center');
   /* filas: predicción y final; número exacto en verde */
-  [['Nuestra predicción', g.pred, 270], ['Resultado final', g.real, 420]].forEach(([lbl, s, y]) => {
+  [['Our prediction', g.pred, 270], ['Final score', g.real, 420]].forEach(([lbl, s, y]) => {
     rr(120, y, 960, 128, 24); ctx.fillStyle = C.panel; ctx.fill();
     txt(lbl, W / 2, y + 74, 24, C.muted, 700, 'center');
     [0, 1].forEach(k => {
       const ok = g.pred[k] === g.real[k], cx = k ? 870 : 330;
       if (ok) { rr(cx - 110, y + 14, 220, 100, 20); ctx.fillStyle = 'rgba(34,197,94,.18)'; ctx.fill(); ctx.strokeStyle = C.good; ctx.lineWidth = 3; ctx.stroke(); }
-      txt(String(s[k]), cx, y + 96, 80, ok ? C.good : lbl === 'Resultado final' ? C.text : C.accent2, 900, 'center');
+      txt(String(s[k]), cx, y + 96, 80, ok ? C.good : lbl === 'Final score' ? C.text : C.accent2, 900, 'center');
     });
   });
-  txt('Predicción hecha antes del partido', 60, 630, 22, C.muted, 600);
+  txt('Predicted before tip-off', 60, 630, 22, C.muted, 600);
   txt('europicks.pages.dev', W - 60, 630, 24, C.accent, 800, 'right');
 };

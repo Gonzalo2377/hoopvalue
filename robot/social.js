@@ -69,7 +69,7 @@ function elGame(g, picks) {
   const head = [`🏀 EuroLeague · hoy ${hhmm(g.start)}`, `${g.home.name} vs ${g.away.name}`, ''];
   let h = Math.round((g.model || {}).ptsH), w = Math.round((g.model || {}).ptsA);
   if (h === w) g.model.ptsH >= g.model.ptsA ? h++ : w++;                                      // en baloncesto no hay empate
-  const guess = g.model && g.model.ptsH != null ? `🔮 Predicción: ${g.home.name} ${h}-${w} ${g.away.name}` : null;
+  const guess = g.model && g.model.ptsH != null ? `🔮 Prediction: ${g.home.name} ${h}-${w} ${g.away.name}` : null;
   if (!picks.length) return fit([...head, 'Sin pick seguro en este partido: no hay valor suficiente. A veces lo mejor es no apostar.', ...(guess ? ['', guess] : []), '', '#EuroLeague · +18']);
   return listTweet(head, picks.map(mini), ['', ...(guess ? [guess] : []), '📊 Last 10 games en las fotos', '#EuroLeague · +18 · Juega con responsabilidad']);
 }
@@ -189,10 +189,10 @@ function main() {
       return how && { id: x.id, start: x.start, home, away, pred: [ph, pa], real: [rh, ra], how, team: how === 'team' ? (eh ? away : home) : null, off: eh + ea };
     }).filter(Boolean).sort((a, b) => a.off - b.off).slice(0, 4);
     if (!hits.length) continue;
-    const line = h => h.how === 'exact' ? `🎯 ¡CLAVADO! ${h.home} ${h.real[0]}-${h.real[1]} ${h.away}`
-      : `${h.how === 'team' ? '🎯' : '🔥'} ${h.home} ${h.real[0]}-${h.real[1]} ${h.away} (dijimos ${h.pred[0]}-${h.pred[1]}${h.how === 'team' ? `, ${h.team} exacto` : ''})`;
-    const text = fit([`🔮 Predicción EuroPicks · ${LG[lg].name === 'Euroliga' ? 'EuroLeague' : 'NBA'} (${D}/${M})`, '', ...hits.map(line), '',
-      hits.some(h => h.how !== 'close') ? 'Marcador predicho antes del partido 👀' : 'Casi lo clavamos 👀', `${LG[lg].tag} · +18`]);
+    const line = h => h.how === 'exact' ? `🎯 NAILED IT! ${h.home} ${h.real[0]}-${h.real[1]} ${h.away}`
+      : `${h.how === 'team' ? '🎯' : '🔥'} ${h.home} ${h.real[0]}-${h.real[1]} ${h.away} (we said ${h.pred[0]}-${h.pred[1]}${h.how === 'team' ? `, ${h.team} exact` : ''})`;
+    const text = fit([`🔮 EuroPicks Prediction · ${LG[lg].name === 'Euroliga' ? 'EuroLeague' : 'NBA'} (${D}/${M})`, '', ...hits.map(line), '',
+      hits.some(h => h.how !== 'close') ? 'Score predicted before tip-off 👀' : 'So close 👀', `${LG[lg].tag} · +18`]);
     put({ id: 'pred-' + lg, kind: 'pred', league: lg, title: `Predicción casi clavada · ${LG[lg].name} (${hits.length})`, postAt: madridAt(today, at), image: true, games: hits, text });
   }
 
