@@ -194,5 +194,19 @@
     "away": "Milan",
     "ptsH": 89,
     "ptsA": 81
+  },
+  "el:E2026_89": {
+    "start": "2026-10-30T19:30:00.000Z",
+    "home": "Virtus Bologna",
+    "away": "Besiktas",
+    "ptsH": 88,
+    "ptsA": 84
+  },
+  "el:E2026_87": {
+    "start": "2026-10-30T19:30:00.000Z",
+    "home": "FC Barcelona",
+    "away": "Valencia",
+    "ptsH": 91,
+    "ptsA": 92
   }
 }
