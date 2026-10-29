@@ -2270,7 +2270,7 @@
         "title": "Maccabi vs Paris",
         "start": "2026-10-29T19:05:00.000Z",
         "postAt": "2026-10-29T18:05:00.000Z",
-        "text": "🏀 EuroLeague · hoy 20:05\nMaccabi vs Paris\n\n1.- Y. Madar +1.5 Reb @1.63\n\n🔮 Predicción: Maccabi 93-89 Paris\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
+        "text": "🏀 EuroLeague · hoy 20:05\nMaccabi vs Paris\n\n1.- Y. Madar +1.5 Reb @1.62\n2.- S. Herrera +1.5 Ast @1.77\n\n🔮 Predicción: Maccabi 93-89 Paris\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
         "image": true,
         "picks": [
           {
@@ -2278,7 +2278,7 @@
             "league": "euroleague",
             "label": "Y. Madar +1.5 rebotes",
             "list": "Y. Madar +1.5 Reb",
-            "odd": 1.63,
+            "odd": 1.62,
             "start": "2026-10-29T19:05:00.000Z",
             "gameId": "el:E2026_82",
             "market": "prop",
@@ -2288,7 +2288,24 @@
             "playerId": "011052",
             "team": "TEL",
             "match": "Maccabi – Paris",
-            "pFinal": 0.599
+            "pFinal": 0.602
+          },
+          {
+            "id": "el:E2026_82|prop|over|1.5|012611|ast",
+            "league": "euroleague",
+            "label": "S. Herrera +1.5 asistencias",
+            "list": "S. Herrera +1.5 Ast",
+            "odd": 1.77,
+            "start": "2026-10-29T19:05:00.000Z",
+            "gameId": "el:E2026_82",
+            "market": "prop",
+            "side": "over",
+            "line": 1.5,
+            "stat": "ast",
+            "playerId": "012611",
+            "team": "PRS",
+            "match": "Maccabi – Paris",
+            "pFinal": 0.554
           }
         ]
       },

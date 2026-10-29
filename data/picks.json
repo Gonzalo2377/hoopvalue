@@ -71,6 +71,25 @@
       "stat": "reb",
       "playerId": "011052",
       "createdAt": "2026-10-29T03:14:25.636Z"
+    },
+    {
+      "id": "el:E2026_82|prop|over|1.5|012611|ast",
+      "gameId": "el:E2026_82",
+      "start": "2026-10-29T19:05:00.000Z",
+      "round": 9,
+      "match": "Maccabi – Paris",
+      "market": "prop",
+      "side": "over",
+      "line": 1.5,
+      "label": "Sebastian Herrera más de 1.5 asistencias",
+      "odd": 1.77,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.554,
+      "safety": 0.498,
+      "tier": "C",
+      "stat": "ast",
+      "playerId": "012611",
+      "createdAt": "2026-10-29T03:34:44.410Z"
     }
   ],
   "record": [
