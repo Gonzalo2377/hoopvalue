@@ -589,6 +589,40 @@
       "stat": "ast",
       "playerId": "4278053",
       "createdAt": "2026-10-29T19:32:40.880Z"
+    },
+    {
+      "id": "nba:401909279|ml|away|||",
+      "gameId": "nba:401909279",
+      "start": "2026-10-30T23:30Z",
+      "match": "Nets – Pistons",
+      "market": "ml",
+      "side": "away",
+      "line": null,
+      "label": "Gana Pistons",
+      "odd": 1.39,
+      "book": "draftkings",
+      "pFinal": 0.7,
+      "safety": 0.668,
+      "tier": "B",
+      "createdAt": "2026-10-29T19:53:18.186Z"
+    },
+    {
+      "id": "nba:401909895|prop|over|19.5|5041935|pr",
+      "gameId": "nba:401909895",
+      "start": "2026-10-30T02:00Z",
+      "match": "Trail Blazers – Grizzlies",
+      "market": "prop",
+      "side": "over",
+      "line": 19.5,
+      "label": "Cameron Boozer más de 19.5 pts+reb",
+      "odd": 1.36,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.715,
+      "safety": 0.644,
+      "tier": "B",
+      "stat": "pr",
+      "playerId": "5041935",
+      "createdAt": "2026-10-29T19:53:18.186Z"
     }
   ],
   "record": [
@@ -9240,6 +9274,63 @@
       "ev": -0.046,
       "start": "2026-10-30T02:00Z",
       "createdAt": "2026-10-29T19:32:40.880Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909281|ml|home|||",
+          "gameId": "nba:401909281",
+          "start": "2026-10-30T23:30Z",
+          "match": "Raptors – Magic",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana Raptors",
+          "odd": 1.52,
+          "pFinal": 0.68,
+          "book": "draftkings"
+        },
+        {
+          "id": "nba:401909282|prop|over|4.5|4278053|ast",
+          "gameId": "nba:401909282",
+          "start": "2026-10-31T00:00Z",
+          "match": "Heat – Pacers",
+          "market": "prop",
+          "side": "over",
+          "line": 4.5,
+          "stat": "ast",
+          "playerId": "4278053",
+          "player": "Davion Mitchell",
+          "team": "MIA",
+          "label": "Davion Mitchell más de 4.5 asistencias",
+          "odd": 1.62,
+          "pFinal": 0.625,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909284|prop|over|2.5|3936099|reb",
+          "gameId": "nba:401909284",
+          "start": "2026-10-31T00:00Z",
+          "match": "Timberwolves – Clippers",
+          "market": "prop",
+          "side": "over",
+          "line": 2.5,
+          "stat": "reb",
+          "playerId": "3936099",
+          "player": "Derrick Jones Jr.",
+          "team": "LAC",
+          "label": "Derrick Jones Jr. más de 2.5 rebotes",
+          "odd": 1.64,
+          "pFinal": 0.628,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 4.04,
+      "prob": 0.267,
+      "ev": 0.078,
+      "start": "2026-10-30T23:30Z",
+      "createdAt": "2026-10-29T19:53:18.186Z"
     }
   ],
   "comboRecord": [
