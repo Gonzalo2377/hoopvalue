@@ -2317,9 +2317,44 @@
         "title": "Real Madrid vs Fenerbahce",
         "start": "2026-10-29T19:45:00.000Z",
         "postAt": "2026-10-29T18:45:00.000Z",
-        "text": "🏀 EuroLeague · hoy 20:45\nReal Madrid vs Fenerbahce\n\nSin pick seguro en este partido: no hay valor suficiente. A veces lo mejor es no apostar.\n\n🔮 Predicción: Real Madrid 86-83 Fenerbahce\n\n#EuroLeague · +18",
+        "text": "🏀 EuroLeague · hoy 20:45\nReal Madrid vs Fenerbahce\n\n1.- M. Jantunen +4.5 Pts @1.54\n2.- S. Shields +3.5 Reb @1.48\n\n🔮 Predicción: Real Madrid 86-83 Fenerbahce\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
         "image": true,
-        "picks": []
+        "picks": [
+          {
+            "id": "el:E2026_83|prop|over|4.5|012613|pts",
+            "league": "euroleague",
+            "label": "M. Jantunen +4.5 puntos",
+            "list": "M. Jantunen +4.5 Pts",
+            "odd": 1.54,
+            "start": "2026-10-29T19:45:00.000Z",
+            "gameId": "el:E2026_83",
+            "market": "prop",
+            "side": "over",
+            "line": 4.5,
+            "stat": "pts",
+            "playerId": "012613",
+            "team": "MAD",
+            "match": "Real Madrid – Fenerbahce",
+            "pFinal": 0.634
+          },
+          {
+            "id": "el:E2026_83|prop|over|3.5|007831|reb",
+            "league": "euroleague",
+            "label": "S. Shields +3.5 rebotes",
+            "list": "S. Shields +3.5 Reb",
+            "odd": 1.48,
+            "start": "2026-10-29T19:45:00.000Z",
+            "gameId": "el:E2026_83",
+            "market": "prop",
+            "side": "over",
+            "line": 3.5,
+            "stat": "reb",
+            "playerId": "007831",
+            "team": "ULK",
+            "match": "Real Madrid – Fenerbahce",
+            "pFinal": 0.666
+          }
+        ]
       },
       "summary-euroleague": {
         "id": "summary-euroleague",
@@ -2535,6 +2570,56 @@
           ],
           "odd": 1.97,
           "prob": 0.517
+        }
+      },
+      "combo-euroleague": {
+        "id": "combo-euroleague",
+        "kind": "combo",
+        "league": "euroleague",
+        "title": "Safe Parlay · Euroliga @2.40",
+        "postAt": "2026-10-29T17:35:00.000Z",
+        "image": true,
+        "text": "🎯 Safe Parlay · Euroliga\n\n1.- S. Shields +3.5 Reb @1.48\n2.- Y. Madar +1.5 Reb @1.62\n\n💰 Total odds 2.40\n📊 Last 10 games de cada uno en la foto\n#Euroliga · +18 · Juega con responsabilidad",
+        "picks": [],
+        "combo": {
+          "legs": [
+            {
+              "id": "el:E2026_83|prop|over|3.5|007831|reb",
+              "league": "euroleague",
+              "label": "S. Shields +3.5 rebotes",
+              "list": "S. Shields +3.5 Reb",
+              "odd": 1.48,
+              "start": "2026-10-29T19:45:00.000Z",
+              "gameId": "el:E2026_83",
+              "market": "prop",
+              "side": "over",
+              "line": 3.5,
+              "stat": "reb",
+              "playerId": "007831",
+              "team": "ULK",
+              "match": "Real Madrid – Fenerbahce",
+              "pFinal": 0.666
+            },
+            {
+              "id": "el:E2026_82|prop|over|1.5|011052|reb",
+              "league": "euroleague",
+              "label": "Y. Madar +1.5 rebotes",
+              "list": "Y. Madar +1.5 Reb",
+              "odd": 1.62,
+              "start": "2026-10-29T19:05:00.000Z",
+              "gameId": "el:E2026_82",
+              "market": "prop",
+              "side": "over",
+              "line": 1.5,
+              "stat": "reb",
+              "playerId": "011052",
+              "team": "TEL",
+              "match": "Maccabi – Paris",
+              "pFinal": 0.602
+            }
+          ],
+          "odd": 2.4,
+          "prob": 0.401
         }
       }
     }

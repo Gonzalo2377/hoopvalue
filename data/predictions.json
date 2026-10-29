@@ -173,5 +173,12 @@
     "away": "Panathinaikos",
     "ptsH": 78,
     "ptsA": 84
+  },
+  "el:E2026_86": {
+    "start": "2026-10-30T18:00:00.000Z",
+    "home": "Zalgiris",
+    "away": "Partizan",
+    "ptsH": 84,
+    "ptsA": 77
   }
 }
