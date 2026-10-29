@@ -2507,44 +2507,10 @@
         "kind": "nba-day",
         "league": "nba",
         "reply": false,
-        "title": "NBA Picks Day · 4 picks",
+        "title": "NBA Picks Day · 2 picks",
         "postAt": "2026-10-29T17:45:00.000Z",
         "image": true,
         "picks": [
-          {
-            "id": "nba:401909892|prop|over|9.5|5254165|pts",
-            "league": "nba",
-            "label": "K. Wagler +9.5 puntos",
-            "list": "K. Wagler +9.5 Pts",
-            "odd": 1.34,
-            "start": "2026-10-29T02:30Z",
-            "gameId": "nba:401909892",
-            "market": "prop",
-            "side": "over",
-            "line": 9.5,
-            "stat": "pts",
-            "playerId": "5254165",
-            "team": "LAC",
-            "match": "Clippers – Lakers",
-            "pFinal": 0.726
-          },
-          {
-            "id": "nba:401909892|prop|over|7.5|3448|pts",
-            "league": "nba",
-            "label": "B. Lopez +7.5 puntos",
-            "list": "B. Lopez +7.5 Pts",
-            "odd": 1.35,
-            "start": "2026-10-29T02:30Z",
-            "gameId": "nba:401909892",
-            "market": "prop",
-            "side": "over",
-            "line": 7.5,
-            "stat": "pts",
-            "playerId": "3448",
-            "team": "LAC",
-            "match": "Clippers – Lakers",
-            "pFinal": 0.737
-          },
           {
             "id": "nba:401909894|ml|home|||",
             "league": "nba",
@@ -2557,7 +2523,7 @@
             "side": "home",
             "line": null,
             "match": "Pelicans – Kings",
-            "pFinal": 0.655
+            "pFinal": 0.653
           },
           {
             "id": "nba:401909894|prop|over|9.5|5142620|pts",
@@ -2577,7 +2543,7 @@
             "pFinal": 0.701
           }
         ],
-        "text": "🏀 NBA Picks Day · 29/10\n\n1.- K. Wagler +9.5 Pts @1.34\n2.- B. Lopez +7.5 Pts @1.35\n3.- Gana Pelicans @1.49\n4.- D. Acuff Jr. +9.5 Pts @1.46\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 29/10\n\n1.- Gana Pelicans @1.49\n2.- D. Acuff Jr. +9.5 Pts @1.46\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
