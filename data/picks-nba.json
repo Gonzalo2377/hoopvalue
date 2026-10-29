@@ -2251,6 +2251,24 @@
       "safety": 0.44,
       "tier": "C",
       "createdAt": "2026-10-28T23:59:08.028Z"
+    },
+    {
+      "id": "nba:401909890|prop|over|7.5|4683766|pts",
+      "gameId": "nba:401909890",
+      "start": "2026-10-29T01:00Z",
+      "match": "Jazz – Spurs",
+      "market": "prop",
+      "side": "over",
+      "line": 7.5,
+      "label": "Isaiah Collier más de 7.5 puntos",
+      "odd": 1.43,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.692,
+      "safety": 0.607,
+      "tier": "C",
+      "stat": "pts",
+      "playerId": "4683766",
+      "createdAt": "2026-10-29T00:19:34.846Z"
     }
   ],
   "record": [
@@ -10001,6 +10019,151 @@
       "ev": -0.029,
       "start": "2026-10-29T00:00Z",
       "createdAt": "2026-10-28T23:59:08.028Z"
+    },
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "nba:401909892|prop|over|7.5|3448|pts",
+          "gameId": "nba:401909892",
+          "start": "2026-10-29T02:30Z",
+          "match": "Clippers – Lakers",
+          "market": "prop",
+          "side": "over",
+          "line": 7.5,
+          "stat": "pts",
+          "playerId": "3448",
+          "player": "Brook Lopez",
+          "team": "LAC",
+          "label": "Brook Lopez más de 7.5 puntos",
+          "odd": 1.35,
+          "pFinal": 0.737,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909894|prop|over|9.5|5142620|pts",
+          "gameId": "nba:401909894",
+          "start": "2026-10-30T00:00Z",
+          "match": "Pelicans – Kings",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pts",
+          "playerId": "5142620",
+          "player": "Darius Acuff Jr.",
+          "team": "SAC",
+          "label": "Darius Acuff Jr. más de 9.5 puntos",
+          "odd": 1.45,
+          "pFinal": 0.705,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.96,
+      "prob": 0.52,
+      "ev": 0.017,
+      "start": "2026-10-29T02:30Z",
+      "createdAt": "2026-10-29T00:19:34.846Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909892|prop|over|7.5|3448|pts",
+          "gameId": "nba:401909892",
+          "start": "2026-10-29T02:30Z",
+          "match": "Clippers – Lakers",
+          "market": "prop",
+          "side": "over",
+          "line": 7.5,
+          "stat": "pts",
+          "playerId": "3448",
+          "player": "Brook Lopez",
+          "team": "LAC",
+          "label": "Brook Lopez más de 7.5 puntos",
+          "odd": 1.35,
+          "pFinal": 0.737,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909894|prop|over|9.5|5142620|pts",
+          "gameId": "nba:401909894",
+          "start": "2026-10-30T00:00Z",
+          "match": "Pelicans – Kings",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pts",
+          "playerId": "5142620",
+          "player": "Darius Acuff Jr.",
+          "team": "SAC",
+          "label": "Darius Acuff Jr. más de 9.5 puntos",
+          "odd": 1.45,
+          "pFinal": 0.705,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909891|total|under|228.5||",
+          "gameId": "nba:401909891",
+          "start": "2026-10-29T01:30Z",
+          "match": "Mavericks – Thunder",
+          "market": "total",
+          "side": "under",
+          "line": 228.5,
+          "label": "Menos de 228.5 puntos",
+          "odd": 1.88,
+          "pFinal": 0.553,
+          "book": "unibet"
+        }
+      ],
+      "odd": 3.68,
+      "prob": 0.287,
+      "ev": 0.057,
+      "start": "2026-10-29T01:30Z",
+      "createdAt": "2026-10-29T00:19:34.846Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "nba:401909892|prop|over|9.5|5254165|pts",
+          "gameId": "nba:401909892",
+          "start": "2026-10-29T02:30Z",
+          "match": "Clippers – Lakers",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pts",
+          "playerId": "5254165",
+          "player": "Keaton Wagler",
+          "team": "LAC",
+          "label": "Keaton Wagler más de 9.5 puntos",
+          "odd": 1.33,
+          "pFinal": 0.73,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909894|prop|over|9.5|5142620|pts",
+          "gameId": "nba:401909894",
+          "start": "2026-10-30T00:00Z",
+          "match": "Pelicans – Kings",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pts",
+          "playerId": "5142620",
+          "player": "Darius Acuff Jr.",
+          "team": "SAC",
+          "label": "Darius Acuff Jr. más de 9.5 puntos",
+          "odd": 1.45,
+          "pFinal": 0.705,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.93,
+      "prob": 0.515,
+      "ev": -0.007,
+      "start": "2026-10-29T02:30Z",
+      "createdAt": "2026-10-29T00:19:34.846Z"
     }
   ],
   "comboRecord": [
