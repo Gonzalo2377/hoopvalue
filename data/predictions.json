@@ -166,5 +166,12 @@
     "away": "Hapoel TLV",
     "ptsH": 88,
     "ptsA": 88
+  },
+  "el:E2026_88": {
+    "start": "2026-10-30T17:30:00.000Z",
+    "home": "Anadolu Efes",
+    "away": "Panathinaikos",
+    "ptsH": 78,
+    "ptsA": 84
   }
 }
