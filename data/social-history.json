@@ -2567,7 +2567,7 @@
             "league": "nba",
             "label": "J. Champagnie +7.5 puntos",
             "list": "J. Champagnie +7.5 Pts",
-            "odd": 1.47,
+            "odd": 1.46,
             "start": "2026-10-29T01:00Z",
             "gameId": "nba:401909890",
             "market": "prop",
@@ -2577,10 +2577,10 @@
             "playerId": "4592479",
             "team": "SA",
             "match": "Jazz – Spurs",
-            "pFinal": 0.665
+            "pFinal": 0.668
           }
         ],
-        "text": "🏀 NBA Picks Day · 29/10\n\n1.- K. Wagler +9.5 Pts @1.33\n2.- B. Lopez +7.5 Pts @1.35\n3.- A. Mitchell −1.5 T3 @1.48\n4.- J. Champagnie +7.5 Pts @1.47\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 29/10\n\n1.- K. Wagler +9.5 Pts @1.33\n2.- B. Lopez +7.5 Pts @1.35\n3.- A. Mitchell −1.5 T3 @1.48\n4.- J. Champagnie +7.5 Pts @1.46\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-2": {
         "id": "nba-day-2",
@@ -2596,7 +2596,7 @@
             "league": "nba",
             "label": "I. Collier +7.5 puntos",
             "list": "I. Collier +7.5 Pts",
-            "odd": 1.43,
+            "odd": 1.42,
             "start": "2026-10-29T01:00Z",
             "gameId": "nba:401909890",
             "market": "prop",
@@ -2606,7 +2606,7 @@
             "playerId": "4683766",
             "team": "UTAH",
             "match": "Jazz – Spurs",
-            "pFinal": 0.692
+            "pFinal": 0.696
           },
           {
             "id": "nba:401909894|prop|over|9.5|5142620|pts",
@@ -2626,38 +2626,38 @@
             "pFinal": 0.705
           },
           {
-            "id": "nba:401909891|prop|under|3.5|4222252|ast",
+            "id": "nba:401909891|prop|under|13.5|4432582|pa",
             "league": "nba",
-            "label": "I. Hartenstein −3.5 asistencias",
-            "list": "I. Hartenstein −3.5 Ast",
+            "label": "M. Christie −13.5 pts+ast",
+            "list": "M. Christie −13.5 P+A",
             "odd": 1.67,
             "start": "2026-10-29T01:30Z",
             "gameId": "nba:401909891",
             "market": "prop",
             "side": "under",
-            "line": 3.5,
-            "stat": "ast",
-            "playerId": "4222252",
-            "team": "OKC",
+            "line": 13.5,
+            "stat": "pa",
+            "playerId": "4432582",
+            "team": "DAL",
             "match": "Mavericks – Thunder",
-            "pFinal": 0.604
+            "pFinal": 0.581
           },
           {
-            "id": "nba:401909891|total|under|228.5||",
+            "id": "nba:401909890|spread|home|14.5||",
             "league": "nba",
-            "label": "Menos de 228.5 puntos",
-            "list": "Under 228.5 (Mavericks-Thunder)",
-            "odd": 1.88,
-            "start": "2026-10-29T01:30Z",
-            "gameId": "nba:401909891",
-            "market": "total",
-            "side": "under",
-            "line": 228.5,
-            "match": "Mavericks – Thunder",
-            "pFinal": 0.553
+            "label": "Jazz +14.5",
+            "list": "Jazz +14.5",
+            "odd": 1.87,
+            "start": "2026-10-29T01:00Z",
+            "gameId": "nba:401909890",
+            "market": "spread",
+            "side": "home",
+            "line": 14.5,
+            "match": "Jazz – Spurs",
+            "pFinal": 0.551
           }
         ],
-        "text": "🧵 NBA Picks Day · 29/10 (sigue)\n\n5.- I. Collier +7.5 Pts @1.43\n6.- D. Acuff Jr. +9.5 Pts @1.45\n7.- I. Hartenstein −3.5 Ast @1.67\n8.- Under 228.5 (Mavericks-Thunder) @1.88\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 29/10 (sigue)\n\n5.- I. Collier +7.5 Pts @1.42\n6.- D. Acuff Jr. +9.5 Pts @1.45\n7.- M. Christie −13.5 P+A @1.67\n8.- Jazz +14.5 @1.87\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }

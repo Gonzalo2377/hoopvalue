@@ -2269,6 +2269,40 @@
       "stat": "pts",
       "playerId": "4683766",
       "createdAt": "2026-10-29T00:19:34.846Z"
+    },
+    {
+      "id": "nba:401909891|prop|under|13.5|4432582|pa",
+      "gameId": "nba:401909891",
+      "start": "2026-10-29T01:30Z",
+      "match": "Mavericks – Thunder",
+      "market": "prop",
+      "side": "under",
+      "line": 13.5,
+      "label": "Max Christie menos de 13.5 pts+ast",
+      "odd": 1.67,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.581,
+      "safety": 0.536,
+      "tier": "C",
+      "stat": "pa",
+      "playerId": "4432582",
+      "createdAt": "2026-10-29T00:40:00.280Z"
+    },
+    {
+      "id": "nba:401909890|spread|home|14.5||",
+      "gameId": "nba:401909890",
+      "start": "2026-10-29T01:00Z",
+      "match": "Jazz – Spurs",
+      "market": "spread",
+      "side": "home",
+      "line": 14.5,
+      "label": "Jazz +14.5",
+      "odd": 1.87,
+      "book": "draftkings",
+      "pFinal": 0.551,
+      "safety": 0.439,
+      "tier": "C",
+      "createdAt": "2026-10-29T00:40:00.280Z"
     }
   ],
   "record": [
@@ -10164,6 +10198,63 @@
       "ev": -0.007,
       "start": "2026-10-29T02:30Z",
       "createdAt": "2026-10-29T00:19:34.846Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909892|prop|over|7.5|3448|pts",
+          "gameId": "nba:401909892",
+          "start": "2026-10-29T02:30Z",
+          "match": "Clippers – Lakers",
+          "market": "prop",
+          "side": "over",
+          "line": 7.5,
+          "stat": "pts",
+          "playerId": "3448",
+          "player": "Brook Lopez",
+          "team": "LAC",
+          "label": "Brook Lopez más de 7.5 puntos",
+          "odd": 1.35,
+          "pFinal": 0.737,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909894|prop|over|9.5|5142620|pts",
+          "gameId": "nba:401909894",
+          "start": "2026-10-30T00:00Z",
+          "match": "Pelicans – Kings",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pts",
+          "playerId": "5142620",
+          "player": "Darius Acuff Jr.",
+          "team": "SAC",
+          "label": "Darius Acuff Jr. más de 9.5 puntos",
+          "odd": 1.45,
+          "pFinal": 0.705,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909890|spread|home|14.5||",
+          "gameId": "nba:401909890",
+          "start": "2026-10-29T01:00Z",
+          "match": "Jazz – Spurs",
+          "market": "spread",
+          "side": "home",
+          "line": 14.5,
+          "label": "Jazz +14.5",
+          "odd": 1.87,
+          "pFinal": 0.551,
+          "book": "draftkings"
+        }
+      ],
+      "odd": 3.66,
+      "prob": 0.286,
+      "ev": 0.048,
+      "start": "2026-10-29T01:00Z",
+      "createdAt": "2026-10-29T00:40:00.280Z"
     }
   ],
   "comboRecord": [
