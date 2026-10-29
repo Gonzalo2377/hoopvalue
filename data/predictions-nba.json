@@ -432,5 +432,26 @@
     "away": "Magic",
     "ptsH": 119,
     "ptsA": 100
+  },
+  "nba:401909282": {
+    "start": "2026-10-31T00:00Z",
+    "home": "Heat",
+    "away": "Pacers",
+    "ptsH": 117,
+    "ptsA": 117
+  },
+  "nba:401909283": {
+    "start": "2026-10-31T00:00Z",
+    "home": "Mavericks",
+    "away": "Rockets",
+    "ptsH": 112,
+    "ptsA": 116
+  },
+  "nba:401909284": {
+    "start": "2026-10-31T00:00Z",
+    "home": "Timberwolves",
+    "away": "Clippers",
+    "ptsH": 110,
+    "ptsA": 105
   }
 }
