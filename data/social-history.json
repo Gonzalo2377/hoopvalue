@@ -2647,6 +2647,8 @@
             "start": "2026-10-29T01:00Z",
             "home": "Jazz",
             "away": "Spurs",
+            "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+            "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
             "pred": [
               112,
               117
@@ -2664,6 +2666,8 @@
             "start": "2026-10-28T23:00Z",
             "home": "Cavaliers",
             "away": "Wizards",
+            "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
+            "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
             "pred": [
               122,
               108

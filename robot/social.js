@@ -181,12 +181,13 @@ function main() {
      exacto · un equipo exacto y el otro a ≤8 · los dos a ≤3 → publicación con una tarjeta por partido */
   for (const [lg, at] of [['euroleague', '10:00'], ['nba', '10:10']]) {
     const R = readJSON(path.join(ROOT, LG[lg].dir, 'record.json'), {});
+    const TM = Object.values(readJSON(path.join(ROOT, LG[lg].dir, 'teams.json'), {}).teams || {}), logo = n => (TM.find(t => t.name === n) || {}).logo || null;
     const from = Date.parse(madridAt(yday, '12:00')), to = Date.parse(madridAt(today, '12:00'));
     const hits = ((R.predictions || {}).list || []).filter(x => { const t = Date.parse(x.start); return t >= from && t < to && x.winner; }).map(x => {
       const [ph, pa] = x.pred.split('-').map(Number), [rh, ra] = x.real.split('-').map(Number), eh = Math.abs(ph - rh), ea = Math.abs(pa - ra);
       const [home, away] = x.match.split(' – ');
       const how = !eh && !ea ? 'exact' : Math.min(eh, ea) === 0 && Math.max(eh, ea) <= 8 ? 'team' : eh <= 3 && ea <= 3 ? 'close' : null;
-      return how && { id: x.id, start: x.start, home, away, pred: [ph, pa], real: [rh, ra], how, team: how === 'team' ? (eh ? away : home) : null, off: eh + ea };
+      return how && { id: x.id, start: x.start, home, away, hl: logo(home), al: logo(away), pred: [ph, pa], real: [rh, ra], how, team: how === 'team' ? (eh ? away : home) : null, off: eh + ea };
     }).filter(Boolean).sort((a, b) => a.off - b.off).slice(0, 4);
     if (!hits.length) continue;
     const line = h => h.how === 'exact' ? `🎯 NAILED IT! ${h.home} ${h.real[0]}-${h.real[1]} ${h.away}`
