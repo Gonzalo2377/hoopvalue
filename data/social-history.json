@@ -2354,7 +2354,7 @@
         "league": "nba",
         "title": "NBA · resultados de ayer (28/10)",
         "postAt": "2026-10-29T08:40:00.000Z",
-        "text": "📋 NBA · resultados de ayer (28/10)\n\n⏳❌⏳✅⚪❌✅✅✅✅⏳❌⏳\n👇 Cada pick en la imagen\n\nAyer: 5-3 (-1.27 u) · Total NBA: 36-13 (+2.35 u)\n#NBA · +18 · Juega con responsabilidad",
+        "text": "📋 NBA · resultados de ayer (28/10)\n\n⏳❌✅✅⚪❌✅✅✅✅✅❌✅\n👇 Cada pick en la imagen\n\nAyer: 8-3 (+0.06 u) · Total NBA: 39-13 (+3.68 u)\n#NBA · +18 · Juega con responsabilidad",
         "image": true,
         "pending": true,
         "rows": [
@@ -2374,7 +2374,7 @@
             "league": "nba",
             "label": "T. Jones +5.5 puntos",
             "odd": 1.3,
-            "result": null
+            "result": "W"
           },
           {
             "league": "nba",
@@ -2422,7 +2422,7 @@
             "league": "nba",
             "label": "Y. Lendeborg +13.5 puntos",
             "odd": 1.34,
-            "result": null
+            "result": "W"
           },
           {
             "league": "nba",
@@ -2434,21 +2434,21 @@
             "league": "nba",
             "label": "Combinada: S. Bey +7.5 Pts + T. Jones +5.5 Pts",
             "odd": 1.69,
-            "result": null
+            "result": "W"
           }
         ],
         "balance": {
           "day": [
-            5,
+            8,
             3
           ],
           "total": [
-            36,
+            39,
             13
           ],
           "units": {
-            "day": -1.27,
-            "total": 2.35
+            "day": 0.06,
+            "total": 3.68
           }
         }
       },
@@ -2507,7 +2507,7 @@
         "kind": "nba-day",
         "league": "nba",
         "reply": false,
-        "title": "NBA Picks Day · 2 picks",
+        "title": "NBA Picks Day · 1 pick",
         "postAt": "2026-10-29T17:45:00.000Z",
         "image": true,
         "picks": [
@@ -2524,26 +2524,9 @@
             "line": null,
             "match": "Pelicans – Kings",
             "pFinal": 0.653
-          },
-          {
-            "id": "nba:401909894|prop|over|9.5|5142620|pts",
-            "league": "nba",
-            "label": "D. Acuff Jr. +9.5 puntos",
-            "list": "D. Acuff Jr. +9.5 Pts",
-            "odd": 1.46,
-            "start": "2026-10-30T00:00Z",
-            "gameId": "nba:401909894",
-            "market": "prop",
-            "side": "over",
-            "line": 9.5,
-            "stat": "pts",
-            "playerId": "5142620",
-            "team": "SAC",
-            "match": "Pelicans – Kings",
-            "pFinal": 0.701
           }
         ],
-        "text": "🏀 NBA Picks Day · 29/10\n\n1.- Gana Pelicans @1.49\n2.- D. Acuff Jr. +9.5 Pts @1.46\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 29/10\n\n1.- Gana Pelicans @1.49\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
