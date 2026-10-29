@@ -404,3 +404,53 @@ window.renderPredCard = async function (canvas, { league = 'euroleague', g } = {
   txt('✓ Predicted before tip-off', 50, 636, 21, C.muted, 600);
   txt('europicks.pages.dev', W - 50, 636, 24, C.accent, 800, 'right');
 };
+
+/* ============================================================
+   Tarjeta de PREDICCIONES DEL DÍA (1200×675): todos los partidos con su
+   marcador predicho, antes de jugarse (la prueba que luego se cita).
+   renderPredDay(canvas, { league, games:[{home, away, hl, al, pred:[h,a], start}] })
+   ============================================================ */
+window.renderPredDay = async function (canvas, { league = 'euroleague', games = [] } = {}) {
+  const C = { bg: '#0a0e15', text: '#f1f5fb', muted: '#8b97ab', accent: '#ff7a1a', accent2: '#ffb36b' };
+  const W = 1200, H = 675; canvas.width = W; canvas.height = H;
+  const ctx = canvas.getContext('2d');
+  const rr = (x, y, w, h, r) => { ctx.beginPath(); ctx.roundRect(x, y, w, h, r); };
+  const txt = (s, x, y, size, color = C.text, weight = 800, align = 'left', sp = 0) => { ctx.font = `${weight} ${size}px Inter`; ctx.letterSpacing = sp + 'px'; ctx.fillStyle = color; ctx.textAlign = align; ctx.fillText(s, x, y); ctx.letterSpacing = '0px'; };
+  const fit = (s, max, size, weight = 800) => { ctx.font = `${weight} ${size}px Inter`; while (ctx.measureText(s).width > max && size > 12) { size -= 1; ctx.font = `${weight} ${size}px Inter`; } return size; };
+  const img = u => new Promise(res => { if (!u) return res(null); const im = new Image(); im.crossOrigin = 'anonymous'; const t = setTimeout(() => res(null), 6000); im.onload = () => { clearTimeout(t); res(im); }; im.onerror = () => { clearTimeout(t); res(null); }; im.src = u; });
+  const badge = (im, cx, cy, r, name) => {
+    ctx.save(); ctx.shadowColor = 'rgba(0,0,0,.5)'; ctx.shadowBlur = 14; ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2); ctx.fillStyle = '#f4f6fa'; ctx.fill(); ctx.restore();
+    if (im) { const k = r * 1.45 / Math.max(im.width, im.height); ctx.drawImage(im, cx - im.width * k / 2, cy - im.height * k / 2, im.width * k, im.height * k); }
+    else txt(name.slice(0, 3).toUpperCase(), cx, cy + r * .22, r * .6, '#111', 900, 'center');
+  };
+  await Promise.all(['600', '700', '800', '900'].map(w => document.fonts.load(`${w} 40px Inter`)));
+  const G = games.slice(0, 16), logos = await Promise.all(G.flatMap(x => [img(x.hl), img(x.al)]));
+  /* fondo y cabecera */
+  ctx.fillStyle = C.bg; ctx.fillRect(0, 0, W, H);
+  let gr = ctx.createRadialGradient(600, 360, 10, 600, 360, 700); gr.addColorStop(0, 'rgba(255,122,26,.13)'); gr.addColorStop(1, 'rgba(0,0,0,0)'); ctx.fillStyle = gr; ctx.fillRect(0, 0, W, H);
+  const bg = ctx.createRadialGradient(54, 46, 3, 62, 54, 22); bg.addColorStop(0, '#ffb36b'); bg.addColorStop(.6, '#ff7a1a'); bg.addColorStop(1, '#b4410b');
+  ctx.fillStyle = bg; ctx.beginPath(); ctx.arc(62, 54, 22, 0, Math.PI * 2); ctx.fill();
+  txt('Euro', 96, 67, 36, C.accent, 900); ctx.font = '900 36px Inter'; txt('Picks', 96 + ctx.measureText('Euro').width + 2, 67, 36, C.text, 900);
+  const d = G[0] ? new Date(Date.parse(G[0].start) - (league === 'nba' ? 12 * 3600e3 : 0)).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', timeZone: 'Europe/Madrid' }).toUpperCase() : '';
+  const tag = `${league === 'nba' ? 'NBA' : 'EUROLEAGUE'} · ${d}`;
+  ctx.font = '800 18px Inter'; ctx.letterSpacing = '2px'; const tw = ctx.measureText(tag).width + 36; ctx.letterSpacing = '0px';
+  rr(W - 50 - tw, 34, tw, 40, 20); ctx.fillStyle = 'rgba(255,122,26,.14)'; ctx.fill(); ctx.strokeStyle = 'rgba(255,122,26,.5)'; ctx.lineWidth = 1.5; ctx.stroke();
+  txt(tag, W - 50 - tw / 2, 60, 18, C.accent2, 800, 'center', 2);
+  txt('SCORE PREDICTIONS', W / 2, 140, 56, C.text, 900, 'center', 1);
+  /* filas: 1 columna hasta 6 partidos, 2 columnas a partir de 7 */
+  const cols = G.length > 6 ? 2 : 1, per = Math.ceil(G.length / cols), X0 = 50, gap = 20, top = 172, avail = 600 - top;
+  const cw = (W - 2 * X0 - gap * (cols - 1)) / cols, RH = Math.min(cols > 1 ? 66 : 104, avail / per), y0 = top + (avail - RH * per) / 2;
+  const small = cols > 1 || RH < 64, big = RH >= 90, lr = small ? 19 : big ? 32 : 25, ns = small ? 22 : big ? 34 : 28, ss = small ? 30 : big ? 48 : 38;
+  G.forEach((g, i) => {
+    const x = X0 + Math.floor(i / per) * (cw + gap), y = y0 + (i % per) * RH, mid = y + RH / 2;
+    rr(x, y + 4, cw, RH - 8, 16); ctx.fillStyle = 'rgba(18,24,38,.9)'; ctx.fill(); ctx.strokeStyle = 'rgba(255,255,255,.06)'; ctx.lineWidth = 1.5; ctx.stroke();
+    const cx = x + cw / 2, half = cw / 2 - 18 - lr * 2 - 70;
+    badge(logos[2 * i], x + 18 + lr, mid, lr, g.home); badge(logos[2 * i + 1], x + cw - 18 - lr, mid, lr, g.away);
+    const hn = cols > 1 ? (g.hc || g.home) : g.home, an = cols > 1 ? (g.ac || g.away) : g.away;
+    txt(hn, x + 30 + lr * 2, mid + ns / 3, fit(hn, half, ns, 800), C.text, 800);
+    txt(an, x + cw - 30 - lr * 2, mid + ns / 3, fit(an, half, ns, 800), C.text, 800, 'right');
+    txt(`${g.pred[0]}–${g.pred[1]}`, cx, mid + ss / 3, ss, C.accent2, 900, 'center');
+  });
+  txt('Final scores · predicted before tip-off', 50, 636, 21, C.muted, 600);
+  txt('europicks.pages.dev', W - 50, 636, 24, C.accent, 800, 'right');
+};

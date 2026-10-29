@@ -26,6 +26,7 @@
   .xprev.n2 { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
   .xprev.n3 { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-rows: 1fr 1fr; } .xprev.n3 img:first-child { grid-row: span 2; }
   .reply { border-left: 3px solid var(--line); padding-left: 10px; margin: 12px 0 4px; }
+  .post input.url { width: 100%; margin-top: 4px; background: var(--panel2); color: var(--text); border: 1px solid var(--line); border-radius: 10px; padding: 10px; font: 14px Inter, sans-serif; }
   .xprev.n4 { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); grid-template-rows: minmax(0, 1fr) minmax(0, 1fr); }
 </style>
 </head>
@@ -65,6 +66,8 @@ async function load() {
       ${it.reply ? '<p class="count">↳ Respuesta del hilo: en X abre tu post anterior de NBA Picks Day, pulsa <b>Responder</b> y pega este texto con sus fotos.</p>' : ''}
       ${it.image ? `<div class="shots" style="display:none">${shotsOf(it).map((_, k) => `<canvas width="1200" height="675" data-i="${i}" data-k="${k}"></canvas>`).join('')}</div><div class="xprev n${groups(it)[0][1]}" id="xp${i}"></div><div class="count">Vista previa de cómo lo enseña X (${groups(it)[0][1]} foto${groups(it)[0][1] > 1 ? 's' : ''}; al tocar una se ve entera)</div>` : ''}
       <textarea id="t${i}" aria-label="Texto de la publicación">${esc(it.text)}</textarea>
+      ${urlKey(it) ? `<label class="count" style="display:block;margin-top:8px">${it.kind === 'preds' ? '🔗 Cuando lo publiques, pega aquí el enlace de tu tweet (mañana el «NAILED» lo citará)' : '🔗 Tweet de predicciones que se cita (se añade al final del texto)'}</label>
+      <input class="url" id="u${i}" type="url" placeholder="https://x.com/…/status/…" value="${esc(getUrl(it))}" oninput="setUrl(${i}, this.value)">` : ''}
       <div class="count" id="c${i}"></div>
       <div class="acts">
         <button class="btn main" onclick="share(${i})">📤 Compartir en X</button>
@@ -75,13 +78,14 @@ async function load() {
       </div>
       ${it.image ? replies(it, i) : ''}
     </div>`; }).join('');
-  S.items.forEach((it, i) => { const ta = document.getElementById('t' + i); const upd = () => { document.getElementById('c' + i).textContent = `${xLen(ta.value)}/280`; }; ta.oninput = upd; upd(); });
+  S.items.forEach((it, i) => { const ta = document.getElementById('t' + i); const upd = () => { document.getElementById('c' + i).textContent = `${xLen(text(i))}/280`; }; ta.oninput = upd; upd(); });
   /* imágenes: se dibujan en el propio móvil con los datos de hoy */
   await document.fonts.ready;
   for (const c of document.querySelectorAll('canvas[data-i]')) {
     const it = S.items[+c.dataset.i], shot = shotsOf(it)[+c.dataset.k];
     if (it.kind === 'summary') await renderSummary(c, it);
     else if (shot.pred) await renderPredCard(c, { league: it.league, g: shot.pred });
+    else if (shot.preds) await renderPredDay(c, { league: it.league, games: shot.preds });
     else if (shot.grid) await renderPicksGrid(c, { league: it.league, picks: shot.grid, from: shot.from || 1, combo: shot.combo || null });
     else if (shot.tall) await renderPickTall(c, { league: it.league, pick: shot.pick });
     else await renderCard(c, { league: it.league, ...shot });
@@ -92,10 +96,15 @@ async function load() {
 }
 /* longitud según X: enlaces 23 y emojis 2 */
 function xLen(s) { s = s.replace(/\b[a-z0-9.-]+\.(dev|com|es|net|org)(\/\S*)?/gi, 'x'.repeat(23)); let n = 0; for (const ch of s) { const c = ch.codePointAt(0); n += (c <= 4351 || (c >= 8192 && c <= 8205) || (c >= 8208 && c <= 8223) || (c >= 8242 && c <= 8247)) ? 1 : 2; } return n; }
-const text = i => document.getElementById('t' + i).value;
+/* enlace del tuit de predicciones: se guarda en el móvil; el «NAILED» del día siguiente lo cita */
+const urlKey = it => it.kind === 'preds' ? `x-url:${S.date}:${it.id}` : it.quote ? `x-url:${it.quote.date}:${it.quote.id}` : null;
+const getUrl = it => { try { return localStorage.getItem(urlKey(it)) || ''; } catch (e) { return ''; } };
+function setUrl(i, v) { try { localStorage.setItem(urlKey(S.items[i]), v.trim()); } catch (e) {} const c = document.getElementById('c' + i); if (c) c.textContent = `${xLen(text(i))}/280`; }
+const text = i => { const t = document.getElementById('t' + i).value, it = S.items[i], u = it.quote ? getUrl(it) : ''; return u ? t + '\n' + u : t; };
 /* fotos de cada publicación: picks de NBA → una por pick; combinada y el resto, una */
 const shotsOf = it => {
   if (it.kind === 'combo') return [{ grid: it.combo.legs, combo: it.combo }];
+  if (it.kind === 'preds') return [{ preds: it.games }];
   if (it.kind === 'pred') return [{ pred: it.games }];                                 // una tarjeta (con varios partidos, en lista: X recortaría 2 fotos)        // una foto con el gráfico de cada selección
   if (it.kind !== 'nba-day' && !(it.kind === 'el-game' && it.picks && it.picks.length)) return [{ gameId: it.gameId || null }];   // una foto por pick también en Euroliga
   const P = it.picks, n = P.length;

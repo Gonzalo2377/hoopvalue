@@ -40,7 +40,10 @@ function xLen(s) {
   for (const ch of s) { const c = ch.codePointAt(0); n += (c <= 4351 || (c >= 8192 && c <= 8205) || (c >= 8208 && c <= 8223) || (c >= 8242 && c <= 8247)) ? 1 : 2; }
   return n;
 }
-function fit(lines) { let t = lines.join('\n'); if (xLen(t) <= 280) return t; t = lines.filter(l => !/^📊/.test(l)).join('\n'); while (xLen(t) > 280) t = t.slice(0, -2); return t; }
+function fit(lines, max = 280) { let t = lines.join('\n'); if (xLen(t) <= max) return t; t = lines.filter(l => !/^📊/.test(l)).join('\n'); while (xLen(t) > max) t = t.slice(0, -2); return t; }
+/* marcador predicho redondeado (sin empates: en baloncesto no hay) */
+const score = m => { let h = Math.round(m.ptsH), a = Math.round(m.ptsA); if (h === a) m.ptsH >= m.ptsA ? h++ : a++; return [h, a]; };
+const EN = { euroleague: { name: 'EuroLeague', tag: '#EuroLeague' }, nba: { name: 'NBA', tag: '#NBA' } };
 const mini = p => ({ id: p.id || pickId(p), league: p.league || null, label: short(p), list: listLabel(p), odd: p.odd, start: p.start,
   gameId: p.gameId, market: p.market, side: p.side, line: p.line, stat: p.stat, playerId: p.playerId, team: p.team, match: p.match, pFinal: p.pFinal });
 /* "S. Curry +1.5 T3", "Gana Thunder", "Thunder −8.5", "Más 236.5 (Thunder-Nuggets)" */
@@ -113,6 +116,23 @@ function main() {
     from += m;
   }
 
+  /* predicciones de marcador de TODOS los partidos en un tuit (evidencia pública antes del salto inicial).
+     NBA 18:30 · Euroliga 2 h antes del primer partido. El «NAILED» del día siguiente lo cita. */
+  for (const lg of ['nba', 'euroleague']) {
+    const TM = Object.values(readJSON(path.join(ROOT, LG[lg].dir, 'teams.json'), {}).teams || {}), tm = n => TM.find(t => t.name === n) || {};
+    const gs = ((T[lg] && T[lg].games) || []).filter(g => g.model && g.model.ptsH != null && Date.parse(g.start) > NOW && (lg === 'nba' ? Date.parse(g.start) < tonightEnd : madridDate(g.start) === today))
+      .sort((a, b) => a.start.localeCompare(b.start))
+      .map(g => ({ id: g.id, start: g.start, home: g.home.name, away: g.away.name, hc: g.home.code || tm(g.home.name).code || g.home.name, ac: g.away.code || tm(g.away.name).code || g.away.name,
+        hl: g.home.logo || tm(g.home.name).logo || null, al: g.away.logo || tm(g.away.name).logo || null, pred: score(g.model) }));
+    if (!gs.length) continue;
+    const postAt = lg === 'nba' ? madridAt(today, '18:30') : new Date(Date.parse(gs[0].start) - 2 * 3600e3).toISOString();
+    const head = [`🔮 EuroPicks Score Predictions · ${EN[lg].name} · ${today.slice(8, 10)}/${today.slice(5, 7)}`, ''];
+    const foot = ['', 'Final scores, predicted before tip-off. Check back tomorrow 👀', `${EN[lg].tag} · +18`];
+    let text = [...head, ...gs.map(g => `${g.home} ${g.pred[0]}-${g.pred[1]} ${g.away}`), ...foot].join('\n');
+    if (xLen(text) > 280) text = fit([...head, ...gs.map(g => `${g.hc} ${g.pred[0]}-${g.pred[1]} ${g.ac}`), ...foot]);
+    put({ id: 'preds-' + lg, kind: 'preds', league: lg, title: `Predicciones de marcador · ${LG[lg].name} (${gs.length})`, postAt, image: true, games: gs, text });
+  }
+
   /* combinada segura del día (NBA a las 19:00 · Euroliga 1 h 30 min antes del primer partido) */
   for (const lg of ['nba', 'euroleague']) {
     const C = T[lg] && (T[lg].combos || []).find(c => c.type === 'segura');
@@ -183,18 +203,22 @@ function main() {
     const R = readJSON(path.join(ROOT, LG[lg].dir, 'record.json'), {});
     const TM = Object.values(readJSON(path.join(ROOT, LG[lg].dir, 'teams.json'), {}).teams || {}), logo = n => (TM.find(t => t.name === n) || {}).logo || null;
     const from = Date.parse(madridAt(yday, '12:00')), to = Date.parse(madridAt(today, '12:00'));
-    const hits = ((R.predictions || {}).list || []).filter(x => { const t = Date.parse(x.start); return t >= from && t < to && x.winner; }).map(x => {
-      const [ph, pa] = x.pred.split('-').map(Number), [rh, ra] = x.real.split('-').map(Number), eh = Math.abs(ph - rh), ea = Math.abs(pa - ra);
+    /* si ayer se tuitearon las predicciones, cuenta lo tuiteado (es la prueba) y se cita ese tuit */
+    const P = (hist.days[yday] || {})['preds-' + lg], said = P && Date.parse(P.postAt) <= NOW ? Object.fromEntries(P.games.map(x => [x.id, x.pred])) : null;
+    const hits = ((R.predictions || {}).list || []).filter(x => { const t = Date.parse(x.start); return t >= from && t < to && (!said || said[x.id]); }).map(x => {
+      const [ph, pa] = said ? said[x.id] : x.pred.split('-').map(Number), [rh, ra] = x.real.split('-').map(Number), eh = Math.abs(ph - rh), ea = Math.abs(pa - ra);
       const [home, away] = x.match.split(' – ');
+      if ((ph > pa) !== (rh > ra)) return null;                                           // siempre acertando el ganador
       const how = !eh && !ea ? 'exact' : Math.min(eh, ea) === 0 && Math.max(eh, ea) <= 8 ? 'team' : eh <= 3 && ea <= 3 ? 'close' : null;
       return how && { id: x.id, start: x.start, home, away, hl: logo(home), al: logo(away), pred: [ph, pa], real: [rh, ra], how, team: how === 'team' ? (eh ? away : home) : null, off: eh + ea };
     }).filter(Boolean).sort((a, b) => a.off - b.off).slice(0, 4);
     if (!hits.length) continue;
     const line = h => h.how === 'exact' ? `🎯 NAILED IT! ${h.home} ${h.real[0]}-${h.real[1]} ${h.away}`
       : `${h.how === 'team' ? '🎯' : '🔥'} ${h.home} ${h.real[0]}-${h.real[1]} ${h.away} (we said ${h.pred[0]}-${h.pred[1]}${h.how === 'team' ? `, ${h.team} exact` : ''})`;
-    const text = fit([`🔮 EuroPicks Prediction · ${LG[lg].name === 'Euroliga' ? 'EuroLeague' : 'NBA'} (${D}/${M})`, '', ...hits.map(line), '',
-      hits.some(h => h.how !== 'close') ? 'Score predicted before tip-off 👀' : 'So close 👀', `${LG[lg].tag} · +18`]);
-    put({ id: 'pred-' + lg, kind: 'pred', league: lg, title: `Predicción casi clavada · ${LG[lg].name} (${hits.length})`, postAt: madridAt(today, at), image: true, games: hits, text });
+    const text = fit([`🔮 EuroPicks Prediction · ${EN[lg].name} (${D}/${M})`, '', ...hits.map(line), '',
+      said ? 'Called it before tip-off 👇' : hits.some(h => h.how !== 'close') ? 'Score predicted before tip-off 👀' : 'So close 👀', `${EN[lg].tag} · +18`], said ? 255 : 280);
+    put({ id: 'pred-' + lg, kind: 'pred', league: lg, title: `Predicción casi clavada · ${LG[lg].name} (${hits.length})`, postAt: madridAt(today, at), image: true, games: hits, text,
+      quote: said ? { date: yday, id: P.id } : null });
   }
 
 
