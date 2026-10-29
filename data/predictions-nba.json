@@ -453,5 +453,19 @@
     "away": "Clippers",
     "ptsH": 110,
     "ptsA": 105
+  },
+  "nba:401909285": {
+    "start": "2026-10-31T02:00Z",
+    "home": "Warriors",
+    "away": "Lakers",
+    "ptsH": 117,
+    "ptsA": 121
+  },
+  "nba:401909286": {
+    "start": "2026-10-31T02:00Z",
+    "home": "Suns",
+    "away": "Nuggets",
+    "ptsH": 114,
+    "ptsA": 112
   }
 }
