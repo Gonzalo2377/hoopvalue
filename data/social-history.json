@@ -2536,32 +2536,6 @@
           "odd": 1.97,
           "prob": 0.517
         }
-      },
-      "nba-day": {
-        "id": "nba-day",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": false,
-        "title": "NBA Picks Day · 1 pick",
-        "postAt": "2026-10-29T17:45:00.000Z",
-        "image": true,
-        "picks": [
-          {
-            "id": "nba:401909894|ml|home|||",
-            "league": "nba",
-            "label": "Gana Pelicans",
-            "list": "Gana Pelicans",
-            "odd": 1.49,
-            "start": "2026-10-30T00:00Z",
-            "gameId": "nba:401909894",
-            "market": "ml",
-            "side": "home",
-            "line": null,
-            "match": "Pelicans – Kings",
-            "pFinal": 0.656
-          }
-        ],
-        "text": "🏀 NBA Picks Day · 29/10\n\n1.- Gana Pelicans @1.49\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
