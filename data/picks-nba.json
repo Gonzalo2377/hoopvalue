@@ -535,6 +535,42 @@
       "stat": "ast",
       "playerId": "2528426",
       "createdAt": "2026-10-29T16:53:55.281Z"
+    },
+    {
+      "id": "nba:401909895|prop|over|9.5|3995|pts",
+      "gameId": "nba:401909895",
+      "start": "2026-10-30T02:00Z",
+      "match": "Trail Blazers – Grizzlies",
+      "market": "prop",
+      "side": "over",
+      "line": 9.5,
+      "label": "Jrue Holiday más de 9.5 puntos",
+      "odd": 1.37,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.711,
+      "safety": 0.65,
+      "tier": "B",
+      "stat": "pts",
+      "playerId": "3995",
+      "createdAt": "2026-10-29T18:51:36.273Z"
+    },
+    {
+      "id": "nba:401909895|prop|over|6.5|5041935|reb",
+      "gameId": "nba:401909895",
+      "start": "2026-10-30T02:00Z",
+      "match": "Trail Blazers – Grizzlies",
+      "market": "prop",
+      "side": "over",
+      "line": 6.5,
+      "label": "Cameron Boozer más de 6.5 rebotes",
+      "odd": 1.38,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.717,
+      "safety": 0.617,
+      "tier": "B",
+      "stat": "reb",
+      "playerId": "5041935",
+      "createdAt": "2026-10-29T18:51:36.273Z"
     }
   ],
   "record": [
