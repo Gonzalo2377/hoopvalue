@@ -2389,15 +2389,15 @@
         "league": "nba",
         "title": "NBA · resultados de ayer (28/10)",
         "postAt": "2026-10-29T08:40:00.000Z",
-        "text": "📋 NBA · resultados de ayer (28/10)\n\n⏳❌✅✅⚪❌✅✅✅✅✅❌✅\n👇 Cada pick en la imagen\n\nAyer: 8-3 (+0.06 u) · Total NBA: 39-13 (+3.68 u)\n#NBA · +18 · Juega con responsabilidad",
+        "text": "📋 NBA · resultados de ayer (28/10)\n\n✅❌✅✅⚪❌✅✅✅✅✅❌✅\n👇 Cada pick en la imagen\n\nAyer: 9-3 (+0.38 u) · Total NBA: 40-13 (+4.00 u)\n#NBA · +18 · Juega con responsabilidad",
         "image": true,
-        "pending": true,
+        "pending": false,
         "rows": [
           {
             "league": "nba",
             "label": "A. Bailey +9.5 puntos",
             "odd": 1.32,
-            "result": null
+            "result": "W"
           },
           {
             "league": "nba",
@@ -2474,16 +2474,16 @@
         ],
         "balance": {
           "day": [
-            8,
+            9,
             3
           ],
           "total": [
-            39,
+            40,
             13
           ],
           "units": {
-            "day": 0.06,
-            "total": 3.68
+            "day": 0.38,
+            "total": 4
           }
         }
       },
