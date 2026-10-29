@@ -2329,7 +2329,7 @@
         "title": "Real Madrid vs Fenerbahce",
         "start": "2026-10-29T19:45:00.000Z",
         "postAt": "2026-10-29T18:45:00.000Z",
-        "text": "🏀 EuroLeague · hoy 20:45\nReal Madrid vs Fenerbahce\n\n1.- M. Jantunen +4.5 Pts @1.53\n2.- S. Shields +3.5 Reb @1.48\n\n🔮 Prediction: Real Madrid 86-83 Fenerbahce\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
+        "text": "🏀 EuroLeague · hoy 20:45\nReal Madrid vs Fenerbahce\n\n1.- M. Jantunen +4.5 Pts @1.54\n2.- S. Shields +3.5 Reb @1.48\n\n🔮 Prediction: Real Madrid 86-83 Fenerbahce\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
         "image": true,
         "picks": [
           {
@@ -2337,7 +2337,7 @@
             "league": "euroleague",
             "label": "M. Jantunen +4.5 puntos",
             "list": "M. Jantunen +4.5 Pts",
-            "odd": 1.53,
+            "odd": 1.54,
             "start": "2026-10-29T19:45:00.000Z",
             "gameId": "el:E2026_83",
             "market": "prop",
@@ -2347,7 +2347,7 @@
             "playerId": "012613",
             "team": "MAD",
             "match": "Real Madrid – Fenerbahce",
-            "pFinal": 0.637
+            "pFinal": 0.634
           },
           {
             "id": "el:E2026_83|prop|over|3.5|007831|reb",
