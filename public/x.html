@@ -81,6 +81,7 @@ async function load() {
   for (const c of document.querySelectorAll('canvas[data-i]')) {
     const it = S.items[+c.dataset.i], shot = shotsOf(it)[+c.dataset.k];
     if (it.kind === 'summary') await renderSummary(c, it);
+    else if (shot.pred) await renderPredCard(c, { league: it.league, g: shot.pred });
     else if (shot.grid) await renderPicksGrid(c, { league: it.league, picks: shot.grid, from: shot.from || 1, combo: shot.combo || null });
     else if (shot.tall) await renderPickTall(c, { league: it.league, pick: shot.pick });
     else await renderCard(c, { league: it.league, ...shot });
@@ -94,7 +95,8 @@ function xLen(s) { s = s.replace(/\b[a-z0-9.-]+\.(dev|com|es|net|org)(\/\S*)?/gi
 const text = i => document.getElementById('t' + i).value;
 /* fotos de cada publicación: picks de NBA → una por pick; combinada y el resto, una */
 const shotsOf = it => {
-  if (it.kind === 'combo') return [{ grid: it.combo.legs, combo: it.combo }];        // una foto con el gráfico de cada selección
+  if (it.kind === 'combo') return [{ grid: it.combo.legs, combo: it.combo }];
+  if (it.kind === 'pred') return [{ pred: it.games }];                                 // una tarjeta (con varios partidos, en lista: X recortaría 2 fotos)        // una foto con el gráfico de cada selección
   if (it.kind !== 'nba-day' && !(it.kind === 'el-game' && it.picks && it.picks.length)) return [{ gameId: it.gameId || null }];   // una foto por pick también en Euroliga
   const P = it.picks, n = P.length;
   if (n === 2) return P.map(p => ({ pick: p, tall: true }));                        // 2 fotos lado a lado → verticales

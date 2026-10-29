@@ -177,6 +177,25 @@ function main() {
   }
   delete day.summary;                                           // el antiguo resumen conjunto
 
+  /* predicciones de marcador de anoche que clavamos o casi (siempre acertando el ganador):
+     exacto · un equipo exacto y el otro a ≤8 · los dos a ≤3 → publicación con una tarjeta por partido */
+  for (const [lg, at] of [['euroleague', '10:00'], ['nba', '10:10']]) {
+    const R = readJSON(path.join(ROOT, LG[lg].dir, 'record.json'), {});
+    const from = Date.parse(madridAt(yday, '12:00')), to = Date.parse(madridAt(today, '12:00'));
+    const hits = ((R.predictions || {}).list || []).filter(x => { const t = Date.parse(x.start); return t >= from && t < to && x.winner; }).map(x => {
+      const [ph, pa] = x.pred.split('-').map(Number), [rh, ra] = x.real.split('-').map(Number), eh = Math.abs(ph - rh), ea = Math.abs(pa - ra);
+      const [home, away] = x.match.split(' – ');
+      const how = !eh && !ea ? 'exact' : Math.min(eh, ea) === 0 && Math.max(eh, ea) <= 8 ? 'team' : eh <= 3 && ea <= 3 ? 'close' : null;
+      return how && { id: x.id, start: x.start, home, away, pred: [ph, pa], real: [rh, ra], how, team: how === 'team' ? (eh ? away : home) : null, off: eh + ea };
+    }).filter(Boolean).sort((a, b) => a.off - b.off).slice(0, 4);
+    if (!hits.length) continue;
+    const line = h => h.how === 'exact' ? `🎯 ¡CLAVADO! ${h.home} ${h.real[0]}-${h.real[1]} ${h.away}`
+      : `${h.how === 'team' ? '🎯' : '🔥'} ${h.home} ${h.real[0]}-${h.real[1]} ${h.away} (dijimos ${h.pred[0]}-${h.pred[1]}${h.how === 'team' ? `, ${h.team} exacto` : ''})`;
+    const text = fit([`🔮 Predicción EuroPicks · ${LG[lg].name === 'Euroliga' ? 'EuroLeague' : 'NBA'} (${D}/${M})`, '', ...hits.map(line), '',
+      hits.some(h => h.how !== 'close') ? 'Marcador predicho antes del partido 👀' : 'Casi lo clavamos 👀', `${LG[lg].tag} · +18`]);
+    put({ id: 'pred-' + lg, kind: 'pred', league: lg, title: `Predicción casi clavada · ${LG[lg].name} (${hits.length})`, postAt: madridAt(today, at), image: true, games: hits, text });
+  }
+
 
   /* se guardan solo los últimos 30 días de memoria */
   Object.keys(hist.days).sort().slice(0, -30).forEach(d => delete hist.days[d]);
