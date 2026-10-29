@@ -2354,7 +2354,7 @@
         "league": "nba",
         "title": "NBA · resultados de ayer (28/10)",
         "postAt": "2026-10-29T08:40:00.000Z",
-        "text": "📋 NBA · resultados de ayer (28/10)\n\n⏳❌⏳✅⚪❌✅✅⏳✅⏳⏳⏳\n👇 Cada pick en la imagen\n\nAyer: 4-2 (-0.64 u) · Total NBA: 35-12 (+2.98 u)\n#NBA · +18 · Juega con responsabilidad",
+        "text": "📋 NBA · resultados de ayer (28/10)\n\n⏳❌⏳✅⚪❌✅✅✅✅⏳❌⏳\n👇 Cada pick en la imagen\n\nAyer: 5-3 (-1.27 u) · Total NBA: 36-13 (+2.35 u)\n#NBA · +18 · Juega con responsabilidad",
         "image": true,
         "pending": true,
         "rows": [
@@ -2410,7 +2410,7 @@
             "league": "nba",
             "label": "R. Barrett +17.5 puntos",
             "odd": 1.37,
-            "result": null
+            "result": "W"
           },
           {
             "league": "nba",
@@ -2428,7 +2428,7 @@
             "league": "nba",
             "label": "D. Murray +19.5 pts+ast",
             "odd": 1.38,
-            "result": null
+            "result": "L"
           },
           {
             "league": "nba",
@@ -2439,16 +2439,16 @@
         ],
         "balance": {
           "day": [
-            4,
-            2
+            5,
+            3
           ],
           "total": [
-            35,
-            12
+            36,
+            13
           ],
           "units": {
-            "day": -0.64,
-            "total": 2.98
+            "day": -1.27,
+            "total": 2.35
           }
         }
       },
@@ -2550,14 +2550,14 @@
             "league": "nba",
             "label": "Gana Pelicans",
             "list": "Gana Pelicans",
-            "odd": 1.51,
+            "odd": 1.49,
             "start": "2026-10-30T00:00Z",
             "gameId": "nba:401909894",
             "market": "ml",
             "side": "home",
             "line": null,
             "match": "Pelicans – Kings",
-            "pFinal": 0.662
+            "pFinal": 0.655
           },
           {
             "id": "nba:401909894|prop|over|9.5|5142620|pts",
@@ -2577,7 +2577,7 @@
             "pFinal": 0.701
           }
         ],
-        "text": "🏀 NBA Picks Day · 29/10\n\n1.- K. Wagler +9.5 Pts @1.34\n2.- B. Lopez +7.5 Pts @1.35\n3.- Gana Pelicans @1.51\n4.- D. Acuff Jr. +9.5 Pts @1.46\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 29/10\n\n1.- K. Wagler +9.5 Pts @1.34\n2.- B. Lopez +7.5 Pts @1.35\n3.- Gana Pelicans @1.49\n4.- D. Acuff Jr. +9.5 Pts @1.46\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
