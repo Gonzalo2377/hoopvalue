@@ -1,44 +1,6 @@
 {
   "pending": [
     {
-      "id": "el:E2026_83|prop|over|4.5|012613|pts",
-      "gameId": "el:E2026_83",
-      "start": "2026-10-29T19:45:00.000Z",
-      "round": 9,
-      "match": "Real Madrid – Fenerbahce",
-      "market": "prop",
-      "side": "over",
-      "line": 4.5,
-      "label": "Mikael Jantunen más de 4.5 puntos",
-      "odd": 1.54,
-      "book": "unibet (Kambi)",
-      "pFinal": 0.634,
-      "safety": 0.579,
-      "tier": "C",
-      "stat": "pts",
-      "playerId": "012613",
-      "createdAt": "2026-10-29T06:17:58.744Z"
-    },
-    {
-      "id": "el:E2026_83|prop|over|3.5|007831|reb",
-      "gameId": "el:E2026_83",
-      "start": "2026-10-29T19:45:00.000Z",
-      "round": 9,
-      "match": "Real Madrid – Fenerbahce",
-      "market": "prop",
-      "side": "over",
-      "line": 3.5,
-      "label": "Shavon Shields más de 3.5 rebotes",
-      "odd": 1.48,
-      "book": "unibet (Kambi)",
-      "pFinal": 0.666,
-      "safety": 0.574,
-      "tier": "C",
-      "stat": "reb",
-      "playerId": "007831",
-      "createdAt": "2026-10-29T06:17:58.744Z"
-    },
-    {
       "id": "el:E2026_86|ml|home|||",
       "gameId": "el:E2026_86",
       "start": "2026-10-30T18:00:00.000Z",
@@ -146,6 +108,50 @@
     }
   ],
   "record": [
+    {
+      "id": "el:E2026_83|prop|over|4.5|012613|pts",
+      "gameId": "el:E2026_83",
+      "start": "2026-10-29T19:45:00.000Z",
+      "round": 9,
+      "match": "Real Madrid – Fenerbahce",
+      "market": "prop",
+      "side": "over",
+      "line": 4.5,
+      "label": "Mikael Jantunen más de 4.5 puntos",
+      "odd": 1.54,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.634,
+      "safety": 0.579,
+      "tier": "C",
+      "stat": "pts",
+      "playerId": "012613",
+      "createdAt": "2026-10-29T06:17:58.744Z",
+      "result": "L",
+      "score": "95-76",
+      "settledAt": "2026-10-29T21:52:08.615Z"
+    },
+    {
+      "id": "el:E2026_83|prop|over|3.5|007831|reb",
+      "gameId": "el:E2026_83",
+      "start": "2026-10-29T19:45:00.000Z",
+      "round": 9,
+      "match": "Real Madrid – Fenerbahce",
+      "market": "prop",
+      "side": "over",
+      "line": 3.5,
+      "label": "Shavon Shields más de 3.5 rebotes",
+      "odd": 1.48,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.666,
+      "safety": 0.574,
+      "tier": "C",
+      "stat": "reb",
+      "playerId": "007831",
+      "createdAt": "2026-10-29T06:17:58.744Z",
+      "result": "W",
+      "score": "95-76",
+      "settledAt": "2026-10-29T21:52:08.615Z"
+    },
     {
       "id": "el:E2026_82|ml|home|||",
       "gameId": "el:E2026_82",
@@ -1173,94 +1179,6 @@
       "type": "segura",
       "legs": [
         {
-          "id": "el:E2026_83|prop|over|3.5|007831|reb",
-          "gameId": "el:E2026_83",
-          "start": "2026-10-29T19:45:00.000Z",
-          "match": "Real Madrid – Fenerbahce",
-          "market": "prop",
-          "side": "over",
-          "line": 3.5,
-          "stat": "reb",
-          "playerId": "007831",
-          "player": "Shavon Shields",
-          "team": "ULK",
-          "label": "Shavon Shields más de 3.5 rebotes",
-          "odd": 1.48,
-          "pFinal": 0.666,
-          "book": "unibet (Kambi)"
-        },
-        {
-          "id": "el:E2026_82|prop|over|1.5|011052|reb",
-          "gameId": "el:E2026_82",
-          "start": "2026-10-29T19:05:00.000Z",
-          "match": "Maccabi – Paris",
-          "market": "prop",
-          "side": "over",
-          "line": 1.5,
-          "stat": "reb",
-          "playerId": "011052",
-          "player": "Yam Madar",
-          "team": "TEL",
-          "label": "Yam Madar más de 1.5 rebotes",
-          "odd": 1.62,
-          "pFinal": 0.602,
-          "book": "unibet (Kambi)"
-        }
-      ],
-      "odd": 2.4,
-      "prob": 0.401,
-      "ev": -0.039,
-      "start": "2026-10-29T19:05:00.000Z",
-      "createdAt": "2026-10-29T06:17:58.744Z"
-    },
-    {
-      "type": "jugadores",
-      "legs": [
-        {
-          "id": "el:E2026_83|prop|over|4.5|012613|pts",
-          "gameId": "el:E2026_83",
-          "start": "2026-10-29T19:45:00.000Z",
-          "match": "Real Madrid – Fenerbahce",
-          "market": "prop",
-          "side": "over",
-          "line": 4.5,
-          "stat": "pts",
-          "playerId": "012613",
-          "player": "Mikael Jantunen",
-          "team": "MAD",
-          "label": "Mikael Jantunen más de 4.5 puntos",
-          "odd": 1.54,
-          "pFinal": 0.634,
-          "book": "unibet (Kambi)"
-        },
-        {
-          "id": "el:E2026_82|prop|over|1.5|011052|reb",
-          "gameId": "el:E2026_82",
-          "start": "2026-10-29T19:05:00.000Z",
-          "match": "Maccabi – Paris",
-          "market": "prop",
-          "side": "over",
-          "line": 1.5,
-          "stat": "reb",
-          "playerId": "011052",
-          "player": "Yam Madar",
-          "team": "TEL",
-          "label": "Yam Madar más de 1.5 rebotes",
-          "odd": 1.62,
-          "pFinal": 0.602,
-          "book": "unibet (Kambi)"
-        }
-      ],
-      "odd": 2.49,
-      "prob": 0.382,
-      "ev": -0.048,
-      "start": "2026-10-29T19:05:00.000Z",
-      "createdAt": "2026-10-29T06:17:58.744Z"
-    },
-    {
-      "type": "segura",
-      "legs": [
-        {
           "id": "el:E2026_81|ml|home|||",
           "gameId": "el:E2026_81",
           "start": "2026-10-29T19:00:00.000Z",
@@ -1363,50 +1281,6 @@
           "book": "unibet (Kambi)"
         },
         {
-          "id": "el:E2026_82|prop|over|1.5|011052|reb",
-          "gameId": "el:E2026_82",
-          "start": "2026-10-29T19:05:00.000Z",
-          "match": "Maccabi – Paris",
-          "market": "prop",
-          "side": "over",
-          "line": 1.5,
-          "stat": "reb",
-          "playerId": "011052",
-          "player": "Yam Madar",
-          "team": "TEL",
-          "label": "Yam Madar más de 1.5 rebotes",
-          "odd": 1.62,
-          "pFinal": 0.602,
-          "book": "unibet (Kambi)"
-        }
-      ],
-      "odd": 2.4,
-      "prob": 0.401,
-      "ev": -0.039,
-      "start": "2026-10-29T19:05:00.000Z",
-      "createdAt": "2026-10-29T10:07:02.288Z"
-    },
-    {
-      "type": "jugadores",
-      "legs": [
-        {
-          "id": "el:E2026_83|prop|over|3.5|007831|reb",
-          "gameId": "el:E2026_83",
-          "start": "2026-10-29T19:45:00.000Z",
-          "match": "Real Madrid – Fenerbahce",
-          "market": "prop",
-          "side": "over",
-          "line": 3.5,
-          "stat": "reb",
-          "playerId": "007831",
-          "player": "Shavon Shields",
-          "team": "ULK",
-          "label": "Shavon Shields más de 3.5 rebotes",
-          "odd": 1.48,
-          "pFinal": 0.666,
-          "book": "unibet (Kambi)"
-        },
-        {
           "id": "el:E2026_84|prop|over|1.5|011286|ast",
           "gameId": "el:E2026_84",
           "start": "2026-10-30T16:00:00.000Z",
@@ -1468,6 +1342,158 @@
     }
   ],
   "comboRecord": [
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "el:E2026_83|prop|over|3.5|007831|reb",
+          "gameId": "el:E2026_83",
+          "start": "2026-10-29T19:45:00.000Z",
+          "match": "Real Madrid – Fenerbahce",
+          "market": "prop",
+          "side": "over",
+          "line": 3.5,
+          "stat": "reb",
+          "playerId": "007831",
+          "player": "Shavon Shields",
+          "team": "ULK",
+          "label": "Shavon Shields más de 3.5 rebotes",
+          "odd": 1.48,
+          "pFinal": 0.666,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "el:E2026_82|prop|over|1.5|011052|reb",
+          "gameId": "el:E2026_82",
+          "start": "2026-10-29T19:05:00.000Z",
+          "match": "Maccabi – Paris",
+          "market": "prop",
+          "side": "over",
+          "line": 1.5,
+          "stat": "reb",
+          "playerId": "011052",
+          "player": "Yam Madar",
+          "team": "TEL",
+          "label": "Yam Madar más de 1.5 rebotes",
+          "odd": 1.62,
+          "pFinal": 0.602,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.4,
+      "prob": 0.401,
+      "ev": -0.039,
+      "start": "2026-10-29T19:05:00.000Z",
+      "createdAt": "2026-10-29T06:17:58.744Z",
+      "result": "W",
+      "oddFinal": 2.4,
+      "legStates": [
+        "W",
+        "W"
+      ],
+      "settledAt": "2026-10-29T21:52:08.615Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "el:E2026_83|prop|over|4.5|012613|pts",
+          "gameId": "el:E2026_83",
+          "start": "2026-10-29T19:45:00.000Z",
+          "match": "Real Madrid – Fenerbahce",
+          "market": "prop",
+          "side": "over",
+          "line": 4.5,
+          "stat": "pts",
+          "playerId": "012613",
+          "player": "Mikael Jantunen",
+          "team": "MAD",
+          "label": "Mikael Jantunen más de 4.5 puntos",
+          "odd": 1.54,
+          "pFinal": 0.634,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "el:E2026_82|prop|over|1.5|011052|reb",
+          "gameId": "el:E2026_82",
+          "start": "2026-10-29T19:05:00.000Z",
+          "match": "Maccabi – Paris",
+          "market": "prop",
+          "side": "over",
+          "line": 1.5,
+          "stat": "reb",
+          "playerId": "011052",
+          "player": "Yam Madar",
+          "team": "TEL",
+          "label": "Yam Madar más de 1.5 rebotes",
+          "odd": 1.62,
+          "pFinal": 0.602,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.49,
+      "prob": 0.382,
+      "ev": -0.048,
+      "start": "2026-10-29T19:05:00.000Z",
+      "createdAt": "2026-10-29T06:17:58.744Z",
+      "result": "L",
+      "legStates": [
+        "L",
+        "W"
+      ],
+      "settledAt": "2026-10-29T21:52:08.615Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "el:E2026_83|prop|over|3.5|007831|reb",
+          "gameId": "el:E2026_83",
+          "start": "2026-10-29T19:45:00.000Z",
+          "match": "Real Madrid – Fenerbahce",
+          "market": "prop",
+          "side": "over",
+          "line": 3.5,
+          "stat": "reb",
+          "playerId": "007831",
+          "player": "Shavon Shields",
+          "team": "ULK",
+          "label": "Shavon Shields más de 3.5 rebotes",
+          "odd": 1.48,
+          "pFinal": 0.666,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "el:E2026_82|prop|over|1.5|011052|reb",
+          "gameId": "el:E2026_82",
+          "start": "2026-10-29T19:05:00.000Z",
+          "match": "Maccabi – Paris",
+          "market": "prop",
+          "side": "over",
+          "line": 1.5,
+          "stat": "reb",
+          "playerId": "011052",
+          "player": "Yam Madar",
+          "team": "TEL",
+          "label": "Yam Madar más de 1.5 rebotes",
+          "odd": 1.62,
+          "pFinal": 0.602,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.4,
+      "prob": 0.401,
+      "ev": -0.039,
+      "start": "2026-10-29T19:05:00.000Z",
+      "createdAt": "2026-10-29T10:07:02.288Z",
+      "result": "W",
+      "oddFinal": 2.4,
+      "legStates": [
+        "W",
+        "W"
+      ],
+      "settledAt": "2026-10-29T21:52:08.615Z"
+    },
     {
       "type": "segura",
       "legs": [

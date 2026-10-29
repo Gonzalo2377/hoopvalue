@@ -9654,6 +9654,107 @@
       "ev": -0.026,
       "start": "2026-10-30T00:00Z",
       "createdAt": "2026-10-29T21:36:26.968Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909281|ml|home|||",
+          "gameId": "nba:401909281",
+          "start": "2026-10-30T23:30Z",
+          "match": "Raptors – Magic",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana Raptors",
+          "odd": 1.52,
+          "pFinal": 0.679,
+          "book": "draftkings"
+        },
+        {
+          "id": "nba:401909277|prop|under|1.5|5060701|tpm",
+          "gameId": "nba:401909277",
+          "start": "2026-10-30T23:00Z",
+          "match": "Wizards – Hornets",
+          "market": "prop",
+          "side": "under",
+          "line": 1.5,
+          "stat": "tpm",
+          "playerId": "5060701",
+          "player": "Christian Anderson",
+          "team": "CHA",
+          "label": "Christian Anderson menos de 1.5 triples",
+          "odd": 1.48,
+          "pFinal": 0.7,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909282|prop|over|4.5|4278053|ast",
+          "gameId": "nba:401909282",
+          "start": "2026-10-31T00:00Z",
+          "match": "Heat – Pacers",
+          "market": "prop",
+          "side": "over",
+          "line": 4.5,
+          "stat": "ast",
+          "playerId": "4278053",
+          "player": "Davion Mitchell",
+          "team": "MIA",
+          "label": "Davion Mitchell más de 4.5 asistencias",
+          "odd": 1.6,
+          "pFinal": 0.628,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 3.6,
+      "prob": 0.298,
+      "ev": 0.074,
+      "start": "2026-10-30T23:00Z",
+      "createdAt": "2026-10-29T21:52:14.970Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "nba:401909278|prop|over|5.5|5095151|pts",
+          "gameId": "nba:401909278",
+          "start": "2026-10-30T23:30Z",
+          "match": "Celtics – Bulls",
+          "market": "prop",
+          "side": "over",
+          "line": 5.5,
+          "stat": "pts",
+          "playerId": "5095151",
+          "player": "Caleb Wilson",
+          "team": "CHI",
+          "label": "Caleb Wilson más de 5.5 puntos",
+          "odd": 1.3,
+          "pFinal": 0.764,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909894|prop|over|19.5|3064440|pa",
+          "gameId": "nba:401909894",
+          "start": "2026-10-30T00:00Z",
+          "match": "Pelicans – Kings",
+          "market": "prop",
+          "side": "over",
+          "line": 19.5,
+          "stat": "pa",
+          "playerId": "3064440",
+          "player": "Zach LaVine",
+          "team": "SAC",
+          "label": "Zach LaVine más de 19.5 pts+ast",
+          "odd": 1.3,
+          "pFinal": 0.749,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.69,
+      "prob": 0.572,
+      "ev": -0.033,
+      "start": "2026-10-30T00:00Z",
+      "createdAt": "2026-10-29T21:52:14.970Z"
     }
   ],
   "comboRecord": [
