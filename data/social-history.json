@@ -2710,6 +2710,23 @@
             "pFinal": 0.752
           },
           {
+            "id": "nba:401909893|prop|over|13.5|4432158|pts",
+            "league": "nba",
+            "label": "E. Mobley +13.5 puntos",
+            "list": "E. Mobley +13.5 Pts",
+            "odd": 1.35,
+            "start": "2026-10-30T00:00Z",
+            "gameId": "nba:401909893",
+            "market": "prop",
+            "side": "over",
+            "line": 13.5,
+            "stat": "pts",
+            "playerId": "4432158",
+            "team": "CLE",
+            "match": "Hawks – Cavaliers",
+            "pFinal": 0.727
+          },
+          {
             "id": "nba:401909894|prop|over|7.5|4431679|pts",
             "league": "nba",
             "label": "P. Achiuwa +7.5 puntos",
@@ -2725,26 +2742,9 @@
             "team": "SAC",
             "match": "Pelicans – Kings",
             "pFinal": 0.746
-          },
-          {
-            "id": "nba:401909893|prop|over|13.5|4432158|pts",
-            "league": "nba",
-            "label": "E. Mobley +13.5 puntos",
-            "list": "E. Mobley +13.5 Pts",
-            "odd": 1.36,
-            "start": "2026-10-30T00:00Z",
-            "gameId": "nba:401909893",
-            "market": "prop",
-            "side": "over",
-            "line": 13.5,
-            "stat": "pts",
-            "playerId": "4432158",
-            "team": "CLE",
-            "match": "Hawks – Cavaliers",
-            "pFinal": 0.723
           }
         ],
-        "text": "🏀 NBA Picks Day · 29/10\n\n1.- R. Williams III +4.5 Reb @1.30\n2.- P. Achiuwa +7.5 Pts @1.32\n3.- E. Mobley +13.5 Pts @1.36\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 29/10\n\n1.- R. Williams III +4.5 Reb @1.30\n2.- E. Mobley +13.5 Pts @1.35\n3.- P. Achiuwa +7.5 Pts @1.32\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-2": {
         "id": "nba-day-2",
