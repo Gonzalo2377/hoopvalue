@@ -2456,10 +2456,10 @@
         "id": "combo-nba",
         "kind": "combo",
         "league": "nba",
-        "title": "Safe Parlay · NBA @1.96",
+        "title": "Safe Parlay · NBA @2.01",
         "postAt": "2026-10-29T18:00:00.000Z",
         "image": true,
-        "text": "🎯 Safe Parlay · NBA\n\n1.- B. Lopez +7.5 Pts @1.35\n2.- D. Acuff Jr. +9.5 Pts @1.45\n\n💰 Total odds 1.96\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
+        "text": "🎯 Safe Parlay · NBA\n\n1.- B. Lopez +7.5 Pts @1.36\n2.- D. Acuff Jr. +9.5 Pts @1.48\n\n💰 Total odds 2.01\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
         "picks": [],
         "combo": {
           "legs": [
@@ -2468,7 +2468,7 @@
               "league": "nba",
               "label": "B. Lopez +7.5 puntos",
               "list": "B. Lopez +7.5 Pts",
-              "odd": 1.35,
+              "odd": 1.36,
               "start": "2026-10-29T02:30Z",
               "gameId": "nba:401909892",
               "market": "prop",
@@ -2478,14 +2478,14 @@
               "playerId": "3448",
               "team": "LAC",
               "match": "Clippers – Lakers",
-              "pFinal": 0.737
+              "pFinal": 0.732
             },
             {
               "id": "nba:401909894|prop|over|9.5|5142620|pts",
               "league": "nba",
               "label": "D. Acuff Jr. +9.5 puntos",
               "list": "D. Acuff Jr. +9.5 Pts",
-              "odd": 1.45,
+              "odd": 1.48,
               "start": "2026-10-30T00:00Z",
               "gameId": "nba:401909894",
               "market": "prop",
@@ -2495,11 +2495,11 @@
               "playerId": "5142620",
               "team": "SAC",
               "match": "Pelicans – Kings",
-              "pFinal": 0.705
+              "pFinal": 0.695
             }
           ],
-          "odd": 1.96,
-          "prob": 0.52
+          "odd": 2.01,
+          "prob": 0.509
         }
       },
       "nba-day": {
@@ -2516,7 +2516,7 @@
             "league": "nba",
             "label": "K. Wagler +9.5 puntos",
             "list": "K. Wagler +9.5 Pts",
-            "odd": 1.33,
+            "odd": 1.35,
             "start": "2026-10-29T02:30Z",
             "gameId": "nba:401909892",
             "market": "prop",
@@ -2526,14 +2526,14 @@
             "playerId": "5254165",
             "team": "LAC",
             "match": "Clippers – Lakers",
-            "pFinal": 0.73
+            "pFinal": 0.722
           },
           {
             "id": "nba:401909892|prop|over|7.5|3448|pts",
             "league": "nba",
             "label": "B. Lopez +7.5 puntos",
             "list": "B. Lopez +7.5 Pts",
-            "odd": 1.35,
+            "odd": 1.36,
             "start": "2026-10-29T02:30Z",
             "gameId": "nba:401909892",
             "market": "prop",
@@ -2543,24 +2543,7 @@
             "playerId": "3448",
             "team": "LAC",
             "match": "Clippers – Lakers",
-            "pFinal": 0.737
-          },
-          {
-            "id": "nba:401909891|prop|under|1.5|4900671|tpm",
-            "league": "nba",
-            "label": "A. Mitchell −1.5 triples",
-            "list": "A. Mitchell −1.5 T3",
-            "odd": 1.48,
-            "start": "2026-10-29T01:30Z",
-            "gameId": "nba:401909891",
-            "market": "prop",
-            "side": "under",
-            "line": 1.5,
-            "stat": "tpm",
-            "playerId": "4900671",
-            "team": "OKC",
-            "match": "Mavericks – Thunder",
-            "pFinal": 0.669
+            "pFinal": 0.732
           },
           {
             "id": "nba:401909894|ml|home|||",
@@ -2574,10 +2557,27 @@
             "side": "home",
             "line": null,
             "match": "Pelicans – Kings",
-            "pFinal": 0.657
+            "pFinal": 0.662
+          },
+          {
+            "id": "nba:401909891|prop|under|1.5|4900671|tpm",
+            "league": "nba",
+            "label": "A. Mitchell −1.5 triples",
+            "list": "A. Mitchell −1.5 T3",
+            "odd": 1.49,
+            "start": "2026-10-29T01:30Z",
+            "gameId": "nba:401909891",
+            "market": "prop",
+            "side": "under",
+            "line": 1.5,
+            "stat": "tpm",
+            "playerId": "4900671",
+            "team": "OKC",
+            "match": "Mavericks – Thunder",
+            "pFinal": 0.664
           }
         ],
-        "text": "🏀 NBA Picks Day · 29/10\n\n1.- K. Wagler +9.5 Pts @1.33\n2.- B. Lopez +7.5 Pts @1.35\n3.- A. Mitchell −1.5 T3 @1.48\n4.- Gana Pelicans @1.51\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 29/10\n\n1.- K. Wagler +9.5 Pts @1.35\n2.- B. Lopez +7.5 Pts @1.36\n3.- Gana Pelicans @1.51\n4.- A. Mitchell −1.5 T3 @1.49\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-2": {
         "id": "nba-day-2",
@@ -2593,7 +2593,7 @@
             "league": "nba",
             "label": "D. Acuff Jr. +9.5 puntos",
             "list": "D. Acuff Jr. +9.5 Pts",
-            "odd": 1.45,
+            "odd": 1.48,
             "start": "2026-10-30T00:00Z",
             "gameId": "nba:401909894",
             "market": "prop",
@@ -2603,41 +2603,41 @@
             "playerId": "5142620",
             "team": "SAC",
             "match": "Pelicans – Kings",
-            "pFinal": 0.705
+            "pFinal": 0.695
           },
           {
-            "id": "nba:401909891|prop|under|3.5|4683778|reb",
+            "id": "nba:401909891|prop|under|4.5|4278073|reb",
             "league": "nba",
-            "label": "J. McCain −3.5 rebotes",
-            "list": "J. McCain −3.5 Reb",
-            "odd": 1.55,
+            "label": "S. Gilgeous-Alexander −4.5 rebotes",
+            "list": "S. Gilgeous-Alexander −4.5 Reb",
+            "odd": 1.67,
             "start": "2026-10-29T01:30Z",
             "gameId": "nba:401909891",
             "market": "prop",
             "side": "under",
-            "line": 3.5,
+            "line": 4.5,
             "stat": "reb",
-            "playerId": "4683778",
+            "playerId": "4278073",
             "team": "OKC",
             "match": "Mavericks – Thunder",
-            "pFinal": 0.662
+            "pFinal": 0.597
           },
           {
-            "id": "nba:401909891|total|under|228.5||",
+            "id": "nba:401909891|spread|home|5.5||",
             "league": "nba",
-            "label": "Menos de 228.5 puntos",
-            "list": "Under 228.5 (Mavericks-Thunder)",
-            "odd": 1.89,
+            "label": "Mavericks +5.5",
+            "list": "Mavericks +5.5",
+            "odd": 1.87,
             "start": "2026-10-29T01:30Z",
             "gameId": "nba:401909891",
-            "market": "total",
-            "side": "under",
-            "line": 228.5,
+            "market": "spread",
+            "side": "home",
+            "line": 5.5,
             "match": "Mavericks – Thunder",
-            "pFinal": 0.552
+            "pFinal": 0.56
           }
         ],
-        "text": "🧵 NBA Picks Day · 29/10 (sigue)\n\n5.- D. Acuff Jr. +9.5 Pts @1.45\n6.- J. McCain −3.5 Reb @1.55\n7.- Under 228.5 (Mavericks-Thunder) @1.89\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 29/10 (sigue)\n\n5.- D. Acuff Jr. +9.5 Pts @1.48\n6.- S. Gilgeous-Alexander −4.5 Reb @1.67\n7.- Mavericks +5.5 @1.87\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }

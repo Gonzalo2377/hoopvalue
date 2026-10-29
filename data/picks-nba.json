@@ -2337,6 +2337,22 @@
       "stat": "reb",
       "playerId": "4683778",
       "createdAt": "2026-10-29T01:00:26.475Z"
+    },
+    {
+      "id": "nba:401909891|spread|home|5.5||",
+      "gameId": "nba:401909891",
+      "start": "2026-10-29T01:30Z",
+      "match": "Mavericks – Thunder",
+      "market": "spread",
+      "side": "home",
+      "line": 5.5,
+      "label": "Mavericks +5.5",
+      "odd": 1.87,
+      "book": "draftkings",
+      "pFinal": 0.56,
+      "safety": 0.445,
+      "tier": "C",
+      "createdAt": "2026-10-29T01:21:23.498Z"
     }
   ],
   "record": [
@@ -10289,6 +10305,63 @@
       "ev": 0.048,
       "start": "2026-10-29T01:00Z",
       "createdAt": "2026-10-29T00:40:00.280Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909892|prop|over|7.5|3448|pts",
+          "gameId": "nba:401909892",
+          "start": "2026-10-29T02:30Z",
+          "match": "Clippers – Lakers",
+          "market": "prop",
+          "side": "over",
+          "line": 7.5,
+          "stat": "pts",
+          "playerId": "3448",
+          "player": "Brook Lopez",
+          "team": "LAC",
+          "label": "Brook Lopez más de 7.5 puntos",
+          "odd": 1.36,
+          "pFinal": 0.732,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909894|prop|over|9.5|5142620|pts",
+          "gameId": "nba:401909894",
+          "start": "2026-10-30T00:00Z",
+          "match": "Pelicans – Kings",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pts",
+          "playerId": "5142620",
+          "player": "Darius Acuff Jr.",
+          "team": "SAC",
+          "label": "Darius Acuff Jr. más de 9.5 puntos",
+          "odd": 1.48,
+          "pFinal": 0.695,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909891|spread|home|5.5||",
+          "gameId": "nba:401909891",
+          "start": "2026-10-29T01:30Z",
+          "match": "Mavericks – Thunder",
+          "market": "spread",
+          "side": "home",
+          "line": 5.5,
+          "label": "Mavericks +5.5",
+          "odd": 1.87,
+          "pFinal": 0.56,
+          "book": "draftkings"
+        }
+      ],
+      "odd": 3.76,
+      "prob": 0.285,
+      "ev": 0.072,
+      "start": "2026-10-29T01:30Z",
+      "createdAt": "2026-10-29T01:21:23.498Z"
     }
   ],
   "comboRecord": [
