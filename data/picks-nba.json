@@ -9853,6 +9853,94 @@
       "ev": -0.014,
       "start": "2026-10-30T00:00Z",
       "createdAt": "2026-10-29T22:53:49.481Z"
+    },
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "nba:401909894|prop|over|7.5|4431679|pts",
+          "gameId": "nba:401909894",
+          "start": "2026-10-30T00:00Z",
+          "match": "Pelicans – Kings",
+          "market": "prop",
+          "side": "over",
+          "line": 7.5,
+          "stat": "pts",
+          "playerId": "4431679",
+          "player": "Precious Achiuwa",
+          "team": "SAC",
+          "label": "Precious Achiuwa más de 7.5 puntos",
+          "odd": 1.3,
+          "pFinal": 0.754,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909278|prop|over|5.5|5095151|pts",
+          "gameId": "nba:401909278",
+          "start": "2026-10-30T23:30Z",
+          "match": "Celtics – Bulls",
+          "market": "prop",
+          "side": "over",
+          "line": 5.5,
+          "stat": "pts",
+          "playerId": "5095151",
+          "player": "Caleb Wilson",
+          "team": "CHI",
+          "label": "Caleb Wilson más de 5.5 puntos",
+          "odd": 1.3,
+          "pFinal": 0.764,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.69,
+      "prob": 0.576,
+      "ev": -0.026,
+      "start": "2026-10-30T00:00Z",
+      "createdAt": "2026-10-29T23:14:24.776Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "nba:401909893|prop|over|24.5|4432158|pra",
+          "gameId": "nba:401909893",
+          "start": "2026-10-30T00:00Z",
+          "match": "Hawks – Cavaliers",
+          "market": "prop",
+          "side": "over",
+          "line": 24.5,
+          "stat": "pra",
+          "playerId": "4432158",
+          "player": "Evan Mobley",
+          "team": "CLE",
+          "label": "Evan Mobley más de 24.5 pts+reb+ast",
+          "odd": 1.3,
+          "pFinal": 0.75,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909278|prop|over|5.5|5095151|pts",
+          "gameId": "nba:401909278",
+          "start": "2026-10-30T23:30Z",
+          "match": "Celtics – Bulls",
+          "market": "prop",
+          "side": "over",
+          "line": 5.5,
+          "stat": "pts",
+          "playerId": "5095151",
+          "player": "Caleb Wilson",
+          "team": "CHI",
+          "label": "Caleb Wilson más de 5.5 puntos",
+          "odd": 1.3,
+          "pFinal": 0.764,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.69,
+      "prob": 0.573,
+      "ev": -0.032,
+      "start": "2026-10-30T00:00Z",
+      "createdAt": "2026-10-29T23:14:24.776Z"
     }
   ],
   "comboRecord": [
