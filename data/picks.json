@@ -217,6 +217,23 @@
       "stat": "reb",
       "playerId": "013402",
       "createdAt": "2026-10-29T18:10:13.108Z"
+    },
+    {
+      "id": "el:E2026_87|ml|home|||",
+      "gameId": "el:E2026_87",
+      "start": "2026-10-30T19:30:00.000Z",
+      "round": 9,
+      "match": "FC Barcelona – Valencia",
+      "market": "ml",
+      "side": "home",
+      "line": null,
+      "label": "Gana FC Barcelona",
+      "odd": 1.73,
+      "book": "ladbrokes_uk",
+      "pFinal": 0.565,
+      "safety": 0.535,
+      "tier": "C",
+      "createdAt": "2026-10-29T20:13:44.732Z"
     }
   ],
   "record": [
@@ -1529,6 +1546,42 @@
       "ev": -0.031,
       "start": "2026-10-29T19:45:00.000Z",
       "createdAt": "2026-10-29T18:10:13.108Z"
+    },
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "el:E2026_86|ml|home|||",
+          "gameId": "el:E2026_86",
+          "start": "2026-10-30T18:00:00.000Z",
+          "match": "Zalgiris – Partizan",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana Zalgiris",
+          "odd": 1.34,
+          "pFinal": 0.727,
+          "book": "onexbet"
+        },
+        {
+          "id": "el:E2026_88|ml|away|||",
+          "gameId": "el:E2026_88",
+          "start": "2026-10-30T17:30:00.000Z",
+          "match": "Anadolu Efes – Panathinaikos",
+          "market": "ml",
+          "side": "away",
+          "line": null,
+          "label": "Gana Panathinaikos",
+          "odd": 1.5,
+          "pFinal": 0.69,
+          "book": "ladbrokes_uk"
+        }
+      ],
+      "odd": 2.01,
+      "prob": 0.502,
+      "ev": 0.008,
+      "start": "2026-10-30T17:30:00.000Z",
+      "createdAt": "2026-10-29T20:13:44.732Z"
     }
   ],
   "comboRecord": [
