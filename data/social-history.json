@@ -2273,7 +2273,7 @@
             "side": "home",
             "line": null,
             "match": "Crvena Zvezda – Bayern Munich",
-            "pFinal": 0.747
+            "pFinal": 0.746
           }
         ]
       },
@@ -2285,7 +2285,7 @@
         "title": "Maccabi vs Paris",
         "start": "2026-10-29T19:05:00.000Z",
         "postAt": "2026-10-29T18:05:00.000Z",
-        "text": "🏀 EuroLeague · hoy 20:05\nMaccabi vs Paris\n\n1.- Gana Maccabi @1.51\n2.- Y. Madar +1.5 Reb @1.62\n\n🔮 Prediction: Maccabi 93-89 Paris\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
+        "text": "🏀 EuroLeague · hoy 20:05\nMaccabi vs Paris\n\n1.- Gana Maccabi @1.63\n2.- Y. Madar +1.5 Reb @1.62\n\n🔮 Prediction: Maccabi 93-89 Paris\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
         "image": true,
         "picks": [
           {
@@ -2293,14 +2293,14 @@
             "league": "euroleague",
             "label": "Gana Maccabi",
             "list": "Gana Maccabi",
-            "odd": 1.51,
+            "odd": 1.63,
             "start": "2026-10-29T19:05:00.000Z",
             "gameId": "el:E2026_82",
             "market": "ml",
             "side": "home",
             "line": null,
             "match": "Maccabi – Paris",
-            "pFinal": 0.656
+            "pFinal": 0.614
           },
           {
             "id": "el:E2026_82|prop|over|1.5|011052|reb",
@@ -2541,26 +2541,26 @@
         "title": "Safe Parlay · NBA @1.69",
         "postAt": "2026-10-29T18:00:00.000Z",
         "image": true,
-        "text": "🎯 Safe Parlay · NBA\n\n1.- E. Mobley +24.5 PRA @1.30\n2.- P. Achiuwa +7.5 Pts @1.30\n\n💰 Total odds 1.69\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
+        "text": "🎯 Safe Parlay · NBA\n\n1.- R. Williams III +4.5 Reb @1.30\n2.- P. Achiuwa +7.5 Pts @1.30\n\n💰 Total odds 1.69\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
         "picks": [],
         "combo": {
           "legs": [
             {
-              "id": "nba:401909893|prop|over|24.5|4432158|pra",
+              "id": "nba:401909895|prop|over|4.5|4066211|reb",
               "league": "nba",
-              "label": "E. Mobley +24.5 pts+reb+ast",
-              "list": "E. Mobley +24.5 PRA",
+              "label": "R. Williams III +4.5 rebotes",
+              "list": "R. Williams III +4.5 Reb",
               "odd": 1.3,
-              "start": "2026-10-30T00:00Z",
-              "gameId": "nba:401909893",
+              "start": "2026-10-30T02:00Z",
+              "gameId": "nba:401909895",
               "market": "prop",
               "side": "over",
-              "line": 24.5,
-              "stat": "pra",
-              "playerId": "4432158",
-              "team": "CLE",
-              "match": "Hawks – Cavaliers",
-              "pFinal": 0.75
+              "line": 4.5,
+              "stat": "reb",
+              "playerId": "4066211",
+              "team": "POR",
+              "match": "Trail Blazers – Grizzlies",
+              "pFinal": 0.752
             },
             {
               "id": "nba:401909894|prop|over|7.5|4431679|pts",
@@ -2581,7 +2581,7 @@
             }
           ],
           "odd": 1.69,
-          "prob": 0.566
+          "prob": 0.567
         }
       },
       "combo-euroleague": {
@@ -2693,55 +2693,21 @@
         "image": true,
         "picks": [
           {
-            "id": "nba:401909893|prop|over|24.5|4432158|pra",
+            "id": "nba:401909895|prop|over|4.5|4066211|reb",
             "league": "nba",
-            "label": "E. Mobley +24.5 pts+reb+ast",
-            "list": "E. Mobley +24.5 PRA",
-            "odd": 1.3,
-            "start": "2026-10-30T00:00Z",
-            "gameId": "nba:401909893",
-            "market": "prop",
-            "side": "over",
-            "line": 24.5,
-            "stat": "pra",
-            "playerId": "4432158",
-            "team": "CLE",
-            "match": "Hawks – Cavaliers",
-            "pFinal": 0.75
-          },
-          {
-            "id": "nba:401909895|prop|over|5.5|4600663|reb",
-            "league": "nba",
-            "label": "Z. Edey +5.5 rebotes",
-            "list": "Z. Edey +5.5 Reb",
+            "label": "R. Williams III +4.5 rebotes",
+            "list": "R. Williams III +4.5 Reb",
             "odd": 1.3,
             "start": "2026-10-30T02:00Z",
             "gameId": "nba:401909895",
             "market": "prop",
             "side": "over",
-            "line": 5.5,
+            "line": 4.5,
             "stat": "reb",
-            "playerId": "4600663",
-            "team": "MEM",
-            "match": "Trail Blazers – Grizzlies",
-            "pFinal": 0.746
-          },
-          {
-            "id": "nba:401909895|prop|over|2.5|3995|ast",
-            "league": "nba",
-            "label": "J. Holiday +2.5 asistencias",
-            "list": "J. Holiday +2.5 Ast",
-            "odd": 1.32,
-            "start": "2026-10-30T02:00Z",
-            "gameId": "nba:401909895",
-            "market": "prop",
-            "side": "over",
-            "line": 2.5,
-            "stat": "ast",
-            "playerId": "3995",
+            "playerId": "4066211",
             "team": "POR",
             "match": "Trail Blazers – Grizzlies",
-            "pFinal": 0.736
+            "pFinal": 0.752
           },
           {
             "id": "nba:401909894|prop|over|7.5|4431679|pts",
@@ -2759,9 +2725,43 @@
             "team": "SAC",
             "match": "Pelicans – Kings",
             "pFinal": 0.754
+          },
+          {
+            "id": "nba:401909893|prop|over|0.5|4432158|tpm",
+            "league": "nba",
+            "label": "E. Mobley +0.5 triples",
+            "list": "E. Mobley +0.5 T3",
+            "odd": 1.33,
+            "start": "2026-10-30T00:00Z",
+            "gameId": "nba:401909893",
+            "market": "prop",
+            "side": "over",
+            "line": 0.5,
+            "stat": "tpm",
+            "playerId": "4432158",
+            "team": "CLE",
+            "match": "Hawks – Cavaliers",
+            "pFinal": 0.738
+          },
+          {
+            "id": "nba:401909894|prop|over|19.5|3064440|pa",
+            "league": "nba",
+            "label": "Z. LaVine +19.5 pts+ast",
+            "list": "Z. LaVine +19.5 P+A",
+            "odd": 1.3,
+            "start": "2026-10-30T00:00Z",
+            "gameId": "nba:401909894",
+            "market": "prop",
+            "side": "over",
+            "line": 19.5,
+            "stat": "pa",
+            "playerId": "3064440",
+            "team": "SAC",
+            "match": "Pelicans – Kings",
+            "pFinal": 0.749
           }
         ],
-        "text": "🏀 NBA Picks Day · 29/10\n\n1.- E. Mobley +24.5 PRA @1.30\n2.- Z. Edey +5.5 Reb @1.30\n3.- J. Holiday +2.5 Ast @1.32\n4.- P. Achiuwa +7.5 Pts @1.30\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 29/10\n\n1.- R. Williams III +4.5 Reb @1.30\n2.- P. Achiuwa +7.5 Pts @1.30\n3.- E. Mobley +0.5 T3 @1.33\n4.- Z. LaVine +19.5 P+A @1.30\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-2": {
         "id": "nba-day-2",
@@ -2773,20 +2773,37 @@
         "image": true,
         "picks": [
           {
-            "id": "nba:401909894|prop|over|9.5|3907497|ra",
+            "id": "nba:401909893|prop|over|24.5|3908809|pa",
             "league": "nba",
-            "label": "D. Murray +9.5 reb+ast",
-            "list": "D. Murray +9.5 R+A",
+            "label": "D. Mitchell +24.5 pts+ast",
+            "list": "D. Mitchell +24.5 P+A",
             "odd": 1.38,
             "start": "2026-10-30T00:00Z",
-            "gameId": "nba:401909894",
+            "gameId": "nba:401909893",
             "market": "prop",
             "side": "over",
-            "line": 9.5,
-            "stat": "ra",
-            "playerId": "3907497",
-            "team": "NO",
-            "match": "Pelicans – Kings",
+            "line": 24.5,
+            "stat": "pa",
+            "playerId": "3908809",
+            "team": "CLE",
+            "match": "Hawks – Cavaliers",
+            "pFinal": 0.707
+          },
+          {
+            "id": "nba:401909895|prop|over|2.5|3995|reb",
+            "league": "nba",
+            "label": "J. Holiday +2.5 rebotes",
+            "list": "J. Holiday +2.5 Reb",
+            "odd": 1.38,
+            "start": "2026-10-30T02:00Z",
+            "gameId": "nba:401909895",
+            "market": "prop",
+            "side": "over",
+            "line": 2.5,
+            "stat": "reb",
+            "playerId": "3995",
+            "team": "POR",
+            "match": "Trail Blazers – Grizzlies",
             "pFinal": 0.707
           },
           {
@@ -2802,26 +2819,9 @@
             "line": null,
             "match": "Pelicans – Kings",
             "pFinal": 0.666
-          },
-          {
-            "id": "nba:401909893|prop|over|24.5|3908809|pa",
-            "league": "nba",
-            "label": "D. Mitchell +24.5 pts+ast",
-            "list": "D. Mitchell +24.5 P+A",
-            "odd": 1.45,
-            "start": "2026-10-30T00:00Z",
-            "gameId": "nba:401909893",
-            "market": "prop",
-            "side": "over",
-            "line": 24.5,
-            "stat": "pa",
-            "playerId": "3908809",
-            "team": "CLE",
-            "match": "Hawks – Cavaliers",
-            "pFinal": 0.681
           }
         ],
-        "text": "🧵 NBA Picks Day · 29/10 (sigue)\n\n5.- D. Murray +9.5 R+A @1.38\n6.- Gana Pelicans @1.47\n7.- D. Mitchell +24.5 P+A @1.45\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 29/10 (sigue)\n\n5.- D. Mitchell +24.5 P+A @1.38\n6.- J. Holiday +2.5 Reb @1.38\n7.- Gana Pelicans @1.47\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }

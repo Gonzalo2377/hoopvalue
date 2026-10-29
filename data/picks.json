@@ -1398,6 +1398,55 @@
       "ev": -0.039,
       "start": "2026-10-29T19:05:00.000Z",
       "createdAt": "2026-10-29T10:07:02.288Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "el:E2026_81|ml|home|||",
+          "gameId": "el:E2026_81",
+          "start": "2026-10-29T19:00:00.000Z",
+          "match": "Crvena Zvezda – Bayern Munich",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana Crvena Zvezda",
+          "odd": 1.36,
+          "pFinal": 0.746,
+          "book": "ladbrokes_uk"
+        },
+        {
+          "id": "el:E2026_82|ml|home|||",
+          "gameId": "el:E2026_82",
+          "start": "2026-10-29T19:05:00.000Z",
+          "match": "Maccabi – Paris",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana Maccabi",
+          "odd": 1.63,
+          "pFinal": 0.614,
+          "book": "betfair_ex_uk"
+        },
+        {
+          "id": "el:E2026_85|ml|home|||",
+          "gameId": "el:E2026_85",
+          "start": "2026-10-30T19:00:00.000Z",
+          "match": "LDLC ASVEL – Baskonia",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana LDLC ASVEL",
+          "odd": 1.58,
+          "pFinal": 0.638,
+          "book": "onexbet"
+        }
+      ],
+      "odd": 3.5,
+      "prob": 0.292,
+      "ev": 0.024,
+      "start": "2026-10-29T19:00:00.000Z",
+      "createdAt": "2026-10-29T15:11:26.427Z"
     }
   ],
   "comboRecord": [
