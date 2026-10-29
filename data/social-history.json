@@ -2270,9 +2270,27 @@
         "title": "Maccabi vs Paris",
         "start": "2026-10-29T19:05:00.000Z",
         "postAt": "2026-10-29T18:05:00.000Z",
-        "text": "🏀 EuroLeague · hoy 20:05\nMaccabi vs Paris\n\nSin pick seguro en este partido: no hay valor suficiente. A veces lo mejor es no apostar.\n\n🔮 Predicción: Maccabi 93-89 Paris\n\n#EuroLeague · +18",
+        "text": "🏀 EuroLeague · hoy 20:05\nMaccabi vs Paris\n\n1.- Y. Madar +1.5 Reb @1.63\n\n🔮 Predicción: Maccabi 93-89 Paris\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
         "image": true,
-        "picks": []
+        "picks": [
+          {
+            "id": "el:E2026_82|prop|over|1.5|011052|reb",
+            "league": "euroleague",
+            "label": "Y. Madar +1.5 rebotes",
+            "list": "Y. Madar +1.5 Reb",
+            "odd": 1.63,
+            "start": "2026-10-29T19:05:00.000Z",
+            "gameId": "el:E2026_82",
+            "market": "prop",
+            "side": "over",
+            "line": 1.5,
+            "stat": "reb",
+            "playerId": "011052",
+            "team": "TEL",
+            "match": "Maccabi – Paris",
+            "pFinal": 0.599
+          }
+        ]
       },
       "el:E2026_83": {
         "id": "el:E2026_83",
@@ -2523,7 +2541,7 @@
             "side": "home",
             "line": null,
             "match": "Pelicans – Kings",
-            "pFinal": 0.653
+            "pFinal": 0.655
           }
         ],
         "text": "🏀 NBA Picks Day · 29/10\n\n1.- Gana Pelicans @1.49\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
