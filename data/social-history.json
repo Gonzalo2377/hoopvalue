@@ -3528,23 +3528,6 @@
         "image": true,
         "picks": [
           {
-            "id": "nba:401909893|prop|over|24.5|4432158|pra",
-            "league": "nba",
-            "label": "E. Mobley +24.5 pts+reb+ast",
-            "list": "E. Mobley +24.5 PRA",
-            "odd": 1.3,
-            "start": "2026-10-30T00:00Z",
-            "gameId": "nba:401909893",
-            "market": "prop",
-            "side": "over",
-            "line": 24.5,
-            "stat": "pra",
-            "playerId": "4432158",
-            "team": "CLE",
-            "match": "Hawks – Cavaliers",
-            "pFinal": 0.75
-          },
-          {
             "id": "nba:401909895|prop|over|3.5|4433083|pts",
             "league": "nba",
             "label": "C. Spencer +3.5 puntos",
@@ -3594,9 +3577,26 @@
             "team": "SAC",
             "match": "Pelicans – Kings",
             "pFinal": 0.754
+          },
+          {
+            "id": "nba:401909893|prop|over|24.5|4432158|pra",
+            "league": "nba",
+            "label": "E. Mobley +24.5 pts+reb+ast",
+            "list": "E. Mobley +24.5 PRA",
+            "odd": 1.32,
+            "start": "2026-10-30T00:00Z",
+            "gameId": "nba:401909893",
+            "market": "prop",
+            "side": "over",
+            "line": 24.5,
+            "stat": "pra",
+            "playerId": "4432158",
+            "team": "CLE",
+            "match": "Hawks – Cavaliers",
+            "pFinal": 0.742
           }
         ],
-        "text": "🏀 NBA Picks Day · 30/10\n\n1.- E. Mobley +24.5 PRA @1.30\n2.- C. Spencer +3.5 Pts @1.30\n3.- T. Jerome +24.5 P+A @1.30\n4.- P. Achiuwa +7.5 Pts @1.30\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 30/10\n\n1.- C. Spencer +3.5 Pts @1.30\n2.- T. Jerome +24.5 P+A @1.30\n3.- P. Achiuwa +7.5 Pts @1.30\n4.- E. Mobley +24.5 PRA @1.32\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-2": {
         "id": "nba-day-2",
@@ -3646,7 +3646,7 @@
             "league": "nba",
             "label": "D. Mitchell +19.5 puntos",
             "list": "D. Mitchell +19.5 Pts",
-            "odd": 1.34,
+            "odd": 1.33,
             "start": "2026-10-30T00:00Z",
             "gameId": "nba:401909893",
             "market": "prop",
@@ -3656,7 +3656,7 @@
             "playerId": "3908809",
             "team": "CLE",
             "match": "Hawks – Cavaliers",
-            "pFinal": 0.729
+            "pFinal": 0.734
           },
           {
             "id": "nba:401909281|ml|home|||",
@@ -3673,7 +3673,7 @@
             "pFinal": 0.679
           }
         ],
-        "text": "🧵 NBA Picks Day · 30/10 (sigue)\n\n5.- C. Wilson +5.5 Pts @1.30\n6.- Z. LaVine +19.5 P+A @1.30\n7.- D. Mitchell +19.5 Pts @1.34\n8.- Gana Raptors @1.52\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 30/10 (sigue)\n\n5.- C. Wilson +5.5 Pts @1.30\n6.- Z. LaVine +19.5 P+A @1.30\n7.- D. Mitchell +19.5 Pts @1.33\n8.- Gana Raptors @1.52\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-3": {
         "id": "nba-day-3",
@@ -3706,7 +3706,7 @@
             "league": "nba",
             "label": "D. Mitchell +4.5 asistencias",
             "list": "D. Mitchell +4.5 Ast",
-            "odd": 1.53,
+            "odd": 1.54,
             "start": "2026-10-31T00:00Z",
             "gameId": "nba:401909282",
             "market": "prop",
@@ -3716,14 +3716,14 @@
             "playerId": "4278053",
             "team": "MIA",
             "match": "Heat – Pacers",
-            "pFinal": 0.649
+            "pFinal": 0.646
           },
           {
             "id": "nba:401909282|prop|under|1.5|4601025|tpm",
             "league": "nba",
             "label": "P. Larsson −1.5 triples",
             "list": "P. Larsson −1.5 T3",
-            "odd": 1.67,
+            "odd": 1.68,
             "start": "2026-10-31T00:00Z",
             "gameId": "nba:401909282",
             "market": "prop",
@@ -3733,14 +3733,14 @@
             "playerId": "4601025",
             "team": "MIA",
             "match": "Heat – Pacers",
-            "pFinal": 0.588
+            "pFinal": 0.587
           },
           {
             "id": "nba:401909284|prop|over|2.5|3936099|reb",
             "league": "nba",
             "label": "D. Jones Jr. +2.5 rebotes",
             "list": "D. Jones Jr. +2.5 Reb",
-            "odd": 1.64,
+            "odd": 1.66,
             "start": "2026-10-31T00:00Z",
             "gameId": "nba:401909284",
             "market": "prop",
@@ -3750,10 +3750,10 @@
             "playerId": "3936099",
             "team": "LAC",
             "match": "Timberwolves – Clippers",
-            "pFinal": 0.628
+            "pFinal": 0.622
           }
         ],
-        "text": "🧵 NBA Picks Day · 30/10 (sigue)\n\n9.- C. Anderson −1.5 T3 @1.46\n10.- D. Mitchell +4.5 Ast @1.53\n11.- P. Larsson −1.5 T3 @1.67\n12.- D. Jones Jr. +2.5 Reb @1.64\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 30/10 (sigue)\n\n9.- C. Anderson −1.5 T3 @1.46\n10.- D. Mitchell +4.5 Ast @1.54\n11.- P. Larsson −1.5 T3 @1.68\n12.- D. Jones Jr. +2.5 Reb @1.66\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
