@@ -2688,7 +2688,7 @@
         "kind": "nba-day",
         "league": "nba",
         "reply": false,
-        "title": "NBA Picks Day · 7 picks",
+        "title": "NBA Picks Day · 6 picks",
         "postAt": "2026-10-29T17:45:00.000Z",
         "image": true,
         "picks": [
@@ -2727,6 +2727,35 @@
             "pFinal": 0.75
           },
           {
+            "id": "nba:401909895|prop|over|2.5|3995|ast",
+            "league": "nba",
+            "label": "J. Holiday +2.5 asistencias",
+            "list": "J. Holiday +2.5 Ast",
+            "odd": 1.32,
+            "start": "2026-10-30T02:00Z",
+            "gameId": "nba:401909895",
+            "market": "prop",
+            "side": "over",
+            "line": 2.5,
+            "stat": "ast",
+            "playerId": "3995",
+            "team": "POR",
+            "match": "Trail Blazers – Grizzlies",
+            "pFinal": 0.736
+          }
+        ],
+        "text": "🏀 NBA Picks Day · 29/10\n\n1.- R. Williams III +4.5 Reb @1.30\n2.- E. Mobley +24.5 PRA @1.30\n3.- J. Holiday +2.5 Ast @1.32\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-2": {
+        "id": "nba-day-2",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 2/2 · picks 4-6",
+        "postAt": "2026-10-29T17:45:00.000Z",
+        "image": true,
+        "picks": [
+          {
             "id": "nba:401909894|prop|over|7.5|4431679|pts",
             "league": "nba",
             "label": "P. Achiuwa +7.5 puntos",
@@ -2759,49 +2788,6 @@
             "team": "SAC",
             "match": "Pelicans – Kings",
             "pFinal": 0.749
-          }
-        ],
-        "text": "🏀 NBA Picks Day · 29/10\n\n1.- R. Williams III +4.5 Reb @1.30\n2.- E. Mobley +24.5 PRA @1.30\n3.- P. Achiuwa +7.5 Pts @1.30\n4.- Z. LaVine +19.5 P+A @1.30\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-2": {
-        "id": "nba-day-2",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 2/2 · picks 5-7",
-        "postAt": "2026-10-29T17:45:00.000Z",
-        "image": true,
-        "picks": [
-          {
-            "id": "nba:401909895|prop|over|2.5|3995|reb",
-            "league": "nba",
-            "label": "J. Holiday +2.5 rebotes",
-            "list": "J. Holiday +2.5 Reb",
-            "odd": 1.38,
-            "start": "2026-10-30T02:00Z",
-            "gameId": "nba:401909895",
-            "market": "prop",
-            "side": "over",
-            "line": 2.5,
-            "stat": "reb",
-            "playerId": "3995",
-            "team": "POR",
-            "match": "Trail Blazers – Grizzlies",
-            "pFinal": 0.707
-          },
-          {
-            "id": "nba:401909894|ml|home|||",
-            "league": "nba",
-            "label": "Gana Pelicans",
-            "list": "Gana Pelicans",
-            "odd": 1.47,
-            "start": "2026-10-30T00:00Z",
-            "gameId": "nba:401909894",
-            "market": "ml",
-            "side": "home",
-            "line": null,
-            "match": "Pelicans – Kings",
-            "pFinal": 0.666
           },
           {
             "id": "nba:401909893|prop|over|19.5|3908809|pts",
@@ -2821,7 +2807,7 @@
             "pFinal": 0.713
           }
         ],
-        "text": "🧵 NBA Picks Day · 29/10 (sigue)\n\n5.- J. Holiday +2.5 Reb @1.38\n6.- Gana Pelicans @1.47\n7.- D. Mitchell +19.5 Pts @1.38\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 29/10 (sigue)\n\n4.- P. Achiuwa +7.5 Pts @1.30\n5.- Z. LaVine +19.5 P+A @1.30\n6.- D. Mitchell +19.5 Pts @1.38\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
