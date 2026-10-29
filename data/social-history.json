@@ -2688,10 +2688,27 @@
         "kind": "nba-day",
         "league": "nba",
         "reply": false,
-        "title": "NBA Picks Day · 3 picks",
+        "title": "NBA Picks Day · 5 picks",
         "postAt": "2026-10-29T17:45:00.000Z",
         "image": true,
         "picks": [
+          {
+            "id": "nba:401909893|prop|over|0.5|4432158|tpm",
+            "league": "nba",
+            "label": "E. Mobley +0.5 triples",
+            "list": "E. Mobley +0.5 T3",
+            "odd": 1.32,
+            "start": "2026-10-30T00:00Z",
+            "gameId": "nba:401909893",
+            "market": "prop",
+            "side": "over",
+            "line": 0.5,
+            "stat": "tpm",
+            "playerId": "4432158",
+            "team": "CLE",
+            "match": "Hawks – Cavaliers",
+            "pFinal": 0.742
+          },
           {
             "id": "nba:401909894|prop|over|19.5|3064440|pa",
             "league": "nba",
@@ -2725,6 +2742,35 @@
             "team": "NO",
             "match": "Pelicans – Kings",
             "pFinal": 0.707
+          }
+        ],
+        "text": "🏀 NBA Picks Day · 29/10\n\n1.- E. Mobley +0.5 T3 @1.32\n2.- Z. LaVine +19.5 P+A @1.30\n3.- D. Murray +9.5 R+A @1.38\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-2": {
+        "id": "nba-day-2",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 2/2 · picks 4-5",
+        "postAt": "2026-10-29T17:45:00.000Z",
+        "image": true,
+        "picks": [
+          {
+            "id": "nba:401909893|prop|over|24.5|3908809|pa",
+            "league": "nba",
+            "label": "D. Mitchell +24.5 pts+ast",
+            "list": "D. Mitchell +24.5 P+A",
+            "odd": 1.38,
+            "start": "2026-10-30T00:00Z",
+            "gameId": "nba:401909893",
+            "market": "prop",
+            "side": "over",
+            "line": 24.5,
+            "stat": "pa",
+            "playerId": "3908809",
+            "team": "CLE",
+            "match": "Hawks – Cavaliers",
+            "pFinal": 0.707
           },
           {
             "id": "nba:401909894|ml|home|||",
@@ -2741,7 +2787,7 @@
             "pFinal": 0.666
           }
         ],
-        "text": "🏀 NBA Picks Day · 29/10\n\n1.- Z. LaVine +19.5 P+A @1.30\n2.- D. Murray +9.5 R+A @1.38\n3.- Gana Pelicans @1.47\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 29/10 (sigue)\n\n4.- D. Mitchell +24.5 P+A @1.38\n5.- Gana Pelicans @1.47\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
