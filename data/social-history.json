@@ -3040,24 +3040,10 @@
         "id": "preds-nba",
         "kind": "preds",
         "league": "nba",
-        "title": "Predicciones de marcador · NBA (11)",
+        "title": "Predicciones de marcador · NBA (10)",
         "postAt": "2026-10-30T17:30:00.000Z",
         "image": true,
         "games": [
-          {
-            "id": "nba:401909895",
-            "start": "2026-10-30T02:00Z",
-            "home": "Trail Blazers",
-            "away": "Grizzlies",
-            "hc": "POR",
-            "ac": "MEM",
-            "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
-            "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
-            "pred": [
-              113,
-              114
-            ]
-          },
           {
             "id": "nba:401909277",
             "start": "2026-10-30T23:00Z",
@@ -3199,7 +3185,7 @@
             ]
           }
         ],
-        "text": "🔮 EuroPicks Score Predictions · NBA · 30/10\n\nPOR 113-114 MEM\nWSH 106-108 CHA\nBOS 126-111 CHI\nBKN 110-114 DET\nPHI 110-108 NY\nTOR 119-100 ORL\nMIA 117-118 IND\nDAL 112-114 HOU\nMIN 110-105 LAC\nGS 117-121 LAL\nPHX 114-112 DEN\n\nFinal scores, predicted before tip-off. Check back tomorrow"
+        "text": "🔮 EuroPicks Score Predictions · NBA · 30/10\n\nWSH 106-108 CHA\nBOS 126-111 CHI\nBKN 110-114 DET\nPHI 110-108 NY\nTOR 119-100 ORL\nMIA 117-118 IND\nDAL 112-114 HOU\nMIN 110-105 LAC\nGS 117-121 LAL\nPHX 114-112 DEN\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
       },
       "preds-euroleague": {
         "id": "preds-euroleague",
@@ -3495,27 +3481,10 @@
         "kind": "nba-day",
         "league": "nba",
         "reply": false,
-        "title": "NBA Picks Day · 5 picks",
+        "title": "NBA Picks Day · 3 picks",
         "postAt": "2026-10-30T17:45:00.000Z",
         "image": true,
         "picks": [
-          {
-            "id": "nba:401909895|prop|over|3.5|4433083|pts",
-            "league": "nba",
-            "label": "C. Spencer +3.5 puntos",
-            "list": "C. Spencer +3.5 Pts",
-            "odd": 1.3,
-            "start": "2026-10-30T02:00Z",
-            "gameId": "nba:401909895",
-            "market": "prop",
-            "side": "over",
-            "line": 3.5,
-            "stat": "pts",
-            "playerId": "4433083",
-            "team": "MEM",
-            "match": "Trail Blazers – Grizzlies",
-            "pFinal": 0.747
-          },
           {
             "id": "nba:401909278|prop|over|5.5|5095151|pts",
             "league": "nba",
@@ -3533,35 +3502,6 @@
             "match": "Celtics – Bulls",
             "pFinal": 0.764
           },
-          {
-            "id": "nba:401909895|prop|over|2.5|3995|reb",
-            "league": "nba",
-            "label": "J. Holiday +2.5 rebotes",
-            "list": "J. Holiday +2.5 Reb",
-            "odd": 1.35,
-            "start": "2026-10-30T02:00Z",
-            "gameId": "nba:401909895",
-            "market": "prop",
-            "side": "over",
-            "line": 2.5,
-            "stat": "reb",
-            "playerId": "3995",
-            "team": "POR",
-            "match": "Trail Blazers – Grizzlies",
-            "pFinal": 0.719
-          }
-        ],
-        "text": "🏀 NBA Picks Day · 30/10\n\n1.- C. Spencer +3.5 Pts @1.30\n2.- C. Wilson +5.5 Pts @1.30\n3.- J. Holiday +2.5 Reb @1.35\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-2": {
-        "id": "nba-day-2",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 2/2 · picks 4-5",
-        "postAt": "2026-10-30T17:45:00.000Z",
-        "image": true,
-        "picks": [
           {
             "id": "nba:401909281|ml|home|||",
             "league": "nba",
@@ -3594,7 +3534,7 @@
             "pFinal": 0.697
           }
         ],
-        "text": "🧵 NBA Picks Day · 30/10 (sigue)\n\n4.- Gana Raptors @1.52\n5.- C. Anderson −1.5 T3 @1.48\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 30/10\n\n1.- C. Wilson +5.5 Pts @1.30\n2.- Gana Raptors @1.52\n3.- C. Anderson −1.5 T3 @1.48\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
