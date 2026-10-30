@@ -2099,6 +2099,24 @@
       "stat": "pts",
       "playerId": "4576087",
       "createdAt": "2026-10-30T21:33:15.079Z"
+    },
+    {
+      "id": "nba:401909280|prop|under|1.5|1966|tpm",
+      "gameId": "nba:401909280",
+      "start": "2026-10-30T23:30Z",
+      "match": "76ers – Knicks",
+      "market": "prop",
+      "side": "under",
+      "line": 1.5,
+      "label": "LeBron James menos de 1.5 triples",
+      "odd": 1.45,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.676,
+      "safety": 0.612,
+      "tier": "B",
+      "stat": "tpm",
+      "playerId": "1966",
+      "createdAt": "2026-10-30T21:53:37.910Z"
     }
   ],
   "record": [
@@ -14095,6 +14113,67 @@
       "ev": -0.036,
       "start": "2026-10-30T23:30Z",
       "createdAt": "2026-10-30T21:33:15.079Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909896|prop|over|9.5|4433627|pts",
+          "gameId": "nba:401909896",
+          "start": "2026-10-31T19:00Z",
+          "match": "Jazz – Trail Blazers",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pts",
+          "playerId": "4433627",
+          "player": "Keyonte George",
+          "team": "UTAH",
+          "label": "Keyonte George más de 9.5 puntos",
+          "odd": 1.3,
+          "pFinal": 0.764,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909278|prop|over|5.5|4395626|pts",
+          "gameId": "nba:401909278",
+          "start": "2026-10-30T23:30Z",
+          "match": "Celtics – Bulls",
+          "market": "prop",
+          "side": "over",
+          "line": 5.5,
+          "stat": "pts",
+          "playerId": "4395626",
+          "player": "Tre Jones",
+          "team": "CHI",
+          "label": "Tre Jones más de 5.5 puntos",
+          "odd": 1.3,
+          "pFinal": 0.764,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909277|prop|over|6.5|5238230|pts",
+          "gameId": "nba:401909277",
+          "start": "2026-10-30T23:00Z",
+          "match": "Wizards – Hornets",
+          "market": "prop",
+          "side": "over",
+          "line": 6.5,
+          "stat": "pts",
+          "playerId": "5238230",
+          "player": "Tre Johnson",
+          "team": "WSH",
+          "label": "Tre Johnson más de 6.5 puntos",
+          "odd": 1.4,
+          "pFinal": 0.706,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.37,
+      "prob": 0.412,
+      "ev": -0.025,
+      "start": "2026-10-30T23:00Z",
+      "createdAt": "2026-10-30T21:53:37.910Z"
     }
   ],
   "comboRecord": [

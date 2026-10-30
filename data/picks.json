@@ -1,23 +1,6 @@
 {
   "pending": [
     {
-      "id": "el:E2026_87|ml|home|||",
-      "gameId": "el:E2026_87",
-      "start": "2026-10-30T19:30:00.000Z",
-      "round": 9,
-      "match": "FC Barcelona – Valencia",
-      "market": "ml",
-      "side": "home",
-      "line": null,
-      "label": "Gana FC Barcelona",
-      "odd": 1.73,
-      "book": "ladbrokes_uk",
-      "pFinal": 0.565,
-      "safety": 0.535,
-      "tier": "C",
-      "createdAt": "2026-10-29T20:13:44.732Z"
-    },
-    {
       "id": "el:E2026_89|prop|over|4.5|013285|pts",
       "gameId": "el:E2026_89",
       "start": "2026-10-30T19:30:00.000Z",
@@ -35,6 +18,31 @@
       "stat": "pts",
       "playerId": "013285",
       "createdAt": "2026-10-30T08:43:51.959Z"
+    }
+  ],
+  "record": [
+    {
+      "id": "el:E2026_87|ml|home|||",
+      "gameId": "el:E2026_87",
+      "start": "2026-10-30T19:30:00.000Z",
+      "round": 9,
+      "match": "FC Barcelona – Valencia",
+      "market": "ml",
+      "side": "home",
+      "line": null,
+      "label": "Gana FC Barcelona",
+      "odd": 1.73,
+      "book": "ladbrokes_uk",
+      "pFinal": 0.565,
+      "safety": 0.535,
+      "tier": "C",
+      "createdAt": "2026-10-29T20:13:44.732Z",
+      "result": "W",
+      "score": "98-94",
+      "settledAt": "2026-10-30T21:53:36.413Z",
+      "closeOdd": 1.75,
+      "pClose": 0.5736,
+      "clv": -0.0077
     },
     {
       "id": "el:E2026_87|prop|over|9.5|014008|pts",
@@ -53,7 +61,10 @@
       "tier": "B",
       "stat": "pts",
       "playerId": "014008",
-      "createdAt": "2026-10-30T12:28:41.019Z"
+      "createdAt": "2026-10-30T12:28:41.019Z",
+      "result": "W",
+      "score": "98-94",
+      "settledAt": "2026-10-30T21:53:36.413Z"
     },
     {
       "id": "el:E2026_87|prop|over|4.5|000796|pts",
@@ -72,10 +83,11 @@
       "tier": "C",
       "stat": "pts",
       "playerId": "000796",
-      "createdAt": "2026-10-30T12:28:41.019Z"
-    }
-  ],
-  "record": [
+      "createdAt": "2026-10-30T12:28:41.019Z",
+      "result": "V",
+      "score": "98-94",
+      "settledAt": "2026-10-30T21:53:36.413Z"
+    },
     {
       "id": "el:E2026_90|prop|over|1.5|008985|reb",
       "gameId": "el:E2026_90",
@@ -1488,7 +1500,9 @@
       "ev": 0.118,
       "start": "2026-10-30T19:00:00.000Z",
       "createdAt": "2026-10-30T12:28:41.019Z"
-    },
+    }
+  ],
+  "comboRecord": [
     {
       "type": "jugadores",
       "legs": [
@@ -1531,10 +1545,15 @@
       "prob": 0.527,
       "ev": -0.054,
       "start": "2026-10-30T19:00:00.000Z",
-      "createdAt": "2026-10-30T12:28:41.019Z"
-    }
-  ],
-  "comboRecord": [
+      "createdAt": "2026-10-30T12:28:41.019Z",
+      "result": "W",
+      "oddFinal": 1.79,
+      "legStates": [
+        "W",
+        "W"
+      ],
+      "settledAt": "2026-10-30T21:53:36.413Z"
+    },
     {
       "type": "valor",
       "legs": [
