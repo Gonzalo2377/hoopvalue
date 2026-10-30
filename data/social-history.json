@@ -2925,7 +2925,7 @@
         "title": "Dubai vs Hapoel TLV",
         "start": "2026-10-30T16:00:00.000Z",
         "postAt": "2026-10-30T15:00:00.000Z",
-        "text": "🏀 EuroLeague · hoy 17:00\nDubai vs Hapoel TLV\n\n1.- D. Bacon +1.5 Ast @1.61\n2.- A. Blakeney +1.5 Reb @1.70\n\n🔮 Prediction: Dubai 89-88 Hapoel TLV\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
+        "text": "🏀 EuroLeague · hoy 17:00\nDubai vs Hapoel TLV\n\n1.- D. Bacon +1.5 Ast @1.62\n2.- A. Blakeney +1.5 Reb @1.70\n\n🔮 Prediction: Dubai 89-88 Hapoel TLV\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
         "image": true,
         "picks": [
           {
@@ -2933,7 +2933,7 @@
             "league": "euroleague",
             "label": "D. Bacon +1.5 asistencias",
             "list": "D. Bacon +1.5 Ast",
-            "odd": 1.61,
+            "odd": 1.62,
             "start": "2026-10-30T16:00:00.000Z",
             "gameId": "el:E2026_84",
             "market": "prop",
@@ -2943,7 +2943,7 @@
             "playerId": "011286",
             "team": "DUB",
             "match": "Dubai – Hapoel TLV",
-            "pFinal": 0.61
+            "pFinal": 0.607
           },
           {
             "id": "el:E2026_84|prop|over|1.5|013402|reb",
@@ -3763,6 +3763,23 @@
         "image": true,
         "picks": [
           {
+            "id": "nba:401909283|prop|over|9.5|4278078|pts",
+            "league": "nba",
+            "label": "P. Washington +9.5 puntos",
+            "list": "P. Washington +9.5 Pts",
+            "odd": 1.32,
+            "start": "2026-10-31T00:00Z",
+            "gameId": "nba:401909283",
+            "market": "prop",
+            "side": "over",
+            "line": 9.5,
+            "stat": "pts",
+            "playerId": "4278078",
+            "team": "DAL",
+            "match": "Mavericks – Rockets",
+            "pFinal": 0.738
+          },
+          {
             "id": "nba:401909279|prop|over|9.5|3064514|ra",
             "league": "nba",
             "label": "J. Randle +9.5 reb+ast",
@@ -3779,6 +3796,52 @@
             "match": "Nets – Pistons",
             "pFinal": 0.735
           },
+          {
+            "id": "nba:401909282|prop|over|9.5|3064482|pa",
+            "league": "nba",
+            "label": "B. Portis +9.5 pts+ast",
+            "list": "B. Portis +9.5 P+A",
+            "odd": 1.34,
+            "start": "2026-10-31T00:00Z",
+            "gameId": "nba:401909282",
+            "market": "prop",
+            "side": "over",
+            "line": 9.5,
+            "stat": "pa",
+            "playerId": "3064482",
+            "team": "MIA",
+            "match": "Heat – Pacers",
+            "pFinal": 0.727
+          },
+          {
+            "id": "nba:401909281|prop|over|9.5|4684272|pa",
+            "league": "nba",
+            "label": "J. Walter +9.5 pts+ast",
+            "list": "J. Walter +9.5 P+A",
+            "odd": 1.32,
+            "start": "2026-10-30T23:30Z",
+            "gameId": "nba:401909281",
+            "market": "prop",
+            "side": "over",
+            "line": 9.5,
+            "stat": "pa",
+            "playerId": "4684272",
+            "team": "TOR",
+            "match": "Raptors – Magic",
+            "pFinal": 0.736
+          }
+        ],
+        "text": "🧵 NBA Picks Day · 30/10 (sigue)\n\n5.- P. Washington +9.5 Pts @1.32\n6.- J. Randle +9.5 R+A @1.32\n7.- B. Portis +9.5 P+A @1.34\n8.- J. Walter +9.5 P+A @1.32\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-3": {
+        "id": "nba-day-3",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 3/3 · picks 9-12",
+        "postAt": "2026-10-30T17:45:00.000Z",
+        "image": true,
+        "picks": [
           {
             "id": "nba:401909286|prop|over|9.5|4066383|pr",
             "league": "nba",
@@ -3797,21 +3860,21 @@
             "pFinal": 0.764
           },
           {
-            "id": "nba:401909281|prop|over|9.5|4684272|pa",
+            "id": "nba:401909282|prop|over|9.5|4396909|pts",
             "league": "nba",
-            "label": "J. Walter +9.5 pts+ast",
-            "list": "J. Walter +9.5 P+A",
+            "label": "A. Nesmith +9.5 puntos",
+            "list": "A. Nesmith +9.5 Pts",
             "odd": 1.33,
-            "start": "2026-10-30T23:30Z",
-            "gameId": "nba:401909281",
+            "start": "2026-10-31T00:00Z",
+            "gameId": "nba:401909282",
             "market": "prop",
             "side": "over",
             "line": 9.5,
-            "stat": "pa",
-            "playerId": "4684272",
-            "team": "TOR",
-            "match": "Raptors – Magic",
-            "pFinal": 0.732
+            "stat": "pts",
+            "playerId": "4396909",
+            "team": "IND",
+            "match": "Heat – Pacers",
+            "pFinal": 0.733
           },
           {
             "id": "nba:401909277|prop|over|19.5|4396971|pr",
@@ -3829,19 +3892,7 @@
             "team": "CHA",
             "match": "Wizards – Hornets",
             "pFinal": 0.744
-          }
-        ],
-        "text": "🧵 NBA Picks Day · 30/10 (sigue)\n\n5.- J. Randle +9.5 R+A @1.32\n6.- M. Bridges +9.5 P+R @1.30\n7.- J. Walter +9.5 P+A @1.33\n8.- N. Reid +19.5 P+R @1.32\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-3": {
-        "id": "nba-day-3",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 3/3 · picks 9-12",
-        "postAt": "2026-10-30T17:45:00.000Z",
-        "image": true,
-        "picks": [
+          },
           {
             "id": "nba:401909280|prop|over|19.5|3934719|pra",
             "league": "nba",
@@ -3858,60 +3909,9 @@
             "team": "NY",
             "match": "76ers – Knicks",
             "pFinal": 0.716
-          },
-          {
-            "id": "nba:401909279|prop|over|9.5|5107199|pr",
-            "league": "nba",
-            "label": "D. Jenkins +9.5 pts+reb",
-            "list": "D. Jenkins +9.5 P+R",
-            "odd": 1.32,
-            "start": "2026-10-30T23:30Z",
-            "gameId": "nba:401909279",
-            "market": "prop",
-            "side": "over",
-            "line": 9.5,
-            "stat": "pr",
-            "playerId": "5107199",
-            "team": "DET",
-            "match": "Nets – Pistons",
-            "pFinal": 0.747
-          },
-          {
-            "id": "nba:401909281|prop|under|1.5|4433134|tpm",
-            "league": "nba",
-            "label": "S. Barnes −1.5 triples",
-            "list": "S. Barnes −1.5 T3",
-            "odd": 1.42,
-            "start": "2026-10-30T23:30Z",
-            "gameId": "nba:401909281",
-            "market": "prop",
-            "side": "under",
-            "line": 1.5,
-            "stat": "tpm",
-            "playerId": "4433134",
-            "team": "TOR",
-            "match": "Raptors – Magic",
-            "pFinal": 0.686
-          },
-          {
-            "id": "nba:401909280|prop|over|1.5|5124612|ast",
-            "league": "nba",
-            "label": "V. Edgecombe +1.5 asistencias",
-            "list": "V. Edgecombe +1.5 Ast",
-            "odd": 1.38,
-            "start": "2026-10-30T23:30Z",
-            "gameId": "nba:401909280",
-            "market": "prop",
-            "side": "over",
-            "line": 1.5,
-            "stat": "ast",
-            "playerId": "5124612",
-            "team": "PHI",
-            "match": "76ers – Knicks",
-            "pFinal": 0.706
           }
         ],
-        "text": "🧵 NBA Picks Day · 30/10 (sigue)\n\n9.- O. Anunoby +19.5 PRA @1.36\n10.- D. Jenkins +9.5 P+R @1.32\n11.- S. Barnes −1.5 T3 @1.42\n12.- V. Edgecombe +1.5 Ast @1.38\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 30/10 (sigue)\n\n9.- M. Bridges +9.5 P+R @1.30\n10.- A. Nesmith +9.5 Pts @1.33\n11.- N. Reid +19.5 P+R @1.32\n12.- O. Anunoby +19.5 PRA @1.36\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
