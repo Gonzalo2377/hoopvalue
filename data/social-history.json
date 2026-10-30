@@ -3714,24 +3714,24 @@
             "pFinal": 0.748
           },
           {
-            "id": "nba:401909285|prop|over|7.5|4277811|pts",
+            "id": "nba:401909286|prop|over|14.5|4437244|pa",
             "league": "nba",
-            "label": "C. Sexton +7.5 puntos",
-            "list": "C. Sexton +7.5 Pts",
-            "odd": 1.32,
+            "label": "J. Green +14.5 pts+ast",
+            "list": "J. Green +14.5 P+A",
+            "odd": 1.3,
             "start": "2026-10-31T02:00Z",
-            "gameId": "nba:401909285",
+            "gameId": "nba:401909286",
             "market": "prop",
             "side": "over",
-            "line": 7.5,
-            "stat": "pts",
-            "playerId": "4277811",
-            "team": "LAL",
-            "match": "Warriors – Lakers",
-            "pFinal": 0.74
+            "line": 14.5,
+            "stat": "pa",
+            "playerId": "4437244",
+            "team": "PHX",
+            "match": "Suns – Nuggets",
+            "pFinal": 0.75
           }
         ],
-        "text": "🏀 NBA Picks Day · 30/10\n\n1.- J. Giddey +5.5 Ast @1.30\n2.- J. Brown +15.5 Pts @1.33\n3.- Q. Grimes +9.5 PRA @1.30\n4.- C. Sexton +7.5 Pts @1.32\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 30/10\n\n1.- J. Giddey +5.5 Ast @1.30\n2.- J. Brown +15.5 Pts @1.33\n3.- Q. Grimes +9.5 PRA @1.30\n4.- J. Green +14.5 P+A @1.30\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-2": {
         "id": "nba-day-2",
@@ -3742,6 +3742,23 @@
         "postAt": "2026-10-30T17:45:00.000Z",
         "image": true,
         "picks": [
+          {
+            "id": "nba:401909282|prop|over|9.5|4396909|pts",
+            "league": "nba",
+            "label": "A. Nesmith +9.5 puntos",
+            "list": "A. Nesmith +9.5 Pts",
+            "odd": 1.32,
+            "start": "2026-10-31T00:00Z",
+            "gameId": "nba:401909282",
+            "market": "prop",
+            "side": "over",
+            "line": 9.5,
+            "stat": "pts",
+            "playerId": "4396909",
+            "team": "IND",
+            "match": "Heat – Pacers",
+            "pFinal": 0.737
+          },
           {
             "id": "nba:401909283|prop|over|9.5|4278078|pts",
             "league": "nba",
@@ -3760,21 +3777,21 @@
             "pFinal": 0.738
           },
           {
-            "id": "nba:401909282|prop|over|9.5|4396909|pts",
+            "id": "nba:401909282|prop|over|9.5|4278355|pts",
             "league": "nba",
-            "label": "A. Nesmith +9.5 puntos",
-            "list": "A. Nesmith +9.5 Pts",
-            "odd": 1.33,
+            "label": "O. Toppin +9.5 puntos",
+            "list": "O. Toppin +9.5 Pts",
+            "odd": 1.32,
             "start": "2026-10-31T00:00Z",
             "gameId": "nba:401909282",
             "market": "prop",
             "side": "over",
             "line": 9.5,
             "stat": "pts",
-            "playerId": "4396909",
+            "playerId": "4278355",
             "team": "IND",
             "match": "Heat – Pacers",
-            "pFinal": 0.733
+            "pFinal": 0.746
           },
           {
             "id": "nba:401909279|prop|over|9.5|3064514|ra",
@@ -3792,7 +3809,19 @@
             "team": "BKN",
             "match": "Nets – Pistons",
             "pFinal": 0.731
-          },
+          }
+        ],
+        "text": "🧵 NBA Picks Day · 30/10 (sigue)\n\n5.- A. Nesmith +9.5 Pts @1.32\n6.- P. Washington +9.5 Pts @1.32\n7.- O. Toppin +9.5 Pts @1.32\n8.- J. Randle +9.5 R+A @1.33\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-3": {
+        "id": "nba-day-3",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 3/3 · picks 9-12",
+        "postAt": "2026-10-30T17:45:00.000Z",
+        "image": true,
+        "picks": [
           {
             "id": "nba:401909286|prop|over|9.5|4698719|pr",
             "league": "nba",
@@ -3809,19 +3838,7 @@
             "team": "DEN",
             "match": "Suns – Nuggets",
             "pFinal": 0.751
-          }
-        ],
-        "text": "🧵 NBA Picks Day · 30/10 (sigue)\n\n5.- P. Washington +9.5 Pts @1.32\n6.- A. Nesmith +9.5 Pts @1.33\n7.- J. Randle +9.5 R+A @1.33\n8.- T. Brazile +9.5 P+R @1.30\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-3": {
-        "id": "nba-day-3",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 3/3 · picks 9-12",
-        "postAt": "2026-10-30T17:45:00.000Z",
-        "image": true,
-        "picks": [
+          },
           {
             "id": "nba:401909278|prop|over|14.5|4397189|pr",
             "league": "nba",
@@ -3840,21 +3857,21 @@
             "pFinal": 0.733
           },
           {
-            "id": "nba:401909282|prop|over|9.5|4278355|pts",
+            "id": "nba:401909285|prop|over|19.5|4709138|pra",
             "league": "nba",
-            "label": "O. Toppin +9.5 puntos",
-            "list": "O. Toppin +9.5 Pts",
-            "odd": 1.33,
-            "start": "2026-10-31T00:00Z",
-            "gameId": "nba:401909282",
+            "label": "B. Podziemski +19.5 pts+reb+ast",
+            "list": "B. Podziemski +19.5 PRA",
+            "odd": 1.34,
+            "start": "2026-10-31T02:00Z",
+            "gameId": "nba:401909285",
             "market": "prop",
             "side": "over",
-            "line": 9.5,
-            "stat": "pts",
-            "playerId": "4278355",
-            "team": "IND",
-            "match": "Heat – Pacers",
-            "pFinal": 0.742
+            "line": 19.5,
+            "stat": "pra",
+            "playerId": "4709138",
+            "team": "GS",
+            "match": "Warriors – Lakers",
+            "pFinal": 0.727
           },
           {
             "id": "nba:401909280|prop|over|1.5|5124612|ast",
@@ -3872,26 +3889,9 @@
             "team": "PHI",
             "match": "76ers – Knicks",
             "pFinal": 0.71
-          },
-          {
-            "id": "nba:401909286|prop|over|9.5|4278402|pra",
-            "league": "nba",
-            "label": "J. Goodwin +9.5 pts+reb+ast",
-            "list": "J. Goodwin +9.5 PRA",
-            "odd": 1.35,
-            "start": "2026-10-31T02:00Z",
-            "gameId": "nba:401909286",
-            "market": "prop",
-            "side": "over",
-            "line": 9.5,
-            "stat": "pra",
-            "playerId": "4278402",
-            "team": "PHX",
-            "match": "Suns – Nuggets",
-            "pFinal": 0.723
           }
         ],
-        "text": "🧵 NBA Picks Day · 30/10 (sigue)\n\n9.- J. Smith +14.5 P+R @1.33\n10.- O. Toppin +9.5 Pts @1.33\n11.- V. Edgecombe +1.5 Ast @1.37\n12.- J. Goodwin +9.5 PRA @1.35\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 30/10 (sigue)\n\n9.- T. Brazile +9.5 P+R @1.30\n10.- J. Smith +14.5 P+R @1.33\n11.- B. Podziemski +19.5 PRA @1.34\n12.- V. Edgecombe +1.5 Ast @1.37\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
