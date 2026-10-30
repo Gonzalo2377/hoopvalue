@@ -295,6 +295,25 @@
       "stat": "pts",
       "playerId": "000796",
       "createdAt": "2026-10-30T12:28:41.019Z"
+    },
+    {
+      "id": "el:E2026_86|prop|over|1.5|002328|ast",
+      "gameId": "el:E2026_86",
+      "start": "2026-10-30T18:00:00.000Z",
+      "round": 9,
+      "match": "Zalgiris – Partizan",
+      "market": "prop",
+      "side": "over",
+      "line": 1.5,
+      "label": "Marius Grigonis más de 1.5 asistencias",
+      "odd": 1.72,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.566,
+      "safety": 0.518,
+      "tier": "C",
+      "stat": "ast",
+      "playerId": "002328",
+      "createdAt": "2026-10-30T15:59:14.052Z"
     }
   ],
   "record": [
