@@ -3054,8 +3054,8 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
             "pred": [
-              115,
-              112
+              113,
+              114
             ]
           },
           {
@@ -3199,7 +3199,7 @@
             ]
           }
         ],
-        "text": "🔮 EuroPicks Score Predictions · NBA · 30/10\n\nPOR 115-112 MEM\nWSH 106-108 CHA\nBOS 126-111 CHI\nBKN 110-114 DET\nPHI 110-108 NY\nTOR 119-100 ORL\nMIA 117-118 IND\nDAL 112-114 HOU\nMIN 110-105 LAC\nGS 117-121 LAL\nPHX 114-112 DEN\n\nFinal scores, predicted before tip-off. Check back tomorrow"
+        "text": "🔮 EuroPicks Score Predictions · NBA · 30/10\n\nPOR 113-114 MEM\nWSH 106-108 CHA\nBOS 126-111 CHI\nBKN 110-114 DET\nPHI 110-108 NY\nTOR 119-100 ORL\nMIA 117-118 IND\nDAL 112-114 HOU\nMIN 110-105 LAC\nGS 117-121 LAL\nPHX 114-112 DEN\n\nFinal scores, predicted before tip-off. Check back tomorrow"
       },
       "preds-euroleague": {
         "id": "preds-euroleague",
