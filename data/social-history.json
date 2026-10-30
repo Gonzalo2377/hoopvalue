@@ -3082,7 +3082,7 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png",
             "pred": [
-              111,
+              110,
               114
             ]
           },
@@ -3111,7 +3111,7 @@
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
             "pred": [
               119,
-              100
+              101
             ]
           },
           {
@@ -3167,7 +3167,7 @@
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
             "pred": [
               117,
-              121
+              120
             ]
           },
           {
@@ -3185,7 +3185,7 @@
             ]
           }
         ],
-        "text": "🔮 EuroPicks Score Predictions · NBA · 30/10\n\nWSH 106-109 CHA\nBOS 126-111 CHI\nBKN 111-114 DET\nPHI 110-108 NY\nTOR 119-100 ORL\nMIA 117-118 IND\nDAL 112-115 HOU\nMIN 110-105 LAC\nGS 117-121 LAL\nPHX 114-112 DEN\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
+        "text": "🔮 EuroPicks Score Predictions · NBA · 30/10\n\nWSH 106-109 CHA\nBOS 126-111 CHI\nBKN 110-114 DET\nPHI 110-108 NY\nTOR 119-101 ORL\nMIA 117-118 IND\nDAL 112-115 HOU\nMIN 110-105 LAC\nGS 117-120 LAL\nPHX 114-112 DEN\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
       },
       "preds-euroleague": {
         "id": "preds-euroleague",
@@ -3414,15 +3414,15 @@
         "league": "nba",
         "title": "NBA · resultados de ayer (29/10)",
         "postAt": "2026-10-30T08:40:00.000Z",
-        "text": "📋 NBA · ayer 29/10\n⏳ Williams III +4.5 reb\n✅ Mitchell +19.5 pts\n❌ Mobley +13.5 pts\n⚪ Murray +9.5 reb+ast\n✅ Achiuwa +7.5 pts\n⏳ Holiday +2.5 reb\n⏳ Combinada: R. Williams III +4.5 Reb + P. Achiuwa +7.5 Pts\n2-1 ayer (-0.38 u) · 42-14 total (+3.62 u)\n#NBA · +18",
+        "text": "📋 NBA · ayer 29/10\n⚪ Williams III +4.5 reb\n✅ Mitchell +19.5 pts\n❌ Mobley +13.5 pts\n⚪ Murray +9.5 reb+ast\n✅ Achiuwa +7.5 pts\n✅ Holiday +2.5 reb\n✅ Combinada: R. Williams III +4.5 Reb + P. Achiuwa +7.5 Pts\n4-1 ayer (+0.32 u) · 44-14 total (+4.32 u)\n#NBA · +18",
         "image": true,
-        "pending": true,
+        "pending": false,
         "rows": [
           {
             "league": "nba",
             "label": "R. Williams III +4.5 rebotes",
             "odd": 1.3,
-            "result": null
+            "result": "V"
           },
           {
             "league": "nba",
@@ -3452,27 +3452,27 @@
             "league": "nba",
             "label": "J. Holiday +2.5 rebotes",
             "odd": 1.38,
-            "result": null
+            "result": "W"
           },
           {
             "league": "nba",
             "label": "Combinada: R. Williams III +4.5 Reb + P. Achiuwa +7.5 Pts",
-            "odd": 1.72,
-            "result": null
+            "odd": 1.32,
+            "result": "W"
           }
         ],
         "balance": {
           "day": [
-            2,
+            4,
             1
           ],
           "total": [
-            42,
+            44,
             14
           ],
           "units": {
-            "day": -0.38,
-            "total": 3.62
+            "day": 0.32,
+            "total": 4.32
           }
         }
       },
@@ -3481,7 +3481,7 @@
         "kind": "nba-day",
         "league": "nba",
         "reply": false,
-        "title": "NBA Picks Day · 2 picks",
+        "title": "NBA Picks Day · 1 pick",
         "postAt": "2026-10-30T17:45:00.000Z",
         "image": true,
         "picks": [
@@ -3498,23 +3498,9 @@
             "line": null,
             "match": "Raptors – Magic",
             "pFinal": 0.685
-          },
-          {
-            "id": "nba:401909285|ml|away|||",
-            "league": "nba",
-            "label": "Gana Lakers",
-            "list": "Gana Lakers",
-            "odd": 1.77,
-            "start": "2026-10-31T02:00Z",
-            "gameId": "nba:401909285",
-            "market": "ml",
-            "side": "away",
-            "line": null,
-            "match": "Warriors – Lakers",
-            "pFinal": 0.566
           }
         ],
-        "text": "🏀 NBA Picks Day · 30/10\n\n1.- Gana Raptors @1.49\n2.- Gana Lakers @1.77\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 30/10\n\n1.- Gana Raptors @1.49\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
