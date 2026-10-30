@@ -3043,7 +3043,7 @@
         "title": "LDLC ASVEL vs Baskonia",
         "start": "2026-10-30T19:00:00.000Z",
         "postAt": "2026-10-30T18:00:00.000Z",
-        "text": "🏀 EuroLeague · hoy 20:00\nLDLC ASVEL vs Baskonia\n\n1.- P. Mills +9.5 Pts @1.32\n2.- Gana LDLC ASVEL @1.60\n\n🔮 Prediction: LDLC ASVEL 93-85 Baskonia\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
+        "text": "🏀 EuroLeague · hoy 20:00\nLDLC ASVEL vs Baskonia\n\n1.- P. Mills +9.5 Pts @1.30\n2.- Gana LDLC ASVEL @1.60\n\n🔮 Prediction: LDLC ASVEL 93-85 Baskonia\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
         "image": true,
         "picks": [
           {
@@ -3051,7 +3051,7 @@
             "league": "euroleague",
             "label": "P. Mills +9.5 puntos",
             "list": "P. Mills +9.5 Pts",
-            "odd": 1.32,
+            "odd": 1.3,
             "start": "2026-10-30T19:00:00.000Z",
             "gameId": "el:E2026_85",
             "market": "prop",
@@ -3061,7 +3061,7 @@
             "playerId": "015163",
             "team": "ASV",
             "match": "LDLC ASVEL – Baskonia",
-            "pFinal": 0.739
+            "pFinal": 0.748
           },
           {
             "id": "el:E2026_85|ml|home|||",
@@ -3610,10 +3610,10 @@
         "id": "combo-euroleague",
         "kind": "combo",
         "league": "euroleague",
-        "title": "Safe Parlay · Euroliga @1.82",
+        "title": "Safe Parlay · Euroliga @1.79",
         "postAt": "2026-10-30T16:30:00.000Z",
         "image": true,
-        "text": "🎯 Safe Parlay · Euroliga\n\n1.- Gana Zalgiris @1.38\n2.- P. Mills +9.5 Pts @1.32\n\n💰 Total odds 1.82\n📊 Last 10 games de cada uno en la foto\n#Euroliga · +18 · Juega con responsabilidad",
+        "text": "🎯 Safe Parlay · Euroliga\n\n1.- Gana Zalgiris @1.38\n2.- P. Mills +9.5 Pts @1.30\n\n💰 Total odds 1.79\n📊 Last 10 games de cada uno en la foto\n#Euroliga · +18 · Juega con responsabilidad",
         "picks": [],
         "combo": {
           "legs": [
@@ -3636,7 +3636,7 @@
               "league": "euroleague",
               "label": "P. Mills +9.5 puntos",
               "list": "P. Mills +9.5 Pts",
-              "odd": 1.32,
+              "odd": 1.3,
               "start": "2026-10-30T19:00:00.000Z",
               "gameId": "el:E2026_85",
               "market": "prop",
@@ -3646,11 +3646,11 @@
               "playerId": "015163",
               "team": "ASV",
               "match": "LDLC ASVEL – Baskonia",
-              "pFinal": 0.739
+              "pFinal": 0.748
             }
           ],
-          "odd": 1.82,
-          "prob": 0.534
+          "odd": 1.79,
+          "prob": 0.54
         }
       },
       "nba-day": {
