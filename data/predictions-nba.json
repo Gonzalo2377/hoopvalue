@@ -481,5 +481,12 @@
     "away": "76ers",
     "ptsH": 104,
     "ptsA": 108
+  },
+  "nba:401909898": {
+    "start": "2026-10-31T23:00Z",
+    "home": "Pelicans",
+    "away": "Hawks",
+    "ptsH": 116,
+    "ptsA": 121
   }
 }
