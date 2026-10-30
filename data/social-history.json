@@ -3663,6 +3663,40 @@
         "image": true,
         "picks": [
           {
+            "id": "nba:401909283|prop|over|17.5|3202|pts",
+            "league": "nba",
+            "label": "K. Durant +17.5 puntos",
+            "list": "K. Durant +17.5 Pts",
+            "odd": 1.3,
+            "start": "2026-10-31T00:00Z",
+            "gameId": "nba:401909283",
+            "market": "prop",
+            "side": "over",
+            "line": 17.5,
+            "stat": "pts",
+            "playerId": "3202",
+            "team": "HOU",
+            "match": "Mavericks – Rockets",
+            "pFinal": 0.749
+          },
+          {
+            "id": "nba:401909283|prop|over|9.5|4278078|pts",
+            "league": "nba",
+            "label": "P. Washington +9.5 puntos",
+            "list": "P. Washington +9.5 Pts",
+            "odd": 1.3,
+            "start": "2026-10-31T00:00Z",
+            "gameId": "nba:401909283",
+            "market": "prop",
+            "side": "over",
+            "line": 9.5,
+            "stat": "pts",
+            "playerId": "4278078",
+            "team": "DAL",
+            "match": "Mavericks – Rockets",
+            "pFinal": 0.746
+          },
+          {
             "id": "nba:401909278|prop|over|5.5|4871145|ast",
             "league": "nba",
             "label": "J. Giddey +5.5 asistencias",
@@ -3695,7 +3729,19 @@
             "team": "GS",
             "match": "Warriors – Lakers",
             "pFinal": 0.755
-          },
+          }
+        ],
+        "text": "🏀 NBA Picks Day · 30/10\n\n1.- K. Durant +17.5 Pts @1.30\n2.- P. Washington +9.5 Pts @1.30\n3.- J. Giddey +5.5 Ast @1.30\n4.- B. Podziemski +11.5 Pts @1.30\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-2": {
+        "id": "nba-day-2",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 2/3 · picks 5-8",
+        "postAt": "2026-10-30T17:45:00.000Z",
+        "image": true,
+        "picks": [
           {
             "id": "nba:401909278|prop|over|13.5|5095151|pts",
             "league": "nba",
@@ -3713,35 +3759,6 @@
             "match": "Celtics – Bulls",
             "pFinal": 0.764
           },
-          {
-            "id": "nba:401909283|prop|over|9.5|4278078|pts",
-            "league": "nba",
-            "label": "P. Washington +9.5 puntos",
-            "list": "P. Washington +9.5 Pts",
-            "odd": 1.32,
-            "start": "2026-10-31T00:00Z",
-            "gameId": "nba:401909283",
-            "market": "prop",
-            "side": "over",
-            "line": 9.5,
-            "stat": "pts",
-            "playerId": "4278078",
-            "team": "DAL",
-            "match": "Mavericks – Rockets",
-            "pFinal": 0.738
-          }
-        ],
-        "text": "🏀 NBA Picks Day · 30/10\n\n1.- J. Giddey +5.5 Ast @1.30\n2.- B. Podziemski +11.5 Pts @1.30\n3.- C. Wilson +13.5 Pts @1.30\n4.- P. Washington +9.5 Pts @1.32\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-2": {
-        "id": "nba-day-2",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 2/3 · picks 5-8",
-        "postAt": "2026-10-30T17:45:00.000Z",
-        "image": true,
-        "picks": [
           {
             "id": "nba:401909280|prop|over|17.5|3059318|pts",
             "league": "nba",
@@ -3792,26 +3809,9 @@
             "team": "IND",
             "match": "Heat – Pacers",
             "pFinal": 0.733
-          },
-          {
-            "id": "nba:401909285|prop|over|5.5|4278580|pts",
-            "league": "nba",
-            "label": "S. Mamukelashvili +5.5 puntos",
-            "list": "S. Mamukelashvili +5.5 Pts",
-            "odd": 1.3,
-            "start": "2026-10-31T02:00Z",
-            "gameId": "nba:401909285",
-            "market": "prop",
-            "side": "over",
-            "line": 5.5,
-            "stat": "pts",
-            "playerId": "4278580",
-            "team": "LAL",
-            "match": "Warriors – Lakers",
-            "pFinal": 0.753
           }
         ],
-        "text": "🧵 NBA Picks Day · 30/10 (sigue)\n\n5.- J. Embiid +17.5 Pts @1.33\n6.- J. Goodwin +0.5 T3 @1.33\n7.- A. Nesmith +9.5 Pts @1.33\n8.- S. Mamukelashvili +5.5 Pts @1.30\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 30/10 (sigue)\n\n5.- C. Wilson +13.5 Pts @1.30\n6.- J. Embiid +17.5 Pts @1.33\n7.- J. Goodwin +0.5 T3 @1.33\n8.- A. Nesmith +9.5 Pts @1.33\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-3": {
         "id": "nba-day-3",
@@ -3822,6 +3822,23 @@
         "postAt": "2026-10-30T17:45:00.000Z",
         "image": true,
         "picks": [
+          {
+            "id": "nba:401909286|prop|over|11.5|4437244|pts",
+            "league": "nba",
+            "label": "J. Green +11.5 puntos",
+            "list": "J. Green +11.5 Pts",
+            "odd": 1.33,
+            "start": "2026-10-31T02:00Z",
+            "gameId": "nba:401909286",
+            "market": "prop",
+            "side": "over",
+            "line": 11.5,
+            "stat": "pts",
+            "playerId": "4437244",
+            "team": "PHX",
+            "match": "Suns – Nuggets",
+            "pFinal": 0.734
+          },
           {
             "id": "nba:401909279|prop|over|9.5|3064514|ra",
             "league": "nba",
@@ -3857,23 +3874,6 @@
             "pFinal": 0.723
           },
           {
-            "id": "nba:401909281|prop|over|9.5|4684272|pa",
-            "league": "nba",
-            "label": "J. Walter +9.5 pts+ast",
-            "list": "J. Walter +9.5 P+A",
-            "odd": 1.33,
-            "start": "2026-10-30T23:30Z",
-            "gameId": "nba:401909281",
-            "market": "prop",
-            "side": "over",
-            "line": 9.5,
-            "stat": "pa",
-            "playerId": "4684272",
-            "team": "TOR",
-            "match": "Raptors – Magic",
-            "pFinal": 0.732
-          },
-          {
             "id": "nba:401909277|prop|over|19.5|4396971|pr",
             "league": "nba",
             "label": "N. Reid +19.5 pts+reb",
@@ -3891,7 +3891,7 @@
             "pFinal": 0.744
           }
         ],
-        "text": "🧵 NBA Picks Day · 30/10 (sigue)\n\n9.- J. Randle +9.5 R+A @1.33\n10.- B. Portis +9.5 P+A @1.35\n11.- J. Walter +9.5 P+A @1.33\n12.- N. Reid +19.5 P+R @1.32\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 30/10 (sigue)\n\n9.- J. Green +11.5 Pts @1.33\n10.- J. Randle +9.5 R+A @1.33\n11.- B. Portis +9.5 P+A @1.35\n12.- N. Reid +19.5 P+R @1.32\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
