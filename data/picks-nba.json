@@ -1973,6 +1973,42 @@
       "stat": "ast",
       "playerId": "4396907",
       "createdAt": "2026-10-30T20:46:20.639Z"
+    },
+    {
+      "id": "nba:401909280|prop|over|24.5|4431678|pa",
+      "gameId": "nba:401909280",
+      "start": "2026-10-30T23:30Z",
+      "match": "76ers – Knicks",
+      "market": "prop",
+      "side": "over",
+      "line": 24.5,
+      "label": "Tyrese Maxey más de 24.5 pts+ast",
+      "odd": 1.3,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.749,
+      "safety": 0.684,
+      "tier": "A",
+      "stat": "pa",
+      "playerId": "4431678",
+      "createdAt": "2026-10-30T20:52:22.071Z"
+    },
+    {
+      "id": "nba:401909284|prop|under|21.5|4432847|pra",
+      "gameId": "nba:401909284",
+      "start": "2026-10-31T00:00Z",
+      "match": "Timberwolves – Clippers",
+      "market": "prop",
+      "side": "under",
+      "line": 21.5,
+      "label": "Terrence Shannon Jr. menos de 21.5 pts+reb+ast",
+      "odd": 1.64,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.598,
+      "safety": 0.548,
+      "tier": "C",
+      "stat": "pra",
+      "playerId": "4432847",
+      "createdAt": "2026-10-30T20:52:22.071Z"
     }
   ],
   "record": [
@@ -13610,6 +13646,67 @@
       "ev": -0.034,
       "start": "2026-10-31T02:00Z",
       "createdAt": "2026-10-30T20:46:20.639Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909280|prop|over|14.5|3934719|pa",
+          "gameId": "nba:401909280",
+          "start": "2026-10-30T23:30Z",
+          "match": "76ers – Knicks",
+          "market": "prop",
+          "side": "over",
+          "line": 14.5,
+          "stat": "pa",
+          "playerId": "3934719",
+          "player": "OG Anunoby",
+          "team": "NY",
+          "label": "OG Anunoby más de 14.5 pts+ast",
+          "odd": 1.32,
+          "pFinal": 0.74,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909286|prop|over|14.5|4437244|pr",
+          "gameId": "nba:401909286",
+          "start": "2026-10-31T02:00Z",
+          "match": "Suns – Nuggets",
+          "market": "prop",
+          "side": "over",
+          "line": 14.5,
+          "stat": "pr",
+          "playerId": "4437244",
+          "player": "Jalen Green",
+          "team": "PHX",
+          "label": "Jalen Green más de 14.5 pts+reb",
+          "odd": 1.3,
+          "pFinal": 0.755,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909898|prop|over|14.5|4397183|pra",
+          "gameId": "nba:401909898",
+          "start": "2026-10-31T23:00Z",
+          "match": "Pelicans – Hawks",
+          "market": "prop",
+          "side": "over",
+          "line": 14.5,
+          "stat": "pra",
+          "playerId": "4397183",
+          "player": "Aaron Wiggins",
+          "team": "ATL",
+          "label": "Aaron Wiggins más de 14.5 pts+reb+ast",
+          "odd": 1.3,
+          "pFinal": 0.758,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.23,
+      "prob": 0.423,
+      "ev": -0.055,
+      "start": "2026-10-30T23:30Z",
+      "createdAt": "2026-10-30T20:52:22.071Z"
     }
   ],
   "comboRecord": [
