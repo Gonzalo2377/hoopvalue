@@ -2972,9 +2972,24 @@
         "title": "Anadolu Efes vs Panathinaikos",
         "start": "2026-10-30T17:30:00.000Z",
         "postAt": "2026-10-30T16:30:00.000Z",
-        "text": "🏀 EuroLeague · hoy 18:30\nAnadolu Efes vs Panathinaikos\n\nSin pick seguro en este partido: no hay valor suficiente. A veces lo mejor es no apostar.\n\n🔮 Prediction: Anadolu Efes 79-83 Panathinaikos\n\n#EuroLeague · +18",
+        "text": "🏀 EuroLeague · hoy 18:30\nAnadolu Efes vs Panathinaikos\n\n1.- Gana Panathinaikos @1.44\n\n🔮 Prediction: Anadolu Efes 79-83 Panathinaikos\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
         "image": true,
-        "picks": []
+        "picks": [
+          {
+            "id": "el:E2026_88|ml|away|||",
+            "league": "euroleague",
+            "label": "Gana Panathinaikos",
+            "list": "Gana Panathinaikos",
+            "odd": 1.44,
+            "start": "2026-10-30T17:30:00.000Z",
+            "gameId": "el:E2026_88",
+            "market": "ml",
+            "side": "away",
+            "line": null,
+            "match": "Anadolu Efes – Panathinaikos",
+            "pFinal": 0.682
+          }
+        ]
       },
       "el:E2026_86": {
         "id": "el:E2026_86",
@@ -2984,9 +2999,23 @@
         "title": "Zalgiris vs Partizan",
         "start": "2026-10-30T18:00:00.000Z",
         "postAt": "2026-10-30T17:00:00.000Z",
-        "text": "🏀 EuroLeague · hoy 19:00\nZalgiris vs Partizan\n\n1.- S. Brown +1.5 Reb @1.64\n2.- C. Edwards +1.5 Ast @1.71\n\n🔮 Prediction: Zalgiris 84-77 Partizan\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
+        "text": "🏀 EuroLeague · hoy 19:00\nZalgiris vs Partizan\n\n1.- Gana Zalgiris @1.38\n2.- S. Brown +1.5 Reb @1.64\n\n🔮 Prediction: Zalgiris 84-77 Partizan\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
         "image": true,
         "picks": [
+          {
+            "id": "el:E2026_86|ml|home|||",
+            "league": "euroleague",
+            "label": "Gana Zalgiris",
+            "list": "Gana Zalgiris",
+            "odd": 1.38,
+            "start": "2026-10-30T18:00:00.000Z",
+            "gameId": "el:E2026_86",
+            "market": "ml",
+            "side": "home",
+            "line": null,
+            "match": "Zalgiris – Partizan",
+            "pFinal": 0.722
+          },
           {
             "id": "el:E2026_86|prop|over|1.5|012720|reb",
             "league": "euroleague",
@@ -3003,23 +3032,6 @@
             "team": "ZAL",
             "match": "Zalgiris – Partizan",
             "pFinal": 0.6
-          },
-          {
-            "id": "el:E2026_86|prop|over|1.5|011987|ast",
-            "league": "euroleague",
-            "label": "C. Edwards +1.5 asistencias",
-            "list": "C. Edwards +1.5 Ast",
-            "odd": 1.71,
-            "start": "2026-10-30T18:00:00.000Z",
-            "gameId": "el:E2026_86",
-            "market": "prop",
-            "side": "over",
-            "line": 1.5,
-            "stat": "ast",
-            "playerId": "011987",
-            "team": "ZAL",
-            "match": "Zalgiris – Partizan",
-            "pFinal": 0.568
           }
         ]
       },
@@ -3031,9 +3043,41 @@
         "title": "LDLC ASVEL vs Baskonia",
         "start": "2026-10-30T19:00:00.000Z",
         "postAt": "2026-10-30T18:00:00.000Z",
-        "text": "🏀 EuroLeague · hoy 20:00\nLDLC ASVEL vs Baskonia\n\nSin pick seguro en este partido: no hay valor suficiente. A veces lo mejor es no apostar.\n\n🔮 Prediction: LDLC ASVEL 93-85 Baskonia\n\n#EuroLeague · +18",
+        "text": "🏀 EuroLeague · hoy 20:00\nLDLC ASVEL vs Baskonia\n\n1.- P. Mills +9.5 Pts @1.32\n2.- Gana LDLC ASVEL @1.60\n\n🔮 Prediction: LDLC ASVEL 93-85 Baskonia\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
         "image": true,
-        "picks": []
+        "picks": [
+          {
+            "id": "el:E2026_85|prop|over|9.5|015163|pts",
+            "league": "euroleague",
+            "label": "P. Mills +9.5 puntos",
+            "list": "P. Mills +9.5 Pts",
+            "odd": 1.32,
+            "start": "2026-10-30T19:00:00.000Z",
+            "gameId": "el:E2026_85",
+            "market": "prop",
+            "side": "over",
+            "line": 9.5,
+            "stat": "pts",
+            "playerId": "015163",
+            "team": "ASV",
+            "match": "LDLC ASVEL – Baskonia",
+            "pFinal": 0.739
+          },
+          {
+            "id": "el:E2026_85|ml|home|||",
+            "league": "euroleague",
+            "label": "Gana LDLC ASVEL",
+            "list": "Gana LDLC ASVEL",
+            "odd": 1.6,
+            "start": "2026-10-30T19:00:00.000Z",
+            "gameId": "el:E2026_85",
+            "market": "ml",
+            "side": "home",
+            "line": null,
+            "match": "LDLC ASVEL – Baskonia",
+            "pFinal": 0.645
+          }
+        ]
       },
       "el:E2026_90": {
         "id": "el:E2026_90",
@@ -3043,9 +3087,27 @@
         "title": "Olympiacos vs Milan",
         "start": "2026-10-30T19:15:00.000Z",
         "postAt": "2026-10-30T18:15:00.000Z",
-        "text": "🏀 EuroLeague · hoy 20:15\nOlympiacos vs Milan\n\nSin pick seguro en este partido: no hay valor suficiente. A veces lo mejor es no apostar.\n\n🔮 Prediction: Olympiacos 89-81 Milan\n\n#EuroLeague · +18",
+        "text": "🏀 EuroLeague · hoy 20:15\nOlympiacos vs Milan\n\n1.- L. Bolmaro +1.5 Reb @1.55\n\n🔮 Prediction: Olympiacos 89-81 Milan\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
         "image": true,
-        "picks": []
+        "picks": [
+          {
+            "id": "el:E2026_90|prop|over|1.5|008985|reb",
+            "league": "euroleague",
+            "label": "L. Bolmaro +1.5 rebotes",
+            "list": "L. Bolmaro +1.5 Reb",
+            "odd": 1.55,
+            "start": "2026-10-30T19:15:00.000Z",
+            "gameId": "el:E2026_90",
+            "market": "prop",
+            "side": "over",
+            "line": 1.5,
+            "stat": "reb",
+            "playerId": "008985",
+            "team": "MIL",
+            "match": "Olympiacos – Milan",
+            "pFinal": 0.649
+          }
+        ]
       },
       "el:E2026_89": {
         "id": "el:E2026_89",
@@ -3055,9 +3117,27 @@
         "title": "Virtus Bologna vs Besiktas",
         "start": "2026-10-30T19:30:00.000Z",
         "postAt": "2026-10-30T18:30:00.000Z",
-        "text": "🏀 EuroLeague · hoy 20:30\nVirtus Bologna vs Besiktas\n\nSin pick seguro en este partido: no hay valor suficiente. A veces lo mejor es no apostar.\n\n🔮 Prediction: Virtus Bologna 88-84 Besiktas\n\n#EuroLeague · +18",
+        "text": "🏀 EuroLeague · hoy 20:30\nVirtus Bologna vs Besiktas\n\n1.- D. Dotson +4.5 Pts @1.64\n\n🔮 Prediction: Virtus Bologna 88-84 Besiktas\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
         "image": true,
-        "picks": []
+        "picks": [
+          {
+            "id": "el:E2026_89|prop|over|4.5|013285|pts",
+            "league": "euroleague",
+            "label": "D. Dotson +4.5 puntos",
+            "list": "D. Dotson +4.5 Pts",
+            "odd": 1.64,
+            "start": "2026-10-30T19:30:00.000Z",
+            "gameId": "el:E2026_89",
+            "market": "prop",
+            "side": "over",
+            "line": 4.5,
+            "stat": "pts",
+            "playerId": "013285",
+            "team": "BES",
+            "match": "Virtus Bologna – Besiktas",
+            "pFinal": 0.642
+          }
+        ]
       },
       "el:E2026_87": {
         "id": "el:E2026_87",
@@ -3067,9 +3147,24 @@
         "title": "FC Barcelona vs Valencia",
         "start": "2026-10-30T19:30:00.000Z",
         "postAt": "2026-10-30T18:30:00.000Z",
-        "text": "🏀 EuroLeague · hoy 20:30\nFC Barcelona vs Valencia\n\nSin pick seguro en este partido: no hay valor suficiente. A veces lo mejor es no apostar.\n\n🔮 Prediction: FC Barcelona 91-92 Valencia\n\n#EuroLeague · +18",
+        "text": "🏀 EuroLeague · hoy 20:30\nFC Barcelona vs Valencia\n\n1.- Gana FC Barcelona @1.74\n\n🔮 Prediction: FC Barcelona 91-92 Valencia\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
         "image": true,
-        "picks": []
+        "picks": [
+          {
+            "id": "el:E2026_87|ml|home|||",
+            "league": "euroleague",
+            "label": "Gana FC Barcelona",
+            "list": "Gana FC Barcelona",
+            "odd": 1.74,
+            "start": "2026-10-30T19:30:00.000Z",
+            "gameId": "el:E2026_87",
+            "market": "ml",
+            "side": "home",
+            "line": null,
+            "match": "FC Barcelona – Valencia",
+            "pFinal": 0.558
+          }
+        ]
       },
       "preds-nba": {
         "id": "preds-nba",
@@ -3536,6 +3631,53 @@
           }
         ],
         "text": "🏀 NBA Picks Day · 30/10\n\n1.- Gana Raptors @1.49\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+      },
+      "combo-euroleague": {
+        "id": "combo-euroleague",
+        "kind": "combo",
+        "league": "euroleague",
+        "title": "Safe Parlay · Euroliga @1.82",
+        "postAt": "2026-10-30T16:30:00.000Z",
+        "image": true,
+        "text": "🎯 Safe Parlay · Euroliga\n\n1.- Gana Zalgiris @1.38\n2.- P. Mills +9.5 Pts @1.32\n\n💰 Total odds 1.82\n📊 Last 10 games de cada uno en la foto\n#Euroliga · +18 · Juega con responsabilidad",
+        "picks": [],
+        "combo": {
+          "legs": [
+            {
+              "id": "el:E2026_86|ml|home|||",
+              "league": "euroleague",
+              "label": "Gana Zalgiris",
+              "list": "Gana Zalgiris",
+              "odd": 1.38,
+              "start": "2026-10-30T18:00:00.000Z",
+              "gameId": "el:E2026_86",
+              "market": "ml",
+              "side": "home",
+              "line": null,
+              "match": "Zalgiris – Partizan",
+              "pFinal": 0.722
+            },
+            {
+              "id": "el:E2026_85|prop|over|9.5|015163|pts",
+              "league": "euroleague",
+              "label": "P. Mills +9.5 puntos",
+              "list": "P. Mills +9.5 Pts",
+              "odd": 1.32,
+              "start": "2026-10-30T19:00:00.000Z",
+              "gameId": "el:E2026_85",
+              "market": "prop",
+              "side": "over",
+              "line": 9.5,
+              "stat": "pts",
+              "playerId": "015163",
+              "team": "ASV",
+              "match": "LDLC ASVEL – Baskonia",
+              "pFinal": 0.739
+            }
+          ],
+          "odd": 1.82,
+          "prob": 0.534
+        }
       }
     }
   }
