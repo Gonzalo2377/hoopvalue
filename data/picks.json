@@ -18,23 +18,6 @@
       "createdAt": "2026-10-29T10:07:02.288Z"
     },
     {
-      "id": "el:E2026_88|ml|away|||",
-      "gameId": "el:E2026_88",
-      "start": "2026-10-30T17:30:00.000Z",
-      "round": 9,
-      "match": "Anadolu Efes – Panathinaikos",
-      "market": "ml",
-      "side": "away",
-      "line": null,
-      "label": "Gana Panathinaikos",
-      "odd": 1.52,
-      "book": "onexbet",
-      "pFinal": 0.651,
-      "safety": 0.661,
-      "tier": "B",
-      "createdAt": "2026-10-29T10:07:02.288Z"
-    },
-    {
       "id": "el:E2026_85|ml|home|||",
       "gameId": "el:E2026_85",
       "start": "2026-10-30T19:00:00.000Z",
@@ -279,6 +262,29 @@
     }
   ],
   "record": [
+    {
+      "id": "el:E2026_88|ml|away|||",
+      "gameId": "el:E2026_88",
+      "start": "2026-10-30T17:30:00.000Z",
+      "round": 9,
+      "match": "Anadolu Efes – Panathinaikos",
+      "market": "ml",
+      "side": "away",
+      "line": null,
+      "label": "Gana Panathinaikos",
+      "odd": 1.52,
+      "book": "onexbet",
+      "pFinal": 0.651,
+      "safety": 0.661,
+      "tier": "B",
+      "createdAt": "2026-10-29T10:07:02.288Z",
+      "result": "L",
+      "score": "83-68",
+      "settledAt": "2026-10-30T19:44:55.815Z",
+      "closeOdd": 1.47,
+      "pClose": 0.6765,
+      "clv": 0.0283
+    },
     {
       "id": "el:E2026_84|prop|over|1.5|011286|ast",
       "gameId": "el:E2026_84",
@@ -1476,42 +1482,6 @@
       "createdAt": "2026-10-29T10:07:02.288Z"
     },
     {
-      "type": "segura",
-      "legs": [
-        {
-          "id": "el:E2026_86|ml|home|||",
-          "gameId": "el:E2026_86",
-          "start": "2026-10-30T18:00:00.000Z",
-          "match": "Zalgiris – Partizan",
-          "market": "ml",
-          "side": "home",
-          "line": null,
-          "label": "Gana Zalgiris",
-          "odd": 1.34,
-          "pFinal": 0.727,
-          "book": "onexbet"
-        },
-        {
-          "id": "el:E2026_88|ml|away|||",
-          "gameId": "el:E2026_88",
-          "start": "2026-10-30T17:30:00.000Z",
-          "match": "Anadolu Efes – Panathinaikos",
-          "market": "ml",
-          "side": "away",
-          "line": null,
-          "label": "Gana Panathinaikos",
-          "odd": 1.5,
-          "pFinal": 0.69,
-          "book": "ladbrokes_uk"
-        }
-      ],
-      "odd": 2.01,
-      "prob": 0.502,
-      "ev": 0.008,
-      "start": "2026-10-30T17:30:00.000Z",
-      "createdAt": "2026-10-29T20:13:44.732Z"
-    },
-    {
       "type": "jugadores",
       "legs": [
         {
@@ -1843,6 +1813,48 @@
     }
   ],
   "comboRecord": [
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "el:E2026_86|ml|home|||",
+          "gameId": "el:E2026_86",
+          "start": "2026-10-30T18:00:00.000Z",
+          "match": "Zalgiris – Partizan",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana Zalgiris",
+          "odd": 1.34,
+          "pFinal": 0.727,
+          "book": "onexbet"
+        },
+        {
+          "id": "el:E2026_88|ml|away|||",
+          "gameId": "el:E2026_88",
+          "start": "2026-10-30T17:30:00.000Z",
+          "match": "Anadolu Efes – Panathinaikos",
+          "market": "ml",
+          "side": "away",
+          "line": null,
+          "label": "Gana Panathinaikos",
+          "odd": 1.5,
+          "pFinal": 0.69,
+          "book": "ladbrokes_uk"
+        }
+      ],
+      "odd": 2.01,
+      "prob": 0.502,
+      "ev": 0.008,
+      "start": "2026-10-30T17:30:00.000Z",
+      "createdAt": "2026-10-29T20:13:44.732Z",
+      "result": "L",
+      "legStates": [
+        null,
+        "L"
+      ],
+      "settledAt": "2026-10-30T19:44:55.815Z"
+    },
     {
       "type": "jugadores",
       "legs": [
