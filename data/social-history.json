@@ -3481,7 +3481,7 @@
         "kind": "nba-day",
         "league": "nba",
         "reply": false,
-        "title": "NBA Picks Day · 1 pick",
+        "title": "NBA Picks Day · 2 picks",
         "postAt": "2026-10-30T17:45:00.000Z",
         "image": true,
         "picks": [
@@ -3498,9 +3498,23 @@
             "line": null,
             "match": "Raptors – Magic",
             "pFinal": 0.685
+          },
+          {
+            "id": "nba:401909285|ml|away|||",
+            "league": "nba",
+            "label": "Gana Lakers",
+            "list": "Gana Lakers",
+            "odd": 1.77,
+            "start": "2026-10-31T02:00Z",
+            "gameId": "nba:401909285",
+            "market": "ml",
+            "side": "away",
+            "line": null,
+            "match": "Warriors – Lakers",
+            "pFinal": 0.566
           }
         ],
-        "text": "🏀 NBA Picks Day · 30/10\n\n1.- Gana Raptors @1.49\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 30/10\n\n1.- Gana Raptors @1.49\n2.- Gana Lakers @1.77\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }

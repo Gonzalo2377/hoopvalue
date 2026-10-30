@@ -481,6 +481,22 @@
       "stat": "ra",
       "playerId": "2528426",
       "createdAt": "2026-10-29T22:53:49.481Z"
+    },
+    {
+      "id": "nba:401909285|ml|away|||",
+      "gameId": "nba:401909285",
+      "start": "2026-10-31T02:00Z",
+      "match": "Warriors – Lakers",
+      "market": "ml",
+      "side": "away",
+      "line": null,
+      "label": "Gana Lakers",
+      "odd": 1.77,
+      "book": "draftkings",
+      "pFinal": 0.566,
+      "safety": 0.586,
+      "tier": "C",
+      "createdAt": "2026-10-30T04:04:30.562Z"
     }
   ],
   "record": [
