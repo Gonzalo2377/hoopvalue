@@ -2999,7 +2999,7 @@
         "title": "Zalgiris vs Partizan",
         "start": "2026-10-30T18:00:00.000Z",
         "postAt": "2026-10-30T17:00:00.000Z",
-        "text": "🏀 EuroLeague · hoy 19:00\nZalgiris vs Partizan\n\n1.- Gana Zalgiris @1.38\n2.- S. Brown +1.5 Reb @1.64\n\n🔮 Prediction: Zalgiris 84-77 Partizan\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
+        "text": "🏀 EuroLeague · hoy 19:00\nZalgiris vs Partizan\n\n1.- Gana Zalgiris @1.38\n2.- S. Brown +1.5 Reb @1.62\n\n🔮 Prediction: Zalgiris 84-77 Partizan\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
         "image": true,
         "picks": [
           {
@@ -3021,7 +3021,7 @@
             "league": "euroleague",
             "label": "S. Brown +1.5 rebotes",
             "list": "S. Brown +1.5 Reb",
-            "odd": 1.64,
+            "odd": 1.62,
             "start": "2026-10-30T18:00:00.000Z",
             "gameId": "el:E2026_86",
             "market": "prop",
@@ -3031,7 +3031,7 @@
             "playerId": "012720",
             "team": "ZAL",
             "match": "Zalgiris – Partizan",
-            "pFinal": 0.6
+            "pFinal": 0.605
           }
         ]
       },
@@ -3606,32 +3606,6 @@
           }
         }
       },
-      "nba-day": {
-        "id": "nba-day",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": false,
-        "title": "NBA Picks Day · 1 pick",
-        "postAt": "2026-10-30T17:45:00.000Z",
-        "image": true,
-        "picks": [
-          {
-            "id": "nba:401909281|ml|home|||",
-            "league": "nba",
-            "label": "Gana Raptors",
-            "list": "Gana Raptors",
-            "odd": 1.49,
-            "start": "2026-10-30T23:30Z",
-            "gameId": "nba:401909281",
-            "market": "ml",
-            "side": "home",
-            "line": null,
-            "match": "Raptors – Magic",
-            "pFinal": 0.685
-          }
-        ],
-        "text": "🏀 NBA Picks Day · 30/10\n\n1.- Gana Raptors @1.49\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
-      },
       "combo-euroleague": {
         "id": "combo-euroleague",
         "kind": "combo",
@@ -3678,6 +3652,32 @@
           "odd": 1.82,
           "prob": 0.534
         }
+      },
+      "nba-day": {
+        "id": "nba-day",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": false,
+        "title": "NBA Picks Day · 1 pick",
+        "postAt": "2026-10-30T17:45:00.000Z",
+        "image": true,
+        "picks": [
+          {
+            "id": "nba:401909281|ml|home|||",
+            "league": "nba",
+            "label": "Gana Raptors",
+            "list": "Gana Raptors",
+            "odd": 1.49,
+            "start": "2026-10-30T23:30Z",
+            "gameId": "nba:401909281",
+            "market": "ml",
+            "side": "home",
+            "line": null,
+            "match": "Raptors – Magic",
+            "pFinal": 0.685
+          }
+        ],
+        "text": "🏀 NBA Picks Day · 30/10\n\n1.- Gana Raptors @1.49\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
