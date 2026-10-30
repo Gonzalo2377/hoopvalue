@@ -1,5 +1,6 @@
 {
-  "pending": [
+  "pending": [],
+  "record": [
     {
       "id": "el:E2026_89|prop|over|4.5|013285|pts",
       "gameId": "el:E2026_89",
@@ -17,10 +18,11 @@
       "tier": "C",
       "stat": "pts",
       "playerId": "013285",
-      "createdAt": "2026-10-30T08:43:51.959Z"
-    }
-  ],
-  "record": [
+      "createdAt": "2026-10-30T08:43:51.959Z",
+      "result": "V",
+      "score": "101-103",
+      "settledAt": "2026-10-30T22:14:02.404Z"
+    },
     {
       "id": "el:E2026_87|ml|home|||",
       "gameId": "el:E2026_87",
@@ -1443,7 +1445,8 @@
       "settledAt": "2026-10-21T20:21:24.312Z"
     }
   ],
-  "comboPending": [
+  "comboPending": [],
+  "comboRecord": [
     {
       "type": "valor",
       "legs": [
@@ -1499,10 +1502,16 @@
       "prob": 0.288,
       "ev": 0.118,
       "start": "2026-10-30T19:00:00.000Z",
-      "createdAt": "2026-10-30T12:28:41.019Z"
-    }
-  ],
-  "comboRecord": [
+      "createdAt": "2026-10-30T12:28:41.019Z",
+      "result": "W",
+      "oddFinal": 1.6,
+      "legStates": [
+        "W",
+        "V",
+        "V"
+      ],
+      "settledAt": "2026-10-30T22:14:02.404Z"
+    },
     {
       "type": "jugadores",
       "legs": [
