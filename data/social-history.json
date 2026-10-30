@@ -3147,22 +3147,42 @@
         "title": "FC Barcelona vs Valencia",
         "start": "2026-10-30T19:30:00.000Z",
         "postAt": "2026-10-30T18:30:00.000Z",
-        "text": "🏀 EuroLeague · hoy 20:30\nFC Barcelona vs Valencia\n\n1.- Gana FC Barcelona @1.74\n\n🔮 Prediction: FC Barcelona 91-92 Valencia\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
+        "text": "🏀 EuroLeague · hoy 20:30\nFC Barcelona vs Valencia\n\n1.- J. Robinson +9.5 Pts @1.38\n2.- N. Mirotic +4.5 Pts @1.48\n\n🔮 Prediction: FC Barcelona 91-92 Valencia\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
         "image": true,
         "picks": [
           {
-            "id": "el:E2026_87|ml|home|||",
+            "id": "el:E2026_87|prop|over|9.5|014008|pts",
             "league": "euroleague",
-            "label": "Gana FC Barcelona",
-            "list": "Gana FC Barcelona",
-            "odd": 1.74,
+            "label": "J. Robinson +9.5 puntos",
+            "list": "J. Robinson +9.5 Pts",
+            "odd": 1.38,
             "start": "2026-10-30T19:30:00.000Z",
             "gameId": "el:E2026_87",
-            "market": "ml",
-            "side": "home",
-            "line": null,
+            "market": "prop",
+            "side": "over",
+            "line": 9.5,
+            "stat": "pts",
+            "playerId": "014008",
+            "team": "BAR",
             "match": "FC Barcelona – Valencia",
-            "pFinal": 0.558
+            "pFinal": 0.705
+          },
+          {
+            "id": "el:E2026_87|prop|over|4.5|000796|pts",
+            "league": "euroleague",
+            "label": "N. Mirotic +4.5 puntos",
+            "list": "N. Mirotic +4.5 Pts",
+            "odd": 1.48,
+            "start": "2026-10-30T19:30:00.000Z",
+            "gameId": "el:E2026_87",
+            "market": "prop",
+            "side": "over",
+            "line": 4.5,
+            "stat": "pts",
+            "playerId": "000796",
+            "team": "PAM",
+            "match": "FC Barcelona – Valencia",
+            "pFinal": 0.695
           }
         ]
       },
@@ -3433,47 +3453,47 @@
         "title": "Safe Parlay · NBA @1.69",
         "postAt": "2026-10-30T18:00:00.000Z",
         "image": true,
-        "text": "🎯 Safe Parlay · NBA\n\n1.- C. Spencer +3.5 Pts @1.30\n2.- C. Wilson +5.5 Pts @1.30\n\n💰 Total odds 1.69\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
+        "text": "🎯 Safe Parlay · NBA\n\n1.- C. Wilson +13.5 Pts @1.30\n2.- M. Bridges +9.5 P+R @1.30\n\n💰 Total odds 1.69\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
         "picks": [],
         "combo": {
           "legs": [
             {
-              "id": "nba:401909895|prop|over|3.5|4433083|pts",
+              "id": "nba:401909278|prop|over|13.5|5095151|pts",
               "league": "nba",
-              "label": "C. Spencer +3.5 puntos",
-              "list": "C. Spencer +3.5 Pts",
-              "odd": 1.3,
-              "start": "2026-10-30T02:00Z",
-              "gameId": "nba:401909895",
-              "market": "prop",
-              "side": "over",
-              "line": 3.5,
-              "stat": "pts",
-              "playerId": "4433083",
-              "team": "MEM",
-              "match": "Trail Blazers – Grizzlies",
-              "pFinal": 0.747
-            },
-            {
-              "id": "nba:401909278|prop|over|5.5|5095151|pts",
-              "league": "nba",
-              "label": "C. Wilson +5.5 puntos",
-              "list": "C. Wilson +5.5 Pts",
+              "label": "C. Wilson +13.5 puntos",
+              "list": "C. Wilson +13.5 Pts",
               "odd": 1.3,
               "start": "2026-10-30T23:30Z",
               "gameId": "nba:401909278",
               "market": "prop",
               "side": "over",
-              "line": 5.5,
+              "line": 13.5,
               "stat": "pts",
               "playerId": "5095151",
               "team": "CHI",
               "match": "Celtics – Bulls",
               "pFinal": 0.764
+            },
+            {
+              "id": "nba:401909286|prop|over|9.5|4066383|pr",
+              "league": "nba",
+              "label": "M. Bridges +9.5 pts+reb",
+              "list": "M. Bridges +9.5 P+R",
+              "odd": 1.3,
+              "start": "2026-10-31T02:00Z",
+              "gameId": "nba:401909286",
+              "market": "prop",
+              "side": "over",
+              "line": 9.5,
+              "stat": "pr",
+              "playerId": "4066383",
+              "team": "PHX",
+              "match": "Suns – Nuggets",
+              "pFinal": 0.764
             }
           ],
           "odd": 1.69,
-          "prob": 0.571
+          "prob": 0.584
         }
       },
       "summary-euroleague": {
@@ -3663,6 +3683,23 @@
         "image": true,
         "picks": [
           {
+            "id": "nba:401909285|prop|over|7.5|4277811|pts",
+            "league": "nba",
+            "label": "C. Sexton +7.5 puntos",
+            "list": "C. Sexton +7.5 Pts",
+            "odd": 1.3,
+            "start": "2026-10-31T02:00Z",
+            "gameId": "nba:401909285",
+            "market": "prop",
+            "side": "over",
+            "line": 7.5,
+            "stat": "pts",
+            "playerId": "4277811",
+            "team": "LAL",
+            "match": "Warriors – Lakers",
+            "pFinal": 0.749
+          },
+          {
             "id": "nba:401909278|prop|over|5.5|4871145|ast",
             "league": "nba",
             "label": "J. Giddey +5.5 asistencias",
@@ -3677,6 +3714,23 @@
             "playerId": "4871145",
             "team": "CHI",
             "match": "Celtics – Bulls",
+            "pFinal": 0.747
+          },
+          {
+            "id": "nba:401909285|prop|over|2.5|4278580|reb",
+            "league": "nba",
+            "label": "S. Mamukelashvili +2.5 rebotes",
+            "list": "S. Mamukelashvili +2.5 Reb",
+            "odd": 1.3,
+            "start": "2026-10-31T02:00Z",
+            "gameId": "nba:401909285",
+            "market": "prop",
+            "side": "over",
+            "line": 2.5,
+            "stat": "reb",
+            "playerId": "4278580",
+            "team": "LAL",
+            "match": "Warriors – Lakers",
             "pFinal": 0.747
           },
           {
@@ -3695,7 +3749,19 @@
             "team": "CHI",
             "match": "Celtics – Bulls",
             "pFinal": 0.764
-          },
+          }
+        ],
+        "text": "🏀 NBA Picks Day · 30/10\n\n1.- C. Sexton +7.5 Pts @1.30\n2.- J. Giddey +5.5 Ast @1.30\n3.- S. Mamukelashvili +2.5 Reb @1.30\n4.- C. Wilson +13.5 Pts @1.30\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-2": {
+        "id": "nba-day-2",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 2/3 · picks 5-8",
+        "postAt": "2026-10-30T17:45:00.000Z",
+        "image": true,
+        "picks": [
           {
             "id": "nba:401909286|prop|over|9.5|4066383|pr",
             "league": "nba",
@@ -3729,19 +3795,24 @@
             "team": "TOR",
             "match": "Raptors – Magic",
             "pFinal": 0.732
-          }
-        ],
-        "text": "🏀 NBA Picks Day · 30/10\n\n1.- J. Giddey +5.5 Ast @1.30\n2.- C. Wilson +13.5 Pts @1.30\n3.- M. Bridges +9.5 P+R @1.30\n4.- J. Walter +9.5 P+A @1.33\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-2": {
-        "id": "nba-day-2",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 2/3 · picks 5-8",
-        "postAt": "2026-10-30T17:45:00.000Z",
-        "image": true,
-        "picks": [
+          },
+          {
+            "id": "nba:401909280|prop|over|19.5|3934719|pra",
+            "league": "nba",
+            "label": "O. Anunoby +19.5 pts+reb+ast",
+            "list": "O. Anunoby +19.5 PRA",
+            "odd": 1.35,
+            "start": "2026-10-30T23:30Z",
+            "gameId": "nba:401909280",
+            "market": "prop",
+            "side": "over",
+            "line": 19.5,
+            "stat": "pra",
+            "playerId": "3934719",
+            "team": "NY",
+            "match": "76ers – Knicks",
+            "pFinal": 0.72
+          },
           {
             "id": "nba:401909277|prop|over|19.5|4396971|pr",
             "league": "nba",
@@ -3758,13 +3829,25 @@
             "team": "CHA",
             "match": "Wizards – Hornets",
             "pFinal": 0.744
-          },
+          }
+        ],
+        "text": "🧵 NBA Picks Day · 30/10 (sigue)\n\n5.- M. Bridges +9.5 P+R @1.30\n6.- J. Walter +9.5 P+A @1.33\n7.- O. Anunoby +19.5 PRA @1.35\n8.- N. Reid +19.5 P+R @1.32\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-3": {
+        "id": "nba-day-3",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 3/3 · picks 9-12",
+        "postAt": "2026-10-30T17:45:00.000Z",
+        "image": true,
+        "picks": [
           {
             "id": "nba:401909280|prop|over|1.5|5124612|ast",
             "league": "nba",
             "label": "V. Edgecombe +1.5 asistencias",
             "list": "V. Edgecombe +1.5 Ast",
-            "odd": 1.37,
+            "odd": 1.38,
             "start": "2026-10-30T23:30Z",
             "gameId": "nba:401909280",
             "market": "prop",
@@ -3774,24 +3857,7 @@
             "playerId": "5124612",
             "team": "PHI",
             "match": "76ers – Knicks",
-            "pFinal": 0.71
-          },
-          {
-            "id": "nba:401909280|prop|over|19.5|3934719|pra",
-            "league": "nba",
-            "label": "O. Anunoby +19.5 pts+reb+ast",
-            "list": "O. Anunoby +19.5 PRA",
-            "odd": 1.36,
-            "start": "2026-10-30T23:30Z",
-            "gameId": "nba:401909280",
-            "market": "prop",
-            "side": "over",
-            "line": 19.5,
-            "stat": "pra",
-            "playerId": "3934719",
-            "team": "NY",
-            "match": "76ers – Knicks",
-            "pFinal": 0.716
+            "pFinal": 0.706
           },
           {
             "id": "nba:401909281|prop|under|1.5|4433134|tpm",
@@ -3809,19 +3875,7 @@
             "team": "TOR",
             "match": "Raptors – Magic",
             "pFinal": 0.682
-          }
-        ],
-        "text": "🧵 NBA Picks Day · 30/10 (sigue)\n\n5.- N. Reid +19.5 P+R @1.32\n6.- V. Edgecombe +1.5 Ast @1.37\n7.- O. Anunoby +19.5 PRA @1.36\n8.- S. Barnes −1.5 T3 @1.43\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-3": {
-        "id": "nba-day-3",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 3/3 · picks 9-12",
-        "postAt": "2026-10-30T17:45:00.000Z",
-        "image": true,
-        "picks": [
+          },
           {
             "id": "nba:401909283|prop|over|1.5|4432639|reb",
             "league": "nba",
@@ -3855,40 +3909,9 @@
             "team": "WSH",
             "match": "Wizards – Hornets",
             "pFinal": 0.684
-          },
-          {
-            "id": "nba:401909281|ml|home|||",
-            "league": "nba",
-            "label": "Gana Raptors",
-            "list": "Gana Raptors",
-            "odd": 1.46,
-            "start": "2026-10-30T23:30Z",
-            "gameId": "nba:401909281",
-            "market": "ml",
-            "side": "home",
-            "line": null,
-            "match": "Raptors – Magic",
-            "pFinal": 0.691
-          },
-          {
-            "id": "nba:401909283|prop|over|1.5|4896372|ast",
-            "league": "nba",
-            "label": "W. Clayton Jr. +1.5 asistencias",
-            "list": "W. Clayton Jr. +1.5 Ast",
-            "odd": 1.45,
-            "start": "2026-10-31T00:00Z",
-            "gameId": "nba:401909283",
-            "market": "prop",
-            "side": "over",
-            "line": 1.5,
-            "stat": "ast",
-            "playerId": "4896372",
-            "team": "DAL",
-            "match": "Mavericks – Rockets",
-            "pFinal": 0.687
           }
         ],
-        "text": "🧵 NBA Picks Day · 30/10 (sigue)\n\n9.- J. Smith Jr. +1.5 Reb @1.36\n10.- K. George +14.5 P+A @1.42\n11.- Gana Raptors @1.46\n12.- W. Clayton Jr. +1.5 Ast @1.45\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 30/10 (sigue)\n\n9.- V. Edgecombe +1.5 Ast @1.38\n10.- S. Barnes −1.5 T3 @1.43\n11.- J. Smith Jr. +1.5 Reb @1.36\n12.- K. George +14.5 P+A @1.42\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }

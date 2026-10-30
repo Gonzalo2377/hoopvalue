@@ -257,6 +257,44 @@
       "stat": "pts",
       "playerId": "015166",
       "createdAt": "2026-10-30T10:26:07.281Z"
+    },
+    {
+      "id": "el:E2026_87|prop|over|9.5|014008|pts",
+      "gameId": "el:E2026_87",
+      "start": "2026-10-30T19:30:00.000Z",
+      "round": 9,
+      "match": "FC Barcelona – Valencia",
+      "market": "prop",
+      "side": "over",
+      "line": 9.5,
+      "label": "Justin Robinson más de 9.5 puntos",
+      "odd": 1.38,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.705,
+      "safety": 0.653,
+      "tier": "B",
+      "stat": "pts",
+      "playerId": "014008",
+      "createdAt": "2026-10-30T12:28:41.019Z"
+    },
+    {
+      "id": "el:E2026_87|prop|over|4.5|000796|pts",
+      "gameId": "el:E2026_87",
+      "start": "2026-10-30T19:30:00.000Z",
+      "round": 9,
+      "match": "FC Barcelona – Valencia",
+      "market": "prop",
+      "side": "over",
+      "line": 4.5,
+      "label": "Nikola Mirotic más de 4.5 puntos",
+      "odd": 1.48,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.695,
+      "safety": 0.561,
+      "tier": "C",
+      "stat": "pts",
+      "playerId": "000796",
+      "createdAt": "2026-10-30T12:28:41.019Z"
     }
   ],
   "record": [
@@ -1676,6 +1714,107 @@
       "ev": -0.019,
       "start": "2026-10-30T19:00:00.000Z",
       "createdAt": "2026-10-30T08:43:51.959Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "el:E2026_85|ml|home|||",
+          "gameId": "el:E2026_85",
+          "start": "2026-10-30T19:00:00.000Z",
+          "match": "LDLC ASVEL – Baskonia",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana LDLC ASVEL",
+          "odd": 1.6,
+          "pFinal": 0.645,
+          "book": "livescorebet"
+        },
+        {
+          "id": "el:E2026_87|prop|over|4.5|000796|pts",
+          "gameId": "el:E2026_87",
+          "start": "2026-10-30T19:30:00.000Z",
+          "match": "FC Barcelona – Valencia",
+          "market": "prop",
+          "side": "over",
+          "line": 4.5,
+          "stat": "pts",
+          "playerId": "000796",
+          "player": "Nikola Mirotic",
+          "team": "PAM",
+          "label": "Nikola Mirotic más de 4.5 puntos",
+          "odd": 1.48,
+          "pFinal": 0.695,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "el:E2026_89|prop|over|4.5|013285|pts",
+          "gameId": "el:E2026_89",
+          "start": "2026-10-30T19:30:00.000Z",
+          "match": "Virtus Bologna – Besiktas",
+          "market": "prop",
+          "side": "over",
+          "line": 4.5,
+          "stat": "pts",
+          "playerId": "013285",
+          "player": "Devon Dotson",
+          "team": "BES",
+          "label": "Devon Dotson más de 4.5 puntos",
+          "odd": 1.64,
+          "pFinal": 0.642,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 3.88,
+      "prob": 0.288,
+      "ev": 0.118,
+      "start": "2026-10-30T19:00:00.000Z",
+      "createdAt": "2026-10-30T12:28:41.019Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "el:E2026_85|prop|over|9.5|015163|pts",
+          "gameId": "el:E2026_85",
+          "start": "2026-10-30T19:00:00.000Z",
+          "match": "LDLC ASVEL – Baskonia",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pts",
+          "playerId": "015163",
+          "player": "Patty Mills",
+          "team": "ASV",
+          "label": "Patty Mills más de 9.5 puntos",
+          "odd": 1.3,
+          "pFinal": 0.748,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "el:E2026_87|prop|over|9.5|014008|pts",
+          "gameId": "el:E2026_87",
+          "start": "2026-10-30T19:30:00.000Z",
+          "match": "FC Barcelona – Valencia",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pts",
+          "playerId": "014008",
+          "player": "Justin Robinson",
+          "team": "BAR",
+          "label": "Justin Robinson más de 9.5 puntos",
+          "odd": 1.38,
+          "pFinal": 0.705,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.79,
+      "prob": 0.527,
+      "ev": -0.054,
+      "start": "2026-10-30T19:00:00.000Z",
+      "createdAt": "2026-10-30T12:28:41.019Z"
     }
   ],
   "comboRecord": [
