@@ -3658,26 +3658,120 @@
         "kind": "nba-day",
         "league": "nba",
         "reply": false,
-        "title": "NBA Picks Day · 1 pick",
+        "title": "NBA Picks Day · 6 picks",
         "postAt": "2026-10-30T17:45:00.000Z",
         "image": true,
         "picks": [
+          {
+            "id": "nba:401909277|prop|over|5.5|4396971|reb",
+            "league": "nba",
+            "label": "N. Reid +5.5 rebotes",
+            "list": "N. Reid +5.5 Reb",
+            "odd": 1.32,
+            "start": "2026-10-30T23:00Z",
+            "gameId": "nba:401909277",
+            "market": "prop",
+            "side": "over",
+            "line": 5.5,
+            "stat": "reb",
+            "playerId": "4396971",
+            "team": "CHA",
+            "match": "Wizards – Hornets",
+            "pFinal": 0.737
+          },
+          {
+            "id": "nba:401909277|prop|over|14.5|5174563|pa",
+            "league": "nba",
+            "label": "K. George +14.5 pts+ast",
+            "list": "K. George +14.5 P+A",
+            "odd": 1.42,
+            "start": "2026-10-30T23:00Z",
+            "gameId": "nba:401909277",
+            "market": "prop",
+            "side": "over",
+            "line": 14.5,
+            "stat": "pa",
+            "playerId": "5174563",
+            "team": "WSH",
+            "match": "Wizards – Hornets",
+            "pFinal": 0.684
+          },
           {
             "id": "nba:401909281|ml|home|||",
             "league": "nba",
             "label": "Gana Raptors",
             "list": "Gana Raptors",
-            "odd": 1.49,
+            "odd": 1.47,
             "start": "2026-10-30T23:30Z",
             "gameId": "nba:401909281",
             "market": "ml",
             "side": "home",
             "line": null,
             "match": "Raptors – Magic",
-            "pFinal": 0.685
+            "pFinal": 0.69
           }
         ],
-        "text": "🏀 NBA Picks Day · 30/10\n\n1.- Gana Raptors @1.49\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 30/10\n\n1.- N. Reid +5.5 Reb @1.32\n2.- K. George +14.5 P+A @1.42\n3.- Gana Raptors @1.47\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-2": {
+        "id": "nba-day-2",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 2/2 · picks 4-6",
+        "postAt": "2026-10-30T17:45:00.000Z",
+        "image": true,
+        "picks": [
+          {
+            "id": "nba:401909283|prop|over|9.5|4433192|pr",
+            "league": "nba",
+            "label": "T. Eason +9.5 pts+reb",
+            "list": "T. Eason +9.5 P+R",
+            "odd": 1.48,
+            "start": "2026-10-31T00:00Z",
+            "gameId": "nba:401909283",
+            "market": "prop",
+            "side": "over",
+            "line": 9.5,
+            "stat": "pr",
+            "playerId": "4433192",
+            "team": "HOU",
+            "match": "Mavericks – Rockets",
+            "pFinal": 0.686
+          },
+          {
+            "id": "nba:401909285|ml|away|||",
+            "league": "nba",
+            "label": "Gana Lakers",
+            "list": "Gana Lakers",
+            "odd": 1.77,
+            "start": "2026-10-31T02:00Z",
+            "gameId": "nba:401909285",
+            "market": "ml",
+            "side": "away",
+            "line": null,
+            "match": "Warriors – Lakers",
+            "pFinal": 0.552
+          },
+          {
+            "id": "nba:401909284|prop|under|6.5|5075626|reb",
+            "league": "nba",
+            "label": "B. Miller −6.5 rebotes",
+            "list": "B. Miller −6.5 Reb",
+            "odd": 1.76,
+            "start": "2026-10-31T00:00Z",
+            "gameId": "nba:401909284",
+            "market": "prop",
+            "side": "under",
+            "line": 6.5,
+            "stat": "reb",
+            "playerId": "5075626",
+            "team": "LAC",
+            "match": "Timberwolves – Clippers",
+            "pFinal": 0.613
+          }
+        ],
+        "text": "🧵 NBA Picks Day · 30/10 (sigue)\n\n4.- T. Eason +9.5 P+R @1.48\n5.- Gana Lakers @1.77\n6.- B. Miller −6.5 Reb @1.76\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }

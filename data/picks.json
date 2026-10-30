@@ -219,6 +219,25 @@
       "stat": "pts",
       "playerId": "013285",
       "createdAt": "2026-10-30T08:43:51.959Z"
+    },
+    {
+      "id": "el:E2026_85|prop|over|9.5|015164|pts",
+      "gameId": "el:E2026_85",
+      "start": "2026-10-30T19:00:00.000Z",
+      "round": 9,
+      "match": "LDLC ASVEL – Baskonia",
+      "market": "prop",
+      "side": "over",
+      "line": 9.5,
+      "label": "Hugo Besson más de 9.5 puntos",
+      "odd": 1.56,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.632,
+      "safety": 0.558,
+      "tier": "C",
+      "stat": "pts",
+      "playerId": "015164",
+      "createdAt": "2026-10-30T10:05:39.326Z"
     }
   ],
   "record": [

@@ -474,5 +474,12 @@
     "away": "Trail Blazers",
     "ptsH": 115,
     "ptsA": 118
+  },
+  "nba:401909897": {
+    "start": "2026-10-31T22:00Z",
+    "home": "Hornets",
+    "away": "76ers",
+    "ptsH": 104,
+    "ptsA": 108
   }
 }
