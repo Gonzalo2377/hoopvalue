@@ -467,5 +467,12 @@
     "away": "Nuggets",
     "ptsH": 114,
     "ptsA": 112
+  },
+  "nba:401909896": {
+    "start": "2026-10-31T19:00Z",
+    "home": "Jazz",
+    "away": "Trail Blazers",
+    "ptsH": 115,
+    "ptsA": 118
   }
 }
