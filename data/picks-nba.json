@@ -1487,6 +1487,42 @@
       "stat": "pr",
       "playerId": "4698719",
       "createdAt": "2026-10-30T16:19:49.912Z"
+    },
+    {
+      "id": "nba:401909285|prop|over|19.5|4709138|pra",
+      "gameId": "nba:401909285",
+      "start": "2026-10-31T02:00Z",
+      "match": "Warriors – Lakers",
+      "market": "prop",
+      "side": "over",
+      "line": 19.5,
+      "label": "Brandin Podziemski más de 19.5 pts+reb+ast",
+      "odd": 1.33,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.731,
+      "safety": 0.67,
+      "tier": "B",
+      "stat": "pra",
+      "playerId": "4709138",
+      "createdAt": "2026-10-30T16:40:26.178Z"
+    },
+    {
+      "id": "nba:401909899|prop|over|7.5|5142620|pts",
+      "gameId": "nba:401909899",
+      "start": "2026-11-01T00:00Z",
+      "match": "Grizzlies – Kings",
+      "market": "prop",
+      "side": "over",
+      "line": 7.5,
+      "label": "Darius Acuff Jr. más de 7.5 puntos",
+      "odd": 1.33,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.751,
+      "safety": 0.659,
+      "tier": "B",
+      "stat": "pts",
+      "playerId": "5142620",
+      "createdAt": "2026-10-30T16:40:26.178Z"
     }
   ],
   "record": [
