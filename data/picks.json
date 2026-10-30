@@ -105,6 +105,44 @@
       "safety": 0.535,
       "tier": "C",
       "createdAt": "2026-10-29T20:13:44.732Z"
+    },
+    {
+      "id": "el:E2026_86|prop|over|1.5|012720|reb",
+      "gameId": "el:E2026_86",
+      "start": "2026-10-30T18:00:00.000Z",
+      "round": 9,
+      "match": "Zalgiris – Partizan",
+      "market": "prop",
+      "side": "over",
+      "line": 1.5,
+      "label": "Sterling Brown más de 1.5 rebotes",
+      "odd": 1.64,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.6,
+      "safety": 0.539,
+      "tier": "C",
+      "stat": "reb",
+      "playerId": "012720",
+      "createdAt": "2026-10-30T06:28:00.547Z"
+    },
+    {
+      "id": "el:E2026_86|prop|over|1.5|011987|ast",
+      "gameId": "el:E2026_86",
+      "start": "2026-10-30T18:00:00.000Z",
+      "round": 9,
+      "match": "Zalgiris – Partizan",
+      "market": "prop",
+      "side": "over",
+      "line": 1.5,
+      "label": "Carsen Edwards más de 1.5 asistencias",
+      "odd": 1.71,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.568,
+      "safety": 0.529,
+      "tier": "C",
+      "stat": "ast",
+      "playerId": "011987",
+      "createdAt": "2026-10-30T06:28:00.547Z"
     }
   ],
   "record": [
@@ -1339,6 +1377,50 @@
       "ev": 0.008,
       "start": "2026-10-30T17:30:00.000Z",
       "createdAt": "2026-10-29T20:13:44.732Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "el:E2026_84|prop|over|1.5|011286|ast",
+          "gameId": "el:E2026_84",
+          "start": "2026-10-30T16:00:00.000Z",
+          "match": "Dubai – Hapoel TLV",
+          "market": "prop",
+          "side": "over",
+          "line": 1.5,
+          "stat": "ast",
+          "playerId": "011286",
+          "player": "Dwayne Bacon",
+          "team": "DUB",
+          "label": "Dwayne Bacon más de 1.5 asistencias",
+          "odd": 1.62,
+          "pFinal": 0.607,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "el:E2026_86|prop|over|1.5|012720|reb",
+          "gameId": "el:E2026_86",
+          "start": "2026-10-30T18:00:00.000Z",
+          "match": "Zalgiris – Partizan",
+          "market": "prop",
+          "side": "over",
+          "line": 1.5,
+          "stat": "reb",
+          "playerId": "012720",
+          "player": "Sterling Brown",
+          "team": "ZAL",
+          "label": "Sterling Brown más de 1.5 rebotes",
+          "odd": 1.64,
+          "pFinal": 0.6,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.66,
+      "prob": 0.364,
+      "ev": -0.032,
+      "start": "2026-10-30T16:00:00.000Z",
+      "createdAt": "2026-10-30T06:28:00.547Z"
     }
   ],
   "comboRecord": [
