@@ -1796,6 +1796,50 @@
       "ev": -0.054,
       "start": "2026-10-30T19:00:00.000Z",
       "createdAt": "2026-10-30T12:28:41.019Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "el:E2026_90|prop|over|1.5|008985|reb",
+          "gameId": "el:E2026_90",
+          "start": "2026-10-30T19:15:00.000Z",
+          "match": "Olympiacos – Milan",
+          "market": "prop",
+          "side": "over",
+          "line": 1.5,
+          "stat": "reb",
+          "playerId": "008985",
+          "player": "Leandro Bolmaro",
+          "team": "MIL",
+          "label": "Leandro Bolmaro más de 1.5 rebotes",
+          "odd": 1.55,
+          "pFinal": 0.649,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "el:E2026_89|prop|over|4.5|013285|pts",
+          "gameId": "el:E2026_89",
+          "start": "2026-10-30T19:30:00.000Z",
+          "match": "Virtus Bologna – Besiktas",
+          "market": "prop",
+          "side": "over",
+          "line": 4.5,
+          "stat": "pts",
+          "playerId": "013285",
+          "player": "Devon Dotson",
+          "team": "BES",
+          "label": "Devon Dotson más de 4.5 puntos",
+          "odd": 1.64,
+          "pFinal": 0.642,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.54,
+      "prob": 0.417,
+      "ev": 0.059,
+      "start": "2026-10-30T19:15:00.000Z",
+      "createdAt": "2026-10-30T19:03:54.014Z"
     }
   ],
   "comboRecord": [
