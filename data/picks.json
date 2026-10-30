@@ -52,44 +52,6 @@
       "createdAt": "2026-10-29T10:07:02.288Z"
     },
     {
-      "id": "el:E2026_84|prop|over|1.5|011286|ast",
-      "gameId": "el:E2026_84",
-      "start": "2026-10-30T16:00:00.000Z",
-      "round": 9,
-      "match": "Dubai – Hapoel TLV",
-      "market": "prop",
-      "side": "over",
-      "line": 1.5,
-      "label": "Dwayne Bacon más de 1.5 asistencias",
-      "odd": 1.62,
-      "book": "unibet (Kambi)",
-      "pFinal": 0.607,
-      "safety": 0.54,
-      "tier": "C",
-      "stat": "ast",
-      "playerId": "011286",
-      "createdAt": "2026-10-29T18:10:13.108Z"
-    },
-    {
-      "id": "el:E2026_84|prop|over|1.5|013402|reb",
-      "gameId": "el:E2026_84",
-      "start": "2026-10-30T16:00:00.000Z",
-      "round": 9,
-      "match": "Dubai – Hapoel TLV",
-      "market": "prop",
-      "side": "over",
-      "line": 1.5,
-      "label": "Antonio Blakeney más de 1.5 rebotes",
-      "odd": 1.7,
-      "book": "unibet (Kambi)",
-      "pFinal": 0.576,
-      "safety": 0.531,
-      "tier": "C",
-      "stat": "reb",
-      "playerId": "013402",
-      "createdAt": "2026-10-29T18:10:13.108Z"
-    },
-    {
       "id": "el:E2026_87|ml|home|||",
       "gameId": "el:E2026_87",
       "start": "2026-10-30T19:30:00.000Z",
@@ -317,6 +279,50 @@
     }
   ],
   "record": [
+    {
+      "id": "el:E2026_84|prop|over|1.5|011286|ast",
+      "gameId": "el:E2026_84",
+      "start": "2026-10-30T16:00:00.000Z",
+      "round": 9,
+      "match": "Dubai – Hapoel TLV",
+      "market": "prop",
+      "side": "over",
+      "line": 1.5,
+      "label": "Dwayne Bacon más de 1.5 asistencias",
+      "odd": 1.62,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.607,
+      "safety": 0.54,
+      "tier": "C",
+      "stat": "ast",
+      "playerId": "011286",
+      "createdAt": "2026-10-29T18:10:13.108Z",
+      "result": "W",
+      "score": "97-83",
+      "settledAt": "2026-10-30T18:02:27.137Z"
+    },
+    {
+      "id": "el:E2026_84|prop|over|1.5|013402|reb",
+      "gameId": "el:E2026_84",
+      "start": "2026-10-30T16:00:00.000Z",
+      "round": 9,
+      "match": "Dubai – Hapoel TLV",
+      "market": "prop",
+      "side": "over",
+      "line": 1.5,
+      "label": "Antonio Blakeney más de 1.5 rebotes",
+      "odd": 1.7,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.576,
+      "safety": 0.531,
+      "tier": "C",
+      "stat": "reb",
+      "playerId": "013402",
+      "createdAt": "2026-10-29T18:10:13.108Z",
+      "result": "L",
+      "score": "97-83",
+      "settledAt": "2026-10-30T18:02:27.137Z"
+    },
     {
       "id": "el:E2026_83|prop|over|4.5|012613|pts",
       "gameId": "el:E2026_83",
@@ -1470,50 +1476,6 @@
       "createdAt": "2026-10-29T10:07:02.288Z"
     },
     {
-      "type": "jugadores",
-      "legs": [
-        {
-          "id": "el:E2026_83|prop|over|3.5|007831|reb",
-          "gameId": "el:E2026_83",
-          "start": "2026-10-29T19:45:00.000Z",
-          "match": "Real Madrid – Fenerbahce",
-          "market": "prop",
-          "side": "over",
-          "line": 3.5,
-          "stat": "reb",
-          "playerId": "007831",
-          "player": "Shavon Shields",
-          "team": "ULK",
-          "label": "Shavon Shields más de 3.5 rebotes",
-          "odd": 1.48,
-          "pFinal": 0.666,
-          "book": "unibet (Kambi)"
-        },
-        {
-          "id": "el:E2026_84|prop|over|1.5|011286|ast",
-          "gameId": "el:E2026_84",
-          "start": "2026-10-30T16:00:00.000Z",
-          "match": "Dubai – Hapoel TLV",
-          "market": "prop",
-          "side": "over",
-          "line": 1.5,
-          "stat": "ast",
-          "playerId": "011286",
-          "player": "Dwayne Bacon",
-          "team": "DUB",
-          "label": "Dwayne Bacon más de 1.5 asistencias",
-          "odd": 1.62,
-          "pFinal": 0.607,
-          "book": "unibet (Kambi)"
-        }
-      ],
-      "odd": 2.4,
-      "prob": 0.404,
-      "ev": -0.031,
-      "start": "2026-10-29T19:45:00.000Z",
-      "createdAt": "2026-10-29T18:10:13.108Z"
-    },
-    {
       "type": "segura",
       "legs": [
         {
@@ -1837,6 +1799,57 @@
     }
   ],
   "comboRecord": [
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "el:E2026_83|prop|over|3.5|007831|reb",
+          "gameId": "el:E2026_83",
+          "start": "2026-10-29T19:45:00.000Z",
+          "match": "Real Madrid – Fenerbahce",
+          "market": "prop",
+          "side": "over",
+          "line": 3.5,
+          "stat": "reb",
+          "playerId": "007831",
+          "player": "Shavon Shields",
+          "team": "ULK",
+          "label": "Shavon Shields más de 3.5 rebotes",
+          "odd": 1.48,
+          "pFinal": 0.666,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "el:E2026_84|prop|over|1.5|011286|ast",
+          "gameId": "el:E2026_84",
+          "start": "2026-10-30T16:00:00.000Z",
+          "match": "Dubai – Hapoel TLV",
+          "market": "prop",
+          "side": "over",
+          "line": 1.5,
+          "stat": "ast",
+          "playerId": "011286",
+          "player": "Dwayne Bacon",
+          "team": "DUB",
+          "label": "Dwayne Bacon más de 1.5 asistencias",
+          "odd": 1.62,
+          "pFinal": 0.607,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.4,
+      "prob": 0.404,
+      "ev": -0.031,
+      "start": "2026-10-29T19:45:00.000Z",
+      "createdAt": "2026-10-29T18:10:13.108Z",
+      "result": "W",
+      "oddFinal": 2.4,
+      "legStates": [
+        "W",
+        "W"
+      ],
+      "settledAt": "2026-10-30T18:02:27.137Z"
+    },
     {
       "type": "segura",
       "legs": [
