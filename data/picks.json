@@ -18,25 +18,6 @@
       "createdAt": "2026-10-29T20:13:44.732Z"
     },
     {
-      "id": "el:E2026_90|prop|over|1.5|008985|reb",
-      "gameId": "el:E2026_90",
-      "start": "2026-10-30T19:15:00.000Z",
-      "round": 9,
-      "match": "Olympiacos – Milan",
-      "market": "prop",
-      "side": "over",
-      "line": 1.5,
-      "label": "Leandro Bolmaro más de 1.5 rebotes",
-      "odd": 1.55,
-      "book": "unibet (Kambi)",
-      "pFinal": 0.649,
-      "safety": 0.565,
-      "tier": "C",
-      "stat": "reb",
-      "playerId": "008985",
-      "createdAt": "2026-10-30T08:43:51.959Z"
-    },
-    {
       "id": "el:E2026_89|prop|over|4.5|013285|pts",
       "gameId": "el:E2026_89",
       "start": "2026-10-30T19:30:00.000Z",
@@ -95,6 +76,28 @@
     }
   ],
   "record": [
+    {
+      "id": "el:E2026_90|prop|over|1.5|008985|reb",
+      "gameId": "el:E2026_90",
+      "start": "2026-10-30T19:15:00.000Z",
+      "round": 9,
+      "match": "Olympiacos – Milan",
+      "market": "prop",
+      "side": "over",
+      "line": 1.5,
+      "label": "Leandro Bolmaro más de 1.5 rebotes",
+      "odd": 1.55,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.649,
+      "safety": 0.565,
+      "tier": "C",
+      "stat": "reb",
+      "playerId": "008985",
+      "createdAt": "2026-10-30T08:43:51.959Z",
+      "result": "L",
+      "score": "84-78",
+      "settledAt": "2026-10-30T21:33:13.771Z"
+    },
     {
       "id": "el:E2026_85|ml|home|||",
       "gameId": "el:E2026_85",
@@ -1446,107 +1449,6 @@
           "book": "livescorebet"
         },
         {
-          "id": "el:E2026_90|prop|over|1.5|008985|reb",
-          "gameId": "el:E2026_90",
-          "start": "2026-10-30T19:15:00.000Z",
-          "match": "Olympiacos – Milan",
-          "market": "prop",
-          "side": "over",
-          "line": 1.5,
-          "stat": "reb",
-          "playerId": "008985",
-          "player": "Leandro Bolmaro",
-          "team": "MIL",
-          "label": "Leandro Bolmaro más de 1.5 rebotes",
-          "odd": 1.55,
-          "pFinal": 0.649,
-          "book": "unibet (Kambi)"
-        },
-        {
-          "id": "el:E2026_89|prop|over|4.5|013285|pts",
-          "gameId": "el:E2026_89",
-          "start": "2026-10-30T19:30:00.000Z",
-          "match": "Virtus Bologna – Besiktas",
-          "market": "prop",
-          "side": "over",
-          "line": 4.5,
-          "stat": "pts",
-          "playerId": "013285",
-          "player": "Devon Dotson",
-          "team": "BES",
-          "label": "Devon Dotson más de 4.5 puntos",
-          "odd": 1.64,
-          "pFinal": 0.642,
-          "book": "unibet (Kambi)"
-        }
-      ],
-      "odd": 4.07,
-      "prob": 0.269,
-      "ev": 0.093,
-      "start": "2026-10-30T19:00:00.000Z",
-      "createdAt": "2026-10-30T08:43:51.959Z"
-    },
-    {
-      "type": "jugadores",
-      "legs": [
-        {
-          "id": "el:E2026_85|prop|over|9.5|015163|pts",
-          "gameId": "el:E2026_85",
-          "start": "2026-10-30T19:00:00.000Z",
-          "match": "LDLC ASVEL – Baskonia",
-          "market": "prop",
-          "side": "over",
-          "line": 9.5,
-          "stat": "pts",
-          "playerId": "015163",
-          "player": "Patty Mills",
-          "team": "ASV",
-          "label": "Patty Mills más de 9.5 puntos",
-          "odd": 1.32,
-          "pFinal": 0.739,
-          "book": "unibet (Kambi)"
-        },
-        {
-          "id": "el:E2026_90|prop|over|1.5|008985|reb",
-          "gameId": "el:E2026_90",
-          "start": "2026-10-30T19:15:00.000Z",
-          "match": "Olympiacos – Milan",
-          "market": "prop",
-          "side": "over",
-          "line": 1.5,
-          "stat": "reb",
-          "playerId": "008985",
-          "player": "Leandro Bolmaro",
-          "team": "MIL",
-          "label": "Leandro Bolmaro más de 1.5 rebotes",
-          "odd": 1.55,
-          "pFinal": 0.649,
-          "book": "unibet (Kambi)"
-        }
-      ],
-      "odd": 2.05,
-      "prob": 0.48,
-      "ev": -0.019,
-      "start": "2026-10-30T19:00:00.000Z",
-      "createdAt": "2026-10-30T08:43:51.959Z"
-    },
-    {
-      "type": "valor",
-      "legs": [
-        {
-          "id": "el:E2026_85|ml|home|||",
-          "gameId": "el:E2026_85",
-          "start": "2026-10-30T19:00:00.000Z",
-          "match": "LDLC ASVEL – Baskonia",
-          "market": "ml",
-          "side": "home",
-          "line": null,
-          "label": "Gana LDLC ASVEL",
-          "odd": 1.6,
-          "pFinal": 0.645,
-          "book": "livescorebet"
-        },
-        {
           "id": "el:E2026_87|prop|over|4.5|000796|pts",
           "gameId": "el:E2026_87",
           "start": "2026-10-30T19:30:00.000Z",
@@ -1630,6 +1532,122 @@
       "ev": -0.054,
       "start": "2026-10-30T19:00:00.000Z",
       "createdAt": "2026-10-30T12:28:41.019Z"
+    }
+  ],
+  "comboRecord": [
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "el:E2026_85|ml|home|||",
+          "gameId": "el:E2026_85",
+          "start": "2026-10-30T19:00:00.000Z",
+          "match": "LDLC ASVEL – Baskonia",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana LDLC ASVEL",
+          "odd": 1.6,
+          "pFinal": 0.645,
+          "book": "livescorebet"
+        },
+        {
+          "id": "el:E2026_90|prop|over|1.5|008985|reb",
+          "gameId": "el:E2026_90",
+          "start": "2026-10-30T19:15:00.000Z",
+          "match": "Olympiacos – Milan",
+          "market": "prop",
+          "side": "over",
+          "line": 1.5,
+          "stat": "reb",
+          "playerId": "008985",
+          "player": "Leandro Bolmaro",
+          "team": "MIL",
+          "label": "Leandro Bolmaro más de 1.5 rebotes",
+          "odd": 1.55,
+          "pFinal": 0.649,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "el:E2026_89|prop|over|4.5|013285|pts",
+          "gameId": "el:E2026_89",
+          "start": "2026-10-30T19:30:00.000Z",
+          "match": "Virtus Bologna – Besiktas",
+          "market": "prop",
+          "side": "over",
+          "line": 4.5,
+          "stat": "pts",
+          "playerId": "013285",
+          "player": "Devon Dotson",
+          "team": "BES",
+          "label": "Devon Dotson más de 4.5 puntos",
+          "odd": 1.64,
+          "pFinal": 0.642,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 4.07,
+      "prob": 0.269,
+      "ev": 0.093,
+      "start": "2026-10-30T19:00:00.000Z",
+      "createdAt": "2026-10-30T08:43:51.959Z",
+      "result": "L",
+      "legStates": [
+        "W",
+        "L",
+        null
+      ],
+      "settledAt": "2026-10-30T21:33:13.771Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "el:E2026_85|prop|over|9.5|015163|pts",
+          "gameId": "el:E2026_85",
+          "start": "2026-10-30T19:00:00.000Z",
+          "match": "LDLC ASVEL – Baskonia",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pts",
+          "playerId": "015163",
+          "player": "Patty Mills",
+          "team": "ASV",
+          "label": "Patty Mills más de 9.5 puntos",
+          "odd": 1.32,
+          "pFinal": 0.739,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "el:E2026_90|prop|over|1.5|008985|reb",
+          "gameId": "el:E2026_90",
+          "start": "2026-10-30T19:15:00.000Z",
+          "match": "Olympiacos – Milan",
+          "market": "prop",
+          "side": "over",
+          "line": 1.5,
+          "stat": "reb",
+          "playerId": "008985",
+          "player": "Leandro Bolmaro",
+          "team": "MIL",
+          "label": "Leandro Bolmaro más de 1.5 rebotes",
+          "odd": 1.55,
+          "pFinal": 0.649,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.05,
+      "prob": 0.48,
+      "ev": -0.019,
+      "start": "2026-10-30T19:00:00.000Z",
+      "createdAt": "2026-10-30T08:43:51.959Z",
+      "result": "L",
+      "legStates": [
+        "W",
+        "L"
+      ],
+      "settledAt": "2026-10-30T21:33:13.771Z"
     },
     {
       "type": "jugadores",
@@ -1673,10 +1691,14 @@
       "prob": 0.417,
       "ev": 0.059,
       "start": "2026-10-30T19:15:00.000Z",
-      "createdAt": "2026-10-30T19:03:54.014Z"
-    }
-  ],
-  "comboRecord": [
+      "createdAt": "2026-10-30T19:03:54.014Z",
+      "result": "L",
+      "legStates": [
+        "L",
+        null
+      ],
+      "settledAt": "2026-10-30T21:33:13.771Z"
+    },
     {
       "type": "valor",
       "legs": [
