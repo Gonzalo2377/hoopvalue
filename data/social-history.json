@@ -3747,7 +3747,7 @@
             "league": "nba",
             "label": "V. Edgecombe +1.5 asistencias",
             "list": "V. Edgecombe +1.5 Ast",
-            "odd": 1.36,
+            "odd": 1.37,
             "start": "2026-10-30T23:30Z",
             "gameId": "nba:401909280",
             "market": "prop",
@@ -3757,7 +3757,7 @@
             "playerId": "5124612",
             "team": "PHI",
             "match": "76ers – Knicks",
-            "pFinal": 0.714
+            "pFinal": 0.71
           },
           {
             "id": "nba:401909280|prop|over|19.5|3934719|pra",
@@ -3808,7 +3808,7 @@
             "pFinal": 0.691
           }
         ],
-        "text": "🧵 NBA Picks Day · 30/10 (sigue)\n\n5.- V. Edgecombe +1.5 Ast @1.36\n6.- O. Anunoby +19.5 PRA @1.36\n7.- K. George +14.5 P+A @1.42\n8.- Gana Raptors @1.46\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 30/10 (sigue)\n\n5.- V. Edgecombe +1.5 Ast @1.37\n6.- O. Anunoby +19.5 PRA @1.36\n7.- K. George +14.5 P+A @1.42\n8.- Gana Raptors @1.46\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-3": {
         "id": "nba-day-3",
@@ -3841,14 +3841,14 @@
             "league": "nba",
             "label": "Gana Lakers",
             "list": "Gana Lakers",
-            "odd": 1.77,
+            "odd": 1.76,
             "start": "2026-10-31T02:00Z",
             "gameId": "nba:401909285",
             "market": "ml",
             "side": "away",
             "line": null,
             "match": "Warriors – Lakers",
-            "pFinal": 0.552
+            "pFinal": 0.553
           },
           {
             "id": "nba:401909282|prop|under|6.5|4398207|ast",
@@ -3885,7 +3885,7 @@
             "pFinal": 0.649
           }
         ],
-        "text": "🧵 NBA Picks Day · 30/10 (sigue)\n\n9.- T. Eason +9.5 P+R @1.48\n10.- Gana Lakers @1.77\n11.- J. Slawson −6.5 Ast @1.64\n12.- J. Richardson −6.5 Ast @1.64\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 30/10 (sigue)\n\n9.- T. Eason +9.5 P+R @1.48\n10.- Gana Lakers @1.76\n11.- J. Slawson −6.5 Ast @1.64\n12.- J. Richardson −6.5 Ast @1.64\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
