@@ -1605,6 +1605,42 @@
       "stat": "pra",
       "playerId": "5075626",
       "createdAt": "2026-10-31T18:06:42.494Z"
+    },
+    {
+      "id": "nba:401909896|prop|over|19.5|4683021|pts",
+      "gameId": "nba:401909896",
+      "start": "2026-10-31T19:00Z",
+      "match": "Jazz – Trail Blazers",
+      "market": "prop",
+      "side": "over",
+      "line": 19.5,
+      "label": "Deni Avdija más de 19.5 puntos",
+      "odd": 1.36,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.714,
+      "safety": 0.658,
+      "tier": "B",
+      "stat": "pts",
+      "playerId": "4683021",
+      "createdAt": "2026-10-31T18:27:08.370Z"
+    },
+    {
+      "id": "nba:401909904|prop|under|6.5|5174655|ra",
+      "gameId": "nba:401909904",
+      "start": "2026-11-01T22:00Z",
+      "match": "Pacers – Nets",
+      "market": "prop",
+      "side": "under",
+      "line": 6.5,
+      "label": "Chaney Johnson menos de 6.5 reb+ast",
+      "odd": 1.8,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.553,
+      "safety": 0.495,
+      "tier": "C",
+      "stat": "ra",
+      "playerId": "5174655",
+      "createdAt": "2026-10-31T18:27:08.370Z"
     }
   ],
   "record": [
@@ -15629,6 +15665,59 @@
       "ev": -0.043,
       "start": "2026-10-31T23:00Z",
       "createdAt": "2026-10-31T18:06:42.494Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909899|ml|home|||",
+          "gameId": "nba:401909899",
+          "start": "2026-11-01T00:00Z",
+          "match": "Grizzlies – Kings",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana Grizzlies",
+          "odd": 1.3,
+          "pFinal": 0.778,
+          "book": "unibet"
+        },
+        {
+          "id": "nba:401909898|ml|away|||",
+          "gameId": "nba:401909898",
+          "start": "2026-10-31T23:00Z",
+          "match": "Pelicans – Hawks",
+          "market": "ml",
+          "side": "away",
+          "line": null,
+          "label": "Gana Hawks",
+          "odd": 1.56,
+          "pFinal": 0.634,
+          "book": "draftkings"
+        },
+        {
+          "id": "nba:401909897|prop|under|1.5|3912848|tpm",
+          "gameId": "nba:401909897",
+          "start": "2026-10-31T22:00Z",
+          "match": "Hornets – 76ers",
+          "market": "prop",
+          "side": "under",
+          "line": 1.5,
+          "stat": "tpm",
+          "playerId": "3912848",
+          "player": "Dean Wade",
+          "team": "PHI",
+          "label": "Dean Wade menos de 1.5 triples",
+          "odd": 1.43,
+          "pFinal": 0.698,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.9,
+      "prob": 0.344,
+      "ev": -0.002,
+      "start": "2026-10-31T22:00Z",
+      "createdAt": "2026-10-31T18:27:08.370Z"
     }
   ],
   "comboRecord": [
