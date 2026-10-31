@@ -15943,6 +15943,59 @@
       "ev": 0.074,
       "start": "2026-11-01T00:00Z",
       "createdAt": "2026-10-31T23:13:56.737Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909899|ml|home|||",
+          "gameId": "nba:401909899",
+          "start": "2026-11-01T00:00Z",
+          "match": "Grizzlies – Kings",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana Grizzlies",
+          "odd": 1.34,
+          "pFinal": 0.76,
+          "book": "draftkings"
+        },
+        {
+          "id": "nba:401909902|ml|home|||",
+          "gameId": "nba:401909902",
+          "start": "2026-11-01T00:30Z",
+          "match": "Rockets – Thunder",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana Rockets",
+          "odd": 1.7,
+          "pFinal": 0.595,
+          "book": "draftkings"
+        },
+        {
+          "id": "nba:401909906|prop|under|10.5|2993874|pts",
+          "gameId": "nba:401909906",
+          "start": "2026-11-02T02:00Z",
+          "match": "Lakers – Raptors",
+          "market": "prop",
+          "side": "under",
+          "line": 10.5,
+          "stat": "pts",
+          "playerId": "2993874",
+          "player": "Kyle Anderson",
+          "team": "TOR",
+          "label": "Kyle Anderson menos de 10.5 puntos",
+          "odd": 1.79,
+          "pFinal": 0.612,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 4.08,
+      "prob": 0.277,
+      "ev": 0.128,
+      "start": "2026-11-01T00:00Z",
+      "createdAt": "2026-10-31T23:34:13.331Z"
     }
   ],
   "comboRecord": [
