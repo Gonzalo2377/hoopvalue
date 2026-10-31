@@ -4488,6 +4488,23 @@
         "image": true,
         "picks": [
           {
+            "id": "nba:401909897|prop|over|6.5|4396971|reb",
+            "league": "nba",
+            "label": "N. Reid +6.5 rebotes",
+            "list": "N. Reid +6.5 Reb",
+            "odd": 1.41,
+            "start": "2026-10-31T22:00Z",
+            "gameId": "nba:401909897",
+            "market": "prop",
+            "side": "over",
+            "line": 6.5,
+            "stat": "reb",
+            "playerId": "4396971",
+            "team": "CHA",
+            "match": "Hornets – 76ers",
+            "pFinal": 0.688
+          },
+          {
             "id": "nba:401909902|prop|over|24.5|3202|pr",
             "league": "nba",
             "label": "K. Durant +24.5 pts+reb",
@@ -4537,26 +4554,9 @@
             "team": "SAC",
             "match": "Grizzlies – Kings",
             "pFinal": 0.696
-          },
-          {
-            "id": "nba:401909901|prop|over|3.5|5037871|reb",
-            "league": "nba",
-            "label": "D. Harper +3.5 rebotes",
-            "list": "D. Harper +3.5 Reb",
-            "odd": 1.42,
-            "start": "2026-11-01T00:00Z",
-            "gameId": "nba:401909901",
-            "market": "prop",
-            "side": "over",
-            "line": 3.5,
-            "stat": "reb",
-            "playerId": "5037871",
-            "team": "SA",
-            "match": "Spurs – Timberwolves",
-            "pFinal": 0.693
           }
         ],
-        "text": "🧵 NBA Picks Day · 31/10 (sigue)\n\n9.- K. Durant +24.5 P+R @1.43\n10.- T. Camara +1.5 T3 @1.43\n11.- D. Acuff Jr. +24.5 P+A @1.40\n12.- D. Harper +3.5 Reb @1.42\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 31/10 (sigue)\n\n9.- N. Reid +6.5 Reb @1.41\n10.- K. Durant +24.5 P+R @1.43\n11.- T. Camara +1.5 T3 @1.43\n12.- D. Acuff Jr. +24.5 P+A @1.40\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
