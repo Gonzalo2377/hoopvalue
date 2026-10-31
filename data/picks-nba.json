@@ -16407,6 +16407,63 @@
       "ev": -0.013,
       "start": "2026-10-31T23:00Z",
       "createdAt": "2026-10-31T19:59:04.336Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909898|prop|over|9.5|4869780|pa",
+          "gameId": "nba:401909898",
+          "start": "2026-10-31T23:00Z",
+          "match": "Pelicans – Hawks",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pa",
+          "playerId": "4869780",
+          "player": "Derik Queen",
+          "team": "NO",
+          "label": "Derik Queen más de 9.5 pts+ast",
+          "odd": 1.33,
+          "pFinal": 0.749,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909897|prop|under|1.5|3912848|tpm",
+          "gameId": "nba:401909897",
+          "start": "2026-10-31T22:00Z",
+          "match": "Hornets – 76ers",
+          "market": "prop",
+          "side": "under",
+          "line": 1.5,
+          "stat": "tpm",
+          "playerId": "3912848",
+          "player": "Dean Wade",
+          "team": "PHI",
+          "label": "Dean Wade menos de 1.5 triples",
+          "odd": 1.42,
+          "pFinal": 0.703,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909902|ml|home|||",
+          "gameId": "nba:401909902",
+          "start": "2026-11-01T00:30Z",
+          "match": "Rockets – Thunder",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana Rockets",
+          "odd": 1.7,
+          "pFinal": 0.587,
+          "book": "draftkings"
+        }
+      ],
+      "odd": 3.21,
+      "prob": 0.309,
+      "ev": -0.008,
+      "start": "2026-10-31T22:00Z",
+      "createdAt": "2026-10-31T20:39:43.263Z"
     }
   ],
   "comboRecord": [
