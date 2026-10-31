@@ -4011,7 +4011,7 @@
         "title": "Safe Parlay · NBA @1.69",
         "postAt": "2026-10-31T18:00:00.000Z",
         "image": true,
-        "text": "🎯 Safe Parlay · NBA\n\n1.- Gana Grizzlies @1.30\n2.- J. McDaniels +19.5 PRA @1.30\n\n💰 Total odds 1.69\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
+        "text": "🎯 Safe Parlay · NBA\n\n1.- Gana Grizzlies @1.30\n2.- K. Jakucionis +4.5 R+A @1.30\n\n💰 Total odds 1.69\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
         "picks": [],
         "combo": {
           "legs": [
@@ -4030,25 +4030,25 @@
               "pFinal": 0.778
             },
             {
-              "id": "nba:401909901|prop|over|19.5|4431671|pra",
+              "id": "nba:401909900|prop|over|4.5|5214640|ra",
               "league": "nba",
-              "label": "J. McDaniels +19.5 pts+reb+ast",
-              "list": "J. McDaniels +19.5 PRA",
+              "label": "K. Jakucionis +4.5 reb+ast",
+              "list": "K. Jakucionis +4.5 R+A",
               "odd": 1.3,
               "start": "2026-11-01T00:00Z",
-              "gameId": "nba:401909901",
+              "gameId": "nba:401909900",
               "market": "prop",
               "side": "over",
-              "line": 19.5,
-              "stat": "pra",
-              "playerId": "4431671",
-              "team": "MIN",
-              "match": "Spurs – Timberwolves",
-              "pFinal": 0.754
+              "line": 4.5,
+              "stat": "ra",
+              "playerId": "5214640",
+              "team": "MIL",
+              "match": "Bucks – Cavaliers",
+              "pFinal": 0.751
             }
           ],
           "odd": 1.69,
-          "prob": 0.587
+          "prob": 0.584
         }
       },
       "summary-euroleague": {

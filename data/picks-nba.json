@@ -1551,6 +1551,24 @@
       "stat": "tpm",
       "playerId": "4602025",
       "createdAt": "2026-10-31T17:26:01.831Z"
+    },
+    {
+      "id": "nba:401909897|prop|under|1.5|3912848|tpm",
+      "gameId": "nba:401909897",
+      "start": "2026-10-31T22:00Z",
+      "match": "Hornets – 76ers",
+      "market": "prop",
+      "side": "under",
+      "line": 1.5,
+      "label": "Dean Wade menos de 1.5 triples",
+      "odd": 1.47,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.683,
+      "safety": 0.595,
+      "tier": "C",
+      "stat": "tpm",
+      "playerId": "3912848",
+      "createdAt": "2026-10-31T17:46:22.141Z"
     }
   ],
   "record": [
@@ -15407,6 +15425,90 @@
       "ev": -0.039,
       "start": "2026-10-31T23:00Z",
       "createdAt": "2026-10-31T17:26:01.831Z"
+    },
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "nba:401909899|ml|home|||",
+          "gameId": "nba:401909899",
+          "start": "2026-11-01T00:00Z",
+          "match": "Grizzlies – Kings",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana Grizzlies",
+          "odd": 1.3,
+          "pFinal": 0.778,
+          "book": "unibet"
+        },
+        {
+          "id": "nba:401909900|prop|over|4.5|5214640|ra",
+          "gameId": "nba:401909900",
+          "start": "2026-11-01T00:00Z",
+          "match": "Bucks – Cavaliers",
+          "market": "prop",
+          "side": "over",
+          "line": 4.5,
+          "stat": "ra",
+          "playerId": "5214640",
+          "player": "Kasparas Jakucionis",
+          "team": "MIL",
+          "label": "Kasparas Jakucionis más de 4.5 reb+ast",
+          "odd": 1.3,
+          "pFinal": 0.751,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.69,
+      "prob": 0.584,
+      "ev": -0.013,
+      "start": "2026-11-01T00:00Z",
+      "createdAt": "2026-10-31T17:46:22.141Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "nba:401909899|prop|over|19.5|3064440|pa",
+          "gameId": "nba:401909899",
+          "start": "2026-11-01T00:00Z",
+          "match": "Grizzlies – Kings",
+          "market": "prop",
+          "side": "over",
+          "line": 19.5,
+          "stat": "pa",
+          "playerId": "3064440",
+          "player": "Zach LaVine",
+          "team": "SAC",
+          "label": "Zach LaVine más de 19.5 pts+ast",
+          "odd": 1.3,
+          "pFinal": 0.746,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909900|prop|over|4.5|5214640|ra",
+          "gameId": "nba:401909900",
+          "start": "2026-11-01T00:00Z",
+          "match": "Bucks – Cavaliers",
+          "market": "prop",
+          "side": "over",
+          "line": 4.5,
+          "stat": "ra",
+          "playerId": "5214640",
+          "player": "Kasparas Jakucionis",
+          "team": "MIL",
+          "label": "Kasparas Jakucionis más de 4.5 reb+ast",
+          "odd": 1.3,
+          "pFinal": 0.751,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.69,
+      "prob": 0.56,
+      "ev": -0.053,
+      "start": "2026-11-01T00:00Z",
+      "createdAt": "2026-10-31T17:46:22.141Z"
     }
   ],
   "comboRecord": [
