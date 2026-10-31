@@ -603,6 +603,42 @@
       "stat": "tpm",
       "playerId": "4432639",
       "createdAt": "2026-10-31T05:37:34.368Z"
+    },
+    {
+      "id": "nba:401909901|prop|over|3.5|5037871|reb",
+      "gameId": "nba:401909901",
+      "start": "2026-11-01T00:00Z",
+      "match": "Spurs – Timberwolves",
+      "market": "prop",
+      "side": "over",
+      "line": 3.5,
+      "label": "Dylan Harper más de 3.5 rebotes",
+      "odd": 1.42,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.693,
+      "safety": 0.63,
+      "tier": "B",
+      "stat": "reb",
+      "playerId": "5037871",
+      "createdAt": "2026-10-31T05:57:55.658Z"
+    },
+    {
+      "id": "nba:401909901|prop|over|1.5|4592479|tpm",
+      "gameId": "nba:401909901",
+      "start": "2026-11-01T00:00Z",
+      "match": "Spurs – Timberwolves",
+      "market": "prop",
+      "side": "over",
+      "line": 1.5,
+      "label": "Julian Champagnie más de 1.5 triples",
+      "odd": 1.5,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.656,
+      "safety": 0.598,
+      "tier": "C",
+      "stat": "tpm",
+      "playerId": "4592479",
+      "createdAt": "2026-10-31T05:57:55.658Z"
     }
   ],
   "record": [

@@ -4323,7 +4323,7 @@
         "kind": "nba-day",
         "league": "nba",
         "reply": false,
-        "title": "NBA Picks Day · 6 picks",
+        "title": "NBA Picks Day · 8 picks",
         "postAt": "2026-10-31T17:45:00.000Z",
         "image": true,
         "picks": [
@@ -4377,19 +4377,53 @@
             "team": "HOU",
             "match": "Rockets – Thunder",
             "pFinal": 0.723
+          },
+          {
+            "id": "nba:401909901|prop|over|3.5|5037871|reb",
+            "league": "nba",
+            "label": "D. Harper +3.5 rebotes",
+            "list": "D. Harper +3.5 Reb",
+            "odd": 1.42,
+            "start": "2026-11-01T00:00Z",
+            "gameId": "nba:401909901",
+            "market": "prop",
+            "side": "over",
+            "line": 3.5,
+            "stat": "reb",
+            "playerId": "5037871",
+            "team": "SA",
+            "match": "Spurs – Timberwolves",
+            "pFinal": 0.693
           }
         ],
-        "text": "🏀 NBA Picks Day · 31/10\n\n1.- E. Mobley +0.5 T3 @1.32\n2.- J. Jaquez Jr. +19.5 PRA @1.33\n3.- J. Smith Jr. +0.5 T3 @1.37\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 31/10\n\n1.- E. Mobley +0.5 T3 @1.32\n2.- J. Jaquez Jr. +19.5 PRA @1.33\n3.- J. Smith Jr. +0.5 T3 @1.37\n4.- D. Harper +3.5 Reb @1.42\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-2": {
         "id": "nba-day-2",
         "kind": "nba-day",
         "league": "nba",
         "reply": true,
-        "title": "↳ Hilo 2/2 · picks 4-6",
+        "title": "↳ Hilo 2/2 · picks 5-8",
         "postAt": "2026-10-31T17:45:00.000Z",
         "image": true,
         "picks": [
+          {
+            "id": "nba:401909901|prop|over|1.5|4592479|tpm",
+            "league": "nba",
+            "label": "J. Champagnie +1.5 triples",
+            "list": "J. Champagnie +1.5 T3",
+            "odd": 1.5,
+            "start": "2026-11-01T00:00Z",
+            "gameId": "nba:401909901",
+            "market": "prop",
+            "side": "over",
+            "line": 1.5,
+            "stat": "tpm",
+            "playerId": "4592479",
+            "team": "SA",
+            "match": "Spurs – Timberwolves",
+            "pFinal": 0.656
+          },
           {
             "id": "nba:401909898|ml|away|||",
             "league": "nba",
@@ -4433,7 +4467,7 @@
             "pFinal": 0.557
           }
         ],
-        "text": "🧵 NBA Picks Day · 31/10 (sigue)\n\n4.- Gana Hawks @1.61\n5.- Gana Rockets @1.59\n6.- Grizzlies -10.5 @1.91\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 31/10 (sigue)\n\n5.- J. Champagnie +1.5 T3 @1.50\n6.- Gana Hawks @1.61\n7.- Gana Rockets @1.59\n8.- Grizzlies -10.5 @1.91\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
