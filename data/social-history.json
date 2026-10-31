@@ -4011,26 +4011,26 @@
         "title": "Safe Parlay · NBA @1.69",
         "postAt": "2026-10-31T18:00:00.000Z",
         "image": true,
-        "text": "🎯 Safe Parlay · NBA\n\n1.- J. Jaquez Jr. +19.5 PRA @1.30\n2.- D. Queen +7.5 Pts @1.30\n\n💰 Total odds 1.69\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
+        "text": "🎯 Safe Parlay · NBA\n\n1.- K. George +17.5 Pts @1.30\n2.- D. Queen +7.5 Pts @1.30\n\n💰 Total odds 1.69\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
         "picks": [],
         "combo": {
           "legs": [
             {
-              "id": "nba:401909900|prop|over|19.5|4432848|pra",
+              "id": "nba:401909896|prop|over|17.5|4433627|pts",
               "league": "nba",
-              "label": "J. Jaquez Jr. +19.5 pts+reb+ast",
-              "list": "J. Jaquez Jr. +19.5 PRA",
+              "label": "K. George +17.5 puntos",
+              "list": "K. George +17.5 Pts",
               "odd": 1.3,
-              "start": "2026-11-01T00:00Z",
-              "gameId": "nba:401909900",
+              "start": "2026-10-31T19:00Z",
+              "gameId": "nba:401909896",
               "market": "prop",
               "side": "over",
-              "line": 19.5,
-              "stat": "pra",
-              "playerId": "4432848",
-              "team": "MIL",
-              "match": "Bucks – Cavaliers",
-              "pFinal": 0.753
+              "line": 17.5,
+              "stat": "pts",
+              "playerId": "4433627",
+              "team": "UTAH",
+              "match": "Jazz – Trail Blazers",
+              "pFinal": 0.75
             },
             {
               "id": "nba:401909898|prop|over|7.5|4869780|pts",
@@ -4051,7 +4051,7 @@
             }
           ],
           "odd": 1.69,
-          "prob": 0.571
+          "prob": 0.569
         }
       },
       "summary-euroleague": {
@@ -4345,23 +4345,6 @@
             "pFinal": 0.75
           },
           {
-            "id": "nba:401909900|prop|over|19.5|4432848|pra",
-            "league": "nba",
-            "label": "J. Jaquez Jr. +19.5 pts+reb+ast",
-            "list": "J. Jaquez Jr. +19.5 PRA",
-            "odd": 1.3,
-            "start": "2026-11-01T00:00Z",
-            "gameId": "nba:401909900",
-            "market": "prop",
-            "side": "over",
-            "line": 19.5,
-            "stat": "pra",
-            "playerId": "4432848",
-            "team": "MIL",
-            "match": "Bucks – Cavaliers",
-            "pFinal": 0.753
-          },
-          {
             "id": "nba:401909900|prop|over|0.5|4432158|tpm",
             "league": "nba",
             "label": "E. Mobley +0.5 triples",
@@ -4394,19 +4377,7 @@
             "team": "NO",
             "match": "Pelicans – Hawks",
             "pFinal": 0.754
-          }
-        ],
-        "text": "🏀 NBA Picks Day · 31/10\n\n1.- K. George +17.5 Pts @1.30\n2.- J. Jaquez Jr. +19.5 PRA @1.30\n3.- E. Mobley +0.5 T3 @1.32\n4.- J. Fears +9.5 Pts @1.30\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-2": {
-        "id": "nba-day-2",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 2/3 · picks 5-8",
-        "postAt": "2026-10-31T17:45:00.000Z",
-        "image": true,
-        "picks": [
+          },
           {
             "id": "nba:401909898|prop|over|7.5|4869780|pts",
             "league": "nba",
@@ -4423,30 +4394,76 @@
             "team": "NO",
             "match": "Pelicans – Hawks",
             "pFinal": 0.758
+          }
+        ],
+        "text": "🏀 NBA Picks Day · 31/10\n\n1.- K. George +17.5 Pts @1.30\n2.- E. Mobley +0.5 T3 @1.32\n3.- J. Fears +9.5 Pts @1.30\n4.- D. Queen +7.5 Pts @1.30\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-2": {
+        "id": "nba-day-2",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 2/3 · picks 5-8",
+        "postAt": "2026-10-31T17:45:00.000Z",
+        "image": true,
+        "picks": [
+          {
+            "id": "nba:401909900|prop|over|19.5|4432848|pra",
+            "league": "nba",
+            "label": "J. Jaquez Jr. +19.5 pts+reb+ast",
+            "list": "J. Jaquez Jr. +19.5 PRA",
+            "odd": 1.32,
+            "start": "2026-11-01T00:00Z",
+            "gameId": "nba:401909900",
+            "market": "prop",
+            "side": "over",
+            "line": 19.5,
+            "stat": "pra",
+            "playerId": "4432848",
+            "team": "MIL",
+            "match": "Bucks – Cavaliers",
+            "pFinal": 0.745
           },
           {
-            "id": "nba:401909902|prop|over|0.5|4432639|tpm",
+            "id": "nba:401909902|prop|over|29.5|4871144|pra",
             "league": "nba",
-            "label": "J. Smith Jr. +0.5 triples",
-            "list": "J. Smith Jr. +0.5 T3",
-            "odd": 1.36,
+            "label": "A. Sengun +29.5 pts+reb+ast",
+            "list": "A. Sengun +29.5 PRA",
+            "odd": 1.41,
             "start": "2026-11-01T00:30Z",
             "gameId": "nba:401909902",
             "market": "prop",
             "side": "over",
-            "line": 0.5,
-            "stat": "tpm",
-            "playerId": "4432639",
+            "line": 29.5,
+            "stat": "pra",
+            "playerId": "4871144",
             "team": "HOU",
             "match": "Rockets – Thunder",
-            "pFinal": 0.727
+            "pFinal": 0.688
+          },
+          {
+            "id": "nba:401909902|prop|over|24.5|3202|pr",
+            "league": "nba",
+            "label": "K. Durant +24.5 pts+reb",
+            "list": "K. Durant +24.5 P+R",
+            "odd": 1.43,
+            "start": "2026-11-01T00:30Z",
+            "gameId": "nba:401909902",
+            "market": "prop",
+            "side": "over",
+            "line": 24.5,
+            "stat": "pr",
+            "playerId": "3202",
+            "team": "HOU",
+            "match": "Rockets – Thunder",
+            "pFinal": 0.681
           },
           {
             "id": "nba:401909901|prop|over|3.5|5037871|reb",
             "league": "nba",
             "label": "D. Harper +3.5 rebotes",
             "list": "D. Harper +3.5 Reb",
-            "odd": 1.42,
+            "odd": 1.41,
             "start": "2026-11-01T00:00Z",
             "gameId": "nba:401909901",
             "market": "prop",
@@ -4456,7 +4473,36 @@
             "playerId": "5037871",
             "team": "SA",
             "match": "Spurs – Timberwolves",
-            "pFinal": 0.693
+            "pFinal": 0.696
+          }
+        ],
+        "text": "🧵 NBA Picks Day · 31/10 (sigue)\n\n5.- J. Jaquez Jr. +19.5 PRA @1.32\n6.- A. Sengun +29.5 PRA @1.41\n7.- K. Durant +24.5 P+R @1.43\n8.- D. Harper +3.5 Reb @1.41\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-3": {
+        "id": "nba-day-3",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 3/3 · picks 9-12",
+        "postAt": "2026-10-31T17:45:00.000Z",
+        "image": true,
+        "picks": [
+          {
+            "id": "nba:401909901|prop|over|13.5|4431671|pts",
+            "league": "nba",
+            "label": "J. McDaniels +13.5 puntos",
+            "list": "J. McDaniels +13.5 Pts",
+            "odd": 1.45,
+            "start": "2026-11-01T00:00Z",
+            "gameId": "nba:401909901",
+            "market": "prop",
+            "side": "over",
+            "line": 13.5,
+            "stat": "pts",
+            "playerId": "4431671",
+            "team": "MIN",
+            "match": "Spurs – Timberwolves",
+            "pFinal": 0.67
           },
           {
             "id": "nba:401909896|prop|over|0.5|5105565|tpm",
@@ -4474,19 +4520,7 @@
             "team": "POR",
             "match": "Jazz – Trail Blazers",
             "pFinal": 0.67
-          }
-        ],
-        "text": "🧵 NBA Picks Day · 31/10 (sigue)\n\n5.- D. Queen +7.5 Pts @1.30\n6.- J. Smith Jr. +0.5 T3 @1.36\n7.- D. Harper +3.5 Reb @1.42\n8.- D. Clingan +0.5 T3 @1.45\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-3": {
-        "id": "nba-day-3",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 3/3 · picks 9-12",
-        "postAt": "2026-10-31T17:45:00.000Z",
-        "image": true,
-        "picks": [
+          },
           {
             "id": "nba:401909898|ml|away|||",
             "league": "nba",
@@ -4500,23 +4534,6 @@
             "line": null,
             "match": "Pelicans – Hawks",
             "pFinal": 0.622
-          },
-          {
-            "id": "nba:401909901|prop|over|9.5|4395630|pts",
-            "league": "nba",
-            "label": "D. Vassell +9.5 puntos",
-            "list": "D. Vassell +9.5 Pts",
-            "odd": 1.5,
-            "start": "2026-11-01T00:00Z",
-            "gameId": "nba:401909901",
-            "market": "prop",
-            "side": "over",
-            "line": 9.5,
-            "stat": "pts",
-            "playerId": "4395630",
-            "team": "SA",
-            "match": "Spurs – Timberwolves",
-            "pFinal": 0.649
           },
           {
             "id": "nba:401909897|prop|under|1.5|3032979|tpm",
@@ -4534,26 +4551,9 @@
             "team": "CHA",
             "match": "Hornets – 76ers",
             "pFinal": 0.602
-          },
-          {
-            "id": "nba:401909897|prop|under|6.5|4433287|reb",
-            "league": "nba",
-            "label": "B. Miller −6.5 rebotes",
-            "list": "B. Miller −6.5 Reb",
-            "odd": 1.62,
-            "start": "2026-10-31T22:00Z",
-            "gameId": "nba:401909897",
-            "market": "prop",
-            "side": "under",
-            "line": 6.5,
-            "stat": "reb",
-            "playerId": "4433287",
-            "team": "CHA",
-            "match": "Hornets – 76ers",
-            "pFinal": 0.599
           }
         ],
-        "text": "🧵 NBA Picks Day · 31/10 (sigue)\n\n9.- Gana Hawks @1.60\n10.- D. Vassell +9.5 Pts @1.50\n11.- D. Schroder −1.5 T3 @1.62\n12.- B. Miller −6.5 Reb @1.62\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 31/10 (sigue)\n\n9.- J. McDaniels +13.5 Pts @1.45\n10.- D. Clingan +0.5 T3 @1.45\n11.- Gana Hawks @1.60\n12.- D. Schroder −1.5 T3 @1.62\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
