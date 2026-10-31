@@ -1515,6 +1515,42 @@
       "stat": "pr",
       "playerId": "5075626",
       "createdAt": "2026-10-31T17:05:40.684Z"
+    },
+    {
+      "id": "nba:401909902|prop|over|15.5|4871144|pts",
+      "gameId": "nba:401909902",
+      "start": "2026-11-01T00:30Z",
+      "match": "Rockets – Thunder",
+      "market": "prop",
+      "side": "over",
+      "line": 15.5,
+      "label": "Alperen Sengun más de 15.5 puntos",
+      "odd": 1.4,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.694,
+      "safety": 0.651,
+      "tier": "B",
+      "stat": "pts",
+      "playerId": "4871144",
+      "createdAt": "2026-10-31T17:26:01.831Z"
+    },
+    {
+      "id": "nba:401909897|prop|under|1.5|4602025|tpm",
+      "gameId": "nba:401909897",
+      "start": "2026-10-31T22:00Z",
+      "match": "Hornets – 76ers",
+      "market": "prop",
+      "side": "under",
+      "line": 1.5,
+      "label": "Sion James menos de 1.5 triples",
+      "odd": 1.61,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.607,
+      "safety": 0.575,
+      "tier": "C",
+      "stat": "tpm",
+      "playerId": "4602025",
+      "createdAt": "2026-10-31T17:26:01.831Z"
     }
   ],
   "record": [
@@ -15274,6 +15310,103 @@
       "ev": -0.011,
       "start": "2026-10-31T23:00Z",
       "createdAt": "2026-10-31T17:05:40.684Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909899|ml|home|||",
+          "gameId": "nba:401909899",
+          "start": "2026-11-01T00:00Z",
+          "match": "Grizzlies – Kings",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana Grizzlies",
+          "odd": 1.3,
+          "pFinal": 0.778,
+          "book": "unibet"
+        },
+        {
+          "id": "nba:401909901|prop|over|3.5|5037871|reb",
+          "gameId": "nba:401909901",
+          "start": "2026-11-01T00:00Z",
+          "match": "Spurs – Timberwolves",
+          "market": "prop",
+          "side": "over",
+          "line": 3.5,
+          "stat": "reb",
+          "playerId": "5037871",
+          "player": "Dylan Harper",
+          "team": "SA",
+          "label": "Dylan Harper más de 3.5 rebotes",
+          "odd": 1.42,
+          "pFinal": 0.693,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909898|ml|away|||",
+          "gameId": "nba:401909898",
+          "start": "2026-10-31T23:00Z",
+          "match": "Pelicans – Hawks",
+          "market": "ml",
+          "side": "away",
+          "line": null,
+          "label": "Gana Hawks",
+          "odd": 1.56,
+          "pFinal": 0.634,
+          "book": "draftkings"
+        }
+      ],
+      "odd": 2.88,
+      "prob": 0.342,
+      "ev": -0.016,
+      "start": "2026-10-31T23:00Z",
+      "createdAt": "2026-10-31T17:26:01.831Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "nba:401909901|prop|over|19.5|4431671|pra",
+          "gameId": "nba:401909901",
+          "start": "2026-11-01T00:00Z",
+          "match": "Spurs – Timberwolves",
+          "market": "prop",
+          "side": "over",
+          "line": 19.5,
+          "stat": "pra",
+          "playerId": "4431671",
+          "player": "Jaden McDaniels",
+          "team": "MIN",
+          "label": "Jaden McDaniels más de 19.5 pts+reb+ast",
+          "odd": 1.3,
+          "pFinal": 0.754,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909898|prop|over|3.5|4277813|pts",
+          "gameId": "nba:401909898",
+          "start": "2026-10-31T23:00Z",
+          "match": "Pelicans – Hawks",
+          "market": "prop",
+          "side": "over",
+          "line": 3.5,
+          "stat": "pts",
+          "playerId": "4277813",
+          "player": "Herbert Jones",
+          "team": "NO",
+          "label": "Herbert Jones más de 3.5 puntos",
+          "odd": 1.3,
+          "pFinal": 0.754,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.69,
+      "prob": 0.569,
+      "ev": -0.039,
+      "start": "2026-10-31T23:00Z",
+      "createdAt": "2026-10-31T17:26:01.831Z"
     }
   ],
   "comboRecord": [
