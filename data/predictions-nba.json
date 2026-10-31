@@ -480,13 +480,13 @@
     "home": "Hornets",
     "away": "76ers",
     "ptsH": 102,
-    "ptsA": 102
+    "ptsA": 101
   },
   "nba:401909898": {
     "start": "2026-10-31T23:00Z",
     "home": "Pelicans",
     "away": "Hawks",
-    "ptsH": 114,
+    "ptsH": 113,
     "ptsA": 122
   },
   "nba:401909899": {
@@ -514,7 +514,7 @@
     "start": "2026-11-01T00:30Z",
     "home": "Rockets",
     "away": "Thunder",
-    "ptsH": 110,
-    "ptsA": 102
+    "ptsH": 108,
+    "ptsA": 103
   }
 }

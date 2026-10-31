@@ -3927,8 +3927,8 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
             "pred": [
-              103,
-              102
+              102,
+              101
             ]
           },
           {
@@ -3941,7 +3941,7 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
             "pred": [
-              114,
+              113,
               122
             ]
           },
@@ -3997,12 +3997,12 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
             "pred": [
-              110,
-              102
+              108,
+              103
             ]
           }
         ],
-        "text": "🔮 EuroPicks Score Predictions · NBA · 31/10\n\nUTAH 115-118 POR\nCHA 103-102 PHI\nNO 114-122 ATL\nMEM 125-100 SAC\nMIL 116-121 CLE\nSA 114-108 MIN\nHOU 110-102 OKC\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
+        "text": "🔮 EuroPicks Score Predictions · NBA · 31/10\n\nUTAH 115-118 POR\nCHA 102-101 PHI\nNO 113-122 ATL\nMEM 125-100 SAC\nMIL 116-121 CLE\nSA 114-108 MIN\nHOU 108-103 OKC\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
       },
       "combo-nba": {
         "id": "combo-nba",
@@ -4152,7 +4152,7 @@
         "league": "nba",
         "title": "NBA · resultados de ayer (30/10)",
         "postAt": "2026-10-31T08:40:00.000Z",
-        "text": "📋 NBA · resultados de ayer (30/10)\n\n❌⚪⏳⏳⏳⏳⏳✅⏳✅⏳✅⏳\n👇 Cada pick en la imagen\n\nAyer: 3-1 (+0.03 u) · Total NBA: 47-15 (+4.35 u)\n#NBA · +18 · Juega con responsabilidad",
+        "text": "📋 NBA · resultados de ayer (30/10)\n\n❌⚪⏳⏳❌❌⚪✅⏳✅⏳✅✅\n👇 Cada pick en la imagen\n\nAyer: 4-3 (-1.28 u) · Total NBA: 48-17 (+3.04 u)\n#NBA · +18 · Juega con responsabilidad",
         "image": true,
         "pending": true,
         "rows": [
@@ -4184,19 +4184,19 @@
             "league": "nba",
             "label": "A. Nesmith +9.5 puntos",
             "odd": 1.32,
-            "result": null
+            "result": "L"
           },
           {
             "league": "nba",
             "label": "P. Washington +9.5 puntos",
             "odd": 1.32,
-            "result": null
+            "result": "L"
           },
           {
             "league": "nba",
             "label": "O. Toppin +9.5 puntos",
             "odd": 1.32,
-            "result": null
+            "result": "V"
           },
           {
             "league": "nba",
@@ -4232,21 +4232,21 @@
             "league": "nba",
             "label": "Combinada: Z. Risacher +2.5 Reb + C. Wilson +13.5 Pts",
             "odd": 1.69,
-            "result": null
+            "result": "W"
           }
         ],
         "balance": {
           "day": [
-            3,
-            1
+            4,
+            3
           ],
           "total": [
-            47,
-            15
+            48,
+            17
           ],
           "units": {
-            "day": 0.03,
-            "total": 4.35
+            "day": -1.28,
+            "total": 3.04
           }
         }
       },
@@ -4353,7 +4353,7 @@
             "side": "under",
             "line": 217.5,
             "match": "Hornets – 76ers",
-            "pFinal": 0.551
+            "pFinal": 0.552
           },
           {
             "id": "nba:401909899|spread|home|-10.5||",
