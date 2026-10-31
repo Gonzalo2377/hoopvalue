@@ -765,6 +765,24 @@
       "stat": "reb",
       "playerId": "4433287",
       "createdAt": "2026-10-31T10:47:48.067Z"
+    },
+    {
+      "id": "nba:401909904|prop|over|2.5|5174655|reb",
+      "gameId": "nba:401909904",
+      "start": "2026-11-01T22:00Z",
+      "match": "Pacers – Nets",
+      "market": "prop",
+      "side": "over",
+      "line": 2.5,
+      "label": "Chaney Johnson más de 2.5 rebotes",
+      "odd": 1.64,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.618,
+      "safety": 0.524,
+      "tier": "C",
+      "stat": "reb",
+      "playerId": "5174655",
+      "createdAt": "2026-10-31T11:08:10.607Z"
     }
   ],
   "record": [
