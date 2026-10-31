@@ -2475,6 +2475,40 @@
       "safety": 0.447,
       "tier": "C",
       "createdAt": "2026-10-31T00:36:44.078Z"
+    },
+    {
+      "id": "nba:401909285|prop|over|3.5|2990969|pts",
+      "gameId": "nba:401909285",
+      "start": "2026-10-31T02:00Z",
+      "match": "Warriors – Lakers",
+      "market": "prop",
+      "side": "over",
+      "line": 3.5,
+      "label": "Georges Niang más de 3.5 puntos",
+      "odd": 1.33,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.734,
+      "safety": 0.684,
+      "tier": "A",
+      "stat": "pts",
+      "playerId": "2990969",
+      "createdAt": "2026-10-31T00:52:51.391Z"
+    },
+    {
+      "id": "nba:401909898|ml|away|||",
+      "gameId": "nba:401909898",
+      "start": "2026-10-31T23:00Z",
+      "match": "Pelicans – Hawks",
+      "market": "ml",
+      "side": "away",
+      "line": null,
+      "label": "Gana Hawks",
+      "odd": 1.65,
+      "book": "draftkings",
+      "pFinal": 0.603,
+      "safety": 0.572,
+      "tier": "C",
+      "createdAt": "2026-10-31T00:52:51.391Z"
     }
   ],
   "record": [
@@ -15338,6 +15372,94 @@
       "ev": -0.035,
       "start": "2026-10-31T02:00Z",
       "createdAt": "2026-10-31T00:36:44.078Z"
+    },
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "nba:401909285|prop|over|19.5|4709138|pra",
+          "gameId": "nba:401909285",
+          "start": "2026-10-31T02:00Z",
+          "match": "Warriors – Lakers",
+          "market": "prop",
+          "side": "over",
+          "line": 19.5,
+          "stat": "pra",
+          "playerId": "4709138",
+          "player": "Brandin Podziemski",
+          "team": "GS",
+          "label": "Brandin Podziemski más de 19.5 pts+reb+ast",
+          "odd": 1.32,
+          "pFinal": 0.736,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909286|prop|over|3.5|4278402|pts",
+          "gameId": "nba:401909286",
+          "start": "2026-10-31T02:00Z",
+          "match": "Suns – Nuggets",
+          "market": "prop",
+          "side": "over",
+          "line": 3.5,
+          "stat": "pts",
+          "playerId": "4278402",
+          "player": "Jordan Goodwin",
+          "team": "PHX",
+          "label": "Jordan Goodwin más de 3.5 puntos",
+          "odd": 1.32,
+          "pFinal": 0.754,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.74,
+      "prob": 0.555,
+      "ev": -0.033,
+      "start": "2026-10-31T02:00Z",
+      "createdAt": "2026-10-31T00:52:51.391Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "nba:401909285|prop|over|3.5|2990969|pts",
+          "gameId": "nba:401909285",
+          "start": "2026-10-31T02:00Z",
+          "match": "Warriors – Lakers",
+          "market": "prop",
+          "side": "over",
+          "line": 3.5,
+          "stat": "pts",
+          "playerId": "2990969",
+          "player": "Georges Niang",
+          "team": "GS",
+          "label": "Georges Niang más de 3.5 puntos",
+          "odd": 1.33,
+          "pFinal": 0.734,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909286|prop|over|3.5|4278402|pts",
+          "gameId": "nba:401909286",
+          "start": "2026-10-31T02:00Z",
+          "match": "Suns – Nuggets",
+          "market": "prop",
+          "side": "over",
+          "line": 3.5,
+          "stat": "pts",
+          "playerId": "4278402",
+          "player": "Jordan Goodwin",
+          "team": "PHX",
+          "label": "Jordan Goodwin más de 3.5 puntos",
+          "odd": 1.32,
+          "pFinal": 0.754,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.76,
+      "prob": 0.553,
+      "ev": -0.028,
+      "start": "2026-10-31T02:00Z",
+      "createdAt": "2026-10-31T00:52:51.391Z"
     }
   ],
   "comboRecord": [
