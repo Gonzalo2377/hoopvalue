@@ -4323,7 +4323,7 @@
         "kind": "nba-day",
         "league": "nba",
         "reply": false,
-        "title": "NBA Picks Day · 11 picks",
+        "title": "NBA Picks Day · 12 picks",
         "postAt": "2026-10-31T17:45:00.000Z",
         "image": true,
         "picks": [
@@ -4460,7 +4460,7 @@
             "league": "nba",
             "label": "J. Champagnie +1.5 triples",
             "list": "J. Champagnie +1.5 T3",
-            "odd": 1.5,
+            "odd": 1.52,
             "start": "2026-11-01T00:00Z",
             "gameId": "nba:401909901",
             "market": "prop",
@@ -4470,20 +4470,54 @@
             "playerId": "4592479",
             "team": "SA",
             "match": "Spurs – Timberwolves",
-            "pFinal": 0.656
+            "pFinal": 0.649
           }
         ],
-        "text": "🧵 NBA Picks Day · 31/10 (sigue)\n\n5.- D. Clingan +0.5 T3 @1.45\n6.- T. Camara +1.5 T3 @1.45\n7.- Gana Hawks @1.61\n8.- J. Champagnie +1.5 T3 @1.50\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 31/10 (sigue)\n\n5.- D. Clingan +0.5 T3 @1.45\n6.- T. Camara +1.5 T3 @1.45\n7.- Gana Hawks @1.61\n8.- J. Champagnie +1.5 T3 @1.52\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-3": {
         "id": "nba-day-3",
         "kind": "nba-day",
         "league": "nba",
         "reply": true,
-        "title": "↳ Hilo 3/3 · picks 9-11",
+        "title": "↳ Hilo 3/3 · picks 9-12",
         "postAt": "2026-10-31T17:45:00.000Z",
         "image": true,
         "picks": [
+          {
+            "id": "nba:401909897|prop|under|2.5|4396971|ast",
+            "league": "nba",
+            "label": "N. Reid −2.5 asistencias",
+            "list": "N. Reid −2.5 Ast",
+            "odd": 1.57,
+            "start": "2026-10-31T22:00Z",
+            "gameId": "nba:401909897",
+            "market": "prop",
+            "side": "under",
+            "line": 2.5,
+            "stat": "ast",
+            "playerId": "4396971",
+            "team": "CHA",
+            "match": "Hornets – 76ers",
+            "pFinal": 0.622
+          },
+          {
+            "id": "nba:401909897|prop|under|1.5|3032979|tpm",
+            "league": "nba",
+            "label": "D. Schroder −1.5 triples",
+            "list": "D. Schroder −1.5 T3",
+            "odd": 1.62,
+            "start": "2026-10-31T22:00Z",
+            "gameId": "nba:401909897",
+            "market": "prop",
+            "side": "under",
+            "line": 1.5,
+            "stat": "tpm",
+            "playerId": "3032979",
+            "team": "CHA",
+            "match": "Hornets – 76ers",
+            "pFinal": 0.602
+          },
           {
             "id": "nba:401909902|ml|home|||",
             "league": "nba",
@@ -4496,23 +4530,6 @@
             "side": "home",
             "line": null,
             "match": "Rockets – Thunder",
-            "pFinal": 0.638
-          },
-          {
-            "id": "nba:401909897|prop|under|7.5|5060701|ra",
-            "league": "nba",
-            "label": "C. Anderson −7.5 reb+ast",
-            "list": "C. Anderson −7.5 R+A",
-            "odd": 1.68,
-            "start": "2026-10-31T22:00Z",
-            "gameId": "nba:401909897",
-            "market": "prop",
-            "side": "under",
-            "line": 7.5,
-            "stat": "ra",
-            "playerId": "5060701",
-            "team": "CHA",
-            "match": "Hornets – 76ers",
             "pFinal": 0.638
           },
           {
@@ -4530,7 +4547,7 @@
             "pFinal": 0.557
           }
         ],
-        "text": "🧵 NBA Picks Day · 31/10 (sigue)\n\n9.- Gana Rockets @1.62\n10.- C. Anderson −7.5 R+A @1.68\n11.- Grizzlies -10.5 @1.91\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 31/10 (sigue)\n\n9.- N. Reid −2.5 Ast @1.57\n10.- D. Schroder −1.5 T3 @1.62\n11.- Gana Rockets @1.62\n12.- Grizzlies -10.5 @1.91\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }

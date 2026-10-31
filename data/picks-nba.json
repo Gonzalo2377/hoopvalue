@@ -711,6 +711,42 @@
       "stat": "ra",
       "playerId": "5174655",
       "createdAt": "2026-10-31T10:07:07.578Z"
+    },
+    {
+      "id": "nba:401909897|prop|under|2.5|4396971|ast",
+      "gameId": "nba:401909897",
+      "start": "2026-10-31T22:00Z",
+      "match": "Hornets – 76ers",
+      "market": "prop",
+      "side": "under",
+      "line": 2.5,
+      "label": "Naz Reid menos de 2.5 asistencias",
+      "odd": 1.57,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.622,
+      "safety": 0.585,
+      "tier": "C",
+      "stat": "ast",
+      "playerId": "4396971",
+      "createdAt": "2026-10-31T10:27:28.113Z"
+    },
+    {
+      "id": "nba:401909897|prop|under|1.5|3032979|tpm",
+      "gameId": "nba:401909897",
+      "start": "2026-10-31T22:00Z",
+      "match": "Hornets – 76ers",
+      "market": "prop",
+      "side": "under",
+      "line": 1.5,
+      "label": "Dennis Schroder menos de 1.5 triples",
+      "odd": 1.62,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.602,
+      "safety": 0.57,
+      "tier": "C",
+      "stat": "tpm",
+      "playerId": "3032979",
+      "createdAt": "2026-10-31T10:27:28.113Z"
     }
   ],
   "record": [
