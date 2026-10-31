@@ -4408,6 +4408,23 @@
         "image": true,
         "picks": [
           {
+            "id": "nba:401909896|prop|over|24.5|4433627|pa",
+            "league": "nba",
+            "label": "K. George +24.5 pts+ast",
+            "list": "K. George +24.5 P+A",
+            "odd": 1.35,
+            "start": "2026-10-31T19:00Z",
+            "gameId": "nba:401909896",
+            "market": "prop",
+            "side": "over",
+            "line": 24.5,
+            "stat": "pa",
+            "playerId": "4433627",
+            "team": "UTAH",
+            "match": "Jazz – Trail Blazers",
+            "pFinal": 0.719
+          },
+          {
             "id": "nba:401909902|prop|over|0.5|4432639|tpm",
             "league": "nba",
             "label": "J. Smith Jr. +0.5 triples",
@@ -4457,26 +4474,9 @@
             "team": "POR",
             "match": "Jazz – Trail Blazers",
             "pFinal": 0.67
-          },
-          {
-            "id": "nba:401909896|prop|over|1.5|4431736|tpm",
-            "league": "nba",
-            "label": "T. Camara +1.5 triples",
-            "list": "T. Camara +1.5 T3",
-            "odd": 1.44,
-            "start": "2026-10-31T19:00Z",
-            "gameId": "nba:401909896",
-            "market": "prop",
-            "side": "over",
-            "line": 1.5,
-            "stat": "tpm",
-            "playerId": "4431736",
-            "team": "POR",
-            "match": "Jazz – Trail Blazers",
-            "pFinal": 0.677
           }
         ],
-        "text": "🧵 NBA Picks Day · 31/10 (sigue)\n\n5.- J. Smith Jr. +0.5 T3 @1.36\n6.- D. Harper +3.5 Reb @1.42\n7.- D. Clingan +0.5 T3 @1.45\n8.- T. Camara +1.5 T3 @1.44\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 31/10 (sigue)\n\n5.- K. George +24.5 P+A @1.35\n6.- J. Smith Jr. +0.5 T3 @1.36\n7.- D. Harper +3.5 Reb @1.42\n8.- D. Clingan +0.5 T3 @1.45\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-3": {
         "id": "nba-day-3",

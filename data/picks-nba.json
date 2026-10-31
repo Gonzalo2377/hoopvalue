@@ -873,6 +873,24 @@
       "stat": "ast",
       "playerId": "4398207",
       "createdAt": "2026-10-31T11:28:30.239Z"
+    },
+    {
+      "id": "nba:401909896|prop|over|24.5|4433627|pa",
+      "gameId": "nba:401909896",
+      "start": "2026-10-31T19:00Z",
+      "match": "Jazz – Trail Blazers",
+      "market": "prop",
+      "side": "over",
+      "line": 24.5,
+      "label": "Keyonte George más de 24.5 pts+ast",
+      "odd": 1.35,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.719,
+      "safety": 0.67,
+      "tier": "B",
+      "stat": "pa",
+      "playerId": "4433627",
+      "createdAt": "2026-10-31T11:48:50.707Z"
     }
   ],
   "record": [
