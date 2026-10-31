@@ -4499,23 +4499,6 @@
             "pFinal": 0.708
           },
           {
-            "id": "nba:401909902|prop|over|29.5|4871144|pra",
-            "league": "nba",
-            "label": "A. Sengun +29.5 pts+reb+ast",
-            "list": "A. Sengun +29.5 PRA",
-            "odd": 1.41,
-            "start": "2026-11-01T00:30Z",
-            "gameId": "nba:401909902",
-            "market": "prop",
-            "side": "over",
-            "line": 29.5,
-            "stat": "pra",
-            "playerId": "4871144",
-            "team": "HOU",
-            "match": "Rockets – Thunder",
-            "pFinal": 0.688
-          },
-          {
             "id": "nba:401909896|prop|over|0.5|5105565|tpm",
             "league": "nba",
             "label": "D. Clingan +0.5 triples",
@@ -4533,24 +4516,38 @@
             "pFinal": 0.673
           },
           {
-            "id": "nba:401909902|prop|over|24.5|3202|pr",
+            "id": "nba:401909901|prop|over|3.5|5037871|reb",
             "league": "nba",
-            "label": "K. Durant +24.5 pts+reb",
-            "list": "K. Durant +24.5 P+R",
-            "odd": 1.44,
-            "start": "2026-11-01T00:30Z",
-            "gameId": "nba:401909902",
+            "label": "D. Harper +3.5 rebotes",
+            "list": "D. Harper +3.5 Reb",
+            "odd": 1.42,
+            "start": "2026-11-01T00:00Z",
+            "gameId": "nba:401909901",
             "market": "prop",
             "side": "over",
-            "line": 24.5,
-            "stat": "pr",
-            "playerId": "3202",
-            "team": "HOU",
-            "match": "Rockets – Thunder",
-            "pFinal": 0.678
+            "line": 3.5,
+            "stat": "reb",
+            "playerId": "5037871",
+            "team": "SA",
+            "match": "Spurs – Timberwolves",
+            "pFinal": 0.693
+          },
+          {
+            "id": "nba:401909898|ml|away|||",
+            "league": "nba",
+            "label": "Gana Hawks",
+            "list": "Gana Hawks",
+            "odd": 1.56,
+            "start": "2026-10-31T23:00Z",
+            "gameId": "nba:401909898",
+            "market": "ml",
+            "side": "away",
+            "line": null,
+            "match": "Pelicans – Hawks",
+            "pFinal": 0.634
           }
         ],
-        "text": "🧵 NBA Picks Day · 31/10 (sigue)\n\n9.- J. Hayes +4.5 Reb @1.37\n10.- A. Sengun +29.5 PRA @1.41\n11.- D. Clingan +0.5 T3 @1.45\n12.- K. Durant +24.5 P+R @1.44\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 31/10 (sigue)\n\n9.- J. Hayes +4.5 Reb @1.37\n10.- D. Clingan +0.5 T3 @1.45\n11.- D. Harper +3.5 Reb @1.42\n12.- Gana Hawks @1.56\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
