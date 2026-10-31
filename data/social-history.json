@@ -4323,7 +4323,7 @@
         "kind": "nba-day",
         "league": "nba",
         "reply": false,
-        "title": "NBA Picks Day · 3 picks",
+        "title": "NBA Picks Day · 2 picks",
         "postAt": "2026-10-31T17:45:00.000Z",
         "image": true,
         "picks": [
@@ -4332,28 +4332,14 @@
             "league": "nba",
             "label": "Gana Hawks",
             "list": "Gana Hawks",
-            "odd": 1.59,
+            "odd": 1.6,
             "start": "2026-10-31T23:00Z",
             "gameId": "nba:401909898",
             "market": "ml",
             "side": "away",
             "line": null,
             "match": "Pelicans – Hawks",
-            "pFinal": 0.619
-          },
-          {
-            "id": "nba:401909897|total|under|217.5||",
-            "league": "nba",
-            "label": "Menos de 217.5 puntos",
-            "list": "Under 217.5 (Hornets-76ers)",
-            "odd": 1.88,
-            "start": "2026-10-31T22:00Z",
-            "gameId": "nba:401909897",
-            "market": "total",
-            "side": "under",
-            "line": 217.5,
-            "match": "Hornets – 76ers",
-            "pFinal": 0.552
+            "pFinal": 0.617
           },
           {
             "id": "nba:401909899|spread|home|-10.5||",
@@ -4370,7 +4356,7 @@
             "pFinal": 0.555
           }
         ],
-        "text": "🏀 NBA Picks Day · 31/10\n\n1.- Gana Hawks @1.59\n2.- Under 217.5 (Hornets-76ers) @1.88\n3.- Grizzlies -10.5 @1.92\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 31/10\n\n1.- Gana Hawks @1.60\n2.- Grizzlies -10.5 @1.92\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
