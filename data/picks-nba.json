@@ -1321,6 +1321,24 @@
       "stat": "ra",
       "playerId": "5075626",
       "createdAt": "2026-10-31T15:03:26.803Z"
+    },
+    {
+      "id": "nba:401909899|prop|over|6.5|5041935|reb",
+      "gameId": "nba:401909899",
+      "start": "2026-11-01T00:00Z",
+      "match": "Grizzlies – Kings",
+      "market": "prop",
+      "side": "over",
+      "line": 6.5,
+      "label": "Cameron Boozer más de 6.5 rebotes",
+      "odd": 1.36,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.729,
+      "safety": 0.654,
+      "tier": "B",
+      "stat": "reb",
+      "playerId": "5041935",
+      "createdAt": "2026-10-31T15:23:47.838Z"
     }
   ],
   "record": [
@@ -14628,6 +14646,67 @@
       "ev": -0.034,
       "start": "2026-10-31T23:00Z",
       "createdAt": "2026-10-31T15:03:26.803Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909900|prop|over|3.5|4397475|pts",
+          "gameId": "nba:401909900",
+          "start": "2026-11-01T00:00Z",
+          "match": "Bucks – Cavaliers",
+          "market": "prop",
+          "side": "over",
+          "line": 3.5,
+          "stat": "pts",
+          "playerId": "4397475",
+          "player": "AJ Green",
+          "team": "MIL",
+          "label": "AJ Green más de 3.5 puntos",
+          "odd": 1.3,
+          "pFinal": 0.764,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909898|prop|over|7.5|4869780|pts",
+          "gameId": "nba:401909898",
+          "start": "2026-10-31T23:00Z",
+          "match": "Pelicans – Hawks",
+          "market": "prop",
+          "side": "over",
+          "line": 7.5,
+          "stat": "pts",
+          "playerId": "4869780",
+          "player": "Derik Queen",
+          "team": "NO",
+          "label": "Derik Queen más de 7.5 puntos",
+          "odd": 1.32,
+          "pFinal": 0.749,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909899|prop|over|6.5|5041935|reb",
+          "gameId": "nba:401909899",
+          "start": "2026-11-01T00:00Z",
+          "match": "Grizzlies – Kings",
+          "market": "prop",
+          "side": "over",
+          "line": 6.5,
+          "stat": "reb",
+          "playerId": "5041935",
+          "player": "Cameron Boozer",
+          "team": "MEM",
+          "label": "Cameron Boozer más de 6.5 rebotes",
+          "odd": 1.36,
+          "pFinal": 0.729,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.33,
+      "prob": 0.417,
+      "ev": -0.026,
+      "start": "2026-10-31T23:00Z",
+      "createdAt": "2026-10-31T15:23:47.838Z"
     }
   ],
   "comboRecord": [
