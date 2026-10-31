@@ -4008,44 +4008,50 @@
         "id": "combo-nba",
         "kind": "combo",
         "league": "nba",
-        "title": "Safe Parlay · NBA @2.56",
+        "title": "Safe Parlay · NBA @1.82",
         "postAt": "2026-10-31T18:00:00.000Z",
         "image": true,
-        "text": "🎯 Safe Parlay · NBA\n\n1.- Gana Hawks @1.61\n2.- Gana Rockets @1.59\n\n💰 Total odds 2.56\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
+        "text": "🎯 Safe Parlay · NBA\n\n1.- J. Jaquez Jr. +19.5 PRA @1.33\n2.- J. Smith Jr. +0.5 T3 @1.37\n\n💰 Total odds 1.82\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
         "picks": [],
         "combo": {
           "legs": [
             {
-              "id": "nba:401909898|ml|away|||",
+              "id": "nba:401909900|prop|over|19.5|4432848|pra",
               "league": "nba",
-              "label": "Gana Hawks",
-              "list": "Gana Hawks",
-              "odd": 1.61,
-              "start": "2026-10-31T23:00Z",
-              "gameId": "nba:401909898",
-              "market": "ml",
-              "side": "away",
-              "line": null,
-              "match": "Pelicans – Hawks",
-              "pFinal": 0.615
+              "label": "J. Jaquez Jr. +19.5 pts+reb+ast",
+              "list": "J. Jaquez Jr. +19.5 PRA",
+              "odd": 1.33,
+              "start": "2026-11-01T00:00Z",
+              "gameId": "nba:401909900",
+              "market": "prop",
+              "side": "over",
+              "line": 19.5,
+              "stat": "pra",
+              "playerId": "4432848",
+              "team": "MIL",
+              "match": "Bucks – Cavaliers",
+              "pFinal": 0.741
             },
             {
-              "id": "nba:401909902|ml|home|||",
+              "id": "nba:401909902|prop|over|0.5|4432639|tpm",
               "league": "nba",
-              "label": "Gana Rockets",
-              "list": "Gana Rockets",
-              "odd": 1.59,
+              "label": "J. Smith Jr. +0.5 triples",
+              "list": "J. Smith Jr. +0.5 T3",
+              "odd": 1.37,
               "start": "2026-11-01T00:30Z",
               "gameId": "nba:401909902",
-              "market": "ml",
-              "side": "home",
-              "line": null,
+              "market": "prop",
+              "side": "over",
+              "line": 0.5,
+              "stat": "tpm",
+              "playerId": "4432639",
+              "team": "HOU",
               "match": "Rockets – Thunder",
-              "pFinal": 0.656
+              "pFinal": 0.723
             }
           ],
-          "odd": 2.56,
-          "prob": 0.403
+          "odd": 1.82,
+          "prob": 0.536
         }
       },
       "summary-euroleague": {
@@ -4317,7 +4323,70 @@
         "kind": "nba-day",
         "league": "nba",
         "reply": false,
-        "title": "NBA Picks Day · 3 picks",
+        "title": "NBA Picks Day · 6 picks",
+        "postAt": "2026-10-31T17:45:00.000Z",
+        "image": true,
+        "picks": [
+          {
+            "id": "nba:401909900|prop|over|0.5|4432158|tpm",
+            "league": "nba",
+            "label": "E. Mobley +0.5 triples",
+            "list": "E. Mobley +0.5 T3",
+            "odd": 1.32,
+            "start": "2026-11-01T00:00Z",
+            "gameId": "nba:401909900",
+            "market": "prop",
+            "side": "over",
+            "line": 0.5,
+            "stat": "tpm",
+            "playerId": "4432158",
+            "team": "CLE",
+            "match": "Bucks – Cavaliers",
+            "pFinal": 0.74
+          },
+          {
+            "id": "nba:401909900|prop|over|19.5|4432848|pra",
+            "league": "nba",
+            "label": "J. Jaquez Jr. +19.5 pts+reb+ast",
+            "list": "J. Jaquez Jr. +19.5 PRA",
+            "odd": 1.33,
+            "start": "2026-11-01T00:00Z",
+            "gameId": "nba:401909900",
+            "market": "prop",
+            "side": "over",
+            "line": 19.5,
+            "stat": "pra",
+            "playerId": "4432848",
+            "team": "MIL",
+            "match": "Bucks – Cavaliers",
+            "pFinal": 0.741
+          },
+          {
+            "id": "nba:401909902|prop|over|0.5|4432639|tpm",
+            "league": "nba",
+            "label": "J. Smith Jr. +0.5 triples",
+            "list": "J. Smith Jr. +0.5 T3",
+            "odd": 1.37,
+            "start": "2026-11-01T00:30Z",
+            "gameId": "nba:401909902",
+            "market": "prop",
+            "side": "over",
+            "line": 0.5,
+            "stat": "tpm",
+            "playerId": "4432639",
+            "team": "HOU",
+            "match": "Rockets – Thunder",
+            "pFinal": 0.723
+          }
+        ],
+        "text": "🏀 NBA Picks Day · 31/10\n\n1.- E. Mobley +0.5 T3 @1.32\n2.- J. Jaquez Jr. +19.5 PRA @1.33\n3.- J. Smith Jr. +0.5 T3 @1.37\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-2": {
+        "id": "nba-day-2",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 2/2 · picks 4-6",
         "postAt": "2026-10-31T17:45:00.000Z",
         "image": true,
         "picks": [
@@ -4364,7 +4433,7 @@
             "pFinal": 0.557
           }
         ],
-        "text": "🏀 NBA Picks Day · 31/10\n\n1.- Gana Hawks @1.61\n2.- Gana Rockets @1.59\n3.- Grizzlies -10.5 @1.91\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 31/10 (sigue)\n\n4.- Gana Hawks @1.61\n5.- Gana Rockets @1.59\n6.- Grizzlies -10.5 @1.91\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
