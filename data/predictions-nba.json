@@ -523,5 +523,12 @@
     "away": "Celtics",
     "ptsH": 108,
     "ptsA": 119
+  },
+  "nba:401909904": {
+    "start": "2026-11-01T22:00Z",
+    "home": "Pacers",
+    "away": "Nets",
+    "ptsH": 120,
+    "ptsA": 115
   }
 }

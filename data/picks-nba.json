@@ -693,6 +693,24 @@
       "stat": "ra",
       "playerId": "5060701",
       "createdAt": "2026-10-31T09:46:44.992Z"
+    },
+    {
+      "id": "nba:401909904|prop|under|7.5|5174655|ra",
+      "gameId": "nba:401909904",
+      "start": "2026-11-01T22:00Z",
+      "match": "Pacers – Nets",
+      "market": "prop",
+      "side": "under",
+      "line": 7.5,
+      "label": "Chaney Johnson menos de 7.5 reb+ast",
+      "odd": 1.68,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.612,
+      "safety": 0.498,
+      "tier": "C",
+      "stat": "ra",
+      "playerId": "5174655",
+      "createdAt": "2026-10-31T10:07:07.578Z"
     }
   ],
   "record": [
