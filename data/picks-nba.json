@@ -15623,6 +15623,94 @@
       "ev": -0.044,
       "start": "2026-10-31T02:00Z",
       "createdAt": "2026-10-31T01:13:09.156Z"
+    },
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "nba:401909286|prop|over|7.5|3138196|pts",
+          "gameId": "nba:401909286",
+          "start": "2026-10-31T02:00Z",
+          "match": "Suns – Nuggets",
+          "market": "prop",
+          "side": "over",
+          "line": 7.5,
+          "stat": "pts",
+          "playerId": "3138196",
+          "player": "Cameron Johnson",
+          "team": "DEN",
+          "label": "Cameron Johnson más de 7.5 puntos",
+          "odd": 1.3,
+          "pFinal": 0.753,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909285|prop|over|14.5|4709138|pa",
+          "gameId": "nba:401909285",
+          "start": "2026-10-31T02:00Z",
+          "match": "Warriors – Lakers",
+          "market": "prop",
+          "side": "over",
+          "line": 14.5,
+          "stat": "pa",
+          "playerId": "4709138",
+          "player": "Brandin Podziemski",
+          "team": "GS",
+          "label": "Brandin Podziemski más de 14.5 pts+ast",
+          "odd": 1.3,
+          "pFinal": 0.758,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.69,
+      "prob": 0.571,
+      "ev": -0.035,
+      "start": "2026-10-31T02:00Z",
+      "createdAt": "2026-10-31T01:33:30.365Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "nba:401909285|prop|over|14.5|4709138|pa",
+          "gameId": "nba:401909285",
+          "start": "2026-10-31T02:00Z",
+          "match": "Warriors – Lakers",
+          "market": "prop",
+          "side": "over",
+          "line": 14.5,
+          "stat": "pa",
+          "playerId": "4709138",
+          "player": "Brandin Podziemski",
+          "team": "GS",
+          "label": "Brandin Podziemski más de 14.5 pts+ast",
+          "odd": 1.3,
+          "pFinal": 0.758,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909286|prop|over|11.5|4437244|pts",
+          "gameId": "nba:401909286",
+          "start": "2026-10-31T02:00Z",
+          "match": "Suns – Nuggets",
+          "market": "prop",
+          "side": "over",
+          "line": 11.5,
+          "stat": "pts",
+          "playerId": "4437244",
+          "player": "Jalen Green",
+          "team": "PHX",
+          "label": "Jalen Green más de 11.5 puntos",
+          "odd": 1.33,
+          "pFinal": 0.734,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.73,
+      "prob": 0.556,
+      "ev": -0.038,
+      "start": "2026-10-31T02:00Z",
+      "createdAt": "2026-10-31T01:33:30.365Z"
     }
   ],
   "comboRecord": [

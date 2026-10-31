@@ -4036,10 +4036,10 @@
         "id": "combo-nba",
         "kind": "combo",
         "league": "nba",
-        "title": "Safe Parlay · NBA @1.72",
+        "title": "Safe Parlay · NBA @1.69",
         "postAt": "2026-10-31T18:00:00.000Z",
         "image": true,
-        "text": "🎯 Safe Parlay · NBA\n\n1.- C. Johnson +7.5 Pts @1.30\n2.- B. Podziemski +19.5 PRA @1.32\n\n💰 Total odds 1.72\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
+        "text": "🎯 Safe Parlay · NBA\n\n1.- C. Johnson +7.5 Pts @1.30\n2.- B. Podziemski +14.5 P+A @1.30\n\n💰 Total odds 1.69\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
         "picks": [],
         "combo": {
           "legs": [
@@ -4061,25 +4061,25 @@
               "pFinal": 0.753
             },
             {
-              "id": "nba:401909285|prop|over|19.5|4709138|pra",
+              "id": "nba:401909285|prop|over|14.5|4709138|pa",
               "league": "nba",
-              "label": "B. Podziemski +19.5 pts+reb+ast",
-              "list": "B. Podziemski +19.5 PRA",
-              "odd": 1.32,
+              "label": "B. Podziemski +14.5 pts+ast",
+              "list": "B. Podziemski +14.5 P+A",
+              "odd": 1.3,
               "start": "2026-10-31T02:00Z",
               "gameId": "nba:401909285",
               "market": "prop",
               "side": "over",
-              "line": 19.5,
-              "stat": "pra",
+              "line": 14.5,
+              "stat": "pa",
               "playerId": "4709138",
               "team": "GS",
               "match": "Warriors – Lakers",
-              "pFinal": 0.736
+              "pFinal": 0.758
             }
           ],
-          "odd": 1.72,
-          "prob": 0.554
+          "odd": 1.69,
+          "prob": 0.571
         }
       },
       "summary-euroleague": {
@@ -4356,24 +4356,24 @@
             "pFinal": 0.734
           },
           {
-            "id": "nba:401909285|prop|over|19.5|4709138|pra",
+            "id": "nba:401909285|prop|over|14.5|4709138|pa",
             "league": "nba",
-            "label": "B. Podziemski +19.5 pts+reb+ast",
-            "list": "B. Podziemski +19.5 PRA",
-            "odd": 1.32,
+            "label": "B. Podziemski +14.5 pts+ast",
+            "list": "B. Podziemski +14.5 P+A",
+            "odd": 1.3,
             "start": "2026-10-31T02:00Z",
             "gameId": "nba:401909285",
             "market": "prop",
             "side": "over",
-            "line": 19.5,
-            "stat": "pra",
+            "line": 14.5,
+            "stat": "pa",
             "playerId": "4709138",
             "team": "GS",
             "match": "Warriors – Lakers",
-            "pFinal": 0.736
+            "pFinal": 0.758
           }
         ],
-        "text": "🏀 NBA Picks Day · 31/10\n\n1.- C. Johnson +7.5 Pts @1.30\n2.- G. Niang +3.5 Pts @1.33\n3.- B. Podziemski +19.5 PRA @1.32\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 31/10\n\n1.- C. Johnson +7.5 Pts @1.30\n2.- G. Niang +3.5 Pts @1.33\n3.- B. Podziemski +14.5 P+A @1.30\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-2": {
         "id": "nba-day-2",
