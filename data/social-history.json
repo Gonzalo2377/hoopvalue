@@ -4332,14 +4332,14 @@
             "league": "nba",
             "label": "Gana Hawks",
             "list": "Gana Hawks",
-            "odd": 1.6,
+            "odd": 1.61,
             "start": "2026-10-31T23:00Z",
             "gameId": "nba:401909898",
             "market": "ml",
             "side": "away",
             "line": null,
             "match": "Pelicans – Hawks",
-            "pFinal": 0.617
+            "pFinal": 0.616
           },
           {
             "id": "nba:401909899|spread|home|-10.5||",
@@ -4356,7 +4356,7 @@
             "pFinal": 0.555
           }
         ],
-        "text": "🏀 NBA Picks Day · 31/10\n\n1.- Gana Hawks @1.60\n2.- Grizzlies -10.5 @1.92\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 31/10\n\n1.- Gana Hawks @1.61\n2.- Grizzlies -10.5 @1.92\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
