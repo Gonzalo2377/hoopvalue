@@ -530,5 +530,12 @@
     "away": "Nets",
     "ptsH": 120,
     "ptsA": 115
+  },
+  "nba:401909905": {
+    "start": "2026-11-02T01:30Z",
+    "home": "Warriors",
+    "away": "Clippers",
+    "ptsH": 116,
+    "ptsA": 106
   }
 }
