@@ -493,21 +493,21 @@
     "start": "2026-11-01T00:00Z",
     "home": "Grizzlies",
     "away": "Kings",
-    "ptsH": 125,
+    "ptsH": 124,
     "ptsA": 100
   },
   "nba:401909900": {
     "start": "2026-11-01T00:00Z",
     "home": "Bucks",
     "away": "Cavaliers",
-    "ptsH": 115,
-    "ptsA": 120
+    "ptsH": 116,
+    "ptsA": 121
   },
   "nba:401909901": {
     "start": "2026-11-01T00:00Z",
     "home": "Spurs",
     "away": "Timberwolves",
-    "ptsH": 115,
+    "ptsH": 114,
     "ptsA": 108
   },
   "nba:401909902": {
