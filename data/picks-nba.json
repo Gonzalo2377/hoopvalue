@@ -12744,6 +12744,42 @@
       "ev": 0.113,
       "start": "2026-10-31T19:00Z",
       "createdAt": "2026-10-31T01:53:53.625Z"
+    },
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "nba:401909898|ml|away|||",
+          "gameId": "nba:401909898",
+          "start": "2026-10-31T23:00Z",
+          "match": "Pelicans – Hawks",
+          "market": "ml",
+          "side": "away",
+          "line": null,
+          "label": "Gana Hawks",
+          "odd": 1.61,
+          "pFinal": 0.615,
+          "book": "unibet"
+        },
+        {
+          "id": "nba:401909902|ml|home|||",
+          "gameId": "nba:401909902",
+          "start": "2026-11-01T00:30Z",
+          "match": "Rockets – Thunder",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana Rockets",
+          "odd": 1.59,
+          "pFinal": 0.656,
+          "book": "draftkings"
+        }
+      ],
+      "odd": 2.56,
+      "prob": 0.403,
+      "ev": 0.033,
+      "start": "2026-10-31T23:00Z",
+      "createdAt": "2026-10-31T05:17:13.785Z"
     }
   ],
   "comboRecord": [

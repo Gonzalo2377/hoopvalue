@@ -3927,8 +3927,8 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
             "pred": [
-              102,
-              101
+              101,
+              105
             ]
           },
           {
@@ -3997,61 +3997,55 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
             "pred": [
-              108,
-              102
+              116,
+              100
             ]
           }
         ],
-        "text": "🔮 EuroPicks Score Predictions · NBA · 31/10\n\nUTAH 115-118 POR\nCHA 102-101 PHI\nNO 113-121 ATL\nMEM 125-100 SAC\nMIL 116-121 CLE\nSA 114-108 MIN\nHOU 108-102 OKC\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
+        "text": "🔮 EuroPicks Score Predictions · NBA · 31/10\n\nUTAH 115-118 POR\nCHA 101-105 PHI\nNO 113-121 ATL\nMEM 125-100 SAC\nMIL 116-121 CLE\nSA 114-108 MIN\nHOU 116-100 OKC\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
       },
       "combo-nba": {
         "id": "combo-nba",
         "kind": "combo",
         "league": "nba",
-        "title": "Safe Parlay · NBA @1.69",
+        "title": "Safe Parlay · NBA @2.56",
         "postAt": "2026-10-31T18:00:00.000Z",
         "image": true,
-        "text": "🎯 Safe Parlay · NBA\n\n1.- Y. Lendeborg +15.5 Pts @1.30\n2.- C. Johnson +7.5 Pts @1.30\n\n💰 Total odds 1.69\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
+        "text": "🎯 Safe Parlay · NBA\n\n1.- Gana Hawks @1.61\n2.- Gana Rockets @1.59\n\n💰 Total odds 2.56\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
         "picks": [],
         "combo": {
           "legs": [
             {
-              "id": "nba:401909285|prop|over|15.5|5175737|pts",
+              "id": "nba:401909898|ml|away|||",
               "league": "nba",
-              "label": "Y. Lendeborg +15.5 puntos",
-              "list": "Y. Lendeborg +15.5 Pts",
-              "odd": 1.3,
-              "start": "2026-10-31T02:00Z",
-              "gameId": "nba:401909285",
-              "market": "prop",
-              "side": "over",
-              "line": 15.5,
-              "stat": "pts",
-              "playerId": "5175737",
-              "team": "GS",
-              "match": "Warriors – Lakers",
-              "pFinal": 0.746
+              "label": "Gana Hawks",
+              "list": "Gana Hawks",
+              "odd": 1.61,
+              "start": "2026-10-31T23:00Z",
+              "gameId": "nba:401909898",
+              "market": "ml",
+              "side": "away",
+              "line": null,
+              "match": "Pelicans – Hawks",
+              "pFinal": 0.615
             },
             {
-              "id": "nba:401909286|prop|over|7.5|3138196|pts",
+              "id": "nba:401909902|ml|home|||",
               "league": "nba",
-              "label": "C. Johnson +7.5 puntos",
-              "list": "C. Johnson +7.5 Pts",
-              "odd": 1.3,
-              "start": "2026-10-31T02:00Z",
-              "gameId": "nba:401909286",
-              "market": "prop",
-              "side": "over",
-              "line": 7.5,
-              "stat": "pts",
-              "playerId": "3138196",
-              "team": "DEN",
-              "match": "Suns – Nuggets",
-              "pFinal": 0.753
+              "label": "Gana Rockets",
+              "list": "Gana Rockets",
+              "odd": 1.59,
+              "start": "2026-11-01T00:30Z",
+              "gameId": "nba:401909902",
+              "market": "ml",
+              "side": "home",
+              "line": null,
+              "match": "Rockets – Thunder",
+              "pFinal": 0.656
             }
           ],
-          "odd": 1.69,
-          "prob": 0.562
+          "odd": 2.56,
+          "prob": 0.403
         }
       },
       "summary-euroleague": {
@@ -4328,20 +4322,6 @@
         "image": true,
         "picks": [
           {
-            "id": "nba:401909902|ml|home|||",
-            "league": "nba",
-            "label": "Gana Rockets",
-            "list": "Gana Rockets",
-            "odd": 1.59,
-            "start": "2026-11-01T00:30Z",
-            "gameId": "nba:401909902",
-            "market": "ml",
-            "side": "home",
-            "line": null,
-            "match": "Rockets – Thunder",
-            "pFinal": 0.618
-          },
-          {
             "id": "nba:401909898|ml|away|||",
             "league": "nba",
             "label": "Gana Hawks",
@@ -4354,6 +4334,20 @@
             "line": null,
             "match": "Pelicans – Hawks",
             "pFinal": 0.615
+          },
+          {
+            "id": "nba:401909902|ml|home|||",
+            "league": "nba",
+            "label": "Gana Rockets",
+            "list": "Gana Rockets",
+            "odd": 1.59,
+            "start": "2026-11-01T00:30Z",
+            "gameId": "nba:401909902",
+            "market": "ml",
+            "side": "home",
+            "line": null,
+            "match": "Rockets – Thunder",
+            "pFinal": 0.656
           },
           {
             "id": "nba:401909899|spread|home|-10.5||",
@@ -4370,7 +4364,7 @@
             "pFinal": 0.557
           }
         ],
-        "text": "🏀 NBA Picks Day · 31/10\n\n1.- Gana Rockets @1.59\n2.- Gana Hawks @1.61\n3.- Grizzlies -10.5 @1.91\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 31/10\n\n1.- Gana Hawks @1.61\n2.- Gana Rockets @1.59\n3.- Grizzlies -10.5 @1.91\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
