@@ -4426,7 +4426,7 @@
             "league": "nba",
             "label": "J. Champagnie +1.5 triples",
             "list": "J. Champagnie +1.5 T3",
-            "odd": 1.52,
+            "odd": 1.5,
             "start": "2026-11-01T00:00Z",
             "gameId": "nba:401909901",
             "market": "prop",
@@ -4436,7 +4436,7 @@
             "playerId": "4592479",
             "team": "SA",
             "match": "Spurs – Timberwolves",
-            "pFinal": 0.649
+            "pFinal": 0.656
           },
           {
             "id": "nba:401909902|ml|home|||",
@@ -4467,7 +4467,7 @@
             "pFinal": 0.557
           }
         ],
-        "text": "🧵 NBA Picks Day · 31/10 (sigue)\n\n5.- Gana Hawks @1.61\n6.- J. Champagnie +1.5 T3 @1.52\n7.- Gana Rockets @1.62\n8.- Grizzlies -10.5 @1.91\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 31/10 (sigue)\n\n5.- Gana Hawks @1.61\n6.- J. Champagnie +1.5 T3 @1.50\n7.- Gana Rockets @1.62\n8.- Grizzlies -10.5 @1.91\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
