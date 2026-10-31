@@ -891,6 +891,24 @@
       "stat": "pa",
       "playerId": "4433627",
       "createdAt": "2026-10-31T11:48:50.707Z"
+    },
+    {
+      "id": "nba:401909896|prop|over|17.5|4433627|pts",
+      "gameId": "nba:401909896",
+      "start": "2026-10-31T19:00Z",
+      "match": "Jazz – Trail Blazers",
+      "market": "prop",
+      "side": "over",
+      "line": 17.5,
+      "label": "Keyonte George más de 17.5 puntos",
+      "odd": 1.3,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.75,
+      "safety": 0.689,
+      "tier": "A",
+      "stat": "pts",
+      "playerId": "4433627",
+      "createdAt": "2026-10-31T12:09:11.199Z"
     }
   ],
   "record": [
@@ -13465,6 +13483,50 @@
       "ev": -0.04,
       "start": "2026-10-31T23:00Z",
       "createdAt": "2026-10-31T11:28:30.239Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "nba:401909896|prop|over|17.5|4433627|pts",
+          "gameId": "nba:401909896",
+          "start": "2026-10-31T19:00Z",
+          "match": "Jazz – Trail Blazers",
+          "market": "prop",
+          "side": "over",
+          "line": 17.5,
+          "stat": "pts",
+          "playerId": "4433627",
+          "player": "Keyonte George",
+          "team": "UTAH",
+          "label": "Keyonte George más de 17.5 puntos",
+          "odd": 1.3,
+          "pFinal": 0.75,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909898|prop|over|7.5|4869780|pts",
+          "gameId": "nba:401909898",
+          "start": "2026-10-31T23:00Z",
+          "match": "Pelicans – Hawks",
+          "market": "prop",
+          "side": "over",
+          "line": 7.5,
+          "stat": "pts",
+          "playerId": "4869780",
+          "player": "Derik Queen",
+          "team": "NO",
+          "label": "Derik Queen más de 7.5 puntos",
+          "odd": 1.3,
+          "pFinal": 0.758,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.69,
+      "prob": 0.569,
+      "ev": -0.039,
+      "start": "2026-10-31T19:00Z",
+      "createdAt": "2026-10-31T12:09:11.199Z"
     }
   ],
   "comboRecord": [
