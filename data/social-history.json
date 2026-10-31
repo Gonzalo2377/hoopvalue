@@ -4443,14 +4443,14 @@
             "league": "nba",
             "label": "Gana Rockets",
             "list": "Gana Rockets",
-            "odd": 1.59,
+            "odd": 1.62,
             "start": "2026-11-01T00:30Z",
             "gameId": "nba:401909902",
             "market": "ml",
             "side": "home",
             "line": null,
             "match": "Rockets – Thunder",
-            "pFinal": 0.642
+            "pFinal": 0.638
           },
           {
             "id": "nba:401909899|spread|home|-10.5||",
@@ -4467,7 +4467,7 @@
             "pFinal": 0.552
           }
         ],
-        "text": "🧵 NBA Picks Day · 31/10 (sigue)\n\n5.- Gana Hawks @1.61\n6.- J. Champagnie +1.5 T3 @1.52\n7.- Gana Rockets @1.59\n8.- Grizzlies -10.5 @1.91\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 31/10 (sigue)\n\n5.- Gana Hawks @1.61\n6.- J. Champagnie +1.5 T3 @1.52\n7.- Gana Rockets @1.62\n8.- Grizzlies -10.5 @1.91\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
