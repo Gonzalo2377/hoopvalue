@@ -1743,6 +1743,24 @@
       "stat": "pts",
       "playerId": "2993874",
       "createdAt": "2026-10-31T22:53:38.228Z"
+    },
+    {
+      "id": "nba:401909901|prop|over|4.5|4431671|reb",
+      "gameId": "nba:401909901",
+      "start": "2026-11-01T00:00Z",
+      "match": "Spurs – Timberwolves",
+      "market": "prop",
+      "side": "over",
+      "line": 4.5,
+      "label": "Jaden McDaniels más de 4.5 rebotes",
+      "odd": 1.5,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.649,
+      "safety": 0.609,
+      "tier": "C",
+      "stat": "reb",
+      "playerId": "4431671",
+      "createdAt": "2026-10-31T23:13:56.737Z"
     }
   ],
   "record": [
@@ -15864,6 +15882,67 @@
       "ev": -0.052,
       "start": "2026-11-01T00:00Z",
       "createdAt": "2026-10-31T22:53:38.228Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909900|prop|over|11.5|4432848|pts",
+          "gameId": "nba:401909900",
+          "start": "2026-11-01T00:00Z",
+          "match": "Bucks – Cavaliers",
+          "market": "prop",
+          "side": "over",
+          "line": 11.5,
+          "stat": "pts",
+          "playerId": "4432848",
+          "player": "Jaime Jaquez Jr.",
+          "team": "MIL",
+          "label": "Jaime Jaquez Jr. más de 11.5 puntos",
+          "odd": 1.3,
+          "pFinal": 0.755,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909905|prop|under|2.5|3936099|tpm",
+          "gameId": "nba:401909905",
+          "start": "2026-11-02T01:30Z",
+          "match": "Warriors – Clippers",
+          "market": "prop",
+          "side": "under",
+          "line": 2.5,
+          "stat": "tpm",
+          "playerId": "3936099",
+          "player": "Derrick Jones Jr.",
+          "team": "LAC",
+          "label": "Derrick Jones Jr. menos de 2.5 triples",
+          "odd": 1.75,
+          "pFinal": 0.571,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909906|prop|under|10.5|2993874|pts",
+          "gameId": "nba:401909906",
+          "start": "2026-11-02T02:00Z",
+          "match": "Lakers – Raptors",
+          "market": "prop",
+          "side": "under",
+          "line": 10.5,
+          "stat": "pts",
+          "playerId": "2993874",
+          "player": "Kyle Anderson",
+          "team": "TOR",
+          "label": "Kyle Anderson menos de 10.5 puntos",
+          "odd": 1.79,
+          "pFinal": 0.612,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 4.07,
+      "prob": 0.264,
+      "ev": 0.074,
+      "start": "2026-11-01T00:00Z",
+      "createdAt": "2026-10-31T23:13:56.737Z"
     }
   ],
   "comboRecord": [
