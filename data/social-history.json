@@ -4572,8 +4572,8 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
             "pred": [
-              125,
-              101
+              118,
+              103
             ]
           },
           {
@@ -4675,7 +4675,7 @@
             ]
           }
         ],
-        "text": "🔮 EuroPicks Score Predictions · NBA · 01/11\n\nMEM 125-101 SAC\nMIL 116-121 CLE\nSA 114-107 MIN\nHOU 109-102 OKC\nORL 108-119 BOS\nIND 120-115 BKN\nGS 110-108 LAC\nLAL 115-114 TOR\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
+        "text": "🔮 EuroPicks Score Predictions · NBA · 01/11\n\nMEM 118-103 SAC\nMIL 116-121 CLE\nSA 114-107 MIN\nHOU 109-102 OKC\nORL 108-119 BOS\nIND 120-115 BKN\nGS 110-108 LAC\nLAL 115-114 TOR\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
       },
       "combo-nba": {
         "id": "combo-nba",
@@ -4700,7 +4700,7 @@
               "side": "home",
               "line": null,
               "match": "Grizzlies – Kings",
-              "pFinal": 0.76
+              "pFinal": 0.744
             },
             {
               "id": "nba:401909900|prop|over|11.5|4432848|pts",
@@ -4721,7 +4721,7 @@
             }
           ],
           "odd": 1.74,
-          "prob": 0.574
+          "prob": 0.562
         }
       },
       "summary-nba": {
@@ -4849,41 +4849,24 @@
             "side": "home",
             "line": null,
             "match": "Grizzlies – Kings",
-            "pFinal": 0.76
+            "pFinal": 0.744
           },
           {
-            "id": "nba:401909899|prop|over|19.5|3064440|pa",
+            "id": "nba:401909900|prop|over|1.5|4395725|tpm",
             "league": "nba",
-            "label": "Z. LaVine +19.5 pts+ast",
-            "list": "Z. LaVine +19.5 P+A",
-            "odd": 1.3,
-            "start": "2026-11-01T00:00Z",
-            "gameId": "nba:401909899",
-            "market": "prop",
-            "side": "over",
-            "line": 19.5,
-            "stat": "pa",
-            "playerId": "3064440",
-            "team": "SAC",
-            "match": "Grizzlies – Kings",
-            "pFinal": 0.747
-          },
-          {
-            "id": "nba:401909900|prop|over|4.5|5214640|ra",
-            "league": "nba",
-            "label": "K. Jakucionis +4.5 reb+ast",
-            "list": "K. Jakucionis +4.5 R+A",
+            "label": "T. Herro +1.5 triples",
+            "list": "T. Herro +1.5 T3",
             "odd": 1.3,
             "start": "2026-11-01T00:00Z",
             "gameId": "nba:401909900",
             "market": "prop",
             "side": "over",
-            "line": 4.5,
-            "stat": "ra",
-            "playerId": "5214640",
+            "line": 1.5,
+            "stat": "tpm",
+            "playerId": "4395725",
             "team": "MIL",
             "match": "Bucks – Cavaliers",
-            "pFinal": 0.751
+            "pFinal": 0.747
           },
           {
             "id": "nba:401909900|prop|over|11.5|4432848|pts",
@@ -4901,9 +4884,26 @@
             "team": "MIL",
             "match": "Bucks – Cavaliers",
             "pFinal": 0.755
+          },
+          {
+            "id": "nba:401909899|prop|over|19.5|3064440|pr",
+            "league": "nba",
+            "label": "Z. LaVine +19.5 pts+reb",
+            "list": "Z. LaVine +19.5 P+R",
+            "odd": 1.32,
+            "start": "2026-11-01T00:00Z",
+            "gameId": "nba:401909899",
+            "market": "prop",
+            "side": "over",
+            "line": 19.5,
+            "stat": "pr",
+            "playerId": "3064440",
+            "team": "SAC",
+            "match": "Grizzlies – Kings",
+            "pFinal": 0.737
           }
         ],
-        "text": "🏀 NBA Picks Day · 01/11\n\n1.- Gana Grizzlies @1.34\n2.- Z. LaVine +19.5 P+A @1.30\n3.- K. Jakucionis +4.5 R+A @1.30\n4.- J. Jaquez Jr. +11.5 Pts @1.30\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 01/11\n\n1.- Gana Grizzlies @1.34\n2.- T. Herro +1.5 T3 @1.30\n3.- J. Jaquez Jr. +11.5 Pts @1.30\n4.- Z. LaVine +19.5 P+R @1.32\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-2": {
         "id": "nba-day-2",
@@ -4915,21 +4915,21 @@
         "image": true,
         "picks": [
           {
-            "id": "nba:401909899|prop|over|9.5|4431679|pts",
+            "id": "nba:401909899|prop|over|6.5|5041935|reb",
             "league": "nba",
-            "label": "P. Achiuwa +9.5 puntos",
-            "list": "P. Achiuwa +9.5 Pts",
-            "odd": 1.35,
+            "label": "C. Boozer +6.5 rebotes",
+            "list": "C. Boozer +6.5 Reb",
+            "odd": 1.34,
             "start": "2026-11-01T00:00Z",
             "gameId": "nba:401909899",
             "market": "prop",
             "side": "over",
-            "line": 9.5,
-            "stat": "pts",
-            "playerId": "4431679",
-            "team": "SAC",
+            "line": 6.5,
+            "stat": "reb",
+            "playerId": "5041935",
+            "team": "MEM",
             "match": "Grizzlies – Kings",
-            "pFinal": 0.721
+            "pFinal": 0.737
           },
           {
             "id": "nba:401909901|prop|over|3.5|5037871|reb",
@@ -4949,21 +4949,21 @@
             "pFinal": 0.708
           },
           {
-            "id": "nba:401909902|prop|over|29.5|4871144|pra",
+            "id": "nba:401909902|prop|over|15.5|4871144|pts",
             "league": "nba",
-            "label": "A. Sengun +29.5 pts+reb+ast",
-            "list": "A. Sengun +29.5 PRA",
-            "odd": 1.41,
+            "label": "A. Sengun +15.5 puntos",
+            "list": "A. Sengun +15.5 Pts",
+            "odd": 1.4,
             "start": "2026-11-01T00:30Z",
             "gameId": "nba:401909902",
             "market": "prop",
             "side": "over",
-            "line": 29.5,
-            "stat": "pra",
+            "line": 15.5,
+            "stat": "pts",
             "playerId": "4871144",
             "team": "HOU",
             "match": "Rockets – Thunder",
-            "pFinal": 0.688
+            "pFinal": 0.694
           },
           {
             "id": "nba:401909901|prop|over|4.5|4431671|reb",
@@ -4983,7 +4983,7 @@
             "pFinal": 0.649
           }
         ],
-        "text": "🧵 NBA Picks Day · 01/11 (sigue)\n\n5.- P. Achiuwa +9.5 Pts @1.35\n6.- D. Harper +3.5 Reb @1.38\n7.- A. Sengun +29.5 PRA @1.41\n8.- J. McDaniels +4.5 Reb @1.50\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 01/11 (sigue)\n\n5.- C. Boozer +6.5 Reb @1.34\n6.- D. Harper +3.5 Reb @1.38\n7.- A. Sengun +15.5 Pts @1.40\n8.- J. McDaniels +4.5 Reb @1.50\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-3": {
         "id": "nba-day-3",
@@ -5023,14 +5023,14 @@
             "side": "home",
             "line": null,
             "match": "Rockets – Thunder",
-            "pFinal": 0.595
+            "pFinal": 0.587
           },
           {
             "id": "nba:401909905|prop|under|2.5|3936099|tpm",
             "league": "nba",
             "label": "D. Jones Jr. −2.5 triples",
             "list": "D. Jones Jr. −2.5 T3",
-            "odd": 1.76,
+            "odd": 1.75,
             "start": "2026-11-02T01:30Z",
             "gameId": "nba:401909905",
             "market": "prop",
@@ -5040,14 +5040,14 @@
             "playerId": "3936099",
             "team": "LAC",
             "match": "Warriors – Clippers",
-            "pFinal": 0.568
+            "pFinal": 0.571
           },
           {
             "id": "nba:401909906|prop|under|10.5|2993874|pts",
             "league": "nba",
             "label": "K. Anderson −10.5 puntos",
             "list": "K. Anderson −10.5 Pts",
-            "odd": 1.79,
+            "odd": 1.8,
             "start": "2026-11-02T02:00Z",
             "gameId": "nba:401909906",
             "market": "prop",
@@ -5057,10 +5057,10 @@
             "playerId": "2993874",
             "team": "TOR",
             "match": "Lakers – Raptors",
-            "pFinal": 0.612
+            "pFinal": 0.61
           }
         ],
-        "text": "🧵 NBA Picks Day · 01/11 (sigue)\n\n9.- T. Eason +4.5 Reb @1.47\n10.- Gana Rockets @1.70\n11.- D. Jones Jr. −2.5 T3 @1.76\n12.- K. Anderson −10.5 Pts @1.79\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 01/11 (sigue)\n\n9.- T. Eason +4.5 Reb @1.47\n10.- Gana Rockets @1.70\n11.- D. Jones Jr. −2.5 T3 @1.75\n12.- K. Anderson −10.5 Pts @1.80\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
