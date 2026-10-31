@@ -747,6 +747,24 @@
       "stat": "tpm",
       "playerId": "3032979",
       "createdAt": "2026-10-31T10:27:28.113Z"
+    },
+    {
+      "id": "nba:401909897|prop|under|6.5|4433287|reb",
+      "gameId": "nba:401909897",
+      "start": "2026-10-31T22:00Z",
+      "match": "Hornets – 76ers",
+      "market": "prop",
+      "side": "under",
+      "line": 6.5,
+      "label": "Brandon Miller menos de 6.5 rebotes",
+      "odd": 1.62,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.599,
+      "safety": 0.568,
+      "tier": "C",
+      "stat": "reb",
+      "playerId": "4433287",
+      "createdAt": "2026-10-31T10:47:48.067Z"
     }
   ],
   "record": [

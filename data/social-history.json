@@ -3970,7 +3970,7 @@
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
             "pred": [
               116,
-              121
+              120
             ]
           },
           {
@@ -4002,7 +4002,7 @@
             ]
           }
         ],
-        "text": "🔮 EuroPicks Score Predictions · NBA · 31/10\n\nUTAH 115-118 POR\nCHA 101-105 PHI\nNO 113-121 ATL\nMEM 125-100 SAC\nMIL 116-121 CLE\nSA 114-108 MIN\nHOU 116-100 OKC\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
+        "text": "🔮 EuroPicks Score Predictions · NBA · 31/10\n\nUTAH 115-118 POR\nCHA 101-105 PHI\nNO 113-121 ATL\nMEM 125-100 SAC\nMIL 116-120 CLE\nSA 114-108 MIN\nHOU 116-100 OKC\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
       },
       "combo-nba": {
         "id": "combo-nba",
@@ -4446,14 +4446,14 @@
             "league": "nba",
             "label": "Gana Hawks",
             "list": "Gana Hawks",
-            "odd": 1.61,
+            "odd": 1.6,
             "start": "2026-10-31T23:00Z",
             "gameId": "nba:401909898",
             "market": "ml",
             "side": "away",
             "line": null,
             "match": "Pelicans – Hawks",
-            "pFinal": 0.62
+            "pFinal": 0.621
           },
           {
             "id": "nba:401909901|prop|over|1.5|4592479|tpm",
@@ -4473,7 +4473,7 @@
             "pFinal": 0.649
           }
         ],
-        "text": "🧵 NBA Picks Day · 31/10 (sigue)\n\n5.- D. Clingan +0.5 T3 @1.45\n6.- T. Camara +1.5 T3 @1.45\n7.- Gana Hawks @1.61\n8.- J. Champagnie +1.5 T3 @1.52\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 31/10 (sigue)\n\n5.- D. Clingan +0.5 T3 @1.45\n6.- T. Camara +1.5 T3 @1.45\n7.- Gana Hawks @1.60\n8.- J. Champagnie +1.5 T3 @1.52\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-3": {
         "id": "nba-day-3",
@@ -4484,23 +4484,6 @@
         "postAt": "2026-10-31T17:45:00.000Z",
         "image": true,
         "picks": [
-          {
-            "id": "nba:401909897|prop|under|2.5|4396971|ast",
-            "league": "nba",
-            "label": "N. Reid −2.5 asistencias",
-            "list": "N. Reid −2.5 Ast",
-            "odd": 1.57,
-            "start": "2026-10-31T22:00Z",
-            "gameId": "nba:401909897",
-            "market": "prop",
-            "side": "under",
-            "line": 2.5,
-            "stat": "ast",
-            "playerId": "4396971",
-            "team": "CHA",
-            "match": "Hornets – 76ers",
-            "pFinal": 0.622
-          },
           {
             "id": "nba:401909897|prop|under|1.5|3032979|tpm",
             "league": "nba",
@@ -4517,6 +4500,23 @@
             "team": "CHA",
             "match": "Hornets – 76ers",
             "pFinal": 0.602
+          },
+          {
+            "id": "nba:401909897|prop|under|6.5|4433287|reb",
+            "league": "nba",
+            "label": "B. Miller −6.5 rebotes",
+            "list": "B. Miller −6.5 Reb",
+            "odd": 1.62,
+            "start": "2026-10-31T22:00Z",
+            "gameId": "nba:401909897",
+            "market": "prop",
+            "side": "under",
+            "line": 6.5,
+            "stat": "reb",
+            "playerId": "4433287",
+            "team": "CHA",
+            "match": "Hornets – 76ers",
+            "pFinal": 0.599
           },
           {
             "id": "nba:401909902|ml|home|||",
@@ -4547,7 +4547,7 @@
             "pFinal": 0.557
           }
         ],
-        "text": "🧵 NBA Picks Day · 31/10 (sigue)\n\n9.- N. Reid −2.5 Ast @1.57\n10.- D. Schroder −1.5 T3 @1.62\n11.- Gana Rockets @1.62\n12.- Grizzlies -10.5 @1.91\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 31/10 (sigue)\n\n9.- D. Schroder −1.5 T3 @1.62\n10.- B. Miller −6.5 Reb @1.62\n11.- Gana Rockets @1.62\n12.- Grizzlies -10.5 @1.91\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
