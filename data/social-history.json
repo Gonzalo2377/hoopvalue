@@ -4008,10 +4008,10 @@
         "id": "combo-nba",
         "kind": "combo",
         "league": "nba",
-        "title": "Safe Parlay · NBA @1.82",
+        "title": "Safe Parlay · NBA @1.80",
         "postAt": "2026-10-31T18:00:00.000Z",
         "image": true,
-        "text": "🎯 Safe Parlay · NBA\n\n1.- J. Jaquez Jr. +19.5 PRA @1.33\n2.- J. Smith Jr. +0.5 T3 @1.37\n\n💰 Total odds 1.82\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
+        "text": "🎯 Safe Parlay · NBA\n\n1.- J. Jaquez Jr. +19.5 PRA @1.32\n2.- J. Smith Jr. +0.5 T3 @1.36\n\n💰 Total odds 1.80\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
         "picks": [],
         "combo": {
           "legs": [
@@ -4020,7 +4020,7 @@
               "league": "nba",
               "label": "J. Jaquez Jr. +19.5 pts+reb+ast",
               "list": "J. Jaquez Jr. +19.5 PRA",
-              "odd": 1.33,
+              "odd": 1.32,
               "start": "2026-11-01T00:00Z",
               "gameId": "nba:401909900",
               "market": "prop",
@@ -4030,14 +4030,14 @@
               "playerId": "4432848",
               "team": "MIL",
               "match": "Bucks – Cavaliers",
-              "pFinal": 0.741
+              "pFinal": 0.745
             },
             {
               "id": "nba:401909902|prop|over|0.5|4432639|tpm",
               "league": "nba",
               "label": "J. Smith Jr. +0.5 triples",
               "list": "J. Smith Jr. +0.5 T3",
-              "odd": 1.37,
+              "odd": 1.36,
               "start": "2026-11-01T00:30Z",
               "gameId": "nba:401909902",
               "market": "prop",
@@ -4047,11 +4047,11 @@
               "playerId": "4432639",
               "team": "HOU",
               "match": "Rockets – Thunder",
-              "pFinal": 0.723
+              "pFinal": 0.727
             }
           ],
-          "odd": 1.82,
-          "prob": 0.536
+          "odd": 1.8,
+          "prob": 0.542
         }
       },
       "summary-euroleague": {
@@ -4323,7 +4323,7 @@
         "kind": "nba-day",
         "league": "nba",
         "reply": false,
-        "title": "NBA Picks Day · 8 picks",
+        "title": "NBA Picks Day · 11 picks",
         "postAt": "2026-10-31T17:45:00.000Z",
         "image": true,
         "picks": [
@@ -4349,7 +4349,7 @@
             "league": "nba",
             "label": "J. Jaquez Jr. +19.5 pts+reb+ast",
             "list": "J. Jaquez Jr. +19.5 PRA",
-            "odd": 1.33,
+            "odd": 1.32,
             "start": "2026-11-01T00:00Z",
             "gameId": "nba:401909900",
             "market": "prop",
@@ -4359,14 +4359,14 @@
             "playerId": "4432848",
             "team": "MIL",
             "match": "Bucks – Cavaliers",
-            "pFinal": 0.741
+            "pFinal": 0.745
           },
           {
             "id": "nba:401909902|prop|over|0.5|4432639|tpm",
             "league": "nba",
             "label": "J. Smith Jr. +0.5 triples",
             "list": "J. Smith Jr. +0.5 T3",
-            "odd": 1.37,
+            "odd": 1.36,
             "start": "2026-11-01T00:30Z",
             "gameId": "nba:401909902",
             "market": "prop",
@@ -4376,7 +4376,7 @@
             "playerId": "4432639",
             "team": "HOU",
             "match": "Rockets – Thunder",
-            "pFinal": 0.723
+            "pFinal": 0.727
           },
           {
             "id": "nba:401909901|prop|over|3.5|5037871|reb",
@@ -4396,17 +4396,51 @@
             "pFinal": 0.693
           }
         ],
-        "text": "🏀 NBA Picks Day · 31/10\n\n1.- E. Mobley +0.5 T3 @1.32\n2.- J. Jaquez Jr. +19.5 PRA @1.33\n3.- J. Smith Jr. +0.5 T3 @1.37\n4.- D. Harper +3.5 Reb @1.42\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 31/10\n\n1.- E. Mobley +0.5 T3 @1.32\n2.- J. Jaquez Jr. +19.5 PRA @1.32\n3.- J. Smith Jr. +0.5 T3 @1.36\n4.- D. Harper +3.5 Reb @1.42\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-2": {
         "id": "nba-day-2",
         "kind": "nba-day",
         "league": "nba",
         "reply": true,
-        "title": "↳ Hilo 2/2 · picks 5-8",
+        "title": "↳ Hilo 2/3 · picks 5-8",
         "postAt": "2026-10-31T17:45:00.000Z",
         "image": true,
         "picks": [
+          {
+            "id": "nba:401909896|prop|over|0.5|5105565|tpm",
+            "league": "nba",
+            "label": "D. Clingan +0.5 triples",
+            "list": "D. Clingan +0.5 T3",
+            "odd": 1.45,
+            "start": "2026-10-31T19:00Z",
+            "gameId": "nba:401909896",
+            "market": "prop",
+            "side": "over",
+            "line": 0.5,
+            "stat": "tpm",
+            "playerId": "5105565",
+            "team": "POR",
+            "match": "Jazz – Trail Blazers",
+            "pFinal": 0.67
+          },
+          {
+            "id": "nba:401909896|prop|over|1.5|4431736|tpm",
+            "league": "nba",
+            "label": "T. Camara +1.5 triples",
+            "list": "T. Camara +1.5 T3",
+            "odd": 1.45,
+            "start": "2026-10-31T19:00Z",
+            "gameId": "nba:401909896",
+            "market": "prop",
+            "side": "over",
+            "line": 1.5,
+            "stat": "tpm",
+            "playerId": "4431736",
+            "team": "POR",
+            "match": "Jazz – Trail Blazers",
+            "pFinal": 0.673
+          },
           {
             "id": "nba:401909898|ml|away|||",
             "league": "nba",
@@ -4437,7 +4471,19 @@
             "team": "SA",
             "match": "Spurs – Timberwolves",
             "pFinal": 0.656
-          },
+          }
+        ],
+        "text": "🧵 NBA Picks Day · 31/10 (sigue)\n\n5.- D. Clingan +0.5 T3 @1.45\n6.- T. Camara +1.5 T3 @1.45\n7.- Gana Hawks @1.61\n8.- J. Champagnie +1.5 T3 @1.50\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-3": {
+        "id": "nba-day-3",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 3/3 · picks 9-11",
+        "postAt": "2026-10-31T17:45:00.000Z",
+        "image": true,
+        "picks": [
           {
             "id": "nba:401909902|ml|home|||",
             "league": "nba",
@@ -4450,6 +4496,23 @@
             "side": "home",
             "line": null,
             "match": "Rockets – Thunder",
+            "pFinal": 0.638
+          },
+          {
+            "id": "nba:401909897|prop|under|7.5|5060701|ra",
+            "league": "nba",
+            "label": "C. Anderson −7.5 reb+ast",
+            "list": "C. Anderson −7.5 R+A",
+            "odd": 1.68,
+            "start": "2026-10-31T22:00Z",
+            "gameId": "nba:401909897",
+            "market": "prop",
+            "side": "under",
+            "line": 7.5,
+            "stat": "ra",
+            "playerId": "5060701",
+            "team": "CHA",
+            "match": "Hornets – 76ers",
             "pFinal": 0.638
           },
           {
@@ -4467,7 +4530,7 @@
             "pFinal": 0.557
           }
         ],
-        "text": "🧵 NBA Picks Day · 31/10 (sigue)\n\n5.- Gana Hawks @1.61\n6.- J. Champagnie +1.5 T3 @1.50\n7.- Gana Rockets @1.62\n8.- Grizzlies -10.5 @1.91\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 31/10 (sigue)\n\n9.- Gana Rockets @1.62\n10.- C. Anderson −7.5 R+A @1.68\n11.- Grizzlies -10.5 @1.91\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
