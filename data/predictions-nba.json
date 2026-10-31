@@ -516,5 +516,12 @@
     "away": "Thunder",
     "ptsH": 116,
     "ptsA": 100
+  },
+  "nba:401909903": {
+    "start": "2026-11-01T20:30Z",
+    "home": "Magic",
+    "away": "Celtics",
+    "ptsH": 108,
+    "ptsA": 119
   }
 }
