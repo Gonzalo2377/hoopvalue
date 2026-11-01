@@ -4771,6 +4771,32 @@
             "total": 0.46
           }
         }
+      },
+      "nba-day": {
+        "id": "nba-day",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": false,
+        "title": "NBA Picks Day · 1 pick",
+        "postAt": "2026-11-01T17:45:00.000Z",
+        "image": true,
+        "picks": [
+          {
+            "id": "nba:401909903|ml|away|||",
+            "league": "nba",
+            "label": "Gana Celtics",
+            "list": "Gana Celtics",
+            "odd": 1.4,
+            "start": "2026-11-01T20:30Z",
+            "gameId": "nba:401909903",
+            "market": "ml",
+            "side": "away",
+            "line": null,
+            "match": "Magic – Celtics",
+            "pFinal": 0.697
+          }
+        ],
+        "text": "🏀 NBA Picks Day · 01/11\n\n1.- Gana Celtics @1.40\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
