@@ -375,6 +375,22 @@
       "safety": 0.711,
       "tier": "A",
       "createdAt": "2026-11-01T01:56:05.928Z"
+    },
+    {
+      "id": "nba:401909905|ml|home|||",
+      "gameId": "nba:401909905",
+      "start": "2026-11-02T01:30Z",
+      "match": "Warriors – Clippers",
+      "market": "ml",
+      "side": "home",
+      "line": null,
+      "label": "Gana Warriors",
+      "odd": 1.77,
+      "book": "unibet",
+      "pFinal": 0.551,
+      "safety": 0.558,
+      "tier": "C",
+      "createdAt": "2026-11-01T07:03:11.109Z"
     }
   ],
   "record": [
