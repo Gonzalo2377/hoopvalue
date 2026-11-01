@@ -14152,6 +14152,67 @@
       "ev": -0.011,
       "start": "2026-11-02T02:00Z",
       "createdAt": "2026-11-01T15:40:14.200Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909916|prop|over|5.5|4432639|pts",
+          "gameId": "nba:401909916",
+          "start": "2026-11-03T01:30Z",
+          "match": "Rockets – Celtics",
+          "market": "prop",
+          "side": "over",
+          "line": 5.5,
+          "stat": "pts",
+          "playerId": "4432639",
+          "player": "Jabari Smith Jr.",
+          "team": "HOU",
+          "label": "Jabari Smith Jr. más de 5.5 puntos",
+          "odd": 1.3,
+          "pFinal": 0.764,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909913|prop|over|9.5|5142620|pts",
+          "gameId": "nba:401909913",
+          "start": "2026-11-03T01:00Z",
+          "match": "Mavericks – Kings",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pts",
+          "playerId": "5142620",
+          "player": "Darius Acuff Jr.",
+          "team": "SAC",
+          "label": "Darius Acuff Jr. más de 9.5 puntos",
+          "odd": 1.56,
+          "pFinal": 0.669,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909912|prop|under|2.5|4432446|ast",
+          "gameId": "nba:401909912",
+          "start": "2026-11-03T00:30Z",
+          "match": "76ers – Bulls",
+          "market": "prop",
+          "side": "under",
+          "line": 2.5,
+          "stat": "ast",
+          "playerId": "4432446",
+          "player": "Jabari Walker",
+          "team": "PHI",
+          "label": "Jabari Walker menos de 2.5 asistencias",
+          "odd": 1.58,
+          "pFinal": 0.667,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 3.2,
+      "prob": 0.341,
+      "ev": 0.092,
+      "start": "2026-11-03T00:30Z",
+      "createdAt": "2026-11-01T16:00:32.575Z"
     }
   ],
   "comboRecord": [
