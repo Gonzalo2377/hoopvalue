@@ -5353,7 +5353,7 @@
         "kind": "nba-day",
         "league": "nba",
         "reply": false,
-        "title": "NBA Picks Day · 6 picks",
+        "title": "NBA Picks Day · 8 picks",
         "postAt": "2026-11-02T17:45:00.000Z",
         "image": true,
         "picks": [
@@ -5373,6 +5373,20 @@
             "team": "LAL",
             "match": "Lakers – Raptors",
             "pFinal": 0.748
+          },
+          {
+            "id": "nba:401909914|ml|home|||",
+            "league": "nba",
+            "label": "Gana Grizzlies",
+            "list": "Gana Grizzlies",
+            "odd": 1.44,
+            "start": "2026-11-03T01:00Z",
+            "gameId": "nba:401909914",
+            "market": "ml",
+            "side": "home",
+            "line": null,
+            "match": "Grizzlies – Pelicans",
+            "pFinal": 0.696
           },
           {
             "id": "nba:401909905|prop|over|9.5|5254165|pts",
@@ -5409,23 +5423,37 @@
             "pFinal": 0.67
           }
         ],
-        "text": "🏀 NBA Picks Day · 02/11\n\n1.- M. Thybulle +0.5 T3 @1.30\n2.- K. Wagler +9.5 Pts @1.36\n3.- K. Dunn −1.5 T3 @1.45\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 02/11\n\n1.- M. Thybulle +0.5 T3 @1.30\n2.- Gana Grizzlies @1.44\n3.- K. Wagler +9.5 Pts @1.36\n4.- K. Dunn −1.5 T3 @1.45\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-2": {
         "id": "nba-day-2",
         "kind": "nba-day",
         "league": "nba",
         "reply": true,
-        "title": "↳ Hilo 2/2 · picks 4-6",
+        "title": "↳ Hilo 2/2 · picks 5-8",
         "postAt": "2026-11-02T17:45:00.000Z",
         "image": true,
         "picks": [
+          {
+            "id": "nba:401909916|ml|home|||",
+            "league": "nba",
+            "label": "Gana Rockets",
+            "list": "Gana Rockets",
+            "odd": 1.54,
+            "start": "2026-11-03T01:30Z",
+            "gameId": "nba:401909916",
+            "market": "ml",
+            "side": "home",
+            "line": null,
+            "match": "Rockets – Celtics",
+            "pFinal": 0.642
+          },
           {
             "id": "nba:401909906|prop|under|1.5|4278580|tpm",
             "league": "nba",
             "label": "S. Mamukelashvili −1.5 triples",
             "list": "S. Mamukelashvili −1.5 T3",
-            "odd": 1.49,
+            "odd": 1.5,
             "start": "2026-11-02T02:00Z",
             "gameId": "nba:401909906",
             "market": "prop",
@@ -5435,7 +5463,7 @@
             "playerId": "4278580",
             "team": "LAL",
             "match": "Lakers – Raptors",
-            "pFinal": 0.653
+            "pFinal": 0.651
           },
           {
             "id": "nba:401909907|ml|home|||",
@@ -5469,7 +5497,7 @@
             "pFinal": 0.672
           }
         ],
-        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n4.- S. Mamukelashvili −1.5 T3 @1.49\n5.- Gana Cavaliers @1.58\n6.- D. Acuff Jr. +9.5 Pts @1.55\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n5.- Gana Rockets @1.54\n6.- S. Mamukelashvili −1.5 T3 @1.50\n7.- Gana Cavaliers @1.58\n8.- D. Acuff Jr. +9.5 Pts @1.55\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
