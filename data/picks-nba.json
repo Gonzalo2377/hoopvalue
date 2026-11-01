@@ -929,6 +929,24 @@
       "stat": "pr",
       "playerId": "4278580",
       "createdAt": "2026-11-01T21:34:39.347Z"
+    },
+    {
+      "id": "nba:401909913|prop|under|2.5|4873153|ast",
+      "gameId": "nba:401909913",
+      "start": "2026-11-03T01:00Z",
+      "match": "Mavericks – Kings",
+      "market": "prop",
+      "side": "under",
+      "line": 2.5,
+      "label": "Morez Johnson Jr. menos de 2.5 asistencias",
+      "odd": 1.54,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.655,
+      "safety": 0.571,
+      "tier": "C",
+      "stat": "ast",
+      "playerId": "4873153",
+      "createdAt": "2026-11-01T21:54:57.720Z"
     }
   ],
   "record": [
@@ -14840,6 +14858,67 @@
       "ev": -0.036,
       "start": "2026-11-02T01:30Z",
       "createdAt": "2026-11-01T21:34:39.347Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909905|prop|over|9.5|5254165|pts",
+          "gameId": "nba:401909905",
+          "start": "2026-11-02T01:30Z",
+          "match": "Warriors – Clippers",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pts",
+          "playerId": "5254165",
+          "player": "Keaton Wagler",
+          "team": "LAC",
+          "label": "Keaton Wagler más de 9.5 puntos",
+          "odd": 1.36,
+          "pFinal": 0.729,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909913|prop|over|9.5|5142620|pts",
+          "gameId": "nba:401909913",
+          "start": "2026-11-03T01:00Z",
+          "match": "Mavericks – Kings",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pts",
+          "playerId": "5142620",
+          "player": "Darius Acuff Jr.",
+          "team": "SAC",
+          "label": "Darius Acuff Jr. más de 9.5 puntos",
+          "odd": 1.55,
+          "pFinal": 0.672,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909912|prop|under|8.5|4432446|ra",
+          "gameId": "nba:401909912",
+          "start": "2026-11-03T00:30Z",
+          "match": "76ers – Bulls",
+          "market": "prop",
+          "side": "under",
+          "line": 8.5,
+          "stat": "ra",
+          "playerId": "4432446",
+          "player": "Jabari Walker",
+          "team": "PHI",
+          "label": "Jabari Walker menos de 8.5 reb+ast",
+          "odd": 1.76,
+          "pFinal": 0.62,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 3.71,
+      "prob": 0.304,
+      "ev": 0.127,
+      "start": "2026-11-02T01:30Z",
+      "createdAt": "2026-11-01T21:54:57.720Z"
     }
   ],
   "comboRecord": [
