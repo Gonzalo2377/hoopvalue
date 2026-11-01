@@ -911,6 +911,24 @@
       "stat": "pra",
       "playerId": "4873153",
       "createdAt": "2026-11-01T21:14:22.327Z"
+    },
+    {
+      "id": "nba:401909906|prop|over|9.5|4278580|pr",
+      "gameId": "nba:401909906",
+      "start": "2026-11-02T02:00Z",
+      "match": "Lakers – Raptors",
+      "market": "prop",
+      "side": "over",
+      "line": 9.5,
+      "label": "Sandro Mamukelashvili más de 9.5 pts+reb",
+      "odd": 1.3,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.749,
+      "safety": 0.684,
+      "tier": "A",
+      "stat": "pr",
+      "playerId": "4278580",
+      "createdAt": "2026-11-01T21:34:39.347Z"
     }
   ],
   "record": [
@@ -14734,6 +14752,94 @@
       "ev": -0.053,
       "start": "2026-11-01T22:00Z",
       "createdAt": "2026-11-01T21:14:22.327Z"
+    },
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "nba:401909906|prop|over|9.5|4278580|pr",
+          "gameId": "nba:401909906",
+          "start": "2026-11-02T02:00Z",
+          "match": "Lakers – Raptors",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pr",
+          "playerId": "4278580",
+          "player": "Sandro Mamukelashvili",
+          "team": "LAL",
+          "label": "Sandro Mamukelashvili más de 9.5 pts+reb",
+          "odd": 1.3,
+          "pFinal": 0.749,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909905|prop|over|9.5|5254165|pts",
+          "gameId": "nba:401909905",
+          "start": "2026-11-02T01:30Z",
+          "match": "Warriors – Clippers",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pts",
+          "playerId": "5254165",
+          "player": "Keaton Wagler",
+          "team": "LAC",
+          "label": "Keaton Wagler más de 9.5 puntos",
+          "odd": 1.36,
+          "pFinal": 0.729,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.77,
+      "prob": 0.546,
+      "ev": -0.035,
+      "start": "2026-11-02T01:30Z",
+      "createdAt": "2026-11-01T21:34:39.347Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "nba:401909906|prop|over|0.5|3907498|tpm",
+          "gameId": "nba:401909906",
+          "start": "2026-11-02T02:00Z",
+          "match": "Lakers – Raptors",
+          "market": "prop",
+          "side": "over",
+          "line": 0.5,
+          "stat": "tpm",
+          "playerId": "3907498",
+          "player": "Matisse Thybulle",
+          "team": "LAL",
+          "label": "Matisse Thybulle más de 0.5 triples",
+          "odd": 1.3,
+          "pFinal": 0.748,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909905|prop|over|9.5|5254165|pts",
+          "gameId": "nba:401909905",
+          "start": "2026-11-02T01:30Z",
+          "match": "Warriors – Clippers",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pts",
+          "playerId": "5254165",
+          "player": "Keaton Wagler",
+          "team": "LAC",
+          "label": "Keaton Wagler más de 9.5 puntos",
+          "odd": 1.36,
+          "pFinal": 0.729,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.77,
+      "prob": 0.545,
+      "ev": -0.036,
+      "start": "2026-11-02T01:30Z",
+      "createdAt": "2026-11-01T21:34:39.347Z"
     }
   ],
   "comboRecord": [
