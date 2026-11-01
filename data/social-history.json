@@ -4625,10 +4625,10 @@
         "id": "combo-nba",
         "kind": "combo",
         "league": "nba",
-        "title": "Safe Parlay · NBA @2.08",
+        "title": "Safe Parlay · NBA @1.77",
         "postAt": "2026-11-01T18:00:00.000Z",
         "image": true,
-        "text": "🎯 Safe Parlay · NBA\n\n1.- M. Robinson +3.5 Pts @1.30\n2.- Gana Pacers @1.60\n\n💰 Total odds 2.08\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
+        "text": "🎯 Safe Parlay · NBA\n\n1.- M. Robinson +3.5 Pts @1.30\n2.- N. Clowney +2.5 Reb @1.36\n\n💰 Total odds 1.77\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
         "picks": [],
         "combo": {
           "legs": [
@@ -4650,22 +4650,25 @@
               "pFinal": 0.75
             },
             {
-              "id": "nba:401909904|ml|home|||",
+              "id": "nba:401909904|prop|over|2.5|4712896|reb",
               "league": "nba",
-              "label": "Gana Pacers",
-              "list": "Gana Pacers",
-              "odd": 1.6,
+              "label": "N. Clowney +2.5 rebotes",
+              "list": "N. Clowney +2.5 Reb",
+              "odd": 1.36,
               "start": "2026-11-01T22:00Z",
               "gameId": "nba:401909904",
-              "market": "ml",
-              "side": "home",
-              "line": null,
+              "market": "prop",
+              "side": "over",
+              "line": 2.5,
+              "stat": "reb",
+              "playerId": "4712896",
+              "team": "BKN",
               "match": "Pacers – Nets",
-              "pFinal": 0.606
+              "pFinal": 0.718
             }
           ],
-          "odd": 2.08,
-          "prob": 0.455
+          "odd": 1.77,
+          "prob": 0.539
         }
       },
       "summary-nba": {
@@ -4777,7 +4780,7 @@
         "kind": "nba-day",
         "league": "nba",
         "reply": false,
-        "title": "NBA Picks Day · 4 picks",
+        "title": "NBA Picks Day · 6 picks",
         "postAt": "2026-11-01T17:45:00.000Z",
         "image": true,
         "picks": [
@@ -4813,6 +4816,52 @@
             "pFinal": 0.75
           },
           {
+            "id": "nba:401909904|prop|over|2.5|4712896|reb",
+            "league": "nba",
+            "label": "N. Clowney +2.5 rebotes",
+            "list": "N. Clowney +2.5 Reb",
+            "odd": 1.36,
+            "start": "2026-11-01T22:00Z",
+            "gameId": "nba:401909904",
+            "market": "prop",
+            "side": "over",
+            "line": 2.5,
+            "stat": "reb",
+            "playerId": "4712896",
+            "team": "BKN",
+            "match": "Pacers – Nets",
+            "pFinal": 0.718
+          }
+        ],
+        "text": "🏀 NBA Picks Day · 01/11\n\n1.- Gana Celtics @1.41\n2.- M. Robinson +3.5 Pts @1.30\n3.- N. Clowney +2.5 Reb @1.36\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-2": {
+        "id": "nba-day-2",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 2/2 · picks 4-6",
+        "postAt": "2026-11-01T17:45:00.000Z",
+        "image": true,
+        "picks": [
+          {
+            "id": "nba:401909904|prop|over|9.5|4396909|pts",
+            "league": "nba",
+            "label": "A. Nesmith +9.5 puntos",
+            "list": "A. Nesmith +9.5 Pts",
+            "odd": 1.4,
+            "start": "2026-11-01T22:00Z",
+            "gameId": "nba:401909904",
+            "market": "prop",
+            "side": "over",
+            "line": 9.5,
+            "stat": "pts",
+            "playerId": "4396909",
+            "team": "IND",
+            "match": "Pacers – Nets",
+            "pFinal": 0.698
+          },
+          {
             "id": "nba:401909903|prop|over|3.5|4251|reb",
             "league": "nba",
             "label": "P. George +3.5 rebotes",
@@ -4834,17 +4883,17 @@
             "league": "nba",
             "label": "Gana Pacers",
             "list": "Gana Pacers",
-            "odd": 1.6,
+            "odd": 1.62,
             "start": "2026-11-01T22:00Z",
             "gameId": "nba:401909904",
             "market": "ml",
             "side": "home",
             "line": null,
             "match": "Pacers – Nets",
-            "pFinal": 0.606
+            "pFinal": 0.605
           }
         ],
-        "text": "🏀 NBA Picks Day · 01/11\n\n1.- Gana Celtics @1.41\n2.- M. Robinson +3.5 Pts @1.30\n3.- P. George +3.5 Reb @1.42\n4.- Gana Pacers @1.60\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 01/11 (sigue)\n\n4.- A. Nesmith +9.5 Pts @1.40\n5.- P. George +3.5 Reb @1.42\n6.- Gana Pacers @1.62\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
