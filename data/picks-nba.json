@@ -821,6 +821,24 @@
       "stat": "pts",
       "playerId": "4065804",
       "createdAt": "2026-11-01T18:31:28.781Z"
+    },
+    {
+      "id": "nba:401909904|prop|over|17.5|4278104|pts",
+      "gameId": "nba:401909904",
+      "start": "2026-11-01T22:00Z",
+      "match": "Pacers – Nets",
+      "market": "prop",
+      "side": "over",
+      "line": 17.5,
+      "label": "Michael Porter Jr. más de 17.5 puntos",
+      "odd": 1.34,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.725,
+      "safety": 0.667,
+      "tier": "B",
+      "stat": "pts",
+      "playerId": "4278104",
+      "createdAt": "2026-11-01T20:33:28.498Z"
     }
   ],
   "record": [
