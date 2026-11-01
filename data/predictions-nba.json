@@ -607,5 +607,19 @@
     "away": "Bucks",
     "ptsH": 120,
     "ptsA": 109
+  },
+  "nba:401909916": {
+    "start": "2026-11-03T01:30Z",
+    "home": "Rockets",
+    "away": "Celtics",
+    "ptsH": 119,
+    "ptsA": 111
+  },
+  "nba:401909917": {
+    "start": "2026-11-03T01:30Z",
+    "home": "Spurs",
+    "away": "Jazz",
+    "ptsH": 119,
+    "ptsA": 108
   }
 }

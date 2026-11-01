@@ -4849,7 +4849,7 @@
             "league": "nba",
             "label": "A. Nesmith +9.5 puntos",
             "list": "A. Nesmith +9.5 Pts",
-            "odd": 1.4,
+            "odd": 1.37,
             "start": "2026-11-01T22:00Z",
             "gameId": "nba:401909904",
             "market": "prop",
@@ -4859,7 +4859,7 @@
             "playerId": "4396909",
             "team": "IND",
             "match": "Pacers – Nets",
-            "pFinal": 0.698
+            "pFinal": 0.709
           },
           {
             "id": "nba:401909903|prop|over|3.5|4251|reb",
@@ -4893,7 +4893,7 @@
             "pFinal": 0.605
           }
         ],
-        "text": "🧵 NBA Picks Day · 01/11 (sigue)\n\n4.- A. Nesmith +9.5 Pts @1.40\n5.- P. George +3.5 Reb @1.42\n6.- Gana Pacers @1.62\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 01/11 (sigue)\n\n4.- A. Nesmith +9.5 Pts @1.37\n5.- P. George +3.5 Reb @1.42\n6.- Gana Pacers @1.62\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
