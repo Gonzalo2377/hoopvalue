@@ -14919,6 +14919,67 @@
       "ev": 0.127,
       "start": "2026-11-02T01:30Z",
       "createdAt": "2026-11-01T21:54:57.720Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909906|prop|over|9.5|4278580|pr",
+          "gameId": "nba:401909906",
+          "start": "2026-11-02T02:00Z",
+          "match": "Lakers – Raptors",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pr",
+          "playerId": "4278580",
+          "player": "Sandro Mamukelashvili",
+          "team": "LAL",
+          "label": "Sandro Mamukelashvili más de 9.5 pts+reb",
+          "odd": 1.3,
+          "pFinal": 0.749,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909905|prop|over|9.5|5254165|pts",
+          "gameId": "nba:401909905",
+          "start": "2026-11-02T01:30Z",
+          "match": "Warriors – Clippers",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pts",
+          "playerId": "5254165",
+          "player": "Keaton Wagler",
+          "team": "LAC",
+          "label": "Keaton Wagler más de 9.5 puntos",
+          "odd": 1.36,
+          "pFinal": 0.729,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909913|prop|over|9.5|5142620|pts",
+          "gameId": "nba:401909913",
+          "start": "2026-11-03T01:00Z",
+          "match": "Mavericks – Kings",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pts",
+          "playerId": "5142620",
+          "player": "Darius Acuff Jr.",
+          "team": "SAC",
+          "label": "Darius Acuff Jr. más de 9.5 puntos",
+          "odd": 1.55,
+          "pFinal": 0.672,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.74,
+      "prob": 0.367,
+      "ev": 0.006,
+      "start": "2026-11-02T01:30Z",
+      "createdAt": "2026-11-01T22:15:16.521Z"
     }
   ],
   "comboRecord": [
