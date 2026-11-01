@@ -1251,6 +1251,22 @@
       "stat": "pr",
       "playerId": "3064440",
       "createdAt": "2026-10-31T23:54:30.064Z"
+    },
+    {
+      "id": "nba:401909903|ml|away|||",
+      "gameId": "nba:401909903",
+      "start": "2026-11-01T20:30Z",
+      "match": "Magic – Celtics",
+      "market": "ml",
+      "side": "away",
+      "line": null,
+      "label": "Gana Celtics",
+      "odd": 1.39,
+      "book": "draftkings",
+      "pFinal": 0.702,
+      "safety": 0.711,
+      "tier": "A",
+      "createdAt": "2026-11-01T01:56:05.928Z"
     }
   ],
   "record": [
