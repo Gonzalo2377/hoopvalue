@@ -544,5 +544,12 @@
     "away": "Raptors",
     "ptsH": 114,
     "ptsA": 113
+  },
+  "nba:401909907": {
+    "start": "2026-11-03T00:00Z",
+    "home": "Cavaliers",
+    "away": "Thunder",
+    "ptsH": 117,
+    "ptsA": 104
   }
 }
