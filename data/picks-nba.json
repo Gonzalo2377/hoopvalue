@@ -803,6 +803,24 @@
       "safety": 0.59,
       "tier": "C",
       "createdAt": "2026-11-01T23:16:12.660Z"
+    },
+    {
+      "id": "nba:401909906|prop|under|1.5|4278580|tpm",
+      "gameId": "nba:401909906",
+      "start": "2026-11-02T02:00Z",
+      "match": "Lakers – Raptors",
+      "market": "prop",
+      "side": "under",
+      "line": 1.5,
+      "label": "Sandro Mamukelashvili menos de 1.5 triples",
+      "odd": 1.49,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.653,
+      "safety": 0.619,
+      "tier": "B",
+      "stat": "tpm",
+      "playerId": "4278580",
+      "createdAt": "2026-11-01T23:36:30.218Z"
     }
   ],
   "record": [
@@ -14982,6 +15000,50 @@
       "ev": 0.034,
       "start": "2026-11-02T01:30Z",
       "createdAt": "2026-11-01T23:16:12.660Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "nba:401909906|prop|over|0.5|3907498|tpm",
+          "gameId": "nba:401909906",
+          "start": "2026-11-02T02:00Z",
+          "match": "Lakers – Raptors",
+          "market": "prop",
+          "side": "over",
+          "line": 0.5,
+          "stat": "tpm",
+          "playerId": "3907498",
+          "player": "Matisse Thybulle",
+          "team": "LAL",
+          "label": "Matisse Thybulle más de 0.5 triples",
+          "odd": 1.3,
+          "pFinal": 0.748,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909913|prop|over|9.5|5142620|pts",
+          "gameId": "nba:401909913",
+          "start": "2026-11-03T01:00Z",
+          "match": "Mavericks – Kings",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pts",
+          "playerId": "5142620",
+          "player": "Darius Acuff Jr.",
+          "team": "SAC",
+          "label": "Darius Acuff Jr. más de 9.5 puntos",
+          "odd": 1.55,
+          "pFinal": 0.672,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.02,
+      "prob": 0.503,
+      "ev": 0.013,
+      "start": "2026-11-02T02:00Z",
+      "createdAt": "2026-11-01T23:36:30.218Z"
     }
   ],
   "comboRecord": [
