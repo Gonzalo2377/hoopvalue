@@ -4572,7 +4572,7 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
             "pred": [
-              108,
+              109,
               119
             ]
           },
@@ -4600,7 +4600,7 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
             "pred": [
-              110,
+              111,
               108
             ]
           },
@@ -4619,7 +4619,7 @@
             ]
           }
         ],
-        "text": "🔮 EuroPicks Score Predictions · NBA · 01/11\n\nMagic 108-119 Celtics\nPacers 120-115 Nets\nWarriors 110-108 Clippers\nLakers 114-113 Raptors\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
+        "text": "🔮 EuroPicks Score Predictions · NBA · 01/11\n\nMagic 109-119 Celtics\nPacers 120-115 Nets\nWarriors 111-108 Clippers\nLakers 114-113 Raptors\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
       },
       "combo-nba": {
         "id": "combo-nba",
@@ -4674,9 +4674,9 @@
         "league": "nba",
         "title": "NBA · resultados de ayer (31/10)",
         "postAt": "2026-11-01T08:40:00.000Z",
-        "text": "📋 NBA · resultados de ayer (31/10)\n\n✅⚪❌✅❌✅✅⚪⏳✅❌✅✅\n👇 Cada pick en la imagen\n\nAyer: 7-3 (-0.32 u) · Total NBA: 56-23 (+0.06 u)\n#NBA · +18 · Juega con responsabilidad",
+        "text": "📋 NBA · resultados de ayer (31/10)\n\n✅⚪❌✅❌✅✅⚪✅✅❌✅✅\n👇 Cada pick en la imagen\n\nAyer: 8-3 (+0.08 u) · Total NBA: 57-23 (+0.46 u)\n#NBA · +18 · Juega con responsabilidad",
         "image": true,
-        "pending": true,
+        "pending": false,
         "rows": [
           {
             "league": "nba",
@@ -4730,7 +4730,7 @@
             "league": "nba",
             "label": "A. Sengun +15.5 puntos",
             "odd": 1.4,
-            "result": null
+            "result": "W"
           },
           {
             "league": "nba",
@@ -4759,16 +4759,16 @@
         ],
         "balance": {
           "day": [
-            7,
+            8,
             3
           ],
           "total": [
-            56,
+            57,
             23
           ],
           "units": {
-            "day": -0.32,
-            "total": 0.06
+            "day": 0.08,
+            "total": 0.46
           }
         }
       }
