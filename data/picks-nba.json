@@ -803,6 +803,24 @@
       "stat": "pra",
       "playerId": "4712849",
       "createdAt": "2026-11-01T17:10:06.383Z"
+    },
+    {
+      "id": "nba:401909903|prop|over|5.5|4065804|pts",
+      "gameId": "nba:401909903",
+      "start": "2026-11-01T20:30Z",
+      "match": "Magic – Celtics",
+      "market": "prop",
+      "side": "over",
+      "line": 5.5,
+      "label": "Sam Hauser más de 5.5 puntos",
+      "odd": 1.41,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.691,
+      "safety": 0.644,
+      "tier": "B",
+      "stat": "pts",
+      "playerId": "4065804",
+      "createdAt": "2026-11-01T18:31:28.781Z"
     }
   ],
   "record": [
