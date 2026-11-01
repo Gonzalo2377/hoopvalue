@@ -677,6 +677,24 @@
       "stat": "pts",
       "playerId": "5142620",
       "createdAt": "2026-11-01T14:59:32.897Z"
+    },
+    {
+      "id": "nba:401909903|prop|under|5.5|3078576|ast",
+      "gameId": "nba:401909903",
+      "start": "2026-11-01T20:30Z",
+      "match": "Magic – Celtics",
+      "market": "prop",
+      "side": "under",
+      "line": 5.5,
+      "label": "Derrick White menos de 5.5 asistencias",
+      "odd": 1.57,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.621,
+      "safety": 0.581,
+      "tier": "C",
+      "stat": "ast",
+      "playerId": "3078576",
+      "createdAt": "2026-11-01T15:19:50.057Z"
     }
   ],
   "record": [
@@ -13843,6 +13861,94 @@
       "ev": -0.013,
       "start": "2026-11-02T01:30Z",
       "createdAt": "2026-11-01T14:59:32.897Z"
+    },
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "nba:401909906|prop|over|5.5|4433137|pts",
+          "gameId": "nba:401909906",
+          "start": "2026-11-02T02:00Z",
+          "match": "Lakers – Raptors",
+          "market": "prop",
+          "side": "over",
+          "line": 5.5,
+          "stat": "pts",
+          "playerId": "4433137",
+          "player": "Ziaire Williams",
+          "team": "LAL",
+          "label": "Ziaire Williams más de 5.5 puntos",
+          "odd": 1.32,
+          "pFinal": 0.754,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909905|prop|over|9.5|5254165|pts",
+          "gameId": "nba:401909905",
+          "start": "2026-11-02T01:30Z",
+          "match": "Warriors – Clippers",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pts",
+          "playerId": "5254165",
+          "player": "Keaton Wagler",
+          "team": "LAC",
+          "label": "Keaton Wagler más de 9.5 puntos",
+          "odd": 1.36,
+          "pFinal": 0.729,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.8,
+      "prob": 0.55,
+      "ev": -0.013,
+      "start": "2026-11-02T01:30Z",
+      "createdAt": "2026-11-01T15:19:50.057Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "nba:401909904|prop|over|19.5|4278104|pa",
+          "gameId": "nba:401909904",
+          "start": "2026-11-01T22:00Z",
+          "match": "Pacers – Nets",
+          "market": "prop",
+          "side": "over",
+          "line": 19.5,
+          "stat": "pa",
+          "playerId": "4278104",
+          "player": "Michael Porter Jr.",
+          "team": "BKN",
+          "label": "Michael Porter Jr. más de 19.5 pts+ast",
+          "odd": 1.34,
+          "pFinal": 0.724,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909906|prop|over|5.5|4433137|pts",
+          "gameId": "nba:401909906",
+          "start": "2026-11-02T02:00Z",
+          "match": "Lakers – Raptors",
+          "market": "prop",
+          "side": "over",
+          "line": 5.5,
+          "stat": "pts",
+          "playerId": "4433137",
+          "player": "Ziaire Williams",
+          "team": "LAL",
+          "label": "Ziaire Williams más de 5.5 puntos",
+          "odd": 1.32,
+          "pFinal": 0.754,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.77,
+      "prob": 0.546,
+      "ev": -0.034,
+      "start": "2026-11-01T22:00Z",
+      "createdAt": "2026-11-01T15:19:50.057Z"
     }
   ],
   "comboRecord": [
