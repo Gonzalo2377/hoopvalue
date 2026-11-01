@@ -4789,14 +4789,14 @@
             "league": "nba",
             "label": "Gana Celtics",
             "list": "Gana Celtics",
-            "odd": 1.42,
+            "odd": 1.39,
             "start": "2026-11-01T20:30Z",
             "gameId": "nba:401909903",
             "market": "ml",
             "side": "away",
             "line": null,
             "match": "Magic – Celtics",
-            "pFinal": 0.689
+            "pFinal": 0.7
           },
           {
             "id": "nba:401909904|prop|over|19.5|4278104|pa",
@@ -4850,7 +4850,7 @@
             "pFinal": 0.729
           }
         ],
-        "text": "🏀 NBA Picks Day · 01/11\n\n1.- Gana Celtics @1.42\n2.- M. Porter Jr. +19.5 P+A @1.34\n3.- Z. Williams +5.5 Pts @1.32\n4.- K. Wagler +9.5 Pts @1.36\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 01/11\n\n1.- Gana Celtics @1.39\n2.- M. Porter Jr. +19.5 P+A @1.34\n3.- Z. Williams +5.5 Pts @1.32\n4.- K. Wagler +9.5 Pts @1.36\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-2": {
         "id": "nba-day-2",
@@ -4942,23 +4942,6 @@
             "pFinal": 0.675
           },
           {
-            "id": "nba:401909903|prop|under|5.5|3078576|ast",
-            "league": "nba",
-            "label": "D. White −5.5 asistencias",
-            "list": "D. White −5.5 Ast",
-            "odd": 1.57,
-            "start": "2026-11-01T20:30Z",
-            "gameId": "nba:401909903",
-            "market": "prop",
-            "side": "under",
-            "line": 5.5,
-            "stat": "ast",
-            "playerId": "3078576",
-            "team": "BOS",
-            "match": "Magic – Celtics",
-            "pFinal": 0.621
-          },
-          {
             "id": "nba:401909905|ml|home|||",
             "league": "nba",
             "label": "Gana Warriors",
@@ -4971,9 +4954,26 @@
             "line": null,
             "match": "Warriors – Clippers",
             "pFinal": 0.558
+          },
+          {
+            "id": "nba:401909903|prop|under|5.5|4702382|ra",
+            "league": "nba",
+            "label": "T. da Silva −5.5 reb+ast",
+            "list": "T. da Silva −5.5 R+A",
+            "odd": 1.76,
+            "start": "2026-11-01T20:30Z",
+            "gameId": "nba:401909903",
+            "market": "prop",
+            "side": "under",
+            "line": 5.5,
+            "stat": "ra",
+            "playerId": "4702382",
+            "team": "ORL",
+            "match": "Magic – Celtics",
+            "pFinal": 0.589
           }
         ],
-        "text": "🧵 NBA Picks Day · 01/11 (sigue)\n\n8.- B. Lopez +7.5 Pts @1.46\n9.- D. White −5.5 Ast @1.57\n10.- Gana Warriors @1.74\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 01/11 (sigue)\n\n8.- B. Lopez +7.5 Pts @1.46\n9.- Gana Warriors @1.74\n10.- T. da Silva −5.5 R+A @1.76\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
