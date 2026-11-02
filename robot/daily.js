@@ -28,6 +28,7 @@ const { predictGame, modelWeight } = require('./model/game');
 const { teamTrends, headToHead } = require('./model/trends');
 const PL = require('./model/players');
 const P = require('./model/picks');
+const CX = require('./model/context');
 const S = require('./settle');
 const C = require('./combos');
 
@@ -127,7 +128,7 @@ async function main() {
     if (mk) store.snapshot(season, g.id, g.date, mk, now);
     const opening = (store.get(season, g.id) || {}).open || null;
     const wModel = modelWeight(tH.gp, tA.gp);
-    const ctx = { injH: sum(absH), injA: sum(absA), h2h: headToHead(games, g.home, g.away, t0), homeCode: g.home, awayCode: g.away, pace: pred.pace - R.Lp };
+    const ctx = { injH: sum(absH), injA: sum(absA), h2h: headToHead(games, g.home, g.away, t0), homeCode: g.home, awayCode: g.away, pace: pred.pace - R.Lp, open: opening };
     const cands = P.evaluate({ game: { id: g.id, homeName, awayName }, pred, sig: SIG, mk, trends: { home: tH, away: tA }, ctx, wModel })
       .map(c => ({ ...c, start: g.date, match: `${homeName} – ${awayName}`, tier: P.tier(c.safety), round: g.round }));
     const best = cands.find(c => c.qualifies);
@@ -165,13 +166,19 @@ async function main() {
   const rowsOf = id => (logs[id] ? logs[id].games : []).map(x => ({ pts: x.pts, reb: x.reb, ast: x.ast, tpm: x.tpm }));
   const soonIds = new Set(upcoming.map(g => g.id));
   const propPicks = [];
+  /* contexto de cada jugador: bajas probables de compañeros, minutos, rival, cansancio, paliza… */
+  const allowed = CX.oppAllowed(games, now, season);
+  const idsTeam = (team, t) => games.filter(x => x.status === 'final' && Date.parse(x.date) < t && (x.home === team || x.away === team)).map(x => x.id);
   index.filter(e => e.lines && e.next && soonIds.has(e.next.gameId)).forEach(e => {
-    const best = P.evaluateProps(e, rowsOf(e.id), modelWeight(12, 12)).filter(c => c.qualifies).sort((a, b) => b.safety - a.safety)[0];
+    const t = Date.parse(e.next.start), outMates = PL.probableAbsences(logs, e.team, t, idsTeam(e.team, t)).map(a => a.id);
+    if (outMates.includes(e.id)) return;                                     // él mismo no jugó el último: puede estar de baja
+    const pc = CX.forEntry({ logs, games, byId: Object.fromEntries(games.map(x => [x.id, x])), e, outMates, outGames, allowed, season });
+    const best = P.evaluateProps(e, rowsOf(e.id), modelWeight(12, 12), pc).filter(c => c.qualifies).sort((a, b) => b.safety - a.safety)[0];
     if (best) { const g = upcoming.find(x => x.id === best.gameId); propPicks.push({ ...best, start: g.date, round: g.round, match: `${(teams[g.home] || {}).short || g.home} – ${(teams[g.away] || {}).short || g.away}`, tier: P.tier(best.safety) }); }
   });
   /* como mucho 2 props por partido para no concentrar el riesgo */
   const perGame = {};
-  propPicks.sort((a, b) => b.safety - a.safety).forEach(p => { if ((perGame[p.gameId] = (perGame[p.gameId] || 0) + 1) <= 2) picks.push(p); });
+  propPicks.sort((a, b) => b.safety - a.safety).forEach(p => { if ((perGame[p.gameId] = (perGame[p.gameId] || 0) + 1) <= 1) picks.push(p); });   // como mucho 1 de jugador por partido
   if (Object.keys(props).length) console.log(`· props: ${Object.keys(props).length} jugadores con línea · ${propPicks.length} picks de jugador candidatos`);
 
   /* ---- 5. picks del día + registro como pendientes ---- */

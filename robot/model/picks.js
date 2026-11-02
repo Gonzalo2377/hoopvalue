@@ -1,5 +1,14 @@
 /* ============================================================
-   HOOPVALUE — motor de picks: «el pick más seguro», no la mejor cuota
+   HOOPVALUE — motor de picks v2: cuota que merezca la pena + contexto
+   ------------------------------------------------------------
+   Un pick de 1.30 no compensa: con dos fallos hacen falta seis aciertos.
+   Ahora solo entran cuotas 1.55-2.60 y el pick tiene que estar
+   RESPALDADO por el contexto: forma, momentum, bajas propias y del
+   rival, casa/fuera, descanso, cara a cara, movimiento del mercado…
+   (en jugadores: compañeros de baja, minutos, rival, paliza…).
+   Puntuación = valor esperado + 1,2 puntos por cada factor neto a favor.
+   ------------------------------------------------------------
+   (versión anterior: «el pick más seguro», no la mejor cuota)
    ------------------------------------------------------------
    Para cada mercado (ganador, hándicap, total) y cada lado:
      pModel  → probabilidad de nuestro modelo (valoraciones + bajas + descanso)
@@ -14,9 +23,13 @@
 const { phi, pOver, clamp, round, mean } = require('../lib/util');
 
 const CFG = {
-  minOdd: +(process.env.MIN_ODD || 1.30),
-  minProb: 0.55,
-  minEV: -0.03,
+  minOdd: +(process.env.MIN_ODD || 1.55),
+  maxOdd: 2.60,
+  minProb: 0.42,
+  minEV: -0.02,
+  minNet: 2,                                 // factores a favor − en contra (partidos)
+  minNetProp: 3,                             // jugadores (proyección y últimos 10 ya suelen sumar 2)
+  perNet: 0.012,                             // cuánto suma a la puntuación cada factor neto
   sharp: ['pinnacle'],                       // los exchanges en Euroliga tienen muy poca liquidez
 };
 
@@ -121,6 +134,18 @@ function signals(side, market, T, ctx) {
     const w = ctx.h2h.filter(g => (g.home === code ? g.hs > g.as : g.as > g.hs)).length;
     if (w / ctx.h2h.length >= 0.75 || w / ctx.h2h.length <= 0.25) add(w / ctx.h2h.length > 0.5, `Cara a cara reciente: ${w}-${ctx.h2h.length - w}`);
   }
+  /* el mercado se mueve a su favor desde la apertura (suele ser dinero «listo») */
+  if (ctx.open && ctx.now) {
+    const key = market === 'total' ? 'total' : market === 'spread' ? 'spread' : 'ml';
+    const o = ctx.open[key], n = ctx.now[key];
+    if (o && n && o.pA != null && n.pA != null && (key !== 'spread' || o.line === n.line)) {
+      const d = (side === 'home' ? 1 : -1) * (n.pA - o.pA);
+      if (Math.abs(d) >= 0.03) add(d > 0, `Mercado ${d > 0 ? 'a su favor' : 'en contra'} desde la apertura (${Math.round((side === 'home' ? o.pA : 1 - o.pA) * 100)}% → ${Math.round((side === 'home' ? n.pA : 1 - n.pA) * 100)}%)`);
+    }
+  }
+  if (me.games7 != null && op.games7 != null && me.games7 - op.games7 >= 2) add(false, `Calendario cargado: ${me.games7} partidos en 7 días (rival ${op.games7})`);
+  else if (me.games7 != null && op.games7 != null && op.games7 - me.games7 >= 2) add(true, `Rival con calendario cargado: ${op.games7} partidos en 7 días`);
+  if (Math.abs(me.streak) >= 4) add(me.streak > 0, `Racha de ${Math.abs(me.streak)} ${me.streak > 0 ? 'victorias' : 'derrotas'} seguidas`);
   if (market === 'spread' && me.atsL10.n >= 6) { const r = me.atsL10.y / me.atsL10.n; if (Math.abs(r - 0.5) >= 0.2) add(r > 0.5, `Cubre el hándicap en ${me.atsL10.y} de ${me.atsL10.n} recientes`); }
   return out;
 }
@@ -135,14 +160,14 @@ function evaluate({ game, pred, sig, mk, trends, ctx, wModel }) {
     if (!best || !best.price || pMarket == null) return;
     const pFinal = wModel * pModel + (1 - wModel) * pMarket;
     const ev = pFinal * best.price - 1;
-    const sigs = signals(side, market, trends, { ...ctx, line });
+    const sigs = signals(side, market, trends, { ...ctx, line, now: mk }).sort((a, b) => b.ok - a.ok);
     const net = sigs.filter(s => s.ok).length - sigs.filter(s => !s.ok).length;
     const gap = Math.abs(pModel - pMarket);
-    const safety = pFinal - 0.5 * Math.max(0, gap - 0.03) + clamp(net * 0.01, -0.03, 0.03);
+    const safety = ev + CFG.perNet * Math.min(net, 6) - 0.6 * Math.max(0, gap - 0.12);   // puntuación: valor + contexto
     cands.push({ gameId: game.id, market, side, label, line, odd: round(best.price, 2), book: best.book,
       pModel: round(pModel, 3), pMarket: round(pMarket, 3), pFinal: round(pFinal, 3), ev: round(ev, 3), safety: round(safety, 3),
-      fair: round(1 / pFinal, 2), sharp: !!sharp, signals: sigs,
-      qualifies: best.price >= CFG.minOdd && pFinal >= CFG.minProb && ev >= CFG.minEV });
+      fair: round(1 / pFinal, 2), sharp: !!sharp, signals: sigs, net,
+      qualifies: best.price >= CFG.minOdd && best.price <= CFG.maxOdd && pFinal >= CFG.minProb && ev >= CFG.minEV && net >= CFG.minNet });
   };
   if (mk.ml) {
     push('ml', 'home', `Gana ${H}`, null, pm.ml.A, mk.ml.pA, mk.ml.bestA, mk.ml.sharp);
@@ -161,18 +186,23 @@ function evaluate({ game, pred, sig, mk, trends, ctx, wModel }) {
   return cands.sort((a, b) => b.safety - a.safety);
 }
 
-const tier = s => s >= 0.68 ? 'A' : s >= 0.61 ? 'B' : 'C';
+/* nivel de confianza según la puntuación (valor + contexto) */
+const tier = s => s >= 0.06 ? 'A' : s >= 0.03 ? 'B' : 'C';
 
 
 /* props de jugador: misma filosofía que los partidos.
    entry = jugador de players/index.json (proyección + línea de la casa), rows = su partido a partido */
 const STAT_NAME = { pts: 'puntos', reb: 'rebotes', ast: 'asistencias', tpm: 'triples', pra: 'pts+reb+ast', pr: 'pts+reb', pa: 'pts+ast', ra: 'reb+ast' };
-function evaluateProps(entry, rows, wModel) {
+/* pc (contexto, opcional): { mult:{pts,reb,ast,tpm}, sigs:[{stats,dir,txt,w}], season:[filas], vsOpp:[filas] } */
+const COMP = { pts: ['pts'], reb: ['reb'], ast: ['ast'], tpm: ['tpm'], pra: ['pts', 'reb', 'ast'], pr: ['pts', 'reb'], pa: ['pts', 'ast'], ra: ['reb', 'ast'] };
+function evaluateProps(entry, rows, wModel, pc = null) {
   const out = [];
   if (!entry.proj || !entry.lines || !entry.next) return out;
   const last10 = rows.slice(-10);
   for (const stat of Object.keys(STAT_NAME)) {
-    const L = entry.lines[stat], mu = entry.proj[stat], s = entry.proj.sd && entry.proj.sd[stat];
+    const L = entry.lines[stat], s = entry.proj.sd && entry.proj.sd[stat];
+    /* proyección ajustada por el contexto (compañeros de baja, rival, cansancio…) */
+    const mu = entry.proj[stat] == null ? null : pc ? round(COMP[stat].reduce((a, k) => a + (entry.proj[k] || 0) * (pc.mult[k] || 1), 0), 1) : entry.proj[stat];
     if (!L || mu == null || !s) continue;
     const val = r => stat === 'pra' ? r.pts + r.reb + r.ast : stat === 'pr' ? r.pts + r.reb : stat === 'pa' ? r.pts + r.ast : stat === 'ra' ? r.reb + r.ast : r[stat];
     /* cada línea ofrecida: con «más» y «menos» se quita el margen exacto;
@@ -190,14 +220,26 @@ function evaluateProps(entry, rows, wModel) {
         const hits = last10.filter(r => side === 'over' ? val(r) > o.line : val(r) < o.line).length;
         const pFinal = wModel * pModel + (1 - wModel) * pMarket;
         const ev = pFinal * odd - 1;
-        const hitAdj = last10.length >= 5 ? clamp((hits / last10.length - 0.5) * 0.06, -0.03, 0.03) : 0;
-        const safety = pFinal - 0.5 * Math.max(0, Math.abs(pModel - pMarket) - 0.03) + hitAdj;
+        const val2 = r => COMP[stat].reduce((a, k) => a + (r[k] || 0), 0);
+        const sigs = [{ ok: side === 'over' ? mu > o.line : mu < o.line, txt: `Proyección ${mu} (línea ${o.line})` },
+          { ok: hits / Math.max(1, last10.length) > 0.5, txt: `Cumplió en ${hits} de sus últimos ${last10.length}` }];
+        if (pc) {
+          const dirOk = d => side === 'over' ? d > 0 : d < 0;
+          const seen = new Set(), venue = pc.sigs.filter(x => x.stats.some(k => COMP[stat].includes(k))).sort((p, q) => (q.w || 1) - (p.w || 1));
+          venue.forEach(x => { const key = /^(En casa|Fuera)/.test(x.txt) ? 'venue' : /concede/.test(x.txt) ? 'opp' : x.key || x.txt; if (seen.has(key)) return; seen.add(key); sigs.push({ ok: dirOk(x.dir), txt: x.txt, w: x.w }); });
+          const season = pc.season || [], vs = pc.vsOpp || [];
+          if (season.length >= 6) { const h = season.filter(r => side === 'over' ? val2(r) > o.line : val2(r) < o.line).length; if (Math.abs(h / season.length - 0.5) >= 0.2) sigs.push({ ok: h / season.length > 0.5, txt: `Temporada: cumple en ${h} de ${season.length}` }); }
+          if (vs.length >= 2) { const m = vs.reduce((a, r) => a + val2(r), 0) / vs.length; if (Math.abs(m - o.line) >= Math.max(1.5, o.line * 0.15)) sigs.push({ ok: side === 'over' ? m > o.line : m < o.line, txt: `Contra este rival: ${round(m, 1)} de media (${vs.length} partidos)`, w: 0.75 }); }
+        }
+        sigs.sort((a, b) => b.ok - a.ok || (b.w || 1) - (a.w || 1));
+        const net = round(sigs.reduce((a, x) => a + (x.ok ? 1 : -1) * (x.w || 1), 0), 2);
+        const safety = ev + CFG.perNet * Math.min(net, 6) - 0.6 * Math.max(0, Math.abs(pModel - pMarket) - 0.12);   // si el modelo se aleja mucho del mercado, el mercado sabe algo
         out.push({ gameId: entry.next.gameId, market: 'prop', stat, side, line: o.line, playerId: entry.id, player: entry.name, team: entry.team,
           label: `${entry.name} ${side === 'over' ? 'más' : 'menos'} de ${o.line} ${STAT_NAME[stat]}`, odd: round(odd, 2), book,
           pModel: round(pModel, 3), pMarket: round(pMarket, 3), pFinal: round(pFinal, 3), ev: round(ev, 3), safety: round(safety, 3), fair: round(1 / pFinal, 2),
-          proj: mu, hits: `${hits}/${last10.length}`, estimated: !o.under,
-          signals: [{ ok: side === 'over' ? mu > o.line : mu < o.line, txt: `Proyección ${mu} (línea ${o.line})` }, { ok: hits / Math.max(1, last10.length) > 0.5, txt: `Cumplió en ${hits} de sus últimos ${last10.length}` }],
-          qualifies: odd >= CFG.minOdd && pFinal >= CFG.minProb && ev >= CFG.minEV });
+          proj: mu, hits: `${hits}/${last10.length}`, estimated: !o.under, signals: sigs.map(({ ok, txt }) => ({ ok, txt })), net,
+          qualifies: odd >= CFG.minOdd && odd <= CFG.maxOdd && pFinal >= CFG.minProb && ev >= CFG.minEV && net >= CFG.minNetProp && (side === 'over' ? mu > o.line : mu < o.line)
+            && (last10.length < 5 || hits / last10.length >= 0.4) && !sigs.some(x => !x.ok && /^Temporada/.test(x.txt)) && Math.abs(pModel - pMarket) <= 0.25 });
       });
     }
   }

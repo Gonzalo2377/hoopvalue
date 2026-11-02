@@ -35,17 +35,17 @@ function build(picks) {
   const pool = picks.filter(p => p.qualifies !== false).slice(0, 14);
   const res = [];
   /* 🛡️ segura: la mayor probabilidad conjunta con cuota total ≥ 1,60 */
-  const safe = [...combos(pool, 2), ...combos(pool, 3)].filter(distinctGames).map(c => summary('segura', c))
-    .filter(c => c.odd >= 1.6 && c.prob >= 0.4).sort((a, b) => b.prob - a.prob || b.ev - a.ev)[0];
+  const safe = combos(pool, 2).filter(distinctGames).map(c => summary('segura', c))      // picks v2 (cuotas 1.55-2.60): la segura va de 2
+    .filter(c => c.odd >= 2.8 && c.prob >= 0.25).sort((a, b) => b.prob - a.prob || b.ev - a.ev)[0];
   if (safe) res.push(safe);
   /* 💎 valor: mejor valor esperado con 3 selecciones (prob. conjunta ≥ 25 %) */
   const value = combos(pool, 3).filter(distinctGames).map(c => summary('valor', c))
-    .filter(c => c.prob >= 0.25 && !(safe && sameLegs(c, safe))).sort((a, b) => b.ev - a.ev)[0];
+    .filter(c => c.prob >= 0.12 && !(safe && sameLegs(c, safe))).sort((a, b) => b.ev - a.ev)[0];
   if (value) res.push(value);
   /* 🏀 jugadores: solo props, la más probable con cuota ≥ 1,60 */
   const props = pool.filter(p => p.market === 'prop');
-  const pc = [...combos(props, 2), ...combos(props, 3)].filter(distinctGames).map(c => summary('jugadores', c))
-    .filter(c => c.odd >= 1.6 && c.prob >= 0.35 && !res.some(r => sameLegs(r, c))).sort((a, b) => b.prob - a.prob)[0];
+  const pc = combos(props, 2).filter(distinctGames).map(c => summary('jugadores', c))
+    .filter(c => c.odd >= 2.8 && c.prob >= 0.22 && !res.some(r => sameLegs(r, c))).sort((a, b) => b.prob - a.prob)[0];
   if (pc) res.push(pc);
   return res;
 }

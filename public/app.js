@@ -7,7 +7,7 @@ const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': 
 const pct = (x, d = 0) => x == null ? '—' : (x * 100).toFixed(d) + '%';
 const sgn = x => x == null ? '—' : (x > 0 ? '+' : '') + x;
 const MK = { ml: 'Ganador', spread: 'Hándicap', total: 'Total puntos' };
-const TIER = { A: 'Muy seguro', B: 'Seguro', C: 'Moderado' };
+const TIER = { A: 'Confianza alta', B: 'Confianza media', C: 'Con valor' };
 
 /* ---------- liga activa (Euroliga / NBA) ---------- */
 let LG = (() => { try { return localStorage.getItem('lg') || 'euroleague'; } catch (e) { return 'euroleague'; } })();
@@ -82,7 +82,7 @@ function viewPicks() {
   } else if (!T.meta.oddsSource) {
     h += `<div class="note">Sin clave de cuotas configurada: se muestran las predicciones del modelo, pero no hay picks (se necesitan cuotas para saber qué es seguro y qué no). Ver SETUP_ES.md.</div>`;
   } else if (!T.picks.length) {
-    h += `<div class="card"><h3>Hoy no hay ningún pick lo bastante seguro</h3><p class="muted">Ningún mercado supera el ${Math.round(0.55 * 100)} % con cuota ≥ ${T.meta.minOdd} sin valor esperado negativo. No apostar también es una decisión.</p></div>`;
+    h += `<div class="card"><h3>Hoy no hay ningún pick que lo merezca</h3><p class="muted">Ningún mercado con cuota entre ${T.meta.minOdd} y 2.60 tiene el contexto suficiente a favor (forma, bajas, momentum, casa/fuera…). No apostar también es una decisión.</p></div>`;
   }
   if (T.picks.length) {
     h += `<h2>Picks del día <span class="muted small">· ${T.picks.length} · desliza para ver más</span></h2>` + carouselHTML(T.picks);
@@ -254,14 +254,15 @@ function viewRecord() {
 
 /* ---------- CÓMO FUNCIONA ---------- */
 function viewHow() {
-  return `<div class="how"><h2>Cómo elegimos el pick más seguro</h2>
-  <p>No buscamos la cuota más alta, sino la apuesta con <b>más probabilidad real de acertar</b> que además no tenga valor esperado negativo.</p>
+  return `<div class="how"><h2>Cómo elegimos los picks</h2>
+  <p>Un pick de 1.30 no compensa: con dos fallos hacen falta seis aciertos para recuperar. Buscamos <b>cuotas entre 1.55 y 2.60</b> que estén <b>respaldadas por el contexto</b> del partido.</p>
   <ol>
     <li><b>Probabilidad del mercado:</b> quitamos el margen de las casas tomamos el consenso de todas las casas y damos prioridad a Pinnacle, la más afinada, cuando coincide con él. Es la referencia más fiable que existe.</li>
     <li><b>Probabilidad del modelo:</b> ataque y defensa por 100 posesiones ajustados por rival, ritmo, factor cancha, descanso (semanas dobles) y bajas probables. Más peso a los partidos recientes.</li>
     <li><b>Mezcla prudente:</b> el modelo pesa un 12-20 % y el mercado el resto. Si el modelo discrepa mucho del mercado, el pick pierde seguridad (casi siempre el mercado sabe algo).</li>
-    <li><b>Señales:</b> forma, momentum, descanso, casa/fuera, cara a cara, hándicap cubierto, ritmo… suman o restan un poco y se muestran con ✓ y ✗.</li>
-    <li><b>Filtro:</b> probabilidad ≥ 55 %, cuota ≥ ${D.today ? D.today.meta.minOdd : 1.3} y valor esperado no peor que −3 %. Niveles: A ≥ 68 %, B ≥ 61 %, C el resto.</li>
+    <li><b>Contexto de los partidos:</b> forma L10, momentum, rachas, bajas propias y del rival, casa/fuera, descanso y calendario, cara a cara, hándicap cubierto, ritmo y hacia dónde se mueve el mercado desde la apertura.</li>
+    <li><b>Contexto de los jugadores:</b> cómo rinde cuando falta un compañero (con/sin), si sus minutos suben o bajan, casa/fuera, lo que concede el rival en esa estadística, cansancio, riesgo de paliza, su historial contra ese rival y sus aciertos en la temporada.</li>
+    <li><b>Filtro:</b> cuota entre ${D.today ? D.today.meta.minOdd : 1.55} y 2.60, al menos 2 factores más a favor que en contra (3 en jugadores) y valor esperado no peor que −2 %. Se ordena por valor + contexto, y todo se enseña con ✓ y ✗.</li>
   </ol>
   <h2>Historial honesto</h2>
   <ul><li>Cada pick se guarda con la cuota del momento y no se toca nunca.</li>

@@ -95,8 +95,8 @@ async function main() {
   txt(title, 60, 210, fit(title, 640, 52, 900), C.text, 900);
   if (p.market === 'prop') { const bet = betShort(p); txt(bet, 60, 262, fit(bet, 640, 36, 700), C.text, 700); }
   rr(60, 300, 230, 120, 22); ctx.fillStyle = C.panel2; ctx.fill(); txt('odds', 175, 340, 22, C.muted, 600, 'center'); txt(p.odd.toFixed(2), 175, 400, 54, C.accent2, 900, 'center');
-  rr(310, 300, 230, 120, 22); ctx.fillStyle = C.panel2; ctx.fill(); txt('probabilidad', 425, 340, 22, C.muted, 600, 'center'); txt(Math.round(p.pFinal * 100) + '%', 425, 400, 54, C.good, 900, 'center');
-  const tier = { A: 'A · Muy seguro', B: 'B · Seguro', C: 'C · Moderado' }[p.tier] || '';
+  rr(310, 300, 230, 120, 22); ctx.fillStyle = C.panel2; ctx.fill(); const sg = p.signals || [], fav = sg.filter(x => x.ok).length; txt('factores a favor', 425, 340, 22, C.muted, 600, 'center'); txt(sg.length ? fav + '/' + sg.length : '—', 425, 400, 54, C.good, 900, 'center');
+  const tier = { A: 'Confianza alta', B: 'Confianza media', C: 'Con valor' }[p.tier] || '';
   rr(60, 445, 260, 50, 25); ctx.fillStyle = 'rgba(34,197,94,.15)'; ctx.fill(); txt(tier, 190, 478, 24, C.good, 800, 'center');
   (p.signals || []).slice(0, 2).forEach((s, i) => txt((s.ok ? '✓ ' : '✗ ') + s.txt, 60, 545 + i * 36, fit(s.txt, 600, 24, 600), s.ok ? C.text : C.muted, 600));
   /* columna derecha: gráfico */
@@ -222,7 +222,7 @@ window.renderPickTall = async function (canvas, { league = 'euroleague', pick } 
   txt(title, 50, 200, fit(title, W - 100, 54, 900), C.text, 900);
   if (p.market === 'prop') { const bet = betShort(p); txt(bet, 50, 254, fit(bet, W - 100, 36, 700), C.text, 700); }
   rr(50, 286, 395, 120, 22); ctx.fillStyle = C.panel2; ctx.fill(); txt('odds', 247, 326, 22, C.muted, 600, 'center'); txt(Number(p.odd).toFixed(2), 247, 386, 54, C.accent2, 900, 'center');
-  rr(465, 286, 395, 120, 22); ctx.fillStyle = C.panel2; ctx.fill(); txt('probabilidad', 662, 326, 22, C.muted, 600, 'center'); txt(p.pFinal ? Math.round(p.pFinal * 100) + '%' : '—', 662, 386, 54, C.good, 900, 'center');
+  rr(465, 286, 395, 120, 22); ctx.fillStyle = C.panel2; ctx.fill(); const sg = p.signals || [], fav = sg.filter(x => x.ok).length; txt('factores a favor', 662, 326, 22, C.muted, 600, 'center'); txt(sg.length ? fav + '/' + sg.length : '—', 662, 386, 54, C.good, 900, 'center');
   /* gráfico */
   const X = 50, Y = 432, PW = W - 100, PH = 520;
   rr(X, Y, PW, PH, 26); ctx.fillStyle = C.panel; ctx.fill(); ctx.strokeStyle = 'rgba(255,122,26,.45)'; ctx.lineWidth = 2.5; ctx.stroke();
