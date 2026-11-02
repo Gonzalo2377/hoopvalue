@@ -5188,30 +5188,13 @@
         "id": "combo-nba",
         "kind": "combo",
         "league": "nba",
-        "title": "Safe Parlay · NBA @1.73",
+        "title": "Safe Parlay · NBA @1.69",
         "postAt": "2026-11-02T18:00:00.000Z",
         "image": true,
-        "text": "🎯 Safe Parlay · NBA\n\n1.- D. Jenkins +4.5 R+A @1.33\n2.- D. Mitchell +3.5 Ast @1.30\n\n💰 Total odds 1.73\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
+        "text": "🎯 Safe Parlay · NBA\n\n1.- D. Mitchell +3.5 Ast @1.30\n2.- J. Beringer +9.5 P+R @1.30\n\n💰 Total odds 1.69\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
         "picks": [],
         "combo": {
           "legs": [
-            {
-              "id": "nba:401909908|prop|over|4.5|5107199|ra",
-              "league": "nba",
-              "label": "D. Jenkins +4.5 reb+ast",
-              "list": "D. Jenkins +4.5 R+A",
-              "odd": 1.33,
-              "start": "2026-11-03T00:30Z",
-              "gameId": "nba:401909908",
-              "market": "prop",
-              "side": "over",
-              "line": 4.5,
-              "stat": "ra",
-              "playerId": "5107199",
-              "team": "DET",
-              "match": "Hornets – Pistons",
-              "pFinal": 0.734
-            },
             {
               "id": "nba:401909921|prop|over|3.5|4278053|ast",
               "league": "nba",
@@ -5228,10 +5211,27 @@
               "team": "MIA",
               "match": "Lakers – Heat",
               "pFinal": 0.758
+            },
+            {
+              "id": "nba:401909915|prop|over|9.5|5279133|pr",
+              "league": "nba",
+              "label": "J. Beringer +9.5 pts+reb",
+              "list": "J. Beringer +9.5 P+R",
+              "odd": 1.3,
+              "start": "2026-11-03T01:00Z",
+              "gameId": "nba:401909915",
+              "market": "prop",
+              "side": "over",
+              "line": 9.5,
+              "stat": "pr",
+              "playerId": "5279133",
+              "team": "MIN",
+              "match": "Timberwolves – Bucks",
+              "pFinal": 0.753
             }
           ],
-          "odd": 1.73,
-          "prob": 0.556
+          "odd": 1.69,
+          "prob": 0.571
         }
       },
       "summary-nba": {
@@ -5330,6 +5330,23 @@
         "image": true,
         "picks": [
           {
+            "id": "nba:401909916|prop|over|3.5|4432639|reb",
+            "league": "nba",
+            "label": "J. Smith Jr. +3.5 rebotes",
+            "list": "J. Smith Jr. +3.5 Reb",
+            "odd": 1.32,
+            "start": "2026-11-03T01:30Z",
+            "gameId": "nba:401909916",
+            "market": "prop",
+            "side": "over",
+            "line": 3.5,
+            "stat": "reb",
+            "playerId": "4432639",
+            "team": "HOU",
+            "match": "Rockets – Celtics",
+            "pFinal": 0.738
+          },
+          {
             "id": "nba:401909908|prop|over|4.5|5107199|ra",
             "league": "nba",
             "label": "D. Jenkins +4.5 reb+ast",
@@ -5379,6 +5396,52 @@
             "team": "CLE",
             "match": "Cavaliers – Thunder",
             "pFinal": 0.731
+          }
+        ],
+        "text": "🏀 NBA Picks Day · 02/11\n\n1.- J. Smith Jr. +3.5 Reb @1.32\n2.- D. Jenkins +4.5 R+A @1.33\n3.- D. Mitchell +3.5 Ast @1.30\n4.- P. Watson +4.5 R+A @1.33\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-2": {
+        "id": "nba-day-2",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 2/3 · picks 5-8",
+        "postAt": "2026-11-02T17:45:00.000Z",
+        "image": true,
+        "picks": [
+          {
+            "id": "nba:401909915|prop|over|9.5|5279133|pr",
+            "league": "nba",
+            "label": "J. Beringer +9.5 pts+reb",
+            "list": "J. Beringer +9.5 P+R",
+            "odd": 1.3,
+            "start": "2026-11-03T01:00Z",
+            "gameId": "nba:401909915",
+            "market": "prop",
+            "side": "over",
+            "line": 9.5,
+            "stat": "pr",
+            "playerId": "5279133",
+            "team": "MIN",
+            "match": "Timberwolves – Bucks",
+            "pFinal": 0.753
+          },
+          {
+            "id": "nba:401909915|prop|over|13.5|4431671|pts",
+            "league": "nba",
+            "label": "J. McDaniels +13.5 puntos",
+            "list": "J. McDaniels +13.5 Pts",
+            "odd": 1.34,
+            "start": "2026-11-03T01:00Z",
+            "gameId": "nba:401909915",
+            "market": "prop",
+            "side": "over",
+            "line": 13.5,
+            "stat": "pts",
+            "playerId": "4431671",
+            "team": "MIN",
+            "match": "Timberwolves – Bucks",
+            "pFinal": 0.734
           },
           {
             "id": "nba:401909921|prop|over|4.5|4601025|ra",
@@ -5396,19 +5459,7 @@
             "team": "MIA",
             "match": "Lakers – Heat",
             "pFinal": 0.739
-          }
-        ],
-        "text": "🏀 NBA Picks Day · 02/11\n\n1.- D. Jenkins +4.5 R+A @1.33\n2.- D. Mitchell +3.5 Ast @1.30\n3.- P. Watson +4.5 R+A @1.33\n4.- P. Larsson +4.5 R+A @1.33\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-2": {
-        "id": "nba-day-2",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 2/3 · picks 5-8",
-        "postAt": "2026-11-02T17:45:00.000Z",
-        "image": true,
-        "picks": [
+          },
           {
             "id": "nba:401909914|ml|home|||",
             "league": "nba",
@@ -5422,7 +5473,19 @@
             "line": null,
             "match": "Grizzlies – Pelicans",
             "pFinal": 0.69
-          },
+          }
+        ],
+        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n5.- J. Beringer +9.5 P+R @1.30\n6.- J. McDaniels +13.5 Pts @1.34\n7.- P. Larsson +4.5 R+A @1.33\n8.- Gana Grizzlies @1.44\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-3": {
+        "id": "nba-day-3",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 3/3 · picks 9-12",
+        "postAt": "2026-11-02T17:45:00.000Z",
+        "image": true,
+        "picks": [
           {
             "id": "nba:401909908|prop|over|9.5|3157465|pts",
             "league": "nba",
@@ -5473,19 +5536,7 @@
             "team": "HOU",
             "match": "Rockets – Celtics",
             "pFinal": 0.727
-          }
-        ],
-        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n5.- Gana Grizzlies @1.44\n6.- D. Robinson +9.5 Pts @1.38\n7.- D. Peterson +9.5 Pts @1.38\n8.- A. Thompson +7.5 Pts @1.38\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-3": {
-        "id": "nba-day-3",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 3/3 · picks 9-12",
-        "postAt": "2026-11-02T17:45:00.000Z",
-        "image": true,
-        "picks": [
+          },
           {
             "id": "nba:401909916|ml|home|||",
             "league": "nba",
@@ -5499,57 +5550,9 @@
             "line": null,
             "match": "Rockets – Celtics",
             "pFinal": 0.643
-          },
-          {
-            "id": "nba:401909907|prop|under|1.5|4900671|tpm",
-            "league": "nba",
-            "label": "A. Mitchell −1.5 triples",
-            "list": "A. Mitchell −1.5 T3",
-            "odd": 1.49,
-            "start": "2026-11-03T00:00Z",
-            "gameId": "nba:401909907",
-            "market": "prop",
-            "side": "under",
-            "line": 1.5,
-            "stat": "tpm",
-            "playerId": "4900671",
-            "team": "OKC",
-            "match": "Cavaliers – Thunder",
-            "pFinal": 0.671
-          },
-          {
-            "id": "nba:401909907|ml|home|||",
-            "league": "nba",
-            "label": "Gana Cavaliers",
-            "list": "Gana Cavaliers",
-            "odd": 1.58,
-            "start": "2026-11-03T00:00Z",
-            "gameId": "nba:401909907",
-            "market": "ml",
-            "side": "home",
-            "line": null,
-            "match": "Cavaliers – Thunder",
-            "pFinal": 0.64
-          },
-          {
-            "id": "nba:401909920|prop|under|5.5|5075626|reb",
-            "league": "nba",
-            "label": "B. Miller −5.5 rebotes",
-            "list": "B. Miller −5.5 Reb",
-            "odd": 1.63,
-            "start": "2026-11-03T03:00Z",
-            "gameId": "nba:401909920",
-            "market": "prop",
-            "side": "under",
-            "line": 5.5,
-            "stat": "reb",
-            "playerId": "5075626",
-            "team": "LAC",
-            "match": "Clippers – Raptors",
-            "pFinal": 0.647
           }
         ],
-        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n9.- Gana Rockets @1.56\n10.- A. Mitchell −1.5 T3 @1.49\n11.- Gana Cavaliers @1.58\n12.- B. Miller −5.5 Reb @1.63\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n9.- D. Robinson +9.5 Pts @1.38\n10.- D. Peterson +9.5 Pts @1.38\n11.- A. Thompson +7.5 Pts @1.38\n12.- Gana Rockets @1.56\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
