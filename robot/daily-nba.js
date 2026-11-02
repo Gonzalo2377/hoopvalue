@@ -138,6 +138,9 @@ async function main() {
   const allowed = CX.oppAllowed(games, now, season);
   const propPicks = [];
   index.filter(e => e.lines && e.next && soonIds.has(e.next.gameId) && !outIds.has(e.id)).forEach(e => {
+    /* que venga jugando: si no salió en el último partido de su equipo y no está en el parte, puede no jugar (prop nula) */
+    const tIds = games.filter(x => x.status === 'final' && Date.parse(x.date) < Date.parse(e.next.start) && (x.home === e.team || x.away === e.team)).map(x => x.id);
+    if (tIds.length && logs[e.id] && !logs[e.id].games.some(x => x.gid === tIds[tIds.length - 1])) return;
     const outMates = (injByTeam[e.team] || []).filter(i => /out|doubtful/i.test(i.status)).map(i => i.id);
     const pc = CX.forEntry({ logs, games, byId, e, outMates, outGames, allowed, season });
     const best = P.evaluateProps(e, rowsOf(e.id), modelWeight(12, 12), pc).filter(c => c.qualifies).sort((a, b) => b.safety - a.safety)[0];

@@ -158,7 +158,9 @@ function main() {
     const st = i.combo.legs.map(l => info(l).result);
     const result = st.includes('L') ? 'L' : st.some(r => !r) ? null : st.every(r => r === 'P' || r === 'V') ? 'V' : 'W';
     const odd = +i.combo.legs.reduce((a, l, k) => a * (st[k] === 'W' || st[k] === null || st[k] === 'L' ? Number(l.odd) : 1), 1).toFixed(2);
-    return { id: i.id, league: i.league, label: `Combinada: ${i.combo.legs.map(l => l.list || l.label).join(' + ')}`, odd, result, start: i.combo.legs.map(l => l.start).sort().pop(), combo: true };
+    /* cada pierna con su estado: así se ve que una nula no tumba la combinada */
+    const mark = k => st[k] === 'W' ? ' ✓' : st[k] === 'L' ? ' ✗' : st[k] === 'V' || st[k] === 'P' ? ' (nula)' : '';
+    return { id: i.id, league: i.league, label: `Combinada: ${i.combo.legs.map((l, k) => (l.list || l.label) + mark(k)).join(' + ')}`, odd, result, start: i.combo.legs.map(l => l.start).sort().pop(), combo: true };
   };
   const items = [...prev.flatMap(i => i.picks).filter(played).map(i => ({ ...i, result: info(i).result })),
     ...prev.filter(i => i.combo && i.combo.legs.every(played)).map(comboRow)];
