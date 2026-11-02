@@ -1699,6 +1699,42 @@
       "safety": 0.02,
       "tier": "C",
       "createdAt": "2026-11-02T17:04:27.073Z"
+    },
+    {
+      "id": "nba:401909907|prop|over|26.5|4900671|pra",
+      "gameId": "nba:401909907",
+      "start": "2026-11-03T00:00Z",
+      "match": "Cavaliers – Thunder",
+      "market": "prop",
+      "side": "over",
+      "line": 26.5,
+      "label": "Ajay Mitchell más de 26.5 pts+reb+ast",
+      "odd": 1.98,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.496,
+      "safety": 0.024,
+      "tier": "C",
+      "stat": "pra",
+      "playerId": "4900671",
+      "createdAt": "2026-11-02T17:25:03.952Z"
+    },
+    {
+      "id": "nba:401909908|prop|over|2.5|3135045|reb",
+      "gameId": "nba:401909908",
+      "start": "2026-11-03T00:30Z",
+      "match": "Hornets – Pistons",
+      "market": "prop",
+      "side": "over",
+      "line": 2.5,
+      "label": "Grayson Allen más de 2.5 rebotes",
+      "odd": 1.77,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.555,
+      "safety": 0.015,
+      "tier": "C",
+      "stat": "reb",
+      "playerId": "3135045",
+      "createdAt": "2026-11-02T17:25:03.952Z"
     }
   ],
   "record": [
@@ -17879,6 +17915,50 @@
       "ev": 0.071,
       "start": "2026-11-03T00:00Z",
       "createdAt": "2026-11-02T17:04:27.073Z"
+    },
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "nba:401909920|prop|under|7.5|4432170|reb",
+          "gameId": "nba:401909920",
+          "start": "2026-11-03T03:00Z",
+          "match": "Clippers – Raptors",
+          "market": "prop",
+          "side": "under",
+          "line": 7.5,
+          "stat": "reb",
+          "playerId": "4432170",
+          "player": "Isaiah Jackson",
+          "team": "LAC",
+          "label": "Isaiah Jackson menos de 7.5 rebotes",
+          "odd": 1.68,
+          "pFinal": 0.586,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909908|prop|over|2.5|3135045|reb",
+          "gameId": "nba:401909908",
+          "start": "2026-11-03T00:30Z",
+          "match": "Hornets – Pistons",
+          "market": "prop",
+          "side": "over",
+          "line": 2.5,
+          "stat": "reb",
+          "playerId": "3135045",
+          "player": "Grayson Allen",
+          "team": "CHA",
+          "label": "Grayson Allen más de 2.5 rebotes",
+          "odd": 1.77,
+          "pFinal": 0.555,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.97,
+      "prob": 0.325,
+      "ev": -0.033,
+      "start": "2026-11-03T00:30Z",
+      "createdAt": "2026-11-02T17:25:03.952Z"
     }
   ],
   "comboRecord": [
