@@ -1825,6 +1825,22 @@
       "stat": "reb",
       "playerId": "3059319",
       "createdAt": "2026-11-02T18:50:22.601Z"
+    },
+    {
+      "id": "nba:401909913|spread|home|-8.5||",
+      "gameId": "nba:401909913",
+      "start": "2026-11-03T01:00Z",
+      "match": "Mavericks – Kings",
+      "market": "spread",
+      "side": "home",
+      "line": -8.5,
+      "label": "Mavericks -8.5",
+      "odd": 1.85,
+      "book": "draftkings",
+      "pFinal": 0.54,
+      "safety": 0.022,
+      "tier": "C",
+      "createdAt": "2026-11-02T19:10:55.162Z"
     }
   ],
   "record": [
@@ -18312,6 +18328,59 @@
       "ev": 0.031,
       "start": "2026-11-03T00:30Z",
       "createdAt": "2026-11-02T18:50:22.601Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909917|prop|over|20.5|4433627|pts",
+          "gameId": "nba:401909917",
+          "start": "2026-11-03T01:30Z",
+          "match": "Spurs – Jazz",
+          "market": "prop",
+          "side": "over",
+          "line": 20.5,
+          "stat": "pts",
+          "playerId": "4433627",
+          "player": "Keyonte George",
+          "team": "UTAH",
+          "label": "Keyonte George más de 20.5 puntos",
+          "odd": 1.79,
+          "pFinal": 0.562,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909916|spread|home|-5.5||",
+          "gameId": "nba:401909916",
+          "start": "2026-11-03T01:30Z",
+          "match": "Rockets – Celtics",
+          "market": "spread",
+          "side": "home",
+          "line": -5.5,
+          "label": "Rockets -5.5",
+          "odd": 1.91,
+          "pFinal": 0.546,
+          "book": "unibet"
+        },
+        {
+          "id": "nba:401909914|spread|home|-5.5||",
+          "gameId": "nba:401909914",
+          "start": "2026-11-03T01:00Z",
+          "match": "Grizzlies – Pelicans",
+          "market": "spread",
+          "side": "home",
+          "line": -5.5,
+          "label": "Grizzlies -5.5",
+          "odd": 1.93,
+          "pFinal": 0.533,
+          "book": "draftkings"
+        }
+      ],
+      "odd": 6.6,
+      "prob": 0.164,
+      "ev": 0.079,
+      "start": "2026-11-03T01:00Z",
+      "createdAt": "2026-11-02T19:10:55.162Z"
     }
   ],
   "comboRecord": [
