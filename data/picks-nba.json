@@ -1841,6 +1841,24 @@
       "safety": 0.022,
       "tier": "C",
       "createdAt": "2026-11-02T19:10:55.162Z"
+    },
+    {
+      "id": "nba:401909916|prop|under|2.5|3078576|tpm",
+      "gameId": "nba:401909916",
+      "start": "2026-11-03T01:30Z",
+      "match": "Rockets – Celtics",
+      "market": "prop",
+      "side": "under",
+      "line": 2.5,
+      "label": "Derrick White menos de 2.5 triples",
+      "odd": 1.55,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.637,
+      "safety": 0,
+      "tier": "C",
+      "stat": "tpm",
+      "playerId": "3078576",
+      "createdAt": "2026-11-02T19:31:28.006Z"
     }
   ],
   "record": [
@@ -18381,6 +18399,55 @@
       "ev": 0.079,
       "start": "2026-11-03T01:00Z",
       "createdAt": "2026-11-02T19:10:55.162Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909916|spread|home|-5.5||",
+          "gameId": "nba:401909916",
+          "start": "2026-11-03T01:30Z",
+          "match": "Rockets – Celtics",
+          "market": "spread",
+          "side": "home",
+          "line": -5.5,
+          "label": "Rockets -5.5",
+          "odd": 1.94,
+          "pFinal": 0.532,
+          "book": "draftkings"
+        },
+        {
+          "id": "nba:401909913|spread|home|-9.5||",
+          "gameId": "nba:401909913",
+          "start": "2026-11-03T01:00Z",
+          "match": "Mavericks – Kings",
+          "market": "spread",
+          "side": "home",
+          "line": -9.5,
+          "label": "Mavericks -9.5",
+          "odd": 2.02,
+          "pFinal": 0.498,
+          "book": "unibet"
+        },
+        {
+          "id": "nba:401909914|spread|home|-5.5||",
+          "gameId": "nba:401909914",
+          "start": "2026-11-03T01:00Z",
+          "match": "Grizzlies – Pelicans",
+          "market": "spread",
+          "side": "home",
+          "line": -5.5,
+          "label": "Grizzlies -5.5",
+          "odd": 1.93,
+          "pFinal": 0.533,
+          "book": "draftkings"
+        }
+      ],
+      "odd": 7.56,
+      "prob": 0.141,
+      "ev": 0.068,
+      "start": "2026-11-03T01:00Z",
+      "createdAt": "2026-11-02T19:31:28.006Z"
     }
   ],
   "comboRecord": [
