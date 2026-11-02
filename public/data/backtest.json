@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T07:44:24.299Z",
+  "generatedAt": "2026-11-02T12:28:07.493Z",
   "games": 954,
   "sig": {
     "margin": 11.93,
@@ -62,55 +62,55 @@
   ],
   "picks": {
     "all": {
-      "n": 12,
-      "w": 9,
-      "hit": 0.75,
-      "roi": 0.092,
-      "avgOdd": 1.5,
-      "avgP": 0.67
+      "n": 2,
+      "w": 0,
+      "hit": 0,
+      "roi": -1,
+      "avgOdd": 1.97,
+      "avgP": 0.502
     },
     "byTier": {
       "A": {
-        "n": 6,
-        "w": 5,
-        "hit": 0.833,
-        "roi": 0.143,
-        "avgOdd": 1.39,
-        "avgP": 0.72
-      },
-      "B": {
-        "n": 4,
-        "w": 4,
-        "hit": 1,
-        "roi": 0.56,
-        "avgOdd": 1.56,
-        "avgP": 0.642
-      },
-      "C": {
-        "n": 2,
-        "w": 0,
-        "hit": 0,
-        "roi": -1,
-        "avgOdd": 1.74,
-        "avgP": 0.574
-      }
-    },
-    "byMarket": {
-      "ml": {
-        "n": 12,
-        "w": 9,
-        "hit": 0.75,
-        "roi": 0.092,
-        "avgOdd": 1.5,
-        "avgP": 0.67
-      },
-      "spread": {
         "n": 0,
         "w": 0,
         "hit": null,
         "roi": null,
         "avgOdd": null,
         "avgP": null
+      },
+      "B": {
+        "n": 0,
+        "w": 0,
+        "hit": null,
+        "roi": null,
+        "avgOdd": null,
+        "avgP": null
+      },
+      "C": {
+        "n": 2,
+        "w": 0,
+        "hit": 0,
+        "roi": -1,
+        "avgOdd": 1.97,
+        "avgP": 0.502
+      }
+    },
+    "byMarket": {
+      "ml": {
+        "n": 0,
+        "w": 0,
+        "hit": null,
+        "roi": null,
+        "avgOdd": null,
+        "avgP": null
+      },
+      "spread": {
+        "n": 2,
+        "w": 0,
+        "hit": 0,
+        "roi": -1,
+        "avgOdd": 1.97,
+        "avgP": 0.502
       },
       "total": {
         "n": 0,
