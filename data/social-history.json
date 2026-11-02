@@ -5023,7 +5023,7 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/det.png",
             "pred": [
-              100,
+              101,
               104
             ]
           },
@@ -5037,8 +5037,8 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
             "pred": [
-              112,
-              118
+              108,
+              117
             ]
           },
           {
@@ -5051,8 +5051,8 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
             "pred": [
-              116,
-              108
+              113,
+              105
             ]
           },
           {
@@ -5164,7 +5164,7 @@
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
             "pred": [
               112,
-              115
+              114
             ]
           },
           {
@@ -5210,16 +5210,16 @@
             ]
           }
         ],
-        "text": "🔮 EuroPicks Score Predictions · NBA · 02/11\n\nGS 110-108 LAC\nLAL 115-114 TOR\nCLE 116-104 OKC\nCHA 100-104 DET\nIND 112-118 ATL\nNY 116-108 BKN\nORL 106-111 WSH\nPHI 121-110 CHI\nDAL 123-110 SAC\nMEM 121-108 NO\nMIN 120-110 MIL\nHOU 117-108 BOS\nSA 119-108 UTAH\nDEN 112-115 POR\nGS 116-114 PH"
+        "text": "🔮 EuroPicks Score Predictions · NBA · 02/11\n\nGS 110-108 LAC\nLAL 115-114 TOR\nCLE 116-104 OKC\nCHA 101-104 DET\nIND 108-117 ATL\nNY 113-105 BKN\nORL 106-111 WSH\nPHI 121-110 CHI\nDAL 123-110 SAC\nMEM 121-108 NO\nMIN 120-110 MIL\nHOU 117-108 BOS\nSA 119-108 UTAH\nDEN 112-114 POR\nGS 116-114 PH"
       },
       "combo-nba": {
         "id": "combo-nba",
         "kind": "combo",
         "league": "nba",
-        "title": "Safe Parlay · NBA @1.77",
+        "title": "Safe Parlay · NBA @1.72",
         "postAt": "2026-11-02T18:00:00.000Z",
         "image": true,
-        "text": "🎯 Safe Parlay · NBA\n\n1.- M. Thybulle +0.5 T3 @1.30\n2.- K. Wagler +9.5 Pts @1.36\n\n💰 Total odds 1.77\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
+        "text": "🎯 Safe Parlay · NBA\n\n1.- M. Thybulle +0.5 T3 @1.30\n2.- D. Mitchell +3.5 Ast @1.32\n\n💰 Total odds 1.72\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
         "picks": [],
         "combo": {
           "legs": [
@@ -5241,25 +5241,25 @@
               "pFinal": 0.748
             },
             {
-              "id": "nba:401909905|prop|over|9.5|5254165|pts",
+              "id": "nba:401909921|prop|over|3.5|4278053|ast",
               "league": "nba",
-              "label": "K. Wagler +9.5 puntos",
-              "list": "K. Wagler +9.5 Pts",
-              "odd": 1.36,
-              "start": "2026-11-02T01:30Z",
-              "gameId": "nba:401909905",
+              "label": "D. Mitchell +3.5 asistencias",
+              "list": "D. Mitchell +3.5 Ast",
+              "odd": 1.32,
+              "start": "2026-11-03T03:00Z",
+              "gameId": "nba:401909921",
               "market": "prop",
               "side": "over",
-              "line": 9.5,
-              "stat": "pts",
-              "playerId": "5254165",
-              "team": "LAC",
-              "match": "Warriors – Clippers",
-              "pFinal": 0.729
+              "line": 3.5,
+              "stat": "ast",
+              "playerId": "4278053",
+              "team": "MIA",
+              "match": "Lakers – Heat",
+              "pFinal": 0.749
             }
           ],
-          "odd": 1.77,
-          "prob": 0.545
+          "odd": 1.72,
+          "prob": 0.56
         }
       },
       "summary-nba": {
@@ -5268,7 +5268,7 @@
         "league": "nba",
         "title": "NBA · resultados de ayer (01/11)",
         "postAt": "2026-11-02T08:40:00.000Z",
-        "text": "📋 NBA · resultados de ayer (01/11)\n\n⏳⏳⏳⏳✅⏳⏳⏳❌⏳\n👇 Cada pick en la imagen\n\nAyer: 1-1 (-0.62 u) · Total NBA: 58-24 (-0.16 u)\n#NBA · +18 · Juega con responsabilidad",
+        "text": "📋 NBA · resultados de ayer (01/11)\n\n⏳⏳⏳✅✅✅⏳⏳❌⏳\n👇 Cada pick en la imagen\n\nAyer: 3-1 (+0.16 u) · Total NBA: 60-24 (+0.62 u)\n#NBA · +18 · Juega con responsabilidad",
         "image": true,
         "pending": true,
         "rows": [
@@ -5294,7 +5294,7 @@
             "league": "nba",
             "label": "M. Porter Jr. +24.5 pts+reb",
             "odd": 1.38,
-            "result": null
+            "result": "W"
           },
           {
             "league": "nba",
@@ -5306,7 +5306,7 @@
             "league": "nba",
             "label": "N. Clowney +2.5 rebotes",
             "odd": 1.4,
-            "result": null
+            "result": "W"
           },
           {
             "league": "nba",
@@ -5335,16 +5335,16 @@
         ],
         "balance": {
           "day": [
-            1,
+            3,
             1
           ],
           "total": [
-            58,
+            60,
             24
           ],
           "units": {
-            "day": -0.62,
-            "total": -0.16
+            "day": 0.16,
+            "total": 0.62
           }
         }
       },
@@ -5353,7 +5353,7 @@
         "kind": "nba-day",
         "league": "nba",
         "reply": false,
-        "title": "NBA Picks Day · 8 picks",
+        "title": "NBA Picks Day · 12 picks",
         "postAt": "2026-11-02T17:45:00.000Z",
         "image": true,
         "picks": [
@@ -5374,6 +5374,69 @@
             "match": "Lakers – Raptors",
             "pFinal": 0.748
           },
+          {
+            "id": "nba:401909907|prop|over|4.5|4576087|ra",
+            "league": "nba",
+            "label": "P. Watson +4.5 reb+ast",
+            "list": "P. Watson +4.5 R+A",
+            "odd": 1.33,
+            "start": "2026-11-03T00:00Z",
+            "gameId": "nba:401909907",
+            "market": "prop",
+            "side": "over",
+            "line": 4.5,
+            "stat": "ra",
+            "playerId": "4576087",
+            "team": "CLE",
+            "match": "Cavaliers – Thunder",
+            "pFinal": 0.731
+          },
+          {
+            "id": "nba:401909921|prop|over|3.5|4278053|ast",
+            "league": "nba",
+            "label": "D. Mitchell +3.5 asistencias",
+            "list": "D. Mitchell +3.5 Ast",
+            "odd": 1.32,
+            "start": "2026-11-03T03:00Z",
+            "gameId": "nba:401909921",
+            "market": "prop",
+            "side": "over",
+            "line": 3.5,
+            "stat": "ast",
+            "playerId": "4278053",
+            "team": "MIA",
+            "match": "Lakers – Heat",
+            "pFinal": 0.749
+          },
+          {
+            "id": "nba:401909921|prop|over|4.5|4601025|ra",
+            "league": "nba",
+            "label": "P. Larsson +4.5 reb+ast",
+            "list": "P. Larsson +4.5 R+A",
+            "odd": 1.33,
+            "start": "2026-11-03T03:00Z",
+            "gameId": "nba:401909921",
+            "market": "prop",
+            "side": "over",
+            "line": 4.5,
+            "stat": "ra",
+            "playerId": "4601025",
+            "team": "MIA",
+            "match": "Lakers – Heat",
+            "pFinal": 0.739
+          }
+        ],
+        "text": "🏀 NBA Picks Day · 02/11\n\n1.- M. Thybulle +0.5 T3 @1.30\n2.- P. Watson +4.5 R+A @1.33\n3.- D. Mitchell +3.5 Ast @1.32\n4.- P. Larsson +4.5 R+A @1.33\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-2": {
+        "id": "nba-day-2",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 2/3 · picks 5-8",
+        "postAt": "2026-11-02T17:45:00.000Z",
+        "image": true,
+        "picks": [
           {
             "id": "nba:401909905|prop|over|9.5|5254165|pts",
             "league": "nba",
@@ -5406,6 +5469,23 @@
             "pFinal": 0.687
           },
           {
+            "id": "nba:401909905|prop|over|13.5|4709138|pts",
+            "league": "nba",
+            "label": "B. Podziemski +13.5 puntos",
+            "list": "B. Podziemski +13.5 Pts",
+            "odd": 1.42,
+            "start": "2026-11-02T01:30Z",
+            "gameId": "nba:401909905",
+            "market": "prop",
+            "side": "over",
+            "line": 13.5,
+            "stat": "pts",
+            "playerId": "4709138",
+            "team": "GS",
+            "match": "Warriors – Clippers",
+            "pFinal": 0.69
+          },
+          {
             "id": "nba:401909906|prop|under|1.5|4278580|tpm",
             "league": "nba",
             "label": "S. Mamukelashvili −1.5 triples",
@@ -5423,34 +5503,17 @@
             "pFinal": 0.653
           }
         ],
-        "text": "🏀 NBA Picks Day · 02/11\n\n1.- M. Thybulle +0.5 T3 @1.30\n2.- K. Wagler +9.5 Pts @1.36\n3.- Gana Grizzlies @1.44\n4.- S. Mamukelashvili −1.5 T3 @1.49\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n5.- K. Wagler +9.5 Pts @1.36\n6.- Gana Grizzlies @1.44\n7.- B. Podziemski +13.5 Pts @1.42\n8.- S. Mamukelashvili −1.5 T3 @1.49\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
-      "nba-day-2": {
-        "id": "nba-day-2",
+      "nba-day-3": {
+        "id": "nba-day-3",
         "kind": "nba-day",
         "league": "nba",
         "reply": true,
-        "title": "↳ Hilo 2/2 · picks 5-8",
+        "title": "↳ Hilo 3/3 · picks 9-12",
         "postAt": "2026-11-02T17:45:00.000Z",
         "image": true,
         "picks": [
-          {
-            "id": "nba:401909905|prop|over|7.5|3448|pts",
-            "league": "nba",
-            "label": "B. Lopez +7.5 puntos",
-            "list": "B. Lopez +7.5 Pts",
-            "odd": 1.45,
-            "start": "2026-11-02T01:30Z",
-            "gameId": "nba:401909905",
-            "market": "prop",
-            "side": "over",
-            "line": 7.5,
-            "stat": "pts",
-            "playerId": "3448",
-            "team": "LAC",
-            "match": "Warriors – Clippers",
-            "pFinal": 0.679
-          },
           {
             "id": "nba:401909916|ml|home|||",
             "league": "nba",
@@ -5463,7 +5526,24 @@
             "side": "home",
             "line": null,
             "match": "Rockets – Celtics",
-            "pFinal": 0.637
+            "pFinal": 0.636
+          },
+          {
+            "id": "nba:401909907|prop|under|1.5|4900671|tpm",
+            "league": "nba",
+            "label": "A. Mitchell −1.5 triples",
+            "list": "A. Mitchell −1.5 T3",
+            "odd": 1.48,
+            "start": "2026-11-03T00:00Z",
+            "gameId": "nba:401909907",
+            "market": "prop",
+            "side": "under",
+            "line": 1.5,
+            "stat": "tpm",
+            "playerId": "4900671",
+            "team": "OKC",
+            "match": "Cavaliers – Thunder",
+            "pFinal": 0.676
           },
           {
             "id": "nba:401909907|ml|home|||",
@@ -5497,7 +5577,7 @@
             "pFinal": 0.672
           }
         ],
-        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n5.- B. Lopez +7.5 Pts @1.45\n6.- Gana Rockets @1.56\n7.- Gana Cavaliers @1.58\n8.- D. Acuff Jr. +9.5 Pts @1.55\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n9.- Gana Rockets @1.56\n10.- A. Mitchell −1.5 T3 @1.48\n11.- Gana Cavaliers @1.58\n12.- D. Acuff Jr. +9.5 Pts @1.55\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }

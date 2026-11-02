@@ -542,7 +542,7 @@
     "start": "2026-11-02T02:00Z",
     "home": "Lakers",
     "away": "Raptors",
-    "ptsH": 115,
+    "ptsH": 114,
     "ptsA": 114
   },
   "nba:401909907": {
@@ -556,22 +556,22 @@
     "start": "2026-11-03T00:30Z",
     "home": "Hornets",
     "away": "Pistons",
-    "ptsH": 100,
+    "ptsH": 101,
     "ptsA": 104
   },
   "nba:401909909": {
     "start": "2026-11-03T00:30Z",
     "home": "Pacers",
     "away": "Hawks",
-    "ptsH": 112,
-    "ptsA": 118
+    "ptsH": 108,
+    "ptsA": 117
   },
   "nba:401909910": {
     "start": "2026-11-03T00:30Z",
     "home": "Knicks",
     "away": "Nets",
-    "ptsH": 116,
-    "ptsA": 108
+    "ptsH": 113,
+    "ptsA": 105
   },
   "nba:401909911": {
     "start": "2026-11-03T00:30Z",
@@ -627,7 +627,7 @@
     "home": "Nuggets",
     "away": "Trail Blazers",
     "ptsH": 112,
-    "ptsA": 115
+    "ptsA": 114
   },
   "nba:401909919": {
     "start": "2026-11-03T03:00Z",
