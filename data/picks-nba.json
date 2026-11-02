@@ -1947,6 +1947,22 @@
       "stat": "ra",
       "playerId": "4576087",
       "createdAt": "2026-11-02T22:15:36.297Z"
+    },
+    {
+      "id": "nba:401909920|ml|away|||",
+      "gameId": "nba:401909920",
+      "start": "2026-11-03T03:00Z",
+      "match": "Clippers – Raptors",
+      "market": "ml",
+      "side": "away",
+      "line": null,
+      "label": "Gana Raptors",
+      "odd": 1.6,
+      "book": "unibet",
+      "pFinal": 0.626,
+      "safety": 0.025,
+      "tier": "C",
+      "createdAt": "2026-11-02T22:36:05.271Z"
     }
   ],
   "record": [
@@ -18844,6 +18860,143 @@
       "ev": 0.092,
       "start": "2026-11-03T00:30Z",
       "createdAt": "2026-11-02T21:34:35.082Z"
+    },
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "nba:401909920|ml|away|||",
+          "gameId": "nba:401909920",
+          "start": "2026-11-03T03:00Z",
+          "match": "Clippers – Raptors",
+          "market": "ml",
+          "side": "away",
+          "line": null,
+          "label": "Gana Raptors",
+          "odd": 1.6,
+          "pFinal": 0.626,
+          "book": "unibet"
+        },
+        {
+          "id": "nba:401909917|prop|over|20.5|4433627|pts",
+          "gameId": "nba:401909917",
+          "start": "2026-11-03T01:30Z",
+          "match": "Spurs – Jazz",
+          "market": "prop",
+          "side": "over",
+          "line": 20.5,
+          "stat": "pts",
+          "playerId": "4433627",
+          "player": "Keyonte George",
+          "team": "UTAH",
+          "label": "Keyonte George más de 20.5 puntos",
+          "odd": 1.79,
+          "pFinal": 0.562,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.86,
+      "prob": 0.352,
+      "ev": 0.008,
+      "start": "2026-11-03T01:30Z",
+      "createdAt": "2026-11-02T22:36:05.271Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909908|total|under|209.5||",
+          "gameId": "nba:401909908",
+          "start": "2026-11-03T00:30Z",
+          "match": "Hornets – Pistons",
+          "market": "total",
+          "side": "under",
+          "line": 209.5,
+          "label": "Menos de 209.5 puntos",
+          "odd": 2,
+          "pFinal": 0.507,
+          "book": "unibet"
+        },
+        {
+          "id": "nba:401909912|prop|over|6.5|5124612|reb",
+          "gameId": "nba:401909912",
+          "start": "2026-11-03T00:30Z",
+          "match": "76ers – Bulls",
+          "market": "prop",
+          "side": "over",
+          "line": 6.5,
+          "stat": "reb",
+          "playerId": "5124612",
+          "player": "VJ Edgecombe",
+          "team": "PHI",
+          "label": "VJ Edgecombe más de 6.5 rebotes",
+          "odd": 2.16,
+          "pFinal": 0.471,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909914|spread|home|-5.5||",
+          "gameId": "nba:401909914",
+          "start": "2026-11-03T01:00Z",
+          "match": "Grizzlies – Pelicans",
+          "market": "spread",
+          "side": "home",
+          "line": -5.5,
+          "label": "Grizzlies -5.5",
+          "odd": 1.92,
+          "pFinal": 0.534,
+          "book": "unibet"
+        }
+      ],
+      "odd": 8.29,
+      "prob": 0.128,
+      "ev": 0.058,
+      "start": "2026-11-03T00:30Z",
+      "createdAt": "2026-11-02T22:36:05.271Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "nba:401909920|prop|under|7.5|4432170|reb",
+          "gameId": "nba:401909920",
+          "start": "2026-11-03T03:00Z",
+          "match": "Clippers – Raptors",
+          "market": "prop",
+          "side": "under",
+          "line": 7.5,
+          "stat": "reb",
+          "playerId": "4432170",
+          "player": "Isaiah Jackson",
+          "team": "LAC",
+          "label": "Isaiah Jackson menos de 7.5 rebotes",
+          "odd": 1.67,
+          "pFinal": 0.591,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909917|prop|over|20.5|4433627|pts",
+          "gameId": "nba:401909917",
+          "start": "2026-11-03T01:30Z",
+          "match": "Spurs – Jazz",
+          "market": "prop",
+          "side": "over",
+          "line": 20.5,
+          "stat": "pts",
+          "playerId": "4433627",
+          "player": "Keyonte George",
+          "team": "UTAH",
+          "label": "Keyonte George más de 20.5 puntos",
+          "odd": 1.79,
+          "pFinal": 0.562,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.99,
+      "prob": 0.332,
+      "ev": -0.007,
+      "start": "2026-11-03T01:30Z",
+      "createdAt": "2026-11-02T22:36:05.271Z"
     }
   ],
   "comboRecord": [
