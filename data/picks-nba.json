@@ -1559,6 +1559,24 @@
       "stat": "pra",
       "playerId": "4683778",
       "createdAt": "2026-11-02T15:40:42.744Z"
+    },
+    {
+      "id": "nba:401909915|prop|under|5.5|4433247|reb",
+      "gameId": "nba:401909915",
+      "start": "2026-11-03T01:00Z",
+      "match": "Timberwolves – Bucks",
+      "market": "prop",
+      "side": "under",
+      "line": 5.5,
+      "label": "Jonathan Kuminga menos de 5.5 rebotes",
+      "odd": 2.04,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.503,
+      "safety": 0.02,
+      "tier": "C",
+      "stat": "reb",
+      "playerId": "4433247",
+      "createdAt": "2026-11-02T16:01:20.602Z"
     }
   ],
   "record": [
@@ -17409,6 +17427,59 @@
       "ev": 0.099,
       "start": "2026-11-03T00:30Z",
       "createdAt": "2026-11-02T15:40:42.744Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909914|spread|home|-5.5||",
+          "gameId": "nba:401909914",
+          "start": "2026-11-03T01:00Z",
+          "match": "Grizzlies – Pelicans",
+          "market": "spread",
+          "side": "home",
+          "line": -5.5,
+          "label": "Grizzlies -5.5",
+          "odd": 1.97,
+          "pFinal": 0.525,
+          "book": "unibet"
+        },
+        {
+          "id": "nba:401909915|prop|under|5.5|4433247|reb",
+          "gameId": "nba:401909915",
+          "start": "2026-11-03T01:00Z",
+          "match": "Timberwolves – Bucks",
+          "market": "prop",
+          "side": "under",
+          "line": 5.5,
+          "stat": "reb",
+          "playerId": "4433247",
+          "player": "Jonathan Kuminga",
+          "team": "MIN",
+          "label": "Jonathan Kuminga menos de 5.5 rebotes",
+          "odd": 2.04,
+          "pFinal": 0.503,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909911|total|under|225.5||",
+          "gameId": "nba:401909911",
+          "start": "2026-11-03T00:30Z",
+          "match": "Magic – Wizards",
+          "market": "total",
+          "side": "under",
+          "line": 225.5,
+          "label": "Menos de 225.5 puntos",
+          "odd": 1.98,
+          "pFinal": 0.526,
+          "book": "unibet"
+        }
+      ],
+      "odd": 7.96,
+      "prob": 0.139,
+      "ev": 0.105,
+      "start": "2026-11-03T00:30Z",
+      "createdAt": "2026-11-02T16:01:20.602Z"
     }
   ],
   "comboRecord": [
