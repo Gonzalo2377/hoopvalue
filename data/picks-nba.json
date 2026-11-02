@@ -1895,6 +1895,40 @@
       "stat": "pts",
       "playerId": "5174563",
       "createdAt": "2026-11-02T21:14:01.207Z"
+    },
+    {
+      "id": "nba:401909920|spread|away|-4.5||",
+      "gameId": "nba:401909920",
+      "start": "2026-11-03T03:00Z",
+      "match": "Clippers – Raptors",
+      "market": "spread",
+      "side": "away",
+      "line": -4.5,
+      "label": "Raptors -4.5",
+      "odd": 1.94,
+      "book": "draftkings",
+      "pFinal": 0.516,
+      "safety": 0.026,
+      "tier": "C",
+      "createdAt": "2026-11-02T21:34:35.082Z"
+    },
+    {
+      "id": "nba:401909916|prop|over|7.5|4433192|pts",
+      "gameId": "nba:401909916",
+      "start": "2026-11-03T01:30Z",
+      "match": "Rockets – Celtics",
+      "market": "prop",
+      "side": "over",
+      "line": 7.5,
+      "label": "Tari Eason más de 7.5 puntos",
+      "odd": 1.63,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.602,
+      "safety": -0.003,
+      "tier": "C",
+      "stat": "pts",
+      "playerId": "4433192",
+      "createdAt": "2026-11-02T21:34:35.082Z"
     }
   ],
   "record": [
@@ -18739,6 +18773,59 @@
       "ev": -0.01,
       "start": "2026-11-03T01:30Z",
       "createdAt": "2026-11-02T21:14:01.207Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909916|spread|home|-4.5||",
+          "gameId": "nba:401909916",
+          "start": "2026-11-03T01:30Z",
+          "match": "Rockets – Celtics",
+          "market": "spread",
+          "side": "home",
+          "line": -4.5,
+          "label": "Rockets -4.5",
+          "odd": 1.88,
+          "pFinal": 0.554,
+          "book": "draftkings"
+        },
+        {
+          "id": "nba:401909912|prop|over|6.5|5124612|reb",
+          "gameId": "nba:401909912",
+          "start": "2026-11-03T00:30Z",
+          "match": "76ers – Bulls",
+          "market": "prop",
+          "side": "over",
+          "line": 6.5,
+          "stat": "reb",
+          "playerId": "5124612",
+          "player": "VJ Edgecombe",
+          "team": "PHI",
+          "label": "VJ Edgecombe más de 6.5 rebotes",
+          "odd": 2.16,
+          "pFinal": 0.471,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909914|spread|home|-5.5||",
+          "gameId": "nba:401909914",
+          "start": "2026-11-03T01:00Z",
+          "match": "Grizzlies – Pelicans",
+          "market": "spread",
+          "side": "home",
+          "line": -5.5,
+          "label": "Grizzlies -5.5",
+          "odd": 1.93,
+          "pFinal": 0.534,
+          "book": "unibet"
+        }
+      ],
+      "odd": 7.84,
+      "prob": 0.139,
+      "ev": 0.092,
+      "start": "2026-11-03T00:30Z",
+      "createdAt": "2026-11-02T21:34:35.082Z"
     }
   ],
   "comboRecord": [
