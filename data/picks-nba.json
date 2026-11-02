@@ -1629,6 +1629,24 @@
       "safety": 0.012,
       "tier": "C",
       "createdAt": "2026-11-02T16:23:07.712Z"
+    },
+    {
+      "id": "nba:401909910|prop|under|29.5|3064514|pra",
+      "gameId": "nba:401909910",
+      "start": "2026-11-03T00:30Z",
+      "match": "Knicks – Nets",
+      "market": "prop",
+      "side": "under",
+      "line": 29.5,
+      "label": "Julius Randle menos de 29.5 pts+reb+ast",
+      "odd": 1.9,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.517,
+      "safety": 0.033,
+      "tier": "B",
+      "stat": "pra",
+      "playerId": "3064514",
+      "createdAt": "2026-11-02T16:43:50.353Z"
     }
   ],
   "record": [
@@ -17620,6 +17638,94 @@
       "ev": -0.034,
       "start": "2026-11-03T00:30Z",
       "createdAt": "2026-11-02T16:23:07.712Z"
+    },
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "nba:401909920|prop|under|7.5|4432170|reb",
+          "gameId": "nba:401909920",
+          "start": "2026-11-03T03:00Z",
+          "match": "Clippers – Raptors",
+          "market": "prop",
+          "side": "under",
+          "line": 7.5,
+          "stat": "reb",
+          "playerId": "4432170",
+          "player": "Isaiah Jackson",
+          "team": "LAC",
+          "label": "Isaiah Jackson menos de 7.5 rebotes",
+          "odd": 1.68,
+          "pFinal": 0.586,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909909|prop|under|20.5|2490149|pa",
+          "gameId": "nba:401909909",
+          "start": "2026-11-03T00:30Z",
+          "match": "Pacers – Hawks",
+          "market": "prop",
+          "side": "under",
+          "line": 20.5,
+          "stat": "pa",
+          "playerId": "2490149",
+          "player": "CJ McCollum",
+          "team": "ATL",
+          "label": "CJ McCollum menos de 20.5 pts+ast",
+          "odd": 1.78,
+          "pFinal": 0.551,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.99,
+      "prob": 0.323,
+      "ev": -0.034,
+      "start": "2026-11-03T00:30Z",
+      "createdAt": "2026-11-02T16:43:50.353Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "nba:401909920|prop|under|7.5|4432170|reb",
+          "gameId": "nba:401909920",
+          "start": "2026-11-03T03:00Z",
+          "match": "Clippers – Raptors",
+          "market": "prop",
+          "side": "under",
+          "line": 7.5,
+          "stat": "reb",
+          "playerId": "4432170",
+          "player": "Isaiah Jackson",
+          "team": "LAC",
+          "label": "Isaiah Jackson menos de 7.5 rebotes",
+          "odd": 1.68,
+          "pFinal": 0.586,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909907|prop|under|5.5|4278073|ast",
+          "gameId": "nba:401909907",
+          "start": "2026-11-03T00:00Z",
+          "match": "Cavaliers – Thunder",
+          "market": "prop",
+          "side": "under",
+          "line": 5.5,
+          "stat": "ast",
+          "playerId": "4278073",
+          "player": "Shai Gilgeous-Alexander",
+          "team": "OKC",
+          "label": "Shai Gilgeous-Alexander menos de 5.5 asistencias",
+          "odd": 1.88,
+          "pFinal": 0.538,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 3.16,
+      "prob": 0.315,
+      "ev": -0.004,
+      "start": "2026-11-03T00:00Z",
+      "createdAt": "2026-11-02T16:43:50.353Z"
     }
   ],
   "comboRecord": [

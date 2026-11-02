@@ -5188,10 +5188,10 @@
         "id": "combo-nba",
         "kind": "combo",
         "league": "nba",
-        "title": "Safe Parlay · NBA @2.97",
+        "title": "Safe Parlay · NBA @2.99",
         "postAt": "2026-11-02T18:00:00.000Z",
         "image": true,
-        "text": "🎯 Safe Parlay · NBA\n\n1.- I. Jackson −7.5 Reb @1.68\n2.- J. Randle −25.5 P+R @1.77\n\n💰 Total odds 2.97\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
+        "text": "🎯 Safe Parlay · NBA\n\n1.- I. Jackson −7.5 Reb @1.68\n2.- C. McCollum −20.5 P+A @1.78\n\n💰 Total odds 2.99\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
         "picks": [],
         "combo": {
           "legs": [
@@ -5213,25 +5213,25 @@
               "pFinal": 0.586
             },
             {
-              "id": "nba:401909910|prop|under|25.5|3064514|pr",
+              "id": "nba:401909909|prop|under|20.5|2490149|pa",
               "league": "nba",
-              "label": "J. Randle −25.5 pts+reb",
-              "list": "J. Randle −25.5 P+R",
-              "odd": 1.77,
+              "label": "C. McCollum −20.5 pts+ast",
+              "list": "C. McCollum −20.5 P+A",
+              "odd": 1.78,
               "start": "2026-11-03T00:30Z",
-              "gameId": "nba:401909910",
+              "gameId": "nba:401909909",
               "market": "prop",
               "side": "under",
-              "line": 25.5,
-              "stat": "pr",
-              "playerId": "3064514",
-              "team": "BKN",
-              "match": "Knicks – Nets",
-              "pFinal": 0.557
+              "line": 20.5,
+              "stat": "pa",
+              "playerId": "2490149",
+              "team": "ATL",
+              "match": "Pacers – Hawks",
+              "pFinal": 0.551
             }
           ],
-          "odd": 2.97,
-          "prob": 0.326
+          "odd": 2.99,
+          "prob": 0.323
         }
       },
       "summary-nba": {
@@ -5330,21 +5330,21 @@
         "image": true,
         "picks": [
           {
-            "id": "nba:401909917|prop|over|21.5|4433627|pts",
+            "id": "nba:401909910|prop|under|29.5|3064514|pra",
             "league": "nba",
-            "label": "K. George +21.5 puntos",
-            "list": "K. George +21.5 Pts",
-            "odd": 1.93,
-            "start": "2026-11-03T01:30Z",
-            "gameId": "nba:401909917",
+            "label": "J. Randle −29.5 pts+reb+ast",
+            "list": "J. Randle −29.5 PRA",
+            "odd": 1.9,
+            "start": "2026-11-03T00:30Z",
+            "gameId": "nba:401909910",
             "market": "prop",
-            "side": "over",
-            "line": 21.5,
-            "stat": "pts",
-            "playerId": "4433627",
-            "team": "UTAH",
-            "match": "Spurs – Jazz",
-            "pFinal": 0.521
+            "side": "under",
+            "line": 29.5,
+            "stat": "pra",
+            "playerId": "3064514",
+            "team": "BKN",
+            "match": "Knicks – Nets",
+            "pFinal": 0.517
           },
           {
             "id": "nba:401909912|prop|over|6.5|5124612|reb",
@@ -5364,6 +5364,52 @@
             "pFinal": 0.49
           },
           {
+            "id": "nba:401909913|prop|over|13.5|3155942|reb",
+            "league": "nba",
+            "label": "D. Sabonis +13.5 rebotes",
+            "list": "D. Sabonis +13.5 Reb",
+            "odd": 1.97,
+            "start": "2026-11-03T01:00Z",
+            "gameId": "nba:401909913",
+            "market": "prop",
+            "side": "over",
+            "line": 13.5,
+            "stat": "reb",
+            "playerId": "3155942",
+            "team": "SAC",
+            "match": "Mavericks – Kings",
+            "pFinal": 0.511
+          },
+          {
+            "id": "nba:401909917|prop|over|21.5|4433627|pts",
+            "league": "nba",
+            "label": "K. George +21.5 puntos",
+            "list": "K. George +21.5 Pts",
+            "odd": 1.94,
+            "start": "2026-11-03T01:30Z",
+            "gameId": "nba:401909917",
+            "market": "prop",
+            "side": "over",
+            "line": 21.5,
+            "stat": "pts",
+            "playerId": "4433627",
+            "team": "UTAH",
+            "match": "Spurs – Jazz",
+            "pFinal": 0.517
+          }
+        ],
+        "text": "🏀 NBA Picks Day · 02/11\n\n1.- J. Randle −29.5 PRA @1.90\n2.- V. Edgecombe +6.5 Reb @2.05\n3.- D. Sabonis +13.5 Reb @1.97\n4.- K. George +21.5 Pts @1.94\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-2": {
+        "id": "nba-day-2",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 2/3 · picks 5-8",
+        "postAt": "2026-11-02T17:45:00.000Z",
+        "image": true,
+        "picks": [
+          {
             "id": "nba:401909908|total|under|210.5||",
             "league": "nba",
             "label": "Menos de 210.5 puntos",
@@ -5376,49 +5422,6 @@
             "line": 210.5,
             "match": "Hornets – Pistons",
             "pFinal": 0.528
-          },
-          {
-            "id": "nba:401909913|spread|home|-10.5||",
-            "league": "nba",
-            "label": "Mavericks -10.5",
-            "list": "Mavericks -10.5",
-            "odd": 2,
-            "start": "2026-11-03T01:00Z",
-            "gameId": "nba:401909913",
-            "market": "spread",
-            "side": "home",
-            "line": -10.5,
-            "match": "Mavericks – Kings",
-            "pFinal": 0.502
-          }
-        ],
-        "text": "🏀 NBA Picks Day · 02/11\n\n1.- K. George +21.5 Pts @1.93\n2.- V. Edgecombe +6.5 Reb @2.05\n3.- Under 210.5 (Hornets-Pistons) @1.89\n4.- Mavericks -10.5 @2.00\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-2": {
-        "id": "nba-day-2",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 2/3 · picks 5-8",
-        "postAt": "2026-11-02T17:45:00.000Z",
-        "image": true,
-        "picks": [
-          {
-            "id": "nba:401909913|prop|over|38.5|5041939|pra",
-            "league": "nba",
-            "label": "C. Flagg +38.5 pts+reb+ast",
-            "list": "C. Flagg +38.5 PRA",
-            "odd": 1.84,
-            "start": "2026-11-03T01:00Z",
-            "gameId": "nba:401909913",
-            "market": "prop",
-            "side": "over",
-            "line": 38.5,
-            "stat": "pra",
-            "playerId": "5041939",
-            "team": "DAL",
-            "match": "Mavericks – Kings",
-            "pFinal": 0.535
           },
           {
             "id": "nba:401909920|prop|under|7.5|4432170|reb",
@@ -5472,7 +5475,7 @@
             "pFinal": 0.425
           }
         ],
-        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n5.- C. Flagg +38.5 PRA @1.84\n6.- I. Jackson −7.5 Reb @1.68\n7.- S. Gilgeous-Alexander −5.5 Ast @1.88\n8.- S. James +2.5 Ast @2.33\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n5.- Under 210.5 (Hornets-Pistons) @1.89\n6.- I. Jackson −7.5 Reb @1.68\n7.- S. Gilgeous-Alexander −5.5 Ast @1.88\n8.- S. James +2.5 Ast @2.33\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-3": {
         "id": "nba-day-3",
@@ -5498,6 +5501,23 @@
             "pFinal": 0.525
           },
           {
+            "id": "nba:401909915|prop|under|5.5|4433247|reb",
+            "league": "nba",
+            "label": "J. Kuminga −5.5 rebotes",
+            "list": "J. Kuminga −5.5 Reb",
+            "odd": 2.04,
+            "start": "2026-11-03T01:00Z",
+            "gameId": "nba:401909915",
+            "market": "prop",
+            "side": "under",
+            "line": 5.5,
+            "stat": "reb",
+            "playerId": "4433247",
+            "team": "MIN",
+            "match": "Timberwolves – Bucks",
+            "pFinal": 0.503
+          },
+          {
             "id": "nba:401909909|prop|under|20.5|2490149|pa",
             "league": "nba",
             "label": "C. McCollum −20.5 pts+ast",
@@ -5515,23 +5535,6 @@
             "pFinal": 0.551
           },
           {
-            "id": "nba:401909915|prop|under|5.5|4433247|reb",
-            "league": "nba",
-            "label": "J. Kuminga −5.5 rebotes",
-            "list": "J. Kuminga −5.5 Reb",
-            "odd": 2.05,
-            "start": "2026-11-03T01:00Z",
-            "gameId": "nba:401909915",
-            "market": "prop",
-            "side": "under",
-            "line": 5.5,
-            "stat": "reb",
-            "playerId": "4433247",
-            "team": "MIN",
-            "match": "Timberwolves – Bucks",
-            "pFinal": 0.501
-          },
-          {
             "id": "nba:401909911|total|under|225.5||",
             "league": "nba",
             "label": "Menos de 225.5 puntos",
@@ -5546,7 +5549,7 @@
             "pFinal": 0.526
           }
         ],
-        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n9.- Grizzlies -5.5 @1.97\n10.- C. McCollum −20.5 P+A @1.78\n11.- J. Kuminga −5.5 Reb @2.05\n12.- Under 225.5 (Magic-Wizards) @1.98\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n9.- Grizzlies -5.5 @1.97\n10.- J. Kuminga −5.5 Reb @2.04\n11.- C. McCollum −20.5 P+A @1.78\n12.- Under 225.5 (Magic-Wizards) @1.98\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
