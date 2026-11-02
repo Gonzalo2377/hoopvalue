@@ -1577,6 +1577,58 @@
       "stat": "reb",
       "playerId": "4433247",
       "createdAt": "2026-11-02T16:01:20.602Z"
+    },
+    {
+      "id": "nba:401909909|prop|under|20.5|2490149|pa",
+      "gameId": "nba:401909909",
+      "start": "2026-11-03T00:30Z",
+      "match": "Pacers – Hawks",
+      "market": "prop",
+      "side": "under",
+      "line": 20.5,
+      "label": "CJ McCollum menos de 20.5 pts+ast",
+      "odd": 1.78,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.551,
+      "safety": 0.02,
+      "tier": "C",
+      "stat": "pa",
+      "playerId": "2490149",
+      "createdAt": "2026-11-02T16:23:07.712Z"
+    },
+    {
+      "id": "nba:401909910|prop|under|25.5|3064514|pr",
+      "gameId": "nba:401909910",
+      "start": "2026-11-03T00:30Z",
+      "match": "Knicks – Nets",
+      "market": "prop",
+      "side": "under",
+      "line": 25.5,
+      "label": "Julius Randle menos de 25.5 pts+reb",
+      "odd": 1.77,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.557,
+      "safety": 0.017,
+      "tier": "C",
+      "stat": "pr",
+      "playerId": "3064514",
+      "createdAt": "2026-11-02T16:23:07.712Z"
+    },
+    {
+      "id": "nba:401909910|total|under|219.5||",
+      "gameId": "nba:401909910",
+      "start": "2026-11-03T00:30Z",
+      "match": "Knicks – Nets",
+      "market": "total",
+      "side": "under",
+      "line": 219.5,
+      "label": "Menos de 219.5 puntos",
+      "odd": 1.94,
+      "book": "unibet",
+      "pFinal": 0.509,
+      "safety": 0.012,
+      "tier": "C",
+      "createdAt": "2026-11-02T16:23:07.712Z"
     }
   ],
   "record": [
@@ -17480,6 +17532,94 @@
       "ev": 0.105,
       "start": "2026-11-03T00:30Z",
       "createdAt": "2026-11-02T16:01:20.602Z"
+    },
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "nba:401909920|prop|under|7.5|4432170|reb",
+          "gameId": "nba:401909920",
+          "start": "2026-11-03T03:00Z",
+          "match": "Clippers – Raptors",
+          "market": "prop",
+          "side": "under",
+          "line": 7.5,
+          "stat": "reb",
+          "playerId": "4432170",
+          "player": "Isaiah Jackson",
+          "team": "LAC",
+          "label": "Isaiah Jackson menos de 7.5 rebotes",
+          "odd": 1.68,
+          "pFinal": 0.586,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909910|prop|under|25.5|3064514|pr",
+          "gameId": "nba:401909910",
+          "start": "2026-11-03T00:30Z",
+          "match": "Knicks – Nets",
+          "market": "prop",
+          "side": "under",
+          "line": 25.5,
+          "stat": "pr",
+          "playerId": "3064514",
+          "player": "Julius Randle",
+          "team": "BKN",
+          "label": "Julius Randle menos de 25.5 pts+reb",
+          "odd": 1.77,
+          "pFinal": 0.557,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.97,
+      "prob": 0.326,
+      "ev": -0.029,
+      "start": "2026-11-03T00:30Z",
+      "createdAt": "2026-11-02T16:23:07.712Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "nba:401909920|prop|under|7.5|4432170|reb",
+          "gameId": "nba:401909920",
+          "start": "2026-11-03T03:00Z",
+          "match": "Clippers – Raptors",
+          "market": "prop",
+          "side": "under",
+          "line": 7.5,
+          "stat": "reb",
+          "playerId": "4432170",
+          "player": "Isaiah Jackson",
+          "team": "LAC",
+          "label": "Isaiah Jackson menos de 7.5 rebotes",
+          "odd": 1.68,
+          "pFinal": 0.586,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909909|prop|under|20.5|2490149|pa",
+          "gameId": "nba:401909909",
+          "start": "2026-11-03T00:30Z",
+          "match": "Pacers – Hawks",
+          "market": "prop",
+          "side": "under",
+          "line": 20.5,
+          "stat": "pa",
+          "playerId": "2490149",
+          "player": "CJ McCollum",
+          "team": "ATL",
+          "label": "CJ McCollum menos de 20.5 pts+ast",
+          "odd": 1.78,
+          "pFinal": 0.551,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.99,
+      "prob": 0.323,
+      "ev": -0.034,
+      "start": "2026-11-03T00:30Z",
+      "createdAt": "2026-11-02T16:23:07.712Z"
     }
   ],
   "comboRecord": [
