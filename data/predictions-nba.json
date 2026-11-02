@@ -563,8 +563,8 @@
     "start": "2026-11-03T00:30Z",
     "home": "Pacers",
     "away": "Hawks",
-    "ptsH": 112,
-    "ptsA": 115
+    "ptsH": 102,
+    "ptsA": 119
   },
   "nba:401909910": {
     "start": "2026-11-03T00:30Z",
@@ -577,8 +577,8 @@
     "start": "2026-11-03T00:30Z",
     "home": "Magic",
     "away": "Wizards",
-    "ptsH": 103,
-    "ptsA": 112
+    "ptsH": 104,
+    "ptsA": 108
   },
   "nba:401909912": {
     "start": "2026-11-03T00:30Z",
