@@ -5494,7 +5494,7 @@
             "league": "nba",
             "label": "D. Jenkins +4.5 reb+ast",
             "list": "D. Jenkins +4.5 R+A",
-            "odd": 1.35,
+            "odd": 1.34,
             "start": "2026-11-03T00:30Z",
             "gameId": "nba:401909908",
             "market": "prop",
@@ -5504,7 +5504,7 @@
             "playerId": "5107199",
             "team": "DET",
             "match": "Hornets – Pistons",
-            "pFinal": 0.726
+            "pFinal": 0.73
           },
           {
             "id": "nba:401909917|prop|over|3.5|5037871|reb",
@@ -5558,7 +5558,7 @@
             "pFinal": 0.739
           }
         ],
-        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n9.- D. Jenkins +4.5 R+A @1.35\n10.- D. Harper +3.5 Reb @1.36\n11.- D. Queen +14.5 PRA @1.32\n12.- P. Larsson +4.5 R+A @1.33\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n9.- D. Jenkins +4.5 R+A @1.34\n10.- D. Harper +3.5 Reb @1.36\n11.- D. Queen +14.5 PRA @1.32\n12.- P. Larsson +4.5 R+A @1.33\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }

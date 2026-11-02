@@ -781,6 +781,22 @@
       "stat": "reb",
       "playerId": "5279133",
       "createdAt": "2026-11-02T08:45:39.274Z"
+    },
+    {
+      "id": "nba:401909908|ml|away|||",
+      "gameId": "nba:401909908",
+      "start": "2026-11-03T00:30Z",
+      "match": "Hornets – Pistons",
+      "market": "ml",
+      "side": "away",
+      "line": null,
+      "label": "Gana Pistons",
+      "odd": 1.57,
+      "book": "draftkings",
+      "pFinal": 0.62,
+      "safety": 0.61,
+      "tier": "B",
+      "createdAt": "2026-11-02T09:26:33.382Z"
     }
   ],
   "record": [
