@@ -15129,6 +15129,50 @@
       "ev": 0.061,
       "start": "2026-11-03T00:00Z",
       "createdAt": "2026-11-01T23:56:50.381Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "nba:401909906|prop|over|0.5|3907498|tpm",
+          "gameId": "nba:401909906",
+          "start": "2026-11-02T02:00Z",
+          "match": "Lakers – Raptors",
+          "market": "prop",
+          "side": "over",
+          "line": 0.5,
+          "stat": "tpm",
+          "playerId": "3907498",
+          "player": "Matisse Thybulle",
+          "team": "LAL",
+          "label": "Matisse Thybulle más de 0.5 triples",
+          "odd": 1.3,
+          "pFinal": 0.748,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909905|prop|over|7.5|3448|pts",
+          "gameId": "nba:401909905",
+          "start": "2026-11-02T01:30Z",
+          "match": "Warriors – Clippers",
+          "market": "prop",
+          "side": "over",
+          "line": 7.5,
+          "stat": "pts",
+          "playerId": "3448",
+          "player": "Brook Lopez",
+          "team": "LAC",
+          "label": "Brook Lopez más de 7.5 puntos",
+          "odd": 1.46,
+          "pFinal": 0.675,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.9,
+      "prob": 0.505,
+      "ev": -0.042,
+      "start": "2026-11-02T01:30Z",
+      "createdAt": "2026-11-02T00:17:11.249Z"
     }
   ],
   "comboRecord": [
