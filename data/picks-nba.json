@@ -1859,6 +1859,24 @@
       "stat": "tpm",
       "playerId": "3078576",
       "createdAt": "2026-11-02T19:31:28.006Z"
+    },
+    {
+      "id": "nba:401909909|prop|under|22.5|2490149|pra",
+      "gameId": "nba:401909909",
+      "start": "2026-11-03T00:30Z",
+      "match": "Pacers – Hawks",
+      "market": "prop",
+      "side": "under",
+      "line": 22.5,
+      "label": "CJ McCollum menos de 22.5 pts+reb+ast",
+      "odd": 1.97,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.502,
+      "safety": 0.039,
+      "tier": "B",
+      "stat": "pra",
+      "playerId": "2490149",
+      "createdAt": "2026-11-02T20:12:37.940Z"
     }
   ],
   "record": [
