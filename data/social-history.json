@@ -5149,7 +5149,7 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
             "pred": [
-              114,
+              116,
               115
             ]
           },
@@ -5163,8 +5163,8 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
             "pred": [
-              110,
-              113
+              109,
+              114
             ]
           },
           {
@@ -5182,7 +5182,7 @@
             ]
           }
         ],
-        "text": "🔮 EuroPicks Score Predictions · NBA · 02/11\n\nCLE 116-104 OKC\nCHA 101-104 DET\nIND 112-115 ATL\nNY 113-105 BKN\nORL 105-111 WSH\nPHI 121-110 CHI\nDAL 123-110 SAC\nMEM 121-108 NO\nMIN 120-110 MIL\nHOU 118-108 BOS\nSA 119-108 UTAH\nDEN 112-114 POR\nGS 114-115 PHX\nLAC 110-113 TOR\nLAL 122-118 "
+        "text": "🔮 EuroPicks Score Predictions · NBA · 02/11\n\nCLE 116-104 OKC\nCHA 101-104 DET\nIND 112-115 ATL\nNY 113-105 BKN\nORL 105-111 WSH\nPHI 121-110 CHI\nDAL 123-110 SAC\nMEM 121-108 NO\nMIN 120-110 MIL\nHOU 118-108 BOS\nSA 119-108 UTAH\nDEN 112-114 POR\nGS 116-115 PHX\nLAC 109-114 TOR\nLAL 122-118 "
       },
       "combo-nba": {
         "id": "combo-nba",
@@ -5524,23 +5524,6 @@
             "pFinal": 0.739
           },
           {
-            "id": "nba:401909908|prop|over|9.5|3157465|pts",
-            "league": "nba",
-            "label": "D. Robinson +9.5 puntos",
-            "list": "D. Robinson +9.5 Pts",
-            "odd": 1.38,
-            "start": "2026-11-03T00:30Z",
-            "gameId": "nba:401909908",
-            "market": "prop",
-            "side": "over",
-            "line": 9.5,
-            "stat": "pts",
-            "playerId": "3157465",
-            "team": "DET",
-            "match": "Hornets – Pistons",
-            "pFinal": 0.707
-          },
-          {
             "id": "nba:401909914|ml|home|||",
             "league": "nba",
             "label": "Gana Grizzlies",
@@ -5553,9 +5536,23 @@
             "line": null,
             "match": "Grizzlies – Pelicans",
             "pFinal": 0.69
+          },
+          {
+            "id": "nba:401909916|ml|home|||",
+            "league": "nba",
+            "label": "Gana Rockets",
+            "list": "Gana Rockets",
+            "odd": 1.51,
+            "start": "2026-11-03T01:30Z",
+            "gameId": "nba:401909916",
+            "market": "ml",
+            "side": "home",
+            "line": null,
+            "match": "Rockets – Celtics",
+            "pFinal": 0.661
           }
         ],
-        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n9.- D. Harper +3.5 Reb @1.36\n10.- P. Larsson +4.5 R+A @1.33\n11.- D. Robinson +9.5 Pts @1.38\n12.- Gana Grizzlies @1.44\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n9.- D. Harper +3.5 Reb @1.36\n10.- P. Larsson +4.5 R+A @1.33\n11.- Gana Grizzlies @1.44\n12.- Gana Rockets @1.51\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
