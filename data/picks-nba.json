@@ -695,6 +695,40 @@
       "stat": "pts",
       "playerId": "3995",
       "createdAt": "2026-11-02T06:19:14.819Z"
+    },
+    {
+      "id": "nba:401909914|prop|over|7.5|5041935|reb",
+      "gameId": "nba:401909914",
+      "start": "2026-11-03T01:00Z",
+      "match": "Grizzlies – Pelicans",
+      "market": "prop",
+      "side": "over",
+      "line": 7.5,
+      "label": "Cameron Boozer más de 7.5 rebotes",
+      "odd": 1.41,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.693,
+      "safety": 0.637,
+      "tier": "B",
+      "stat": "reb",
+      "playerId": "5041935",
+      "createdAt": "2026-11-02T07:44:11.747Z"
+    },
+    {
+      "id": "nba:401909911|spread|away|2.5||",
+      "gameId": "nba:401909911",
+      "start": "2026-11-03T00:30Z",
+      "match": "Magic – Wizards",
+      "market": "spread",
+      "side": "away",
+      "line": 2.5,
+      "label": "Wizards +2.5",
+      "odd": 1.83,
+      "book": "draftkings",
+      "pFinal": 0.552,
+      "safety": 0.472,
+      "tier": "C",
+      "createdAt": "2026-11-02T07:44:11.747Z"
     }
   ],
   "record": [

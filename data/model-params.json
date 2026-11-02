@@ -1,22 +1,22 @@
 {
   "nba": {
     "margin": 14.66,
-    "total": 18.9,
+    "total": 18.94,
     "bias": {
       "margin": 0,
-      "total": -1.04
+      "total": -1.1
     },
-    "games": 1239,
-    "updatedAt": "2026-10-22T08:01:46.443Z"
+    "games": 1263,
+    "updatedAt": "2026-11-02T07:44:26.279Z"
   },
   "euroleague": {
-    "margin": 11.92,
-    "total": 17.11,
+    "margin": 11.93,
+    "total": 17.14,
     "bias": {
-      "margin": 0.24,
-      "total": 0.79
+      "margin": 0.27,
+      "total": 0.83
     },
-    "games": 925,
-    "updatedAt": "2026-10-22T08:01:49.121Z"
+    "games": 954,
+    "updatedAt": "2026-11-02T07:44:23.043Z"
   }
 }

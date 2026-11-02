@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-22T08:01:50.188Z",
-  "games": 925,
+  "generatedAt": "2026-11-02T07:44:24.299Z",
+  "games": 954,
   "sig": {
-    "margin": 11.92,
-    "total": 17.11
+    "margin": 11.93,
+    "total": 17.14
   },
   "mae": {
-    "margin": 9.27,
-    "total": 13.45
+    "margin": 9.31,
+    "total": 13.46
   },
   "winnerAccuracy": 0.653,
   "bySeason": {
@@ -24,85 +24,85 @@
       "acc": 0.645
     },
     "2026-27": {
-      "n": 11,
-      "acc": 0.727
+      "n": 40,
+      "acc": 0.675
     }
   },
   "calibration": [
     {
       "range": "50-60%",
-      "n": 370,
+      "n": 383,
       "expected": 0.553,
-      "actual": 0.551
+      "actual": 0.548
     },
     {
       "range": "60-70%",
-      "n": 284,
+      "n": 294,
       "expected": 0.648,
-      "actual": 0.673
+      "actual": 0.677
     },
     {
       "range": "70-80%",
-      "n": 189,
+      "n": 191,
       "expected": 0.743,
-      "actual": 0.725
+      "actual": 0.723
     },
     {
       "range": "80-90%",
-      "n": 71,
+      "n": 74,
       "expected": 0.838,
-      "actual": 0.859
+      "actual": 0.865
     },
     {
       "range": "90-100%",
-      "n": 11,
+      "n": 12,
       "expected": 0.916,
       "actual": 1
     }
   ],
   "picks": {
     "all": {
-      "n": 1,
-      "w": 1,
-      "hit": 1,
-      "roi": 0.36,
-      "avgOdd": 1.36,
-      "avgP": 0.737
+      "n": 12,
+      "w": 9,
+      "hit": 0.75,
+      "roi": 0.092,
+      "avgOdd": 1.5,
+      "avgP": 0.67
     },
     "byTier": {
       "A": {
-        "n": 1,
-        "w": 1,
-        "hit": 1,
-        "roi": 0.36,
-        "avgOdd": 1.36,
-        "avgP": 0.737
+        "n": 6,
+        "w": 5,
+        "hit": 0.833,
+        "roi": 0.143,
+        "avgOdd": 1.39,
+        "avgP": 0.72
       },
       "B": {
-        "n": 0,
-        "w": 0,
-        "hit": null,
-        "roi": null,
-        "avgOdd": null,
-        "avgP": null
+        "n": 4,
+        "w": 4,
+        "hit": 1,
+        "roi": 0.56,
+        "avgOdd": 1.56,
+        "avgP": 0.642
       },
       "C": {
-        "n": 0,
+        "n": 2,
         "w": 0,
-        "hit": null,
-        "roi": null,
-        "avgOdd": null,
-        "avgP": null
+        "hit": 0,
+        "roi": -1,
+        "avgOdd": 1.74,
+        "avgP": 0.574
       }
     },
     "byMarket": {
       "ml": {
-        "n": 1,
-        "w": 1,
-        "hit": 1,
-        "roi": 0.36,
-        "avgOdd": 1.36,
-        "avgP": 0.737
+        "n": 12,
+        "w": 9,
+        "hit": 0.75,
+        "roi": 0.092,
+        "avgOdd": 1.5,
+        "avgP": 0.67
       },
       "spread": {
         "n": 0,
