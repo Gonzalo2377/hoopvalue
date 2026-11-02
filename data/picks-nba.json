@@ -729,6 +729,24 @@
       "safety": 0.472,
       "tier": "C",
       "createdAt": "2026-11-02T07:44:11.747Z"
+    },
+    {
+      "id": "nba:401909915|prop|over|3.5|4432848|reb",
+      "gameId": "nba:401909915",
+      "start": "2026-11-03T01:00Z",
+      "match": "Timberwolves – Bucks",
+      "market": "prop",
+      "side": "over",
+      "line": 3.5,
+      "label": "Jaime Jaquez Jr. más de 3.5 rebotes",
+      "odd": 1.3,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.756,
+      "safety": 0.679,
+      "tier": "B",
+      "stat": "reb",
+      "playerId": "4432848",
+      "createdAt": "2026-11-02T08:04:46.334Z"
     }
   ],
   "record": [
@@ -15424,6 +15442,50 @@
       "ev": -0.023,
       "start": "2026-11-03T01:00Z",
       "createdAt": "2026-11-02T06:19:14.819Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "nba:401909915|prop|over|3.5|4432848|reb",
+          "gameId": "nba:401909915",
+          "start": "2026-11-03T01:00Z",
+          "match": "Timberwolves – Bucks",
+          "market": "prop",
+          "side": "over",
+          "line": 3.5,
+          "stat": "reb",
+          "playerId": "4432848",
+          "player": "Jaime Jaquez Jr.",
+          "team": "MIL",
+          "label": "Jaime Jaquez Jr. más de 3.5 rebotes",
+          "odd": 1.3,
+          "pFinal": 0.756,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909921|prop|over|3.5|4278053|ast",
+          "gameId": "nba:401909921",
+          "start": "2026-11-03T03:00Z",
+          "match": "Lakers – Heat",
+          "market": "prop",
+          "side": "over",
+          "line": 3.5,
+          "stat": "ast",
+          "playerId": "4278053",
+          "player": "Davion Mitchell",
+          "team": "MIA",
+          "label": "Davion Mitchell más de 3.5 asistencias",
+          "odd": 1.3,
+          "pFinal": 0.758,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.69,
+      "prob": 0.573,
+      "ev": -0.032,
+      "start": "2026-11-03T01:00Z",
+      "createdAt": "2026-11-02T08:04:46.334Z"
     }
   ],
   "comboRecord": [
