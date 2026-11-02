@@ -15173,6 +15173,59 @@
       "ev": -0.042,
       "start": "2026-11-02T01:30Z",
       "createdAt": "2026-11-02T00:17:11.249Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909916|ml|home|||",
+          "gameId": "nba:401909916",
+          "start": "2026-11-03T01:30Z",
+          "match": "Rockets – Celtics",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana Rockets",
+          "odd": 1.56,
+          "pFinal": 0.637,
+          "book": "draftkings"
+        },
+        {
+          "id": "nba:401909907|ml|home|||",
+          "gameId": "nba:401909907",
+          "start": "2026-11-03T00:00Z",
+          "match": "Cavaliers – Thunder",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana Cavaliers",
+          "odd": 1.58,
+          "pFinal": 0.643,
+          "book": "unibet"
+        },
+        {
+          "id": "nba:401909913|prop|over|9.5|5142620|pts",
+          "gameId": "nba:401909913",
+          "start": "2026-11-03T01:00Z",
+          "match": "Mavericks – Kings",
+          "market": "prop",
+          "side": "over",
+          "line": 9.5,
+          "stat": "pts",
+          "playerId": "5142620",
+          "player": "Darius Acuff Jr.",
+          "team": "SAC",
+          "label": "Darius Acuff Jr. más de 9.5 puntos",
+          "odd": 1.55,
+          "pFinal": 0.672,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 3.82,
+      "prob": 0.275,
+      "ev": 0.052,
+      "start": "2026-11-03T00:00Z",
+      "createdAt": "2026-11-02T00:37:36.101Z"
     }
   ],
   "comboRecord": [

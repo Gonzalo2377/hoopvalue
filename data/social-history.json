@@ -5216,10 +5216,10 @@
         "id": "combo-nba",
         "kind": "combo",
         "league": "nba",
-        "title": "Safe Parlay · NBA @1.78",
+        "title": "Safe Parlay · NBA @1.77",
         "postAt": "2026-11-02T18:00:00.000Z",
         "image": true,
-        "text": "🎯 Safe Parlay · NBA\n\n1.- M. Thybulle +0.5 T3 @1.30\n2.- K. Wagler +9.5 Pts @1.37\n\n💰 Total odds 1.78\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
+        "text": "🎯 Safe Parlay · NBA\n\n1.- M. Thybulle +0.5 T3 @1.30\n2.- K. Wagler +9.5 Pts @1.36\n\n💰 Total odds 1.77\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
         "picks": [],
         "combo": {
           "legs": [
@@ -5245,7 +5245,7 @@
               "league": "nba",
               "label": "K. Wagler +9.5 puntos",
               "list": "K. Wagler +9.5 Pts",
-              "odd": 1.37,
+              "odd": 1.36,
               "start": "2026-11-02T01:30Z",
               "gameId": "nba:401909905",
               "market": "prop",
@@ -5255,11 +5255,11 @@
               "playerId": "5254165",
               "team": "LAC",
               "match": "Warriors – Clippers",
-              "pFinal": 0.725
+              "pFinal": 0.729
             }
           ],
-          "odd": 1.78,
-          "prob": 0.542
+          "odd": 1.77,
+          "prob": 0.545
         }
       },
       "summary-nba": {
@@ -5375,6 +5375,23 @@
             "pFinal": 0.748
           },
           {
+            "id": "nba:401909905|prop|over|9.5|5254165|pts",
+            "league": "nba",
+            "label": "K. Wagler +9.5 puntos",
+            "list": "K. Wagler +9.5 Pts",
+            "odd": 1.36,
+            "start": "2026-11-02T01:30Z",
+            "gameId": "nba:401909905",
+            "market": "prop",
+            "side": "over",
+            "line": 9.5,
+            "stat": "pts",
+            "playerId": "5254165",
+            "team": "LAC",
+            "match": "Warriors – Clippers",
+            "pFinal": 0.729
+          },
+          {
             "id": "nba:401909914|ml|home|||",
             "league": "nba",
             "label": "Gana Grizzlies",
@@ -5386,24 +5403,7 @@
             "side": "home",
             "line": null,
             "match": "Grizzlies – Pelicans",
-            "pFinal": 0.689
-          },
-          {
-            "id": "nba:401909905|prop|over|9.5|5254165|pts",
-            "league": "nba",
-            "label": "K. Wagler +9.5 puntos",
-            "list": "K. Wagler +9.5 Pts",
-            "odd": 1.37,
-            "start": "2026-11-02T01:30Z",
-            "gameId": "nba:401909905",
-            "market": "prop",
-            "side": "over",
-            "line": 9.5,
-            "stat": "pts",
-            "playerId": "5254165",
-            "team": "LAC",
-            "match": "Warriors – Clippers",
-            "pFinal": 0.725
+            "pFinal": 0.687
           },
           {
             "id": "nba:401909906|prop|under|1.5|4278580|tpm",
@@ -5423,7 +5423,7 @@
             "pFinal": 0.653
           }
         ],
-        "text": "🏀 NBA Picks Day · 02/11\n\n1.- M. Thybulle +0.5 T3 @1.30\n2.- Gana Grizzlies @1.44\n3.- K. Wagler +9.5 Pts @1.37\n4.- S. Mamukelashvili −1.5 T3 @1.49\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 02/11\n\n1.- M. Thybulle +0.5 T3 @1.30\n2.- K. Wagler +9.5 Pts @1.36\n3.- Gana Grizzlies @1.44\n4.- S. Mamukelashvili −1.5 T3 @1.49\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-2": {
         "id": "nba-day-2",
@@ -5435,25 +5435,11 @@
         "image": true,
         "picks": [
           {
-            "id": "nba:401909916|ml|home|||",
-            "league": "nba",
-            "label": "Gana Rockets",
-            "list": "Gana Rockets",
-            "odd": 1.54,
-            "start": "2026-11-03T01:30Z",
-            "gameId": "nba:401909916",
-            "market": "ml",
-            "side": "home",
-            "line": null,
-            "match": "Rockets – Celtics",
-            "pFinal": 0.642
-          },
-          {
             "id": "nba:401909905|prop|over|7.5|3448|pts",
             "league": "nba",
             "label": "B. Lopez +7.5 puntos",
             "list": "B. Lopez +7.5 Pts",
-            "odd": 1.46,
+            "odd": 1.45,
             "start": "2026-11-02T01:30Z",
             "gameId": "nba:401909905",
             "market": "prop",
@@ -5463,7 +5449,21 @@
             "playerId": "3448",
             "team": "LAC",
             "match": "Warriors – Clippers",
-            "pFinal": 0.675
+            "pFinal": 0.679
+          },
+          {
+            "id": "nba:401909916|ml|home|||",
+            "league": "nba",
+            "label": "Gana Rockets",
+            "list": "Gana Rockets",
+            "odd": 1.56,
+            "start": "2026-11-03T01:30Z",
+            "gameId": "nba:401909916",
+            "market": "ml",
+            "side": "home",
+            "line": null,
+            "match": "Rockets – Celtics",
+            "pFinal": 0.637
           },
           {
             "id": "nba:401909907|ml|home|||",
@@ -5484,7 +5484,7 @@
             "league": "nba",
             "label": "D. Acuff Jr. +9.5 puntos",
             "list": "D. Acuff Jr. +9.5 Pts",
-            "odd": 1.56,
+            "odd": 1.55,
             "start": "2026-11-03T01:00Z",
             "gameId": "nba:401909913",
             "market": "prop",
@@ -5494,10 +5494,10 @@
             "playerId": "5142620",
             "team": "SAC",
             "match": "Mavericks – Kings",
-            "pFinal": 0.669
+            "pFinal": 0.672
           }
         ],
-        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n5.- Gana Rockets @1.54\n6.- B. Lopez +7.5 Pts @1.46\n7.- Gana Cavaliers @1.58\n8.- D. Acuff Jr. +9.5 Pts @1.56\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n5.- B. Lopez +7.5 Pts @1.45\n6.- Gana Rockets @1.56\n7.- Gana Cavaliers @1.58\n8.- D. Acuff Jr. +9.5 Pts @1.55\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
