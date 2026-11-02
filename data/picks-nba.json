@@ -2053,6 +2053,42 @@
       "stat": "reb",
       "playerId": "4869342",
       "createdAt": "2026-11-02T23:16:55.180Z"
+    },
+    {
+      "id": "nba:401909915|prop|over|4.5|4397002|reb",
+      "gameId": "nba:401909915",
+      "start": "2026-11-03T01:00Z",
+      "match": "Timberwolves – Bucks",
+      "market": "prop",
+      "side": "over",
+      "line": 4.5,
+      "label": "Ayo Dosunmu más de 4.5 rebotes",
+      "odd": 1.93,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.532,
+      "safety": 0.008,
+      "tier": "C",
+      "stat": "reb",
+      "playerId": "4397002",
+      "createdAt": "2026-11-02T23:37:23.101Z"
+    },
+    {
+      "id": "nba:401909914|prop|over|9.5|5105550|pts",
+      "gameId": "nba:401909914",
+      "start": "2026-11-03T01:00Z",
+      "match": "Grizzlies – Pelicans",
+      "market": "prop",
+      "side": "over",
+      "line": 9.5,
+      "label": "GG Jackson más de 9.5 puntos",
+      "odd": 1.76,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.566,
+      "safety": 0.002,
+      "tier": "C",
+      "stat": "pts",
+      "playerId": "5105550",
+      "createdAt": "2026-11-02T23:37:23.101Z"
     }
   ],
   "record": [
