@@ -18448,6 +18448,63 @@
       "ev": 0.068,
       "start": "2026-11-03T01:00Z",
       "createdAt": "2026-11-02T19:31:28.006Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909916|spread|home|-5.5||",
+          "gameId": "nba:401909916",
+          "start": "2026-11-03T01:30Z",
+          "match": "Rockets – Celtics",
+          "market": "spread",
+          "side": "home",
+          "line": -5.5,
+          "label": "Rockets -5.5",
+          "odd": 1.94,
+          "pFinal": 0.532,
+          "book": "draftkings"
+        },
+        {
+          "id": "nba:401909917|prop|over|20.5|4433627|pts",
+          "gameId": "nba:401909917",
+          "start": "2026-11-03T01:30Z",
+          "match": "Spurs – Jazz",
+          "market": "prop",
+          "side": "over",
+          "line": 20.5,
+          "stat": "pts",
+          "playerId": "4433627",
+          "player": "Keyonte George",
+          "team": "UTAH",
+          "label": "Keyonte George más de 20.5 puntos",
+          "odd": 1.79,
+          "pFinal": 0.562,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909918|prop|over|6.5|4066211|pts",
+          "gameId": "nba:401909918",
+          "start": "2026-11-03T02:00Z",
+          "match": "Nuggets – Trail Blazers",
+          "market": "prop",
+          "side": "over",
+          "line": 6.5,
+          "stat": "pts",
+          "playerId": "4066211",
+          "player": "Robert Williams III",
+          "team": "POR",
+          "label": "Robert Williams III más de 6.5 puntos",
+          "odd": 2.08,
+          "pFinal": 0.485,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 7.22,
+      "prob": 0.145,
+      "ev": 0.047,
+      "start": "2026-11-03T01:30Z",
+      "createdAt": "2026-11-02T19:52:07.496Z"
     }
   ],
   "comboRecord": [
