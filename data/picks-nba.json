@@ -2035,6 +2035,24 @@
       "stat": "pr",
       "playerId": "4701230",
       "createdAt": "2026-11-02T22:56:30.010Z"
+    },
+    {
+      "id": "nba:401909909|prop|under|6.5|4869342|reb",
+      "gameId": "nba:401909909",
+      "start": "2026-11-03T00:30Z",
+      "match": "Pacers – Hawks",
+      "market": "prop",
+      "side": "under",
+      "line": 6.5,
+      "label": "Dyson Daniels menos de 6.5 rebotes",
+      "odd": 1.75,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.569,
+      "safety": 0.027,
+      "tier": "C",
+      "stat": "reb",
+      "playerId": "4869342",
+      "createdAt": "2026-11-02T23:16:55.180Z"
     }
   ],
   "record": [
@@ -19153,6 +19171,46 @@
       "ev": -0.03,
       "start": "2026-11-03T03:00Z",
       "createdAt": "2026-11-02T22:56:30.010Z"
+    },
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "nba:401909909|prop|under|6.5|4869342|reb",
+          "gameId": "nba:401909909",
+          "start": "2026-11-03T00:30Z",
+          "match": "Pacers – Hawks",
+          "market": "prop",
+          "side": "under",
+          "line": 6.5,
+          "stat": "reb",
+          "playerId": "4869342",
+          "player": "Dyson Daniels",
+          "team": "ATL",
+          "label": "Dyson Daniels menos de 6.5 rebotes",
+          "odd": 1.75,
+          "pFinal": 0.569,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909920|ml|away|||",
+          "gameId": "nba:401909920",
+          "start": "2026-11-03T03:00Z",
+          "match": "Clippers – Raptors",
+          "market": "ml",
+          "side": "away",
+          "line": null,
+          "label": "Gana Raptors",
+          "odd": 1.6,
+          "pFinal": 0.626,
+          "book": "unibet"
+        }
+      ],
+      "odd": 2.8,
+      "prob": 0.356,
+      "ev": -0.003,
+      "start": "2026-11-03T00:30Z",
+      "createdAt": "2026-11-02T23:16:55.180Z"
     }
   ],
   "comboRecord": [
