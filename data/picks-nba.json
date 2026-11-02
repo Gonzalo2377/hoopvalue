@@ -797,6 +797,24 @@
       "safety": 0.61,
       "tier": "B",
       "createdAt": "2026-11-02T09:26:33.382Z"
+    },
+    {
+      "id": "nba:401909908|prop|over|1.5|4602025|reb",
+      "gameId": "nba:401909908",
+      "start": "2026-11-03T00:30Z",
+      "match": "Hornets – Pistons",
+      "market": "prop",
+      "side": "over",
+      "line": 1.5,
+      "label": "Sion James más de 1.5 rebotes",
+      "odd": 1.33,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.73,
+      "safety": 0.691,
+      "tier": "A",
+      "stat": "reb",
+      "playerId": "4602025",
+      "createdAt": "2026-11-02T10:07:29.255Z"
     }
   ],
   "record": [
@@ -15593,6 +15611,67 @@
       "ev": -0.029,
       "start": "2026-11-03T01:00Z",
       "createdAt": "2026-11-02T08:25:14.036Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909921|prop|over|3.5|4278053|ast",
+          "gameId": "nba:401909921",
+          "start": "2026-11-03T03:00Z",
+          "match": "Lakers – Heat",
+          "market": "prop",
+          "side": "over",
+          "line": 3.5,
+          "stat": "ast",
+          "playerId": "4278053",
+          "player": "Davion Mitchell",
+          "team": "MIA",
+          "label": "Davion Mitchell más de 3.5 asistencias",
+          "odd": 1.3,
+          "pFinal": 0.758,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909914|prop|over|14.5|4869780|pra",
+          "gameId": "nba:401909914",
+          "start": "2026-11-03T01:00Z",
+          "match": "Grizzlies – Pelicans",
+          "market": "prop",
+          "side": "over",
+          "line": 14.5,
+          "stat": "pra",
+          "playerId": "4869780",
+          "player": "Derik Queen",
+          "team": "NO",
+          "label": "Derik Queen más de 14.5 pts+reb+ast",
+          "odd": 1.32,
+          "pFinal": 0.75,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909916|prop|over|7.5|4684740|pts",
+          "gameId": "nba:401909916",
+          "start": "2026-11-03T01:30Z",
+          "match": "Rockets – Celtics",
+          "market": "prop",
+          "side": "over",
+          "line": 7.5,
+          "stat": "pts",
+          "playerId": "4684740",
+          "player": "Amen Thompson",
+          "team": "HOU",
+          "label": "Amen Thompson más de 7.5 puntos",
+          "odd": 1.35,
+          "pFinal": 0.739,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.32,
+      "prob": 0.42,
+      "ev": -0.027,
+      "start": "2026-11-03T01:00Z",
+      "createdAt": "2026-11-02T10:07:29.255Z"
     }
   ],
   "comboRecord": [
