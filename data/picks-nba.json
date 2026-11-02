@@ -1807,6 +1807,24 @@
       "stat": "ast",
       "playerId": "3147657",
       "createdAt": "2026-11-02T18:29:41.053Z"
+    },
+    {
+      "id": "nba:401909921|prop|under|3.5|3059319|reb",
+      "gameId": "nba:401909921",
+      "start": "2026-11-03T03:00Z",
+      "match": "Lakers – Heat",
+      "market": "prop",
+      "side": "under",
+      "line": 3.5,
+      "label": "Andrew Wiggins menos de 3.5 rebotes",
+      "odd": 2.18,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.461,
+      "safety": 0.014,
+      "tier": "C",
+      "stat": "reb",
+      "playerId": "3059319",
+      "createdAt": "2026-11-02T18:50:22.601Z"
     }
   ],
   "record": [
@@ -18233,6 +18251,67 @@
       "ev": 0.06,
       "start": "2026-11-03T01:00Z",
       "createdAt": "2026-11-02T18:29:41.053Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909917|prop|over|21.5|4433627|pts",
+          "gameId": "nba:401909917",
+          "start": "2026-11-03T01:30Z",
+          "match": "Spurs – Jazz",
+          "market": "prop",
+          "side": "over",
+          "line": 21.5,
+          "stat": "pts",
+          "playerId": "4433627",
+          "player": "Keyonte George",
+          "team": "UTAH",
+          "label": "Keyonte George más de 21.5 puntos",
+          "odd": 1.95,
+          "pFinal": 0.516,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909912|prop|over|6.5|5124612|reb",
+          "gameId": "nba:401909912",
+          "start": "2026-11-03T00:30Z",
+          "match": "76ers – Bulls",
+          "market": "prop",
+          "side": "over",
+          "line": 6.5,
+          "stat": "reb",
+          "playerId": "5124612",
+          "player": "VJ Edgecombe",
+          "team": "PHI",
+          "label": "VJ Edgecombe más de 6.5 rebotes",
+          "odd": 2.05,
+          "pFinal": 0.49,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909915|prop|under|5.5|4433247|reb",
+          "gameId": "nba:401909915",
+          "start": "2026-11-03T01:00Z",
+          "match": "Timberwolves – Bucks",
+          "market": "prop",
+          "side": "under",
+          "line": 5.5,
+          "stat": "reb",
+          "playerId": "4433247",
+          "player": "Jonathan Kuminga",
+          "team": "MIN",
+          "label": "Jonathan Kuminga menos de 5.5 rebotes",
+          "odd": 1.98,
+          "pFinal": 0.515,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 7.92,
+      "prob": 0.13,
+      "ev": 0.031,
+      "start": "2026-11-03T00:30Z",
+      "createdAt": "2026-11-02T18:50:22.601Z"
     }
   ],
   "comboRecord": [
