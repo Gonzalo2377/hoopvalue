@@ -4967,24 +4967,10 @@
         "id": "preds-nba",
         "kind": "preds",
         "league": "nba",
-        "title": "Predicciones de marcador · NBA (17)",
+        "title": "Predicciones de marcador · NBA (16)",
         "postAt": "2026-11-02T17:30:00.000Z",
         "image": true,
         "games": [
-          {
-            "id": "nba:401909905",
-            "start": "2026-11-02T01:30Z",
-            "home": "Warriors",
-            "away": "Clippers",
-            "hc": "GS",
-            "ac": "LAC",
-            "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
-            "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lac.png",
-            "pred": [
-              110,
-              108
-            ]
-          },
           {
             "id": "nba:401909906",
             "start": "2026-11-02T02:00Z",
@@ -5210,7 +5196,7 @@
             ]
           }
         ],
-        "text": "🔮 EuroPicks Score Predictions · NBA · 02/11\n\nGS 110-108 LAC\nLAL 115-114 TOR\nCLE 116-104 OKC\nCHA 101-104 DET\nIND 108-117 ATL\nNY 113-105 BKN\nORL 106-111 WSH\nPHI 121-110 CHI\nDAL 123-110 SAC\nMEM 121-108 NO\nMIN 120-110 MIL\nHOU 117-108 BOS\nSA 119-108 UTAH\nDEN 112-114 POR\nGS 116-114 PH"
+        "text": "🔮 EuroPicks Score Predictions · NBA · 02/11\n\nLAL 115-114 TOR\nCLE 116-104 OKC\nCHA 101-104 DET\nIND 108-117 ATL\nNY 113-105 BKN\nORL 106-111 WSH\nPHI 121-110 CHI\nDAL 123-110 SAC\nMEM 121-108 NO\nMIN 120-110 MIL\nHOU 117-108 BOS\nSA 119-108 UTAH\nDEN 112-114 POR\nGS 116-114 PHX\nLAC 105-113 "
       },
       "combo-nba": {
         "id": "combo-nba",
@@ -5353,7 +5339,7 @@
         "kind": "nba-day",
         "league": "nba",
         "reply": false,
-        "title": "NBA Picks Day · 12 picks",
+        "title": "NBA Picks Day · 10 picks",
         "postAt": "2026-11-02T17:45:00.000Z",
         "image": true,
         "picks": [
@@ -5433,27 +5419,10 @@
         "kind": "nba-day",
         "league": "nba",
         "reply": true,
-        "title": "↳ Hilo 2/3 · picks 5-8",
+        "title": "↳ Hilo 2/3 · picks 5-7",
         "postAt": "2026-11-02T17:45:00.000Z",
         "image": true,
         "picks": [
-          {
-            "id": "nba:401909905|prop|over|9.5|5254165|pts",
-            "league": "nba",
-            "label": "K. Wagler +9.5 puntos",
-            "list": "K. Wagler +9.5 Pts",
-            "odd": 1.36,
-            "start": "2026-11-02T01:30Z",
-            "gameId": "nba:401909905",
-            "market": "prop",
-            "side": "over",
-            "line": 9.5,
-            "stat": "pts",
-            "playerId": "5254165",
-            "team": "LAC",
-            "match": "Warriors – Clippers",
-            "pFinal": 0.729
-          },
           {
             "id": "nba:401909914|ml|home|||",
             "league": "nba",
@@ -5467,23 +5436,6 @@
             "line": null,
             "match": "Grizzlies – Pelicans",
             "pFinal": 0.687
-          },
-          {
-            "id": "nba:401909905|prop|over|13.5|4709138|pts",
-            "league": "nba",
-            "label": "B. Podziemski +13.5 puntos",
-            "list": "B. Podziemski +13.5 Pts",
-            "odd": 1.41,
-            "start": "2026-11-02T01:30Z",
-            "gameId": "nba:401909905",
-            "market": "prop",
-            "side": "over",
-            "line": 13.5,
-            "stat": "pts",
-            "playerId": "4709138",
-            "team": "GS",
-            "match": "Warriors – Clippers",
-            "pFinal": 0.694
           },
           {
             "id": "nba:401909906|prop|under|1.5|4278580|tpm",
@@ -5501,33 +5453,33 @@
             "team": "LAL",
             "match": "Lakers – Raptors",
             "pFinal": 0.653
-          }
-        ],
-        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n5.- K. Wagler +9.5 Pts @1.36\n6.- Gana Grizzlies @1.44\n7.- B. Podziemski +13.5 Pts @1.41\n8.- S. Mamukelashvili −1.5 T3 @1.49\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-3": {
-        "id": "nba-day-3",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 3/3 · picks 9-12",
-        "postAt": "2026-11-02T17:45:00.000Z",
-        "image": true,
-        "picks": [
+          },
           {
             "id": "nba:401909916|ml|home|||",
             "league": "nba",
             "label": "Gana Rockets",
             "list": "Gana Rockets",
-            "odd": 1.56,
+            "odd": 1.55,
             "start": "2026-11-03T01:30Z",
             "gameId": "nba:401909916",
             "market": "ml",
             "side": "home",
             "line": null,
             "match": "Rockets – Celtics",
-            "pFinal": 0.636
-          },
+            "pFinal": 0.642
+          }
+        ],
+        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n5.- Gana Grizzlies @1.44\n6.- S. Mamukelashvili −1.5 T3 @1.49\n7.- Gana Rockets @1.55\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-3": {
+        "id": "nba-day-3",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 3/3 · picks 8-10",
+        "postAt": "2026-11-02T17:45:00.000Z",
+        "image": true,
+        "picks": [
           {
             "id": "nba:401909907|prop|under|1.5|4900671|tpm",
             "league": "nba",
@@ -5564,7 +5516,7 @@
             "league": "nba",
             "label": "D. Acuff Jr. +9.5 puntos",
             "list": "D. Acuff Jr. +9.5 Pts",
-            "odd": 1.54,
+            "odd": 1.56,
             "start": "2026-11-03T01:00Z",
             "gameId": "nba:401909913",
             "market": "prop",
@@ -5574,10 +5526,10 @@
             "playerId": "5142620",
             "team": "SAC",
             "match": "Mavericks – Kings",
-            "pFinal": 0.675
+            "pFinal": 0.669
           }
         ],
-        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n9.- Gana Rockets @1.56\n10.- A. Mitchell −1.5 T3 @1.48\n11.- Gana Cavaliers @1.58\n12.- D. Acuff Jr. +9.5 Pts @1.54\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n8.- A. Mitchell −1.5 T3 @1.48\n9.- Gana Cavaliers @1.58\n10.- D. Acuff Jr. +9.5 Pts @1.56\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
