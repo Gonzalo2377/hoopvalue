@@ -5107,8 +5107,8 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
             "pred": [
-              118,
-              108
+              117,
+              109
             ]
           },
           {
@@ -5149,8 +5149,8 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
             "pred": [
-              116,
-              115
+              119,
+              113
             ]
           },
           {
@@ -5182,7 +5182,7 @@
             ]
           }
         ],
-        "text": "🔮 EuroPicks Score Predictions · NBA · 02/11\n\nCLE 116-104 OKC\nCHA 101-104 DET\nIND 112-115 ATL\nNY 113-105 BKN\nORL 105-111 WSH\nPHI 121-110 CHI\nDAL 123-110 SAC\nMEM 121-108 NO\nMIN 120-110 MIL\nHOU 118-108 BOS\nSA 119-108 UTAH\nDEN 112-114 POR\nGS 116-115 PHX\nLAC 109-114 TOR\nLAL 122-118 "
+        "text": "🔮 EuroPicks Score Predictions · NBA · 02/11\n\nCLE 116-104 OKC\nCHA 101-104 DET\nIND 112-115 ATL\nNY 113-105 BKN\nORL 105-111 WSH\nPHI 121-110 CHI\nDAL 123-110 SAC\nMEM 121-108 NO\nMIN 120-110 MIL\nHOU 117-109 BOS\nSA 119-108 UTAH\nDEN 112-114 POR\nGS 119-113 PHX\nLAC 109-114 TOR\nLAL 122-118 "
       },
       "combo-nba": {
         "id": "combo-nba",
@@ -5341,7 +5341,7 @@
             "side": "home",
             "line": -6.5,
             "match": "Grizzlies – Pelicans",
-            "pFinal": 0.491
+            "pFinal": 0.49
           },
           {
             "id": "nba:401909910|prop|under|10.5|4432194|ra",
@@ -5361,18 +5361,18 @@
             "pFinal": 0.545
           },
           {
-            "id": "nba:401909916|spread|home|-4.5||",
+            "id": "nba:401909908|total|under|210.5||",
             "league": "nba",
-            "label": "Rockets -4.5",
-            "list": "Rockets -4.5",
-            "odd": 1.87,
-            "start": "2026-11-03T01:30Z",
-            "gameId": "nba:401909916",
-            "market": "spread",
-            "side": "home",
-            "line": -4.5,
-            "match": "Rockets – Celtics",
-            "pFinal": 0.534
+            "label": "Menos de 210.5 puntos",
+            "list": "Under 210.5 (Hornets-Pistons)",
+            "odd": 1.95,
+            "start": "2026-11-03T00:30Z",
+            "gameId": "nba:401909908",
+            "market": "total",
+            "side": "under",
+            "line": 210.5,
+            "match": "Hornets – Pistons",
+            "pFinal": 0.517
           },
           {
             "id": "nba:401909917|prop|over|21.5|4433627|pts",
@@ -5392,7 +5392,7 @@
             "pFinal": 0.526
           }
         ],
-        "text": "🏀 NBA Picks Day · 02/11\n\n1.- Grizzlies -6.5 @2.23\n2.- D. Sharpe −10.5 R+A @1.81\n3.- Rockets -4.5 @1.87\n4.- K. George +21.5 Pts @1.90\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 02/11\n\n1.- Grizzlies -6.5 @2.23\n2.- D. Sharpe −10.5 R+A @1.81\n3.- Under 210.5 (Hornets-Pistons) @1.95\n4.- K. George +21.5 Pts @1.90\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-2": {
         "id": "nba-day-2",
@@ -5404,21 +5404,21 @@
         "image": true,
         "picks": [
           {
-            "id": "nba:401909913|prop|over|38.5|5041939|pra",
+            "id": "nba:401909913|prop|over|13.5|3155942|reb",
             "league": "nba",
-            "label": "C. Flagg +38.5 pts+reb+ast",
-            "list": "C. Flagg +38.5 PRA",
-            "odd": 1.83,
+            "label": "D. Sabonis +13.5 rebotes",
+            "list": "D. Sabonis +13.5 Reb",
+            "odd": 1.94,
             "start": "2026-11-03T01:00Z",
             "gameId": "nba:401909913",
             "market": "prop",
             "side": "over",
-            "line": 38.5,
-            "stat": "pra",
-            "playerId": "5041939",
-            "team": "DAL",
+            "line": 13.5,
+            "stat": "reb",
+            "playerId": "3155942",
+            "team": "SAC",
             "match": "Mavericks – Kings",
-            "pFinal": 0.537
+            "pFinal": 0.516
           },
           {
             "id": "nba:401909913|spread|home|-10.5||",
@@ -5456,7 +5456,7 @@
             "league": "nba",
             "label": "S. James +2.5 asistencias",
             "list": "S. James +2.5 Ast",
-            "odd": 2.33,
+            "odd": 2.35,
             "start": "2026-11-03T00:30Z",
             "gameId": "nba:401909908",
             "market": "prop",
@@ -5466,10 +5466,10 @@
             "playerId": "4602025",
             "team": "CHA",
             "match": "Hornets – Pistons",
-            "pFinal": 0.426
+            "pFinal": 0.423
           }
         ],
-        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n5.- C. Flagg +38.5 PRA @1.83\n6.- Mavericks -10.5 @2.02\n7.- J. Brown −22.5 Pts @1.82\n8.- S. James +2.5 Ast @2.33\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n5.- D. Sabonis +13.5 Reb @1.94\n6.- Mavericks -10.5 @2.02\n7.- J. Brown −22.5 Pts @1.82\n8.- S. James +2.5 Ast @2.35\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-3": {
         "id": "nba-day-3",
@@ -5515,35 +5515,38 @@
             "pFinal": 0.586
           },
           {
-            "id": "nba:401909908|total|under|211.5||",
+            "id": "nba:401909916|spread|home|-4.5||",
             "league": "nba",
-            "label": "Menos de 211.5 puntos",
-            "list": "Under 211.5 (Hornets-Pistons)",
-            "odd": 1.89,
-            "start": "2026-11-03T00:30Z",
-            "gameId": "nba:401909908",
-            "market": "total",
-            "side": "under",
-            "line": 211.5,
-            "match": "Hornets – Pistons",
-            "pFinal": 0.53
+            "label": "Rockets -4.5",
+            "list": "Rockets -4.5",
+            "odd": 1.87,
+            "start": "2026-11-03T01:30Z",
+            "gameId": "nba:401909916",
+            "market": "spread",
+            "side": "home",
+            "line": -4.5,
+            "match": "Rockets – Celtics",
+            "pFinal": 0.528
           },
           {
-            "id": "nba:401909919|ml|away|||",
+            "id": "nba:401909915|prop|over|5.5|3134907|reb",
             "league": "nba",
-            "label": "Gana Suns",
-            "list": "Gana Suns",
-            "odd": 2.3,
-            "start": "2026-11-03T03:00Z",
-            "gameId": "nba:401909919",
-            "market": "ml",
-            "side": "away",
-            "line": null,
-            "match": "Warriors – Suns",
-            "pFinal": 0.433
+            "label": "K. Kuzma +5.5 rebotes",
+            "list": "K. Kuzma +5.5 Reb",
+            "odd": 2.04,
+            "start": "2026-11-03T01:00Z",
+            "gameId": "nba:401909915",
+            "market": "prop",
+            "side": "over",
+            "line": 5.5,
+            "stat": "reb",
+            "playerId": "3134907",
+            "team": "MIL",
+            "match": "Timberwolves – Bucks",
+            "pFinal": 0.484
           }
         ],
-        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n9.- S. Gilgeous-Alexander −5.5 Ast @1.87\n10.- I. Jackson −7.5 Reb @1.68\n11.- Under 211.5 (Hornets-Pistons) @1.89\n12.- Gana Suns @2.30\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n9.- S. Gilgeous-Alexander −5.5 Ast @1.87\n10.- I. Jackson −7.5 Reb @1.68\n11.- Rockets -4.5 @1.87\n12.- K. Kuzma +5.5 Reb @2.04\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
