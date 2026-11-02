@@ -1211,6 +1211,72 @@
       "stat": "pra",
       "playerId": "4684740",
       "createdAt": "2026-11-02T13:17:02.735Z"
+    },
+    {
+      "id": "nba:401909914|spread|home|-5.5||",
+      "gameId": "nba:401909914",
+      "start": "2026-11-03T01:00Z",
+      "match": "Grizzlies – Pelicans",
+      "market": "spread",
+      "side": "home",
+      "line": -5.5,
+      "label": "Grizzlies -5.5",
+      "odd": 1.87,
+      "book": "draftkings",
+      "pFinal": 0.544,
+      "safety": 0.016,
+      "tier": "C",
+      "createdAt": "2026-11-02T13:37:32.028Z"
+    },
+    {
+      "id": "nba:401909919|ml|away|||",
+      "gameId": "nba:401909919",
+      "start": "2026-11-03T03:00Z",
+      "match": "Warriors – Suns",
+      "market": "ml",
+      "side": "away",
+      "line": null,
+      "label": "Gana Suns",
+      "odd": 2.3,
+      "book": "draftkings",
+      "pFinal": 0.431,
+      "safety": 0.016,
+      "tier": "C",
+      "createdAt": "2026-11-02T13:37:32.028Z"
+    },
+    {
+      "id": "nba:401909918|prop|over|6.5|4066211|pts",
+      "gameId": "nba:401909918",
+      "start": "2026-11-03T02:00Z",
+      "match": "Nuggets – Trail Blazers",
+      "market": "prop",
+      "side": "over",
+      "line": 6.5,
+      "label": "Robert Williams III más de 6.5 puntos",
+      "odd": 2.04,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.492,
+      "safety": 0.012,
+      "tier": "C",
+      "stat": "pts",
+      "playerId": "4066211",
+      "createdAt": "2026-11-02T13:37:32.028Z"
+    },
+    {
+      "id": "nba:401909910|total|under|221.5||",
+      "gameId": "nba:401909910",
+      "start": "2026-11-03T00:30Z",
+      "match": "Knicks – Nets",
+      "market": "total",
+      "side": "under",
+      "line": 221.5,
+      "label": "Menos de 221.5 puntos",
+      "odd": 1.91,
+      "book": "unibet",
+      "pFinal": 0.515,
+      "safety": 0.007,
+      "tier": "C",
+      "createdAt": "2026-11-02T13:37:32.028Z"
     }
   ],
   "record": [
@@ -16398,6 +16464,139 @@
       "ev": -0.029,
       "start": "2026-11-03T00:30Z",
       "createdAt": "2026-11-02T13:17:02.735Z"
+    },
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "nba:401909912|prop|under|22.5|3917376|pts",
+          "gameId": "nba:401909912",
+          "start": "2026-11-03T00:30Z",
+          "match": "76ers – Bulls",
+          "market": "prop",
+          "side": "under",
+          "line": 22.5,
+          "stat": "pts",
+          "playerId": "3917376",
+          "player": "Jaylen Brown",
+          "team": "PHI",
+          "label": "Jaylen Brown menos de 22.5 puntos",
+          "odd": 1.82,
+          "pFinal": 0.54,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909914|spread|home|-5.5||",
+          "gameId": "nba:401909914",
+          "start": "2026-11-03T01:00Z",
+          "match": "Grizzlies – Pelicans",
+          "market": "spread",
+          "side": "home",
+          "line": -5.5,
+          "label": "Grizzlies -5.5",
+          "odd": 1.87,
+          "pFinal": 0.544,
+          "book": "draftkings"
+        }
+      ],
+      "odd": 3.4,
+      "prob": 0.294,
+      "ev": 0,
+      "start": "2026-11-03T00:30Z",
+      "createdAt": "2026-11-02T13:37:32.028Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909913|spread|home|-10.5||",
+          "gameId": "nba:401909913",
+          "start": "2026-11-03T01:00Z",
+          "match": "Mavericks – Kings",
+          "market": "spread",
+          "side": "home",
+          "line": -10.5,
+          "label": "Mavericks -10.5",
+          "odd": 1.95,
+          "pFinal": 0.52,
+          "book": "draftkings"
+        },
+        {
+          "id": "nba:401909914|spread|home|-5.5||",
+          "gameId": "nba:401909914",
+          "start": "2026-11-03T01:00Z",
+          "match": "Grizzlies – Pelicans",
+          "market": "spread",
+          "side": "home",
+          "line": -5.5,
+          "label": "Grizzlies -5.5",
+          "odd": 1.87,
+          "pFinal": 0.544,
+          "book": "draftkings"
+        },
+        {
+          "id": "nba:401909911|total|under|225.5||",
+          "gameId": "nba:401909911",
+          "start": "2026-11-03T00:30Z",
+          "match": "Magic – Wizards",
+          "market": "total",
+          "side": "under",
+          "line": 225.5,
+          "label": "Menos de 225.5 puntos",
+          "odd": 1.94,
+          "pFinal": 0.53,
+          "book": "unibet"
+        }
+      ],
+      "odd": 7.07,
+      "prob": 0.15,
+      "ev": 0.061,
+      "start": "2026-11-03T00:30Z",
+      "createdAt": "2026-11-02T13:37:32.028Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "nba:401909912|prop|under|22.5|3917376|pts",
+          "gameId": "nba:401909912",
+          "start": "2026-11-03T00:30Z",
+          "match": "76ers – Bulls",
+          "market": "prop",
+          "side": "under",
+          "line": 22.5,
+          "stat": "pts",
+          "playerId": "3917376",
+          "player": "Jaylen Brown",
+          "team": "PHI",
+          "label": "Jaylen Brown menos de 22.5 puntos",
+          "odd": 1.82,
+          "pFinal": 0.54,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909907|prop|under|5.5|4278073|ast",
+          "gameId": "nba:401909907",
+          "start": "2026-11-03T00:00Z",
+          "match": "Cavaliers – Thunder",
+          "market": "prop",
+          "side": "under",
+          "line": 5.5,
+          "stat": "ast",
+          "playerId": "4278073",
+          "player": "Shai Gilgeous-Alexander",
+          "team": "OKC",
+          "label": "Shai Gilgeous-Alexander menos de 5.5 asistencias",
+          "odd": 1.88,
+          "pFinal": 0.538,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 3.42,
+      "prob": 0.291,
+      "ev": -0.006,
+      "start": "2026-11-03T00:00Z",
+      "createdAt": "2026-11-02T13:37:32.028Z"
     }
   ],
   "comboRecord": [
