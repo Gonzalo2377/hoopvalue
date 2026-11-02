@@ -5347,6 +5347,23 @@
             "pFinal": 0.738
           },
           {
+            "id": "nba:401909918|prop|over|24.5|4683021|pr",
+            "league": "nba",
+            "label": "D. Avdija +24.5 pts+reb",
+            "list": "D. Avdija +24.5 P+R",
+            "odd": 1.34,
+            "start": "2026-11-03T02:00Z",
+            "gameId": "nba:401909918",
+            "market": "prop",
+            "side": "over",
+            "line": 24.5,
+            "stat": "pr",
+            "playerId": "4683021",
+            "team": "POR",
+            "match": "Nuggets – Trail Blazers",
+            "pFinal": 0.725
+          },
+          {
             "id": "nba:401909914|prop|over|9.5|5144091|pts",
             "league": "nba",
             "label": "J. Fears +9.5 puntos",
@@ -5379,7 +5396,19 @@
             "team": "DET",
             "match": "Hornets – Pistons",
             "pFinal": 0.734
-          },
+          }
+        ],
+        "text": "🏀 NBA Picks Day · 02/11\n\n1.- J. Smith Jr. +3.5 Reb @1.32\n2.- D. Avdija +24.5 P+R @1.34\n3.- J. Fears +9.5 Pts @1.30\n4.- D. Jenkins +4.5 R+A @1.33\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-2": {
+        "id": "nba-day-2",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 2/3 · picks 5-8",
+        "postAt": "2026-11-02T17:45:00.000Z",
+        "image": true,
+        "picks": [
           {
             "id": "nba:401909921|prop|over|3.5|4278053|ast",
             "league": "nba",
@@ -5396,19 +5425,7 @@
             "team": "MIA",
             "match": "Lakers – Heat",
             "pFinal": 0.758
-          }
-        ],
-        "text": "🏀 NBA Picks Day · 02/11\n\n1.- J. Smith Jr. +3.5 Reb @1.32\n2.- J. Fears +9.5 Pts @1.30\n3.- D. Jenkins +4.5 R+A @1.33\n4.- D. Mitchell +3.5 Ast @1.30\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-2": {
-        "id": "nba-day-2",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 2/3 · picks 5-8",
-        "postAt": "2026-11-02T17:45:00.000Z",
-        "image": true,
-        "picks": [
+          },
           {
             "id": "nba:401909907|prop|over|4.5|4576087|ra",
             "league": "nba",
@@ -5459,7 +5476,19 @@
             "team": "MIN",
             "match": "Timberwolves – Bucks",
             "pFinal": 0.753
-          },
+          }
+        ],
+        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n5.- D. Mitchell +3.5 Ast @1.30\n6.- P. Watson +4.5 R+A @1.33\n7.- A. Bailey +3.5 Reb @1.34\n8.- J. Beringer +9.5 P+R @1.30\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-3": {
+        "id": "nba-day-3",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 3/3 · picks 9-12",
+        "postAt": "2026-11-02T17:45:00.000Z",
+        "image": true,
+        "picks": [
           {
             "id": "nba:401909915|prop|over|13.5|4431671|pts",
             "league": "nba",
@@ -5476,19 +5505,7 @@
             "team": "MIN",
             "match": "Timberwolves – Bucks",
             "pFinal": 0.734
-          }
-        ],
-        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n5.- P. Watson +4.5 R+A @1.33\n6.- A. Bailey +3.5 Reb @1.34\n7.- J. Beringer +9.5 P+R @1.30\n8.- J. McDaniels +13.5 Pts @1.34\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-3": {
-        "id": "nba-day-3",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 3/3 · picks 9-12",
-        "postAt": "2026-11-02T17:45:00.000Z",
-        "image": true,
-        "picks": [
+          },
           {
             "id": "nba:401909917|prop|over|3.5|5037871|reb",
             "league": "nba",
@@ -5536,23 +5553,9 @@
             "line": null,
             "match": "Grizzlies – Pelicans",
             "pFinal": 0.69
-          },
-          {
-            "id": "nba:401909916|ml|home|||",
-            "league": "nba",
-            "label": "Gana Rockets",
-            "list": "Gana Rockets",
-            "odd": 1.51,
-            "start": "2026-11-03T01:30Z",
-            "gameId": "nba:401909916",
-            "market": "ml",
-            "side": "home",
-            "line": null,
-            "match": "Rockets – Celtics",
-            "pFinal": 0.661
           }
         ],
-        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n9.- D. Harper +3.5 Reb @1.36\n10.- P. Larsson +4.5 R+A @1.33\n11.- Gana Grizzlies @1.44\n12.- Gana Rockets @1.51\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n9.- J. McDaniels +13.5 Pts @1.34\n10.- D. Harper +3.5 Reb @1.36\n11.- P. Larsson +4.5 R+A @1.33\n12.- Gana Grizzlies @1.44\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
