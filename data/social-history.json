@@ -5427,6 +5427,23 @@
             "pFinal": 0.731
           },
           {
+            "id": "nba:401909917|prop|over|3.5|4873138|reb",
+            "league": "nba",
+            "label": "A. Bailey +3.5 rebotes",
+            "list": "A. Bailey +3.5 Reb",
+            "odd": 1.34,
+            "start": "2026-11-03T01:30Z",
+            "gameId": "nba:401909917",
+            "market": "prop",
+            "side": "over",
+            "line": 3.5,
+            "stat": "reb",
+            "playerId": "4873138",
+            "team": "UTAH",
+            "match": "Spurs – Jazz",
+            "pFinal": 0.728
+          },
+          {
             "id": "nba:401909915|prop|over|9.5|5279133|pr",
             "league": "nba",
             "label": "J. Beringer +9.5 pts+reb",
@@ -5459,6 +5476,35 @@
             "team": "MIN",
             "match": "Timberwolves – Bucks",
             "pFinal": 0.734
+          }
+        ],
+        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n5.- P. Watson +4.5 R+A @1.33\n6.- A. Bailey +3.5 Reb @1.34\n7.- J. Beringer +9.5 P+R @1.30\n8.- J. McDaniels +13.5 Pts @1.34\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-3": {
+        "id": "nba-day-3",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 3/3 · picks 9-12",
+        "postAt": "2026-11-02T17:45:00.000Z",
+        "image": true,
+        "picks": [
+          {
+            "id": "nba:401909917|prop|over|3.5|5037871|reb",
+            "league": "nba",
+            "label": "D. Harper +3.5 rebotes",
+            "list": "D. Harper +3.5 Reb",
+            "odd": 1.36,
+            "start": "2026-11-03T01:30Z",
+            "gameId": "nba:401909917",
+            "market": "prop",
+            "side": "over",
+            "line": 3.5,
+            "stat": "reb",
+            "playerId": "5037871",
+            "team": "SA",
+            "match": "Spurs – Jazz",
+            "pFinal": 0.719
           },
           {
             "id": "nba:401909921|prop|over|4.5|4601025|ra",
@@ -5476,19 +5522,7 @@
             "team": "MIA",
             "match": "Lakers – Heat",
             "pFinal": 0.739
-          }
-        ],
-        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n5.- P. Watson +4.5 R+A @1.33\n6.- J. Beringer +9.5 P+R @1.30\n7.- J. McDaniels +13.5 Pts @1.34\n8.- P. Larsson +4.5 R+A @1.33\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-3": {
-        "id": "nba-day-3",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 3/3 · picks 9-12",
-        "postAt": "2026-11-02T17:45:00.000Z",
-        "image": true,
-        "picks": [
+          },
           {
             "id": "nba:401909908|prop|over|9.5|3157465|pts",
             "league": "nba",
@@ -5519,40 +5553,9 @@
             "line": null,
             "match": "Grizzlies – Pelicans",
             "pFinal": 0.69
-          },
-          {
-            "id": "nba:401909916|ml|home|||",
-            "league": "nba",
-            "label": "Gana Rockets",
-            "list": "Gana Rockets",
-            "odd": 1.51,
-            "start": "2026-11-03T01:30Z",
-            "gameId": "nba:401909916",
-            "market": "ml",
-            "side": "home",
-            "line": null,
-            "match": "Rockets – Celtics",
-            "pFinal": 0.661
-          },
-          {
-            "id": "nba:401909917|prop|over|9.5|5041955|pts",
-            "league": "nba",
-            "label": "D. Peterson +9.5 puntos",
-            "list": "D. Peterson +9.5 Pts",
-            "odd": 1.38,
-            "start": "2026-11-03T01:30Z",
-            "gameId": "nba:401909917",
-            "market": "prop",
-            "side": "over",
-            "line": 9.5,
-            "stat": "pts",
-            "playerId": "5041955",
-            "team": "UTAH",
-            "match": "Spurs – Jazz",
-            "pFinal": 0.704
           }
         ],
-        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n9.- D. Robinson +9.5 Pts @1.38\n10.- Gana Grizzlies @1.44\n11.- Gana Rockets @1.51\n12.- D. Peterson +9.5 Pts @1.38\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n9.- D. Harper +3.5 Reb @1.36\n10.- P. Larsson +4.5 R+A @1.33\n11.- D. Robinson +9.5 Pts @1.38\n12.- Gana Grizzlies @1.44\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
