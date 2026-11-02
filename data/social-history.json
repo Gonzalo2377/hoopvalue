@@ -5778,47 +5778,50 @@
         "id": "combo-nba",
         "kind": "combo",
         "league": "nba",
-        "title": "Safe Parlay · NBA @2.82",
+        "title": "Safe Parlay · NBA @2.89",
         "postAt": "2026-11-03T18:00:00.000Z",
         "image": true,
-        "text": "🎯 Safe Parlay · NBA\n\n1.- D. Daniels −6.5 Reb @1.76\n2.- Gana Raptors @1.60\n\n💰 Total odds 2.82\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
+        "text": "🎯 Safe Parlay · NBA\n\n1.- I. Jackson −7.5 Reb @1.68\n2.- T. Young +12.5 R+A @1.72\n\n💰 Total odds 2.89\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
         "picks": [],
         "combo": {
           "legs": [
             {
-              "id": "nba:401909909|prop|under|6.5|4869342|reb",
+              "id": "nba:401909920|prop|under|7.5|4432170|reb",
               "league": "nba",
-              "label": "D. Daniels −6.5 rebotes",
-              "list": "D. Daniels −6.5 Reb",
-              "odd": 1.76,
-              "start": "2026-11-03T00:30Z",
-              "gameId": "nba:401909909",
-              "market": "prop",
-              "side": "under",
-              "line": 6.5,
-              "stat": "reb",
-              "playerId": "4869342",
-              "team": "ATL",
-              "match": "Pacers – Hawks",
-              "pFinal": 0.568
-            },
-            {
-              "id": "nba:401909920|ml|away|||",
-              "league": "nba",
-              "label": "Gana Raptors",
-              "list": "Gana Raptors",
-              "odd": 1.6,
+              "label": "I. Jackson −7.5 rebotes",
+              "list": "I. Jackson −7.5 Reb",
+              "odd": 1.68,
               "start": "2026-11-03T03:00Z",
               "gameId": "nba:401909920",
-              "market": "ml",
-              "side": "away",
-              "line": null,
+              "market": "prop",
+              "side": "under",
+              "line": 7.5,
+              "stat": "reb",
+              "playerId": "4432170",
+              "team": "LAC",
               "match": "Clippers – Raptors",
-              "pFinal": 0.626
+              "pFinal": 0.588
+            },
+            {
+              "id": "nba:401909911|prop|over|12.5|4277905|ra",
+              "league": "nba",
+              "label": "T. Young +12.5 reb+ast",
+              "list": "T. Young +12.5 R+A",
+              "odd": 1.72,
+              "start": "2026-11-03T00:30Z",
+              "gameId": "nba:401909911",
+              "market": "prop",
+              "side": "over",
+              "line": 12.5,
+              "stat": "ra",
+              "playerId": "4277905",
+              "team": "WSH",
+              "match": "Magic – Wizards",
+              "pFinal": 0.586
             }
           ],
-          "odd": 2.82,
-          "prob": 0.356
+          "odd": 2.89,
+          "prob": 0.345
         }
       },
       "summary-nba": {
@@ -5935,6 +5938,20 @@
         "image": true,
         "picks": [
           {
+            "id": "nba:401909920|spread|away|-4.5||",
+            "league": "nba",
+            "label": "Raptors -4.5",
+            "list": "Raptors -4.5",
+            "odd": 1.94,
+            "start": "2026-11-03T03:00Z",
+            "gameId": "nba:401909920",
+            "market": "spread",
+            "side": "away",
+            "line": -4.5,
+            "match": "Clippers – Raptors",
+            "pFinal": 0.527
+          },
+          {
             "id": "nba:401909908|total|under|209.5||",
             "league": "nba",
             "label": "Menos de 209.5 puntos",
@@ -5970,7 +5987,7 @@
             "league": "nba",
             "label": "V. Edgecombe +6.5 rebotes",
             "list": "V. Edgecombe +6.5 Reb",
-            "odd": 2.16,
+            "odd": 2.15,
             "start": "2026-11-03T00:30Z",
             "gameId": "nba:401909912",
             "market": "prop",
@@ -5980,27 +5997,10 @@
             "playerId": "5124612",
             "team": "PHI",
             "match": "76ers – Bulls",
-            "pFinal": 0.471
-          },
-          {
-            "id": "nba:401909909|prop|under|6.5|4869342|reb",
-            "league": "nba",
-            "label": "D. Daniels −6.5 rebotes",
-            "list": "D. Daniels −6.5 Reb",
-            "odd": 1.76,
-            "start": "2026-11-03T00:30Z",
-            "gameId": "nba:401909909",
-            "market": "prop",
-            "side": "under",
-            "line": 6.5,
-            "stat": "reb",
-            "playerId": "4869342",
-            "team": "ATL",
-            "match": "Pacers – Hawks",
-            "pFinal": 0.568
+            "pFinal": 0.472
           }
         ],
-        "text": "🏀 NBA Picks Day · 03/11\n\n1.- Under 209.5 (Hornets-Pistons) @2.00\n2.- M. Bridges −2.5 Ast @2.23\n3.- V. Edgecombe +6.5 Reb @2.16\n4.- D. Daniels −6.5 Reb @1.76\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 03/11\n\n1.- Raptors -4.5 @1.94\n2.- Under 209.5 (Hornets-Pistons) @2.00\n3.- M. Bridges −2.5 Ast @2.23\n4.- V. Edgecombe +6.5 Reb @2.15\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-2": {
         "id": "nba-day-2",
@@ -6050,7 +6050,7 @@
             "league": "nba",
             "label": "D. Sabonis +13.5 rebotes",
             "list": "D. Sabonis +13.5 Reb",
-            "odd": 1.92,
+            "odd": 1.9,
             "start": "2026-11-03T01:00Z",
             "gameId": "nba:401909913",
             "market": "prop",
@@ -6060,24 +6060,27 @@
             "playerId": "3155942",
             "team": "SAC",
             "match": "Mavericks – Kings",
-            "pFinal": 0.519
+            "pFinal": 0.524
           },
           {
-            "id": "nba:401909920|ml|away|||",
+            "id": "nba:401909911|prop|over|12.5|4277905|ra",
             "league": "nba",
-            "label": "Gana Raptors",
-            "list": "Gana Raptors",
-            "odd": 1.6,
-            "start": "2026-11-03T03:00Z",
-            "gameId": "nba:401909920",
-            "market": "ml",
-            "side": "away",
-            "line": null,
-            "match": "Clippers – Raptors",
-            "pFinal": 0.626
+            "label": "T. Young +12.5 reb+ast",
+            "list": "T. Young +12.5 R+A",
+            "odd": 1.72,
+            "start": "2026-11-03T00:30Z",
+            "gameId": "nba:401909911",
+            "market": "prop",
+            "side": "over",
+            "line": 12.5,
+            "stat": "ra",
+            "playerId": "4277905",
+            "team": "WSH",
+            "match": "Magic – Wizards",
+            "pFinal": 0.586
           }
         ],
-        "text": "🧵 NBA Picks Day · 03/11 (sigue)\n\n5.- B. Podziemski −5.5 Reb @1.72\n6.- I. Jackson −7.5 Reb @1.68\n7.- D. Sabonis +13.5 Reb @1.92\n8.- Gana Raptors @1.60\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 03/11 (sigue)\n\n5.- B. Podziemski −5.5 Reb @1.72\n6.- I. Jackson −7.5 Reb @1.68\n7.- D. Sabonis +13.5 Reb @1.90\n8.- T. Young +12.5 R+A @1.72\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-3": {
         "id": "nba-day-3",
@@ -6089,38 +6092,38 @@
         "image": true,
         "picks": [
           {
-            "id": "nba:401909907|prop|over|26.5|4900671|pra",
+            "id": "nba:401909909|prop|under|6.5|4869342|reb",
             "league": "nba",
-            "label": "A. Mitchell +26.5 pts+reb+ast",
-            "list": "A. Mitchell +26.5 PRA",
-            "odd": 2,
+            "label": "D. Daniels −6.5 rebotes",
+            "list": "D. Daniels −6.5 Reb",
+            "odd": 1.91,
+            "start": "2026-11-03T00:30Z",
+            "gameId": "nba:401909909",
+            "market": "prop",
+            "side": "under",
+            "line": 6.5,
+            "stat": "reb",
+            "playerId": "4869342",
+            "team": "ATL",
+            "match": "Pacers – Hawks",
+            "pFinal": 0.534
+          },
+          {
+            "id": "nba:401909907|prop|under|5.5|4278073|ast",
+            "league": "nba",
+            "label": "S. Gilgeous-Alexander −5.5 asistencias",
+            "list": "S. Gilgeous-Alexander −5.5 Ast",
+            "odd": 1.89,
             "start": "2026-11-03T00:00Z",
             "gameId": "nba:401909907",
             "market": "prop",
-            "side": "over",
-            "line": 26.5,
-            "stat": "pra",
-            "playerId": "4900671",
+            "side": "under",
+            "line": 5.5,
+            "stat": "ast",
+            "playerId": "4278073",
             "team": "OKC",
             "match": "Cavaliers – Thunder",
-            "pFinal": 0.493
-          },
-          {
-            "id": "nba:401909911|prop|over|33.5|4277905|pra",
-            "league": "nba",
-            "label": "T. Young +33.5 pts+reb+ast",
-            "list": "T. Young +33.5 PRA",
-            "odd": 1.86,
-            "start": "2026-11-03T00:30Z",
-            "gameId": "nba:401909911",
-            "market": "prop",
-            "side": "over",
-            "line": 33.5,
-            "stat": "pra",
-            "playerId": "4277905",
-            "team": "WSH",
-            "match": "Magic – Wizards",
-            "pFinal": 0.528
+            "pFinal": 0.536
           },
           {
             "id": "nba:401909914|spread|home|-5.5||",
@@ -6154,7 +6157,7 @@
             "pFinal": 0.503
           }
         ],
-        "text": "🧵 NBA Picks Day · 03/11 (sigue)\n\n9.- A. Mitchell +26.5 PRA @2.00\n10.- T. Young +33.5 PRA @1.86\n11.- Grizzlies -5.5 @1.93\n12.- K. George +21.5 Pts @2.00\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 03/11 (sigue)\n\n9.- D. Daniels −6.5 Reb @1.91\n10.- S. Gilgeous-Alexander −5.5 Ast @1.89\n11.- Grizzlies -5.5 @1.93\n12.- K. George +21.5 Pts @2.00\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }

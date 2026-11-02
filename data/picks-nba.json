@@ -2089,6 +2089,24 @@
       "stat": "pts",
       "playerId": "5105550",
       "createdAt": "2026-11-02T23:37:23.101Z"
+    },
+    {
+      "id": "nba:401909911|prop|over|12.5|4277905|ra",
+      "gameId": "nba:401909911",
+      "start": "2026-11-03T00:30Z",
+      "match": "Magic – Wizards",
+      "market": "prop",
+      "side": "over",
+      "line": 12.5,
+      "label": "Trae Young más de 12.5 reb+ast",
+      "odd": 1.72,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.586,
+      "safety": 0.025,
+      "tier": "C",
+      "stat": "ra",
+      "playerId": "4277905",
+      "createdAt": "2026-11-02T23:57:47.980Z"
     }
   ],
   "record": [
@@ -19247,6 +19265,99 @@
       "ev": -0.003,
       "start": "2026-11-03T00:30Z",
       "createdAt": "2026-11-02T23:16:55.180Z"
+    },
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "nba:401909920|prop|under|7.5|4432170|reb",
+          "gameId": "nba:401909920",
+          "start": "2026-11-03T03:00Z",
+          "match": "Clippers – Raptors",
+          "market": "prop",
+          "side": "under",
+          "line": 7.5,
+          "stat": "reb",
+          "playerId": "4432170",
+          "player": "Isaiah Jackson",
+          "team": "LAC",
+          "label": "Isaiah Jackson menos de 7.5 rebotes",
+          "odd": 1.68,
+          "pFinal": 0.588,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909911|prop|over|12.5|4277905|ra",
+          "gameId": "nba:401909911",
+          "start": "2026-11-03T00:30Z",
+          "match": "Magic – Wizards",
+          "market": "prop",
+          "side": "over",
+          "line": 12.5,
+          "stat": "ra",
+          "playerId": "4277905",
+          "player": "Trae Young",
+          "team": "WSH",
+          "label": "Trae Young más de 12.5 reb+ast",
+          "odd": 1.72,
+          "pFinal": 0.586,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.89,
+      "prob": 0.345,
+      "ev": -0.004,
+      "start": "2026-11-03T00:30Z",
+      "createdAt": "2026-11-02T23:57:47.980Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909920|spread|away|-4.5||",
+          "gameId": "nba:401909920",
+          "start": "2026-11-03T03:00Z",
+          "match": "Clippers – Raptors",
+          "market": "spread",
+          "side": "away",
+          "line": -4.5,
+          "label": "Raptors -4.5",
+          "odd": 1.94,
+          "pFinal": 0.527,
+          "book": "draftkings"
+        },
+        {
+          "id": "nba:401909914|spread|home|-5.5||",
+          "gameId": "nba:401909914",
+          "start": "2026-11-03T01:00Z",
+          "match": "Grizzlies – Pelicans",
+          "market": "spread",
+          "side": "home",
+          "line": -5.5,
+          "label": "Grizzlies -5.5",
+          "odd": 1.93,
+          "pFinal": 0.534,
+          "book": "unibet"
+        },
+        {
+          "id": "nba:401909916|spread|home|-4.5||",
+          "gameId": "nba:401909916",
+          "start": "2026-11-03T01:30Z",
+          "match": "Rockets – Celtics",
+          "market": "spread",
+          "side": "home",
+          "line": -4.5,
+          "label": "Rockets -4.5",
+          "odd": 1.88,
+          "pFinal": 0.544,
+          "book": "unibet"
+        }
+      ],
+      "odd": 7.04,
+      "prob": 0.153,
+      "ev": 0.078,
+      "start": "2026-11-03T01:00Z",
+      "createdAt": "2026-11-02T23:57:47.980Z"
     }
   ],
   "comboRecord": [
