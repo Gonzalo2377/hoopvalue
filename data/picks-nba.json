@@ -18523,6 +18523,63 @@
       "ev": 0.047,
       "start": "2026-11-03T01:30Z",
       "createdAt": "2026-11-02T19:52:07.496Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909916|spread|home|-5.5||",
+          "gameId": "nba:401909916",
+          "start": "2026-11-03T01:30Z",
+          "match": "Rockets – Celtics",
+          "market": "spread",
+          "side": "home",
+          "line": -5.5,
+          "label": "Rockets -5.5",
+          "odd": 1.94,
+          "pFinal": 0.532,
+          "book": "draftkings"
+        },
+        {
+          "id": "nba:401909907|prop|under|5.5|4278073|ast",
+          "gameId": "nba:401909907",
+          "start": "2026-11-03T00:00Z",
+          "match": "Cavaliers – Thunder",
+          "market": "prop",
+          "side": "under",
+          "line": 5.5,
+          "stat": "ast",
+          "playerId": "4278073",
+          "player": "Shai Gilgeous-Alexander",
+          "team": "OKC",
+          "label": "Shai Gilgeous-Alexander menos de 5.5 asistencias",
+          "odd": 1.84,
+          "pFinal": 0.547,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909908|prop|over|15.5|4278562|pts",
+          "gameId": "nba:401909908",
+          "start": "2026-11-03T00:30Z",
+          "match": "Hornets – Pistons",
+          "market": "prop",
+          "side": "over",
+          "line": 15.5,
+          "stat": "pts",
+          "playerId": "4278562",
+          "player": "Paul Reed",
+          "team": "DET",
+          "label": "Paul Reed más de 15.5 puntos",
+          "odd": 2.3,
+          "pFinal": 0.446,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 8.21,
+      "prob": 0.13,
+      "ev": 0.066,
+      "start": "2026-11-03T00:00Z",
+      "createdAt": "2026-11-02T20:33:07.892Z"
     }
   ],
   "comboRecord": [
