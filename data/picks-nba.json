@@ -1525,6 +1525,40 @@
       "stat": "ra",
       "playerId": "4278402",
       "createdAt": "2026-11-02T15:20:11.866Z"
+    },
+    {
+      "id": "nba:401909908|total|under|209.5||",
+      "gameId": "nba:401909908",
+      "start": "2026-11-03T00:30Z",
+      "match": "Hornets – Pistons",
+      "market": "total",
+      "side": "under",
+      "line": 209.5,
+      "label": "Menos de 209.5 puntos",
+      "odd": 2.04,
+      "book": "unibet",
+      "pFinal": 0.501,
+      "safety": 0.048,
+      "tier": "B",
+      "createdAt": "2026-11-02T15:40:42.744Z"
+    },
+    {
+      "id": "nba:401909907|prop|over|19.5|4683778|pra",
+      "gameId": "nba:401909907",
+      "start": "2026-11-03T00:00Z",
+      "match": "Cavaliers – Thunder",
+      "market": "prop",
+      "side": "over",
+      "line": 19.5,
+      "label": "Jared McCain más de 19.5 pts+reb+ast",
+      "odd": 1.98,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.498,
+      "safety": 0.025,
+      "tier": "C",
+      "stat": "pra",
+      "playerId": "4683778",
+      "createdAt": "2026-11-02T15:40:42.744Z"
     }
   ],
   "record": [
@@ -17326,6 +17360,55 @@
       "ev": 0.03,
       "start": "2026-11-03T00:00Z",
       "createdAt": "2026-11-02T15:20:11.866Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909908|total|under|209.5||",
+          "gameId": "nba:401909908",
+          "start": "2026-11-03T00:30Z",
+          "match": "Hornets – Pistons",
+          "market": "total",
+          "side": "under",
+          "line": 209.5,
+          "label": "Menos de 209.5 puntos",
+          "odd": 2.04,
+          "pFinal": 0.501,
+          "book": "unibet"
+        },
+        {
+          "id": "nba:401909914|spread|home|-5.5||",
+          "gameId": "nba:401909914",
+          "start": "2026-11-03T01:00Z",
+          "match": "Grizzlies – Pelicans",
+          "market": "spread",
+          "side": "home",
+          "line": -5.5,
+          "label": "Grizzlies -5.5",
+          "odd": 1.97,
+          "pFinal": 0.525,
+          "book": "unibet"
+        },
+        {
+          "id": "nba:401909911|total|under|225.5||",
+          "gameId": "nba:401909911",
+          "start": "2026-11-03T00:30Z",
+          "match": "Magic – Wizards",
+          "market": "total",
+          "side": "under",
+          "line": 225.5,
+          "label": "Menos de 225.5 puntos",
+          "odd": 1.98,
+          "pFinal": 0.525,
+          "book": "unibet"
+        }
+      ],
+      "odd": 7.96,
+      "prob": 0.138,
+      "ev": 0.099,
+      "start": "2026-11-03T00:30Z",
+      "createdAt": "2026-11-02T15:40:42.744Z"
     }
   ],
   "comboRecord": [
