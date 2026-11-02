@@ -5347,6 +5347,23 @@
             "pFinal": 0.532
           },
           {
+            "id": "nba:401909912|prop|under|22.5|3917376|pts",
+            "league": "nba",
+            "label": "J. Brown −22.5 puntos",
+            "list": "J. Brown −22.5 Pts",
+            "odd": 1.83,
+            "start": "2026-11-03T00:30Z",
+            "gameId": "nba:401909912",
+            "market": "prop",
+            "side": "under",
+            "line": 22.5,
+            "stat": "pts",
+            "playerId": "3917376",
+            "team": "PHI",
+            "match": "76ers – Bulls",
+            "pFinal": 0.538
+          },
+          {
             "id": "nba:401909914|spread|home|-6.5||",
             "league": "nba",
             "label": "Grizzlies -6.5",
@@ -5373,7 +5390,19 @@
             "line": -5.5,
             "match": "Rockets – Celtics",
             "pFinal": 0.504
-          },
+          }
+        ],
+        "text": "🏀 NBA Picks Day · 02/11\n\n1.- K. George +21.5 Pts @1.87\n2.- J. Brown −22.5 Pts @1.83\n3.- Grizzlies -6.5 @1.96\n4.- Rockets -5.5 @1.97\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-2": {
+        "id": "nba-day-2",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 2/3 · picks 5-8",
+        "postAt": "2026-11-02T17:45:00.000Z",
+        "image": true,
+        "picks": [
           {
             "id": "nba:401909908|total|under|210.5||",
             "league": "nba",
@@ -5387,19 +5416,7 @@
             "line": 210.5,
             "match": "Hornets – Pistons",
             "pFinal": 0.511
-          }
-        ],
-        "text": "🏀 NBA Picks Day · 02/11\n\n1.- K. George +21.5 Pts @1.87\n2.- Grizzlies -6.5 @1.96\n3.- Rockets -5.5 @1.97\n4.- Under 210.5 (Hornets-Pistons) @1.97\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-2": {
-        "id": "nba-day-2",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 2/3 · picks 5-8",
-        "postAt": "2026-11-02T17:45:00.000Z",
-        "image": true,
-        "picks": [
+          },
           {
             "id": "nba:401909907|prop|under|5.5|4278073|ast",
             "league": "nba",
@@ -5450,7 +5467,19 @@
             "team": "DET",
             "match": "Hornets – Pistons",
             "pFinal": 0.423
-          },
+          }
+        ],
+        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n5.- Under 210.5 (Hornets-Pistons) @1.97\n6.- S. Gilgeous-Alexander −5.5 Ast @1.88\n7.- K. Kuzma +5.5 Reb @2.04\n8.- P. Reed +15.5 Pts @2.48\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-3": {
+        "id": "nba-day-3",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 3/3 · picks 9-12",
+        "postAt": "2026-11-02T17:45:00.000Z",
+        "image": true,
+        "picks": [
           {
             "id": "nba:401909911|prop|under|9.5|4277905|ast",
             "league": "nba",
@@ -5467,19 +5496,7 @@
             "team": "WSH",
             "match": "Magic – Wizards",
             "pFinal": 0.505
-          }
-        ],
-        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n5.- S. Gilgeous-Alexander −5.5 Ast @1.88\n6.- K. Kuzma +5.5 Reb @2.04\n7.- P. Reed +15.5 Pts @2.48\n8.- T. Young −9.5 Ast @1.97\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-3": {
-        "id": "nba-day-3",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 3/3 · picks 9-12",
-        "postAt": "2026-11-02T17:45:00.000Z",
-        "image": true,
-        "picks": [
+          },
           {
             "id": "nba:401909911|total|under|224.5||",
             "league": "nba",
@@ -5512,20 +5529,6 @@
             "pFinal": 0.545
           },
           {
-            "id": "nba:401909913|spread|home|-10.5||",
-            "league": "nba",
-            "label": "Mavericks -10.5",
-            "list": "Mavericks -10.5",
-            "odd": 1.95,
-            "start": "2026-11-03T01:00Z",
-            "gameId": "nba:401909913",
-            "market": "spread",
-            "side": "home",
-            "line": -10.5,
-            "match": "Mavericks – Kings",
-            "pFinal": 0.504
-          },
-          {
             "id": "nba:401909914|prop|over|14.5|5105550|pr",
             "league": "nba",
             "label": "G. Jackson +14.5 pts+reb",
@@ -5543,7 +5546,7 @@
             "pFinal": 0.487
           }
         ],
-        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n9.- Under 224.5 (Magic-Wizards) @1.89\n10.- T. Camara −18.5 PRA @1.81\n11.- Mavericks -10.5 @1.95\n12.- G. Jackson +14.5 P+R @2.04\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n9.- T. Young −9.5 Ast @1.97\n10.- Under 224.5 (Magic-Wizards) @1.89\n11.- T. Camara −18.5 PRA @1.81\n12.- G. Jackson +14.5 P+R @2.04\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
