@@ -5411,14 +5411,14 @@
             "league": "nba",
             "label": "Gana Rockets",
             "list": "Gana Rockets",
-            "odd": 1.55,
+            "odd": 1.56,
             "start": "2026-11-03T01:30Z",
             "gameId": "nba:401909916",
             "market": "ml",
             "side": "home",
             "line": null,
             "match": "Rockets – Celtics",
-            "pFinal": 0.642
+            "pFinal": 0.64
           },
           {
             "id": "nba:401909907|prop|under|1.5|4900671|tpm",
@@ -5452,7 +5452,7 @@
             "pFinal": 0.64
           }
         ],
-        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n5.- Gana Rockets @1.55\n6.- A. Mitchell −1.5 T3 @1.48\n7.- Gana Cavaliers @1.58\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n5.- Gana Rockets @1.56\n6.- A. Mitchell −1.5 T3 @1.48\n7.- Gana Cavaliers @1.58\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
