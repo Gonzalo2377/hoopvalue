@@ -815,6 +815,24 @@
       "stat": "reb",
       "playerId": "4602025",
       "createdAt": "2026-11-02T10:07:29.255Z"
+    },
+    {
+      "id": "nba:401909918|prop|over|24.5|3936299|pr",
+      "gameId": "nba:401909918",
+      "start": "2026-11-03T02:00Z",
+      "match": "Nuggets – Trail Blazers",
+      "market": "prop",
+      "side": "over",
+      "line": 24.5,
+      "label": "Jamal Murray más de 24.5 pts+reb",
+      "odd": 1.52,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.642,
+      "safety": 0.587,
+      "tier": "C",
+      "stat": "pr",
+      "playerId": "3936299",
+      "createdAt": "2026-11-02T11:29:15.998Z"
     }
   ],
   "record": [
