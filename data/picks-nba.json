@@ -763,6 +763,24 @@
       "safety": 0.498,
       "tier": "C",
       "createdAt": "2026-11-02T08:25:14.036Z"
+    },
+    {
+      "id": "nba:401909915|prop|over|3.5|5279133|reb",
+      "gameId": "nba:401909915",
+      "start": "2026-11-03T01:00Z",
+      "match": "Timberwolves – Bucks",
+      "market": "prop",
+      "side": "over",
+      "line": 3.5,
+      "label": "Joan Beringer más de 3.5 rebotes",
+      "odd": 1.3,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.751,
+      "safety": 0.682,
+      "tier": "A",
+      "stat": "reb",
+      "playerId": "5279133",
+      "createdAt": "2026-11-02T08:45:39.274Z"
     }
   ],
   "record": [
