@@ -5473,7 +5473,7 @@
             "league": "nba",
             "label": "B. Podziemski +13.5 puntos",
             "list": "B. Podziemski +13.5 Pts",
-            "odd": 1.42,
+            "odd": 1.41,
             "start": "2026-11-02T01:30Z",
             "gameId": "nba:401909905",
             "market": "prop",
@@ -5483,7 +5483,7 @@
             "playerId": "4709138",
             "team": "GS",
             "match": "Warriors – Clippers",
-            "pFinal": 0.69
+            "pFinal": 0.694
           },
           {
             "id": "nba:401909906|prop|under|1.5|4278580|tpm",
@@ -5503,7 +5503,7 @@
             "pFinal": 0.653
           }
         ],
-        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n5.- K. Wagler +9.5 Pts @1.36\n6.- Gana Grizzlies @1.44\n7.- B. Podziemski +13.5 Pts @1.42\n8.- S. Mamukelashvili −1.5 T3 @1.49\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n5.- K. Wagler +9.5 Pts @1.36\n6.- Gana Grizzlies @1.44\n7.- B. Podziemski +13.5 Pts @1.41\n8.- S. Mamukelashvili −1.5 T3 @1.49\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-3": {
         "id": "nba-day-3",
@@ -5557,14 +5557,14 @@
             "side": "home",
             "line": null,
             "match": "Cavaliers – Thunder",
-            "pFinal": 0.643
+            "pFinal": 0.64
           },
           {
             "id": "nba:401909913|prop|over|9.5|5142620|pts",
             "league": "nba",
             "label": "D. Acuff Jr. +9.5 puntos",
             "list": "D. Acuff Jr. +9.5 Pts",
-            "odd": 1.55,
+            "odd": 1.54,
             "start": "2026-11-03T01:00Z",
             "gameId": "nba:401909913",
             "market": "prop",
@@ -5574,10 +5574,10 @@
             "playerId": "5142620",
             "team": "SAC",
             "match": "Mavericks – Kings",
-            "pFinal": 0.672
+            "pFinal": 0.675
           }
         ],
-        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n9.- Gana Rockets @1.56\n10.- A. Mitchell −1.5 T3 @1.48\n11.- Gana Cavaliers @1.58\n12.- D. Acuff Jr. +9.5 Pts @1.55\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 02/11 (sigue)\n\n9.- Gana Rockets @1.56\n10.- A. Mitchell −1.5 T3 @1.48\n11.- Gana Cavaliers @1.58\n12.- D. Acuff Jr. +9.5 Pts @1.54\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
