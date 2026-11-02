@@ -15074,6 +15074,103 @@
       "ev": -0.044,
       "start": "2026-11-02T02:00Z",
       "createdAt": "2026-11-02T00:52:34.276Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909921|prop|over|3.5|4278053|ast",
+          "gameId": "nba:401909921",
+          "start": "2026-11-03T03:00Z",
+          "match": "Lakers – Heat",
+          "market": "prop",
+          "side": "over",
+          "line": 3.5,
+          "stat": "ast",
+          "playerId": "4278053",
+          "player": "Davion Mitchell",
+          "team": "MIA",
+          "label": "Davion Mitchell más de 3.5 asistencias",
+          "odd": 1.32,
+          "pFinal": 0.749,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909916|ml|home|||",
+          "gameId": "nba:401909916",
+          "start": "2026-11-03T01:30Z",
+          "match": "Rockets – Celtics",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana Rockets",
+          "odd": 1.55,
+          "pFinal": 0.642,
+          "book": "unibet"
+        },
+        {
+          "id": "nba:401909907|ml|home|||",
+          "gameId": "nba:401909907",
+          "start": "2026-11-03T00:00Z",
+          "match": "Cavaliers – Thunder",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana Cavaliers",
+          "odd": 1.58,
+          "pFinal": 0.64,
+          "book": "unibet"
+        }
+      ],
+      "odd": 3.23,
+      "prob": 0.308,
+      "ev": -0.005,
+      "start": "2026-11-03T00:00Z",
+      "createdAt": "2026-11-02T01:53:49.106Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "nba:401909907|prop|over|4.5|4576087|ra",
+          "gameId": "nba:401909907",
+          "start": "2026-11-03T00:00Z",
+          "match": "Cavaliers – Thunder",
+          "market": "prop",
+          "side": "over",
+          "line": 4.5,
+          "stat": "ra",
+          "playerId": "4576087",
+          "player": "Peyton Watson",
+          "team": "CLE",
+          "label": "Peyton Watson más de 4.5 reb+ast",
+          "odd": 1.33,
+          "pFinal": 0.731,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909921|prop|over|3.5|4278053|ast",
+          "gameId": "nba:401909921",
+          "start": "2026-11-03T03:00Z",
+          "match": "Lakers – Heat",
+          "market": "prop",
+          "side": "over",
+          "line": 3.5,
+          "stat": "ast",
+          "playerId": "4278053",
+          "player": "Davion Mitchell",
+          "team": "MIA",
+          "label": "Davion Mitchell más de 3.5 asistencias",
+          "odd": 1.32,
+          "pFinal": 0.749,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 1.76,
+      "prob": 0.548,
+      "ev": -0.039,
+      "start": "2026-11-03T00:00Z",
+      "createdAt": "2026-11-02T01:53:49.106Z"
     }
   ],
   "comboRecord": [
