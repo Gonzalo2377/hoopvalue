@@ -1507,6 +1507,24 @@
       "stat": "pra",
       "playerId": "3064514",
       "createdAt": "2026-11-02T14:59:28.787Z"
+    },
+    {
+      "id": "nba:401909919|prop|under|6.5|4278402|ra",
+      "gameId": "nba:401909919",
+      "start": "2026-11-03T03:00Z",
+      "match": "Warriors – Suns",
+      "market": "prop",
+      "side": "under",
+      "line": 6.5,
+      "label": "Jordan Goodwin menos de 6.5 reb+ast",
+      "odd": 1.73,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.568,
+      "safety": 0.01,
+      "tier": "C",
+      "stat": "ra",
+      "playerId": "4278402",
+      "createdAt": "2026-11-02T15:20:11.866Z"
     }
   ],
   "record": [
@@ -17255,6 +17273,59 @@
       "ev": -0.036,
       "start": "2026-11-03T00:30Z",
       "createdAt": "2026-11-02T14:59:28.787Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909913|spread|home|-10.5||",
+          "gameId": "nba:401909913",
+          "start": "2026-11-03T01:00Z",
+          "match": "Mavericks – Kings",
+          "market": "spread",
+          "side": "home",
+          "line": -10.5,
+          "label": "Mavericks -10.5",
+          "odd": 2.02,
+          "pFinal": 0.5,
+          "book": "unibet"
+        },
+        {
+          "id": "nba:401909908|total|under|210.5||",
+          "gameId": "nba:401909908",
+          "start": "2026-11-03T00:30Z",
+          "match": "Hornets – Pistons",
+          "market": "total",
+          "side": "under",
+          "line": 210.5,
+          "label": "Menos de 210.5 puntos",
+          "odd": 1.95,
+          "pFinal": 0.517,
+          "book": "unibet"
+        },
+        {
+          "id": "nba:401909907|prop|under|5.5|4278073|ast",
+          "gameId": "nba:401909907",
+          "start": "2026-11-03T00:00Z",
+          "match": "Cavaliers – Thunder",
+          "market": "prop",
+          "side": "under",
+          "line": 5.5,
+          "stat": "ast",
+          "playerId": "4278073",
+          "player": "Shai Gilgeous-Alexander",
+          "team": "OKC",
+          "label": "Shai Gilgeous-Alexander menos de 5.5 asistencias",
+          "odd": 1.88,
+          "pFinal": 0.538,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 7.41,
+      "prob": 0.139,
+      "ev": 0.03,
+      "start": "2026-11-03T00:00Z",
+      "createdAt": "2026-11-02T15:20:11.866Z"
     }
   ],
   "comboRecord": [
