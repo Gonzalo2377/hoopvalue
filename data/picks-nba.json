@@ -17959,6 +17959,63 @@
       "ev": -0.033,
       "start": "2026-11-03T00:30Z",
       "createdAt": "2026-11-02T17:25:03.952Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909913|prop|over|13.5|3155942|reb",
+          "gameId": "nba:401909913",
+          "start": "2026-11-03T01:00Z",
+          "match": "Mavericks – Kings",
+          "market": "prop",
+          "side": "over",
+          "line": 13.5,
+          "stat": "reb",
+          "playerId": "3155942",
+          "player": "Domantas Sabonis",
+          "team": "SAC",
+          "label": "Domantas Sabonis más de 13.5 rebotes",
+          "odd": 1.97,
+          "pFinal": 0.511,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909914|spread|home|-5.5||",
+          "gameId": "nba:401909914",
+          "start": "2026-11-03T01:00Z",
+          "match": "Grizzlies – Pelicans",
+          "market": "spread",
+          "side": "home",
+          "line": -5.5,
+          "label": "Grizzlies -5.5",
+          "odd": 1.97,
+          "pFinal": 0.525,
+          "book": "unibet"
+        },
+        {
+          "id": "nba:401909915|prop|under|5.5|4433247|reb",
+          "gameId": "nba:401909915",
+          "start": "2026-11-03T01:00Z",
+          "match": "Timberwolves – Bucks",
+          "market": "prop",
+          "side": "under",
+          "line": 5.5,
+          "stat": "reb",
+          "playerId": "4433247",
+          "player": "Jonathan Kuminga",
+          "team": "MIN",
+          "label": "Jonathan Kuminga menos de 5.5 rebotes",
+          "odd": 2.02,
+          "pFinal": 0.506,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 7.84,
+      "prob": 0.136,
+      "ev": 0.064,
+      "start": "2026-11-03T01:00Z",
+      "createdAt": "2026-11-02T17:45:35.213Z"
     }
   ],
   "comboRecord": [
