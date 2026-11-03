@@ -51,6 +51,22 @@
       "stat": "pa",
       "playerId": "5041955",
       "createdAt": "2026-11-03T18:14:20.124Z"
+    },
+    {
+      "id": "nba:401909932|ml|away|||",
+      "gameId": "nba:401909932",
+      "start": "2026-11-05T02:00Z",
+      "match": "Suns – Trail Blazers",
+      "market": "ml",
+      "side": "away",
+      "line": null,
+      "label": "Gana Trail Blazers",
+      "odd": 1.68,
+      "book": "unibet",
+      "pFinal": 0.588,
+      "safety": 0.535,
+      "tier": "C",
+      "createdAt": "2026-11-03T20:59:18.328Z"
     }
   ],
   "record": [
@@ -15869,6 +15885,59 @@
       "ev": 0.003,
       "start": "2026-11-05T00:00Z",
       "createdAt": "2026-11-03T18:35:02.598Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909928|prop|over|14.5|5041955|pa",
+          "gameId": "nba:401909928",
+          "start": "2026-11-05T01:00Z",
+          "match": "Pelicans – Jazz",
+          "market": "prop",
+          "side": "over",
+          "line": 14.5,
+          "stat": "pa",
+          "playerId": "5041955",
+          "player": "Darryn Peterson",
+          "team": "UTAH",
+          "label": "Darryn Peterson más de 14.5 pts+ast",
+          "odd": 1.55,
+          "pFinal": 0.643,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909932|ml|away|||",
+          "gameId": "nba:401909932",
+          "start": "2026-11-05T02:00Z",
+          "match": "Suns – Trail Blazers",
+          "market": "ml",
+          "side": "away",
+          "line": null,
+          "label": "Gana Trail Blazers",
+          "odd": 1.68,
+          "pFinal": 0.588,
+          "book": "unibet"
+        },
+        {
+          "id": "nba:401909922|ml|home|||",
+          "gameId": "nba:401909922",
+          "start": "2026-11-05T00:00Z",
+          "match": "Pistons – 76ers",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana Pistons",
+          "odd": 1.84,
+          "pFinal": 0.566,
+          "book": "draftkings"
+        }
+      ],
+      "odd": 4.79,
+      "prob": 0.214,
+      "ev": 0.025,
+      "start": "2026-11-05T00:00Z",
+      "createdAt": "2026-11-03T20:59:18.328Z"
     }
   ],
   "comboRecord": [
