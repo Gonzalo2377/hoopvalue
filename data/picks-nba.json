@@ -1,5 +1,6 @@
 {
-  "pending": [
+  "pending": [],
+  "record": [
     {
       "id": "nba:401909920|prop|under|5.5|5075626|reb",
       "gameId": "nba:401909920",
@@ -16,7 +17,10 @@
       "tier": "C",
       "stat": "reb",
       "playerId": "5075626",
-      "createdAt": "2026-11-02T03:15:32.559Z"
+      "createdAt": "2026-11-02T03:15:32.559Z",
+      "result": "W",
+      "score": "118-125",
+      "settledAt": "2026-11-03T06:02:44.386Z"
     },
     {
       "id": "nba:401909920|prop|under|4.5|2993874|reb",
@@ -34,7 +38,10 @@
       "tier": "C",
       "stat": "reb",
       "playerId": "2993874",
-      "createdAt": "2026-11-02T04:57:35.862Z"
+      "createdAt": "2026-11-02T04:57:35.862Z",
+      "result": "W",
+      "score": "118-125",
+      "settledAt": "2026-11-03T06:02:44.386Z"
     },
     {
       "id": "nba:401909920|prop|over|3.5|3936099|reb",
@@ -52,7 +59,10 @@
       "tier": "C",
       "stat": "reb",
       "playerId": "3936099",
-      "createdAt": "2026-11-02T13:17:02.735Z"
+      "createdAt": "2026-11-02T13:17:02.735Z",
+      "result": "V",
+      "score": "118-125",
+      "settledAt": "2026-11-03T06:02:44.386Z"
     },
     {
       "id": "nba:401909919|ml|away|||",
@@ -68,7 +78,13 @@
       "pFinal": 0.431,
       "safety": 0.016,
       "tier": "C",
-      "createdAt": "2026-11-02T13:37:32.028Z"
+      "createdAt": "2026-11-02T13:37:32.028Z",
+      "result": "L",
+      "score": "116-113",
+      "settledAt": "2026-11-03T06:02:44.386Z",
+      "closeOdd": 2.3,
+      "pClose": 0.4314,
+      "clv": -0.0078
     },
     {
       "id": "nba:401909920|prop|under|7.5|4432170|reb",
@@ -86,7 +102,10 @@
       "tier": "C",
       "stat": "reb",
       "playerId": "4432170",
-      "createdAt": "2026-11-02T13:58:02.242Z"
+      "createdAt": "2026-11-02T13:58:02.242Z",
+      "result": "L",
+      "score": "118-125",
+      "settledAt": "2026-11-03T06:02:44.386Z"
     },
     {
       "id": "nba:401909919|prop|over|3.5|5175737|ast",
@@ -104,7 +123,10 @@
       "tier": "C",
       "stat": "ast",
       "playerId": "5175737",
-      "createdAt": "2026-11-02T13:58:02.242Z"
+      "createdAt": "2026-11-02T13:58:02.242Z",
+      "result": "W",
+      "score": "116-113",
+      "settledAt": "2026-11-03T06:02:44.386Z"
     },
     {
       "id": "nba:401909919|prop|under|6.5|4278402|ra",
@@ -122,7 +144,10 @@
       "tier": "C",
       "stat": "ra",
       "playerId": "4278402",
-      "createdAt": "2026-11-02T15:20:11.866Z"
+      "createdAt": "2026-11-02T15:20:11.866Z",
+      "result": "W",
+      "score": "116-113",
+      "settledAt": "2026-11-03T06:02:44.386Z"
     },
     {
       "id": "nba:401909920|spread|away|-4.5||",
@@ -138,7 +163,10 @@
       "pFinal": 0.516,
       "safety": 0.026,
       "tier": "C",
-      "createdAt": "2026-11-02T21:34:35.082Z"
+      "createdAt": "2026-11-02T21:34:35.082Z",
+      "result": "W",
+      "score": "118-125",
+      "settledAt": "2026-11-03T06:02:44.386Z"
     },
     {
       "id": "nba:401909920|ml|away|||",
@@ -154,7 +182,13 @@
       "pFinal": 0.626,
       "safety": 0.025,
       "tier": "C",
-      "createdAt": "2026-11-02T22:36:05.271Z"
+      "createdAt": "2026-11-02T22:36:05.271Z",
+      "result": "W",
+      "score": "118-125",
+      "settledAt": "2026-11-03T06:02:44.386Z",
+      "closeOdd": 1.5,
+      "pClose": 0.6406,
+      "clv": 0.025
     },
     {
       "id": "nba:401909919|prop|under|5.5|4709138|reb",
@@ -172,7 +206,10 @@
       "tier": "C",
       "stat": "reb",
       "playerId": "4709138",
-      "createdAt": "2026-11-02T22:56:30.010Z"
+      "createdAt": "2026-11-02T22:56:30.010Z",
+      "result": "W",
+      "score": "116-113",
+      "settledAt": "2026-11-03T06:02:44.386Z"
     },
     {
       "id": "nba:401909920|prop|under|10.5|5093267|pts",
@@ -190,7 +227,10 @@
       "tier": "C",
       "stat": "pts",
       "playerId": "5093267",
-      "createdAt": "2026-11-03T01:38:47.829Z"
+      "createdAt": "2026-11-03T01:38:47.829Z",
+      "result": "L",
+      "score": "118-125",
+      "settledAt": "2026-11-03T06:02:44.386Z"
     },
     {
       "id": "nba:401909920|prop|under|4.5|2991139|reb",
@@ -208,10 +248,11 @@
       "tier": "C",
       "stat": "reb",
       "playerId": "2991139",
-      "createdAt": "2026-11-03T02:19:25.944Z"
-    }
-  ],
-  "record": [
+      "createdAt": "2026-11-03T02:19:25.944Z",
+      "result": "W",
+      "score": "118-125",
+      "settledAt": "2026-11-03T06:02:44.386Z"
+    },
     {
       "id": "nba:401909921|prop|over|3.5|4278053|ast",
       "gameId": "nba:401909921",
@@ -15735,7 +15776,8 @@
       "settledAt": "2026-10-23T12:34:36.074Z"
     }
   ],
-  "comboPending": [
+  "comboPending": [],
+  "comboRecord": [
     {
       "type": "segura",
       "legs": [
@@ -15778,7 +15820,13 @@
       "prob": 0.319,
       "ev": -0.029,
       "start": "2026-11-03T00:30Z",
-      "createdAt": "2026-11-02T14:18:31.174Z"
+      "createdAt": "2026-11-02T14:18:31.174Z",
+      "result": "L",
+      "legStates": [
+        "W",
+        "L"
+      ],
+      "settledAt": "2026-11-03T06:02:44.386Z"
     },
     {
       "type": "jugadores",
@@ -15822,7 +15870,13 @@
       "prob": 0.336,
       "ev": -0.03,
       "start": "2026-11-03T03:00Z",
-      "createdAt": "2026-11-02T22:56:30.010Z"
+      "createdAt": "2026-11-02T22:56:30.010Z",
+      "result": "L",
+      "legStates": [
+        "W",
+        "L"
+      ],
+      "settledAt": "2026-11-03T06:02:44.386Z"
     },
     {
       "type": "segura",
@@ -15866,7 +15920,14 @@
       "prob": 0.32,
       "ev": -0.03,
       "start": "2026-11-03T03:00Z",
-      "createdAt": "2026-11-03T01:38:47.829Z"
+      "createdAt": "2026-11-03T01:38:47.829Z",
+      "result": "W",
+      "oddFinal": 3.03,
+      "legStates": [
+        "W",
+        "W"
+      ],
+      "settledAt": "2026-11-03T06:02:44.386Z"
     },
     {
       "type": "segura",
@@ -15910,7 +15971,14 @@
       "prob": 0.319,
       "ev": -0.03,
       "start": "2026-11-03T03:00Z",
-      "createdAt": "2026-11-03T01:59:08.219Z"
+      "createdAt": "2026-11-03T01:59:08.219Z",
+      "result": "W",
+      "oddFinal": 3.05,
+      "legStates": [
+        "W",
+        "W"
+      ],
+      "settledAt": "2026-11-03T06:02:44.386Z"
     },
     {
       "type": "valor",
@@ -15967,7 +16035,14 @@
       "prob": 0.128,
       "ev": -0.003,
       "start": "2026-11-03T03:00Z",
-      "createdAt": "2026-11-03T01:59:08.219Z"
+      "createdAt": "2026-11-03T01:59:08.219Z",
+      "result": "L",
+      "legStates": [
+        "L",
+        "L",
+        "W"
+      ],
+      "settledAt": "2026-11-03T06:02:44.386Z"
     },
     {
       "type": "jugadores",
@@ -16011,7 +16086,13 @@
       "prob": 0.294,
       "ev": -0.003,
       "start": "2026-11-03T03:00Z",
-      "createdAt": "2026-11-03T01:59:08.219Z"
+      "createdAt": "2026-11-03T01:59:08.219Z",
+      "result": "L",
+      "legStates": [
+        "L",
+        "W"
+      ],
+      "settledAt": "2026-11-03T06:02:44.386Z"
     },
     {
       "type": "segura",
@@ -16055,7 +16136,14 @@
       "prob": 0.341,
       "ev": -0.01,
       "start": "2026-11-03T03:00Z",
-      "createdAt": "2026-11-03T02:19:25.944Z"
+      "createdAt": "2026-11-03T02:19:25.944Z",
+      "result": "W",
+      "oddFinal": 2.91,
+      "legStates": [
+        "W",
+        "W"
+      ],
+      "settledAt": "2026-11-03T06:02:44.386Z"
     },
     {
       "type": "valor",
@@ -16112,7 +16200,14 @@
       "prob": 0.147,
       "ev": -0.021,
       "start": "2026-11-03T03:00Z",
-      "createdAt": "2026-11-03T02:19:25.944Z"
+      "createdAt": "2026-11-03T02:19:25.944Z",
+      "result": "L",
+      "legStates": [
+        "W",
+        "L",
+        "W"
+      ],
+      "settledAt": "2026-11-03T06:02:44.386Z"
     },
     {
       "type": "jugadores",
@@ -16156,7 +16251,14 @@
       "prob": 0.34,
       "ev": -0.006,
       "start": "2026-11-03T03:00Z",
-      "createdAt": "2026-11-03T02:19:25.944Z"
+      "createdAt": "2026-11-03T02:19:25.944Z",
+      "result": "W",
+      "oddFinal": 2.92,
+      "legStates": [
+        "W",
+        "W"
+      ],
+      "settledAt": "2026-11-03T06:02:44.386Z"
     },
     {
       "type": "segura",
@@ -16200,7 +16302,14 @@
       "prob": 0.337,
       "ev": -0.008,
       "start": "2026-11-03T03:00Z",
-      "createdAt": "2026-11-03T02:39:43.422Z"
+      "createdAt": "2026-11-03T02:39:43.422Z",
+      "result": "W",
+      "oddFinal": 2.94,
+      "legStates": [
+        "W",
+        "W"
+      ],
+      "settledAt": "2026-11-03T06:02:44.386Z"
     },
     {
       "type": "jugadores",
@@ -16244,10 +16353,15 @@
       "prob": 0.335,
       "ev": -0.014,
       "start": "2026-11-03T03:00Z",
-      "createdAt": "2026-11-03T02:39:43.422Z"
-    }
-  ],
-  "comboRecord": [
+      "createdAt": "2026-11-03T02:39:43.422Z",
+      "result": "W",
+      "oddFinal": 2.94,
+      "legStates": [
+        "W",
+        "W"
+      ],
+      "settledAt": "2026-11-03T06:02:44.386Z"
+    },
     {
       "type": "segura",
       "legs": [

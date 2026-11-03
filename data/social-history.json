@@ -5662,9 +5662,9 @@
         "league": "nba",
         "title": "NBA · resultados de ayer (02/11)",
         "postAt": "2026-11-03T08:40:00.000Z",
-        "text": "📋 NBA · resultados de ayer (02/11)\n\n❌❌❌❌❌❌⏳❌❌❌✅❌❌\n👇 Cada pick en la imagen\n\nAyer: 1-11 (-10.13 u) · Total NBA: 63-38 (-11.40 u)\n#NBA · +18 · Juega con responsabilidad",
+        "text": "📋 NBA · resultados de ayer (02/11)\n\n❌❌❌❌❌❌❌❌❌❌✅❌❌\n👇 Cada pick en la imagen\n\nAyer: 1-12 (-11.13 u) · Total NBA: 63-39 (-12.40 u)\n#NBA · +18 · Juega con responsabilidad",
         "image": true,
-        "pending": true,
+        "pending": false,
         "rows": [
           {
             "league": "nba",
@@ -5706,7 +5706,7 @@
             "league": "nba",
             "label": "I. Jackson −7.5 rebotes",
             "odd": 1.68,
-            "result": null
+            "result": "L"
           },
           {
             "league": "nba",
@@ -5740,7 +5740,7 @@
           },
           {
             "league": "nba",
-            "label": "Combinada: I. Jackson −7.5 Reb + G. Allen +2.5 Reb ✗",
+            "label": "Combinada: I. Jackson −7.5 Reb ✗ + G. Allen +2.5 Reb ✗",
             "odd": 2.97,
             "result": "L"
           }
@@ -5748,16 +5748,50 @@
         "balance": {
           "day": [
             1,
-            11
+            12
           ],
           "total": [
             63,
-            38
+            39
           ],
           "units": {
-            "day": -10.13,
-            "total": -11.4
+            "day": -11.13,
+            "total": -12.4
           }
+        }
+      },
+      "pred-nba": {
+        "id": "pred-nba",
+        "kind": "pred",
+        "league": "nba",
+        "title": "Predicción casi clavada · NBA (1)",
+        "postAt": "2026-11-03T09:10:00.000Z",
+        "image": true,
+        "games": [
+          {
+            "id": "nba:401909919",
+            "start": "2026-11-03T03:00Z",
+            "home": "Warriors",
+            "away": "Suns",
+            "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
+            "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
+            "pred": [
+              119,
+              113
+            ],
+            "real": [
+              116,
+              113
+            ],
+            "how": "team",
+            "team": "Suns",
+            "off": 3
+          }
+        ],
+        "text": "🔮 EuroPicks Prediction · NBA (02/11)\n\n🎯 Warriors 116-113 Suns (we said 119-113, Suns exact)\n\nCalled it before tip-off 👇\n#NBA · +18",
+        "quote": {
+          "date": "2026-11-02",
+          "id": "preds-nba"
         }
       }
     }
