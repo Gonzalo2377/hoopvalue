@@ -5662,7 +5662,7 @@
         "league": "nba",
         "title": "NBA · resultados de ayer (02/11)",
         "postAt": "2026-11-03T08:40:00.000Z",
-        "text": "📋 NBA · resultados de ayer (02/11)\n\n❌❌⏳⏳❌❌⏳⏳⏳❌⏳❌❌\n👇 Cada pick en la imagen\n\nAyer: 0-7 (-7.00 u) · Total NBA: 62-34 (-8.27 u)\n#NBA · +18 · Juega con responsabilidad",
+        "text": "📋 NBA · resultados de ayer (02/11)\n\n❌❌❌⏳❌❌⏳❌❌❌⏳❌❌\n👇 Cada pick en la imagen\n\nAyer: 0-10 (-10.00 u) · Total NBA: 62-37 (-11.27 u)\n#NBA · +18 · Juega con responsabilidad",
         "image": true,
         "pending": true,
         "rows": [
@@ -5682,7 +5682,7 @@
             "league": "nba",
             "label": "D. Sabonis +13.5 rebotes",
             "odd": 1.97,
-            "result": null
+            "result": "L"
           },
           {
             "league": "nba",
@@ -5712,13 +5712,13 @@
             "league": "nba",
             "label": "Grizzlies -5.5",
             "odd": 1.98,
-            "result": null
+            "result": "L"
           },
           {
             "league": "nba",
             "label": "J. Kuminga −5.5 rebotes",
             "odd": 2.04,
-            "result": null
+            "result": "L"
           },
           {
             "league": "nba",
@@ -5748,15 +5748,15 @@
         "balance": {
           "day": [
             0,
-            7
+            10
           ],
           "total": [
             62,
-            34
+            37
           ],
           "units": {
-            "day": -7,
-            "total": -8.27
+            "day": -10,
+            "total": -11.27
           }
         }
       }
