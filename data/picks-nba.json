@@ -103,6 +103,58 @@
       "stat": "ast",
       "playerId": "4432848",
       "createdAt": "2026-11-03T21:40:23.893Z"
+    },
+    {
+      "id": "nba:401909929|prop|under|3.5|4222252|ast",
+      "gameId": "nba:401909929",
+      "start": "2026-11-05T01:00Z",
+      "match": "Thunder – Cavaliers",
+      "market": "prop",
+      "side": "under",
+      "line": 3.5,
+      "label": "Isaiah Hartenstein menos de 3.5 asistencias",
+      "odd": 1.61,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.611,
+      "safety": 0.568,
+      "tier": "C",
+      "stat": "ast",
+      "playerId": "4222252",
+      "createdAt": "2026-11-03T22:01:01.123Z"
+    },
+    {
+      "id": "nba:401909935|prop|under|27.5|4278053|pa",
+      "gameId": "nba:401909935",
+      "start": "2026-11-05T03:30Z",
+      "match": "Clippers – Heat",
+      "market": "prop",
+      "side": "under",
+      "line": 27.5,
+      "label": "Davion Mitchell menos de 27.5 pts+ast",
+      "odd": 1.84,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.569,
+      "safety": 0.443,
+      "tier": "C",
+      "stat": "pa",
+      "playerId": "4278053",
+      "createdAt": "2026-11-03T22:01:01.123Z"
+    },
+    {
+      "id": "nba:401909923|total|under|234.5||",
+      "gameId": "nba:401909923",
+      "start": "2026-11-05T00:00Z",
+      "match": "Wizards – Hawks",
+      "market": "total",
+      "side": "under",
+      "line": 234.5,
+      "label": "Menos de 234.5 puntos",
+      "odd": 1.91,
+      "book": "draftkings",
+      "pFinal": 0.551,
+      "safety": 0.426,
+      "tier": "C",
+      "createdAt": "2026-11-03T22:01:01.123Z"
     }
   ],
   "record": [
@@ -15974,6 +16026,50 @@
       "ev": 0.025,
       "start": "2026-11-05T00:00Z",
       "createdAt": "2026-11-03T20:59:18.328Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "nba:401909929|prop|under|3.5|4222252|ast",
+          "gameId": "nba:401909929",
+          "start": "2026-11-05T01:00Z",
+          "match": "Thunder – Cavaliers",
+          "market": "prop",
+          "side": "under",
+          "line": 3.5,
+          "stat": "ast",
+          "playerId": "4222252",
+          "player": "Isaiah Hartenstein",
+          "team": "OKC",
+          "label": "Isaiah Hartenstein menos de 3.5 asistencias",
+          "odd": 1.61,
+          "pFinal": 0.611,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909935|prop|under|27.5|4278053|pa",
+          "gameId": "nba:401909935",
+          "start": "2026-11-05T03:30Z",
+          "match": "Clippers – Heat",
+          "market": "prop",
+          "side": "under",
+          "line": 27.5,
+          "stat": "pa",
+          "playerId": "4278053",
+          "player": "Davion Mitchell",
+          "team": "MIA",
+          "label": "Davion Mitchell menos de 27.5 pts+ast",
+          "odd": 1.84,
+          "pFinal": 0.569,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.96,
+      "prob": 0.348,
+      "ev": 0.03,
+      "start": "2026-11-05T01:00Z",
+      "createdAt": "2026-11-03T22:01:01.123Z"
     }
   ],
   "comboRecord": [
