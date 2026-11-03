@@ -705,5 +705,12 @@
     "away": "Cavaliers",
     "ptsH": 106,
     "ptsA": 116
+  },
+  "nba:401909930": {
+    "start": "2026-11-05T01:30Z",
+    "home": "Rockets",
+    "away": "Timberwolves",
+    "ptsH": 115,
+    "ptsA": 105
   }
 }
