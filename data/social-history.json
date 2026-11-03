@@ -5624,30 +5624,13 @@
         "id": "combo-nba",
         "kind": "combo",
         "league": "nba",
-        "title": "Safe Parlay · NBA @3.03",
+        "title": "Safe Parlay · NBA @3.05",
         "postAt": "2026-11-03T18:00:00.000Z",
         "image": true,
-        "text": "🎯 Safe Parlay · NBA\n\n1.- B. Podziemski −5.5 Reb @1.73\n2.- M. Thybulle −2.5 Reb @1.75\n\n💰 Total odds 3.03\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
+        "text": "🎯 Safe Parlay · NBA\n\n1.- M. Thybulle −2.5 Reb @1.75\n2.- J. Goodwin −6.5 R+A @1.74\n\n💰 Total odds 3.05\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
         "picks": [],
         "combo": {
           "legs": [
-            {
-              "id": "nba:401909919|prop|under|5.5|4709138|reb",
-              "league": "nba",
-              "label": "B. Podziemski −5.5 rebotes",
-              "list": "B. Podziemski −5.5 Reb",
-              "odd": 1.73,
-              "start": "2026-11-03T03:00Z",
-              "gameId": "nba:401909919",
-              "market": "prop",
-              "side": "under",
-              "line": 5.5,
-              "stat": "reb",
-              "playerId": "4709138",
-              "team": "GS",
-              "match": "Warriors – Suns",
-              "pFinal": 0.568
-            },
             {
               "id": "nba:401909921|prop|under|2.5|3907498|reb",
               "league": "nba",
@@ -5664,10 +5647,27 @@
               "team": "LAL",
               "match": "Lakers – Heat",
               "pFinal": 0.564
+            },
+            {
+              "id": "nba:401909919|prop|under|6.5|4278402|ra",
+              "league": "nba",
+              "label": "J. Goodwin −6.5 reb+ast",
+              "list": "J. Goodwin −6.5 R+A",
+              "odd": 1.74,
+              "start": "2026-11-03T03:00Z",
+              "gameId": "nba:401909919",
+              "market": "prop",
+              "side": "under",
+              "line": 6.5,
+              "stat": "ra",
+              "playerId": "4278402",
+              "team": "PHX",
+              "match": "Warriors – Suns",
+              "pFinal": 0.565
             }
           ],
-          "odd": 3.03,
-          "prob": 0.32
+          "odd": 3.05,
+          "prob": 0.319
         }
       },
       "summary-nba": {
@@ -5784,35 +5784,35 @@
         "image": true,
         "picks": [
           {
-            "id": "nba:401909919|prop|under|5.5|4709138|reb",
+            "id": "nba:401909920|prop|under|10.5|5093267|pts",
             "league": "nba",
-            "label": "B. Podziemski −5.5 rebotes",
-            "list": "B. Podziemski −5.5 Reb",
-            "odd": 1.73,
-            "start": "2026-11-03T03:00Z",
-            "gameId": "nba:401909919",
-            "market": "prop",
-            "side": "under",
-            "line": 5.5,
-            "stat": "reb",
-            "playerId": "4709138",
-            "team": "GS",
-            "match": "Warriors – Suns",
-            "pFinal": 0.568
-          },
-          {
-            "id": "nba:401909920|spread|away|-4.5||",
-            "league": "nba",
-            "label": "Raptors -4.5",
-            "list": "Raptors -4.5",
-            "odd": 1.93,
+            "label": "C. Murray-Boyles −10.5 puntos",
+            "list": "C. Murray-Boyles −10.5 Pts",
+            "odd": 1.95,
             "start": "2026-11-03T03:00Z",
             "gameId": "nba:401909920",
-            "market": "spread",
-            "side": "away",
-            "line": -4.5,
+            "market": "prop",
+            "side": "under",
+            "line": 10.5,
+            "stat": "pts",
+            "playerId": "5093267",
+            "team": "TOR",
             "match": "Clippers – Raptors",
-            "pFinal": 0.516
+            "pFinal": 0.52
+          },
+          {
+            "id": "nba:401909919|ml|away|||",
+            "league": "nba",
+            "label": "Gana Suns",
+            "list": "Gana Suns",
+            "odd": 2.28,
+            "start": "2026-11-03T03:00Z",
+            "gameId": "nba:401909919",
+            "market": "ml",
+            "side": "away",
+            "line": null,
+            "match": "Warriors – Suns",
+            "pFinal": 0.437
           },
           {
             "id": "nba:401909918|prop|under|3.5|4431736|reb",
@@ -5832,7 +5832,7 @@
             "pFinal": 0.454
           }
         ],
-        "text": "🏀 NBA Picks Day · 03/11\n\n1.- B. Podziemski −5.5 Reb @1.73\n2.- Raptors -4.5 @1.93\n3.- T. Camara −3.5 Reb @2.17\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 03/11\n\n1.- C. Murray-Boyles −10.5 Pts @1.95\n2.- Gana Suns @2.28\n3.- T. Camara −3.5 Reb @2.17\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-2": {
         "id": "nba-day-2",
@@ -5844,19 +5844,16 @@
         "image": true,
         "picks": [
           {
-            "id": "nba:401909920|prop|under|10.5|5093267|pts",
+            "id": "nba:401909920|spread|away|-4.5||",
             "league": "nba",
-            "label": "C. Murray-Boyles −10.5 puntos",
-            "list": "C. Murray-Boyles −10.5 Pts",
-            "odd": 1.94,
+            "label": "Raptors -4.5",
+            "list": "Raptors -4.5",
+            "odd": 1.9,
             "start": "2026-11-03T03:00Z",
             "gameId": "nba:401909920",
-            "market": "prop",
-            "side": "under",
-            "line": 10.5,
-            "stat": "pts",
-            "playerId": "5093267",
-            "team": "TOR",
+            "market": "spread",
+            "side": "away",
+            "line": -4.5,
             "match": "Clippers – Raptors",
             "pFinal": 0.521
           },
@@ -5878,21 +5875,24 @@
             "pFinal": 0.564
           },
           {
-            "id": "nba:401909919|ml|away|||",
+            "id": "nba:401909919|prop|under|6.5|4278402|ra",
             "league": "nba",
-            "label": "Gana Suns",
-            "list": "Gana Suns",
-            "odd": 2.28,
+            "label": "J. Goodwin −6.5 reb+ast",
+            "list": "J. Goodwin −6.5 R+A",
+            "odd": 1.74,
             "start": "2026-11-03T03:00Z",
             "gameId": "nba:401909919",
-            "market": "ml",
-            "side": "away",
-            "line": null,
+            "market": "prop",
+            "side": "under",
+            "line": 6.5,
+            "stat": "ra",
+            "playerId": "4278402",
+            "team": "PHX",
             "match": "Warriors – Suns",
-            "pFinal": 0.432
+            "pFinal": 0.565
           }
         ],
-        "text": "🧵 NBA Picks Day · 03/11 (sigue)\n\n4.- C. Murray-Boyles −10.5 Pts @1.94\n5.- M. Thybulle −2.5 Reb @1.75\n6.- Gana Suns @2.28\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 03/11 (sigue)\n\n4.- Raptors -4.5 @1.90\n5.- M. Thybulle −2.5 Reb @1.75\n6.- J. Goodwin −6.5 R+A @1.74\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }

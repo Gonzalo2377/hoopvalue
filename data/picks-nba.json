@@ -19456,6 +19456,151 @@
       "ev": -0.03,
       "start": "2026-11-03T03:00Z",
       "createdAt": "2026-11-03T01:38:47.829Z"
+    },
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "nba:401909921|prop|under|2.5|3907498|reb",
+          "gameId": "nba:401909921",
+          "start": "2026-11-03T03:00Z",
+          "match": "Lakers – Heat",
+          "market": "prop",
+          "side": "under",
+          "line": 2.5,
+          "stat": "reb",
+          "playerId": "3907498",
+          "player": "Matisse Thybulle",
+          "team": "LAL",
+          "label": "Matisse Thybulle menos de 2.5 rebotes",
+          "odd": 1.75,
+          "pFinal": 0.564,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909919|prop|under|6.5|4278402|ra",
+          "gameId": "nba:401909919",
+          "start": "2026-11-03T03:00Z",
+          "match": "Warriors – Suns",
+          "market": "prop",
+          "side": "under",
+          "line": 6.5,
+          "stat": "ra",
+          "playerId": "4278402",
+          "player": "Jordan Goodwin",
+          "team": "PHX",
+          "label": "Jordan Goodwin menos de 6.5 reb+ast",
+          "odd": 1.74,
+          "pFinal": 0.565,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 3.05,
+      "prob": 0.319,
+      "ev": -0.03,
+      "start": "2026-11-03T03:00Z",
+      "createdAt": "2026-11-03T01:59:08.219Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909920|prop|under|10.5|5093267|pts",
+          "gameId": "nba:401909920",
+          "start": "2026-11-03T03:00Z",
+          "match": "Clippers – Raptors",
+          "market": "prop",
+          "side": "under",
+          "line": 10.5,
+          "stat": "pts",
+          "playerId": "5093267",
+          "player": "Collin Murray-Boyles",
+          "team": "TOR",
+          "label": "Collin Murray-Boyles menos de 10.5 puntos",
+          "odd": 1.95,
+          "pFinal": 0.52,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909919|ml|away|||",
+          "gameId": "nba:401909919",
+          "start": "2026-11-03T03:00Z",
+          "match": "Warriors – Suns",
+          "market": "ml",
+          "side": "away",
+          "line": null,
+          "label": "Gana Suns",
+          "odd": 2.28,
+          "pFinal": 0.437,
+          "book": "unibet"
+        },
+        {
+          "id": "nba:401909921|prop|under|2.5|3907498|reb",
+          "gameId": "nba:401909921",
+          "start": "2026-11-03T03:00Z",
+          "match": "Lakers – Heat",
+          "market": "prop",
+          "side": "under",
+          "line": 2.5,
+          "stat": "reb",
+          "playerId": "3907498",
+          "player": "Matisse Thybulle",
+          "team": "LAL",
+          "label": "Matisse Thybulle menos de 2.5 rebotes",
+          "odd": 1.75,
+          "pFinal": 0.564,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 7.78,
+      "prob": 0.128,
+      "ev": -0.003,
+      "start": "2026-11-03T03:00Z",
+      "createdAt": "2026-11-03T01:59:08.219Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "nba:401909920|prop|under|10.5|5093267|pts",
+          "gameId": "nba:401909920",
+          "start": "2026-11-03T03:00Z",
+          "match": "Clippers – Raptors",
+          "market": "prop",
+          "side": "under",
+          "line": 10.5,
+          "stat": "pts",
+          "playerId": "5093267",
+          "player": "Collin Murray-Boyles",
+          "team": "TOR",
+          "label": "Collin Murray-Boyles menos de 10.5 puntos",
+          "odd": 1.95,
+          "pFinal": 0.52,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909919|prop|under|6.5|4278402|ra",
+          "gameId": "nba:401909919",
+          "start": "2026-11-03T03:00Z",
+          "match": "Warriors – Suns",
+          "market": "prop",
+          "side": "under",
+          "line": 6.5,
+          "stat": "ra",
+          "playerId": "4278402",
+          "player": "Jordan Goodwin",
+          "team": "PHX",
+          "label": "Jordan Goodwin menos de 6.5 reb+ast",
+          "odd": 1.74,
+          "pFinal": 0.565,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 3.39,
+      "prob": 0.294,
+      "ev": -0.003,
+      "start": "2026-11-03T03:00Z",
+      "createdAt": "2026-11-03T01:59:08.219Z"
     }
   ],
   "comboRecord": [
