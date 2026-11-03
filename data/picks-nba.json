@@ -15829,7 +15829,48 @@
       "settledAt": "2026-10-23T12:34:36.074Z"
     }
   ],
-  "comboPending": [],
+  "comboPending": [
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "nba:401909928|prop|over|14.5|5041955|pa",
+          "gameId": "nba:401909928",
+          "start": "2026-11-05T01:00Z",
+          "match": "Pelicans – Jazz",
+          "market": "prop",
+          "side": "over",
+          "line": 14.5,
+          "stat": "pa",
+          "playerId": "5041955",
+          "player": "Darryn Peterson",
+          "team": "UTAH",
+          "label": "Darryn Peterson más de 14.5 pts+ast",
+          "odd": 1.57,
+          "pFinal": 0.637,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909922|ml|home|||",
+          "gameId": "nba:401909922",
+          "start": "2026-11-05T00:00Z",
+          "match": "Pistons – 76ers",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana Pistons",
+          "odd": 1.82,
+          "pFinal": 0.551,
+          "book": "unibet"
+        }
+      ],
+      "odd": 2.86,
+      "prob": 0.351,
+      "ev": 0.003,
+      "start": "2026-11-05T00:00Z",
+      "createdAt": "2026-11-03T18:35:02.598Z"
+    }
+  ],
   "comboRecord": [
     {
       "type": "segura",
