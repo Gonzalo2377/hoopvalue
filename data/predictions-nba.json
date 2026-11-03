@@ -649,5 +649,19 @@
     "away": "Heat",
     "ptsH": 122,
     "ptsA": 118
+  },
+  "nba:401909922": {
+    "start": "2026-11-05T00:00Z",
+    "home": "Pistons",
+    "away": "76ers",
+    "ptsH": 111,
+    "ptsA": 104
+  },
+  "nba:401909923": {
+    "start": "2026-11-05T00:00Z",
+    "home": "Wizards",
+    "away": "Hawks",
+    "ptsH": 108,
+    "ptsA": 112
   }
 }

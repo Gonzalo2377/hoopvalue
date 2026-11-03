@@ -1,5 +1,22 @@
 {
-  "pending": [],
+  "pending": [
+    {
+      "id": "nba:401909922|spread|home|-1.5||",
+      "gameId": "nba:401909922",
+      "start": "2026-11-05T00:00Z",
+      "match": "Pistons – 76ers",
+      "market": "spread",
+      "side": "home",
+      "line": -1.5,
+      "label": "Pistons -1.5",
+      "odd": 1.87,
+      "book": "draftkings",
+      "pFinal": 0.53,
+      "safety": 0.015,
+      "tier": "C",
+      "createdAt": "2026-11-03T12:02:25.463Z"
+    }
+  ],
   "record": [
     {
       "id": "nba:401909920|prop|under|5.5|5075626|reb",
