@@ -5662,7 +5662,7 @@
         "league": "nba",
         "title": "NBA · resultados de ayer (02/11)",
         "postAt": "2026-11-03T08:40:00.000Z",
-        "text": "📋 NBA · resultados de ayer (02/11)\n\n❌❌❌⏳❌❌⏳❌❌❌✅❌❌\n👇 Cada pick en la imagen\n\nAyer: 1-10 (-9.13 u) · Total NBA: 63-37 (-10.40 u)\n#NBA · +18 · Juega con responsabilidad",
+        "text": "📋 NBA · resultados de ayer (02/11)\n\n❌❌❌❌❌❌⏳❌❌❌✅❌❌\n👇 Cada pick en la imagen\n\nAyer: 1-11 (-10.13 u) · Total NBA: 63-38 (-11.40 u)\n#NBA · +18 · Juega con responsabilidad",
         "image": true,
         "pending": true,
         "rows": [
@@ -5688,7 +5688,7 @@
             "league": "nba",
             "label": "K. George +21.5 puntos",
             "odd": 1.94,
-            "result": null
+            "result": "L"
           },
           {
             "league": "nba",
@@ -5748,15 +5748,15 @@
         "balance": {
           "day": [
             1,
-            10
+            11
           ],
           "total": [
             63,
-            37
+            38
           ],
           "units": {
-            "day": -9.13,
-            "total": -10.4
+            "day": -10.13,
+            "total": -11.4
           }
         }
       }
