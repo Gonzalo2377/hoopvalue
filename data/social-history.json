@@ -5896,7 +5896,7 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mem.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
             "pred": [
-              122,
+              121,
               105
             ]
           },
@@ -6013,7 +6013,7 @@
             ]
           }
         ],
-        "text": "🔮 EuroPicks Score Predictions · NBA · 04/11\n\nDET 111-104 PHI\nWSH 108-110 ATL\nBOS 120-109 MIL\nBKN 108-104 CHA\nNY 120-109 CHI\nMEM 122-105 IND\nNO 118-114 UTAH\nOKC 110-112 CLE\nHOU 116-105 MIN\nDEN 114-116 TOR\nPHX 112-120 POR\nSA 117-108 DAL\nSAC 114-122 LAL\nLAC 118-117 MIA\n\nFinal score"
+        "text": "🔮 EuroPicks Score Predictions · NBA · 04/11\n\nDET 111-104 PHI\nWSH 108-110 ATL\nBOS 120-109 MIL\nBKN 108-104 CHA\nNY 120-109 CHI\nMEM 121-105 IND\nNO 118-114 UTAH\nOKC 110-112 CLE\nHOU 116-105 MIN\nDEN 114-116 TOR\nPHX 112-120 POR\nSA 117-108 DAL\nSAC 114-122 LAL\nLAC 118-117 MIA\n\nFinal score"
       },
       "preds-euroleague": {
         "id": "preds-euroleague",
