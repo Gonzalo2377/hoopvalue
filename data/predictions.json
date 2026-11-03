@@ -208,5 +208,12 @@
     "away": "Valencia",
     "ptsH": 91,
     "ptsA": 91
+  },
+  "el:E2026_91": {
+    "start": "2026-11-04T19:45:00.000Z",
+    "home": "Real Madrid",
+    "away": "Panathinaikos",
+    "ptsH": 90,
+    "ptsA": 82
   }
 }
