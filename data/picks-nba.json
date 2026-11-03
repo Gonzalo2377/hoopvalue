@@ -2107,6 +2107,60 @@
       "stat": "ra",
       "playerId": "4277905",
       "createdAt": "2026-11-02T23:57:47.980Z"
+    },
+    {
+      "id": "nba:401909918|prop|under|3.5|4431736|reb",
+      "gameId": "nba:401909918",
+      "start": "2026-11-03T02:00Z",
+      "match": "Nuggets – Trail Blazers",
+      "market": "prop",
+      "side": "under",
+      "line": 3.5,
+      "label": "Toumani Camara menos de 3.5 rebotes",
+      "odd": 2.17,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.454,
+      "safety": 0.021,
+      "tier": "C",
+      "stat": "reb",
+      "playerId": "4431736",
+      "createdAt": "2026-11-03T01:38:47.829Z"
+    },
+    {
+      "id": "nba:401909920|prop|under|10.5|5093267|pts",
+      "gameId": "nba:401909920",
+      "start": "2026-11-03T03:00Z",
+      "match": "Clippers – Raptors",
+      "market": "prop",
+      "side": "under",
+      "line": 10.5,
+      "label": "Collin Murray-Boyles menos de 10.5 puntos",
+      "odd": 1.94,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.521,
+      "safety": 0.021,
+      "tier": "C",
+      "stat": "pts",
+      "playerId": "5093267",
+      "createdAt": "2026-11-03T01:38:47.829Z"
+    },
+    {
+      "id": "nba:401909921|prop|under|2.5|3907498|reb",
+      "gameId": "nba:401909921",
+      "start": "2026-11-03T03:00Z",
+      "match": "Lakers – Heat",
+      "market": "prop",
+      "side": "under",
+      "line": 2.5,
+      "label": "Matisse Thybulle menos de 2.5 rebotes",
+      "odd": 1.75,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.564,
+      "safety": 0.013,
+      "tier": "C",
+      "stat": "reb",
+      "playerId": "3907498",
+      "createdAt": "2026-11-03T01:38:47.829Z"
     }
   ],
   "record": [
@@ -19358,6 +19412,50 @@
       "ev": 0.078,
       "start": "2026-11-03T01:00Z",
       "createdAt": "2026-11-02T23:57:47.980Z"
+    },
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "nba:401909919|prop|under|5.5|4709138|reb",
+          "gameId": "nba:401909919",
+          "start": "2026-11-03T03:00Z",
+          "match": "Warriors – Suns",
+          "market": "prop",
+          "side": "under",
+          "line": 5.5,
+          "stat": "reb",
+          "playerId": "4709138",
+          "player": "Brandin Podziemski",
+          "team": "GS",
+          "label": "Brandin Podziemski menos de 5.5 rebotes",
+          "odd": 1.73,
+          "pFinal": 0.568,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909921|prop|under|2.5|3907498|reb",
+          "gameId": "nba:401909921",
+          "start": "2026-11-03T03:00Z",
+          "match": "Lakers – Heat",
+          "market": "prop",
+          "side": "under",
+          "line": 2.5,
+          "stat": "reb",
+          "playerId": "3907498",
+          "player": "Matisse Thybulle",
+          "team": "LAL",
+          "label": "Matisse Thybulle menos de 2.5 rebotes",
+          "odd": 1.75,
+          "pFinal": 0.564,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 3.03,
+      "prob": 0.32,
+      "ev": -0.03,
+      "start": "2026-11-03T03:00Z",
+      "createdAt": "2026-11-03T01:38:47.829Z"
     }
   ],
   "comboRecord": [
