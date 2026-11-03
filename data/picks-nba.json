@@ -67,6 +67,24 @@
       "safety": 0.535,
       "tier": "C",
       "createdAt": "2026-11-03T20:59:18.328Z"
+    },
+    {
+      "id": "nba:401909930|prop|over|19.5|4684740|pra",
+      "gameId": "nba:401909930",
+      "start": "2026-11-05T01:30Z",
+      "match": "Rockets – Timberwolves",
+      "market": "prop",
+      "side": "over",
+      "line": 19.5,
+      "label": "Amen Thompson más de 19.5 pts+reb+ast",
+      "odd": 1.62,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.606,
+      "safety": 0.559,
+      "tier": "C",
+      "stat": "pra",
+      "playerId": "4684740",
+      "createdAt": "2026-11-03T21:19:49.092Z"
     }
   ],
   "record": [
