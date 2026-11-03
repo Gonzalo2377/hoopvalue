@@ -5662,7 +5662,7 @@
         "league": "nba",
         "title": "NBA · resultados de ayer (02/11)",
         "postAt": "2026-11-03T08:40:00.000Z",
-        "text": "📋 NBA · resultados de ayer (02/11)\n\n❌❌❌⏳❌❌⏳❌❌❌⏳❌❌\n👇 Cada pick en la imagen\n\nAyer: 0-10 (-10.00 u) · Total NBA: 62-37 (-11.27 u)\n#NBA · +18 · Juega con responsabilidad",
+        "text": "📋 NBA · resultados de ayer (02/11)\n\n❌❌❌⏳❌❌⏳❌❌❌✅❌❌\n👇 Cada pick en la imagen\n\nAyer: 1-10 (-9.13 u) · Total NBA: 63-37 (-10.40 u)\n#NBA · +18 · Juega con responsabilidad",
         "image": true,
         "pending": true,
         "rows": [
@@ -5730,7 +5730,7 @@
             "league": "nba",
             "label": "Rockets -4.5",
             "odd": 1.87,
-            "result": null
+            "result": "W"
           },
           {
             "league": "nba",
@@ -5747,16 +5747,16 @@
         ],
         "balance": {
           "day": [
-            0,
+            1,
             10
           ],
           "total": [
-            62,
+            63,
             37
           ],
           "units": {
-            "day": -10,
-            "total": -11.27
+            "day": -9.13,
+            "total": -10.4
           }
         }
       }
