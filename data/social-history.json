@@ -5662,7 +5662,7 @@
         "league": "nba",
         "title": "NBA · resultados de ayer (02/11)",
         "postAt": "2026-11-03T08:40:00.000Z",
-        "text": "📋 NBA · resultados de ayer (02/11)\n\n⏳⏳⏳⏳⏳❌⏳⏳⏳❌⏳⏳⏳\n👇 Cada pick en la imagen\n\nAyer: 0-2 (-2.00 u) · Total NBA: 62-29 (-3.27 u)\n#NBA · +18 · Juega con responsabilidad",
+        "text": "📋 NBA · resultados de ayer (02/11)\n\n❌❌⏳⏳❌❌⏳⏳⏳❌⏳❌❌\n👇 Cada pick en la imagen\n\nAyer: 0-7 (-7.00 u) · Total NBA: 62-34 (-8.27 u)\n#NBA · +18 · Juega con responsabilidad",
         "image": true,
         "pending": true,
         "rows": [
@@ -5670,13 +5670,13 @@
             "league": "nba",
             "label": "J. Randle −18.5 puntos",
             "odd": 1.85,
-            "result": null
+            "result": "L"
           },
           {
             "league": "nba",
             "label": "V. Edgecombe +6.5 rebotes",
             "odd": 2.05,
-            "result": null
+            "result": "L"
           },
           {
             "league": "nba",
@@ -5694,7 +5694,7 @@
             "league": "nba",
             "label": "Menos de 210.5 puntos",
             "odd": 1.91,
-            "result": null
+            "result": "L"
           },
           {
             "league": "nba",
@@ -5736,27 +5736,27 @@
             "league": "nba",
             "label": "G. Allen +2.5 rebotes",
             "odd": 1.77,
-            "result": null
+            "result": "L"
           },
           {
             "league": "nba",
-            "label": "Combinada: I. Jackson −7.5 Reb + G. Allen +2.5 Reb",
+            "label": "Combinada: I. Jackson −7.5 Reb + G. Allen +2.5 Reb ✗",
             "odd": 2.97,
-            "result": null
+            "result": "L"
           }
         ],
         "balance": {
           "day": [
             0,
-            2
+            7
           ],
           "total": [
             62,
-            29
+            34
           ],
           "units": {
-            "day": -2,
-            "total": -3.27
+            "day": -7,
+            "total": -8.27
           }
         }
       }
