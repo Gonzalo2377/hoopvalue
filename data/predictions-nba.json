@@ -740,5 +740,12 @@
     "away": "Lakers",
     "ptsH": 114,
     "ptsA": 122
+  },
+  "nba:401909935": {
+    "start": "2026-11-05T03:30Z",
+    "home": "Clippers",
+    "away": "Heat",
+    "ptsH": 118,
+    "ptsA": 117
   }
 }
