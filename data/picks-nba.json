@@ -2161,6 +2161,24 @@
       "stat": "reb",
       "playerId": "3907498",
       "createdAt": "2026-11-03T01:38:47.829Z"
+    },
+    {
+      "id": "nba:401909920|prop|under|4.5|2991139|reb",
+      "gameId": "nba:401909920",
+      "start": "2026-11-03T03:00Z",
+      "match": "Clippers – Raptors",
+      "market": "prop",
+      "side": "under",
+      "line": 4.5,
+      "label": "Kris Dunn menos de 4.5 rebotes",
+      "odd": 1.67,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.603,
+      "safety": -0.007,
+      "tier": "C",
+      "stat": "reb",
+      "playerId": "2991139",
+      "createdAt": "2026-11-03T02:19:25.944Z"
     }
   ],
   "record": [
@@ -19601,6 +19619,151 @@
       "ev": -0.003,
       "start": "2026-11-03T03:00Z",
       "createdAt": "2026-11-03T01:59:08.219Z"
+    },
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "nba:401909919|prop|under|6.5|4278402|ra",
+          "gameId": "nba:401909919",
+          "start": "2026-11-03T03:00Z",
+          "match": "Warriors – Suns",
+          "market": "prop",
+          "side": "under",
+          "line": 6.5,
+          "stat": "ra",
+          "playerId": "4278402",
+          "player": "Jordan Goodwin",
+          "team": "PHX",
+          "label": "Jordan Goodwin menos de 6.5 reb+ast",
+          "odd": 1.74,
+          "pFinal": 0.565,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909920|prop|under|4.5|2991139|reb",
+          "gameId": "nba:401909920",
+          "start": "2026-11-03T03:00Z",
+          "match": "Clippers – Raptors",
+          "market": "prop",
+          "side": "under",
+          "line": 4.5,
+          "stat": "reb",
+          "playerId": "2991139",
+          "player": "Kris Dunn",
+          "team": "LAC",
+          "label": "Kris Dunn menos de 4.5 rebotes",
+          "odd": 1.67,
+          "pFinal": 0.603,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.91,
+      "prob": 0.341,
+      "ev": -0.01,
+      "start": "2026-11-03T03:00Z",
+      "createdAt": "2026-11-03T02:19:25.944Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909921|prop|under|2.5|3907498|reb",
+          "gameId": "nba:401909921",
+          "start": "2026-11-03T03:00Z",
+          "match": "Lakers – Heat",
+          "market": "prop",
+          "side": "under",
+          "line": 2.5,
+          "stat": "reb",
+          "playerId": "3907498",
+          "player": "Matisse Thybulle",
+          "team": "LAL",
+          "label": "Matisse Thybulle menos de 2.5 rebotes",
+          "odd": 1.75,
+          "pFinal": 0.564,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909919|ml|away|||",
+          "gameId": "nba:401909919",
+          "start": "2026-11-03T03:00Z",
+          "match": "Warriors – Suns",
+          "market": "ml",
+          "side": "away",
+          "line": null,
+          "label": "Gana Suns",
+          "odd": 2.28,
+          "pFinal": 0.432,
+          "book": "unibet"
+        },
+        {
+          "id": "nba:401909920|prop|under|4.5|2991139|reb",
+          "gameId": "nba:401909920",
+          "start": "2026-11-03T03:00Z",
+          "match": "Clippers – Raptors",
+          "market": "prop",
+          "side": "under",
+          "line": 4.5,
+          "stat": "reb",
+          "playerId": "2991139",
+          "player": "Kris Dunn",
+          "team": "LAC",
+          "label": "Kris Dunn menos de 4.5 rebotes",
+          "odd": 1.67,
+          "pFinal": 0.603,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 6.66,
+      "prob": 0.147,
+      "ev": -0.021,
+      "start": "2026-11-03T03:00Z",
+      "createdAt": "2026-11-03T02:19:25.944Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "nba:401909921|prop|under|2.5|3907498|reb",
+          "gameId": "nba:401909921",
+          "start": "2026-11-03T03:00Z",
+          "match": "Lakers – Heat",
+          "market": "prop",
+          "side": "under",
+          "line": 2.5,
+          "stat": "reb",
+          "playerId": "3907498",
+          "player": "Matisse Thybulle",
+          "team": "LAL",
+          "label": "Matisse Thybulle menos de 2.5 rebotes",
+          "odd": 1.75,
+          "pFinal": 0.564,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909920|prop|under|4.5|2991139|reb",
+          "gameId": "nba:401909920",
+          "start": "2026-11-03T03:00Z",
+          "match": "Clippers – Raptors",
+          "market": "prop",
+          "side": "under",
+          "line": 4.5,
+          "stat": "reb",
+          "playerId": "2991139",
+          "player": "Kris Dunn",
+          "team": "LAC",
+          "label": "Kris Dunn menos de 4.5 rebotes",
+          "odd": 1.67,
+          "pFinal": 0.603,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.92,
+      "prob": 0.34,
+      "ev": -0.006,
+      "start": "2026-11-03T03:00Z",
+      "createdAt": "2026-11-03T02:19:25.944Z"
     }
   ],
   "comboRecord": [
