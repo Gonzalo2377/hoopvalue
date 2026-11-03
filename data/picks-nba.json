@@ -15,6 +15,42 @@
       "safety": 0.515,
       "tier": "C",
       "createdAt": "2026-11-03T13:03:26.850Z"
+    },
+    {
+      "id": "nba:401909922|prop|over|14.5|3157465|pr",
+      "gameId": "nba:401909922",
+      "start": "2026-11-05T00:00Z",
+      "match": "Pistons – 76ers",
+      "market": "prop",
+      "side": "over",
+      "line": 14.5,
+      "label": "Duncan Robinson más de 14.5 pts+reb",
+      "odd": 1.55,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.638,
+      "safety": 0.563,
+      "tier": "C",
+      "stat": "pr",
+      "playerId": "3157465",
+      "createdAt": "2026-11-03T18:14:20.124Z"
+    },
+    {
+      "id": "nba:401909928|prop|over|14.5|5041955|pa",
+      "gameId": "nba:401909928",
+      "start": "2026-11-05T01:00Z",
+      "match": "Pelicans – Jazz",
+      "market": "prop",
+      "side": "over",
+      "line": 14.5,
+      "label": "Darryn Peterson más de 14.5 pts+ast",
+      "odd": 1.57,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.637,
+      "safety": 0.547,
+      "tier": "C",
+      "stat": "pa",
+      "playerId": "5041955",
+      "createdAt": "2026-11-03T18:14:20.124Z"
     }
   ],
   "record": [
