@@ -183,16 +183,23 @@ async function main() {
 
   /* ---- 5. picks del día + registro como pendientes ---- */
   picks.sort((a, b) => b.safety - a.safety);
-  const combos = C.build(picks);
-  const knownC = new Set([...(book.comboPending || []), ...(book.comboRecord || [])].map(C.comboKey));
-  combos.forEach(c => { if (!knownC.has(C.comboKey(c)) && Date.parse(c.start) > now) (book.comboPending = book.comboPending || []).push({ ...c, createdAt: new Date(now).toISOString() }); });
+  /* picks aún sin empezar que ya no cumplen el criterio actual (p. ej. los de la v2): se retiran */
+  book.pending = book.pending.filter(p => Date.parse(p.start) <= now || !(p.pFinal < P.CFG.minProb || p.odd > P.CFG.maxOdd));
   const known = new Set([...book.pending, ...book.record].map(pickKey));
+  const slot = p => p.gameId + '|' + (p.market === 'prop' ? 'prop' : 'game');   // un pick de resultado y uno de jugador por partido, fijos
+  const taken = new Set([...book.pending, ...book.record].map(slot));
   picks.forEach(p => {
-    if (known.has(pickKey(p)) || Date.parse(p.start) < now) return;
+    if (known.has(pickKey(p)) || taken.has(slot(p)) || Date.parse(p.start) < now) return;
+    taken.add(slot(p));
     /* se registra con la cuota del momento en que se publica y no se reescribe */
     book.pending.push({ id: pickKey(p), gameId: p.gameId, start: p.start, round: p.round, match: p.match, market: p.market, side: p.side, line: p.line,
       label: p.label, odd: p.odd, book: p.book, pFinal: p.pFinal, safety: p.safety, tier: p.tier, stat: p.stat, playerId: p.playerId, createdAt: new Date(now).toISOString() });
   });
+  const pend = new Set(book.pending.map(p => p.id));
+  const combos = C.build(picks.filter(p => pend.has(pickKey(p))));               // combinadas solo con picks publicados
+  const knownC = new Set([...(book.comboPending || []), ...(book.comboRecord || [])].map(C.comboKey));
+  const typeTaken = new Set((book.comboPending || []).map(c => c.type));          // una combinada de cada tipo por jornada
+  combos.forEach(c => { if (!knownC.has(C.comboKey(c)) && !typeTaken.has(c.type) && Date.parse(c.start) > now && typeTaken.add(c.type)) (book.comboPending = book.comboPending || []).push({ ...c, createdAt: new Date(now).toISOString() }); });
 
   writeJSON(PICKS_FILE, book, true);
   PR.update(PRED_FILE, outGames, now);
@@ -200,7 +207,8 @@ async function main() {
   writeJSON(path.join(OUT, 'today.json'), {
     meta: { updatedAt: new Date(now).toISOString(), season, oddsSource: KEY ? 'The Odds API' : null, credits: odds.credits, sig: SIG, minOdd: P.CFG.minOdd,
       nextGame: (games.find(g => g.status === 'scheduled' && Date.parse(g.date) > now) || {}).date || null },
-    picks, combos, games: outGames,
+    picks: book.pending.filter(p => Date.parse(p.start) > now - 3 * 3600e3).map(p => picks.find(x => pickKey(x) === p.id) || p),   // los publicados (fijos), no los de esta vuelta
+    combos: (book.comboPending || []).filter(c => Date.parse(c.start) > now - 3 * 3600e3), games: outGames,
   });
   writeJSON(path.join(OUT, 'teams.json'), teamsTable(R, games, teams, season, now));
   console.log(`✓ ${outGames.length} partidos · ${picks.length} picks (${picks.filter(p => p.tier === 'A').length} nivel A) · pendientes ${book.pending.length} · historial ${book.record.length}`);

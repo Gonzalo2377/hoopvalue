@@ -22,14 +22,15 @@
    ============================================================ */
 const { phi, pOver, clamp, round, mean } = require('../lib/util');
 
+/* v3 (3/11): vuelve el criterio original (prob. ≥ 55 %), pero solo cuotas 1.55-2.20.
+   Historial NBA de ese criterio: <1.40 → −3 % ; 1.55-2.20 → 76 % de aciertos, +29 % (159 picks).
+   La v2 (cuotas hasta 2.60 sin exigir 55 %) fue 30-44 en su primera noche: retirada.
+   El contexto (bajas, minutos, rival…) se enseña como «por qué», no decide. */
 const CFG = {
   minOdd: +(process.env.MIN_ODD || 1.55),
-  maxOdd: 2.60,
-  minProb: 0.42,
-  minEV: -0.02,
-  minNet: 2,                                 // factores a favor − en contra (partidos)
-  minNetProp: 3,                             // jugadores (proyección y últimos 10 ya suelen sumar 2)
-  perNet: 0.012,                             // cuánto suma a la puntuación cada factor neto
+  maxOdd: 2.20,
+  minProb: 0.55,
+  minEV: -0.03,
   sharp: ['pinnacle'],                       // los exchanges en Euroliga tienen muy poca liquidez
 };
 
@@ -163,11 +164,11 @@ function evaluate({ game, pred, sig, mk, trends, ctx, wModel }) {
     const sigs = signals(side, market, trends, { ...ctx, line, now: mk }).sort((a, b) => b.ok - a.ok);
     const net = sigs.filter(s => s.ok).length - sigs.filter(s => !s.ok).length;
     const gap = Math.abs(pModel - pMarket);
-    const safety = ev + CFG.perNet * Math.min(net, 6) - 0.6 * Math.max(0, gap - 0.12);   // puntuación: valor + contexto
+    const safety = pFinal - 0.5 * Math.max(0, gap - 0.03) + clamp(net * 0.01, -0.03, 0.03);
     cands.push({ gameId: game.id, market, side, label, line, odd: round(best.price, 2), book: best.book,
       pModel: round(pModel, 3), pMarket: round(pMarket, 3), pFinal: round(pFinal, 3), ev: round(ev, 3), safety: round(safety, 3),
       fair: round(1 / pFinal, 2), sharp: !!sharp, signals: sigs, net,
-      qualifies: best.price >= CFG.minOdd && best.price <= CFG.maxOdd && pFinal >= CFG.minProb && ev >= CFG.minEV && net >= CFG.minNet });
+      qualifies: best.price >= CFG.minOdd && best.price <= CFG.maxOdd && pFinal >= CFG.minProb && ev >= CFG.minEV });
   };
   if (mk.ml) {
     push('ml', 'home', `Gana ${H}`, null, pm.ml.A, mk.ml.pA, mk.ml.bestA, mk.ml.sharp);
@@ -186,8 +187,7 @@ function evaluate({ game, pred, sig, mk, trends, ctx, wModel }) {
   return cands.sort((a, b) => b.safety - a.safety);
 }
 
-/* nivel de confianza según la puntuación (valor + contexto) */
-const tier = s => s >= 0.06 ? 'A' : s >= 0.03 ? 'B' : 'C';
+const tier = s => s >= 0.68 ? 'A' : s >= 0.61 ? 'B' : 'C';
 
 
 /* props de jugador: misma filosofía que los partidos.
@@ -201,8 +201,7 @@ function evaluateProps(entry, rows, wModel, pc = null) {
   const last10 = rows.slice(-10);
   for (const stat of Object.keys(STAT_NAME)) {
     const L = entry.lines[stat], s = entry.proj.sd && entry.proj.sd[stat];
-    /* proyección ajustada por el contexto (compañeros de baja, rival, cansancio…) */
-    const mu = entry.proj[stat] == null ? null : pc ? round(COMP[stat].reduce((a, k) => a + (entry.proj[k] || 0) * (pc.mult[k] || 1), 0), 1) : entry.proj[stat];
+    const mu = entry.proj[stat];
     if (!L || mu == null || !s) continue;
     const val = r => stat === 'pra' ? r.pts + r.reb + r.ast : stat === 'pr' ? r.pts + r.reb : stat === 'pa' ? r.pts + r.ast : stat === 'ra' ? r.reb + r.ast : r[stat];
     /* cada línea ofrecida: con «más» y «menos» se quita el margen exacto;
@@ -233,13 +232,13 @@ function evaluateProps(entry, rows, wModel, pc = null) {
         }
         sigs.sort((a, b) => b.ok - a.ok || (b.w || 1) - (a.w || 1));
         const net = round(sigs.reduce((a, x) => a + (x.ok ? 1 : -1) * (x.w || 1), 0), 2);
-        const safety = ev + CFG.perNet * Math.min(net, 6) - 0.6 * Math.max(0, Math.abs(pModel - pMarket) - 0.12);   // si el modelo se aleja mucho del mercado, el mercado sabe algo
+        const hitAdj = last10.length >= 5 ? clamp((hits / last10.length - 0.5) * 0.06, -0.03, 0.03) : 0;
+        const safety = pFinal - 0.5 * Math.max(0, Math.abs(pModel - pMarket) - 0.03) + hitAdj;
         out.push({ gameId: entry.next.gameId, market: 'prop', stat, side, line: o.line, playerId: entry.id, player: entry.name, team: entry.team,
           label: `${entry.name} ${side === 'over' ? 'más' : 'menos'} de ${o.line} ${STAT_NAME[stat]}`, odd: round(odd, 2), book,
           pModel: round(pModel, 3), pMarket: round(pMarket, 3), pFinal: round(pFinal, 3), ev: round(ev, 3), safety: round(safety, 3), fair: round(1 / pFinal, 2),
           proj: mu, hits: `${hits}/${last10.length}`, estimated: !o.under, signals: sigs.map(({ ok, txt }) => ({ ok, txt })), net,
-          qualifies: odd >= CFG.minOdd && odd <= CFG.maxOdd && pFinal >= CFG.minProb && ev >= CFG.minEV && net >= CFG.minNetProp && (side === 'over' ? mu > o.line : mu < o.line)
-            && (last10.length < 5 || hits / last10.length >= 0.4) && !sigs.some(x => !x.ok && /^Temporada/.test(x.txt)) && Math.abs(pModel - pMarket) <= 0.25 });
+          qualifies: odd >= CFG.minOdd && odd <= CFG.maxOdd && pFinal >= CFG.minProb && ev >= CFG.minEV });
       });
     }
   }
