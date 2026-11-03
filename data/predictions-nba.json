@@ -663,5 +663,26 @@
     "away": "Hawks",
     "ptsH": 108,
     "ptsA": 112
+  },
+  "nba:401909924": {
+    "start": "2026-11-05T00:30Z",
+    "home": "Celtics",
+    "away": "Bucks",
+    "ptsH": 120,
+    "ptsA": 109
+  },
+  "nba:401909925": {
+    "start": "2026-11-05T00:30Z",
+    "home": "Nets",
+    "away": "Hornets",
+    "ptsH": 108,
+    "ptsA": 104
+  },
+  "nba:401909926": {
+    "start": "2026-11-05T00:30Z",
+    "home": "Knicks",
+    "away": "Bulls",
+    "ptsH": 120,
+    "ptsA": 109
   }
 }
