@@ -5610,29 +5610,29 @@
         "id": "combo-nba",
         "kind": "combo",
         "league": "nba",
-        "title": "Safe Parlay · NBA @2.94",
+        "title": "Safe Parlay · NBA @3.31",
         "postAt": "2026-11-03T18:00:00.000Z",
         "image": true,
-        "text": "🎯 Safe Parlay · NBA\n\n1.- M. Thybulle −2.5 Reb @1.75\n2.- K. Dunn −4.5 Reb @1.68\n\n💰 Total odds 2.94\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
+        "text": "🎯 Safe Parlay · NBA\n\n1.- G. Niang −7.5 Pts @1.97\n2.- K. Dunn −4.5 Reb @1.68\n\n💰 Total odds 3.31\n📊 Last 10 games de cada uno en la foto\n#NBA · +18 · Juega con responsabilidad",
         "picks": [],
         "combo": {
           "legs": [
             {
-              "id": "nba:401909921|prop|under|2.5|3907498|reb",
+              "id": "nba:401909919|prop|under|7.5|2990969|pts",
               "league": "nba",
-              "label": "M. Thybulle −2.5 rebotes",
-              "list": "M. Thybulle −2.5 Reb",
-              "odd": 1.75,
+              "label": "G. Niang −7.5 puntos",
+              "list": "G. Niang −7.5 Pts",
+              "odd": 1.97,
               "start": "2026-11-03T03:00Z",
-              "gameId": "nba:401909921",
+              "gameId": "nba:401909919",
               "market": "prop",
               "side": "under",
-              "line": 2.5,
-              "stat": "reb",
-              "playerId": "3907498",
-              "team": "LAL",
-              "match": "Lakers – Heat",
-              "pFinal": 0.564
+              "line": 7.5,
+              "stat": "pts",
+              "playerId": "2990969",
+              "team": "GS",
+              "match": "Warriors – Suns",
+              "pFinal": 0.5
             },
             {
               "id": "nba:401909920|prop|under|4.5|2991139|reb",
@@ -5652,8 +5652,8 @@
               "pFinal": 0.598
             }
           ],
-          "odd": 2.94,
-          "prob": 0.337
+          "odd": 3.31,
+          "prob": 0.299
         }
       },
       "summary-nba": {
@@ -5662,7 +5662,7 @@
         "league": "nba",
         "title": "NBA · resultados de ayer (02/11)",
         "postAt": "2026-11-03T08:40:00.000Z",
-        "text": "📋 NBA · resultados de ayer (02/11)\n\n⏳⏳⏳⏳⏳❌⏳⏳⏳⏳⏳⏳⏳\n👇 Cada pick en la imagen\n\nAyer: 0-1 (-1.00 u) · Total NBA: 62-28 (-2.27 u)\n#NBA · +18 · Juega con responsabilidad",
+        "text": "📋 NBA · resultados de ayer (02/11)\n\n⏳⏳⏳⏳⏳❌⏳⏳⏳❌⏳⏳⏳\n👇 Cada pick en la imagen\n\nAyer: 0-2 (-2.00 u) · Total NBA: 62-29 (-3.27 u)\n#NBA · +18 · Juega con responsabilidad",
         "image": true,
         "pending": true,
         "rows": [
@@ -5724,7 +5724,7 @@
             "league": "nba",
             "label": "C. McCollum −20.5 pts+ast",
             "odd": 1.78,
-            "result": null
+            "result": "L"
           },
           {
             "league": "nba",
@@ -5748,94 +5748,17 @@
         "balance": {
           "day": [
             0,
-            1
+            2
           ],
           "total": [
             62,
-            28
+            29
           ],
           "units": {
-            "day": -1,
-            "total": -2.27
+            "day": -2,
+            "total": -3.27
           }
         }
-      },
-      "nba-day": {
-        "id": "nba-day",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": false,
-        "title": "NBA Picks Day · 4 picks",
-        "postAt": "2026-11-03T17:45:00.000Z",
-        "image": true,
-        "picks": [
-          {
-            "id": "nba:401909919|ml|away|||",
-            "league": "nba",
-            "label": "Gana Suns",
-            "list": "Gana Suns",
-            "odd": 2.3,
-            "start": "2026-11-03T03:00Z",
-            "gameId": "nba:401909919",
-            "market": "ml",
-            "side": "away",
-            "line": null,
-            "match": "Warriors – Suns",
-            "pFinal": 0.436
-          },
-          {
-            "id": "nba:401909921|prop|under|2.5|3907498|reb",
-            "league": "nba",
-            "label": "M. Thybulle −2.5 rebotes",
-            "list": "M. Thybulle −2.5 Reb",
-            "odd": 1.75,
-            "start": "2026-11-03T03:00Z",
-            "gameId": "nba:401909921",
-            "market": "prop",
-            "side": "under",
-            "line": 2.5,
-            "stat": "reb",
-            "playerId": "3907498",
-            "team": "LAL",
-            "match": "Lakers – Heat",
-            "pFinal": 0.564
-          },
-          {
-            "id": "nba:401909919|prop|under|6.5|4278402|ra",
-            "league": "nba",
-            "label": "J. Goodwin −6.5 reb+ast",
-            "list": "J. Goodwin −6.5 R+A",
-            "odd": 1.75,
-            "start": "2026-11-03T03:00Z",
-            "gameId": "nba:401909919",
-            "market": "prop",
-            "side": "under",
-            "line": 6.5,
-            "stat": "ra",
-            "playerId": "4278402",
-            "team": "PHX",
-            "match": "Warriors – Suns",
-            "pFinal": 0.561
-          },
-          {
-            "id": "nba:401909920|prop|under|4.5|2991139|reb",
-            "league": "nba",
-            "label": "K. Dunn −4.5 rebotes",
-            "list": "K. Dunn −4.5 Reb",
-            "odd": 1.68,
-            "start": "2026-11-03T03:00Z",
-            "gameId": "nba:401909920",
-            "market": "prop",
-            "side": "under",
-            "line": 4.5,
-            "stat": "reb",
-            "playerId": "2991139",
-            "team": "LAC",
-            "match": "Clippers – Raptors",
-            "pFinal": 0.598
-          }
-        ],
-        "text": "🏀 NBA Picks Day · 03/11\n\n1.- Gana Suns @2.30\n2.- M. Thybulle −2.5 Reb @1.75\n3.- J. Goodwin −6.5 R+A @1.75\n4.- K. Dunn −4.5 Reb @1.68\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
