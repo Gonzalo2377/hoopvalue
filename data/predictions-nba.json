@@ -733,5 +733,12 @@
     "away": "Mavericks",
     "ptsH": 116,
     "ptsA": 109
+  },
+  "nba:401909934": {
+    "start": "2026-11-05T03:00Z",
+    "home": "Kings",
+    "away": "Lakers",
+    "ptsH": 114,
+    "ptsA": 122
   }
 }
