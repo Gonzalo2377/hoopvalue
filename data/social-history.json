@@ -6124,7 +6124,7 @@
         "kind": "nba-day",
         "league": "nba",
         "reply": false,
-        "title": "NBA Picks Day · 9 picks",
+        "title": "NBA Picks Day · 11 picks",
         "postAt": "2026-11-04T17:45:00.000Z",
         "image": true,
         "picks": [
@@ -6143,6 +6143,23 @@
             "playerId": "3157465",
             "match": "Pistons – 76ers",
             "pFinal": 0.638
+          },
+          {
+            "id": "nba:401909933|prop|over|19.5|5037871|pa",
+            "league": "nba",
+            "label": "D. Harper +19.5 pts+ast",
+            "list": "D. Harper +19.5 P+A",
+            "odd": 1.58,
+            "start": "2026-11-05T02:30Z",
+            "gameId": "nba:401909933",
+            "market": "prop",
+            "side": "over",
+            "line": 19.5,
+            "stat": "pa",
+            "playerId": "5037871",
+            "team": "SA",
+            "match": "Spurs – Mavericks",
+            "pFinal": 0.623
           },
           {
             "id": "nba:401909929|prop|under|3.5|4222252|ast",
@@ -6178,14 +6195,14 @@
             "pFinal": 0.606
           }
         ],
-        "text": "🏀 NBA Picks Day · 04/11\n\n1.- D. Robinson +14.5 P+R @1.55\n2.- I. Hartenstein −3.5 Ast @1.62\n3.- A. Thompson +19.5 PRA @1.62\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 04/11\n\n1.- D. Robinson +14.5 P+R @1.55\n2.- D. Harper +19.5 P+A @1.58\n3.- I. Hartenstein −3.5 Ast @1.62\n4.- A. Thompson +19.5 PRA @1.62\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-2": {
         "id": "nba-day-2",
         "kind": "nba-day",
         "league": "nba",
         "reply": true,
-        "title": "↳ Hilo 2/3 · picks 4-6",
+        "title": "↳ Hilo 2/3 · picks 5-8",
         "postAt": "2026-11-04T17:45:00.000Z",
         "image": true,
         "picks": [
@@ -6232,19 +6249,7 @@
             "line": null,
             "match": "Pistons – 76ers",
             "pFinal": 0.56
-          }
-        ],
-        "text": "🧵 NBA Picks Day · 04/11 (sigue)\n\n4.- D. Peterson +14.5 P+A @1.57\n5.- Gana Trail Blazers @1.68\n6.- Gana Pistons @1.78\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-3": {
-        "id": "nba-day-3",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 3/3 · picks 7-9",
-        "postAt": "2026-11-04T17:45:00.000Z",
-        "image": true,
-        "picks": [
+          },
           {
             "id": "nba:401909924|prop|over|1.5|4432848|ast",
             "league": "nba",
@@ -6260,6 +6265,35 @@
             "playerId": "4432848",
             "match": "Celtics – Bucks",
             "pFinal": 0.592
+          }
+        ],
+        "text": "🧵 NBA Picks Day · 04/11 (sigue)\n\n5.- D. Peterson +14.5 P+A @1.57\n6.- Gana Trail Blazers @1.68\n7.- Gana Pistons @1.78\n8.- J. Jaquez Jr. +1.5 Ast @1.71\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-3": {
+        "id": "nba-day-3",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 3/3 · picks 9-11",
+        "postAt": "2026-11-04T17:45:00.000Z",
+        "image": true,
+        "picks": [
+          {
+            "id": "nba:401909931|prop|under|13.5|2993874|pr",
+            "league": "nba",
+            "label": "K. Anderson −13.5 pts+reb",
+            "list": "K. Anderson −13.5 P+R",
+            "odd": 1.74,
+            "start": "2026-11-05T02:00Z",
+            "gameId": "nba:401909931",
+            "market": "prop",
+            "side": "under",
+            "line": 13.5,
+            "stat": "pr",
+            "playerId": "2993874",
+            "team": "TOR",
+            "match": "Nuggets – Raptors",
+            "pFinal": 0.622
           },
           {
             "id": "nba:401909935|prop|under|27.5|4278053|pa",
@@ -6292,7 +6326,7 @@
             "pFinal": 0.551
           }
         ],
-        "text": "🧵 NBA Picks Day · 04/11 (sigue)\n\n7.- J. Jaquez Jr. +1.5 Ast @1.71\n8.- D. Mitchell −27.5 P+A @1.84\n9.- Under 234.5 (Wizards-Hawks) @1.91\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 04/11 (sigue)\n\n9.- K. Anderson −13.5 P+R @1.74\n10.- D. Mitchell −27.5 P+A @1.84\n11.- Under 234.5 (Wizards-Hawks) @1.91\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }

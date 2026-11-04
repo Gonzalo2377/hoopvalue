@@ -229,5 +229,12 @@
     "away": "Baskonia",
     "ptsH": 89,
     "ptsA": 72
+  },
+  "el:E2026_93": {
+    "start": "2026-11-05T18:45:00.000Z",
+    "home": "Hapoel TLV",
+    "away": "FC Barcelona",
+    "ptsH": 94,
+    "ptsA": 86
   }
 }

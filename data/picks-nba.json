@@ -155,6 +155,42 @@
       "safety": 0.426,
       "tier": "C",
       "createdAt": "2026-11-03T22:01:01.123Z"
+    },
+    {
+      "id": "nba:401909933|prop|over|19.5|5037871|pa",
+      "gameId": "nba:401909933",
+      "start": "2026-11-05T02:30Z",
+      "match": "Spurs – Mavericks",
+      "market": "prop",
+      "side": "over",
+      "line": 19.5,
+      "label": "Dylan Harper más de 19.5 pts+ast",
+      "odd": 1.58,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.623,
+      "safety": 0.563,
+      "tier": "C",
+      "stat": "pa",
+      "playerId": "5037871",
+      "createdAt": "2026-11-04T06:56:49.744Z"
+    },
+    {
+      "id": "nba:401909931|prop|under|13.5|2993874|pr",
+      "gameId": "nba:401909931",
+      "start": "2026-11-05T02:00Z",
+      "match": "Nuggets – Raptors",
+      "market": "prop",
+      "side": "under",
+      "line": 13.5,
+      "label": "Kyle Anderson menos de 13.5 pts+reb",
+      "odd": 1.74,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.622,
+      "safety": 0.449,
+      "tier": "C",
+      "stat": "pr",
+      "playerId": "2993874",
+      "createdAt": "2026-11-04T06:56:49.744Z"
     }
   ],
   "record": [
