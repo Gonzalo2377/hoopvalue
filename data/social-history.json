@@ -6219,7 +6219,6 @@
             "line": 2.5,
             "stat": "tpm",
             "playerId": "4278039",
-            "team": "ATL",
             "match": "Wizards – Hawks",
             "pFinal": 0.617
           },
@@ -6300,7 +6299,7 @@
             "league": "nba",
             "label": "J. Slawson −1.5 triples",
             "list": "J. Slawson −1.5 T3",
-            "odd": 1.75,
+            "odd": 1.73,
             "start": "2026-11-05T01:00Z",
             "gameId": "nba:401909927",
             "market": "prop",
@@ -6310,7 +6309,7 @@
             "playerId": "4398207",
             "team": "IND",
             "match": "Grizzlies – Pacers",
-            "pFinal": 0.606
+            "pFinal": 0.61
           },
           {
             "id": "nba:401909926|prop|under|7.5|3934672|ast",
@@ -6325,7 +6324,6 @@
             "line": 7.5,
             "stat": "ast",
             "playerId": "3934672",
-            "team": "NY",
             "match": "Knicks – Bulls",
             "pFinal": 0.571
           },
@@ -6347,7 +6345,7 @@
             "pFinal": 0.622
           }
         ],
-        "text": "🧵 NBA Picks Day · 04/11 (sigue)\n\n9.- J. Jaquez Jr. +1.5 Ast @1.71\n10.- J. Slawson −1.5 T3 @1.75\n11.- J. Brunson −7.5 Ast @1.85\n12.- K. Anderson −13.5 P+R @1.74\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 04/11 (sigue)\n\n9.- J. Jaquez Jr. +1.5 Ast @1.71\n10.- J. Slawson −1.5 T3 @1.73\n11.- J. Brunson −7.5 Ast @1.85\n12.- K. Anderson −13.5 P+R @1.74\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }

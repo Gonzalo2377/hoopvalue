@@ -243,5 +243,12 @@
     "away": "Bayern Munich",
     "ptsH": 95,
     "ptsA": 88
+  },
+  "el:E2026_96": {
+    "start": "2026-11-05T19:30:00.000Z",
+    "home": "Milan",
+    "away": "Valencia",
+    "ptsH": 89,
+    "ptsA": 91
   }
 }
