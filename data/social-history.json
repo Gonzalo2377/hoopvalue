@@ -6188,7 +6188,6 @@
             "line": 24.5,
             "stat": "pr",
             "playerId": "3155942",
-            "team": "SAC",
             "match": "Kings – Lakers",
             "pFinal": 0.627
           }
@@ -6233,6 +6232,7 @@
             "line": 19.5,
             "stat": "pa",
             "playerId": "5037871",
+            "team": "SA",
             "match": "Spurs – Mavericks",
             "pFinal": 0.623
           },
