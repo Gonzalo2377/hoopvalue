@@ -6176,35 +6176,6 @@
             "pFinal": 0.611
           },
           {
-            "id": "nba:401909934|prop|over|24.5|3155942|pr",
-            "league": "nba",
-            "label": "D. Sabonis +24.5 pts+reb",
-            "list": "D. Sabonis +24.5 P+R",
-            "odd": 1.56,
-            "start": "2026-11-05T03:00Z",
-            "gameId": "nba:401909934",
-            "market": "prop",
-            "side": "over",
-            "line": 24.5,
-            "stat": "pr",
-            "playerId": "3155942",
-            "team": "SAC",
-            "match": "Kings – Lakers",
-            "pFinal": 0.627
-          }
-        ],
-        "text": "🏀 NBA Picks Day · 04/11\n\n1.- M. Diabate +1.5 Ast @1.58\n2.- Gana Pistons @1.70\n3.- I. Hartenstein −3.5 Ast @1.61\n4.- D. Sabonis +24.5 P+R @1.56\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-2": {
-        "id": "nba-day-2",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 2/3 · picks 5-8",
-        "postAt": "2026-11-04T17:45:00.000Z",
-        "image": true,
-        "picks": [
-          {
             "id": "nba:401909922|prop|over|14.5|3157465|pr",
             "league": "nba",
             "label": "D. Robinson +14.5 pts+reb",
@@ -6219,7 +6190,19 @@
             "playerId": "3157465",
             "match": "Pistons – 76ers",
             "pFinal": 0.638
-          },
+          }
+        ],
+        "text": "🏀 NBA Picks Day · 04/11\n\n1.- M. Diabate +1.5 Ast @1.58\n2.- Gana Pistons @1.70\n3.- I. Hartenstein −3.5 Ast @1.61\n4.- D. Robinson +14.5 P+R @1.55\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-2": {
+        "id": "nba-day-2",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 2/3 · picks 5-8",
+        "postAt": "2026-11-04T17:45:00.000Z",
+        "image": true,
+        "picks": [
           {
             "id": "nba:401909933|prop|over|19.5|5037871|pa",
             "league": "nba",
@@ -6267,9 +6250,26 @@
             "playerId": "4278039",
             "match": "Wizards – Hawks",
             "pFinal": 0.617
+          },
+          {
+            "id": "nba:401909934|prop|over|24.5|3155942|pr",
+            "league": "nba",
+            "label": "D. Sabonis +24.5 pts+reb",
+            "list": "D. Sabonis +24.5 P+R",
+            "odd": 1.58,
+            "start": "2026-11-05T03:00Z",
+            "gameId": "nba:401909934",
+            "market": "prop",
+            "side": "over",
+            "line": 24.5,
+            "stat": "pr",
+            "playerId": "3155942",
+            "team": "SAC",
+            "match": "Kings – Lakers",
+            "pFinal": 0.621
           }
         ],
-        "text": "🧵 NBA Picks Day · 04/11 (sigue)\n\n5.- D. Robinson +14.5 P+R @1.55\n6.- D. Harper +19.5 P+A @1.58\n7.- A. Thompson +19.5 PRA @1.62\n8.- N. Alexander-Walker +2.5 T3 @1.60\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 04/11 (sigue)\n\n5.- D. Harper +19.5 P+A @1.58\n6.- A. Thompson +19.5 PRA @1.62\n7.- N. Alexander-Walker +2.5 T3 @1.60\n8.- D. Sabonis +24.5 P+R @1.58\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-3": {
         "id": "nba-day-3",
