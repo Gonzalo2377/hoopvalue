@@ -315,6 +315,22 @@
       "stat": "pr",
       "playerId": "3155942",
       "createdAt": "2026-11-04T15:29:48.929Z"
+    },
+    {
+      "id": "nba:401909925|spread|home|4.5||",
+      "gameId": "nba:401909925",
+      "start": "2026-11-05T00:30Z",
+      "match": "Nets – Hornets",
+      "market": "spread",
+      "side": "home",
+      "line": 4.5,
+      "label": "Nets +4.5",
+      "odd": 1.88,
+      "book": "draftkings",
+      "pFinal": 0.551,
+      "safety": 0.453,
+      "tier": "C",
+      "createdAt": "2026-11-04T21:56:43.870Z"
     }
   ],
   "record": [
