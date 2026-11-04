@@ -215,5 +215,19 @@
     "away": "Panathinaikos",
     "ptsH": 90,
     "ptsA": 82
+  },
+  "el:E2026_95": {
+    "start": "2026-11-05T17:15:00.000Z",
+    "home": "Anadolu Efes",
+    "away": "Paris",
+    "ptsH": 92,
+    "ptsA": 84
+  },
+  "el:E2026_92": {
+    "start": "2026-11-05T18:00:00.000Z",
+    "home": "Fenerbahce",
+    "away": "Baskonia",
+    "ptsH": 89,
+    "ptsA": 72
   }
 }
