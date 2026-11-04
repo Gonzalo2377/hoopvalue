@@ -297,6 +297,24 @@
       "safety": 0.51,
       "tier": "C",
       "createdAt": "2026-11-04T10:43:52.200Z"
+    },
+    {
+      "id": "nba:401909934|prop|over|24.5|3155942|pr",
+      "gameId": "nba:401909934",
+      "start": "2026-11-05T03:00Z",
+      "match": "Kings – Lakers",
+      "market": "prop",
+      "side": "over",
+      "line": 24.5,
+      "label": "Domantas Sabonis más de 24.5 pts+reb",
+      "odd": 1.56,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.627,
+      "safety": 0.564,
+      "tier": "C",
+      "stat": "pr",
+      "playerId": "3155942",
+      "createdAt": "2026-11-04T15:29:48.929Z"
     }
   ],
   "record": [

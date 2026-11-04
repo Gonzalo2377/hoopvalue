@@ -747,5 +747,19 @@
     "away": "Heat",
     "ptsH": 118,
     "ptsA": 117
+  },
+  "nba:401909936": {
+    "start": "2026-11-06T02:00Z",
+    "home": "Suns",
+    "away": "Magic",
+    "ptsH": 117,
+    "ptsA": 107
+  },
+  "nba:401909937": {
+    "start": "2026-11-06T03:00Z",
+    "home": "Warriors",
+    "away": "Heat",
+    "ptsH": 124,
+    "ptsA": 116
   }
 }

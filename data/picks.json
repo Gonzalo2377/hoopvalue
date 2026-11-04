@@ -33,6 +33,44 @@
       "safety": 0.506,
       "tier": "C",
       "createdAt": "2026-11-04T08:18:45.538Z"
+    },
+    {
+      "id": "el:E2026_95|prop|over|3.5|012403|reb",
+      "gameId": "el:E2026_95",
+      "start": "2026-11-05T17:15:00.000Z",
+      "round": 10,
+      "match": "Anadolu Efes – Paris",
+      "market": "prop",
+      "side": "over",
+      "line": 3.5,
+      "label": "Mouhamed Faye más de 3.5 rebotes",
+      "odd": 1.57,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.626,
+      "safety": 0.556,
+      "tier": "C",
+      "stat": "reb",
+      "playerId": "012403",
+      "createdAt": "2026-11-04T15:29:44.221Z"
+    },
+    {
+      "id": "el:E2026_92|prop|over|4.5|014734|pts",
+      "gameId": "el:E2026_92",
+      "start": "2026-11-05T18:00:00.000Z",
+      "round": 10,
+      "match": "Fenerbahce – Baskonia",
+      "market": "prop",
+      "side": "over",
+      "line": 4.5,
+      "label": "A.j. Lawson más de 4.5 puntos",
+      "odd": 1.68,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.635,
+      "safety": 0.47,
+      "tier": "C",
+      "stat": "pts",
+      "playerId": "014734",
+      "createdAt": "2026-11-04T15:29:44.221Z"
     }
   ],
   "record": [
@@ -1516,6 +1554,63 @@
       "ev": 0,
       "start": "2026-11-05T19:00:00.000Z",
       "createdAt": "2026-11-04T08:18:45.538Z"
+    },
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "el:E2026_95|prop|over|3.5|012403|reb",
+          "gameId": "el:E2026_95",
+          "start": "2026-11-05T17:15:00.000Z",
+          "match": "Anadolu Efes – Paris",
+          "market": "prop",
+          "side": "over",
+          "line": 3.5,
+          "stat": "reb",
+          "playerId": "012403",
+          "player": "Mouhamed Faye",
+          "team": "PRS",
+          "label": "Mouhamed Faye más de 3.5 rebotes",
+          "odd": 1.57,
+          "pFinal": 0.626,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "el:E2026_94|ml|home|||",
+          "gameId": "el:E2026_94",
+          "start": "2026-11-05T19:00:00.000Z",
+          "match": "LDLC ASVEL – Bayern Munich",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana LDLC ASVEL",
+          "odd": 1.8,
+          "pFinal": 0.585,
+          "book": "ladbrokes_uk"
+        },
+        {
+          "id": "el:E2026_92|prop|over|4.5|014734|pts",
+          "gameId": "el:E2026_92",
+          "start": "2026-11-05T18:00:00.000Z",
+          "match": "Fenerbahce – Baskonia",
+          "market": "prop",
+          "side": "over",
+          "line": 4.5,
+          "stat": "pts",
+          "playerId": "014734",
+          "player": "A.j. Lawson",
+          "team": "BAS",
+          "label": "A.j. Lawson más de 4.5 puntos",
+          "odd": 1.68,
+          "pFinal": 0.635,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 4.75,
+      "prob": 0.233,
+      "ev": 0.104,
+      "start": "2026-11-05T17:15:00.000Z",
+      "createdAt": "2026-11-04T15:29:44.221Z"
     }
   ],
   "comboRecord": [

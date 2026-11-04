@@ -6146,6 +6146,65 @@
             "pFinal": 0.617
           },
           {
+            "id": "nba:401909922|ml|home|||",
+            "league": "nba",
+            "label": "Gana Pistons",
+            "list": "Gana Pistons",
+            "odd": 1.7,
+            "start": "2026-11-05T00:00Z",
+            "gameId": "nba:401909922",
+            "market": "ml",
+            "side": "home",
+            "line": null,
+            "match": "Pistons – 76ers",
+            "pFinal": 0.587
+          },
+          {
+            "id": "nba:401909929|prop|under|3.5|4222252|ast",
+            "league": "nba",
+            "label": "I. Hartenstein −3.5 asistencias",
+            "list": "I. Hartenstein −3.5 Ast",
+            "odd": 1.61,
+            "start": "2026-11-05T01:00Z",
+            "gameId": "nba:401909929",
+            "market": "prop",
+            "side": "under",
+            "line": 3.5,
+            "stat": "ast",
+            "playerId": "4222252",
+            "match": "Thunder – Cavaliers",
+            "pFinal": 0.611
+          },
+          {
+            "id": "nba:401909934|prop|over|24.5|3155942|pr",
+            "league": "nba",
+            "label": "D. Sabonis +24.5 pts+reb",
+            "list": "D. Sabonis +24.5 P+R",
+            "odd": 1.56,
+            "start": "2026-11-05T03:00Z",
+            "gameId": "nba:401909934",
+            "market": "prop",
+            "side": "over",
+            "line": 24.5,
+            "stat": "pr",
+            "playerId": "3155942",
+            "team": "SAC",
+            "match": "Kings – Lakers",
+            "pFinal": 0.627
+          }
+        ],
+        "text": "🏀 NBA Picks Day · 04/11\n\n1.- M. Diabate +1.5 Ast @1.58\n2.- Gana Pistons @1.70\n3.- I. Hartenstein −3.5 Ast @1.61\n4.- D. Sabonis +24.5 P+R @1.56\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-2": {
+        "id": "nba-day-2",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 2/3 · picks 5-8",
+        "postAt": "2026-11-04T17:45:00.000Z",
+        "image": true,
+        "picks": [
+          {
             "id": "nba:401909922|prop|over|14.5|3157465|pr",
             "league": "nba",
             "label": "D. Robinson +14.5 pts+reb",
@@ -6174,39 +6233,9 @@
             "line": 19.5,
             "stat": "pa",
             "playerId": "5037871",
-            "team": "SA",
             "match": "Spurs – Mavericks",
             "pFinal": 0.623
           },
-          {
-            "id": "nba:401909929|prop|under|3.5|4222252|ast",
-            "league": "nba",
-            "label": "I. Hartenstein −3.5 asistencias",
-            "list": "I. Hartenstein −3.5 Ast",
-            "odd": 1.63,
-            "start": "2026-11-05T01:00Z",
-            "gameId": "nba:401909929",
-            "market": "prop",
-            "side": "under",
-            "line": 3.5,
-            "stat": "ast",
-            "playerId": "4222252",
-            "team": "OKC",
-            "match": "Thunder – Cavaliers",
-            "pFinal": 0.606
-          }
-        ],
-        "text": "🏀 NBA Picks Day · 04/11\n\n1.- M. Diabate +1.5 Ast @1.58\n2.- D. Robinson +14.5 P+R @1.55\n3.- D. Harper +19.5 P+A @1.58\n4.- I. Hartenstein −3.5 Ast @1.63\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-2": {
-        "id": "nba-day-2",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 2/3 · picks 5-8",
-        "postAt": "2026-11-04T17:45:00.000Z",
-        "image": true,
-        "picks": [
           {
             "id": "nba:401909930|prop|over|19.5|4684740|pra",
             "league": "nba",
@@ -6238,7 +6267,19 @@
             "playerId": "4278039",
             "match": "Wizards – Hawks",
             "pFinal": 0.617
-          },
+          }
+        ],
+        "text": "🧵 NBA Picks Day · 04/11 (sigue)\n\n5.- D. Robinson +14.5 P+R @1.55\n6.- D. Harper +19.5 P+A @1.58\n7.- A. Thompson +19.5 PRA @1.62\n8.- N. Alexander-Walker +2.5 T3 @1.60\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-3": {
+        "id": "nba-day-3",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 3/3 · picks 9-12",
+        "postAt": "2026-11-04T17:45:00.000Z",
+        "image": true,
+        "picks": [
           {
             "id": "nba:401909928|prop|over|14.5|5041955|pa",
             "league": "nba",
@@ -6268,19 +6309,7 @@
             "line": null,
             "match": "Suns – Trail Blazers",
             "pFinal": 0.595
-          }
-        ],
-        "text": "🧵 NBA Picks Day · 04/11 (sigue)\n\n5.- A. Thompson +19.5 PRA @1.62\n6.- N. Alexander-Walker +2.5 T3 @1.60\n7.- D. Peterson +14.5 P+A @1.57\n8.- Gana Trail Blazers @1.68\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-3": {
-        "id": "nba-day-3",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 3/3 · picks 9-12",
-        "postAt": "2026-11-04T17:45:00.000Z",
-        "image": true,
-        "picks": [
+          },
           {
             "id": "nba:401909924|prop|over|1.5|4432848|ast",
             "league": "nba",
@@ -6312,37 +6341,9 @@
             "playerId": "4066383",
             "match": "Suns – Trail Blazers",
             "pFinal": 0.672
-          },
-          {
-            "id": "nba:401909922|ml|home|||",
-            "league": "nba",
-            "label": "Gana Pistons",
-            "list": "Gana Pistons",
-            "odd": 1.8,
-            "start": "2026-11-05T00:00Z",
-            "gameId": "nba:401909922",
-            "market": "ml",
-            "side": "home",
-            "line": null,
-            "match": "Pistons – 76ers",
-            "pFinal": 0.556
-          },
-          {
-            "id": "nba:401909927|spread|home|-6.5||",
-            "league": "nba",
-            "label": "Grizzlies -6.5",
-            "list": "Grizzlies -6.5",
-            "odd": 1.85,
-            "start": "2026-11-05T01:00Z",
-            "gameId": "nba:401909927",
-            "market": "spread",
-            "side": "home",
-            "line": -6.5,
-            "match": "Grizzlies – Pacers",
-            "pFinal": 0.568
           }
         ],
-        "text": "🧵 NBA Picks Day · 04/11 (sigue)\n\n9.- J. Jaquez Jr. +1.5 Ast @1.71\n10.- M. Bridges +2.5 Reb @1.55\n11.- Gana Pistons @1.80\n12.- Grizzlies -6.5 @1.85\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 04/11 (sigue)\n\n9.- D. Peterson +14.5 P+A @1.57\n10.- Gana Trail Blazers @1.68\n11.- J. Jaquez Jr. +1.5 Ast @1.71\n12.- M. Bridges +2.5 Reb @1.55\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
