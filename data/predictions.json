@@ -236,5 +236,12 @@
     "away": "FC Barcelona",
     "ptsH": 94,
     "ptsA": 86
+  },
+  "el:E2026_94": {
+    "start": "2026-11-05T19:00:00.000Z",
+    "home": "LDLC ASVEL",
+    "away": "Bayern Munich",
+    "ptsH": 95,
+    "ptsA": 88
   }
 }
