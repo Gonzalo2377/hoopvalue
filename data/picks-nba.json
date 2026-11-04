@@ -331,6 +331,40 @@
       "safety": 0.453,
       "tier": "C",
       "createdAt": "2026-11-04T21:56:43.870Z"
+    },
+    {
+      "id": "nba:401909936|prop|under|3.5|5239561|reb",
+      "gameId": "nba:401909936",
+      "start": "2026-11-06T02:00Z",
+      "match": "Suns – Magic",
+      "market": "prop",
+      "side": "under",
+      "line": 3.5,
+      "label": "Jase Richardson menos de 3.5 rebotes",
+      "odd": 1.75,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.593,
+      "safety": 0.483,
+      "tier": "C",
+      "stat": "reb",
+      "playerId": "5239561",
+      "createdAt": "2026-11-04T23:18:55.142Z"
+    },
+    {
+      "id": "nba:401909924|spread|away|12.5||",
+      "gameId": "nba:401909924",
+      "start": "2026-11-05T00:30Z",
+      "match": "Celtics – Bucks",
+      "market": "spread",
+      "side": "away",
+      "line": 12.5,
+      "label": "Bucks +12.5",
+      "odd": 1.85,
+      "book": "draftkings",
+      "pFinal": 0.559,
+      "safety": 0.466,
+      "tier": "C",
+      "createdAt": "2026-11-04T23:18:55.142Z"
     }
   ],
   "record": [

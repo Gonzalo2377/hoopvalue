@@ -661,8 +661,8 @@
     "start": "2026-11-05T00:00Z",
     "home": "Wizards",
     "away": "Hawks",
-    "ptsH": 108,
-    "ptsA": 110
+    "ptsH": 110,
+    "ptsA": 105
   },
   "nba:401909924": {
     "start": "2026-11-05T00:30Z",
@@ -696,8 +696,8 @@
     "start": "2026-11-05T01:00Z",
     "home": "Pelicans",
     "away": "Jazz",
-    "ptsH": 118,
-    "ptsA": 114
+    "ptsH": 115,
+    "ptsA": 115
   },
   "nba:401909929": {
     "start": "2026-11-05T01:00Z",
