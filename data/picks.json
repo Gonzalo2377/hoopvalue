@@ -1,5 +1,40 @@
 {
-  "pending": [],
+  "pending": [
+    {
+      "id": "el:E2026_96|ml|away|||",
+      "gameId": "el:E2026_96",
+      "start": "2026-11-05T19:30:00.000Z",
+      "round": 10,
+      "match": "Milan – Valencia",
+      "market": "ml",
+      "side": "away",
+      "line": null,
+      "label": "Gana Valencia",
+      "odd": 1.69,
+      "book": "onexbet",
+      "pFinal": 0.581,
+      "safety": 0.58,
+      "tier": "C",
+      "createdAt": "2026-11-04T08:18:45.538Z"
+    },
+    {
+      "id": "el:E2026_94|ml|home|||",
+      "gameId": "el:E2026_94",
+      "start": "2026-11-05T19:00:00.000Z",
+      "round": 10,
+      "match": "LDLC ASVEL – Bayern Munich",
+      "market": "ml",
+      "side": "home",
+      "line": null,
+      "label": "Gana LDLC ASVEL",
+      "odd": 1.8,
+      "book": "williamhill",
+      "pFinal": 0.566,
+      "safety": 0.506,
+      "tier": "C",
+      "createdAt": "2026-11-04T08:18:45.538Z"
+    }
+  ],
   "record": [
     {
       "id": "el:E2026_89|prop|over|4.5|013285|pts",
@@ -1445,7 +1480,44 @@
       "settledAt": "2026-10-21T20:21:24.312Z"
     }
   ],
-  "comboPending": [],
+  "comboPending": [
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "el:E2026_96|ml|away|||",
+          "gameId": "el:E2026_96",
+          "start": "2026-11-05T19:30:00.000Z",
+          "match": "Milan – Valencia",
+          "market": "ml",
+          "side": "away",
+          "line": null,
+          "label": "Gana Valencia",
+          "odd": 1.69,
+          "pFinal": 0.581,
+          "book": "onexbet"
+        },
+        {
+          "id": "el:E2026_94|ml|home|||",
+          "gameId": "el:E2026_94",
+          "start": "2026-11-05T19:00:00.000Z",
+          "match": "LDLC ASVEL – Bayern Munich",
+          "market": "ml",
+          "side": "home",
+          "line": null,
+          "label": "Gana LDLC ASVEL",
+          "odd": 1.8,
+          "pFinal": 0.566,
+          "book": "williamhill"
+        }
+      ],
+      "odd": 3.04,
+      "prob": 0.329,
+      "ev": 0,
+      "start": "2026-11-05T19:00:00.000Z",
+      "createdAt": "2026-11-04T08:18:45.538Z"
+    }
+  ],
   "comboRecord": [
     {
       "type": "valor",
