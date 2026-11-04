@@ -6249,7 +6249,7 @@
             "league": "nba",
             "label": "J. Jaquez Jr. +1.5 asistencias",
             "list": "J. Jaquez Jr. +1.5 Ast",
-            "odd": 1.72,
+            "odd": 1.71,
             "start": "2026-11-05T00:30Z",
             "gameId": "nba:401909924",
             "market": "prop",
@@ -6257,9 +6257,8 @@
             "line": 1.5,
             "stat": "ast",
             "playerId": "4432848",
-            "team": "MIL",
             "match": "Celtics – Bucks",
-            "pFinal": 0.589
+            "pFinal": 0.592
           },
           {
             "id": "nba:401909935|prop|under|27.5|4278053|pa",
@@ -6293,7 +6292,7 @@
             "pFinal": 0.551
           }
         ],
-        "text": "🧵 NBA Picks Day · 04/11 (sigue)\n\n7.- J. Jaquez Jr. +1.5 Ast @1.72\n8.- D. Mitchell −27.5 P+A @1.85\n9.- Under 234.5 (Wizards-Hawks) @1.91\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 04/11 (sigue)\n\n7.- J. Jaquez Jr. +1.5 Ast @1.71\n8.- D. Mitchell −27.5 P+A @1.85\n9.- Under 234.5 (Wizards-Hawks) @1.91\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
