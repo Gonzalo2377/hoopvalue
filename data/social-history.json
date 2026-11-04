@@ -6129,6 +6129,20 @@
         "image": true,
         "picks": [
           {
+            "id": "nba:401909922|ml|home|||",
+            "league": "nba",
+            "label": "Gana Pistons",
+            "list": "Gana Pistons",
+            "odd": 1.7,
+            "start": "2026-11-05T00:00Z",
+            "gameId": "nba:401909922",
+            "market": "ml",
+            "side": "home",
+            "line": null,
+            "match": "Pistons – 76ers",
+            "pFinal": 0.589
+          },
+          {
             "id": "nba:401909925|prop|over|1.5|4433249|ast",
             "league": "nba",
             "label": "M. Diabate +1.5 asistencias",
@@ -6144,20 +6158,6 @@
             "team": "CHA",
             "match": "Nets – Hornets",
             "pFinal": 0.617
-          },
-          {
-            "id": "nba:401909922|ml|home|||",
-            "league": "nba",
-            "label": "Gana Pistons",
-            "list": "Gana Pistons",
-            "odd": 1.7,
-            "start": "2026-11-05T00:00Z",
-            "gameId": "nba:401909922",
-            "market": "ml",
-            "side": "home",
-            "line": null,
-            "match": "Pistons – 76ers",
-            "pFinal": 0.587
           },
           {
             "id": "nba:401909929|prop|under|3.5|4222252|ast",
@@ -6192,7 +6192,7 @@
             "pFinal": 0.638
           }
         ],
-        "text": "🏀 NBA Picks Day · 04/11\n\n1.- M. Diabate +1.5 Ast @1.58\n2.- Gana Pistons @1.70\n3.- I. Hartenstein −3.5 Ast @1.61\n4.- D. Robinson +14.5 P+R @1.55\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 04/11\n\n1.- Gana Pistons @1.70\n2.- M. Diabate +1.5 Ast @1.58\n3.- I. Hartenstein −3.5 Ast @1.61\n4.- D. Robinson +14.5 P+R @1.55\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-2": {
         "id": "nba-day-2",
