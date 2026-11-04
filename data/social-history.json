@@ -6265,7 +6265,7 @@
             "league": "nba",
             "label": "D. Mitchell −27.5 pts+ast",
             "list": "D. Mitchell −27.5 P+A",
-            "odd": 1.85,
+            "odd": 1.84,
             "start": "2026-11-05T03:30Z",
             "gameId": "nba:401909935",
             "market": "prop",
@@ -6273,9 +6273,8 @@
             "line": 27.5,
             "stat": "pa",
             "playerId": "4278053",
-            "team": "MIA",
             "match": "Clippers – Heat",
-            "pFinal": 0.567
+            "pFinal": 0.569
           },
           {
             "id": "nba:401909923|total|under|234.5||",
@@ -6292,7 +6291,7 @@
             "pFinal": 0.551
           }
         ],
-        "text": "🧵 NBA Picks Day · 04/11 (sigue)\n\n7.- J. Jaquez Jr. +1.5 Ast @1.71\n8.- D. Mitchell −27.5 P+A @1.85\n9.- Under 234.5 (Wizards-Hawks) @1.91\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 04/11 (sigue)\n\n7.- J. Jaquez Jr. +1.5 Ast @1.71\n8.- D. Mitchell −27.5 P+A @1.84\n9.- Under 234.5 (Wizards-Hawks) @1.91\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
