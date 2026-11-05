@@ -6402,7 +6402,6 @@
             "line": 4.5,
             "stat": "pts",
             "playerId": "014734",
-            "team": "BAS",
             "match": "Fenerbahce – Baskonia",
             "pFinal": 0.635
           }
@@ -6428,7 +6427,7 @@
         "title": "LDLC ASVEL vs Bayern Munich",
         "start": "2026-11-05T19:00:00.000Z",
         "postAt": "2026-11-05T18:00:00.000Z",
-        "text": "🏀 EuroLeague · hoy 20:00\nLDLC ASVEL vs Bayern Munich\n\n1.- Gana LDLC ASVEL @1.80\n\n🔮 Prediction: LDLC ASVEL 95-88 Bayern Munich\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
+        "text": "🏀 EuroLeague · hoy 20:00\nLDLC ASVEL vs Bayern Munich\n\n1.- Gana LDLC ASVEL @1.76\n2.- J. Crowder +9.5 Pts @1.70\n\n🔮 Prediction: LDLC ASVEL 95-88 Bayern Munich\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
         "image": true,
         "picks": [
           {
@@ -6436,14 +6435,31 @@
             "league": "euroleague",
             "label": "Gana LDLC ASVEL",
             "list": "Gana LDLC ASVEL",
-            "odd": 1.8,
+            "odd": 1.76,
             "start": "2026-11-05T19:00:00.000Z",
             "gameId": "el:E2026_94",
             "market": "ml",
             "side": "home",
             "line": null,
             "match": "LDLC ASVEL – Bayern Munich",
-            "pFinal": 0.566
+            "pFinal": 0.586
+          },
+          {
+            "id": "el:E2026_94|prop|over|9.5|015166|pts",
+            "league": "euroleague",
+            "label": "J. Crowder +9.5 puntos",
+            "list": "J. Crowder +9.5 Pts",
+            "odd": 1.7,
+            "start": "2026-11-05T19:00:00.000Z",
+            "gameId": "el:E2026_94",
+            "market": "prop",
+            "side": "over",
+            "line": 9.5,
+            "stat": "pts",
+            "playerId": "015166",
+            "team": "ASV",
+            "match": "LDLC ASVEL – Bayern Munich",
+            "pFinal": 0.58
           }
         ]
       },
@@ -6455,7 +6471,7 @@
         "title": "Milan vs Valencia",
         "start": "2026-11-05T19:30:00.000Z",
         "postAt": "2026-11-05T18:30:00.000Z",
-        "text": "🏀 EuroLeague · hoy 20:30\nMilan vs Valencia\n\n1.- Gana Valencia @1.69\n\n🔮 Prediction: Milan 89-91 Valencia\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
+        "text": "🏀 EuroLeague · hoy 20:30\nMilan vs Valencia\n\n1.- Gana Valencia @1.69\n2.- K. Taylor +9.5 Pts @1.60\n\n🔮 Prediction: Milan 89-91 Valencia\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
         "image": true,
         "picks": [
           {
@@ -6471,6 +6487,23 @@
             "line": null,
             "match": "Milan – Valencia",
             "pFinal": 0.581
+          },
+          {
+            "id": "el:E2026_96|prop|over|9.5|011217|pts",
+            "league": "euroleague",
+            "label": "K. Taylor +9.5 puntos",
+            "list": "K. Taylor +9.5 Pts",
+            "odd": 1.6,
+            "start": "2026-11-05T19:30:00.000Z",
+            "gameId": "el:E2026_96",
+            "market": "prop",
+            "side": "over",
+            "line": 9.5,
+            "stat": "pts",
+            "playerId": "011217",
+            "team": "PAM",
+            "match": "Milan – Valencia",
+            "pFinal": 0.612
           }
         ]
       },
