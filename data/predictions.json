@@ -257,5 +257,12 @@
     "away": "Zalgiris",
     "ptsH": 86,
     "ptsA": 89
+  },
+  "el:E2026_100": {
+    "start": "2026-11-06T19:15:00.000Z",
+    "home": "Olympiacos",
+    "away": "Crvena Zvezda",
+    "ptsH": 81,
+    "ptsA": 82
   }
 }
