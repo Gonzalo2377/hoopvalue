@@ -6356,7 +6356,7 @@
         "title": "Anadolu Efes vs Paris",
         "start": "2026-11-05T17:15:00.000Z",
         "postAt": "2026-11-05T16:15:00.000Z",
-        "text": "🏀 EuroLeague · hoy 18:15\nAnadolu Efes vs Paris\n\n1.- M. Faye +3.5 Reb @1.56\n\n🔮 Prediction: Anadolu Efes 92-84 Paris\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
+        "text": "🏀 EuroLeague · hoy 18:15\nAnadolu Efes vs Paris\n\n1.- M. Faye +3.5 Reb @1.57\n\n🔮 Prediction: Anadolu Efes 92-84 Paris\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
         "image": true,
         "picks": [
           {
@@ -6364,7 +6364,7 @@
             "league": "euroleague",
             "label": "M. Faye +3.5 rebotes",
             "list": "M. Faye +3.5 Reb",
-            "odd": 1.56,
+            "odd": 1.57,
             "start": "2026-11-05T17:15:00.000Z",
             "gameId": "el:E2026_95",
             "market": "prop",
@@ -6374,7 +6374,7 @@
             "playerId": "012403",
             "team": "PRS",
             "match": "Anadolu Efes – Paris",
-            "pFinal": 0.63
+            "pFinal": 0.626
           }
         ]
       },
@@ -6691,7 +6691,7 @@
         "league": "nba",
         "title": "NBA · resultados de ayer (04/11)",
         "postAt": "2026-11-05T08:40:00.000Z",
-        "text": "📋 NBA · resultados de ayer (04/11)\n\n✅❌❌✅⏳✅⏳✅❌✅✅✅❌\n👇 Cada pick en la imagen\n\nAyer: 7-4 (+0.29 u) · Total NBA: 70-43 (-12.11 u)\n#NBA · +18 · Juega con responsabilidad",
+        "text": "📋 NBA · resultados de ayer (04/11)\n\n✅❌❌✅✅✅⏳✅❌✅✅✅❌\n👇 Cada pick en la imagen\n\nAyer: 8-4 (+0.87 u) · Total NBA: 71-43 (-11.53 u)\n#NBA · +18 · Juega con responsabilidad",
         "image": true,
         "pending": true,
         "rows": [
@@ -6723,7 +6723,7 @@
             "league": "nba",
             "label": "D. Harper +19.5 pts+ast",
             "odd": 1.58,
-            "result": null
+            "result": "W"
           },
           {
             "league": "nba",
@@ -6776,16 +6776,16 @@
         ],
         "balance": {
           "day": [
-            7,
+            8,
             4
           ],
           "total": [
-            70,
+            71,
             43
           ],
           "units": {
-            "day": 0.29,
-            "total": -12.11
+            "day": 0.87,
+            "total": -11.53
           }
         }
       },
@@ -6847,10 +6847,24 @@
         "kind": "nba-day",
         "league": "nba",
         "reply": false,
-        "title": "NBA Picks Day · 1 pick",
+        "title": "NBA Picks Day · 2 picks",
         "postAt": "2026-11-05T17:45:00.000Z",
         "image": true,
         "picks": [
+          {
+            "id": "nba:401909936|ml|home|||",
+            "league": "nba",
+            "label": "Gana Suns",
+            "list": "Gana Suns",
+            "odd": 1.85,
+            "start": "2026-11-06T02:00Z",
+            "gameId": "nba:401909936",
+            "market": "ml",
+            "side": "home",
+            "line": null,
+            "match": "Suns – Magic",
+            "pFinal": 0.554
+          },
           {
             "id": "nba:401909936|prop|under|3.5|5239561|reb",
             "league": "nba",
@@ -6868,7 +6882,7 @@
             "pFinal": 0.593
           }
         ],
-        "text": "🏀 NBA Picks Day · 05/11\n\n1.- J. Richardson −3.5 Reb @1.75\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 05/11\n\n1.- Gana Suns @1.85\n2.- J. Richardson −3.5 Reb @1.75\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
