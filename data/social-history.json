@@ -6856,14 +6856,14 @@
             "league": "nba",
             "label": "Gana Suns",
             "list": "Gana Suns",
-            "odd": 1.83,
+            "odd": 1.84,
             "start": "2026-11-06T02:00Z",
             "gameId": "nba:401909936",
             "market": "ml",
             "side": "home",
             "line": null,
             "match": "Suns – Magic",
-            "pFinal": 0.556
+            "pFinal": 0.552
           },
           {
             "id": "nba:401909936|prop|under|3.5|5239561|reb",
@@ -6882,7 +6882,7 @@
             "pFinal": 0.593
           }
         ],
-        "text": "🏀 NBA Picks Day · 05/11\n\n1.- Gana Suns @1.83\n2.- J. Richardson −3.5 Reb @1.75\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 05/11\n\n1.- Gana Suns @1.84\n2.- J. Richardson −3.5 Reb @1.75\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
