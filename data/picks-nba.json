@@ -53,24 +53,6 @@
       "createdAt": "2026-11-03T21:19:49.092Z"
     },
     {
-      "id": "nba:401909929|prop|under|3.5|4222252|ast",
-      "gameId": "nba:401909929",
-      "start": "2026-11-05T01:00Z",
-      "match": "Thunder – Cavaliers",
-      "market": "prop",
-      "side": "under",
-      "line": 3.5,
-      "label": "Isaiah Hartenstein menos de 3.5 asistencias",
-      "odd": 1.61,
-      "book": "unibet (Kambi)",
-      "pFinal": 0.611,
-      "safety": 0.568,
-      "tier": "C",
-      "stat": "ast",
-      "playerId": "4222252",
-      "createdAt": "2026-11-03T22:01:01.123Z"
-    },
-    {
       "id": "nba:401909935|prop|under|27.5|4278053|pa",
       "gameId": "nba:401909935",
       "start": "2026-11-05T03:30Z",
@@ -125,42 +107,6 @@
       "createdAt": "2026-11-04T06:56:49.744Z"
     },
     {
-      "id": "nba:401909927|prop|under|1.5|4398207|tpm",
-      "gameId": "nba:401909927",
-      "start": "2026-11-05T01:00Z",
-      "match": "Grizzlies – Pacers",
-      "market": "prop",
-      "side": "under",
-      "line": 1.5,
-      "label": "Jalen Slawson menos de 1.5 triples",
-      "odd": 1.75,
-      "book": "unibet (Kambi)",
-      "pFinal": 0.606,
-      "safety": 0.463,
-      "tier": "C",
-      "stat": "tpm",
-      "playerId": "4398207",
-      "createdAt": "2026-11-04T07:17:21.627Z"
-    },
-    {
-      "id": "nba:401909925|prop|over|1.5|4433249|ast",
-      "gameId": "nba:401909925",
-      "start": "2026-11-05T00:30Z",
-      "match": "Nets – Hornets",
-      "market": "prop",
-      "side": "over",
-      "line": 1.5,
-      "label": "Moussa Diabate más de 1.5 asistencias",
-      "odd": 1.58,
-      "book": "unibet (Kambi)",
-      "pFinal": 0.617,
-      "safety": 0.578,
-      "tier": "C",
-      "stat": "ast",
-      "playerId": "4433249",
-      "createdAt": "2026-11-04T10:43:52.200Z"
-    },
-    {
       "id": "nba:401909932|prop|over|2.5|4066383|reb",
       "gameId": "nba:401909932",
       "start": "2026-11-05T02:00Z",
@@ -176,22 +122,6 @@
       "tier": "C",
       "stat": "reb",
       "playerId": "4066383",
-      "createdAt": "2026-11-04T10:43:52.200Z"
-    },
-    {
-      "id": "nba:401909927|spread|home|-6.5||",
-      "gameId": "nba:401909927",
-      "start": "2026-11-05T01:00Z",
-      "match": "Grizzlies – Pacers",
-      "market": "spread",
-      "side": "home",
-      "line": -6.5,
-      "label": "Grizzlies -6.5",
-      "odd": 1.85,
-      "book": "draftkings",
-      "pFinal": 0.568,
-      "safety": 0.51,
-      "tier": "C",
       "createdAt": "2026-11-04T10:43:52.200Z"
     },
     {
@@ -213,22 +143,6 @@
       "createdAt": "2026-11-04T15:29:48.929Z"
     },
     {
-      "id": "nba:401909925|spread|home|4.5||",
-      "gameId": "nba:401909925",
-      "start": "2026-11-05T00:30Z",
-      "match": "Nets – Hornets",
-      "market": "spread",
-      "side": "home",
-      "line": 4.5,
-      "label": "Nets +4.5",
-      "odd": 1.88,
-      "book": "draftkings",
-      "pFinal": 0.551,
-      "safety": 0.453,
-      "tier": "C",
-      "createdAt": "2026-11-04T21:56:43.870Z"
-    },
-    {
       "id": "nba:401909936|prop|under|3.5|5239561|reb",
       "gameId": "nba:401909936",
       "start": "2026-11-06T02:00Z",
@@ -248,6 +162,110 @@
     }
   ],
   "record": [
+    {
+      "id": "nba:401909929|prop|under|3.5|4222252|ast",
+      "gameId": "nba:401909929",
+      "start": "2026-11-05T01:00Z",
+      "match": "Thunder – Cavaliers",
+      "market": "prop",
+      "side": "under",
+      "line": 3.5,
+      "label": "Isaiah Hartenstein menos de 3.5 asistencias",
+      "odd": 1.61,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.611,
+      "safety": 0.568,
+      "tier": "C",
+      "stat": "ast",
+      "playerId": "4222252",
+      "createdAt": "2026-11-03T22:01:01.123Z",
+      "result": "L",
+      "score": "124-116",
+      "settledAt": "2026-11-05T03:34:39.232Z"
+    },
+    {
+      "id": "nba:401909927|prop|under|1.5|4398207|tpm",
+      "gameId": "nba:401909927",
+      "start": "2026-11-05T01:00Z",
+      "match": "Grizzlies – Pacers",
+      "market": "prop",
+      "side": "under",
+      "line": 1.5,
+      "label": "Jalen Slawson menos de 1.5 triples",
+      "odd": 1.75,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.606,
+      "safety": 0.463,
+      "tier": "C",
+      "stat": "tpm",
+      "playerId": "4398207",
+      "createdAt": "2026-11-04T07:17:21.627Z",
+      "result": "W",
+      "score": "103-107",
+      "settledAt": "2026-11-05T03:34:39.232Z"
+    },
+    {
+      "id": "nba:401909925|prop|over|1.5|4433249|ast",
+      "gameId": "nba:401909925",
+      "start": "2026-11-05T00:30Z",
+      "match": "Nets – Hornets",
+      "market": "prop",
+      "side": "over",
+      "line": 1.5,
+      "label": "Moussa Diabate más de 1.5 asistencias",
+      "odd": 1.58,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.617,
+      "safety": 0.578,
+      "tier": "C",
+      "stat": "ast",
+      "playerId": "4433249",
+      "createdAt": "2026-11-04T10:43:52.200Z",
+      "result": "W",
+      "score": "114-104",
+      "settledAt": "2026-11-05T03:34:39.232Z"
+    },
+    {
+      "id": "nba:401909927|spread|home|-6.5||",
+      "gameId": "nba:401909927",
+      "start": "2026-11-05T01:00Z",
+      "match": "Grizzlies – Pacers",
+      "market": "spread",
+      "side": "home",
+      "line": -6.5,
+      "label": "Grizzlies -6.5",
+      "odd": 1.85,
+      "book": "draftkings",
+      "pFinal": 0.568,
+      "safety": 0.51,
+      "tier": "C",
+      "createdAt": "2026-11-04T10:43:52.200Z",
+      "result": "L",
+      "score": "103-107",
+      "settledAt": "2026-11-05T03:34:39.232Z",
+      "closeOdd": 1.97,
+      "pClose": 0.4954,
+      "clv": -0.0835
+    },
+    {
+      "id": "nba:401909925|spread|home|4.5||",
+      "gameId": "nba:401909925",
+      "start": "2026-11-05T00:30Z",
+      "match": "Nets – Hornets",
+      "market": "spread",
+      "side": "home",
+      "line": 4.5,
+      "label": "Nets +4.5",
+      "odd": 1.88,
+      "book": "draftkings",
+      "pFinal": 0.551,
+      "safety": 0.453,
+      "tier": "C",
+      "createdAt": "2026-11-04T21:56:43.870Z",
+      "result": "W",
+      "score": "114-104",
+      "settledAt": "2026-11-05T03:34:39.232Z"
+    },
     {
       "id": "nba:401909922|ml|home|||",
       "gameId": "nba:401909922",
@@ -16170,7 +16188,8 @@
       "settledAt": "2026-10-23T12:34:36.074Z"
     }
   ],
-  "comboPending": [
+  "comboPending": [],
+  "comboRecord": [
     {
       "type": "jugadores",
       "legs": [
@@ -16213,10 +16232,14 @@
       "prob": 0.348,
       "ev": 0.03,
       "start": "2026-11-05T01:00Z",
-      "createdAt": "2026-11-03T22:01:01.123Z"
-    }
-  ],
-  "comboRecord": [
+      "createdAt": "2026-11-03T22:01:01.123Z",
+      "result": "L",
+      "legStates": [
+        "L",
+        null
+      ],
+      "settledAt": "2026-11-05T03:34:39.232Z"
+    },
     {
       "type": "segura",
       "legs": [
