@@ -18,23 +18,6 @@
       "createdAt": "2026-11-04T08:18:45.538Z"
     },
     {
-      "id": "el:E2026_94|ml|home|||",
-      "gameId": "el:E2026_94",
-      "start": "2026-11-05T19:00:00.000Z",
-      "round": 10,
-      "match": "LDLC ASVEL – Bayern Munich",
-      "market": "ml",
-      "side": "home",
-      "line": null,
-      "label": "Gana LDLC ASVEL",
-      "odd": 1.8,
-      "book": "williamhill",
-      "pFinal": 0.566,
-      "safety": 0.506,
-      "tier": "C",
-      "createdAt": "2026-11-04T08:18:45.538Z"
-    },
-    {
       "id": "el:E2026_96|prop|over|9.5|011217|pts",
       "gameId": "el:E2026_96",
       "start": "2026-11-05T19:30:00.000Z",
@@ -51,25 +34,6 @@
       "tier": "C",
       "stat": "pts",
       "playerId": "011217",
-      "createdAt": "2026-11-05T11:04:51.597Z"
-    },
-    {
-      "id": "el:E2026_94|prop|over|9.5|015166|pts",
-      "gameId": "el:E2026_94",
-      "start": "2026-11-05T19:00:00.000Z",
-      "round": 10,
-      "match": "LDLC ASVEL – Bayern Munich",
-      "market": "prop",
-      "side": "over",
-      "line": 9.5,
-      "label": "Jae Crowder más de 9.5 puntos",
-      "odd": 1.7,
-      "book": "unibet (Kambi)",
-      "pFinal": 0.58,
-      "safety": 0.515,
-      "tier": "C",
-      "stat": "pts",
-      "playerId": "015166",
       "createdAt": "2026-11-05T11:04:51.597Z"
     },
     {
@@ -108,6 +72,51 @@
     }
   ],
   "record": [
+    {
+      "id": "el:E2026_94|ml|home|||",
+      "gameId": "el:E2026_94",
+      "start": "2026-11-05T19:00:00.000Z",
+      "round": 10,
+      "match": "LDLC ASVEL – Bayern Munich",
+      "market": "ml",
+      "side": "home",
+      "line": null,
+      "label": "Gana LDLC ASVEL",
+      "odd": 1.8,
+      "book": "williamhill",
+      "pFinal": 0.566,
+      "safety": 0.506,
+      "tier": "C",
+      "createdAt": "2026-11-04T08:18:45.538Z",
+      "result": "L",
+      "score": "95-99",
+      "settledAt": "2026-11-05T21:31:46.310Z",
+      "closeOdd": 1.77,
+      "pClose": 0.5601,
+      "clv": 0.0082
+    },
+    {
+      "id": "el:E2026_94|prop|over|9.5|015166|pts",
+      "gameId": "el:E2026_94",
+      "start": "2026-11-05T19:00:00.000Z",
+      "round": 10,
+      "match": "LDLC ASVEL – Bayern Munich",
+      "market": "prop",
+      "side": "over",
+      "line": 9.5,
+      "label": "Jae Crowder más de 9.5 puntos",
+      "odd": 1.7,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.58,
+      "safety": 0.515,
+      "tier": "C",
+      "stat": "pts",
+      "playerId": "015166",
+      "createdAt": "2026-11-05T11:04:51.597Z",
+      "result": "L",
+      "score": "95-99",
+      "settledAt": "2026-11-05T21:31:46.310Z"
+    },
     {
       "id": "el:E2026_92|prop|over|4.5|014734|pts",
       "gameId": "el:E2026_92",
@@ -1596,7 +1605,8 @@
       "settledAt": "2026-10-21T20:21:24.312Z"
     }
   ],
-  "comboPending": [
+  "comboPending": [],
+  "comboRecord": [
     {
       "type": "segura",
       "legs": [
@@ -1631,10 +1641,14 @@
       "prob": 0.329,
       "ev": 0,
       "start": "2026-11-05T19:00:00.000Z",
-      "createdAt": "2026-11-04T08:18:45.538Z"
-    }
-  ],
-  "comboRecord": [
+      "createdAt": "2026-11-04T08:18:45.538Z",
+      "result": "L",
+      "legStates": [
+        null,
+        "L"
+      ],
+      "settledAt": "2026-11-05T21:31:46.310Z"
+    },
     {
       "type": "valor",
       "legs": [
