@@ -752,8 +752,8 @@
     "start": "2026-11-06T02:00Z",
     "home": "Suns",
     "away": "Magic",
-    "ptsH": 114,
-    "ptsA": 109
+    "ptsH": 116,
+    "ptsA": 108
   },
   "nba:401909937": {
     "start": "2026-11-06T03:00Z",
@@ -766,15 +766,15 @@
     "start": "2026-11-07T00:00Z",
     "home": "Hawks",
     "away": "Wizards",
-    "ptsH": 109,
-    "ptsA": 107
+    "ptsH": 115,
+    "ptsA": 105
   },
   "nba:401909288": {
     "start": "2026-11-07T00:00Z",
     "home": "Hornets",
     "away": "Celtics",
-    "ptsH": 104,
-    "ptsA": 104
+    "ptsH": 102,
+    "ptsA": 110
   },
   "nba:401909289": {
     "start": "2026-11-07T00:30Z",
@@ -787,7 +787,7 @@
     "start": "2026-11-07T01:00Z",
     "home": "Mavericks",
     "away": "Jazz",
-    "ptsH": 114,
+    "ptsH": 115,
     "ptsA": 108
   },
   "nba:401909291": {
@@ -808,7 +808,21 @@
     "start": "2026-11-07T01:00Z",
     "home": "Pelicans",
     "away": "Timberwolves",
-    "ptsH": 114,
-    "ptsA": 113
+    "ptsH": 116,
+    "ptsA": 114
+  },
+  "nba:401909294": {
+    "start": "2026-11-07T03:00Z",
+    "home": "Lakers",
+    "away": "Trail Blazers",
+    "ptsH": 116,
+    "ptsA": 116
+  },
+  "nba:401909295": {
+    "start": "2026-11-07T03:00Z",
+    "home": "Kings",
+    "away": "Spurs",
+    "ptsH": 109,
+    "ptsA": 120
   }
 }

@@ -123,6 +123,24 @@
       "stat": "pr",
       "playerId": "4432811",
       "createdAt": "2026-11-05T13:07:15.527Z"
+    },
+    {
+      "id": "nba:401909295|prop|under|3.5|4395723|tpm",
+      "gameId": "nba:401909295",
+      "start": "2026-11-07T03:00Z",
+      "match": "Kings – Spurs",
+      "market": "prop",
+      "side": "under",
+      "line": 3.5,
+      "label": "Keldon Johnson menos de 3.5 triples",
+      "odd": 1.57,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.669,
+      "safety": 0.527,
+      "tier": "C",
+      "stat": "tpm",
+      "playerId": "4395723",
+      "createdAt": "2026-11-05T15:09:54.151Z"
     }
   ],
   "record": [
