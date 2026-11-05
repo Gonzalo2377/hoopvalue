@@ -126,6 +126,23 @@
       "safety": 0.447,
       "tier": "C",
       "createdAt": "2026-11-05T11:04:51.597Z"
+    },
+    {
+      "id": "el:E2026_98|ml|away|||",
+      "gameId": "el:E2026_98",
+      "start": "2026-11-06T19:30:00.000Z",
+      "round": 10,
+      "match": "Virtus Bologna – Dubai",
+      "market": "ml",
+      "side": "away",
+      "line": null,
+      "label": "Gana Dubai",
+      "odd": 1.7,
+      "book": "onexbet",
+      "pFinal": 0.597,
+      "safety": 0.589,
+      "tier": "C",
+      "createdAt": "2026-11-05T16:11:18.513Z"
     }
   ],
   "record": [
