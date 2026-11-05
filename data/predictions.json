@@ -250,5 +250,12 @@
     "away": "Valencia",
     "ptsH": 89,
     "ptsA": 91
+  },
+  "el:E2026_97": {
+    "start": "2026-11-06T17:00:00.000Z",
+    "home": "Besiktas",
+    "away": "Zalgiris",
+    "ptsH": 86,
+    "ptsA": 89
   }
 }
