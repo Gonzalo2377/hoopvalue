@@ -33,6 +33,24 @@
       "safety": 0.49,
       "tier": "C",
       "createdAt": "2026-11-05T05:36:39.419Z"
+    },
+    {
+      "id": "nba:401909937|prop|under|10.5|4066261|reb",
+      "gameId": "nba:401909937",
+      "start": "2026-11-06T03:00Z",
+      "match": "Warriors – Heat",
+      "market": "prop",
+      "side": "under",
+      "line": 10.5,
+      "label": "Bam Adebayo menos de 10.5 rebotes",
+      "odd": 1.7,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.585,
+      "safety": 0.543,
+      "tier": "C",
+      "stat": "reb",
+      "playerId": "4066261",
+      "createdAt": "2026-11-05T12:26:28.859Z"
     }
   ],
   "record": [
