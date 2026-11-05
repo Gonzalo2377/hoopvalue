@@ -141,6 +141,22 @@
       "stat": "tpm",
       "playerId": "4395723",
       "createdAt": "2026-11-05T15:09:54.151Z"
+    },
+    {
+      "id": "nba:401909937|ml|home|||",
+      "gameId": "nba:401909937",
+      "start": "2026-11-06T03:00Z",
+      "match": "Warriors – Heat",
+      "market": "ml",
+      "side": "home",
+      "line": null,
+      "label": "Gana Warriors",
+      "odd": 1.58,
+      "book": "draftkings",
+      "pFinal": 0.63,
+      "safety": 0.65,
+      "tier": "B",
+      "createdAt": "2026-11-05T21:11:27.451Z"
     }
   ],
   "record": [
