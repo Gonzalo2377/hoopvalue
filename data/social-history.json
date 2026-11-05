@@ -6520,8 +6520,8 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
             "pred": [
-              112,
-              120
+              109,
+              121
             ]
           },
           {
@@ -6576,8 +6576,8 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
             "pred": [
-              117,
-              107
+              114,
+              108
             ]
           },
           {
@@ -6595,7 +6595,7 @@
             ]
           }
         ],
-        "text": "🔮 EuroPicks Score Predictions · NBA · 05/11\n\nHOU 116-103 MIN\nDEN 114-116 TOR\nPHX 112-120 POR\nSA 117-108 DAL\nSAC 113-122 LAL\nLAC 118-117 MIA\nPHX 117-107 ORL\nGS 122-117 MIA\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
+        "text": "🔮 EuroPicks Score Predictions · NBA · 05/11\n\nHOU 116-103 MIN\nDEN 114-116 TOR\nPHX 109-121 POR\nSA 117-108 DAL\nSAC 113-122 LAL\nLAC 118-117 MIA\nPHX 114-108 ORL\nGS 122-117 MIA\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
       },
       "preds-euroleague": {
         "id": "preds-euroleague",
@@ -6931,32 +6931,6 @@
             "pFinal": 0.606
           },
           {
-            "id": "nba:401909932|ml|away|||",
-            "league": "nba",
-            "label": "Gana Trail Blazers",
-            "list": "Gana Trail Blazers",
-            "odd": 1.7,
-            "start": "2026-11-05T02:00Z",
-            "gameId": "nba:401909932",
-            "market": "ml",
-            "side": "away",
-            "line": null,
-            "match": "Suns – Trail Blazers",
-            "pFinal": 0.589
-          }
-        ],
-        "text": "🏀 NBA Picks Day · 05/11\n\n1.- D. Sabonis +24.5 P+R @1.56\n2.- D. Harper +19.5 P+A @1.58\n3.- A. Thompson +19.5 PRA @1.62\n4.- Gana Trail Blazers @1.70\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-2": {
-        "id": "nba-day-2",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 2/2 · picks 5-8",
-        "postAt": "2026-11-05T17:45:00.000Z",
-        "image": true,
-        "picks": [
-          {
             "id": "nba:401909932|prop|over|2.5|4066383|reb",
             "league": "nba",
             "label": "M. Bridges +2.5 rebotes",
@@ -6971,6 +6945,32 @@
             "playerId": "4066383",
             "match": "Suns – Trail Blazers",
             "pFinal": 0.672
+          }
+        ],
+        "text": "🏀 NBA Picks Day · 05/11\n\n1.- D. Sabonis +24.5 P+R @1.56\n2.- D. Harper +19.5 P+A @1.58\n3.- A. Thompson +19.5 PRA @1.62\n4.- M. Bridges +2.5 Reb @1.55\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-2": {
+        "id": "nba-day-2",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 2/2 · picks 5-8",
+        "postAt": "2026-11-05T17:45:00.000Z",
+        "image": true,
+        "picks": [
+          {
+            "id": "nba:401909932|ml|away|||",
+            "league": "nba",
+            "label": "Gana Trail Blazers",
+            "list": "Gana Trail Blazers",
+            "odd": 1.7,
+            "start": "2026-11-05T02:00Z",
+            "gameId": "nba:401909932",
+            "market": "ml",
+            "side": "away",
+            "line": null,
+            "match": "Suns – Trail Blazers",
+            "pFinal": 0.596
           },
           {
             "id": "nba:401909936|prop|under|3.5|5239561|reb",
@@ -7021,7 +7021,7 @@
             "pFinal": 0.569
           }
         ],
-        "text": "🧵 NBA Picks Day · 05/11 (sigue)\n\n5.- M. Bridges +2.5 Reb @1.55\n6.- J. Richardson −3.5 Reb @1.75\n7.- K. Anderson −13.5 P+R @1.74\n8.- D. Mitchell −27.5 P+A @1.84\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 05/11 (sigue)\n\n5.- Gana Trail Blazers @1.70\n6.- J. Richardson −3.5 Reb @1.75\n7.- K. Anderson −13.5 P+R @1.74\n8.- D. Mitchell −27.5 P+A @1.84\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
