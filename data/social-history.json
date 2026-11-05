@@ -6691,7 +6691,7 @@
         "league": "nba",
         "title": "NBA · resultados de ayer (04/11)",
         "postAt": "2026-11-05T08:40:00.000Z",
-        "text": "📋 NBA · resultados de ayer (04/11)\n\n✅❌❌✅⏳⏳⏳✅⏳⏳✅⏳❌\n👇 Cada pick en la imagen\n\nAyer: 4-3 (-0.56 u) · Total NBA: 67-42 (-12.96 u)\n#NBA · +18 · Juega con responsabilidad",
+        "text": "📋 NBA · resultados de ayer (04/11)\n\n✅❌❌✅⏳✅⏳✅❌⏳✅⏳❌\n👇 Cada pick en la imagen\n\nAyer: 5-4 (-0.94 u) · Total NBA: 68-43 (-13.34 u)\n#NBA · +18 · Juega con responsabilidad",
         "image": true,
         "pending": true,
         "rows": [
@@ -6729,7 +6729,7 @@
             "league": "nba",
             "label": "A. Thompson +19.5 pts+reb+ast",
             "odd": 1.62,
-            "result": null
+            "result": "W"
           },
           {
             "league": "nba",
@@ -6747,7 +6747,7 @@
             "league": "nba",
             "label": "D. Peterson +14.5 pts+ast",
             "odd": 1.57,
-            "result": null
+            "result": "L"
           },
           {
             "league": "nba",
@@ -6769,23 +6769,23 @@
           },
           {
             "league": "nba",
-            "label": "Combinada: D. Peterson +14.5 P+A + Gana Pistons ✗",
+            "label": "Combinada: D. Peterson +14.5 P+A ✗ + Gana Pistons ✗",
             "odd": 2.86,
             "result": "L"
           }
         ],
         "balance": {
           "day": [
-            4,
-            3
+            5,
+            4
           ],
           "total": [
-            67,
-            42
+            68,
+            43
           ],
           "units": {
-            "day": -0.56,
-            "total": -12.96
+            "day": -0.94,
+            "total": -13.34
           }
         }
       },
@@ -6793,10 +6793,29 @@
         "id": "pred-nba",
         "kind": "pred",
         "league": "nba",
-        "title": "Predicción casi clavada · NBA (1)",
+        "title": "Predicción casi clavada · NBA (2)",
         "postAt": "2026-11-05T09:10:00.000Z",
         "image": true,
         "games": [
+          {
+            "id": "nba:401909928",
+            "start": "2026-11-05T01:00Z",
+            "home": "Pelicans",
+            "away": "Jazz",
+            "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/no.png",
+            "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
+            "pred": [
+              118,
+              114
+            ],
+            "real": [
+              120,
+              113
+            ],
+            "how": "close",
+            "team": null,
+            "off": 3
+          },
           {
             "id": "nba:401909925",
             "start": "2026-11-05T00:30Z",
@@ -6817,7 +6836,7 @@
             "off": 6
           }
         ],
-        "text": "🔮 EuroPicks Prediction · NBA (04/11)\n\n🎯 Nets 114-104 Hornets (we said 108-104, Hornets exact)\n\nCalled it before tip-off 👇\n#NBA · +18",
+        "text": "🔮 EuroPicks Prediction · NBA (04/11)\n\n🔥 Pelicans 120-113 Jazz (we said 118-114)\n🎯 Nets 114-104 Hornets (we said 108-104, Hornets exact)\n\nCalled it before tip-off 👇\n#NBA · +18",
         "quote": {
           "date": "2026-11-04",
           "id": "preds-nba"
