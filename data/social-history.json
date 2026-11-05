@@ -6789,34 +6789,6 @@
           }
         }
       },
-      "nba-day": {
-        "id": "nba-day",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": false,
-        "title": "NBA Picks Day · 1 pick",
-        "postAt": "2026-11-05T17:45:00.000Z",
-        "image": true,
-        "picks": [
-          {
-            "id": "nba:401909936|prop|under|3.5|5239561|reb",
-            "league": "nba",
-            "label": "J. Richardson −3.5 rebotes",
-            "list": "J. Richardson −3.5 Reb",
-            "odd": 1.75,
-            "start": "2026-11-06T02:00Z",
-            "gameId": "nba:401909936",
-            "market": "prop",
-            "side": "under",
-            "line": 3.5,
-            "stat": "reb",
-            "playerId": "5239561",
-            "match": "Suns – Magic",
-            "pFinal": 0.593
-          }
-        ],
-        "text": "🏀 NBA Picks Day · 05/11\n\n1.- J. Richardson −3.5 Reb @1.75\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
-      },
       "pred-nba": {
         "id": "pred-nba",
         "kind": "pred",
@@ -6850,6 +6822,34 @@
           "date": "2026-11-04",
           "id": "preds-nba"
         }
+      },
+      "nba-day": {
+        "id": "nba-day",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": false,
+        "title": "NBA Picks Day · 1 pick",
+        "postAt": "2026-11-05T17:45:00.000Z",
+        "image": true,
+        "picks": [
+          {
+            "id": "nba:401909936|prop|under|3.5|5239561|reb",
+            "league": "nba",
+            "label": "J. Richardson −3.5 rebotes",
+            "list": "J. Richardson −3.5 Reb",
+            "odd": 1.75,
+            "start": "2026-11-06T02:00Z",
+            "gameId": "nba:401909936",
+            "market": "prop",
+            "side": "under",
+            "line": 3.5,
+            "stat": "reb",
+            "playerId": "5239561",
+            "match": "Suns – Magic",
+            "pFinal": 0.593
+          }
+        ],
+        "text": "🏀 NBA Picks Day · 05/11\n\n1.- J. Richardson −3.5 Reb @1.75\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
