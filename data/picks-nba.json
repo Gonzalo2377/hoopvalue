@@ -19,24 +19,6 @@
       "createdAt": "2026-11-03T22:01:01.123Z"
     },
     {
-      "id": "nba:401909934|prop|over|24.5|3155942|pr",
-      "gameId": "nba:401909934",
-      "start": "2026-11-05T03:00Z",
-      "match": "Kings – Lakers",
-      "market": "prop",
-      "side": "over",
-      "line": 24.5,
-      "label": "Domantas Sabonis más de 24.5 pts+reb",
-      "odd": 1.56,
-      "book": "unibet (Kambi)",
-      "pFinal": 0.627,
-      "safety": 0.564,
-      "tier": "C",
-      "stat": "pr",
-      "playerId": "3155942",
-      "createdAt": "2026-11-04T15:29:48.929Z"
-    },
-    {
       "id": "nba:401909936|prop|under|3.5|5239561|reb",
       "gameId": "nba:401909936",
       "start": "2026-11-06T02:00Z",
@@ -72,6 +54,27 @@
     }
   ],
   "record": [
+    {
+      "id": "nba:401909934|prop|over|24.5|3155942|pr",
+      "gameId": "nba:401909934",
+      "start": "2026-11-05T03:00Z",
+      "match": "Kings – Lakers",
+      "market": "prop",
+      "side": "over",
+      "line": 24.5,
+      "label": "Domantas Sabonis más de 24.5 pts+reb",
+      "odd": 1.56,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.627,
+      "safety": 0.564,
+      "tier": "C",
+      "stat": "pr",
+      "playerId": "3155942",
+      "createdAt": "2026-11-04T15:29:48.929Z",
+      "result": "W",
+      "score": "103-116",
+      "settledAt": "2026-11-05T05:57:01.501Z"
+    },
     {
       "id": "nba:401909933|prop|over|19.5|5037871|pa",
       "gameId": "nba:401909933",

@@ -6691,9 +6691,9 @@
         "league": "nba",
         "title": "NBA · resultados de ayer (04/11)",
         "postAt": "2026-11-05T08:40:00.000Z",
-        "text": "📋 NBA · resultados de ayer (04/11)\n\n✅❌❌✅✅✅⏳✅❌✅✅✅❌\n👇 Cada pick en la imagen\n\nAyer: 8-4 (+0.87 u) · Total NBA: 71-43 (-11.53 u)\n#NBA · +18 · Juega con responsabilidad",
+        "text": "📋 NBA · resultados de ayer (04/11)\n\n✅❌❌✅✅✅✅✅❌✅✅✅❌\n👇 Cada pick en la imagen\n\nAyer: 9-4 (+1.44 u) · Total NBA: 72-43 (-10.96 u)\n#NBA · +18 · Juega con responsabilidad",
         "image": true,
-        "pending": true,
+        "pending": false,
         "rows": [
           {
             "league": "nba",
@@ -6735,7 +6735,7 @@
             "league": "nba",
             "label": "D. Sabonis +24.5 pts+reb",
             "odd": 1.57,
-            "result": null
+            "result": "W"
           },
           {
             "league": "nba",
@@ -6776,16 +6776,16 @@
         ],
         "balance": {
           "day": [
-            8,
+            9,
             4
           ],
           "total": [
-            71,
+            72,
             43
           ],
           "units": {
-            "day": 0.87,
-            "total": -11.53
+            "day": 1.44,
+            "total": -10.96
           }
         }
       },
@@ -6856,14 +6856,14 @@
             "league": "nba",
             "label": "Gana Suns",
             "list": "Gana Suns",
-            "odd": 1.85,
+            "odd": 1.83,
             "start": "2026-11-06T02:00Z",
             "gameId": "nba:401909936",
             "market": "ml",
             "side": "home",
             "line": null,
             "match": "Suns – Magic",
-            "pFinal": 0.554
+            "pFinal": 0.556
           },
           {
             "id": "nba:401909936|prop|under|3.5|5239561|reb",
@@ -6882,7 +6882,7 @@
             "pFinal": 0.593
           }
         ],
-        "text": "🏀 NBA Picks Day · 05/11\n\n1.- Gana Suns @1.85\n2.- J. Richardson −3.5 Reb @1.75\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 05/11\n\n1.- Gana Suns @1.83\n2.- J. Richardson −3.5 Reb @1.75\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
