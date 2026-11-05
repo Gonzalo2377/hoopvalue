@@ -775,5 +775,12 @@
     "away": "Celtics",
     "ptsH": 104,
     "ptsA": 104
+  },
+  "nba:401909289": {
+    "start": "2026-11-07T00:30Z",
+    "home": "Cavaliers",
+    "away": "76ers",
+    "ptsH": 113,
+    "ptsA": 116
   }
 }

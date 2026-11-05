@@ -51,6 +51,42 @@
       "stat": "reb",
       "playerId": "4066261",
       "createdAt": "2026-11-05T12:26:28.859Z"
+    },
+    {
+      "id": "nba:401909289|prop|over|11.5|3908809|pts",
+      "gameId": "nba:401909289",
+      "start": "2026-11-07T00:30Z",
+      "match": "Cavaliers – 76ers",
+      "market": "prop",
+      "side": "over",
+      "line": 11.5,
+      "label": "Donovan Mitchell más de 11.5 puntos",
+      "odd": 1.65,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.643,
+      "safety": 0.484,
+      "tier": "C",
+      "stat": "pts",
+      "playerId": "3908809",
+      "createdAt": "2026-11-05T12:46:50.809Z"
+    },
+    {
+      "id": "nba:401909287|prop|over|1.5|4397183|tpm",
+      "gameId": "nba:401909287",
+      "start": "2026-11-07T00:00Z",
+      "match": "Hawks – Wizards",
+      "market": "prop",
+      "side": "over",
+      "line": 1.5,
+      "label": "Aaron Wiggins más de 1.5 triples",
+      "odd": 1.87,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.552,
+      "safety": 0.455,
+      "tier": "C",
+      "stat": "tpm",
+      "playerId": "4397183",
+      "createdAt": "2026-11-05T12:46:50.809Z"
     }
   ],
   "record": [
@@ -16249,7 +16285,52 @@
       "settledAt": "2026-10-23T12:34:36.074Z"
     }
   ],
-  "comboPending": [],
+  "comboPending": [
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "nba:401909289|prop|over|11.5|3908809|pts",
+          "gameId": "nba:401909289",
+          "start": "2026-11-07T00:30Z",
+          "match": "Cavaliers – 76ers",
+          "market": "prop",
+          "side": "over",
+          "line": 11.5,
+          "stat": "pts",
+          "playerId": "3908809",
+          "player": "Donovan Mitchell",
+          "team": "CLE",
+          "label": "Donovan Mitchell más de 11.5 puntos",
+          "odd": 1.65,
+          "pFinal": 0.643,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909287|prop|over|1.5|4397183|tpm",
+          "gameId": "nba:401909287",
+          "start": "2026-11-07T00:00Z",
+          "match": "Hawks – Wizards",
+          "market": "prop",
+          "side": "over",
+          "line": 1.5,
+          "stat": "tpm",
+          "playerId": "4397183",
+          "player": "Aaron Wiggins",
+          "team": "ATL",
+          "label": "Aaron Wiggins más de 1.5 triples",
+          "odd": 1.87,
+          "pFinal": 0.552,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 3.09,
+      "prob": 0.355,
+      "ev": 0.095,
+      "start": "2026-11-07T00:00Z",
+      "createdAt": "2026-11-05T12:46:50.809Z"
+    }
+  ],
   "comboRecord": [
     {
       "type": "jugadores",
