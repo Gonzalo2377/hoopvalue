@@ -1,40 +1,6 @@
 {
   "pending": [
     {
-      "id": "nba:401909922|ml|home|||",
-      "gameId": "nba:401909922",
-      "start": "2026-11-05T00:00Z",
-      "match": "Pistons – 76ers",
-      "market": "ml",
-      "side": "home",
-      "line": null,
-      "label": "Gana Pistons",
-      "odd": 1.8,
-      "book": "draftkings",
-      "pFinal": 0.555,
-      "safety": 0.515,
-      "tier": "C",
-      "createdAt": "2026-11-03T13:03:26.850Z"
-    },
-    {
-      "id": "nba:401909922|prop|over|14.5|3157465|pr",
-      "gameId": "nba:401909922",
-      "start": "2026-11-05T00:00Z",
-      "match": "Pistons – 76ers",
-      "market": "prop",
-      "side": "over",
-      "line": 14.5,
-      "label": "Duncan Robinson más de 14.5 pts+reb",
-      "odd": 1.55,
-      "book": "unibet (Kambi)",
-      "pFinal": 0.638,
-      "safety": 0.563,
-      "tier": "C",
-      "stat": "pr",
-      "playerId": "3157465",
-      "createdAt": "2026-11-03T18:14:20.124Z"
-    },
-    {
       "id": "nba:401909928|prop|over|14.5|5041955|pa",
       "gameId": "nba:401909928",
       "start": "2026-11-05T01:00Z",
@@ -177,24 +143,6 @@
       "createdAt": "2026-11-04T07:17:21.627Z"
     },
     {
-      "id": "nba:401909926|prop|under|7.5|3934672|ast",
-      "gameId": "nba:401909926",
-      "start": "2026-11-05T00:30Z",
-      "match": "Knicks – Bulls",
-      "market": "prop",
-      "side": "under",
-      "line": 7.5,
-      "label": "Jalen Brunson menos de 7.5 asistencias",
-      "odd": 1.85,
-      "book": "unibet (Kambi)",
-      "pFinal": 0.571,
-      "safety": 0.455,
-      "tier": "C",
-      "stat": "ast",
-      "playerId": "3934672",
-      "createdAt": "2026-11-04T07:17:21.627Z"
-    },
-    {
       "id": "nba:401909925|prop|over|1.5|4433249|ast",
       "gameId": "nba:401909925",
       "start": "2026-11-05T00:30Z",
@@ -300,6 +248,70 @@
     }
   ],
   "record": [
+    {
+      "id": "nba:401909922|ml|home|||",
+      "gameId": "nba:401909922",
+      "start": "2026-11-05T00:00Z",
+      "match": "Pistons – 76ers",
+      "market": "ml",
+      "side": "home",
+      "line": null,
+      "label": "Gana Pistons",
+      "odd": 1.8,
+      "book": "draftkings",
+      "pFinal": 0.555,
+      "safety": 0.515,
+      "tier": "C",
+      "createdAt": "2026-11-03T13:03:26.850Z",
+      "result": "L",
+      "score": "106-112",
+      "settledAt": "2026-11-05T03:14:20.780Z",
+      "closeOdd": 1.7352941176470589,
+      "pClose": 0.5532,
+      "clv": -0.0042
+    },
+    {
+      "id": "nba:401909922|prop|over|14.5|3157465|pr",
+      "gameId": "nba:401909922",
+      "start": "2026-11-05T00:00Z",
+      "match": "Pistons – 76ers",
+      "market": "prop",
+      "side": "over",
+      "line": 14.5,
+      "label": "Duncan Robinson más de 14.5 pts+reb",
+      "odd": 1.55,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.638,
+      "safety": 0.563,
+      "tier": "C",
+      "stat": "pr",
+      "playerId": "3157465",
+      "createdAt": "2026-11-03T18:14:20.124Z",
+      "result": "W",
+      "score": "106-112",
+      "settledAt": "2026-11-05T03:14:20.780Z"
+    },
+    {
+      "id": "nba:401909926|prop|under|7.5|3934672|ast",
+      "gameId": "nba:401909926",
+      "start": "2026-11-05T00:30Z",
+      "match": "Knicks – Bulls",
+      "market": "prop",
+      "side": "under",
+      "line": 7.5,
+      "label": "Jalen Brunson menos de 7.5 asistencias",
+      "odd": 1.85,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.571,
+      "safety": 0.455,
+      "tier": "C",
+      "stat": "ast",
+      "playerId": "3934672",
+      "createdAt": "2026-11-04T07:17:21.627Z",
+      "result": "W",
+      "score": "135-105",
+      "settledAt": "2026-11-05T03:14:20.780Z"
+    },
     {
       "id": "nba:401909924|prop|over|1.5|4432848|ast",
       "gameId": "nba:401909924",
@@ -16160,6 +16172,52 @@
   ],
   "comboPending": [
     {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "nba:401909929|prop|under|3.5|4222252|ast",
+          "gameId": "nba:401909929",
+          "start": "2026-11-05T01:00Z",
+          "match": "Thunder – Cavaliers",
+          "market": "prop",
+          "side": "under",
+          "line": 3.5,
+          "stat": "ast",
+          "playerId": "4222252",
+          "player": "Isaiah Hartenstein",
+          "team": "OKC",
+          "label": "Isaiah Hartenstein menos de 3.5 asistencias",
+          "odd": 1.61,
+          "pFinal": 0.611,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909935|prop|under|27.5|4278053|pa",
+          "gameId": "nba:401909935",
+          "start": "2026-11-05T03:30Z",
+          "match": "Clippers – Heat",
+          "market": "prop",
+          "side": "under",
+          "line": 27.5,
+          "stat": "pa",
+          "playerId": "4278053",
+          "player": "Davion Mitchell",
+          "team": "MIA",
+          "label": "Davion Mitchell menos de 27.5 pts+ast",
+          "odd": 1.84,
+          "pFinal": 0.569,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.96,
+      "prob": 0.348,
+      "ev": 0.03,
+      "start": "2026-11-05T01:00Z",
+      "createdAt": "2026-11-03T22:01:01.123Z"
+    }
+  ],
+  "comboRecord": [
+    {
       "type": "segura",
       "legs": [
         {
@@ -16197,7 +16255,13 @@
       "prob": 0.351,
       "ev": 0.003,
       "start": "2026-11-05T00:00Z",
-      "createdAt": "2026-11-03T18:35:02.598Z"
+      "createdAt": "2026-11-03T18:35:02.598Z",
+      "result": "L",
+      "legStates": [
+        null,
+        "L"
+      ],
+      "settledAt": "2026-11-05T03:14:20.780Z"
     },
     {
       "type": "valor",
@@ -16250,54 +16314,15 @@
       "prob": 0.214,
       "ev": 0.025,
       "start": "2026-11-05T00:00Z",
-      "createdAt": "2026-11-03T20:59:18.328Z"
-    },
-    {
-      "type": "jugadores",
-      "legs": [
-        {
-          "id": "nba:401909929|prop|under|3.5|4222252|ast",
-          "gameId": "nba:401909929",
-          "start": "2026-11-05T01:00Z",
-          "match": "Thunder – Cavaliers",
-          "market": "prop",
-          "side": "under",
-          "line": 3.5,
-          "stat": "ast",
-          "playerId": "4222252",
-          "player": "Isaiah Hartenstein",
-          "team": "OKC",
-          "label": "Isaiah Hartenstein menos de 3.5 asistencias",
-          "odd": 1.61,
-          "pFinal": 0.611,
-          "book": "unibet (Kambi)"
-        },
-        {
-          "id": "nba:401909935|prop|under|27.5|4278053|pa",
-          "gameId": "nba:401909935",
-          "start": "2026-11-05T03:30Z",
-          "match": "Clippers – Heat",
-          "market": "prop",
-          "side": "under",
-          "line": 27.5,
-          "stat": "pa",
-          "playerId": "4278053",
-          "player": "Davion Mitchell",
-          "team": "MIA",
-          "label": "Davion Mitchell menos de 27.5 pts+ast",
-          "odd": 1.84,
-          "pFinal": 0.569,
-          "book": "unibet (Kambi)"
-        }
+      "createdAt": "2026-11-03T20:59:18.328Z",
+      "result": "L",
+      "legStates": [
+        null,
+        null,
+        "L"
       ],
-      "odd": 2.96,
-      "prob": 0.348,
-      "ev": 0.03,
-      "start": "2026-11-05T01:00Z",
-      "createdAt": "2026-11-03T22:01:01.123Z"
-    }
-  ],
-  "comboRecord": [
+      "settledAt": "2026-11-05T03:14:20.780Z"
+    },
     {
       "type": "segura",
       "legs": [
