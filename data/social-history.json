@@ -7080,14 +7080,14 @@
             "league": "nba",
             "label": "Gana Trail Blazers",
             "list": "Gana Trail Blazers",
-            "odd": 1.68,
+            "odd": 1.7,
             "start": "2026-11-05T02:00Z",
             "gameId": "nba:401909932",
             "market": "ml",
             "side": "away",
             "line": null,
             "match": "Suns – Trail Blazers",
-            "pFinal": 0.591
+            "pFinal": 0.589
           },
           {
             "id": "nba:401909924|prop|over|1.5|4432848|ast",
@@ -7106,7 +7106,7 @@
             "pFinal": 0.592
           }
         ],
-        "text": "🧵 NBA Picks Day · 05/11 (sigue)\n\n5.- A. Thompson +19.5 PRA @1.62\n6.- D. Peterson +14.5 P+A @1.57\n7.- Gana Trail Blazers @1.68\n8.- J. Jaquez Jr. +1.5 Ast @1.71\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 05/11 (sigue)\n\n5.- A. Thompson +19.5 PRA @1.62\n6.- D. Peterson +14.5 P+A @1.57\n7.- Gana Trail Blazers @1.70\n8.- J. Jaquez Jr. +1.5 Ast @1.71\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-3": {
         "id": "nba-day-3",
@@ -7152,7 +7152,7 @@
             "league": "nba",
             "label": "J. Richardson −3.5 rebotes",
             "list": "J. Richardson −3.5 Reb",
-            "odd": 1.75,
+            "odd": 1.74,
             "start": "2026-11-06T02:00Z",
             "gameId": "nba:401909936",
             "market": "prop",
@@ -7162,7 +7162,7 @@
             "playerId": "5239561",
             "team": "ORL",
             "match": "Suns – Magic",
-            "pFinal": 0.593
+            "pFinal": 0.594
           },
           {
             "id": "nba:401909924|spread|away|12.5||",
@@ -7179,7 +7179,7 @@
             "pFinal": 0.559
           }
         ],
-        "text": "🧵 NBA Picks Day · 05/11 (sigue)\n\n9.- M. Bridges +2.5 Reb @1.55\n10.- Grizzlies -6.5 @1.85\n11.- J. Richardson −3.5 Reb @1.75\n12.- Bucks +12.5 @1.85\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 05/11 (sigue)\n\n9.- M. Bridges +2.5 Reb @1.55\n10.- Grizzlies -6.5 @1.85\n11.- J. Richardson −3.5 Reb @1.74\n12.- Bucks +12.5 @1.85\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
