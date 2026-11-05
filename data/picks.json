@@ -35,25 +35,6 @@
       "createdAt": "2026-11-04T08:18:45.538Z"
     },
     {
-      "id": "el:E2026_95|prop|over|3.5|012403|reb",
-      "gameId": "el:E2026_95",
-      "start": "2026-11-05T17:15:00.000Z",
-      "round": 10,
-      "match": "Anadolu Efes – Paris",
-      "market": "prop",
-      "side": "over",
-      "line": 3.5,
-      "label": "Mouhamed Faye más de 3.5 rebotes",
-      "odd": 1.57,
-      "book": "unibet (Kambi)",
-      "pFinal": 0.626,
-      "safety": 0.556,
-      "tier": "C",
-      "stat": "reb",
-      "playerId": "012403",
-      "createdAt": "2026-11-04T15:29:44.221Z"
-    },
-    {
       "id": "el:E2026_92|prop|over|4.5|014734|pts",
       "gameId": "el:E2026_92",
       "start": "2026-11-05T18:00:00.000Z",
@@ -146,6 +127,28 @@
     }
   ],
   "record": [
+    {
+      "id": "el:E2026_95|prop|over|3.5|012403|reb",
+      "gameId": "el:E2026_95",
+      "start": "2026-11-05T17:15:00.000Z",
+      "round": 10,
+      "match": "Anadolu Efes – Paris",
+      "market": "prop",
+      "side": "over",
+      "line": 3.5,
+      "label": "Mouhamed Faye más de 3.5 rebotes",
+      "odd": 1.57,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.626,
+      "safety": 0.556,
+      "tier": "C",
+      "stat": "reb",
+      "playerId": "012403",
+      "createdAt": "2026-11-04T15:29:44.221Z",
+      "result": "L",
+      "score": "90-95",
+      "settledAt": "2026-11-05T19:29:08.515Z"
+    },
     {
       "id": "el:E2026_89|prop|over|4.5|013285|pts",
       "gameId": "el:E2026_89",
@@ -1626,7 +1629,9 @@
       "ev": 0,
       "start": "2026-11-05T19:00:00.000Z",
       "createdAt": "2026-11-04T08:18:45.538Z"
-    },
+    }
+  ],
+  "comboRecord": [
     {
       "type": "valor",
       "legs": [
@@ -1682,10 +1687,15 @@
       "prob": 0.233,
       "ev": 0.104,
       "start": "2026-11-05T17:15:00.000Z",
-      "createdAt": "2026-11-04T15:29:44.221Z"
-    }
-  ],
-  "comboRecord": [
+      "createdAt": "2026-11-04T15:29:44.221Z",
+      "result": "L",
+      "legStates": [
+        "L",
+        null,
+        null
+      ],
+      "settledAt": "2026-11-05T19:29:08.515Z"
+    },
     {
       "type": "valor",
       "legs": [
