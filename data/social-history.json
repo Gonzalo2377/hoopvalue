@@ -6492,8 +6492,8 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/orl.png",
             "pred": [
-              115,
-              108
+              114,
+              109
             ]
           },
           {
@@ -6511,7 +6511,7 @@
             ]
           }
         ],
-        "text": "🔮 EuroPicks Score Predictions · NBA · 05/11\n\nSuns 115-108 Magic\nWarriors 122-117 Heat\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
+        "text": "🔮 EuroPicks Score Predictions · NBA · 05/11\n\nSuns 114-109 Magic\nWarriors 122-117 Heat\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
       },
       "preds-euroleague": {
         "id": "preds-euroleague",
@@ -6691,7 +6691,7 @@
         "league": "nba",
         "title": "NBA · resultados de ayer (04/11)",
         "postAt": "2026-11-05T08:40:00.000Z",
-        "text": "📋 NBA · resultados de ayer (04/11)\n\n✅❌❌✅⏳✅⏳✅❌⏳✅⏳❌\n👇 Cada pick en la imagen\n\nAyer: 5-4 (-0.94 u) · Total NBA: 68-43 (-13.34 u)\n#NBA · +18 · Juega con responsabilidad",
+        "text": "📋 NBA · resultados de ayer (04/11)\n\n✅❌❌✅⏳✅⏳✅❌✅✅✅❌\n👇 Cada pick en la imagen\n\nAyer: 7-4 (+0.29 u) · Total NBA: 70-43 (-12.11 u)\n#NBA · +18 · Juega con responsabilidad",
         "image": true,
         "pending": true,
         "rows": [
@@ -6753,7 +6753,7 @@
             "league": "nba",
             "label": "Gana Trail Blazers",
             "odd": 1.68,
-            "result": null
+            "result": "W"
           },
           {
             "league": "nba",
@@ -6765,7 +6765,7 @@
             "league": "nba",
             "label": "M. Bridges +2.5 rebotes",
             "odd": 1.55,
-            "result": null
+            "result": "W"
           },
           {
             "league": "nba",
@@ -6776,16 +6776,16 @@
         ],
         "balance": {
           "day": [
-            5,
+            7,
             4
           ],
           "total": [
-            68,
+            70,
             43
           ],
           "units": {
-            "day": -0.94,
-            "total": -13.34
+            "day": 0.29,
+            "total": -12.11
           }
         }
       },

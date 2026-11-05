@@ -1,22 +1,6 @@
 {
   "pending": [
     {
-      "id": "nba:401909932|ml|away|||",
-      "gameId": "nba:401909932",
-      "start": "2026-11-05T02:00Z",
-      "match": "Suns – Trail Blazers",
-      "market": "ml",
-      "side": "away",
-      "line": null,
-      "label": "Gana Trail Blazers",
-      "odd": 1.68,
-      "book": "unibet",
-      "pFinal": 0.588,
-      "safety": 0.535,
-      "tier": "C",
-      "createdAt": "2026-11-03T20:59:18.328Z"
-    },
-    {
       "id": "nba:401909935|prop|under|27.5|4278053|pa",
       "gameId": "nba:401909935",
       "start": "2026-11-05T03:30Z",
@@ -51,24 +35,6 @@
       "stat": "pa",
       "playerId": "5037871",
       "createdAt": "2026-11-04T06:56:49.744Z"
-    },
-    {
-      "id": "nba:401909932|prop|over|2.5|4066383|reb",
-      "gameId": "nba:401909932",
-      "start": "2026-11-05T02:00Z",
-      "match": "Suns – Trail Blazers",
-      "market": "prop",
-      "side": "over",
-      "line": 2.5,
-      "label": "Miles Bridges más de 2.5 rebotes",
-      "odd": 1.55,
-      "book": "unibet (Kambi)",
-      "pFinal": 0.672,
-      "safety": 0.519,
-      "tier": "C",
-      "stat": "reb",
-      "playerId": "4066383",
-      "createdAt": "2026-11-04T10:43:52.200Z"
     },
     {
       "id": "nba:401909934|prop|over|24.5|3155942|pr",
@@ -108,6 +74,49 @@
     }
   ],
   "record": [
+    {
+      "id": "nba:401909932|ml|away|||",
+      "gameId": "nba:401909932",
+      "start": "2026-11-05T02:00Z",
+      "match": "Suns – Trail Blazers",
+      "market": "ml",
+      "side": "away",
+      "line": null,
+      "label": "Gana Trail Blazers",
+      "odd": 1.68,
+      "book": "unibet",
+      "pFinal": 0.588,
+      "safety": 0.535,
+      "tier": "C",
+      "createdAt": "2026-11-03T20:59:18.328Z",
+      "result": "W",
+      "score": "119-132",
+      "settledAt": "2026-11-05T04:55:58.531Z",
+      "closeOdd": 1.7,
+      "pClose": 0.5636,
+      "clv": -0.0532
+    },
+    {
+      "id": "nba:401909932|prop|over|2.5|4066383|reb",
+      "gameId": "nba:401909932",
+      "start": "2026-11-05T02:00Z",
+      "match": "Suns – Trail Blazers",
+      "market": "prop",
+      "side": "over",
+      "line": 2.5,
+      "label": "Miles Bridges más de 2.5 rebotes",
+      "odd": 1.55,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.672,
+      "safety": 0.519,
+      "tier": "C",
+      "stat": "reb",
+      "playerId": "4066383",
+      "createdAt": "2026-11-04T10:43:52.200Z",
+      "result": "W",
+      "score": "119-132",
+      "settledAt": "2026-11-05T04:55:58.531Z"
+    },
     {
       "id": "nba:401909931|prop|under|13.5|2993874|pr",
       "gameId": "nba:401909931",
