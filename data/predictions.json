@@ -271,5 +271,12 @@
     "away": "Dubai",
     "ptsH": 87,
     "ptsA": 88
+  },
+  "el:E2026_99": {
+    "start": "2026-11-06T19:45:00.000Z",
+    "home": "Partizan",
+    "away": "Maccabi",
+    "ptsH": 86,
+    "ptsA": 80
   }
 }
