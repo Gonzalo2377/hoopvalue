@@ -6478,38 +6478,10 @@
         "id": "preds-nba",
         "kind": "preds",
         "league": "nba",
-        "title": "Predicciones de marcador · NBA (7)",
+        "title": "Predicciones de marcador · NBA (5)",
         "postAt": "2026-11-05T17:30:00.000Z",
         "image": true,
         "games": [
-          {
-            "id": "nba:401909931",
-            "start": "2026-11-05T02:00Z",
-            "home": "Nuggets",
-            "away": "Raptors",
-            "hc": "DEN",
-            "ac": "TOR",
-            "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
-            "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
-            "pred": [
-              114,
-              116
-            ]
-          },
-          {
-            "id": "nba:401909932",
-            "start": "2026-11-05T02:00Z",
-            "home": "Suns",
-            "away": "Trail Blazers",
-            "hc": "PHX",
-            "ac": "POR",
-            "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
-            "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
-            "pred": [
-              109,
-              121
-            ]
-          },
           {
             "id": "nba:401909933",
             "start": "2026-11-05T02:30Z",
@@ -6581,7 +6553,7 @@
             ]
           }
         ],
-        "text": "🔮 EuroPicks Score Predictions · NBA · 05/11\n\nNuggets 114-116 Raptors\nSuns 109-121 Trail Blazers\nSpurs 117-108 Mavericks\nKings 113-122 Lakers\nClippers 118-117 Heat\nSuns 114-108 Magic\nWarriors 122-117 Heat\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
+        "text": "🔮 EuroPicks Score Predictions · NBA · 05/11\n\nSpurs 117-108 Mavericks\nKings 113-122 Lakers\nClippers 118-117 Heat\nSuns 114-108 Magic\nWarriors 122-117 Heat\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
       },
       "preds-euroleague": {
         "id": "preds-euroleague",
@@ -6864,7 +6836,7 @@
         "kind": "nba-day",
         "league": "nba",
         "reply": false,
-        "title": "NBA Picks Day · 7 picks",
+        "title": "NBA Picks Day · 4 picks",
         "postAt": "2026-11-05T17:45:00.000Z",
         "image": true,
         "picks": [
@@ -6901,48 +6873,6 @@
             "pFinal": 0.623
           },
           {
-            "id": "nba:401909932|prop|over|2.5|4066383|reb",
-            "league": "nba",
-            "label": "M. Bridges +2.5 rebotes",
-            "list": "M. Bridges +2.5 Reb",
-            "odd": 1.55,
-            "start": "2026-11-05T02:00Z",
-            "gameId": "nba:401909932",
-            "market": "prop",
-            "side": "over",
-            "line": 2.5,
-            "stat": "reb",
-            "playerId": "4066383",
-            "match": "Suns – Trail Blazers",
-            "pFinal": 0.672
-          },
-          {
-            "id": "nba:401909932|ml|away|||",
-            "league": "nba",
-            "label": "Gana Trail Blazers",
-            "list": "Gana Trail Blazers",
-            "odd": 1.7,
-            "start": "2026-11-05T02:00Z",
-            "gameId": "nba:401909932",
-            "market": "ml",
-            "side": "away",
-            "line": null,
-            "match": "Suns – Trail Blazers",
-            "pFinal": 0.597
-          }
-        ],
-        "text": "🏀 NBA Picks Day · 05/11\n\n1.- D. Sabonis +24.5 P+R @1.56\n2.- D. Harper +19.5 P+A @1.58\n3.- M. Bridges +2.5 Reb @1.55\n4.- Gana Trail Blazers @1.70\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-2": {
-        "id": "nba-day-2",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 2/2 · picks 5-7",
-        "postAt": "2026-11-05T17:45:00.000Z",
-        "image": true,
-        "picks": [
-          {
             "id": "nba:401909936|prop|under|3.5|5239561|reb",
             "league": "nba",
             "label": "J. Richardson −3.5 rebotes",
@@ -6957,22 +6887,6 @@
             "playerId": "5239561",
             "match": "Suns – Magic",
             "pFinal": 0.593
-          },
-          {
-            "id": "nba:401909931|prop|under|13.5|2993874|pr",
-            "league": "nba",
-            "label": "K. Anderson −13.5 pts+reb",
-            "list": "K. Anderson −13.5 P+R",
-            "odd": 1.74,
-            "start": "2026-11-05T02:00Z",
-            "gameId": "nba:401909931",
-            "market": "prop",
-            "side": "under",
-            "line": 13.5,
-            "stat": "pr",
-            "playerId": "2993874",
-            "match": "Nuggets – Raptors",
-            "pFinal": 0.622
           },
           {
             "id": "nba:401909935|prop|under|27.5|4278053|pa",
@@ -6991,7 +6905,7 @@
             "pFinal": 0.569
           }
         ],
-        "text": "🧵 NBA Picks Day · 05/11 (sigue)\n\n5.- J. Richardson −3.5 Reb @1.75\n6.- K. Anderson −13.5 P+R @1.74\n7.- D. Mitchell −27.5 P+A @1.84\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 05/11\n\n1.- D. Sabonis +24.5 P+R @1.56\n2.- D. Harper +19.5 P+A @1.58\n3.- J. Richardson −3.5 Reb @1.75\n4.- D. Mitchell −27.5 P+A @1.84\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
