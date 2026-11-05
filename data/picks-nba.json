@@ -87,24 +87,6 @@
       "createdAt": "2026-11-03T21:19:49.092Z"
     },
     {
-      "id": "nba:401909924|prop|over|1.5|4432848|ast",
-      "gameId": "nba:401909924",
-      "start": "2026-11-05T00:30Z",
-      "match": "Celtics – Bucks",
-      "market": "prop",
-      "side": "over",
-      "line": 1.5,
-      "label": "Jaime Jaquez Jr. más de 1.5 asistencias",
-      "odd": 1.71,
-      "book": "unibet (Kambi)",
-      "pFinal": 0.592,
-      "safety": 0.519,
-      "tier": "C",
-      "stat": "ast",
-      "playerId": "4432848",
-      "createdAt": "2026-11-03T21:40:23.893Z"
-    },
-    {
       "id": "nba:401909929|prop|under|3.5|4222252|ast",
       "gameId": "nba:401909929",
       "start": "2026-11-05T01:00Z",
@@ -315,6 +297,29 @@
       "stat": "reb",
       "playerId": "5239561",
       "createdAt": "2026-11-04T23:18:55.142Z"
+    }
+  ],
+  "record": [
+    {
+      "id": "nba:401909924|prop|over|1.5|4432848|ast",
+      "gameId": "nba:401909924",
+      "start": "2026-11-05T00:30Z",
+      "match": "Celtics – Bucks",
+      "market": "prop",
+      "side": "over",
+      "line": 1.5,
+      "label": "Jaime Jaquez Jr. más de 1.5 asistencias",
+      "odd": 1.71,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.592,
+      "safety": 0.519,
+      "tier": "C",
+      "stat": "ast",
+      "playerId": "4432848",
+      "createdAt": "2026-11-03T21:40:23.893Z",
+      "result": "W",
+      "score": "109-102",
+      "settledAt": "2026-11-05T02:53:59.149Z"
     },
     {
       "id": "nba:401909924|spread|away|12.5||",
@@ -330,10 +335,14 @@
       "pFinal": 0.559,
       "safety": 0.466,
       "tier": "C",
-      "createdAt": "2026-11-04T23:18:55.142Z"
-    }
-  ],
-  "record": [
+      "createdAt": "2026-11-04T23:18:55.142Z",
+      "result": "W",
+      "score": "109-102",
+      "settledAt": "2026-11-05T02:53:59.149Z",
+      "closeOdd": 1.8547008547008548,
+      "pClose": 0.5149,
+      "clv": -0.0474
+    },
     {
       "id": "nba:401909923|total|under|234.5||",
       "gameId": "nba:401909923",
