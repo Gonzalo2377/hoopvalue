@@ -6478,52 +6478,10 @@
         "id": "preds-nba",
         "kind": "preds",
         "league": "nba",
-        "title": "Predicciones de marcador · NBA (14)",
+        "title": "Predicciones de marcador · NBA (11)",
         "postAt": "2026-11-05T17:30:00.000Z",
         "image": true,
         "games": [
-          {
-            "id": "nba:401909924",
-            "start": "2026-11-05T00:30Z",
-            "home": "Celtics",
-            "away": "Bucks",
-            "hc": "BOS",
-            "ac": "MIL",
-            "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
-            "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
-            "pred": [
-              115,
-              110
-            ]
-          },
-          {
-            "id": "nba:401909925",
-            "start": "2026-11-05T00:30Z",
-            "home": "Nets",
-            "away": "Hornets",
-            "hc": "BKN",
-            "ac": "CHA",
-            "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
-            "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png",
-            "pred": [
-              108,
-              104
-            ]
-          },
-          {
-            "id": "nba:401909926",
-            "start": "2026-11-05T00:30Z",
-            "home": "Knicks",
-            "away": "Bulls",
-            "hc": "NY",
-            "ac": "CHI",
-            "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
-            "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/chi.png",
-            "pred": [
-              118,
-              109
-            ]
-          },
           {
             "id": "nba:401909927",
             "start": "2026-11-05T01:00Z",
@@ -6679,7 +6637,7 @@
             ]
           }
         ],
-        "text": "🔮 EuroPicks Score Predictions · NBA · 05/11\n\nBOS 115-110 MIL\nBKN 108-104 CHA\nNY 118-109 CHI\nMEM 121-105 IND\nNO 116-115 UTAH\nOKC 110-112 CLE\nHOU 116-103 MIN\nDEN 114-116 TOR\nPHX 112-120 POR\nSA 117-108 DAL\nSAC 113-122 LAL\nLAC 118-117 MIA\nPHX 117-107 ORL\nGS 124-116 MIA\n\nFinal score"
+        "text": "🔮 EuroPicks Score Predictions · NBA · 05/11\n\nMEM 121-105 IND\nNO 116-115 UTAH\nOKC 110-112 CLE\nHOU 116-103 MIN\nDEN 114-116 TOR\nPHX 112-120 POR\nSA 117-108 DAL\nSAC 113-122 LAL\nLAC 118-117 MIA\nPHX 117-107 ORL\nGS 124-116 MIA\n\nFinal scores, predicted before tip-off. Check back tomorrow"
       },
       "preds-euroleague": {
         "id": "preds-euroleague",
@@ -6967,22 +6925,6 @@
         "image": true,
         "picks": [
           {
-            "id": "nba:401909925|prop|over|1.5|4433249|ast",
-            "league": "nba",
-            "label": "M. Diabate +1.5 asistencias",
-            "list": "M. Diabate +1.5 Ast",
-            "odd": 1.58,
-            "start": "2026-11-05T00:30Z",
-            "gameId": "nba:401909925",
-            "market": "prop",
-            "side": "over",
-            "line": 1.5,
-            "stat": "ast",
-            "playerId": "4433249",
-            "match": "Nets – Hornets",
-            "pFinal": 0.617
-          },
-          {
             "id": "nba:401909929|prop|under|3.5|4222252|ast",
             "league": "nba",
             "label": "I. Hartenstein −3.5 asistencias",
@@ -7030,19 +6972,7 @@
             "playerId": "5037871",
             "match": "Spurs – Mavericks",
             "pFinal": 0.623
-          }
-        ],
-        "text": "🏀 NBA Picks Day · 05/11\n\n1.- M. Diabate +1.5 Ast @1.58\n2.- I. Hartenstein −3.5 Ast @1.60\n3.- D. Sabonis +24.5 P+R @1.56\n4.- D. Harper +19.5 P+A @1.58\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-2": {
-        "id": "nba-day-2",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 2/3 · picks 5-8",
-        "postAt": "2026-11-05T17:45:00.000Z",
-        "image": true,
-        "picks": [
+          },
           {
             "id": "nba:401909930|prop|over|19.5|4684740|pra",
             "league": "nba",
@@ -7058,7 +6988,19 @@
             "playerId": "4684740",
             "match": "Rockets – Timberwolves",
             "pFinal": 0.606
-          },
+          }
+        ],
+        "text": "🏀 NBA Picks Day · 05/11\n\n1.- I. Hartenstein −3.5 Ast @1.60\n2.- D. Sabonis +24.5 P+R @1.56\n3.- D. Harper +19.5 P+A @1.58\n4.- A. Thompson +19.5 PRA @1.62\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-2": {
+        "id": "nba-day-2",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 2/3 · picks 5-8",
+        "postAt": "2026-11-05T17:45:00.000Z",
+        "image": true,
+        "picks": [
           {
             "id": "nba:401909928|prop|over|14.5|5041955|pa",
             "league": "nba",
@@ -7090,34 +7032,6 @@
             "pFinal": 0.589
           },
           {
-            "id": "nba:401909924|prop|over|1.5|4432848|ast",
-            "league": "nba",
-            "label": "J. Jaquez Jr. +1.5 asistencias",
-            "list": "J. Jaquez Jr. +1.5 Ast",
-            "odd": 1.71,
-            "start": "2026-11-05T00:30Z",
-            "gameId": "nba:401909924",
-            "market": "prop",
-            "side": "over",
-            "line": 1.5,
-            "stat": "ast",
-            "playerId": "4432848",
-            "match": "Celtics – Bucks",
-            "pFinal": 0.592
-          }
-        ],
-        "text": "🧵 NBA Picks Day · 05/11 (sigue)\n\n5.- A. Thompson +19.5 PRA @1.62\n6.- D. Peterson +14.5 P+A @1.57\n7.- Gana Trail Blazers @1.70\n8.- J. Jaquez Jr. +1.5 Ast @1.71\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-3": {
-        "id": "nba-day-3",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 3/3 · picks 9-12",
-        "postAt": "2026-11-05T17:45:00.000Z",
-        "image": true,
-        "picks": [
-          {
             "id": "nba:401909932|prop|over|2.5|4066383|reb",
             "league": "nba",
             "label": "M. Bridges +2.5 rebotes",
@@ -7146,7 +7060,19 @@
             "line": -6.5,
             "match": "Grizzlies – Pacers",
             "pFinal": 0.568
-          },
+          }
+        ],
+        "text": "🧵 NBA Picks Day · 05/11 (sigue)\n\n5.- D. Peterson +14.5 P+A @1.57\n6.- Gana Trail Blazers @1.70\n7.- M. Bridges +2.5 Reb @1.55\n8.- Grizzlies -6.5 @1.85\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-3": {
+        "id": "nba-day-3",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 3/3 · picks 9-12",
+        "postAt": "2026-11-05T17:45:00.000Z",
+        "image": true,
+        "picks": [
           {
             "id": "nba:401909936|prop|under|3.5|5239561|reb",
             "league": "nba",
@@ -7165,21 +7091,55 @@
             "pFinal": 0.594
           },
           {
-            "id": "nba:401909924|spread|away|12.5||",
+            "id": "nba:401909927|prop|under|1.5|4398207|tpm",
             "league": "nba",
-            "label": "Bucks +12.5",
-            "list": "Bucks +12.5",
-            "odd": 1.85,
-            "start": "2026-11-05T00:30Z",
-            "gameId": "nba:401909924",
-            "market": "spread",
-            "side": "away",
-            "line": 12.5,
-            "match": "Celtics – Bucks",
-            "pFinal": 0.559
+            "label": "J. Slawson −1.5 triples",
+            "list": "J. Slawson −1.5 T3",
+            "odd": 1.75,
+            "start": "2026-11-05T01:00Z",
+            "gameId": "nba:401909927",
+            "market": "prop",
+            "side": "under",
+            "line": 1.5,
+            "stat": "tpm",
+            "playerId": "4398207",
+            "match": "Grizzlies – Pacers",
+            "pFinal": 0.606
+          },
+          {
+            "id": "nba:401909931|prop|under|13.5|2993874|pr",
+            "league": "nba",
+            "label": "K. Anderson −13.5 pts+reb",
+            "list": "K. Anderson −13.5 P+R",
+            "odd": 1.74,
+            "start": "2026-11-05T02:00Z",
+            "gameId": "nba:401909931",
+            "market": "prop",
+            "side": "under",
+            "line": 13.5,
+            "stat": "pr",
+            "playerId": "2993874",
+            "match": "Nuggets – Raptors",
+            "pFinal": 0.622
+          },
+          {
+            "id": "nba:401909935|prop|under|27.5|4278053|pa",
+            "league": "nba",
+            "label": "D. Mitchell −27.5 pts+ast",
+            "list": "D. Mitchell −27.5 P+A",
+            "odd": 1.84,
+            "start": "2026-11-05T03:30Z",
+            "gameId": "nba:401909935",
+            "market": "prop",
+            "side": "under",
+            "line": 27.5,
+            "stat": "pa",
+            "playerId": "4278053",
+            "match": "Clippers – Heat",
+            "pFinal": 0.569
           }
         ],
-        "text": "🧵 NBA Picks Day · 05/11 (sigue)\n\n9.- M. Bridges +2.5 Reb @1.55\n10.- Grizzlies -6.5 @1.85\n11.- J. Richardson −3.5 Reb @1.74\n12.- Bucks +12.5 @1.85\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 05/11 (sigue)\n\n9.- J. Richardson −3.5 Reb @1.74\n10.- J. Slawson −1.5 T3 @1.75\n11.- K. Anderson −13.5 P+R @1.74\n12.- D. Mitchell −27.5 P+A @1.84\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
