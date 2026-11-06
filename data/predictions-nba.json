@@ -773,8 +773,8 @@
     "start": "2026-11-07T00:00Z",
     "home": "Hornets",
     "away": "Celtics",
-    "ptsH": 103,
-    "ptsA": 110
+    "ptsH": 100,
+    "ptsA": 111
   },
   "nba:401909289": {
     "start": "2026-11-07T00:30Z",
@@ -808,8 +808,8 @@
     "start": "2026-11-07T01:00Z",
     "home": "Pelicans",
     "away": "Timberwolves",
-    "ptsH": 116,
-    "ptsA": 114
+    "ptsH": 117,
+    "ptsA": 112
   },
   "nba:401909294": {
     "start": "2026-11-07T03:00Z",
