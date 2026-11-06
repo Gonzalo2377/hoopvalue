@@ -6953,7 +6953,7 @@
         "title": "Olympiacos vs Crvena Zvezda",
         "start": "2026-11-06T19:15:00.000Z",
         "postAt": "2026-11-06T18:15:00.000Z",
-        "text": "🏀 EuroLeague · hoy 20:15\nOlympiacos vs Crvena Zvezda\n\n1.- J. Butler +1.5 Ast @1.62\n2.- Crvena Zvezda +6.5 @1.83\n\n🔮 Prediction: Olympiacos 81-82 Crvena Zvezda\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
+        "text": "🏀 EuroLeague · hoy 20:15\nOlympiacos vs Crvena Zvezda\n\n1.- J. Butler +1.5 Ast @1.61\n2.- Crvena Zvezda +6.5 @1.83\n\n🔮 Prediction: Olympiacos 81-82 Crvena Zvezda\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
         "image": true,
         "picks": [
           {
@@ -6961,7 +6961,7 @@
             "league": "euroleague",
             "label": "J. Butler +1.5 asistencias",
             "list": "J. Butler +1.5 Ast",
-            "odd": 1.62,
+            "odd": 1.61,
             "start": "2026-11-06T19:15:00.000Z",
             "gameId": "el:E2026_100",
             "market": "prop",
@@ -6971,7 +6971,7 @@
             "playerId": "014163",
             "team": "RED",
             "match": "Olympiacos – Crvena Zvezda",
-            "pFinal": 0.605
+            "pFinal": 0.608
           },
           {
             "id": "el:E2026_100|spread|away|6.5||",
@@ -7449,7 +7449,7 @@
         "kind": "nba-day",
         "league": "nba",
         "reply": false,
-        "title": "NBA Picks Day · 9 picks",
+        "title": "NBA Picks Day · 10 picks",
         "postAt": "2026-11-06T17:45:00.000Z",
         "image": true,
         "picks": [
@@ -7503,16 +7503,33 @@
             "team": "CHA",
             "match": "Hornets – Celtics",
             "pFinal": 0.626
+          },
+          {
+            "id": "nba:401909293|prop|over|3.5|5144091|reb",
+            "league": "nba",
+            "label": "J. Fears +3.5 rebotes",
+            "list": "J. Fears +3.5 Reb",
+            "odd": 1.62,
+            "start": "2026-11-07T01:00Z",
+            "gameId": "nba:401909293",
+            "market": "prop",
+            "side": "over",
+            "line": 3.5,
+            "stat": "reb",
+            "playerId": "5144091",
+            "team": "NO",
+            "match": "Pelicans – Timberwolves",
+            "pFinal": 0.613
           }
         ],
-        "text": "🏀 NBA Picks Day · 06/11\n\n1.- J. McCain −2.5 T3 @1.56\n2.- L. Doncic +39.5 P+A @1.55\n3.- G. Allen +11.5 Pts @1.56\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 06/11\n\n1.- J. McCain −2.5 T3 @1.56\n2.- L. Doncic +39.5 P+A @1.55\n3.- G. Allen +11.5 Pts @1.56\n4.- J. Fears +3.5 Reb @1.62\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-2": {
         "id": "nba-day-2",
         "kind": "nba-day",
         "league": "nba",
         "reply": true,
-        "title": "↳ Hilo 2/3 · picks 4-6",
+        "title": "↳ Hilo 2/3 · picks 5-7",
         "postAt": "2026-11-06T17:45:00.000Z",
         "image": true,
         "picks": [
@@ -7565,14 +7582,14 @@
             "pFinal": 0.643
           }
         ],
-        "text": "🧵 NBA Picks Day · 06/11 (sigue)\n\n4.- K. Anderson −3.5 T3 @1.57\n5.- K. Johnson −3.5 T3 @1.57\n6.- D. Mitchell +11.5 Pts @1.65\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 06/11 (sigue)\n\n5.- K. Anderson −3.5 T3 @1.57\n6.- K. Johnson −3.5 T3 @1.57\n7.- D. Mitchell +11.5 Pts @1.65\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-3": {
         "id": "nba-day-3",
         "kind": "nba-day",
         "league": "nba",
         "reply": true,
-        "title": "↳ Hilo 3/3 · picks 7-9",
+        "title": "↳ Hilo 3/3 · picks 8-10",
         "postAt": "2026-11-06T17:45:00.000Z",
         "image": true,
         "picks": [
@@ -7623,7 +7640,7 @@
             "pFinal": 0.614
           }
         ],
-        "text": "🧵 NBA Picks Day · 06/11 (sigue)\n\n7.- A. Wiggins +1.5 T3 @1.87\n8.- Grizzlies +3.5 @1.85\n9.- J. Green −20.5 P+R @1.77\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 06/11 (sigue)\n\n8.- A. Wiggins +1.5 T3 @1.87\n9.- Grizzlies +3.5 @1.85\n10.- J. Green −20.5 P+R @1.77\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }

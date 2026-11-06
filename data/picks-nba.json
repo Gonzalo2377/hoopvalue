@@ -177,6 +177,24 @@
       "stat": "pts",
       "playerId": "3135045",
       "createdAt": "2026-11-06T11:44:12.914Z"
+    },
+    {
+      "id": "nba:401909293|prop|over|3.5|5144091|reb",
+      "gameId": "nba:401909293",
+      "start": "2026-11-07T01:00Z",
+      "match": "Pelicans – Timberwolves",
+      "market": "prop",
+      "side": "over",
+      "line": 3.5,
+      "label": "Jeremiah Fears más de 3.5 rebotes",
+      "odd": 1.62,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.613,
+      "safety": 0.537,
+      "tier": "C",
+      "stat": "reb",
+      "playerId": "5144091",
+      "createdAt": "2026-11-06T12:25:02.742Z"
     }
   ],
   "record": [
