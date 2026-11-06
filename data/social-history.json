@@ -7029,7 +7029,7 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
             "pred": [
-              113,
+              114,
               106
             ]
           },
@@ -7043,7 +7043,7 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
             "pred": [
-              102,
+              103,
               110
             ]
           },
@@ -7071,7 +7071,7 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/dal.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/utah.png",
             "pred": [
-              115,
+              116,
               108
             ]
           },
@@ -7099,7 +7099,7 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
             "pred": [
-              113,
+              114,
               120
             ]
           },
@@ -7146,7 +7146,7 @@
             ]
           }
         ],
-        "text": "🔮 EuroPicks Score Predictions · NBA · 06/11\n\nATL 113-106 WSH\nCHA 102-110 BOS\nCLE 114-115 PHI\nDAL 115-108 UTAH\nMEM 112-105 OKC\nMIL 113-120 TOR\nNO 116-114 MIN\nLAL 117-116 POR\nSAC 110-120 SA\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
+        "text": "🔮 EuroPicks Score Predictions · NBA · 06/11\n\nATL 114-106 WSH\nCHA 103-110 BOS\nCLE 114-115 PHI\nDAL 116-108 UTAH\nMEM 112-105 OKC\nMIL 114-120 TOR\nNO 116-114 MIN\nLAL 117-116 POR\nSAC 110-120 SA\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
       },
       "preds-euroleague": {
         "id": "preds-euroleague",
@@ -7339,7 +7339,7 @@
         "league": "nba",
         "title": "NBA · resultados de ayer (05/11)",
         "postAt": "2026-11-06T08:40:00.000Z",
-        "text": "📋 NBA · resultados de ayer (05/11)\n\n⏳ B. Adebayo −10.5 rebotes @1.70\n⏳ Gana Suns @1.85\n⏳ J. Richardson −3.5 rebotes @1.75\n❌ Combinada: D. Peterson +14.5 P+A ✗ + Gana Pistons ✗ @2.86\n\nAyer: 0-1 (-1.00 u) · Total NBA: 72-44 (-11.96 u)\n#NBA · +18 · Juega con responsabilidad",
+        "text": "📋 NBA · resultados de ayer (05/11)\n\n⏳ B. Adebayo −10.5 rebotes @1.70\n✅ Gana Suns @1.85\n✅ J. Richardson −3.5 rebotes @1.75\n❌ Combinada: D. Peterson +14.5 P+A ✗ + Gana Pistons ✗ @2.86\n\nAyer: 2-1 (+0.60 u) · Total NBA: 74-44 (-10.36 u)\n#NBA · +18 · Juega con responsabilidad",
         "image": true,
         "pending": true,
         "rows": [
@@ -7353,13 +7353,13 @@
             "league": "nba",
             "label": "Gana Suns",
             "odd": 1.85,
-            "result": null
+            "result": "W"
           },
           {
             "league": "nba",
             "label": "J. Richardson −3.5 rebotes",
             "odd": 1.75,
-            "result": null
+            "result": "W"
           },
           {
             "league": "nba",
@@ -7370,16 +7370,16 @@
         ],
         "balance": {
           "day": [
-            0,
+            2,
             1
           ],
           "total": [
-            72,
+            74,
             44
           ],
           "units": {
-            "day": -1,
-            "total": -11.96
+            "day": 0.6,
+            "total": -10.36
           }
         }
       },
