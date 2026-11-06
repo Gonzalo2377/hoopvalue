@@ -7397,7 +7397,7 @@
             "league": "nba",
             "label": "K. Anderson −3.5 triples",
             "list": "K. Anderson −3.5 T3",
-            "odd": 1.55,
+            "odd": 1.57,
             "start": "2026-11-07T01:00Z",
             "gameId": "nba:401909292",
             "market": "prop",
@@ -7405,9 +7405,8 @@
             "line": 3.5,
             "stat": "tpm",
             "playerId": "2993874",
-            "team": "TOR",
             "match": "Bucks – Raptors",
-            "pFinal": 0.674
+            "pFinal": 0.671
           },
           {
             "id": "nba:401909295|prop|under|3.5|4395723|tpm",
@@ -7442,7 +7441,7 @@
             "pFinal": 0.643
           }
         ],
-        "text": "🏀 NBA Picks Day · 06/11\n\n1.- K. Anderson −3.5 T3 @1.55\n2.- K. Johnson −3.5 T3 @1.57\n3.- D. Mitchell +11.5 Pts @1.65\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 06/11\n\n1.- K. Anderson −3.5 T3 @1.57\n2.- K. Johnson −3.5 T3 @1.57\n3.- D. Mitchell +11.5 Pts @1.65\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-2": {
         "id": "nba-day-2",
