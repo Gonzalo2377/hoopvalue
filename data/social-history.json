@@ -7449,7 +7449,7 @@
         "kind": "nba-day",
         "league": "nba",
         "reply": false,
-        "title": "NBA Picks Day · 7 picks",
+        "title": "NBA Picks Day · 8 picks",
         "postAt": "2026-11-06T17:45:00.000Z",
         "image": true,
         "picks": [
@@ -7469,6 +7469,23 @@
             "team": "OKC",
             "match": "Grizzlies – Thunder",
             "pFinal": 0.628
+          },
+          {
+            "id": "nba:401909294|prop|over|39.5|3945274|pa",
+            "league": "nba",
+            "label": "L. Doncic +39.5 pts+ast",
+            "list": "L. Doncic +39.5 P+A",
+            "odd": 1.55,
+            "start": "2026-11-07T03:00Z",
+            "gameId": "nba:401909294",
+            "market": "prop",
+            "side": "over",
+            "line": 39.5,
+            "stat": "pa",
+            "playerId": "3945274",
+            "team": "LAL",
+            "match": "Lakers – Trail Blazers",
+            "pFinal": 0.633
           },
           {
             "id": "nba:401909292|prop|under|3.5|2993874|tpm",
@@ -7501,7 +7518,19 @@
             "playerId": "4395723",
             "match": "Kings – Spurs",
             "pFinal": 0.669
-          },
+          }
+        ],
+        "text": "🏀 NBA Picks Day · 06/11\n\n1.- J. McCain −2.5 T3 @1.56\n2.- L. Doncic +39.5 P+A @1.55\n3.- K. Anderson −3.5 T3 @1.57\n4.- K. Johnson −3.5 T3 @1.57\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-2": {
+        "id": "nba-day-2",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 2/2 · picks 5-8",
+        "postAt": "2026-11-06T17:45:00.000Z",
+        "image": true,
+        "picks": [
           {
             "id": "nba:401909289|prop|over|11.5|3908809|pts",
             "league": "nba",
@@ -7517,19 +7546,7 @@
             "playerId": "3908809",
             "match": "Cavaliers – 76ers",
             "pFinal": 0.643
-          }
-        ],
-        "text": "🏀 NBA Picks Day · 06/11\n\n1.- J. McCain −2.5 T3 @1.56\n2.- K. Anderson −3.5 T3 @1.57\n3.- K. Johnson −3.5 T3 @1.57\n4.- D. Mitchell +11.5 Pts @1.65\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-2": {
-        "id": "nba-day-2",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 2/2 · picks 5-7",
-        "postAt": "2026-11-06T17:45:00.000Z",
-        "image": true,
-        "picks": [
+          },
           {
             "id": "nba:401909287|prop|over|1.5|4397183|tpm",
             "league": "nba",
@@ -7577,7 +7594,7 @@
             "pFinal": 0.614
           }
         ],
-        "text": "🧵 NBA Picks Day · 06/11 (sigue)\n\n5.- A. Wiggins +1.5 T3 @1.87\n6.- Grizzlies +3.5 @1.85\n7.- J. Green −20.5 P+R @1.77\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 06/11 (sigue)\n\n5.- D. Mitchell +11.5 Pts @1.65\n6.- A. Wiggins +1.5 T3 @1.87\n7.- Grizzlies +3.5 @1.85\n8.- J. Green −20.5 P+R @1.77\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }

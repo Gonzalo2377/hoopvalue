@@ -123,6 +123,42 @@
       "safety": 0.464,
       "tier": "C",
       "createdAt": "2026-11-06T09:41:44.833Z"
+    },
+    {
+      "id": "nba:401909294|prop|over|39.5|3945274|pa",
+      "gameId": "nba:401909294",
+      "start": "2026-11-07T03:00Z",
+      "match": "Lakers – Trail Blazers",
+      "market": "prop",
+      "side": "over",
+      "line": 39.5,
+      "label": "Luka Doncic más de 39.5 pts+ast",
+      "odd": 1.55,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.633,
+      "safety": 0.57,
+      "tier": "C",
+      "stat": "pa",
+      "playerId": "3945274",
+      "createdAt": "2026-11-06T11:03:25.636Z"
+    },
+    {
+      "id": "nba:401909938|prop|under|14.5|3138196|pa",
+      "gameId": "nba:401909938",
+      "start": "2026-11-07T22:00Z",
+      "match": "Pacers – Nuggets",
+      "market": "prop",
+      "side": "under",
+      "line": 14.5,
+      "label": "Cameron Johnson menos de 14.5 pts+ast",
+      "odd": 1.77,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.55,
+      "safety": 0.513,
+      "tier": "C",
+      "stat": "pa",
+      "playerId": "3138196",
+      "createdAt": "2026-11-06T11:03:25.636Z"
     }
   ],
   "record": [
