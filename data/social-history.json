@@ -6953,7 +6953,7 @@
         "title": "Olympiacos vs Crvena Zvezda",
         "start": "2026-11-06T19:15:00.000Z",
         "postAt": "2026-11-06T18:15:00.000Z",
-        "text": "🏀 EuroLeague · hoy 20:15\nOlympiacos vs Crvena Zvezda\n\n1.- J. Butler +1.5 Ast @1.62\n2.- Crvena Zvezda +6.5 @1.91\n\n🔮 Prediction: Olympiacos 81-82 Crvena Zvezda\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
+        "text": "🏀 EuroLeague · hoy 20:15\nOlympiacos vs Crvena Zvezda\n\n1.- J. Butler +1.5 Ast @1.62\n2.- Crvena Zvezda +6.5 @1.83\n\n🔮 Prediction: Olympiacos 81-82 Crvena Zvezda\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
         "image": true,
         "picks": [
           {
@@ -6978,14 +6978,14 @@
             "league": "euroleague",
             "label": "Crvena Zvezda +6.5",
             "list": "Crvena Zvezda +6.5",
-            "odd": 1.91,
+            "odd": 1.83,
             "start": "2026-11-06T19:15:00.000Z",
             "gameId": "el:E2026_100",
             "market": "spread",
             "side": "away",
             "line": 6.5,
             "match": "Olympiacos – Crvena Zvezda",
-            "pFinal": 0.552
+            "pFinal": 0.563
           }
         ]
       },
@@ -6997,7 +6997,7 @@
         "title": "Virtus Bologna vs Dubai",
         "start": "2026-11-06T19:30:00.000Z",
         "postAt": "2026-11-06T18:30:00.000Z",
-        "text": "🏀 EuroLeague · hoy 20:30\nVirtus Bologna vs Dubai\n\n1.- Gana Dubai @1.70\n\n🔮 Prediction: Virtus Bologna 87-88 Dubai\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
+        "text": "🏀 EuroLeague · hoy 20:30\nVirtus Bologna vs Dubai\n\n1.- Gana Dubai @1.65\n\n🔮 Prediction: Virtus Bologna 87-88 Dubai\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
         "image": true,
         "picks": [
           {
@@ -7005,14 +7005,14 @@
             "league": "euroleague",
             "label": "Gana Dubai",
             "list": "Gana Dubai",
-            "odd": 1.7,
+            "odd": 1.65,
             "start": "2026-11-06T19:30:00.000Z",
             "gameId": "el:E2026_98",
             "market": "ml",
             "side": "away",
             "line": null,
             "match": "Virtus Bologna – Dubai",
-            "pFinal": 0.597
+            "pFinal": 0.599
           }
         ]
       },
@@ -7520,6 +7520,50 @@
           }
         ],
         "text": "🧵 NBA Picks Day · 06/11 (sigue)\n\n4.- D. Mitchell +11.5 Pts @1.65\n5.- A. Wiggins +1.5 T3 @1.87\n6.- J. Green −20.5 P+R @1.77\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+      },
+      "combo-euroleague": {
+        "id": "combo-euroleague",
+        "kind": "combo",
+        "league": "euroleague",
+        "title": "Safe Parlay · Euroliga @3.02",
+        "postAt": "2026-11-06T17:45:00.000Z",
+        "image": true,
+        "text": "🎯 Safe Parlay · Euroliga\n\n1.- Gana Dubai @1.65\n2.- Crvena Zvezda +6.5 @1.83\n\n💰 Total odds 3.02\n📊 Last 10 games de cada uno en la foto\n#Euroliga · +18 · Juega con responsabilidad",
+        "picks": [],
+        "combo": {
+          "legs": [
+            {
+              "id": "el:E2026_98|ml|away|||",
+              "league": "euroleague",
+              "label": "Gana Dubai",
+              "list": "Gana Dubai",
+              "odd": 1.65,
+              "start": "2026-11-06T19:30:00.000Z",
+              "gameId": "el:E2026_98",
+              "market": "ml",
+              "side": "away",
+              "line": null,
+              "match": "Virtus Bologna – Dubai",
+              "pFinal": 0.599
+            },
+            {
+              "id": "el:E2026_100|spread|away|6.5||",
+              "league": "euroleague",
+              "label": "Crvena Zvezda +6.5",
+              "list": "Crvena Zvezda +6.5",
+              "odd": 1.83,
+              "start": "2026-11-06T19:15:00.000Z",
+              "gameId": "el:E2026_100",
+              "market": "spread",
+              "side": "away",
+              "line": 6.5,
+              "match": "Olympiacos – Crvena Zvezda",
+              "pFinal": 0.563
+            }
+          ],
+          "odd": 3.02,
+          "prob": 0.337
+        }
       }
     }
   }

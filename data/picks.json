@@ -1633,7 +1633,44 @@
       "settledAt": "2026-10-21T20:21:24.312Z"
     }
   ],
-  "comboPending": [],
+  "comboPending": [
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "el:E2026_98|ml|away|||",
+          "gameId": "el:E2026_98",
+          "start": "2026-11-06T19:30:00.000Z",
+          "match": "Virtus Bologna – Dubai",
+          "market": "ml",
+          "side": "away",
+          "line": null,
+          "label": "Gana Dubai",
+          "odd": 1.65,
+          "pFinal": 0.599,
+          "book": "ladbrokes_uk"
+        },
+        {
+          "id": "el:E2026_100|spread|away|6.5||",
+          "gameId": "el:E2026_100",
+          "start": "2026-11-06T19:15:00.000Z",
+          "match": "Olympiacos – Crvena Zvezda",
+          "market": "spread",
+          "side": "away",
+          "line": 6.5,
+          "label": "Crvena Zvezda +6.5",
+          "odd": 1.83,
+          "pFinal": 0.563,
+          "book": "marathonbet"
+        }
+      ],
+      "odd": 3.02,
+      "prob": 0.337,
+      "ev": 0.018,
+      "start": "2026-11-06T19:15:00.000Z",
+      "createdAt": "2026-11-06T08:18:52.472Z"
+    }
+  ],
   "comboRecord": [
     {
       "type": "segura",
