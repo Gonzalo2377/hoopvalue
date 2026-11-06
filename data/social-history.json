@@ -7490,7 +7490,7 @@
             "league": "nba",
             "label": "G. Allen +11.5 puntos",
             "list": "G. Allen +11.5 Pts",
-            "odd": 1.56,
+            "odd": 1.62,
             "start": "2026-11-07T00:00Z",
             "gameId": "nba:401909288",
             "market": "prop",
@@ -7498,8 +7498,9 @@
             "line": 11.5,
             "stat": "pts",
             "playerId": "3135045",
+            "team": "CHA",
             "match": "Hornets – Celtics",
-            "pFinal": 0.626
+            "pFinal": 0.609
           },
           {
             "id": "nba:401909293|prop|over|3.5|5144091|reb",
@@ -7519,7 +7520,7 @@
             "pFinal": 0.613
           }
         ],
-        "text": "🏀 NBA Picks Day · 06/11\n\n1.- J. McCain −2.5 T3 @1.58\n2.- L. Doncic +39.5 P+A @1.55\n3.- G. Allen +11.5 Pts @1.56\n4.- J. Fears +3.5 Reb @1.62\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 06/11\n\n1.- J. McCain −2.5 T3 @1.58\n2.- L. Doncic +39.5 P+A @1.55\n3.- G. Allen +11.5 Pts @1.62\n4.- J. Fears +3.5 Reb @1.62\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-2": {
         "id": "nba-day-2",
