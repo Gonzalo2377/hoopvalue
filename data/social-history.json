@@ -7535,14 +7535,14 @@
             "league": "nba",
             "label": "Grizzlies +3.5",
             "list": "Grizzlies +3.5",
-            "odd": 1.88,
+            "odd": 1.85,
             "start": "2026-11-07T01:00Z",
             "gameId": "nba:401909291",
             "market": "spread",
             "side": "home",
             "line": 3.5,
             "match": "Grizzlies – Thunder",
-            "pFinal": 0.566
+            "pFinal": 0.569
           },
           {
             "id": "nba:401909287|prop|over|1.5|4397183|tpm",
@@ -7577,7 +7577,7 @@
             "pFinal": 0.614
           }
         ],
-        "text": "🧵 NBA Picks Day · 06/11 (sigue)\n\n5.- Grizzlies +3.5 @1.88\n6.- A. Wiggins +1.5 T3 @1.87\n7.- J. Green −20.5 P+R @1.77\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 06/11 (sigue)\n\n5.- Grizzlies +3.5 @1.85\n6.- A. Wiggins +1.5 T3 @1.87\n7.- J. Green −20.5 P+R @1.77\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }

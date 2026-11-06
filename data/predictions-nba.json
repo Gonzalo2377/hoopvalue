@@ -824,5 +824,12 @@
     "away": "Spurs",
     "ptsH": 110,
     "ptsA": 119
+  },
+  "nba:401909938": {
+    "start": "2026-11-07T22:00Z",
+    "home": "Pacers",
+    "away": "Nuggets",
+    "ptsH": 111,
+    "ptsA": 115
   }
 }
