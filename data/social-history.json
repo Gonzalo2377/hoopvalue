@@ -7730,8 +7730,8 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mil.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/tor.png",
             "pred": [
-              114,
-              120
+              117,
+              111
             ]
           },
           {
@@ -7875,7 +7875,7 @@
             ]
           }
         ],
-        "text": "🔮 EuroPicks Score Predictions · NBA · 07/11\n\nATL 110-102 WSH\nCHA 100-111 BOS\nCLE 114-115 PHI\nDAL 116-108 UTAH\nMEM 112-105 OKC\nMIL 114-120 TOR\nNO 117-112 MIN\nLAL 117-116 POR\nSAC 110-119 SA\nIND 111-115 DEN\nATL 110-111 BKN\nCLE 114-112 NY\nOKC 109-98 WSH\nGS 117-106 ORL\nPHX 112-119 H"
+        "text": "🔮 EuroPicks Score Predictions · NBA · 07/11\n\nATL 110-102 WSH\nCHA 100-111 BOS\nCLE 114-115 PHI\nDAL 116-108 UTAH\nMEM 112-105 OKC\nMIL 117-111 TOR\nNO 117-112 MIN\nLAL 117-116 POR\nSAC 110-119 SA\nIND 111-115 DEN\nATL 110-111 BKN\nCLE 114-112 NY\nOKC 109-98 WSH\nGS 117-106 ORL\nPHX 112-119 H"
       },
       "combo-nba": {
         "id": "combo-nba",
@@ -8257,7 +8257,6 @@
             "line": 14.5,
             "stat": "pa",
             "playerId": "3138196",
-            "team": "DEN",
             "match": "Pacers – Nuggets",
             "pFinal": 0.55
           },
@@ -8266,7 +8265,7 @@
             "league": "nba",
             "label": "C. Johnson −2.5 asistencias",
             "list": "C. Johnson −2.5 Ast",
-            "odd": 1.73,
+            "odd": 1.74,
             "start": "2026-11-08T00:30Z",
             "gameId": "nba:401909939",
             "market": "prop",
@@ -8276,7 +8275,7 @@
             "playerId": "5174655",
             "team": "BKN",
             "match": "Hawks – Nets",
-            "pFinal": 0.591
+            "pFinal": 0.588
           },
           {
             "id": "nba:401909289|prop|over|11.5|3908809|pts",
@@ -8295,7 +8294,7 @@
             "pFinal": 0.643
           }
         ],
-        "text": "🧵 NBA Picks Day · 07/11 (sigue)\n\n9.- K. Johnson −3.5 T3 @1.57\n10.- C. Johnson −14.5 P+A @1.77\n11.- C. Johnson −2.5 Ast @1.73\n12.- D. Mitchell +11.5 Pts @1.65\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 07/11 (sigue)\n\n9.- K. Johnson −3.5 T3 @1.57\n10.- C. Johnson −14.5 P+A @1.77\n11.- C. Johnson −2.5 Ast @1.74\n12.- D. Mitchell +11.5 Pts @1.65\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
