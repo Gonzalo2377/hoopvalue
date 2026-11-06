@@ -7015,24 +7015,10 @@
         "id": "preds-nba",
         "kind": "preds",
         "league": "nba",
-        "title": "Predicciones de marcador · NBA (10)",
+        "title": "Predicciones de marcador · NBA (9)",
         "postAt": "2026-11-06T17:30:00.000Z",
         "image": true,
         "games": [
-          {
-            "id": "nba:401909937",
-            "start": "2026-11-06T03:00Z",
-            "home": "Warriors",
-            "away": "Heat",
-            "hc": "GS",
-            "ac": "MIA",
-            "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/gs.png",
-            "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/mia.png",
-            "pred": [
-              122,
-              116
-            ]
-          },
           {
             "id": "nba:401909287",
             "start": "2026-11-07T00:00Z",
@@ -7160,7 +7146,7 @@
             ]
           }
         ],
-        "text": "🔮 EuroPicks Score Predictions · NBA · 06/11\n\nGS 122-116 MIA\nATL 113-106 WSH\nCHA 102-110 BOS\nCLE 114-115 PHI\nDAL 115-108 UTAH\nMEM 112-105 OKC\nMIL 113-120 TOR\nNO 116-114 MIN\nLAL 117-116 POR\nSAC 110-120 SA\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
+        "text": "🔮 EuroPicks Score Predictions · NBA · 06/11\n\nATL 113-106 WSH\nCHA 102-110 BOS\nCLE 114-115 PHI\nDAL 115-108 UTAH\nMEM 112-105 OKC\nMIL 113-120 TOR\nNO 116-114 MIN\nLAL 117-116 POR\nSAC 110-120 SA\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
       },
       "preds-euroleague": {
         "id": "preds-euroleague",
@@ -7402,40 +7388,10 @@
         "kind": "nba-day",
         "league": "nba",
         "reply": false,
-        "title": "NBA Picks Day · 7 picks",
+        "title": "NBA Picks Day · 5 picks",
         "postAt": "2026-11-06T17:45:00.000Z",
         "image": true,
         "picks": [
-          {
-            "id": "nba:401909937|ml|home|||",
-            "league": "nba",
-            "label": "Gana Warriors",
-            "list": "Gana Warriors",
-            "odd": 1.6,
-            "start": "2026-11-06T03:00Z",
-            "gameId": "nba:401909937",
-            "market": "ml",
-            "side": "home",
-            "line": null,
-            "match": "Warriors – Heat",
-            "pFinal": 0.613
-          },
-          {
-            "id": "nba:401909937|prop|under|10.5|4066261|reb",
-            "league": "nba",
-            "label": "B. Adebayo −10.5 rebotes",
-            "list": "B. Adebayo −10.5 Reb",
-            "odd": 1.7,
-            "start": "2026-11-06T03:00Z",
-            "gameId": "nba:401909937",
-            "market": "prop",
-            "side": "under",
-            "line": 10.5,
-            "stat": "reb",
-            "playerId": "4066261",
-            "match": "Warriors – Heat",
-            "pFinal": 0.585
-          },
           {
             "id": "nba:401909292|prop|under|3.5|2993874|tpm",
             "league": "nba",
@@ -7468,19 +7424,7 @@
             "playerId": "4395723",
             "match": "Kings – Spurs",
             "pFinal": 0.669
-          }
-        ],
-        "text": "🏀 NBA Picks Day · 06/11\n\n1.- Gana Warriors @1.60\n2.- B. Adebayo −10.5 Reb @1.70\n3.- K. Anderson −3.5 T3 @1.55\n4.- K. Johnson −3.5 T3 @1.57\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-2": {
-        "id": "nba-day-2",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 2/2 · picks 5-7",
-        "postAt": "2026-11-06T17:45:00.000Z",
-        "image": true,
-        "picks": [
+          },
           {
             "id": "nba:401909289|prop|over|11.5|3908809|pts",
             "league": "nba",
@@ -7496,7 +7440,19 @@
             "playerId": "3908809",
             "match": "Cavaliers – 76ers",
             "pFinal": 0.643
-          },
+          }
+        ],
+        "text": "🏀 NBA Picks Day · 06/11\n\n1.- K. Anderson −3.5 T3 @1.55\n2.- K. Johnson −3.5 T3 @1.57\n3.- D. Mitchell +11.5 Pts @1.65\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-2": {
+        "id": "nba-day-2",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 2/2 · picks 4-5",
+        "postAt": "2026-11-06T17:45:00.000Z",
+        "image": true,
+        "picks": [
           {
             "id": "nba:401909287|prop|over|1.5|4397183|tpm",
             "league": "nba",
@@ -7530,7 +7486,7 @@
             "pFinal": 0.614
           }
         ],
-        "text": "🧵 NBA Picks Day · 06/11 (sigue)\n\n5.- D. Mitchell +11.5 Pts @1.65\n6.- A. Wiggins +1.5 T3 @1.87\n7.- J. Green −20.5 P+R @1.77\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 06/11 (sigue)\n\n4.- A. Wiggins +1.5 T3 @1.87\n5.- J. Green −20.5 P+R @1.77\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
