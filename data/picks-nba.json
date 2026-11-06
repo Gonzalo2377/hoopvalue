@@ -267,6 +267,22 @@
       "stat": "reb",
       "playerId": "5239561",
       "createdAt": "2026-11-06T15:58:49.455Z"
+    },
+    {
+      "id": "nba:401909289|ml|away|||",
+      "gameId": "nba:401909289",
+      "start": "2026-11-07T00:30Z",
+      "match": "Cavaliers – 76ers",
+      "market": "ml",
+      "side": "away",
+      "line": null,
+      "label": "Gana 76ers",
+      "odd": 1.68,
+      "book": "draftkings",
+      "pFinal": 0.582,
+      "safety": 0.577,
+      "tier": "C",
+      "createdAt": "2026-11-06T22:35:31.588Z"
     }
   ],
   "record": [
