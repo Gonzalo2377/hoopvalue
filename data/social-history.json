@@ -6953,9 +6953,26 @@
         "title": "Olympiacos vs Crvena Zvezda",
         "start": "2026-11-06T19:15:00.000Z",
         "postAt": "2026-11-06T18:15:00.000Z",
-        "text": "🏀 EuroLeague · hoy 20:15\nOlympiacos vs Crvena Zvezda\n\n1.- Crvena Zvezda +6.5 @1.91\n\n🔮 Prediction: Olympiacos 81-82 Crvena Zvezda\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
+        "text": "🏀 EuroLeague · hoy 20:15\nOlympiacos vs Crvena Zvezda\n\n1.- J. Butler +1.5 Ast @1.62\n2.- Crvena Zvezda +6.5 @1.91\n\n🔮 Prediction: Olympiacos 81-82 Crvena Zvezda\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
         "image": true,
         "picks": [
+          {
+            "id": "el:E2026_100|prop|over|1.5|014163|ast",
+            "league": "euroleague",
+            "label": "J. Butler +1.5 asistencias",
+            "list": "J. Butler +1.5 Ast",
+            "odd": 1.62,
+            "start": "2026-11-06T19:15:00.000Z",
+            "gameId": "el:E2026_100",
+            "market": "prop",
+            "side": "over",
+            "line": 1.5,
+            "stat": "ast",
+            "playerId": "014163",
+            "team": "RED",
+            "match": "Olympiacos – Crvena Zvezda",
+            "pFinal": 0.605
+          },
           {
             "id": "el:E2026_100|spread|away|6.5||",
             "league": "euroleague",

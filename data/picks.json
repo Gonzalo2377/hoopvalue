@@ -33,6 +33,25 @@
       "safety": 0.589,
       "tier": "C",
       "createdAt": "2026-11-05T16:11:18.513Z"
+    },
+    {
+      "id": "el:E2026_100|prop|over|1.5|014163|ast",
+      "gameId": "el:E2026_100",
+      "start": "2026-11-06T19:15:00.000Z",
+      "round": 10,
+      "match": "Olympiacos – Crvena Zvezda",
+      "market": "prop",
+      "side": "over",
+      "line": 1.5,
+      "label": "Jared Butler más de 1.5 asistencias",
+      "odd": 1.62,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.605,
+      "safety": 0.555,
+      "tier": "C",
+      "stat": "ast",
+      "playerId": "014163",
+      "createdAt": "2026-11-06T05:28:49.978Z"
     }
   ],
   "record": [
