@@ -838,5 +838,19 @@
     "away": "Nets",
     "ptsH": 115,
     "ptsA": 109
+  },
+  "nba:401909940": {
+    "start": "2026-11-08T01:00Z",
+    "home": "Cavaliers",
+    "away": "Knicks",
+    "ptsH": 113,
+    "ptsA": 114
+  },
+  "nba:401909941": {
+    "start": "2026-11-08T01:00Z",
+    "home": "Thunder",
+    "away": "Wizards",
+    "ptsH": 107,
+    "ptsA": 104
   }
 }
