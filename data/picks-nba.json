@@ -107,6 +107,22 @@
       "stat": "tpm",
       "playerId": "4683778",
       "createdAt": "2026-11-06T05:49:16.095Z"
+    },
+    {
+      "id": "nba:401909291|spread|home|3.5||",
+      "gameId": "nba:401909291",
+      "start": "2026-11-07T01:00Z",
+      "match": "Grizzlies – Thunder",
+      "market": "spread",
+      "side": "home",
+      "line": 3.5,
+      "label": "Grizzlies +3.5",
+      "odd": 1.88,
+      "book": "draftkings",
+      "pFinal": 0.566,
+      "safety": 0.464,
+      "tier": "C",
+      "createdAt": "2026-11-06T09:41:44.833Z"
     }
   ],
   "record": [
