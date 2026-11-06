@@ -831,5 +831,12 @@
     "away": "Nuggets",
     "ptsH": 111,
     "ptsA": 115
+  },
+  "nba:401909939": {
+    "start": "2026-11-08T00:30Z",
+    "home": "Hawks",
+    "away": "Nets",
+    "ptsH": 115,
+    "ptsA": 109
   }
 }
