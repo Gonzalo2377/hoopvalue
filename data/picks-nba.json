@@ -159,6 +159,24 @@
       "stat": "pa",
       "playerId": "3138196",
       "createdAt": "2026-11-06T11:03:25.636Z"
+    },
+    {
+      "id": "nba:401909288|prop|over|11.5|3135045|pts",
+      "gameId": "nba:401909288",
+      "start": "2026-11-07T00:00Z",
+      "match": "Hornets – Celtics",
+      "market": "prop",
+      "side": "over",
+      "line": 11.5,
+      "label": "Grayson Allen más de 11.5 puntos",
+      "odd": 1.56,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.626,
+      "safety": 0.565,
+      "tier": "C",
+      "stat": "pts",
+      "playerId": "3135045",
+      "createdAt": "2026-11-06T11:44:12.914Z"
     }
   ],
   "record": [
