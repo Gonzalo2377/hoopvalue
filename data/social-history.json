@@ -7425,14 +7425,14 @@
             "league": "nba",
             "label": "Gana Warriors",
             "list": "Gana Warriors",
-            "odd": 1.62,
+            "odd": 1.61,
             "start": "2026-11-06T03:00Z",
             "gameId": "nba:401909937",
             "market": "ml",
             "side": "home",
             "line": null,
             "match": "Warriors – Heat",
-            "pFinal": 0.607
+            "pFinal": 0.61
           },
           {
             "id": "nba:401909937|prop|under|10.5|4066261|reb",
@@ -7467,7 +7467,7 @@
             "pFinal": 0.671
           }
         ],
-        "text": "🏀 NBA Picks Day · 06/11\n\n1.- Gana Warriors @1.62\n2.- B. Adebayo −10.5 Reb @1.70\n3.- K. Anderson −3.5 T3 @1.57\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 06/11\n\n1.- Gana Warriors @1.61\n2.- B. Adebayo −10.5 Reb @1.70\n3.- K. Anderson −3.5 T3 @1.57\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-2": {
         "id": "nba-day-2",
