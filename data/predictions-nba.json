@@ -815,7 +815,7 @@
     "start": "2026-11-07T03:00Z",
     "home": "Lakers",
     "away": "Trail Blazers",
-    "ptsH": 116,
+    "ptsH": 117,
     "ptsA": 116
   },
   "nba:401909295": {
@@ -823,6 +823,6 @@
     "home": "Kings",
     "away": "Spurs",
     "ptsH": 110,
-    "ptsA": 120
+    "ptsA": 119
   }
 }
