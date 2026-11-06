@@ -6953,7 +6953,7 @@
         "title": "Olympiacos vs Crvena Zvezda",
         "start": "2026-11-06T19:15:00.000Z",
         "postAt": "2026-11-06T18:15:00.000Z",
-        "text": "🏀 EuroLeague · hoy 20:15\nOlympiacos vs Crvena Zvezda\n\n1.- J. Butler +1.5 Ast @1.61\n2.- Crvena Zvezda +6.5 @1.91\n\n🔮 Prediction: Olympiacos 81-82 Crvena Zvezda\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
+        "text": "🏀 EuroLeague · hoy 20:15\nOlympiacos vs Crvena Zvezda\n\n1.- J. Butler +1.5 Ast @1.63\n2.- Crvena Zvezda +6.5 @1.91\n\n🔮 Prediction: Olympiacos 81-82 Crvena Zvezda\n📊 Last 10 games en las fotos\n#EuroLeague · +18 · Juega con responsabilidad",
         "image": true,
         "picks": [
           {
@@ -6961,7 +6961,7 @@
             "league": "euroleague",
             "label": "J. Butler +1.5 asistencias",
             "list": "J. Butler +1.5 Ast",
-            "odd": 1.61,
+            "odd": 1.63,
             "start": "2026-11-06T19:15:00.000Z",
             "gameId": "el:E2026_100",
             "market": "prop",
@@ -6971,7 +6971,7 @@
             "playerId": "014163",
             "team": "RED",
             "match": "Olympiacos – Crvena Zvezda",
-            "pFinal": 0.608
+            "pFinal": 0.602
           },
           {
             "id": "el:E2026_100|spread|away|6.5||",
@@ -7507,7 +7507,7 @@
             "league": "nba",
             "label": "J. Fears +3.5 rebotes",
             "list": "J. Fears +3.5 Reb",
-            "odd": 1.62,
+            "odd": 1.61,
             "start": "2026-11-07T01:00Z",
             "gameId": "nba:401909293",
             "market": "prop",
@@ -7517,10 +7517,10 @@
             "playerId": "5144091",
             "team": "NO",
             "match": "Pelicans – Timberwolves",
-            "pFinal": 0.613
+            "pFinal": 0.615
           }
         ],
-        "text": "🏀 NBA Picks Day · 06/11\n\n1.- J. McCain −2.5 T3 @1.56\n2.- L. Doncic +39.5 P+A @1.55\n3.- G. Allen +11.5 Pts @1.56\n4.- J. Fears +3.5 Reb @1.62\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 06/11\n\n1.- J. McCain −2.5 T3 @1.56\n2.- L. Doncic +39.5 P+A @1.55\n3.- G. Allen +11.5 Pts @1.56\n4.- J. Fears +3.5 Reb @1.61\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-2": {
         "id": "nba-day-2",
@@ -7592,6 +7592,20 @@
         "image": true,
         "picks": [
           {
+            "id": "nba:401909291|spread|home|3.5||",
+            "league": "nba",
+            "label": "Grizzlies +3.5",
+            "list": "Grizzlies +3.5",
+            "odd": 1.88,
+            "start": "2026-11-07T01:00Z",
+            "gameId": "nba:401909291",
+            "market": "spread",
+            "side": "home",
+            "line": 3.5,
+            "match": "Grizzlies – Thunder",
+            "pFinal": 0.566
+          },
+          {
             "id": "nba:401909287|prop|over|1.5|4397183|tpm",
             "league": "nba",
             "label": "A. Wiggins +1.5 triples",
@@ -7606,20 +7620,6 @@
             "playerId": "4397183",
             "match": "Hawks – Wizards",
             "pFinal": 0.552
-          },
-          {
-            "id": "nba:401909291|spread|home|3.5||",
-            "league": "nba",
-            "label": "Grizzlies +3.5",
-            "list": "Grizzlies +3.5",
-            "odd": 1.87,
-            "start": "2026-11-07T01:00Z",
-            "gameId": "nba:401909291",
-            "market": "spread",
-            "side": "home",
-            "line": 3.5,
-            "match": "Grizzlies – Thunder",
-            "pFinal": 0.556
           },
           {
             "id": "nba:401909290|prop|under|20.5|4432811|pr",
@@ -7638,7 +7638,7 @@
             "pFinal": 0.614
           }
         ],
-        "text": "🧵 NBA Picks Day · 06/11 (sigue)\n\n8.- A. Wiggins +1.5 T3 @1.87\n9.- Grizzlies +3.5 @1.87\n10.- J. Green −20.5 P+R @1.77\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 06/11 (sigue)\n\n8.- Grizzlies +3.5 @1.88\n9.- A. Wiggins +1.5 T3 @1.87\n10.- J. Green −20.5 P+R @1.77\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }

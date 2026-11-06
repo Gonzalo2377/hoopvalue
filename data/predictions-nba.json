@@ -852,5 +852,26 @@
     "away": "Wizards",
     "ptsH": 107,
     "ptsA": 104
+  },
+  "nba:401909942": {
+    "start": "2026-11-08T01:30Z",
+    "home": "Warriors",
+    "away": "Magic",
+    "ptsH": 117,
+    "ptsA": 106
+  },
+  "nba:401909943": {
+    "start": "2026-11-08T02:00Z",
+    "home": "Suns",
+    "away": "Rockets",
+    "ptsH": 112,
+    "ptsA": 120
+  },
+  "nba:401909944": {
+    "start": "2026-11-08T03:00Z",
+    "home": "Trail Blazers",
+    "away": "Spurs",
+    "ptsH": 116,
+    "ptsA": 113
   }
 }

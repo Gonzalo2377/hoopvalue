@@ -231,6 +231,42 @@
       "stat": "tpm",
       "playerId": "2528426",
       "createdAt": "2026-11-06T13:05:58.140Z"
+    },
+    {
+      "id": "nba:401909943|prop|over|13.5|4432639|pts",
+      "gameId": "nba:401909943",
+      "start": "2026-11-08T02:00Z",
+      "match": "Suns – Rockets",
+      "market": "prop",
+      "side": "over",
+      "line": 13.5,
+      "label": "Jabari Smith Jr. más de 13.5 puntos",
+      "odd": 1.67,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.588,
+      "safety": 0.532,
+      "tier": "C",
+      "stat": "pts",
+      "playerId": "4432639",
+      "createdAt": "2026-11-06T15:58:49.455Z"
+    },
+    {
+      "id": "nba:401909942|prop|under|9.5|5239561|reb",
+      "gameId": "nba:401909942",
+      "start": "2026-11-08T01:30Z",
+      "match": "Warriors – Magic",
+      "market": "prop",
+      "side": "under",
+      "line": 9.5,
+      "label": "Jase Richardson menos de 9.5 rebotes",
+      "odd": 1.67,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.64,
+      "safety": 0.478,
+      "tier": "C",
+      "stat": "reb",
+      "playerId": "5239561",
+      "createdAt": "2026-11-06T15:58:49.455Z"
     }
   ],
   "record": [
