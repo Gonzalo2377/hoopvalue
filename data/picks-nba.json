@@ -231,6 +231,24 @@
       "stat": "pts",
       "playerId": "4432848",
       "createdAt": "2026-11-07T13:16:58.476Z"
+    },
+    {
+      "id": "nba:401909951|prop|over|4.5|4278053|ast",
+      "gameId": "nba:401909951",
+      "start": "2026-11-09T02:00Z",
+      "match": "Kings – Heat",
+      "market": "prop",
+      "side": "over",
+      "line": 4.5,
+      "label": "Davion Mitchell más de 4.5 asistencias",
+      "odd": 1.55,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.659,
+      "safety": 0.543,
+      "tier": "C",
+      "stat": "ast",
+      "playerId": "4278053",
+      "createdAt": "2026-11-07T14:18:02.187Z"
     }
   ],
   "record": [

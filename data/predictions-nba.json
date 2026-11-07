@@ -908,5 +908,19 @@
     "away": "Celtics",
     "ptsH": 107,
     "ptsA": 117
+  },
+  "nba:401909950": {
+    "start": "2026-11-09T02:00Z",
+    "home": "Clippers",
+    "away": "Pelicans",
+    "ptsH": 115,
+    "ptsA": 117
+  },
+  "nba:401909951": {
+    "start": "2026-11-09T02:00Z",
+    "home": "Kings",
+    "away": "Heat",
+    "ptsH": 117,
+    "ptsA": 121
   }
 }
