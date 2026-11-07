@@ -880,5 +880,12 @@
     "away": "76ers",
     "ptsH": 111,
     "ptsA": 121
+  },
+  "nba:401909946": {
+    "start": "2026-11-08T23:00Z",
+    "home": "Pistons",
+    "away": "Lakers",
+    "ptsH": 114,
+    "ptsA": 112
   }
 }

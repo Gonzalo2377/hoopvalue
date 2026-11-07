@@ -7967,6 +7967,22 @@
             "pFinal": 0.623
           },
           {
+            "id": "nba:401909940|prop|under|1.5|2528426|tpm",
+            "league": "nba",
+            "label": "J. Clarkson −1.5 triples",
+            "list": "J. Clarkson −1.5 T3",
+            "odd": 1.61,
+            "start": "2026-11-08T01:00Z",
+            "gameId": "nba:401909940",
+            "market": "prop",
+            "side": "under",
+            "line": 1.5,
+            "stat": "tpm",
+            "playerId": "2528426",
+            "match": "Cavaliers – Knicks",
+            "pFinal": 0.623
+          },
+          {
             "id": "nba:401909943|prop|over|13.5|4432639|pts",
             "league": "nba",
             "label": "J. Smith Jr. +13.5 puntos",
@@ -7981,23 +7997,6 @@
             "playerId": "4432639",
             "match": "Suns – Rockets",
             "pFinal": 0.588
-          },
-          {
-            "id": "nba:401909940|prop|under|1.5|2528426|tpm",
-            "league": "nba",
-            "label": "J. Clarkson −1.5 triples",
-            "list": "J. Clarkson −1.5 T3",
-            "odd": 1.65,
-            "start": "2026-11-08T01:00Z",
-            "gameId": "nba:401909940",
-            "market": "prop",
-            "side": "under",
-            "line": 1.5,
-            "stat": "tpm",
-            "playerId": "2528426",
-            "team": "NY",
-            "match": "Cavaliers – Knicks",
-            "pFinal": 0.613
           },
           {
             "id": "nba:401909941|prop|under|6.5|5174563|ast",
@@ -8016,7 +8015,7 @@
             "pFinal": 0.621
           }
         ],
-        "text": "🏀 NBA Picks Day · 07/11\n\n1.- Gana Knicks @1.58\n2.- J. Smith Jr. +13.5 Pts @1.67\n3.- J. Clarkson −1.5 T3 @1.65\n4.- K. George −6.5 Ast @1.64\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+        "text": "🏀 NBA Picks Day · 07/11\n\n1.- Gana Knicks @1.58\n2.- J. Clarkson −1.5 T3 @1.61\n3.- J. Smith Jr. +13.5 Pts @1.67\n4.- K. George −6.5 Ast @1.64\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
       },
       "nba-day-2": {
         "id": "nba-day-2",

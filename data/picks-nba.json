@@ -159,6 +159,24 @@
       "stat": "tpm",
       "playerId": "5095151",
       "createdAt": "2026-11-07T08:52:58.614Z"
+    },
+    {
+      "id": "nba:401909946|prop|under|3.5|2596112|reb",
+      "gameId": "nba:401909946",
+      "start": "2026-11-08T23:00Z",
+      "match": "Pistons – Lakers",
+      "market": "prop",
+      "side": "under",
+      "line": 3.5,
+      "label": "Javonte Green menos de 3.5 rebotes",
+      "odd": 1.74,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.58,
+      "safety": 0.506,
+      "tier": "C",
+      "stat": "reb",
+      "playerId": "2596112",
+      "createdAt": "2026-11-07T11:15:07.314Z"
     }
   ],
   "record": [
@@ -16737,6 +16755,94 @@
       "ev": 0.075,
       "start": "2026-11-08T01:00Z",
       "createdAt": "2026-11-07T10:34:30.696Z"
+    },
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "nba:401909946|prop|under|3.5|2596112|reb",
+          "gameId": "nba:401909946",
+          "start": "2026-11-08T23:00Z",
+          "match": "Pistons – Lakers",
+          "market": "prop",
+          "side": "under",
+          "line": 3.5,
+          "stat": "reb",
+          "playerId": "2596112",
+          "player": "Javonte Green",
+          "team": "DET",
+          "label": "Javonte Green menos de 3.5 rebotes",
+          "odd": 1.74,
+          "pFinal": 0.58,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909944|prop|under|6.5|4683678|ra",
+          "gameId": "nba:401909944",
+          "start": "2026-11-08T03:00Z",
+          "match": "Trail Blazers – Spurs",
+          "market": "prop",
+          "side": "under",
+          "line": 6.5,
+          "stat": "ra",
+          "playerId": "4683678",
+          "player": "Scoot Henderson",
+          "team": "POR",
+          "label": "Scoot Henderson menos de 6.5 reb+ast",
+          "odd": 1.66,
+          "pFinal": 0.643,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.89,
+      "prob": 0.373,
+      "ev": 0.077,
+      "start": "2026-11-08T03:00Z",
+      "createdAt": "2026-11-07T11:15:07.314Z"
+    },
+    {
+      "type": "jugadores",
+      "legs": [
+        {
+          "id": "nba:401909945|prop|over|1.5|5095151|tpm",
+          "gameId": "nba:401909945",
+          "start": "2026-11-08T20:30Z",
+          "match": "Bulls – 76ers",
+          "market": "prop",
+          "side": "over",
+          "line": 1.5,
+          "stat": "tpm",
+          "playerId": "5095151",
+          "player": "Caleb Wilson",
+          "team": "CHI",
+          "label": "Caleb Wilson más de 1.5 triples",
+          "odd": 1.64,
+          "pFinal": 0.607,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909946|prop|under|3.5|2596112|reb",
+          "gameId": "nba:401909946",
+          "start": "2026-11-08T23:00Z",
+          "match": "Pistons – Lakers",
+          "market": "prop",
+          "side": "under",
+          "line": 3.5,
+          "stat": "reb",
+          "playerId": "2596112",
+          "player": "Javonte Green",
+          "team": "DET",
+          "label": "Javonte Green menos de 3.5 rebotes",
+          "odd": 1.74,
+          "pFinal": 0.58,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 2.85,
+      "prob": 0.352,
+      "ev": 0.005,
+      "start": "2026-11-08T20:30Z",
+      "createdAt": "2026-11-07T11:15:07.314Z"
     }
   ],
   "comboRecord": [
