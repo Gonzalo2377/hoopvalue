@@ -249,6 +249,22 @@
       "stat": "ast",
       "playerId": "4278053",
       "createdAt": "2026-11-07T14:18:02.187Z"
+    },
+    {
+      "id": "nba:401909939|spread|away|7.5||",
+      "gameId": "nba:401909939",
+      "start": "2026-11-08T00:30Z",
+      "match": "Hawks – Nets",
+      "market": "spread",
+      "side": "away",
+      "line": 7.5,
+      "label": "Nets +7.5",
+      "odd": 1.85,
+      "book": "draftkings",
+      "pFinal": 0.561,
+      "safety": 0.48,
+      "tier": "C",
+      "createdAt": "2026-11-07T16:24:02.285Z"
     }
   ],
   "record": [

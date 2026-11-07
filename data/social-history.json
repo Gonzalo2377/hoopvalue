@@ -7948,7 +7948,7 @@
         "kind": "nba-day",
         "league": "nba",
         "reply": false,
-        "title": "NBA Picks Day · 8 picks",
+        "title": "NBA Picks Day · 9 picks",
         "postAt": "2026-11-07T17:45:00.000Z",
         "image": true,
         "picks": [
@@ -7997,7 +7997,19 @@
             "playerId": "4432639",
             "match": "Suns – Rockets",
             "pFinal": 0.588
-          },
+          }
+        ],
+        "text": "🏀 NBA Picks Day · 07/11\n\n1.- Gana Knicks @1.58\n2.- J. Clarkson −1.5 T3 @1.61\n3.- J. Smith Jr. +13.5 Pts @1.67\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-2": {
+        "id": "nba-day-2",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 2/3 · picks 4-6",
+        "postAt": "2026-11-07T17:45:00.000Z",
+        "image": true,
+        "picks": [
           {
             "id": "nba:401909941|prop|under|6.5|5174563|ast",
             "league": "nba",
@@ -8013,19 +8025,7 @@
             "playerId": "5174563",
             "match": "Thunder – Wizards",
             "pFinal": 0.621
-          }
-        ],
-        "text": "🏀 NBA Picks Day · 07/11\n\n1.- Gana Knicks @1.58\n2.- J. Clarkson −1.5 T3 @1.61\n3.- J. Smith Jr. +13.5 Pts @1.67\n4.- K. George −6.5 Ast @1.64\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-2": {
-        "id": "nba-day-2",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 2/2 · picks 5-8",
-        "postAt": "2026-11-07T17:45:00.000Z",
-        "image": true,
-        "picks": [
+          },
           {
             "id": "nba:401909938|prop|under|14.5|3138196|pa",
             "league": "nba",
@@ -8057,7 +8057,19 @@
             "playerId": "5174655",
             "match": "Hawks – Nets",
             "pFinal": 0.585
-          },
+          }
+        ],
+        "text": "🧵 NBA Picks Day · 07/11 (sigue)\n\n4.- K. George −6.5 Ast @1.64\n5.- C. Johnson −14.5 P+A @1.77\n6.- C. Johnson −2.5 Ast @1.75\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-3": {
+        "id": "nba-day-3",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 3/3 · picks 7-9",
+        "postAt": "2026-11-07T17:45:00.000Z",
+        "image": true,
+        "picks": [
           {
             "id": "nba:401909944|prop|under|6.5|4683678|ra",
             "league": "nba",
@@ -8073,6 +8085,20 @@
             "playerId": "4683678",
             "match": "Trail Blazers – Spurs",
             "pFinal": 0.643
+          },
+          {
+            "id": "nba:401909939|spread|away|7.5||",
+            "league": "nba",
+            "label": "Nets +7.5",
+            "list": "Nets +7.5",
+            "odd": 1.85,
+            "start": "2026-11-08T00:30Z",
+            "gameId": "nba:401909939",
+            "market": "spread",
+            "side": "away",
+            "line": 7.5,
+            "match": "Hawks – Nets",
+            "pFinal": 0.561
           },
           {
             "id": "nba:401909942|prop|under|9.5|5239561|reb",
@@ -8091,7 +8117,7 @@
             "pFinal": 0.64
           }
         ],
-        "text": "🧵 NBA Picks Day · 07/11 (sigue)\n\n5.- C. Johnson −14.5 P+A @1.77\n6.- C. Johnson −2.5 Ast @1.75\n7.- S. Henderson −6.5 R+A @1.66\n8.- J. Richardson −9.5 Reb @1.67\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 07/11 (sigue)\n\n7.- S. Henderson −6.5 R+A @1.66\n8.- Nets +7.5 @1.85\n9.- J. Richardson −9.5 Reb @1.67\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
