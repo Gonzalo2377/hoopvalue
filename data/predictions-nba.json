@@ -894,5 +894,12 @@
     "away": "Jazz",
     "ptsH": 115,
     "ptsA": 105
+  },
+  "nba:401909948": {
+    "start": "2026-11-09T00:30Z",
+    "home": "Mavericks",
+    "away": "Nets",
+    "ptsH": 115,
+    "ptsA": 107
   }
 }
