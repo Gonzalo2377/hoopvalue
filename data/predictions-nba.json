@@ -873,5 +873,12 @@
     "away": "Spurs",
     "ptsH": 115,
     "ptsA": 115
+  },
+  "nba:401909945": {
+    "start": "2026-11-08T20:30Z",
+    "home": "Bulls",
+    "away": "76ers",
+    "ptsH": 111,
+    "ptsA": 121
   }
 }

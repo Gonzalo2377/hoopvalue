@@ -141,6 +141,24 @@
       "stat": "ra",
       "playerId": "4683678",
       "createdAt": "2026-11-07T04:21:44.185Z"
+    },
+    {
+      "id": "nba:401909945|prop|over|1.5|5095151|tpm",
+      "gameId": "nba:401909945",
+      "start": "2026-11-08T20:30Z",
+      "match": "Bulls – 76ers",
+      "market": "prop",
+      "side": "over",
+      "line": 1.5,
+      "label": "Caleb Wilson más de 1.5 triples",
+      "odd": 1.64,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.607,
+      "safety": 0.525,
+      "tier": "C",
+      "stat": "tpm",
+      "playerId": "5095151",
+      "createdAt": "2026-11-07T08:52:58.614Z"
     }
   ],
   "record": [
