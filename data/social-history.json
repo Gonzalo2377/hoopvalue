@@ -7660,8 +7660,8 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
             "pred": [
-              117,
-              116
+              116,
+              117
             ]
           },
           {
@@ -7688,7 +7688,7 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ind.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/den.png",
             "pred": [
-              111,
+              110,
               115
             ]
           },
@@ -7703,7 +7703,7 @@
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
             "pred": [
               110,
-              111
+              113
             ]
           },
           {
@@ -7730,8 +7730,8 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
             "pred": [
-              109,
-              98
+              111,
+              99
             ]
           },
           {
@@ -7777,7 +7777,7 @@
             ]
           }
         ],
-        "text": "🔮 EuroPicks Score Predictions · NBA · 07/11\n\nLAL 117-116 POR\nSAC 108-120 SA\nIND 111-115 DEN\nATL 110-111 BKN\nCLE 109-113 NY\nOKC 109-98 WSH\nGS 117-106 ORL\nPHX 112-119 HOU\nPOR 116-113 SA\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
+        "text": "🔮 EuroPicks Score Predictions · NBA · 07/11\n\nLAL 116-117 POR\nSAC 108-120 SA\nIND 110-115 DEN\nATL 110-113 BKN\nCLE 109-113 NY\nOKC 111-99 WSH\nGS 117-106 ORL\nPHX 112-119 HOU\nPOR 116-113 SA\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
       },
       "combo-nba": {
         "id": "combo-nba",
@@ -7885,7 +7885,7 @@
         "league": "nba",
         "title": "NBA · resultados de ayer (06/11)",
         "postAt": "2026-11-07T08:40:00.000Z",
-        "text": "📋 NBA · resultados de ayer (06/11)\n\n⏳⏳⏳⏳⏳⏳⏳⏳⏳⏳⏳\n👇 Cada pick en la imagen\n\nAyer: 0-0 (+0.00 u) · Total NBA: 75-44 (-9.66 u)\n#NBA · +18 · Juega con responsabilidad",
+        "text": "📋 NBA · resultados de ayer (06/11)\n\n⏳⏳❌⏳⏳⏳⏳⏳✅⏳⏳\n👇 Cada pick en la imagen\n\nAyer: 1-1 (-0.13 u) · Total NBA: 76-45 (-9.79 u)\n#NBA · +18 · Juega con responsabilidad",
         "image": true,
         "pending": true,
         "rows": [
@@ -7905,7 +7905,7 @@
             "league": "nba",
             "label": "G. Allen +11.5 puntos",
             "odd": 1.62,
-            "result": null
+            "result": "L"
           },
           {
             "league": "nba",
@@ -7941,7 +7941,7 @@
             "league": "nba",
             "label": "A. Wiggins +1.5 triples",
             "odd": 1.87,
-            "result": null
+            "result": "W"
           },
           {
             "league": "nba",
@@ -7951,23 +7951,23 @@
           },
           {
             "league": "nba",
-            "label": "Combinada: D. Mitchell +11.5 Pts + A. Wiggins +1.5 T3",
+            "label": "Combinada: D. Mitchell +11.5 Pts + A. Wiggins +1.5 T3 ✓",
             "odd": 3.09,
             "result": null
           }
         ],
         "balance": {
           "day": [
-            0,
-            0
+            1,
+            1
           ],
           "total": [
-            75,
-            44
+            76,
+            45
           ],
           "units": {
-            "day": 0,
-            "total": -9.66
+            "day": -0.13,
+            "total": -9.79
           }
         }
       },
@@ -8085,7 +8085,6 @@
             "line": 14.5,
             "stat": "pa",
             "playerId": "3138196",
-            "team": "DEN",
             "match": "Pacers – Nuggets",
             "pFinal": 0.55
           },
@@ -8094,7 +8093,7 @@
             "league": "nba",
             "label": "C. Johnson −2.5 asistencias",
             "list": "C. Johnson −2.5 Ast",
-            "odd": 1.73,
+            "odd": 1.74,
             "start": "2026-11-08T00:30Z",
             "gameId": "nba:401909939",
             "market": "prop",
@@ -8104,7 +8103,7 @@
             "playerId": "5174655",
             "team": "BKN",
             "match": "Hawks – Nets",
-            "pFinal": 0.591
+            "pFinal": 0.588
           },
           {
             "id": "nba:401909942|prop|under|9.5|5239561|reb",
@@ -8123,7 +8122,7 @@
             "pFinal": 0.64
           }
         ],
-        "text": "🧵 NBA Picks Day · 07/11 (sigue)\n\n5.- K. George −6.5 Ast @1.64\n6.- C. Johnson −14.5 P+A @1.77\n7.- C. Johnson −2.5 Ast @1.73\n8.- J. Richardson −9.5 Reb @1.67\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 07/11 (sigue)\n\n5.- K. George −6.5 Ast @1.64\n6.- C. Johnson −14.5 P+A @1.77\n7.- C. Johnson −2.5 Ast @1.74\n8.- J. Richardson −9.5 Reb @1.67\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
