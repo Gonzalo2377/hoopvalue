@@ -7745,11 +7745,11 @@
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
             "pred": [
               116,
-              113
+              115
             ]
           }
         ],
-        "text": "🔮 EuroPicks Score Predictions · NBA · 07/11\n\nIND 110-115 DEN\nATL 110-113 BKN\nCLE 108-112 NY\nOKC 117-98 WSH\nGS 117-106 ORL\nPHX 111-119 HOU\nPOR 116-113 SA\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
+        "text": "🔮 EuroPicks Score Predictions · NBA · 07/11\n\nIND 110-115 DEN\nATL 110-113 BKN\nCLE 108-112 NY\nOKC 117-98 WSH\nGS 117-106 ORL\nPHX 111-119 HOU\nPOR 116-115 SA\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
       },
       "combo-nba": {
         "id": "combo-nba",
@@ -7857,9 +7857,9 @@
         "league": "nba",
         "title": "NBA · resultados de ayer (06/11)",
         "postAt": "2026-11-07T08:40:00.000Z",
-        "text": "📋 NBA · resultados de ayer (06/11)\n\n❌⏳❌✅⚪✅✅❌✅✅✅\n👇 Cada pick en la imagen\n\nAyer: 6-3 (+2.57 u) · Total NBA: 81-47 (-7.09 u)\n#NBA · +18 · Juega con responsabilidad",
+        "text": "📋 NBA · resultados de ayer (06/11)\n\n❌✅❌✅⚪✅✅❌✅✅✅\n👇 Cada pick en la imagen\n\nAyer: 7-3 (+3.12 u) · Total NBA: 82-47 (-6.54 u)\n#NBA · +18 · Juega con responsabilidad",
         "image": true,
-        "pending": true,
+        "pending": false,
         "rows": [
           {
             "league": "nba",
@@ -7871,7 +7871,7 @@
             "league": "nba",
             "label": "L. Doncic +39.5 pts+ast",
             "odd": 1.55,
-            "result": null
+            "result": "W"
           },
           {
             "league": "nba",
@@ -7930,16 +7930,16 @@
         ],
         "balance": {
           "day": [
-            6,
+            7,
             3
           ],
           "total": [
-            81,
+            82,
             47
           ],
           "units": {
-            "day": 2.57,
-            "total": -7.09
+            "day": 3.12,
+            "total": -6.54
           }
         }
       },
