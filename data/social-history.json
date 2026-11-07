@@ -7674,7 +7674,7 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
             "pred": [
-              110,
+              111,
               113
             ]
           },
@@ -7688,8 +7688,8 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
             "pred": [
-              108,
-              112
+              112,
+              110
             ]
           },
           {
@@ -7702,8 +7702,8 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
             "pred": [
-              117,
-              98
+              115,
+              103
             ]
           },
           {
@@ -7749,7 +7749,7 @@
             ]
           }
         ],
-        "text": "🔮 EuroPicks Score Predictions · NBA · 07/11\n\nIND 110-115 DEN\nATL 110-113 BKN\nCLE 108-112 NY\nOKC 117-98 WSH\nGS 117-106 ORL\nPHX 111-119 HOU\nPOR 116-115 SA\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
+        "text": "🔮 EuroPicks Score Predictions · NBA · 07/11\n\nIND 110-115 DEN\nATL 111-113 BKN\nCLE 112-110 NY\nOKC 115-103 WSH\nGS 117-106 ORL\nPHX 111-119 HOU\nPOR 116-115 SA\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
       },
       "combo-nba": {
         "id": "combo-nba",
@@ -7967,6 +7967,23 @@
             "pFinal": 0.623
           },
           {
+            "id": "nba:401909939|prop|under|2.5|5174655|ast",
+            "league": "nba",
+            "label": "C. Johnson −2.5 asistencias",
+            "list": "C. Johnson −2.5 Ast",
+            "odd": 1.58,
+            "start": "2026-11-08T00:30Z",
+            "gameId": "nba:401909939",
+            "market": "prop",
+            "side": "under",
+            "line": 2.5,
+            "stat": "ast",
+            "playerId": "5174655",
+            "team": "BKN",
+            "match": "Hawks – Nets",
+            "pFinal": 0.63
+          },
+          {
             "id": "nba:401909940|prop|under|1.5|2528426|tpm",
             "league": "nba",
             "label": "J. Clarkson −1.5 triples",
@@ -7997,7 +8014,19 @@
             "playerId": "4432639",
             "match": "Suns – Rockets",
             "pFinal": 0.588
-          },
+          }
+        ],
+        "text": "🏀 NBA Picks Day · 07/11\n\n1.- Gana Knicks @1.58\n2.- C. Johnson −2.5 Ast @1.58\n3.- J. Clarkson −1.5 T3 @1.61\n4.- J. Smith Jr. +13.5 Pts @1.67\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-2": {
+        "id": "nba-day-2",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 2/2 · picks 5-8",
+        "postAt": "2026-11-07T17:45:00.000Z",
+        "image": true,
+        "picks": [
           {
             "id": "nba:401909941|prop|under|6.5|5174563|ast",
             "league": "nba",
@@ -8013,19 +8042,7 @@
             "playerId": "5174563",
             "match": "Thunder – Wizards",
             "pFinal": 0.621
-          }
-        ],
-        "text": "🏀 NBA Picks Day · 07/11\n\n1.- Gana Knicks @1.58\n2.- J. Clarkson −1.5 T3 @1.61\n3.- J. Smith Jr. +13.5 Pts @1.67\n4.- K. George −6.5 Ast @1.64\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-2": {
-        "id": "nba-day-2",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 2/2 · picks 5-8",
-        "postAt": "2026-11-07T17:45:00.000Z",
-        "image": true,
-        "picks": [
+          },
           {
             "id": "nba:401909938|prop|under|14.5|3138196|pa",
             "league": "nba",
@@ -8043,20 +8060,20 @@
             "pFinal": 0.55
           },
           {
-            "id": "nba:401909939|prop|under|2.5|5174655|ast",
+            "id": "nba:401909944|prop|under|6.5|4683678|ra",
             "league": "nba",
-            "label": "C. Johnson −2.5 asistencias",
-            "list": "C. Johnson −2.5 Ast",
-            "odd": 1.75,
-            "start": "2026-11-08T00:30Z",
-            "gameId": "nba:401909939",
+            "label": "S. Henderson −6.5 reb+ast",
+            "list": "S. Henderson −6.5 R+A",
+            "odd": 1.66,
+            "start": "2026-11-08T03:00Z",
+            "gameId": "nba:401909944",
             "market": "prop",
             "side": "under",
-            "line": 2.5,
-            "stat": "ast",
-            "playerId": "5174655",
-            "match": "Hawks – Nets",
-            "pFinal": 0.585
+            "line": 6.5,
+            "stat": "ra",
+            "playerId": "4683678",
+            "match": "Trail Blazers – Spurs",
+            "pFinal": 0.643
           },
           {
             "id": "nba:401909942|prop|under|9.5|5239561|reb",
@@ -8073,26 +8090,9 @@
             "playerId": "5239561",
             "match": "Warriors – Magic",
             "pFinal": 0.64
-          },
-          {
-            "id": "nba:401909944|prop|under|6.5|4683678|ra",
-            "league": "nba",
-            "label": "S. Henderson −6.5 reb+ast",
-            "list": "S. Henderson −6.5 R+A",
-            "odd": 1.74,
-            "start": "2026-11-08T03:00Z",
-            "gameId": "nba:401909944",
-            "market": "prop",
-            "side": "under",
-            "line": 6.5,
-            "stat": "ra",
-            "playerId": "4683678",
-            "team": "POR",
-            "match": "Trail Blazers – Spurs",
-            "pFinal": 0.622
           }
         ],
-        "text": "🧵 NBA Picks Day · 07/11 (sigue)\n\n5.- C. Johnson −14.5 P+A @1.77\n6.- C. Johnson −2.5 Ast @1.75\n7.- J. Richardson −9.5 Reb @1.67\n8.- S. Henderson −6.5 R+A @1.74\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 07/11 (sigue)\n\n5.- K. George −6.5 Ast @1.64\n6.- C. Johnson −14.5 P+A @1.77\n7.- S. Henderson −6.5 R+A @1.66\n8.- J. Richardson −9.5 Reb @1.67\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
