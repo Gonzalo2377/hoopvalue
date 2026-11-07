@@ -7674,7 +7674,7 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
             "pred": [
-              111,
+              110,
               113
             ]
           },
@@ -7702,8 +7702,8 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/okc.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
             "pred": [
-              111,
-              99
+              117,
+              98
             ]
           },
           {
@@ -7730,7 +7730,7 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phx.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/hou.png",
             "pred": [
-              112,
+              111,
               119
             ]
           },
@@ -7745,11 +7745,11 @@
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
             "pred": [
               116,
-              113
+              114
             ]
           }
         ],
-        "text": "🔮 EuroPicks Score Predictions · NBA · 07/11\n\nIND 110-115 DEN\nATL 111-113 BKN\nCLE 108-112 NY\nOKC 111-99 WSH\nGS 117-106 ORL\nPHX 112-119 HOU\nPOR 116-113 SA\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
+        "text": "🔮 EuroPicks Score Predictions · NBA · 07/11\n\nIND 110-115 DEN\nATL 110-113 BKN\nCLE 108-112 NY\nOKC 117-98 WSH\nGS 117-106 ORL\nPHX 111-119 HOU\nPOR 116-114 SA\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
       },
       "combo-nba": {
         "id": "combo-nba",
@@ -7857,7 +7857,7 @@
         "league": "nba",
         "title": "NBA · resultados de ayer (06/11)",
         "postAt": "2026-11-07T08:40:00.000Z",
-        "text": "📋 NBA · resultados de ayer (06/11)\n\n⏳⏳❌⏳⏳⏳✅⏳✅⏳✅\n👇 Cada pick en la imagen\n\nAyer: 3-1 (+2.61 u) · Total NBA: 78-45 (-7.05 u)\n#NBA · +18 · Juega con responsabilidad",
+        "text": "📋 NBA · resultados de ayer (06/11)\n\n❌⏳❌⏳⚪⏳✅❌✅✅✅\n👇 Cada pick en la imagen\n\nAyer: 4-3 (+1.38 u) · Total NBA: 79-47 (-8.28 u)\n#NBA · +18 · Juega con responsabilidad",
         "image": true,
         "pending": true,
         "rows": [
@@ -7865,7 +7865,7 @@
             "league": "nba",
             "label": "J. McCain −2.5 triples",
             "odd": 1.58,
-            "result": null
+            "result": "L"
           },
           {
             "league": "nba",
@@ -7889,7 +7889,7 @@
             "league": "nba",
             "label": "K. Anderson −3.5 triples",
             "odd": 1.57,
-            "result": null
+            "result": "V"
           },
           {
             "league": "nba",
@@ -7907,7 +7907,7 @@
             "league": "nba",
             "label": "Grizzlies +3.5",
             "odd": 1.88,
-            "result": null
+            "result": "L"
           },
           {
             "league": "nba",
@@ -7919,7 +7919,7 @@
             "league": "nba",
             "label": "J. Green −20.5 pts+reb",
             "odd": 1.77,
-            "result": null
+            "result": "W"
           },
           {
             "league": "nba",
@@ -7930,16 +7930,16 @@
         ],
         "balance": {
           "day": [
-            3,
-            1
+            4,
+            3
           ],
           "total": [
-            78,
-            45
+            79,
+            47
           ],
           "units": {
-            "day": 2.61,
-            "total": -7.05
+            "day": 1.38,
+            "total": -8.28
           }
         }
       },

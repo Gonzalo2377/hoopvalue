@@ -836,7 +836,7 @@
     "start": "2026-11-08T00:30Z",
     "home": "Hawks",
     "away": "Nets",
-    "ptsH": 111,
+    "ptsH": 110,
     "ptsA": 113
   },
   "nba:401909940": {
@@ -850,8 +850,8 @@
     "start": "2026-11-08T01:00Z",
     "home": "Thunder",
     "away": "Wizards",
-    "ptsH": 111,
-    "ptsA": 99
+    "ptsH": 117,
+    "ptsA": 98
   },
   "nba:401909942": {
     "start": "2026-11-08T01:30Z",
@@ -864,7 +864,7 @@
     "start": "2026-11-08T02:00Z",
     "home": "Suns",
     "away": "Rockets",
-    "ptsH": 112,
+    "ptsH": 111,
     "ptsA": 119
   },
   "nba:401909944": {
@@ -872,6 +872,6 @@
     "home": "Trail Blazers",
     "away": "Spurs",
     "ptsH": 116,
-    "ptsA": 113
+    "ptsA": 114
   }
 }

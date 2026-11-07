@@ -1,42 +1,6 @@
 {
   "pending": [
     {
-      "id": "nba:401909292|prop|under|3.5|2993874|tpm",
-      "gameId": "nba:401909292",
-      "start": "2026-11-07T01:00Z",
-      "match": "Bucks – Raptors",
-      "market": "prop",
-      "side": "under",
-      "line": 3.5,
-      "label": "Kyle Anderson menos de 3.5 triples",
-      "odd": 1.57,
-      "book": "unibet (Kambi)",
-      "pFinal": 0.671,
-      "safety": 0.529,
-      "tier": "C",
-      "stat": "tpm",
-      "playerId": "2993874",
-      "createdAt": "2026-11-05T13:07:15.527Z"
-    },
-    {
-      "id": "nba:401909290|prop|under|20.5|4432811|pr",
-      "gameId": "nba:401909290",
-      "start": "2026-11-07T01:00Z",
-      "match": "Mavericks – Jazz",
-      "market": "prop",
-      "side": "under",
-      "line": 20.5,
-      "label": "Josh Green menos de 20.5 pts+reb",
-      "odd": 1.77,
-      "book": "unibet (Kambi)",
-      "pFinal": 0.614,
-      "safety": 0.437,
-      "tier": "C",
-      "stat": "pr",
-      "playerId": "4432811",
-      "createdAt": "2026-11-05T13:07:15.527Z"
-    },
-    {
       "id": "nba:401909295|prop|under|3.5|4395723|tpm",
       "gameId": "nba:401909295",
       "start": "2026-11-07T03:00Z",
@@ -53,40 +17,6 @@
       "stat": "tpm",
       "playerId": "4395723",
       "createdAt": "2026-11-05T15:09:54.151Z"
-    },
-    {
-      "id": "nba:401909291|prop|under|2.5|4683778|tpm",
-      "gameId": "nba:401909291",
-      "start": "2026-11-07T01:00Z",
-      "match": "Grizzlies – Thunder",
-      "market": "prop",
-      "side": "under",
-      "line": 2.5,
-      "label": "Jared McCain menos de 2.5 triples",
-      "odd": 1.58,
-      "book": "unibet (Kambi)",
-      "pFinal": 0.622,
-      "safety": 0.577,
-      "tier": "C",
-      "stat": "tpm",
-      "playerId": "4683778",
-      "createdAt": "2026-11-06T05:49:16.095Z"
-    },
-    {
-      "id": "nba:401909291|spread|home|3.5||",
-      "gameId": "nba:401909291",
-      "start": "2026-11-07T01:00Z",
-      "match": "Grizzlies – Thunder",
-      "market": "spread",
-      "side": "home",
-      "line": 3.5,
-      "label": "Grizzlies +3.5",
-      "odd": 1.88,
-      "book": "draftkings",
-      "pFinal": 0.566,
-      "safety": 0.464,
-      "tier": "C",
-      "createdAt": "2026-11-06T09:41:44.833Z"
     },
     {
       "id": "nba:401909294|prop|over|39.5|3945274|pa",
@@ -234,6 +164,91 @@
     }
   ],
   "record": [
+    {
+      "id": "nba:401909292|prop|under|3.5|2993874|tpm",
+      "gameId": "nba:401909292",
+      "start": "2026-11-07T01:00Z",
+      "match": "Bucks – Raptors",
+      "market": "prop",
+      "side": "under",
+      "line": 3.5,
+      "label": "Kyle Anderson menos de 3.5 triples",
+      "odd": 1.57,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.671,
+      "safety": 0.529,
+      "tier": "C",
+      "stat": "tpm",
+      "playerId": "2993874",
+      "createdAt": "2026-11-05T13:07:15.527Z",
+      "result": "V",
+      "score": "107-121",
+      "settledAt": "2026-11-07T03:41:03.844Z"
+    },
+    {
+      "id": "nba:401909290|prop|under|20.5|4432811|pr",
+      "gameId": "nba:401909290",
+      "start": "2026-11-07T01:00Z",
+      "match": "Mavericks – Jazz",
+      "market": "prop",
+      "side": "under",
+      "line": 20.5,
+      "label": "Josh Green menos de 20.5 pts+reb",
+      "odd": 1.77,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.614,
+      "safety": 0.437,
+      "tier": "C",
+      "stat": "pr",
+      "playerId": "4432811",
+      "createdAt": "2026-11-05T13:07:15.527Z",
+      "result": "W",
+      "score": "112-100",
+      "settledAt": "2026-11-07T03:41:03.844Z"
+    },
+    {
+      "id": "nba:401909291|prop|under|2.5|4683778|tpm",
+      "gameId": "nba:401909291",
+      "start": "2026-11-07T01:00Z",
+      "match": "Grizzlies – Thunder",
+      "market": "prop",
+      "side": "under",
+      "line": 2.5,
+      "label": "Jared McCain menos de 2.5 triples",
+      "odd": 1.58,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.622,
+      "safety": 0.577,
+      "tier": "C",
+      "stat": "tpm",
+      "playerId": "4683778",
+      "createdAt": "2026-11-06T05:49:16.095Z",
+      "result": "L",
+      "score": "97-128",
+      "settledAt": "2026-11-07T03:41:03.844Z"
+    },
+    {
+      "id": "nba:401909291|spread|home|3.5||",
+      "gameId": "nba:401909291",
+      "start": "2026-11-07T01:00Z",
+      "match": "Grizzlies – Thunder",
+      "market": "spread",
+      "side": "home",
+      "line": 3.5,
+      "label": "Grizzlies +3.5",
+      "odd": 1.88,
+      "book": "draftkings",
+      "pFinal": 0.566,
+      "safety": 0.464,
+      "tier": "C",
+      "createdAt": "2026-11-06T09:41:44.833Z",
+      "result": "L",
+      "score": "97-128",
+      "settledAt": "2026-11-07T03:41:03.844Z",
+      "closeOdd": 1.9615384615384617,
+      "pClose": 0.4863,
+      "clv": -0.0858
+    },
     {
       "id": "nba:401909289|prop|over|11.5|3908809|pts",
       "gameId": "nba:401909289",
@@ -16600,7 +16615,8 @@
       "settledAt": "2026-10-23T12:34:36.074Z"
     }
   ],
-  "comboPending": [
+  "comboPending": [],
+  "comboRecord": [
     {
       "type": "valor",
       "legs": [
@@ -16660,10 +16676,16 @@
       "prob": 0.258,
       "ev": 0.228,
       "start": "2026-11-07T00:30Z",
-      "createdAt": "2026-11-05T13:07:15.527Z"
-    }
-  ],
-  "comboRecord": [
+      "createdAt": "2026-11-05T13:07:15.527Z",
+      "result": "W",
+      "oddFinal": 3.03,
+      "legStates": [
+        "V",
+        "W",
+        "W"
+      ],
+      "settledAt": "2026-11-07T03:41:03.844Z"
+    },
     {
       "type": "segura",
       "legs": [
