@@ -7646,38 +7646,10 @@
         "id": "preds-nba",
         "kind": "preds",
         "league": "nba",
-        "title": "Predicciones de marcador · NBA (9)",
+        "title": "Predicciones de marcador · NBA (7)",
         "postAt": "2026-11-07T17:30:00.000Z",
         "image": true,
         "games": [
-          {
-            "id": "nba:401909294",
-            "start": "2026-11-07T03:00Z",
-            "home": "Lakers",
-            "away": "Trail Blazers",
-            "hc": "LAL",
-            "ac": "POR",
-            "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/lal.png",
-            "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
-            "pred": [
-              116,
-              117
-            ]
-          },
-          {
-            "id": "nba:401909295",
-            "start": "2026-11-07T03:00Z",
-            "home": "Kings",
-            "away": "Spurs",
-            "hc": "SAC",
-            "ac": "SA",
-            "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
-            "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
-            "pred": [
-              108,
-              120
-            ]
-          },
           {
             "id": "nba:401909938",
             "start": "2026-11-07T22:00Z",
@@ -7777,7 +7749,7 @@
             ]
           }
         ],
-        "text": "🔮 EuroPicks Score Predictions · NBA · 07/11\n\nLAL 116-117 POR\nSAC 108-120 SA\nIND 110-115 DEN\nATL 110-113 BKN\nCLE 109-113 NY\nOKC 111-99 WSH\nGS 117-106 ORL\nPHX 112-119 HOU\nPOR 116-113 SA\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
+        "text": "🔮 EuroPicks Score Predictions · NBA · 07/11\n\nIND 110-115 DEN\nATL 110-113 BKN\nCLE 109-113 NY\nOKC 111-99 WSH\nGS 117-106 ORL\nPHX 112-119 HOU\nPOR 116-113 SA\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
       },
       "combo-nba": {
         "id": "combo-nba",
@@ -7976,26 +7948,10 @@
         "kind": "nba-day",
         "league": "nba",
         "reply": false,
-        "title": "NBA Picks Day · 8 picks",
+        "title": "NBA Picks Day · 6 picks",
         "postAt": "2026-11-07T17:45:00.000Z",
         "image": true,
         "picks": [
-          {
-            "id": "nba:401909294|prop|over|39.5|3945274|pa",
-            "league": "nba",
-            "label": "L. Doncic +39.5 pts+ast",
-            "list": "L. Doncic +39.5 P+A",
-            "odd": 1.55,
-            "start": "2026-11-07T03:00Z",
-            "gameId": "nba:401909294",
-            "market": "prop",
-            "side": "over",
-            "line": 39.5,
-            "stat": "pa",
-            "playerId": "3945274",
-            "match": "Lakers – Trail Blazers",
-            "pFinal": 0.633
-          },
           {
             "id": "nba:401909940|prop|under|1.5|2528426|tpm",
             "league": "nba",
@@ -8029,34 +7985,6 @@
             "pFinal": 0.588
           },
           {
-            "id": "nba:401909295|prop|under|3.5|4395723|tpm",
-            "league": "nba",
-            "label": "K. Johnson −3.5 triples",
-            "list": "K. Johnson −3.5 T3",
-            "odd": 1.57,
-            "start": "2026-11-07T03:00Z",
-            "gameId": "nba:401909295",
-            "market": "prop",
-            "side": "under",
-            "line": 3.5,
-            "stat": "tpm",
-            "playerId": "4395723",
-            "match": "Kings – Spurs",
-            "pFinal": 0.669
-          }
-        ],
-        "text": "🏀 NBA Picks Day · 07/11\n\n1.- L. Doncic +39.5 P+A @1.55\n2.- J. Clarkson −1.5 T3 @1.61\n3.- J. Smith Jr. +13.5 Pts @1.67\n4.- K. Johnson −3.5 T3 @1.57\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-2": {
-        "id": "nba-day-2",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 2/2 · picks 5-8",
-        "postAt": "2026-11-07T17:45:00.000Z",
-        "image": true,
-        "picks": [
-          {
             "id": "nba:401909941|prop|under|6.5|5174563|ast",
             "league": "nba",
             "label": "K. George −6.5 asistencias",
@@ -8071,7 +7999,19 @@
             "playerId": "5174563",
             "match": "Thunder – Wizards",
             "pFinal": 0.621
-          },
+          }
+        ],
+        "text": "🏀 NBA Picks Day · 07/11\n\n1.- J. Clarkson −1.5 T3 @1.61\n2.- J. Smith Jr. +13.5 Pts @1.67\n3.- K. George −6.5 Ast @1.64\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-2": {
+        "id": "nba-day-2",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 2/2 · picks 4-6",
+        "postAt": "2026-11-07T17:45:00.000Z",
+        "image": true,
+        "picks": [
           {
             "id": "nba:401909938|prop|under|14.5|3138196|pa",
             "league": "nba",
@@ -8093,7 +8033,7 @@
             "league": "nba",
             "label": "C. Johnson −2.5 asistencias",
             "list": "C. Johnson −2.5 Ast",
-            "odd": 1.74,
+            "odd": 1.76,
             "start": "2026-11-08T00:30Z",
             "gameId": "nba:401909939",
             "market": "prop",
@@ -8103,7 +8043,7 @@
             "playerId": "5174655",
             "team": "BKN",
             "match": "Hawks – Nets",
-            "pFinal": 0.588
+            "pFinal": 0.583
           },
           {
             "id": "nba:401909942|prop|under|9.5|5239561|reb",
@@ -8122,7 +8062,7 @@
             "pFinal": 0.64
           }
         ],
-        "text": "🧵 NBA Picks Day · 07/11 (sigue)\n\n5.- K. George −6.5 Ast @1.64\n6.- C. Johnson −14.5 P+A @1.77\n7.- C. Johnson −2.5 Ast @1.74\n8.- J. Richardson −9.5 Reb @1.67\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 07/11 (sigue)\n\n4.- C. Johnson −14.5 P+A @1.77\n5.- C. Johnson −2.5 Ast @1.76\n6.- J. Richardson −9.5 Reb @1.67\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
