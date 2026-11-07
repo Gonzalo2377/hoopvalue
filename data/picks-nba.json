@@ -283,6 +283,24 @@
       "safety": 0.577,
       "tier": "C",
       "createdAt": "2026-11-06T22:35:31.588Z"
+    },
+    {
+      "id": "nba:401909941|prop|under|6.5|5174563|ast",
+      "gameId": "nba:401909941",
+      "start": "2026-11-08T01:00Z",
+      "match": "Thunder – Wizards",
+      "market": "prop",
+      "side": "under",
+      "line": 6.5,
+      "label": "Kyshawn George menos de 6.5 asistencias",
+      "odd": 1.64,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.621,
+      "safety": 0.519,
+      "tier": "C",
+      "stat": "ast",
+      "playerId": "5174563",
+      "createdAt": "2026-11-07T00:17:19.110Z"
     }
   ],
   "record": [

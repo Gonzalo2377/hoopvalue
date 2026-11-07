@@ -7646,38 +7646,10 @@
         "id": "preds-nba",
         "kind": "preds",
         "league": "nba",
-        "title": "Predicciones de marcador · NBA (16)",
+        "title": "Predicciones de marcador · NBA (14)",
         "postAt": "2026-11-07T17:30:00.000Z",
         "image": true,
         "games": [
-          {
-            "id": "nba:401909287",
-            "start": "2026-11-07T00:00Z",
-            "home": "Hawks",
-            "away": "Wizards",
-            "hc": "ATL",
-            "ac": "WSH",
-            "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
-            "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/wsh.png",
-            "pred": [
-              110,
-              102
-            ]
-          },
-          {
-            "id": "nba:401909288",
-            "start": "2026-11-07T00:00Z",
-            "home": "Hornets",
-            "away": "Celtics",
-            "hc": "CHA",
-            "ac": "BOS",
-            "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cha.png",
-            "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bos.png",
-            "pred": [
-              100,
-              111
-            ]
-          },
           {
             "id": "nba:401909289",
             "start": "2026-11-07T00:30Z",
@@ -7688,8 +7660,8 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/phi.png",
             "pred": [
-              114,
-              115
+              111,
+              116
             ]
           },
           {
@@ -7814,8 +7786,8 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
             "pred": [
-              114,
-              112
+              111,
+              113
             ]
           },
           {
@@ -7875,7 +7847,7 @@
             ]
           }
         ],
-        "text": "🔮 EuroPicks Score Predictions · NBA · 07/11\n\nATL 110-102 WSH\nCHA 100-111 BOS\nCLE 114-115 PHI\nDAL 116-108 UTAH\nMEM 112-105 OKC\nMIL 117-111 TOR\nNO 117-112 MIN\nLAL 117-116 POR\nSAC 110-119 SA\nIND 111-115 DEN\nATL 110-111 BKN\nCLE 114-112 NY\nOKC 109-98 WSH\nGS 117-106 ORL\nPHX 112-119 H"
+        "text": "🔮 EuroPicks Score Predictions · NBA · 07/11\n\nCLE 111-116 PHI\nDAL 116-108 UTAH\nMEM 112-105 OKC\nMIL 117-111 TOR\nNO 117-112 MIN\nLAL 117-116 POR\nSAC 110-119 SA\nIND 111-115 DEN\nATL 110-111 BKN\nCLE 111-113 NY\nOKC 109-98 WSH\nGS 117-106 ORL\nPHX 112-119 HOU\nPOR 116-113 SA\n\nFinal scores,"
       },
       "combo-nba": {
         "id": "combo-nba",
@@ -8079,6 +8051,20 @@
         "image": true,
         "picks": [
           {
+            "id": "nba:401909289|ml|away|||",
+            "league": "nba",
+            "label": "Gana 76ers",
+            "list": "Gana 76ers",
+            "odd": 1.68,
+            "start": "2026-11-07T00:30Z",
+            "gameId": "nba:401909289",
+            "market": "ml",
+            "side": "away",
+            "line": null,
+            "match": "Cavaliers – 76ers",
+            "pFinal": 0.582
+          },
+          {
             "id": "nba:401909291|prop|under|2.5|4683778|tpm",
             "league": "nba",
             "label": "J. McCain −2.5 triples",
@@ -8093,20 +8079,6 @@
             "playerId": "4683778",
             "match": "Grizzlies – Thunder",
             "pFinal": 0.622
-          },
-          {
-            "id": "nba:401909289|ml|away|||",
-            "league": "nba",
-            "label": "Gana 76ers",
-            "list": "Gana 76ers",
-            "odd": 1.68,
-            "start": "2026-11-07T00:30Z",
-            "gameId": "nba:401909289",
-            "market": "ml",
-            "side": "away",
-            "line": null,
-            "match": "Cavaliers – 76ers",
-            "pFinal": 0.582
           },
           {
             "id": "nba:401909294|prop|over|39.5|3945274|pa",
@@ -8125,34 +8097,6 @@
             "pFinal": 0.633
           },
           {
-            "id": "nba:401909288|prop|over|11.5|3135045|pts",
-            "league": "nba",
-            "label": "G. Allen +11.5 puntos",
-            "list": "G. Allen +11.5 Pts",
-            "odd": 1.56,
-            "start": "2026-11-07T00:00Z",
-            "gameId": "nba:401909288",
-            "market": "prop",
-            "side": "over",
-            "line": 11.5,
-            "stat": "pts",
-            "playerId": "3135045",
-            "match": "Hornets – Celtics",
-            "pFinal": 0.626
-          }
-        ],
-        "text": "🏀 NBA Picks Day · 07/11\n\n1.- J. McCain −2.5 T3 @1.58\n2.- Gana 76ers @1.68\n3.- L. Doncic +39.5 P+A @1.55\n4.- G. Allen +11.5 Pts @1.56\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-2": {
-        "id": "nba-day-2",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 2/3 · picks 5-8",
-        "postAt": "2026-11-07T17:45:00.000Z",
-        "image": true,
-        "picks": [
-          {
             "id": "nba:401909293|prop|over|3.5|5144091|reb",
             "league": "nba",
             "label": "J. Fears +3.5 rebotes",
@@ -8167,7 +8111,19 @@
             "playerId": "5144091",
             "match": "Pelicans – Timberwolves",
             "pFinal": 0.613
-          },
+          }
+        ],
+        "text": "🏀 NBA Picks Day · 07/11\n\n1.- Gana 76ers @1.68\n2.- J. McCain −2.5 T3 @1.58\n3.- L. Doncic +39.5 P+A @1.55\n4.- J. Fears +3.5 Reb @1.62\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-2": {
+        "id": "nba-day-2",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 2/3 · picks 5-8",
+        "postAt": "2026-11-07T17:45:00.000Z",
+        "image": true,
+        "picks": [
           {
             "id": "nba:401909940|prop|under|1.5|2528426|tpm",
             "league": "nba",
@@ -8215,19 +8171,7 @@
             "playerId": "2993874",
             "match": "Bucks – Raptors",
             "pFinal": 0.671
-          }
-        ],
-        "text": "🧵 NBA Picks Day · 07/11 (sigue)\n\n5.- J. Fears +3.5 Reb @1.62\n6.- J. Clarkson −1.5 T3 @1.61\n7.- J. Smith Jr. +13.5 Pts @1.67\n8.- K. Anderson −3.5 T3 @1.57\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
-      },
-      "nba-day-3": {
-        "id": "nba-day-3",
-        "kind": "nba-day",
-        "league": "nba",
-        "reply": true,
-        "title": "↳ Hilo 3/3 · picks 9-12",
-        "postAt": "2026-11-07T17:45:00.000Z",
-        "image": true,
-        "picks": [
+          },
           {
             "id": "nba:401909295|prop|under|3.5|4395723|tpm",
             "league": "nba",
@@ -8243,6 +8187,35 @@
             "playerId": "4395723",
             "match": "Kings – Spurs",
             "pFinal": 0.669
+          }
+        ],
+        "text": "🧵 NBA Picks Day · 07/11 (sigue)\n\n5.- J. Clarkson −1.5 T3 @1.61\n6.- J. Smith Jr. +13.5 Pts @1.67\n7.- K. Anderson −3.5 T3 @1.57\n8.- K. Johnson −3.5 T3 @1.57\n\n📊 Last 10 games de cada uno en las fotos\n👇 Más picks en el hilo\n#NBA · +18"
+      },
+      "nba-day-3": {
+        "id": "nba-day-3",
+        "kind": "nba-day",
+        "league": "nba",
+        "reply": true,
+        "title": "↳ Hilo 3/3 · picks 9-12",
+        "postAt": "2026-11-07T17:45:00.000Z",
+        "image": true,
+        "picks": [
+          {
+            "id": "nba:401909941|prop|under|6.5|5174563|ast",
+            "league": "nba",
+            "label": "K. George −6.5 asistencias",
+            "list": "K. George −6.5 Ast",
+            "odd": 1.64,
+            "start": "2026-11-08T01:00Z",
+            "gameId": "nba:401909941",
+            "market": "prop",
+            "side": "under",
+            "line": 6.5,
+            "stat": "ast",
+            "playerId": "5174563",
+            "team": "WSH",
+            "match": "Thunder – Wizards",
+            "pFinal": 0.621
           },
           {
             "id": "nba:401909938|prop|under|14.5|3138196|pa",
@@ -8294,7 +8267,7 @@
             "pFinal": 0.643
           }
         ],
-        "text": "🧵 NBA Picks Day · 07/11 (sigue)\n\n9.- K. Johnson −3.5 T3 @1.57\n10.- C. Johnson −14.5 P+A @1.77\n11.- C. Johnson −2.5 Ast @1.74\n12.- D. Mitchell +11.5 Pts @1.65\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 07/11 (sigue)\n\n9.- K. George −6.5 Ast @1.64\n10.- C. Johnson −14.5 P+A @1.77\n11.- C. Johnson −2.5 Ast @1.74\n12.- D. Mitchell +11.5 Pts @1.65\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }
