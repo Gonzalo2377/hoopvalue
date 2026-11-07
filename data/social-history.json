@@ -7674,7 +7674,7 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/atl.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/bkn.png",
             "pred": [
-              110,
+              111,
               113
             ]
           },
@@ -7688,8 +7688,8 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/cle.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/ny.png",
             "pred": [
-              109,
-              113
+              108,
+              112
             ]
           },
           {
@@ -7749,7 +7749,7 @@
             ]
           }
         ],
-        "text": "🔮 EuroPicks Score Predictions · NBA · 07/11\n\nIND 110-115 DEN\nATL 110-113 BKN\nCLE 109-113 NY\nOKC 111-99 WSH\nGS 117-106 ORL\nPHX 112-119 HOU\nPOR 116-113 SA\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
+        "text": "🔮 EuroPicks Score Predictions · NBA · 07/11\n\nIND 110-115 DEN\nATL 111-113 BKN\nCLE 108-112 NY\nOKC 111-99 WSH\nGS 117-106 ORL\nPHX 112-119 HOU\nPOR 116-113 SA\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
       },
       "combo-nba": {
         "id": "combo-nba",
@@ -7857,7 +7857,7 @@
         "league": "nba",
         "title": "NBA · resultados de ayer (06/11)",
         "postAt": "2026-11-07T08:40:00.000Z",
-        "text": "📋 NBA · resultados de ayer (06/11)\n\n⏳⏳❌⏳⏳⏳⏳⏳✅⏳⏳\n👇 Cada pick en la imagen\n\nAyer: 1-1 (-0.13 u) · Total NBA: 76-45 (-9.79 u)\n#NBA · +18 · Juega con responsabilidad",
+        "text": "📋 NBA · resultados de ayer (06/11)\n\n⏳⏳❌⏳⏳⏳✅⏳✅⏳✅\n👇 Cada pick en la imagen\n\nAyer: 3-1 (+2.61 u) · Total NBA: 78-45 (-7.05 u)\n#NBA · +18 · Juega con responsabilidad",
         "image": true,
         "pending": true,
         "rows": [
@@ -7901,7 +7901,7 @@
             "league": "nba",
             "label": "D. Mitchell +11.5 puntos",
             "odd": 1.65,
-            "result": null
+            "result": "W"
           },
           {
             "league": "nba",
@@ -7923,23 +7923,23 @@
           },
           {
             "league": "nba",
-            "label": "Combinada: D. Mitchell +11.5 Pts + A. Wiggins +1.5 T3 ✓",
+            "label": "Combinada: D. Mitchell +11.5 Pts ✓ + A. Wiggins +1.5 T3 ✓",
             "odd": 3.09,
-            "result": null
+            "result": "W"
           }
         ],
         "balance": {
           "day": [
-            1,
+            3,
             1
           ],
           "total": [
-            76,
+            78,
             45
           ],
           "units": {
-            "day": -0.13,
-            "total": -9.79
+            "day": 2.61,
+            "total": -7.05
           }
         }
       },
@@ -8033,7 +8033,7 @@
             "league": "nba",
             "label": "C. Johnson −2.5 asistencias",
             "list": "C. Johnson −2.5 Ast",
-            "odd": 1.76,
+            "odd": 1.75,
             "start": "2026-11-08T00:30Z",
             "gameId": "nba:401909939",
             "market": "prop",
@@ -8041,9 +8041,8 @@
             "line": 2.5,
             "stat": "ast",
             "playerId": "5174655",
-            "team": "BKN",
             "match": "Hawks – Nets",
-            "pFinal": 0.583
+            "pFinal": 0.585
           },
           {
             "id": "nba:401909942|prop|under|9.5|5239561|reb",
@@ -8062,7 +8061,7 @@
             "pFinal": 0.64
           }
         ],
-        "text": "🧵 NBA Picks Day · 07/11 (sigue)\n\n4.- C. Johnson −14.5 P+A @1.77\n5.- C. Johnson −2.5 Ast @1.76\n6.- J. Richardson −9.5 Reb @1.67\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
+        "text": "🧵 NBA Picks Day · 07/11 (sigue)\n\n4.- C. Johnson −14.5 P+A @1.77\n5.- C. Johnson −2.5 Ast @1.75\n6.- J. Richardson −9.5 Reb @1.67\n\n📊 Last 10 games de cada uno en las fotos\n#NBA · +18"
       }
     }
   }

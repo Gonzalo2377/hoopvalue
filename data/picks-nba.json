@@ -1,24 +1,6 @@
 {
   "pending": [
     {
-      "id": "nba:401909289|prop|over|11.5|3908809|pts",
-      "gameId": "nba:401909289",
-      "start": "2026-11-07T00:30Z",
-      "match": "Cavaliers – 76ers",
-      "market": "prop",
-      "side": "over",
-      "line": 11.5,
-      "label": "Donovan Mitchell más de 11.5 puntos",
-      "odd": 1.65,
-      "book": "unibet (Kambi)",
-      "pFinal": 0.643,
-      "safety": 0.484,
-      "tier": "C",
-      "stat": "pts",
-      "playerId": "3908809",
-      "createdAt": "2026-11-05T12:46:50.809Z"
-    },
-    {
       "id": "nba:401909292|prop|under|3.5|2993874|tpm",
       "gameId": "nba:401909292",
       "start": "2026-11-07T01:00Z",
@@ -233,22 +215,6 @@
       "createdAt": "2026-11-06T15:58:49.455Z"
     },
     {
-      "id": "nba:401909289|ml|away|||",
-      "gameId": "nba:401909289",
-      "start": "2026-11-07T00:30Z",
-      "match": "Cavaliers – 76ers",
-      "market": "ml",
-      "side": "away",
-      "line": null,
-      "label": "Gana 76ers",
-      "odd": 1.68,
-      "book": "draftkings",
-      "pFinal": 0.582,
-      "safety": 0.577,
-      "tier": "C",
-      "createdAt": "2026-11-06T22:35:31.588Z"
-    },
-    {
       "id": "nba:401909941|prop|under|6.5|5174563|ast",
       "gameId": "nba:401909941",
       "start": "2026-11-08T01:00Z",
@@ -268,6 +234,49 @@
     }
   ],
   "record": [
+    {
+      "id": "nba:401909289|prop|over|11.5|3908809|pts",
+      "gameId": "nba:401909289",
+      "start": "2026-11-07T00:30Z",
+      "match": "Cavaliers – 76ers",
+      "market": "prop",
+      "side": "over",
+      "line": 11.5,
+      "label": "Donovan Mitchell más de 11.5 puntos",
+      "odd": 1.65,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.643,
+      "safety": 0.484,
+      "tier": "C",
+      "stat": "pts",
+      "playerId": "3908809",
+      "createdAt": "2026-11-05T12:46:50.809Z",
+      "result": "W",
+      "score": "119-95",
+      "settledAt": "2026-11-07T03:20:41.750Z"
+    },
+    {
+      "id": "nba:401909289|ml|away|||",
+      "gameId": "nba:401909289",
+      "start": "2026-11-07T00:30Z",
+      "match": "Cavaliers – 76ers",
+      "market": "ml",
+      "side": "away",
+      "line": null,
+      "label": "Gana 76ers",
+      "odd": 1.68,
+      "book": "draftkings",
+      "pFinal": 0.582,
+      "safety": 0.577,
+      "tier": "C",
+      "createdAt": "2026-11-06T22:35:31.588Z",
+      "result": "L",
+      "score": "119-95",
+      "settledAt": "2026-11-07T03:20:41.750Z",
+      "closeOdd": 1.68,
+      "pClose": 0.573,
+      "clv": -0.0374
+    },
     {
       "id": "nba:401909287|prop|over|1.5|4397183|tpm",
       "gameId": "nba:401909287",
@@ -16593,50 +16602,6 @@
   ],
   "comboPending": [
     {
-      "type": "segura",
-      "legs": [
-        {
-          "id": "nba:401909289|prop|over|11.5|3908809|pts",
-          "gameId": "nba:401909289",
-          "start": "2026-11-07T00:30Z",
-          "match": "Cavaliers – 76ers",
-          "market": "prop",
-          "side": "over",
-          "line": 11.5,
-          "stat": "pts",
-          "playerId": "3908809",
-          "player": "Donovan Mitchell",
-          "team": "CLE",
-          "label": "Donovan Mitchell más de 11.5 puntos",
-          "odd": 1.65,
-          "pFinal": 0.643,
-          "book": "unibet (Kambi)"
-        },
-        {
-          "id": "nba:401909287|prop|over|1.5|4397183|tpm",
-          "gameId": "nba:401909287",
-          "start": "2026-11-07T00:00Z",
-          "match": "Hawks – Wizards",
-          "market": "prop",
-          "side": "over",
-          "line": 1.5,
-          "stat": "tpm",
-          "playerId": "4397183",
-          "player": "Aaron Wiggins",
-          "team": "ATL",
-          "label": "Aaron Wiggins más de 1.5 triples",
-          "odd": 1.87,
-          "pFinal": 0.552,
-          "book": "unibet (Kambi)"
-        }
-      ],
-      "odd": 3.09,
-      "prob": 0.355,
-      "ev": 0.095,
-      "start": "2026-11-07T00:00Z",
-      "createdAt": "2026-11-05T12:46:50.809Z"
-    },
-    {
       "type": "valor",
       "legs": [
         {
@@ -16696,6 +16661,59 @@
       "ev": 0.228,
       "start": "2026-11-07T00:30Z",
       "createdAt": "2026-11-05T13:07:15.527Z"
+    }
+  ],
+  "comboRecord": [
+    {
+      "type": "segura",
+      "legs": [
+        {
+          "id": "nba:401909289|prop|over|11.5|3908809|pts",
+          "gameId": "nba:401909289",
+          "start": "2026-11-07T00:30Z",
+          "match": "Cavaliers – 76ers",
+          "market": "prop",
+          "side": "over",
+          "line": 11.5,
+          "stat": "pts",
+          "playerId": "3908809",
+          "player": "Donovan Mitchell",
+          "team": "CLE",
+          "label": "Donovan Mitchell más de 11.5 puntos",
+          "odd": 1.65,
+          "pFinal": 0.643,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909287|prop|over|1.5|4397183|tpm",
+          "gameId": "nba:401909287",
+          "start": "2026-11-07T00:00Z",
+          "match": "Hawks – Wizards",
+          "market": "prop",
+          "side": "over",
+          "line": 1.5,
+          "stat": "tpm",
+          "playerId": "4397183",
+          "player": "Aaron Wiggins",
+          "team": "ATL",
+          "label": "Aaron Wiggins más de 1.5 triples",
+          "odd": 1.87,
+          "pFinal": 0.552,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 3.09,
+      "prob": 0.355,
+      "ev": 0.095,
+      "start": "2026-11-07T00:00Z",
+      "createdAt": "2026-11-05T12:46:50.809Z",
+      "result": "W",
+      "oddFinal": 3.09,
+      "legStates": [
+        "W",
+        "W"
+      ],
+      "settledAt": "2026-11-07T03:20:41.750Z"
     },
     {
       "type": "jugadores",
@@ -16739,10 +16757,15 @@
       "prob": 0.365,
       "ev": 0.086,
       "start": "2026-11-07T00:00Z",
-      "createdAt": "2026-11-05T13:07:15.527Z"
-    }
-  ],
-  "comboRecord": [
+      "createdAt": "2026-11-05T13:07:15.527Z",
+      "result": "W",
+      "oddFinal": 2.98,
+      "legStates": [
+        "W",
+        "W"
+      ],
+      "settledAt": "2026-11-07T03:20:41.750Z"
+    },
     {
       "type": "jugadores",
       "legs": [
