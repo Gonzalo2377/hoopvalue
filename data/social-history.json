@@ -7730,8 +7730,8 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sac.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
             "pred": [
-              110,
-              119
+              108,
+              120
             ]
           },
           {
@@ -7833,7 +7833,7 @@
             ]
           }
         ],
-        "text": "🔮 EuroPicks Score Predictions · NBA · 07/11\n\nDAL 116-108 UTAH\nMEM 112-105 OKC\nMIL 117-111 TOR\nNO 117-112 MIN\nLAL 117-116 POR\nSAC 110-119 SA\nIND 111-115 DEN\nATL 110-111 BKN\nCLE 111-113 NY\nOKC 109-98 WSH\nGS 117-106 ORL\nPHX 112-119 HOU\nPOR 116-113 SA\n\nFinal scores, predicted befor"
+        "text": "🔮 EuroPicks Score Predictions · NBA · 07/11\n\nDAL 116-108 UTAH\nMEM 112-105 OKC\nMIL 117-111 TOR\nNO 117-112 MIN\nLAL 117-116 POR\nSAC 108-120 SA\nIND 111-115 DEN\nATL 110-111 BKN\nCLE 111-113 NY\nOKC 109-98 WSH\nGS 117-106 ORL\nPHX 112-119 HOU\nPOR 116-113 SA\n\nFinal scores, predicted befor"
       },
       "combo-nba": {
         "id": "combo-nba",
