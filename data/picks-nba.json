@@ -213,6 +213,24 @@
       "stat": "reb",
       "playerId": "4873153",
       "createdAt": "2026-11-07T12:36:21.701Z"
+    },
+    {
+      "id": "nba:401909949|prop|over|13.5|4432848|pts",
+      "gameId": "nba:401909949",
+      "start": "2026-11-09T01:00Z",
+      "match": "Bucks – Celtics",
+      "market": "prop",
+      "side": "over",
+      "line": 13.5,
+      "label": "Jaime Jaquez Jr. más de 13.5 puntos",
+      "odd": 1.79,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.552,
+      "safety": 0.503,
+      "tier": "C",
+      "stat": "pts",
+      "playerId": "4432848",
+      "createdAt": "2026-11-07T13:16:58.476Z"
     }
   ],
   "record": [
