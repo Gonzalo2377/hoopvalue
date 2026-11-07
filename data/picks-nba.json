@@ -143,6 +143,40 @@
       "stat": "ast",
       "playerId": "5174563",
       "createdAt": "2026-11-07T00:17:19.110Z"
+    },
+    {
+      "id": "nba:401909940|ml|away|||",
+      "gameId": "nba:401909940",
+      "start": "2026-11-08T01:00Z",
+      "match": "Cavaliers – Knicks",
+      "market": "ml",
+      "side": "away",
+      "line": null,
+      "label": "Gana Knicks",
+      "odd": 1.58,
+      "book": "draftkings",
+      "pFinal": 0.623,
+      "safety": 0.653,
+      "tier": "B",
+      "createdAt": "2026-11-07T04:21:44.185Z"
+    },
+    {
+      "id": "nba:401909944|prop|under|6.5|4683678|ra",
+      "gameId": "nba:401909944",
+      "start": "2026-11-08T03:00Z",
+      "match": "Trail Blazers – Spurs",
+      "market": "prop",
+      "side": "under",
+      "line": 6.5,
+      "label": "Scoot Henderson menos de 6.5 reb+ast",
+      "odd": 1.66,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.643,
+      "safety": 0.483,
+      "tier": "C",
+      "stat": "ra",
+      "playerId": "4683678",
+      "createdAt": "2026-11-07T04:21:44.185Z"
     }
   ],
   "record": [
