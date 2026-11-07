@@ -7744,12 +7744,12 @@
             "hl": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/por.png",
             "al": "https://a.espncdn.com/i/teamlogos/nba/500/scoreboard/sa.png",
             "pred": [
-              116,
+              115,
               114
             ]
           }
         ],
-        "text": "🔮 EuroPicks Score Predictions · NBA · 07/11\n\nIND 110-115 DEN\nATL 110-113 BKN\nCLE 108-112 NY\nOKC 117-98 WSH\nGS 117-106 ORL\nPHX 111-119 HOU\nPOR 116-114 SA\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
+        "text": "🔮 EuroPicks Score Predictions · NBA · 07/11\n\nIND 110-115 DEN\nATL 110-113 BKN\nCLE 108-112 NY\nOKC 117-98 WSH\nGS 117-106 ORL\nPHX 111-119 HOU\nPOR 115-114 SA\n\nFinal scores, predicted before tip-off. Check back tomorrow 👀\n#NBA · +18"
       },
       "combo-nba": {
         "id": "combo-nba",
@@ -7857,7 +7857,7 @@
         "league": "nba",
         "title": "NBA · resultados de ayer (06/11)",
         "postAt": "2026-11-07T08:40:00.000Z",
-        "text": "📋 NBA · resultados de ayer (06/11)\n\n❌⏳❌⏳⚪⏳✅❌✅✅✅\n👇 Cada pick en la imagen\n\nAyer: 4-3 (+1.38 u) · Total NBA: 79-47 (-8.28 u)\n#NBA · +18 · Juega con responsabilidad",
+        "text": "📋 NBA · resultados de ayer (06/11)\n\n❌⏳❌✅⚪⏳✅❌✅✅✅\n👇 Cada pick en la imagen\n\nAyer: 5-3 (+2.00 u) · Total NBA: 80-47 (-7.66 u)\n#NBA · +18 · Juega con responsabilidad",
         "image": true,
         "pending": true,
         "rows": [
@@ -7883,7 +7883,7 @@
             "league": "nba",
             "label": "J. Fears +3.5 rebotes",
             "odd": 1.62,
-            "result": null
+            "result": "W"
           },
           {
             "league": "nba",
@@ -7930,16 +7930,16 @@
         ],
         "balance": {
           "day": [
-            4,
+            5,
             3
           ],
           "total": [
-            79,
+            80,
             47
           ],
           "units": {
-            "day": 1.38,
-            "total": -8.28
+            "day": 2,
+            "total": -7.66
           }
         }
       },
