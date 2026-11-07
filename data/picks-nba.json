@@ -16676,7 +16676,69 @@
       "settledAt": "2026-10-23T12:34:36.074Z"
     }
   ],
-  "comboPending": [],
+  "comboPending": [
+    {
+      "type": "valor",
+      "legs": [
+        {
+          "id": "nba:401909945|prop|over|1.5|5095151|tpm",
+          "gameId": "nba:401909945",
+          "start": "2026-11-08T20:30Z",
+          "match": "Bulls – 76ers",
+          "market": "prop",
+          "side": "over",
+          "line": 1.5,
+          "stat": "tpm",
+          "playerId": "5095151",
+          "player": "Caleb Wilson",
+          "team": "CHI",
+          "label": "Caleb Wilson más de 1.5 triples",
+          "odd": 1.64,
+          "pFinal": 0.607,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909940|prop|under|1.5|2528426|tpm",
+          "gameId": "nba:401909940",
+          "start": "2026-11-08T01:00Z",
+          "match": "Cavaliers – Knicks",
+          "market": "prop",
+          "side": "under",
+          "line": 1.5,
+          "stat": "tpm",
+          "playerId": "2528426",
+          "player": "Jordan Clarkson",
+          "team": "NY",
+          "label": "Jordan Clarkson menos de 1.5 triples",
+          "odd": 1.65,
+          "pFinal": 0.613,
+          "book": "unibet (Kambi)"
+        },
+        {
+          "id": "nba:401909944|prop|under|6.5|4683678|ra",
+          "gameId": "nba:401909944",
+          "start": "2026-11-08T03:00Z",
+          "match": "Trail Blazers – Spurs",
+          "market": "prop",
+          "side": "under",
+          "line": 6.5,
+          "stat": "ra",
+          "playerId": "4683678",
+          "player": "Scoot Henderson",
+          "team": "POR",
+          "label": "Scoot Henderson menos de 6.5 reb+ast",
+          "odd": 1.66,
+          "pFinal": 0.643,
+          "book": "unibet (Kambi)"
+        }
+      ],
+      "odd": 4.49,
+      "prob": 0.239,
+      "ev": 0.075,
+      "start": "2026-11-08T01:00Z",
+      "createdAt": "2026-11-07T10:34:30.696Z"
+    }
+  ],
   "comboRecord": [
     {
       "type": "valor",
