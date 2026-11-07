@@ -887,5 +887,12 @@
     "away": "Lakers",
     "ptsH": 114,
     "ptsA": 112
+  },
+  "nba:401909947": {
+    "start": "2026-11-09T00:00Z",
+    "home": "Timberwolves",
+    "away": "Jazz",
+    "ptsH": 115,
+    "ptsA": 105
   }
 }

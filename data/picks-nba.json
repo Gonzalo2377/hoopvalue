@@ -177,6 +177,24 @@
       "stat": "reb",
       "playerId": "2596112",
       "createdAt": "2026-11-07T11:15:07.314Z"
+    },
+    {
+      "id": "nba:401909947|prop|under|5.5|4433627|reb",
+      "gameId": "nba:401909947",
+      "start": "2026-11-09T00:00Z",
+      "match": "Timberwolves – Jazz",
+      "market": "prop",
+      "side": "under",
+      "line": 5.5,
+      "label": "Keyonte George menos de 5.5 rebotes",
+      "odd": 1.64,
+      "book": "unibet (Kambi)",
+      "pFinal": 0.602,
+      "safety": 0.544,
+      "tier": "C",
+      "stat": "reb",
+      "playerId": "4433627",
+      "createdAt": "2026-11-07T12:16:02.508Z"
     }
   ],
   "record": [
